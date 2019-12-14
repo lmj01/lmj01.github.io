@@ -1,0 +1,25 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318px" height="270px" viewBox="-55 -44 106 90">
+<title>Interpolation</title>
+<g fill="none">
+	<path d="M35,15v-50h-50l-25,25h50v50h-50v-50 M35,15l-25,25 M35,-35l-25,25" stroke="black"/>
+	<path d="M-15,-35v50l-25,25 M35,15h-50" stroke="#999"/>
+</g>
+<circle cx="0" cy="0" r="1.5" fill="red"/>
+<g id="pts" fill="blue" stroke="none">
+	<circle id="pt" cx="35" cy="15" r="2"/>
+	<use xlink:href="#pt" x="-50"/>
+	<use xlink:href="#pt" y="-50"/><use xlink:href="#pt" x="-50" y="-50"/>
+</g>
+<use xlink:href="#pts" x="-25" y="25"/>
+<g stroke="none" fill="blue" font-size="6" font-family="DejaVu Serif">
+	<text x="38" y="17">C<tspan dy="2" font-size="4">110</tspan></text>
+	<text x="38" y="-37">C<tspan dy="2" font-size="4">111</tspan></text>
+	<text x="-31" y="16">C<tspan dy="2" font-size="4">010</tspan></text>
+	<text x="-31" y="-37">C<tspan dy="2" font-size="4">011</tspan></text>
+	<text x="13" y="42">C<tspan dy="2" font-size="4">100</tspan></text>
+	<text x="13" y="-8">C<tspan dy="2" font-size="4">101</tspan></text>
+	<text x="-54" y="43">C<tspan dy="2" font-size="4">000</tspan></text>
+	<text x="-54" y="-13">C<tspan dy="2" font-size="4">001</tspan></text>
+	<text x="-7" y="2" fill="red">C</text>
+</g>
+</svg>
