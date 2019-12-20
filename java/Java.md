@@ -1,11 +1,8 @@
 
 # Java
 
-> java,
-
-***
-
 ## 语言特性
+
 - **泛型**：
     * 泛型通配符：T,K/V, ?, E
 
@@ -36,4 +33,87 @@ java.lang.annotation里面定义了4种原语
 - @Jnherited
 
 #### 自定义注解
+
+##### 简单注解
+
+又称标记，这种注解仅利用自身的存在与否来提供信息，如@Override
+
+```java 
+// 定义一个注解
+public @interface Test{}
+
+// 使用注解
+@Test
+public class MyClass{
+}
+```
+
+##### 复杂注解
+
+又称元数据Annotation，提供更多的元数据
+
+```java 
+// 定义注解
+@Rentention(RententionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface MyTag {
+	// 以method的形式提供
+	String name();
+	int age() default 32;
+}
+
+// 使用注解
+public class Test {
+	@MyTag(name="test")
+	public void info() {}
+}
+```
+
+使用Annotation修饰了程序后，并不会自己生成，需要开发者通过API来提取。所有的元数据的接口都继承
+Annotation父接口
+
+方法就是通过反射获取Annotation，将Annotation转换为XXXAnnotation,调用XXXAnnotation中的方法
+
+```java 
+Class clazz = Class.forName(className);
+Annotation[] arr = clazz.getMethod("info").getAnnotations();
+for (Annotation an : arr) {
+	if (an instanceof MyTag) {
+		MyTag tag = (MyTag)an;
+		String str = String.format("%s, %d", tag.name(), tag.age());
+		System.out.println(str);
+	}
+}
+```
+
+### bean
+
+Java语言欠缺属性、事件、多重继承功能，要在Java中实现一些面向对象的常见需求，需要大量的胶水代码。
+Bean正是编写这套胶水代码的惯用模式或约定，包括
+
+- getXxx
+- setXxx
+- isXxx
+- addXxxListener
+- XxxEvent
+- ... 
+
+这也是Java代码的常见写法，数据都是声明为
+
+```java 
+private int size;
+public int getSize() { return size};
+public void setSize(int _size) { size = _size; }
+``` 
+
+public保证接口的向后兼容，内部的实现与size可能会改变， 这就是Java Bean，但是更新的语言C#等就
+不需要，它们在语言自身中就提供了足够的语言特性来实现这些功能。
+
+#### 进化
+
+1. java bean1.00-A
+2. 因需要实现事务，安全，分布式，升级为EJB
+3. DI依赖注入，AOP面向切面技术来解决EJB的臃肿，升级为POJO
+4. spring
+
 
