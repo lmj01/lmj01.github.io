@@ -39,6 +39,18 @@ PyGILState_STATE
 Python解释器不是完全线程安全的，为了多线程的python有一个全局锁，称为Global Interpreter Lock。它
 必须由当前线程持有才能安全访问Python对象。
 
+## init modules 
+
+python/intern/bpy.c中，BPy_init_moduels把blender场景的模块都默认加入到sys.moduels中.
+
+可以注意到python与RNA交流也是在这里初始化完成的。把python当成一个独立模块时，会发现python可以独立
+与UI，且达到了UI的功能，只是不能交互操作吧了，都是在固定流程中编写好过程，直接执行得到结果。
+
+分析到这里，要如何分析下一步就比较难了！外面一层的大致流程走了一遍了。需要介入模型文件的数据来跟踪
+下步的，而模型文件.blend其实就是blender的数据，也就是blender的核心了，data api, 在.blend文件中存储
+的是所有的数据，这里面的核心又是DNA，这个细节还不太清楚内部的操作，看到这里，就想到了lua中的C的实现
+那种代码形式了，函数指针多得很。
+
 ## opertor type
 
 在文件python/intern/bpy_operator.c中，把operatortype作为一个python的module存在
