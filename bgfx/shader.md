@@ -58,7 +58,7 @@ extern const uint32_t xs_xxx_pssl_size;
 ###  vertex & index buffer
 顶点与索引数据
 
-```c++
+```cplusplus
 struct PosColorVertex {
     // 3d space poistion
     float m_x;
@@ -76,8 +76,8 @@ struct PosColorVertex {
     static bgfx::VertexDecl ms_decl;
 }
 bgfx::VertexDecl PosColorVertex::ms_decl;
-static PosColorVertex s_cubeVertices[] = {{},{},{},{}};
-static const uint16_t s_cubTriList[] = {0,1,3,  1,2,3};
+static PosColorVertex s_cubeVertices[] = { {}, {}, {}, {} };
+static const uint16_t s_cubTriList[] = { 0,1,3,  1,2,3 };
 bgfx::VertexBufferHandle m_vbh = bgfx::createVertexBuffer(
     bgfx::makeRef(s_cubeVertices, sizeof(s_cubeVertices)),
     PosColorVertex::ms_decl

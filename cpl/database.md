@@ -13,21 +13,6 @@
     * **oracle-sql**
 
 
-## neo4j
-### 根据id字段来更新某个节点的值
-```CQL
-match(n:DesignCenter) 
-where id(n) = 1161
-set ss.name ="test-design-center"
-return ss.name
-```
-### 删除关系
-```CQL
-match(n:Case)-[r:CASESTATE]-() 
-where id(r)=4029
-delete r
-```
-
 ## Mysql
 
 MySql Community Server配置
