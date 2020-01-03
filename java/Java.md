@@ -3,12 +3,21 @@
 
 ## 语言特性
 
-- **泛型**：
-    * 泛型通配符：T,K/V, ?, E
+### 泛型
 
-### setter&getter
+- E  Element,在集合中使用，集合中存放的元素
+- T Type， Java的类
+- K key 键
+- V Value 值
+- N Number 数值类型
+- ？不确定的Java类型
 
-为了控制依赖，使用了setter和getter。遵守一个原则：**尽量让别人来依赖接口而非实现，控制getter就是一种较好的途径**
+### Class类
+
+是所有对象的运行时类型标识，即RTTI-Run Time Type Identification
+它是由JVM创建，它的作用就是在运行时提供或获得某个对象的类型信息
+
+
 
 ### 反射机制
 

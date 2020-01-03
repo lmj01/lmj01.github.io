@@ -158,9 +158,13 @@ fetch(url)
 ***
 
 ### 特性
+
 #### Source Map
+
 js源文件转为生产文件后,调试非常麻烦,而对应的source map文件就是为了保留这个对应的文件,编译通过错误中的行列号定位错误的位置, 目前就chrome支持,Google的Closure编译器提供了支持生成map文件
+
 #### Dynamic Type
+
 Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types
 
 ***

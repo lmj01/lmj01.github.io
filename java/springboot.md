@@ -4,30 +4,6 @@
 
 ## 配置
 
-### 端口
-
-- 方法一，直接在配置文件中application.properties设置
-	```c
-	server.port = 8190
-	```
-	
-- 方法二，实例化EmbeddedServletContainerCustomizer
-
-  	```java
-  @RestController
-  @EnableAutoConfiguration
-  @ComponentScan
-  public class example implements EmbeddedServletContainerCustomizer {
-      @Override
-      public void customize(ConfigableEmbeddedServletContainer configableEmabddedServletContainer) {
-          configableEmabddedServletContainer.setPort(8190);
-      }
-  }
-  ```
-
-- 方法三，打包时添加端口 --server.port=8190
-- 方法四，在JVM中配置 -Dserver.port=8190
-
 ### RESTful
 
 url很符合RESTful风格，根据每个controller来，模块化干净清晰
@@ -43,8 +19,6 @@ url很符合RESTful风格，根据每个controller来，模块化干净清晰
     <scope>test</scope>
 </dependency>
 ```
-
-
 
 ## boot.data.neo4j
 
@@ -66,9 +40,36 @@ spring.data.neo4j.password=123456
 spring.data.neo4j.uri=http://localhost:7474
 ```
 
+# org.springframework.boot.SpringApplication
+
+```java
+public static void main(String[] args) {
+	SpringApplication.run(DemoApplication.class, args);
+}
+```
+
+spring也是从main函数开始，按F3进入
+
+## org.apache.commons.logging.Log
+
+slf4j--Simple Loging Facade For Java, 是Java的日志输出规范接口
+
+Logback是spring boot默认的日志实现
+
+- trace
+- debug
+- info
+- warn
+- error
+
+log level 默认是info级别
 
 
-# 遇到的问题
 
-- Java中有个很特殊的问题，就是变量名，一些常用字段不能使用，如set和get，会导致某些库出现异常！
-- Java的一个class尽量一个文件，特别时注入的相关类，尽量独立看来，不用使用内部类，否则解析总是存在问题
+## org.springframework.boot.Banner
+
+启动server时打印的logo，即广告内容！
+
+
+
+
