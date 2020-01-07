@@ -125,6 +125,25 @@ setInterval(function(){
     1. 加载时是引用，即原始值变了加载的值也跟着变化
     2. 动态加载，不需要缓存
     
+6. Prototype的使用
+
+```javascript
+function Base() {
+}
+Base.prototype = Object.assign(Object.create({}), {
+	constructor: Base, 
+	mem1: function() {
+	}
+});
+function Drivered() {
+}
+Drivered.prototype = Object.assign(Object.create(Base.prototype), {
+	constructor: Drivered,
+	mem2: function() {
+	}
+})
+```
+	
 ***
 ## JS使用场景
 ### Fetch API

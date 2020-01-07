@@ -17,7 +17,18 @@
 是所有对象的运行时类型标识，即RTTI-Run Time Type Identification
 它是由JVM创建，它的作用就是在运行时提供或获得某个对象的类型信息
 
+```java 
+public class Shape{}
+// get Class method one 
+Class obj1 = Class.forName("Shape");
+// get Class method two 
+Shape shape = new Shape();
+Class obj2 = shape.getClass();
 
+// instace obj 
+Class<Shape> obj3 = Shape.class;
+
+```
 
 ### 反射机制
 
