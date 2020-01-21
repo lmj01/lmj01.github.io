@@ -8,7 +8,7 @@
 
 url很符合RESTful风格，根据每个controller来，模块化干净清晰
 
-## boot.test
+### boot.test
 
 在测试中，注意函数的执行顺序，是从下往上执行函数的
 
@@ -20,7 +20,7 @@ url很符合RESTful风格，根据每个controller来，模块化干净清晰
 </dependency>
 ```
 
-## boot.data.neo4j
+### boot.data.neo4j
 
 添加配置
 
@@ -40,6 +40,11 @@ spring.data.neo4j.password=123456
 spring.data.neo4j.uri=http://localhost:7474
 ```
 
+## 前后端分离
+
+前端静态资源，通过元素a跳转到指定的href即可，后台的请求就可以全部使用RestController啦！
+不直接返回页面，后面的页面也不处理！
+
 # org.springframework.boot.SpringApplication
 
 ```java
@@ -49,6 +54,11 @@ public static void main(String[] args) {
 ```
 
 spring也是从main函数开始，按F3进入
+
+## org.springframework.boot.Banner
+
+启动server时打印的logo，即广告内容！
+
 
 ## org.apache.commons.logging.Log
 
@@ -64,11 +74,12 @@ Logback是spring boot默认的日志实现
 
 log level 默认是info级别
 
+## org.springframework.context
 
+### org.springframework.context.ApplicationContext
 
-## org.springframework.boot.Banner
+### org.springframework.context.ConfigurableApplicationContext
 
-启动server时打印的logo，即广告内容！
 
 
 
