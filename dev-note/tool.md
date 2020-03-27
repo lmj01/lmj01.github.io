@@ -70,13 +70,22 @@ Substance Designer is the Ultimate 3D Material Authoring and Scan Processing Too
 - service
     * sudo service --status-all 查看服务列表
 
-## 免费与开源软件
+## 免费开源软件
+
 ### GIMP
 
-### Blender
+#### normal map
 
-### ZeroTier
-ZeroTier is a technology company dedicated to making computer networking easier, more powerful, and more secure.People use ZeroTier to seamlessly connect laptops, desktops, phones, embedded devices, cloud resources, and apps any way they want anywhere they go. Our software transforms the entire world into a single data center.穿透内网的软件
+法线贴图的制作
+
+一般用黑白来表示凹凸，白色就是凹下部分，黑色就是凸出部分
+
+#### specular map
+
+一般用红色，表示接受光的作用，黑色表示不受光的部分
+
+
+### Blender
 
 ## 常用工具
 - [typora](https://www.typora.io):markdown跨平台的免费编辑软件

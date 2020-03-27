@@ -63,6 +63,23 @@ url-mapping规则
 - 其他写法
 
 filter执行的顺序决定于web.xml中的filter-mapping的顺序，前面的先执行，后面的后执行。
+在这里使用static lambda声明了函数的原型
+```java 
+public class SystemFilter implements javax.servlet.Filter {
+	@Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain){
+	}
+}
+```
+在这里调用覆盖了lambda的默认空函数
+```java 
+public class LoginValidator implements org.springframework.beans.factory.InitializingBean {
+	@Override
+    public void afterPropertiesSet() throws Exception {
+	}
+}
+```
+目前这样的处理方法，不能避免DOS请求攻击服务器
 
 ## Listener
 

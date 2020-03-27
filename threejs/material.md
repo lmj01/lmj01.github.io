@@ -32,7 +32,13 @@ object3d.caseShadow = true; // 如果object遮挡光light，就产生阴影投�
 object3d.receiveShadow = false; // 如果object支持接收阴影，设为true
 ```
 
-## bump map
+## material images
+
+### map
+
+diffuse texture 纹理贴图
+
+### bump map
 
 从 MeshStandardMaterial.js中定义了两个相关的变量
 
@@ -73,4 +79,21 @@ vec3 perturbNormalArb( Vec3 surf_pos, vec3 surf_norm, vec2 dHdxy) {
 ```
 
 在文件src/renderers/shaders/ShaderChunk/normal_fragment_maps.glsl.js中用到 
+
+### specular map
+
+高光贴图， 可以看到光强度取值是高光贴图的红色部分。它负责高光的颜色和亮度值
+
+```glsl
+float specularStrength;
+#ifdef USE_SPECULARMAP
+        vec4 texelSpecular = texture2D( specularMap, vUv );
+        specularStrength = texelSpecular.r;
+#else
+        specularStrength = 1.0;
+#endif
+```
+
+黑色区域就是不想有反光区域,
+
 
