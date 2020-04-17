@@ -1,5 +1,14 @@
 # WSL
 
+## curl
+
+GET请求
+curl http://127.0.0.1:8080/login?admin&passwd=12345678
+POST请求
+curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login
+curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
+
+
 ## 环境搭建
 
 ```shell
