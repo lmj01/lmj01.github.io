@@ -1,5 +1,8 @@
 # Git
 
+[官方文档](https://git-scm.com/docs)
+[中文官方文档](https://git-scm.com/book/zh/v2)
+
 ## 常用命令
 
 1. a)git stash,b)git pull,c)git stash pop解决有冲突的代码
@@ -12,15 +15,47 @@
 8. git submodule foreach git pull拉取所有的子模块
 9. git reset --hard origin/master 强制覆盖本地的修改
 
+## 创建 
+1. git init 对当前目录进行git初始化
+2. git remote add origin repo-url 添加远程仓库地址
+3. git push origin branch-name 把当前分支
+
+## 推送
+推送本地local_branch到远程remote_branch并建立关联关系
+1. git push 远程的remote_branch存在且关联local_branch，把local_branch推送到remote_branch
+2. git push -u origin/remote_branch 远程有分支但未关联本地分支 
+3. git push origin local_branch:remote_branch 远程remote_branch不存在
+
+## 分支
+1. git branch -d <branch_name> 删除分支
+
+## 合并
+0. git remote add upstream repo-url 添加上游仓库地址
+1. git fetch upstream 从上游更新
+2. git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
+
+## attributes
+[Git Attributes](https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes)
+合并分支指定文件忽略掉
+git config merge.ours.driver true 
+
+在根目录下添加文件.gitattributes
+文件中每一行就是对文件的属性进行处理
+
+pox.xml merge=ours 
+*.xml merge=ours 
+
+注意在本地合并后再推送到远程
+## 冲突
+1. git stash 
+2. git stash pop 
+3. 
 
 ## 创建命令
 
 1. git init
 2. git remote add origin repo-server-url
-3. git remote add upstream repo-url
-4. git fetch upstream
-5. git merge upstream/branch-name合并分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
-6. git push origin branch-name
+3. git push origin branch-name
     
 	
 ## 配置稀疏文件

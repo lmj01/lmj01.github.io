@@ -12,7 +12,15 @@ vscode的配置有两种形式
 
 ```json
 {
-    "workbench.editor.enablePreview":false // 预览模式关闭，直接打开新的tab页面
+	// 预览模式关闭，直接打开新的tab页面
+    "workbench.editor.enablePreview":false, 
+	
+	// Customizes which terminal to run on Windows.
+	"terminal.external.windowsExec": "C:\\windows\\System32\\cmd.exe", 
+	
+	// The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
+	"terminal.integrated.shell.windows": "C:\\windows\\system32\\cmd.exe",
+	
 }
 ```
 
