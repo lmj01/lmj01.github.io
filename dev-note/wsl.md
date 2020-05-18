@@ -1,5 +1,9 @@
 # WSL
 
+## ver
+查看window的版本
+
+
 ## curl
 
 GET请求
@@ -43,3 +47,5 @@ cd boost_1_xx_y_z
 ./bootstrap.sh 
 ./b2 install 
 ```
+
+
