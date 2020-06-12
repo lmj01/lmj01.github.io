@@ -1,3 +1,10 @@
+# node
+
+```bat
+node --harmony script.js --version --help
+--harmony 传递给node参数的修饰
+```
+
 # npm
 
 ```javascript

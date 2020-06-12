@@ -68,6 +68,7 @@ pox.xml merge=ours
 
 1. git rm --cached file.ext 删除file.ext的跟踪， 并保留本地的
 2. git rm -f file.ext 删除跟踪，并删除本地文件
+3. git reset --hard xxxx // 退回到那个版本
 
 ## submodule
 

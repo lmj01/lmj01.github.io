@@ -1,6 +1,7 @@
 
 # Cascading Style Sheets
-> 很多算法促成了CSS的强大，但是不能理解很难熟练应用，细节很多，让人很难熟练应用！
+
+css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的效果也很容易。
 
 ***
 
@@ -12,8 +13,6 @@
 /* offset-x:1 offset-y:2 blur-radius:3 spread-radius:4 */
 box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 ```
-
-
 
 ## [CSS](https://www.w3.org/Style/CSS/)
 
@@ -36,6 +35,7 @@ class2 {
 <element class="class1 class2 class3">
 ```
 结果是class2 > class3 > class1。
+
 ### Concepts
 #### stacking context & z-index
 
@@ -62,8 +62,6 @@ box-model分为两类:块状block和行内inline,两种的区别:
 2. block独占一行,除非修改了element的样式,而inline只会在一行内显示
 3. block的width默认100%,而inline是根据element内容及element-child来决定
 
-###### Visual formatting model
-block-level是指element的display值为block,list-item,或table.
 
 ##### position
 1. **Normal Document Flow普通流**,指的是HTML代码的位置从上往下决定了element的位置;
@@ -90,6 +88,9 @@ block-level是指element的display值为block,list-item,或table.
 ```
 
 ### transform
+
+视觉格式模型[visual formatting model](https://www.w3.org/TR/CSS22/visuren.html)
+
 #### matrix
 ```javascript
 // Cartesian Homogeneous Coordinate
@@ -122,6 +123,8 @@ Syntactically Awesome StyleSheets
 搜索
 
 使用node-sass比起ruby的sass容易很多搭建环境
+
+
 
 
 
