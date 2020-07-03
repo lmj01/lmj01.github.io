@@ -10,3 +10,7 @@ personal notes
 - [python](./blender/source/python_005.md)
 - [data api](./blender/source/data_api.md)
 - [addons](./blender/source/addon_006.md)
+
+## articles
+
+- [Engines](./articles/engines.md)

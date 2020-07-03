@@ -54,7 +54,24 @@ wasm-pack build
 
 ## cargo 
 
+cargo init --bin // 在当前非空文件夹中创建新的crate
+cargo new foobar // 创建可执行工程
+cargo new --lib foobar // 创建一个库
+
 cargo build --release  // 默认编译为debug模式
+
+### test
+
+cargo test 直接运行带有修饰的对象
+```rust
+#[cfg(test)]
+pub mod test_demo {
+	#[test]
+	pub fn demo1() {
+		let txt = '222';
+	}
+} 
+```
 
 ## config
 
