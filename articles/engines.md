@@ -16,10 +16,12 @@
     - [code](https://github.com/mrdoob/three.js/)
 - [babylon.js](https://www.babylonjs.com/)
     - [code](https://github.com/BabylonJS/Babylon.js)
+- [GeeXLab](https://geeks3d.com/geexlab/)
 
 ### 渲染器
 
 - [Soft Rendering](https://github.com/huanzai/SoftRendering)
+- [ray tracing News Guide](http://www.realtimerendering.com/resources/RTNews/html/)
 
 ## 相关文章
 
