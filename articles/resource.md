@@ -13,7 +13,10 @@
 ### 插件式
 
 个人接触插件式框架，是网狐游戏平台6601，每个小游戏都是一个dll服务单元。
+
 [Boost Dynamic Library Load](https://github.com/boostorg/dll)是用来加载动态库的，[Boost.DLL最新文档](http://apolukhin.github.io/Boost.DLL/index.html)
+
+[OpenResty® is a dynamic web platform based on NGINX and LuaJIT](https://openresty.org/en/)
 
 ## 专题
 
