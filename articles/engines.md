@@ -27,3 +27,5 @@
 
 - [Exposure Render: An Interactive Photo-Realistic Volume Rendering Framework ](https://pubmed.ncbi.nlm.nih.gov/22768292/)
     - [code](https://github.com/ThomasKroes/exposure-render)
+- [Deep dive into OpenGL over DirectX layering](https://www.collabora.com/news-and-blog/blog/2020/07/09/deep-dive-into-opengl-over-directx-layering/)
+- [Introducing OpenCL and OpenGL on DirectX](https://www.collabora.com/news-and-blog/news-and-events/introducing-opencl-and-opengl-on-directx.html)
