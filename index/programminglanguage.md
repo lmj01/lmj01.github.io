@@ -11,3 +11,5 @@
 ### 相关文章
 
 - [The Fatal Flaw of Ownership Semantics](https://www.gingerbill.org/article/2020/06/21/the-ownership-semantics-flaw/)
+
+- [Language Independent Validation Rules](https://livr-spec.org/)

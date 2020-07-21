@@ -1,11 +1,9 @@
-# node
+# npm
 
 ```bat
 node --harmony script.js --version --help
 --harmony 传递给node参数的修饰
 ```
-
-# npm
 
 ```javascript
 npm init
@@ -18,9 +16,10 @@ node index.js
 ```shell
 npm install xxx	// 安装默认
 npm install xxx@a.b.c // 安装指定版本
+npm install -ddd // 可以查看安装的细节  
 ```
 
-## 常用命令
+## 配置
 
 ### proxy
 
@@ -31,10 +30,13 @@ npm config get https-proxy
 npm config set proxy null 
 npm config set https-proxy null 
 
+npm config get registry
+npm config delete registry
+
 ```
 
 
-## cnpm
+### cnpm
 为解决国内网络环境的问题，需要使用稳定的网络源
 [淘宝镜像](https://npm.taobao.org/)
 
@@ -42,5 +44,19 @@ npm config set https-proxy null
 npm install -g mirror-config-china --registry=https://registry.npm.taobao.org
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ln -s xxx/cnpm /usr/bin/cnpm
+
 ```
+
+### install failure
+
+npm 有9层日志行为
+silent, error, warn, notice, http, timing, info, verbose, silly
+
+合并代码时，总是被他人的package.json与package-lock.json产生的冲突问题
+
+源可能存在问题，如设置淘宝的源，就需要删除registry使用默认的
+
+npm cache clean --force
+npm config list
+npm install -ddd 查看安装细节卡住哪里
 
