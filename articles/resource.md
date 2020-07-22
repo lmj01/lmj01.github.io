@@ -10,6 +10,8 @@
 
 - [Plywood](https://plywood.arc80.com/)
     - [github](https://github.com/arc80)
+- [Wt is a web GUI library in modren C++](https://www.webtoolkit.eu/wt)
+    - [github](https://github.com/emweb/wt)
 
 ### 插件式
 
