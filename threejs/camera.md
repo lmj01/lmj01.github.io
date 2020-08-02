@@ -91,3 +91,9 @@ camera.updateProjectionMatrix();
 
 在之前接触的固有思维中，基本是不去改变projection matrix的，毕竟构造这个是非常耗时的，可是在
 特定场景中，就存在允许的情况下进行。
+
+### problems
+
+- [zoom in camera](https://github.com/mrdoob/three.js/issues/5113)
+- [add zoom method to OrthographicCamera and PerspectiveCamera](https://github.com/mrdoob/three.js/pull/5119)
+- [Matrix4.makePerspective() is never used](https://github.com/mrdoob/three.js/issues/10265)
