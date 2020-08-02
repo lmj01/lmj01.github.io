@@ -12,6 +12,8 @@
     - [github](https://github.com/arc80)
 - [Wt is a web GUI library in modren C++](https://www.webtoolkit.eu/wt)
     - [github](https://github.com/emweb/wt)
+- web components
+    - [A forward-thinking library of web components](https://shoelace.style/)
 
 ### 插件式
 
@@ -20,6 +22,12 @@
 [Boost Dynamic Library Load](https://github.com/boostorg/dll)是用来加载动态库的，[Boost.DLL最新文档](http://apolukhin.github.io/Boost.DLL/index.html)
 
 [OpenResty® is a dynamic web platform based on NGINX and LuaJIT](https://openresty.org/en/)
+
+- [Nginx](https://nginx.org/)
+- [Envoy proxy](https://www.envoyproxy.io/)
+    - [github](https://github.com/envoyproxy/envoy)
+- [Rocket Rust](https://rocket.rs/)
+    - [github](https://github.com/lmj01/Rocket)
 
 ## 专题
 
@@ -30,14 +38,19 @@
 
 ## 电子书籍
 
-- OpenGL SuperBible, 2010
-- OpenGL Programming Guide, 2009
-- Computer Graphics, 3rd Edition, 2013
-- Fundamentals of Computer Graphics, Third Editio, 2009
-- Mathematics for 3D Game Programming and Computer Graphics, Third Edition, 2011
-- Fundamentals of Computer Graphics, Fourth Edition, 2015
-- Vulkan Programming Guide, 2016
-- Mathematics for Computer Science, 2017
-- Digital Image Processing, 4th Edition, 2018
-- Real-Time Rendering, Fourth Edition, 2018
+- OpenGL SuperBible, 2010(已读)
+- OpenGL Programming Guide, 2009(已读)
+- [Foundations of Computation 2011](http://math.hws.edu/FoundationsOfComputation/)(在读)
+- Computer Graphics, 3rd Edition, 2013(已读)
+- Fundamentals of Computer Graphics, Third Editio, 2009(已读)
+- Mathematics for 3D Game Programming and Computer Graphics, Third Edition, 2011(在读)
+- Fundamentals of Computer Graphics, Fourth Edition, 2015(在读)
+- Vulkan Programming Guide, 2016(在读)
+- Mathematics for Computer Science, 2017(在读)
+- Digital Image Processing, 4th Edition, 2018(在读)
+- Real-Time Rendering, Fourth Edition, 2018(已读)
 
+### 下载资源
+
+- [Book Cord](https://bookcord.com/)
+- [Top free book](https://www.topfreebooks.org/)
