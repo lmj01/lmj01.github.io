@@ -7,6 +7,14 @@ css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的�
 
 ## effect
 
+### scroll
+
+如果要是scroll起作用，一定是在子元素设置min-width,这样就会超出父元素，在父元素设置overflow-auto就可以有滚动条了。
+是子元素冒出父元素，不是父元素使用子元素
+
+### li 
+横向摆放，使用float-left模式来处理
+
 ### box-shadow
 
 ```css
@@ -110,6 +118,7 @@ box-model分为两类:块状block和行内inline,两种的区别:
 
 
 ## Tools
+
 ### WebAIM:web accessibility in mind
 - [Color Contrust Check](https://webaim.org/resources/contrastchecker/) 
 
@@ -128,7 +137,4 @@ Syntactically Awesome StyleSheets
 
 
 
-## Library:
-- [pure](https://purecss.io/menus/): A set of small, respeonsive CSS modules that you can use in every web project.
-- [Remix Icon](https://remixicon.com/)，一套免费，可商用，设计精美、细致的图标库
 

@@ -8,4 +8,5 @@
 
 - [webgl](https://webglreport.com/)
 - [gpuinfo](http://gpuinfo.org/)
+- [webgl photo editor](https://www.befunky.com/)
 

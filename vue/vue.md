@@ -5,7 +5,7 @@
 - 前缀$: Vue实例暴露了一些实例的属性与方法,都是前缀,如$emit
 - 前缀@: v-on:的缩写
 
-### 组件
+### component
 
 #### data
 组件内部的变量是data，但不能赋值实例给data，可以使用闭包`data:function(){return{k:v}}`相当于OOP中私有属性
@@ -91,5 +91,9 @@ EventBus.$off() // 移除所有事件的监听
 ```
 可以看到只是一个Vue的实例,不具备DOM的组件
 
+### Mixin
 
+与component相比，mixin是一个新的对象，把两者合并，是implement上的方案。
+而component是一种design pattern上的组件，
 
+分全局混入Vue.mixin与引入混入mixins
