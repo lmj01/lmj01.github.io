@@ -7,6 +7,14 @@ CAS(Central Authentication Service)旨在为Web应用系统提供一种可靠的
 SSO(Single Sign-On)是服务于企业业务整合的解决方案之一，SSO使得多个应用系统中，用户只需要登录一次，
 就可以访问所有互相信任的应用系统。
 
+## 缓存
+
+浏览器会保存页面的特定的资源在硬盘上，
+
+- images：picture，background，logos
+- css
+- html
+- javascript
 
 
 ## Chrome
@@ -26,6 +34,7 @@ SSO(Single Sign-On)是服务于企业业务整合的解决方案之一，SSO使�
 Online可以设置网速
 
 ![network throttling](./images/chrome-network-throttling.png)
+
 
 # 参考
 

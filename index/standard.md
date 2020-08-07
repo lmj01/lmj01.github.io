@@ -3,6 +3,7 @@
 ## 语言
 
 - [Promises/A+](https://promisesaplus.com/)
+- [then Differences from Promises/A](https://promisesaplus.com/differences-from-promises-a)
 
 ## W3C
 

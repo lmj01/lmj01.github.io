@@ -1,19 +1,4 @@
 # Tool
-    
-
-## Subversion
-
-- svn up(update) 
-- svn update -r r644 切换到版本644
-- svn co(checkout) svn-path
-- svn add file
-- svn commit -m "message"
-- svn st(status)
-- svn diff
-- svn revert
-- svn merge -r 608:602 "" 从r608回滚到r602
-- svn info
-
 
 ### VSCode
 - 编辑页面切换 Alt + num
