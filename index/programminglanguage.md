@@ -1,5 +1,7 @@
 # 编程语言
 
+- [多态](../articles/polymorphism.md)
+
 ## rust
 
 ### 相关文章

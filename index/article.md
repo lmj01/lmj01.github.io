@@ -2,7 +2,7 @@
 
 - [留心的资源](../articles/resource.md)
 - [个人认识](../articles/personal.ideas.md)
-
+- [3D引擎](../cg/engines.md)
 
 ## 他人文章
 

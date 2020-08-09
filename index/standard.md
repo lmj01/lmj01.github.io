@@ -12,7 +12,7 @@
 
 ## OpenGL
 
-- [Computer Graphics Matrix](../articles/cgMatrix.md)
+- [Computer Graphics Matrix](../cg/cgMatrix.md)
 
 ## Images
 
