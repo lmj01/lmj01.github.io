@@ -234,3 +234,12 @@ mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm 
 - latex xxxx
 xxxx是tex的文件名，后缀.tex可省略，最后点击Latex的build控件执行生成pdf。只有在更改新的参考文档时，需要重新按照这个步骤执行。
 \begin{math}比起$$语法更加容易懂，注意，网上搜索到的都是毕竟旧的，要查看文档。
+
+# vscode
+
+分析一下vscode利用web技术来开发的桌面软件
+
+
+## reference
+
+- [从 VSCode 看大型 IDE 技术架构](https://zhuanlan.zhihu.com/p/96041706)
