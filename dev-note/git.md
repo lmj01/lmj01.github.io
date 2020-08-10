@@ -14,6 +14,7 @@
 7. git submodule update更新子模块
 8. git submodule foreach git pull拉取所有的子模块
 9. git reset --hard origin/master 强制覆盖本地的修改
+10. git rebase 已服务器远程仓库为基准
 
 ## 创建 
 1. git init 对当前目录进行git初始化
