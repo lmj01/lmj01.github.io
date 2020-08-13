@@ -4,6 +4,11 @@
 - [个人认识](../articles/personal.ideas.md)
 - [3D引擎](../cg/engines.md)
 
+## 整理总结
+
+- [裁剪](../cg/culling.md)
+- [四元数](../cg/quaternion.md)
+
 ## 他人文章
 
 - [Steve's Computer Graphics Index](http://steve.hollasch.net/cgindex/)
