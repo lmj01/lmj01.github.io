@@ -14,6 +14,7 @@
     - [github](https://github.com/emweb/wt)
 - web components
     - [A forward-thinking library of web components](https://shoelace.style/)
+    - [FAST is a collection of technologies build on modern web componets and modern web standards](https://www.fast.design/)
 
 ### 插件式
 
@@ -55,3 +56,4 @@
 - [Book Cord](https://bookcord.com/)
 - [Top free book](https://www.topfreebooks.org/)
 - [公共电子书搜索](https://www.gitenberg.org/)
+- [在线数学之欧几里德](https://projecteuclid.org/)
