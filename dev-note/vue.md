@@ -12,6 +12,11 @@
 **关于更新：如果数据层次太深，不能触发render自动更新，需要手动更新`this.$forceUpdate();`**
 **这样会出现一个问题，既然是闭包，多次重复使用组件时，还是使用了一个对象值**
 
+- 使用多个组件components时，data的层次较深，不能自动更新，需要设置. 尽量不通过props进行向下传递，而直接使用method进行设置 
+```javascript
+this.$refs.child.$forceUpdate();
+```
+
 ```javascript
 // 仅影响实例本身和插入插槽内容的子组件
 this.$forceUpdate();
@@ -98,15 +103,55 @@ EventBus.$off() // 移除所有事件的监听
 
 分全局混入Vue.mixin与引入混入mixins
 
-## vue-cli 
-> nodejs 环境使用组件开发
+
+
+### Vue-loader
+
+vue 文件称为 SFC(Single File Components)，包含三个template，script，style三个块，也可添加自定义块。
+每个快可以通过src属性导入外部文件
+vue-loader就是解析这些块的，最后组装成一个ES Module，默认导出的是一个Vue.js组件选项的对象。
+
+#### template
+
+#### script 
+
+#### style 
+
+可以有多个style块，可以添加标签scoped或module
+
+- scoped CSS
+- Modules 
+- custom block,自定义模块，需要配置loader来解析
+
+### Vue-Router
+
+一般单页应用SPA本身就是一个HTML，通过前端的router来决定渲染什么内容。
+
+前端的router有两种模式
+
+- hash，默认模式。改变hash是不会重新加载页面的
+- history，利用了HTML5的History Interface中pushState和replaceState接口
+
+Vue-router就是利用两个特性来实现前端路由的，不刷新页面，减少HTTP请求。在不同场景中hash模式中的#可能会被特殊处理，如会破坏路由中的#，就需要使用history模式。单history模式会容易出现空白页面，加载资源的错误信息不会显示出来,需要配置一下资源路径。
+```javascript 
+new Router({
+    mode: 'history',
+    base: '/dist',
+})
+```
+SPA使用router来处理就是为了体验效果，接管链接避免跳转刷新页面是它的本质问题。
+
+
+## 开发事项 
+ 
+nodejs 环境使用组件开发vue-cli
 
 ```shell 
 npm install -g @vue/cli 安装vue-cli3 
 vue ui 使用网页操作创建项目
 ```
 
-## inspect
+### inspect
 
 webpack配置信息
 
@@ -117,37 +162,15 @@ npm vue-cli-service inspect --mode production
 npm vue-cli-service inspect --mode development
 
 
-## Vue-loader
-
-vue 文件称为 SFC(Single File Components)，包含三个template，script，style三个块，也可添加自定义块。
-每个快可以通过src属性导入外部文件
-vue-loader就是解析这些块的，最后组装成一个ES Module，默认导出的是一个Vue.js组件选项的对象。
-
-### template
-
-### script 
-
-### style 
-
-可以有多个style块，可以添加标签scoped或module
-
-#### scoped CSS
-
-#### CSS Modules 
-
-### custom block
-自定义模块，需要配置loader来解析
 
 
-## 核心概念
+## 源码解读
 
-### hydration
 
-client-side hydration 客户端激活，指Vue在浏览器端接管由服务端发送的静态HTML，使用Vue管理DOM的过程
+### 概念
 
-### Flow
-
-静态检查，是Facebook的工具，比typescript要轻量级些！
+- hydration， client-side hydration 客户端激活，指Vue在浏览器端接管由服务端发送的静态HTML，使用Vue管理DOM的过程
+- Flow， 静态检查，是Facebook的工具，比typescript要轻量级些！
 
 
 ### 深入响应式原理
@@ -169,7 +192,7 @@ Object.defineProperty(obj, propString, {
 变量obj的属性进行跟踪，判断是否重新渲染，这个过程就是响应式。
 ![](images/vue2-flow.png)
 
-## Vue本质
+### Vue本质
 
 从src/platforms入手，有web和weex两个子目录，web关注的是Web技术，Weex是使用Web开发体验来开发高性能
 的原生应用的框架，即把Web的语言JavaScript和开发经验来构建Android，iOS和Web应用的跨平台开发。
@@ -225,7 +248,7 @@ Vue这个函数定义就是在src/core/instance/index.js中,**Vue本质就是一
 - Vue.prototype.__patch__ 
 - Vue.prototype.$mount 
 
-### __patch__ 
+#### __patch__ 
 
 因为一些配置，patch转了几个文件，核心文件还是在src/core/vdom/patch.js中 
 
@@ -240,26 +263,25 @@ function createPatchFunction() {
 
 这是一个闭包函数，大致思路分两个分支，正式进入前，需要对VNode对象先有理解。
 
-#### oldVnode 未定义
+##### oldVnode 未定义
 
 
-#### oldVnode存在，更新
+##### oldVnode存在，更新
 
-### VNode
-
-
-
-### Watcher 
+#### VNode
 
 
-## 逐行剖析Vue.js源码
 
-参考[1]中的源码解析真的很透彻，看完了，目前来说我算是才对Vue有了一个大概的了解，其他内部的复杂程度
-还是非常高的，虽然前端的库应该没有那么高深，但是每个知识点还是运用到位的。佩服作者的功底深厚。
+#### Watcher 
 
-每个细节上的逻辑都很到位，从计划中来看我的分析话，肯定就是口水仗，行文不通，思维不连续，但是看别人
-的分析过程和结果，却是让人思考很多的。知识的累积真的是一个大工程，不容易的。
 
-# 参考
+### 感受
+
+#### 2019/12/01
+参考[1]中的源码解析真的很透彻，看完了，目前来说我算是才对Vue有了一个大概的了解，其他内部的复杂程度还是非常高的，虽然前端的库应该没有那么高深，但是每个知识点还是运用到位的。佩服作者的功底深厚。
+
+每个细节上的逻辑都很到位，从计划中来看我的分析话，肯定就是口水仗，行文不通，思维不连续，但是看别人的分析过程和结果，却是让人思考很多的。知识的累积真的是一个大工程，不容易的。
 
 1. https://nlrx-wjc.github.io/Learn-Vue-Source-Code/
+
+## 参考
