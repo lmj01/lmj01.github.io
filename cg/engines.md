@@ -32,3 +32,4 @@
 - [Introducing OpenCL and OpenGL on DirectX](https://www.collabora.com/news-and-blog/news-and-events/introducing-opencl-and-opengl-on-directx.html)
 - [Direct Volume Rendering](https://cgl.ethz.ch/teaching/former/scivis_07/Notes/stuff/StuttgartCourse/VIS-Modules-06-Direct_Volume_Rendering.pdf)
 - [Visibility-Aware Direct Volume Rendering](http://www.cad.zju.edu.cn/home/ycwu/Files/visibility.pdf)
+
