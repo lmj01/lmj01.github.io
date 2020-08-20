@@ -57,7 +57,7 @@
 
 ### 四元数插值
 
-SLERP代表**S**pherical **L**inear Int**erp**olation
+SLERP代表**S**pherical **L**inear Int**erp**olation, 可以在2个朝向之间平滑地插值
 
 ### 顺序无关的旋转混合
 

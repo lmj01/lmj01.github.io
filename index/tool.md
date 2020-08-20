@@ -15,3 +15,9 @@
 
 - [俄罗斯Yandex](https://yandex.com/)
 
+## DNS
+
+### 不能访问lmj01.github.io
+设置DNS路径
+223.5.5.5
+223.6.6.6
