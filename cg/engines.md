@@ -18,6 +18,7 @@
     - [code](https://github.com/BabylonJS/Babylon.js)
     - [学习文档](./babylon.md)
 - [GeeXLab](https://geeks3d.com/geexlab/)
+- [PBRT-v4](https://github.com/mmp/pbrt-v4)
 
 ### 渲染器
 
