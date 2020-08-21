@@ -15,6 +15,10 @@
 
 - [俄罗斯Yandex](https://yandex.com/)
 
+### portable
+
+- [PortableApps Portable software](https://portableapps.com/)
+
 ## DNS
 
 ### 不能访问lmj01.github.io

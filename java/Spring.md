@@ -2,13 +2,9 @@
 
 框架
 
-
-
 ## IoC
 
 Inversion of Control，控制反转，是spring框架的核心，本质就是spring负责控制对象的生命周期和对象间的关系。
-
-## 控制权
 
 在程序运行中，传统方法是，对象A要调用对象B，A具有B的所有控制权，而在IoC中，A的控制权转移到spring中，A向spring要对象B。
 

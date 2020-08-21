@@ -1,8 +1,13 @@
 # WSL
 
-## ver
-查看window的版本
-
+**常用命令**
+```bat
+rem 查看window版本
+ver 
+rem 进入当前子系统
+wsl 
+bash 
+```
 
 ## curl
 
@@ -14,6 +19,54 @@ curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"
 
 
 ## 环境搭建
+
+### 环境变量
+
+env 或 printenv
+
+在终端中设置
+
+```shell
+# 添加没有的全局变量
+# method 1 
+DOWNLOAD=/home/lmj/download
+export DOWNLOAD 
+# method 2
+export DOWNLOAD=/home/lmj/download
+
+# 修改已存在的环境变量
+# method 1
+export PATH=/home/lmj/anacoda2:$PATH
+# method 2
+export PATH=$PATH:/home/lmj/anacoda2
+
+# 删除
+unset DOWNLOAD
+```
+
+永久设置环境变量，可直接更改系统启动文件或当前用户的启动文件
+
+- /etc/profile
+- /etc/environment
+- ~/.profile
+- ~/.bashrc
+
+修改了永久的，要起作用就需要
+```shell
+# 重启电脑或执行才能起效
+source /etc/profile
+```
+
+### 不能ping
+之前设置npm的淘宝镜像后，很多地方被改动了，查看resolv.con文件时是乱码，
+删除文件后重新设置如下字段就可以ping了。
+vim /etc/resolv.conf
+```bat
+nameserver 8.8.8.8
+nameserver 114.114.114.114
+```
+
+### 更新源
 
 ```shell
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bk
@@ -49,3 +102,7 @@ cd boost_1_xx_y_z
 ```
 
 
+
+## 参考
+
+- [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
