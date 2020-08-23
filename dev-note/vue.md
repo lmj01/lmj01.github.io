@@ -1,5 +1,7 @@
 # Vue
 
+
+
 ## 特性
 - props中字段尽量小写
 - 前缀$: Vue实例暴露了一些实例的属性与方法,都是前缀,如$emit
@@ -164,8 +166,8 @@ npm vue-cli-service inspect --mode development
 
 
 
-## 源码解读
 
+## 源码解读
 
 ### 概念
 

@@ -14,6 +14,7 @@
 - [bgfx](https://github.com/bkaradzic/bgfx)
 - [three.js](https://threejs.org/)
     - [code](https://github.com/mrdoob/three.js/)
+    - [Path Tracing Renderer](https://github.com/erichlof/THREE.js-PathTracing-Renderer)
 - [babylon.js](https://www.babylonjs.com/)
     - [code](https://github.com/BabylonJS/Babylon.js)
     - [学习文档](./babylon.md)
@@ -23,7 +24,14 @@
 ### 渲染器
 
 - [Soft Rendering](https://github.com/huanzai/SoftRendering)
+- [Tiny renderer for how opengl works](https://github.com/ssloy/tinyrenderer)
 - [ray tracing News Guide](http://www.realtimerendering.com/resources/RTNews/html/)
+- [neural renderer](https://hiroharu-kato.com/projects_en/neural_renderer.html)
+- [OSL Open Shading Language](https://github.com/imageworks/OpenShadingLanguage)
+- [3D软渲染教程](https://github.com/skywind3000/mini3d)
+- [3D渲染教程GPU](https://github.com/skywind3000/RenderHelp)
+- [Vulkan-Forward Plus Renderer](https://github.com/WindyDarian/Vulkan-Forward-Plus-Renderer)
+
 
 ## 相关文章
 

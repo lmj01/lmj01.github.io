@@ -16,6 +16,9 @@ make.bat lite
 参考
 [building blender options](https://wiki.blender.org/wiki/Building_Blender/Options)
 
+主要代码有三种C的数据结构，C++的跨平台，Python的业务逻辑接口且向外提供服务
+
+
 ## 概念
 
 ### abbr-prefix

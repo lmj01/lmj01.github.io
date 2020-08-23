@@ -19,9 +19,27 @@
 
 - [PortableApps Portable software](https://portableapps.com/)
 
-## DNS
+## 网络
 
-### 不能访问lmj01.github.io
-设置DNS路径
+### DNS
+
+谷歌全球通DNS
+8.8.8.8
+8.8.4.4
+
+国内114
+114.114.114.114
+114.114.115.115
+
+阿里云公共DNS
 223.5.5.5
 223.6.6.6
+
+百度
+180.76.76.76
+
+### 反向代理
+
+- FRP-Fast Reverse Proxy
+    - [github](https://github.com/fatedier/frp)
+- cpolar
