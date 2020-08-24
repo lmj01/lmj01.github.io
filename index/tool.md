@@ -3,6 +3,9 @@
 ## 开发工具
 
 - [WSL-window子系统](../dev-note/wsl.md)
+- [Rome前端工具](https://romefrontend.dev/) 将所有JavaScript开发工具集中在一个软件包里面。
+- [Graphviz](http://graphviz.org/) graphviz是一个集成化的工具，包含了各种功能在里面
+    - dot,是一种图形描述语言，可以把图形渲染成png，jpg，pdf等类型
 
 ## 在线工具
 

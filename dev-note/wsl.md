@@ -1,5 +1,6 @@
 # WSL
 
+
 **常用命令**
 ```bat
 rem 查看window版本
@@ -8,6 +9,11 @@ rem 进入当前子系统
 wsl 
 bash 
 ```
+
+## bat
+- echo %XXX-path% 打印环境变量
+- netstat -aon | findstr "9090" 查看端口号
+
 
 ## curl
 
