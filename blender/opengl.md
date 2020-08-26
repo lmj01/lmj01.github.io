@@ -44,7 +44,94 @@ void GPU_exit(void) {}
 
 gpu_platform_init函数处理不同厂家不同驱动类型，初始化的过程主要是处理一些特定GPU的问题，如某个版本的驱动bug导致不能使用blender的问题
 
-gpu_codegen_init函数是重点，封装了很多概念，如GPUPass,GPUMaterial,GPUNodeGraph,GPUOutput,GPUShader,GSet， 就是转换材质material node-tree到GLSL
+### gpu_codegen
+
+gpu_codegen_init函数是重点，封装了很多概念，如
+- GPUPass
+- GPUMaterial
+- GPUNodeGraph 
+- GPUOutput 
+- GPUShader
+- GSet
+
+就是转换材质material node-tree到GLSL
+
+### gpu_material
+
+gpu_material_library_init函数是初始化内建的材质信息
+是外部文件gpu_shader_material_*.glsl提供的一种映射，用于GPU_link
+在source/blender/gpu/shaders目录中就包含了这些默认的glsl文件
+
+目前看到有关shader的，在OpenGL或webGL中还都是这样处理的，都是字符串的拼接逻辑，比较不会有非常大的shader文件，而在vulkan中引入的二进制是更底层的抽象。要进行字符串地拼接，流程上就需要更加强大的处理能力了，像blender这种三维编辑软件，又是随时可以改变的，要考虑的就非常复杂了。
+
+### gpu_framebuffer
+
+gpu_framebuffer_module_init函数目前是占位作用，是帧缓冲区逻辑模块，向外提供的离屏缓冲区接口
+```c
+/* GPU Framebuffer
+ * - this is a wrapper for an OpenGL framebuffer object (FBO). in practice
+ *   multiple FBO's may be created, to get around limitations on the number
+ *   of attached textures and the dimension requirements.
+ * - actual FBO creation & config is deferred until GPU_framebuffer_bind or
+ *   GPU_framebuffer_check_valid to allow creation & config while another
+ *   opengl context is bound (since FBOs are not shared between ogl contexts).
+ */
+/* GPU OffScreen
+ * - wrapper around framebuffer and texture for simple offscreen drawing
+ */
+typedef struct GPUAttachment {
+  struct GPUTexture *tex;
+  int mip, layer;
+} GPUAttachment;
+
+struct GPUFrameBuffer {
+  GPUContext *ctx;
+  GLuint object;
+  GPUAttachment attachments[GPU_FB_MAX_ATTACHEMENT];
+  uint16_t dirty_flag;
+  int width, height;
+  bool multisample;
+  /* TODO Check that we always use the right context when binding
+   * (FBOs are not shared across ogl contexts). */
+  // void *ctx;
+};
+// intern/gpu_texture.c
+struct GPUTexture {
+  int w, h, d;        /* width/height/depth */
+  int orig_w, orig_h; /* width/height (of source data), optional. */
+  int number;         /* number for multitexture binding */
+  int refcount;       /* reference count */
+  GLenum target;      /* GL_TEXTURE_* */
+  GLenum target_base; /* same as target, (but no multisample)
+                       * use it for unbinding */
+  GLuint bindcode;    /* opengl identifier for texture */
+
+  eGPUTextureFormat format;
+  eGPUTextureFormatFlag format_flag;
+
+  uint bytesize;  /* number of byte for one pixel */
+  int components; /* number of color/alpha channels */
+  int samples;    /* number of samples for multisamples textures. 0 if not multisample target */
+
+  int fb_attachment[GPU_TEX_MAX_FBO_ATTACHED];
+  GPUFrameBuffer *fb[GPU_TEX_MAX_FBO_ATTACHED];
+};
+```
+可以看到每个FrameBuffer有多个Attachment，每个Attachment就是Texture，而GPUTexture这里就没有看太明白，不知道这个结构关系是怎么来解读，关于这个可以看[3D API](../cg/API.md)中关于Buffer缓冲区的描述
+
+### gpu_batch
+
+前面说了FrameBuffer，这里说说Attachment的那些buffer需要填充的数据。文件头的简单一句话就描述了整个模块的功能
+
+```c
+/** \file
+ * \ingroup gpu
+ *
+ * GPU geometry batch
+ * Contains VAOs + VBOs + Shader representing a drawable entity.
+ */
+
+```
 
 
 ## GUI

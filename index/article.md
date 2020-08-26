@@ -8,6 +8,7 @@
 
 - [裁剪](../cg/culling.md)
 - [四元数](../cg/quaternion.md)
+- [3D API](../cg/API.md)
 
 ## 他人文章
 
