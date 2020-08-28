@@ -1,6 +1,10 @@
-# Jimp
+# Image Manipulation
+
+## [Jimp](https://github.com/oliver-moran/jimp)
 
 JavaScript Image Manipulation Program
+
+全JavaScript写的图形处理库，测试后发现有可取之处，但是对于大图像来说，还是非常的不适合，像素宽高一大起来就没法处理
 
 它的源码使用了workspace的概念，可以分析分析研究研究。 使用typescript，还已3.1为分界线，处理了两套接口，工程上非常值得研究分析一下， 这里讨论3.1以后的代码逻辑，3.1版的架构思路也非常清晰
 
@@ -35,27 +39,28 @@ export function jimpEvMethod(methodName, evName, method) {
 核心分两部分，type和plugin，type是支持的图像格式，plugin是每个独立的功能模块
 全部的算法部分都是使用JavaScript实现的
 
-## type
+### type
 
-## plugin
+### plugin
 
-### flip
+flip
 
 通过遍历每个像素，映射一下位置关系，并没有做任何的其他计算
 
-### rotate
+rotate
 
 分两种模式，一是中心旋转，并保存宽高；一是不改变宽高
 
-### resize
+resize
 
 提供了不同resize的不同插值算法
 
-## utils
+### utils
 
 小工具
 
-### scan
+scan遍历
+
 ```javascript
 export function scan(image, x, y, w, h, f) {
   // round input
@@ -75,7 +80,14 @@ export function scan(image, x, y, w, h, f) {
 }
 ```
 
-## using
+### using
 
 npm install --save jimp
 
+## [photon](https://github.com/silvia-odwyer/photon)
+
+有很多基础功能，但是没有rotate，暂时不能使用了。
+
+### use
+
+npm install @silvia-odwyer/photon

@@ -12,6 +12,7 @@
 - [webgl](https://webglreport.com/)
 - [gpuinfo](http://gpuinfo.org/)
 - [webgl photo editor](https://www.befunky.com/)
+- [online photo editor](https://www.photopea.com/)
 - [在线多种语言编译为汇编代码](https://godbolt.org/)
 
 ### 搜索引擎

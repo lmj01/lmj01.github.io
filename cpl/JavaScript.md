@@ -1,9 +1,10 @@
-
 # JavaScript
+
 
 Blob-binary large object
 
 ***
+
 ## 不常用特性与新语法
 ### double exclamatioin mark
 ```javascript
@@ -51,6 +52,7 @@ a == null ? undefined : a();
 
 ***
 ## JavaScript
+
 ### this
 任何一段代码都是有上下文的，解释这段代码就是在一个上下文中，而上下文对象是通过this变量来体现的，即this永远指向当前代码所处的对象中。
 与静态OOP相比，静态OOP中的this就是对象本身，而Javascript中this是上下文，有可能不是对象本身。
@@ -143,10 +145,39 @@ Drivered.prototype = Object.assign(Object.create(Base.prototype), {
 	}
 })
 ```
-	
-***
-## JS使用场景
-### Fetch API
+
+
+## Event
+
+浏览器中实现事件循环有两个概念：MacroTask宏任务和MicroTask微任务
+macrotasks：setTimeout, setInterval, setImmediate, I/O, UI rendering
+microtasks: process.nextTick, Promise, MutationObserver(HTML5)
+
+![Event Loop](../images/js_event_loop.png)
+
+[task demo](./js/task.js)
+
+JavaScript代码执行顺序：从script开始，全局上下文进入函数调用栈，决定了执行顺序，直到执行完调用栈中非全局函数，然后执行microTask，执行完microTask后再次从队列中取一个macroTask执行，如此循环下去。
+
+宏任务与微任务的最大区别是放置在不同的任务调度队列中， microTask调用优先级高于macroTask
+在HTML5标准中Microtask queuing 称为微任务
+在ECMAScript标准中的Executable Code and Execution Context中，称为Jobs and Job Queue
+
+### MutationObserver
+
+a interface provides the ability to watch for changes being made to the DOM tree.
+
+## web worker
+HTML5提供了一个javascript多线程解决方案，在之前DOM渲染与JavaScript执行是在同一线程中执行的，现在UI界面与web worker属于不同线程了。
+- 通过worker=new Worker(url)加载一个js文件
+- 通过postMessage(data)方法来向主线程发送数据
+- 绑定worker.onmessage接受worker数据
+- 使用worker。terminate()终止一个worker
+
+## 工程化
+
+Fetch API
+
 ```javascript
 // 这里遇到一个阿里云url文件下载的问题，其实类似的地方都可以使用这个来下载
 fetch(url)
@@ -163,45 +194,13 @@ fetch(url)
 })
 ```
 
-***
 
-## 库,框架
-- **[markdown-it](https://github.com/markdown-it/markdown-it)**:Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins & high speed
-- **[marked](https://github.com/markedjs/marked)**:A markdown parser and compiler. Built for speed.
-- **[Flows](https://flow.org/en/)**: A static type checker for javascript, Vue中有使用到
-- [PeerJS](https://peerjs.com/)PeerJS wraps the browser's WebRTC implementation to provide a complete, configurable, and easy-to-use peer-to-peer connection API.
-- [filepond](https://github.com/pqina/filepond) a flexible and fun javascript file upload library
-- [Altered Qualia](https://alteredqualia.com/)一些webGL的高级demo
-- [UglifyJS](https://github.com/mishoo/UglifyJS), 是一个js解释，最小化，压缩，美化的工具集。
-
-***
-
-### 特性
-
-#### Source Map
+### Source Map
 
 js源文件转为生产文件后,调试非常麻烦,而对应的source map文件就是为了保留这个对应的文件,编译通过错误中的行列号定位错误的位置, 目前就chrome支持,Google的Closure编译器提供了支持生成map文件
 
-#### Dynamic Type
+### Dynamic Type
 
 Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types
 
-***
-## [jsbin](https://github.com/jsbin/jsbin)
-### v4搭建
-node版本需要是v7.x的，npm7 install成功后，修改配置文件
-cp config.default.json config.local.json
-编辑config.local.json把store中的adapter改成mysql，v4版本不支持sqlite
-运行 npm7 run start就可以访问了
-#### ss
-### v5搭建的环境
-1. mkdir meijie-jsbin 
-2. cd meijie-jsbin && git init
-3. git remote add origin https://github.com/lmj01/meijie-jsbin.git
-4. git remote add upstream https://github.com/jsbin/jsbin.git
-5. git fetch upstream
-6. git merge upstream/feat/next-v5
-7. git push --set-upstream origin master
-
-每次更新时，注意要合并的是upstrea/feat/next-v5到当前的本地.目前这个版本在还没有安装成功，
 
