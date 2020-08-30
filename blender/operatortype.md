@@ -1,7 +1,7 @@
 # 操作类型
 
 在文件source/blender/windowmanager/WM_types.h中
-```javascript
+```c
 typedef struct wmOperatorType {
 	/** Text for UI, undo. */
 	const char *name;
@@ -19,10 +19,9 @@ typedef struct wmOperatorType {
 } wmOperatorType;
 ```
 
-如果直接进入debug模式来分析，跟踪代码的运行还是很难理解操作符的，但是addons使用了python的API来，
-对addon有了大致的了解后，也同时对operator type中的字段的作用有了更具体的视觉效果。
-首先在release/scripts/addons/io_mesh_ply/目录中，对ply的导入导出进行初步的分析，在结合blender
-在用户界面上体现出来，就有了很好的理解。
+如果直接进入debug模式来分析，跟踪代码的运行还是很难理解操作符的，但是addons使用了python的API来，对addon有了大致的了解后，也同时对operator type中的字段的作用有了更具体的视觉效果。
+
+首先在release/scripts/addons/io_mesh_ply/目录中，对ply的导入导出进行初步的分析，在结合blender在用户界面上体现出来，就有了很好的理解。
 [Blender Python API](https://docs.blender.org/api/current/info_quickstart.html)
 
 有了一个大概的印象后，现在来分析operatortype是的流程
@@ -59,11 +58,8 @@ void WM_operatortype_append(void (*opfunc)(wmOperatorType *))
 全局搜索WM_operatortype_append在c源码中调用的地方，大致分三部分
 
 - source-blender-editors-
-
 - source-blender-python-
-
 - source-blender-windowmanager-
 
-可以注意到operator type主要是editor的功能封装，python模块是封装python的接口，windowmanager是给
-窗体实现的默认的功能
+可以注意到operator type主要是editor的功能封装，python模块是封装python的接口，windowmanager是给窗体实现的默认的功能
 

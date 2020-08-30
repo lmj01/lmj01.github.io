@@ -7,10 +7,9 @@
 - [window manager - window type](../blender/windowmanagertype.md)
 - [operator type](../blender/operatortype.md)
 - [python](../blender/python.md)
-- [data api](../blender/source/data_api.md)
-- [addons](../blender/source/addon_006.md)
-- [opengl](../blender/opengl.md)
-- [ghost](../blender/ghost.md)
+- [data api](../blender/data_api.md)
+- [addons](../blender/addon.md)
+- [ghost-General Handy Operating System Toolkit](../blender/ghost.md)
 
 ## 插件
 

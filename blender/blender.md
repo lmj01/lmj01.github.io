@@ -13,8 +13,7 @@ cd rootPath/blender
 make.bat help 
 make.bat lite 
 ```
-参考
-[building blender options](https://wiki.blender.org/wiki/Building_Blender/Options)
+参考[building blender options](https://wiki.blender.org/wiki/Building_Blender/Options)
 
 主要代码有三种C的数据结构，C++的跨平台，Python的业务逻辑接口且向外提供服务
 
@@ -77,7 +76,6 @@ blender的MVC
 	- events是user input，timers，其他的events，需要处理的
 	- notifier关注的是发送到interface，刷新或改变views，是内部模式，不需要draw的使用notifiers 
 
-**blender的data api是针对blender的DNA和RNA的操作，但是部分模块并没有使用这些API接口，如
-bmesh和aud模块**
+**blender的data api是针对blender的DNA和RNA的操作，但是部分模块并没有使用这些API接口，如bmesh和aud模块**
 
 
