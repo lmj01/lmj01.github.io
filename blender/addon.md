@@ -1,5 +1,13 @@
 # addon
 
+
+
+如果直接进入debug模式来分析，跟踪代码的运行还是很难理解操作符的，但是addons使用了python的API来，对addon有了大致的了解后，也同时对operator type中的字段的作用有了更具体的视觉效果。
+
+首先在release/scripts/addons/io_mesh_ply/目录中，对ply的导入导出进行初步的分析，在结合blender在用户界面上体现出来，就有了很好的理解。
+[Blender Python API](https://docs.blender.org/api/current/info_quickstart.html)
+
+
 在文件blenkernel/intern/addon.c中，有一系列操作addon的函数，但它声明在
 makesdna/DNA_userdef_types.h中
 ```c

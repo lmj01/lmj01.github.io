@@ -2,8 +2,11 @@
 
 是启动开启的一个版本信息，是比较独立的，可以通过分析它来熟悉窗体系统的运作方式
 
-在source/blender/windowmanager/intern/wm_init_exit.c中
-
+全局搜索
+```c
+grep -rn "WM_init_splash" --include="*.c" 
+```
+得到
 ```c
 void WM_init_splash(bContext *C)
 {
@@ -19,54 +22,37 @@ void WM_init_splash(bContext *C)
   }
 }
 ```
-
-U是一个全局变量，在文件source/blenkernel/intern/blender.c
+可以猜到U是一个全局变量，全局搜索USER_SPLASH_DISABLE找到大致的位置，可得知在文件source/blenkernel/intern/blender.c
 ```c
 Global G;
-UserDef U;
+UserDef U;  // 用户设置的全局变量值，应该读取配置文件， 它定义在source/blender/makesdns/DNA_userdef_type.h中
 ```
-U是关于用户设置的全局变量值，它定义在source/blender/makesdns/DNA_userdef_type.h中
 
-在source/blender/makesdns/DNA_windowmanager_types.h中定义
-wmWindowManager
-wmWindow
+可以看到通过上下文Context获取wmWindowManager和wmWindow, 在拿到了这些对象后，if的body中最主要的一句就是调用函数WM_operator_name_call，就是让它显示出来。
 
-在source/blender/blenkernel/intern/context.c中
-```c
-wmWindow *CTX_wm_window(const bContext *C)
+继续搜关键词WM_OT_splash，发现文件intern/wm_splash_screen.c文件，基本是整个splash的所有逻辑
+
+## wm_splash_screen.c
+> This file contains the splash screen logic (the `WM_OT_splash` operator).
+> - Loads the splash image.
+> - Displaying version information.
+> - Lists New Files (application templates).
+> - Lists Recent files.
+> - Links to web sites.
+
+整个文件的核心就是函数
+```c 
+void WM_OT_splash(wmOperatorType *ot)
 {
-  return ctx_wm_python_context_get(C, "window", &RNA_Window, C->wm.window);
+  ot->name = "Splash Screen";
+  ot->idname = "WM_OT_splash";
+  ot->description = "Open the splash screen with release info";
+
+  ot->invoke = wm_splash_invoke;
+  ot->poll = WM_operator_winactive;
 }
 ```
-判断是否使用python的接口，
-注意，UI的context只能在主线程中获取，使用python时，不需要满足这个要求
+一眼就明白wmOperatorType才是重点。其中wm_splash_invoke就是最终调用显示splash的逻辑了。
 
-如果窗口存在，就去调用splash，又设置回去之前的窗口
-
-在文件source/blender/windowmanager/intern/wm_event_system.c中
-```c
-int WM_operator_name_call(bContext *C, const char *opstring, short context, PointerRNA *properties)
-{
-  wmOperatorType *ot = WM_operatortype_find(opstring, 0);
-  if (ot) {
-    return WM_operator_name_call_ptr(C, ot, context, properties);
-  }
-
-  return 0;
-}
-```
-
-这里的重点是wm_operatortype，开始涉入wm的事件系统了，就是调用splash也是一个窗体的事件系统中
-的一个事件，
-
-在文件source/blender/windowmanager/intern/wm_operators.c中有一函数
-wm_operatortypes_register,这里面注册了系统默认的操作类型
-
-暂时不深入operator type，继续分析splash，有关splash的函数都是static的，都只在这个文件中
-
-函数wm_block_splash_add_labels中，可以看到输入了当前的版本号文字
-函数wm_block_splash_image读取了图片显式
-函数WM_OT_splash中初始化了invoke调用和poll事件，注册进入窗口事件系统中
-
-函数wm_operatortypes_register是窗体中的操作类型的默认注册类型。
+WM_operator_winactive留到operator中去分析， UI_popup_block_invoke需要深入到window的细节中去了，留到UI去分析，属于editors中的interface。
 

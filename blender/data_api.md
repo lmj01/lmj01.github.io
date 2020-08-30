@@ -34,37 +34,11 @@ makesrna.c与makesdna.c 这两个文件会生成一系列的源文件，这种�
 
 所有的data都是可accessible的， native blender api有setter和getter，或python的API，或内部使用。所有的collection都可以iterators，使得可以连续访问，collection members都可以使用key来查询，虽然C语言的iterator通常很丑陋，大多数还是使用arrays和ListBase，这些接口也适合python
 
-## RNA 
-
-在makesrna/RNA_define.h中RNA_init和RNA_exit两个函数，
-
-- RNA_init 在creator/creator.c中调用
-- RNA_exit 在windowmanager/intern/wm_init_exit.c中调用
-
-还有一个结构体非常重要的，就是
-
-```c
-struct PropertyRNA {
-  struct PropertyRNA *next, *prev;
-  // ...
-} 
-
-PropertyRNA *prop;
-if (prop->type == PROP_FLOAT) {
-	FloatPropertyRNA *fprop = (FloatPropertyRNA *)prop;
-} else if (prop->type == PROP_INT) {
-	IntPropertyRNA *iprop = (IntPropertyRNA *)prop;
-}
-```
-
-注意到上面的用法没有，这是C的结构体，不注意还以为是C++的多态了！C语言也能这样玩接口设计？让我打开
-眼界
-
-定义的在makesrna/intern/rna_internal_types.h文件中
+## DNA
+> DNA module，DNA structures definitions:All data structures that are saved into files are here. SDNA is abbr Struct-DNA
 
 **source/blender/makesdna**
 
-> DNA module，DNA structures definitions:All data structures that are saved into files are here. SDNA is abbr Struct-DNA
 
 ***
 
@@ -127,12 +101,33 @@ Shape-keys are used to deform objects into new shapes for animation. In other te
 
 
 ## RNA
-
-source/blender/makesrna
-
 > RNA definitions and functions. Sits on top of DNA to provide a low level data access and definitin API.
 
-***
+在source/blender/makesrna/RNA_define.h中RNA_init和RNA_exit两个函数，
+
+- RNA_init 在creator/creator.c中调用
+- RNA_exit 在windowmanager/intern/wm_init_exit.c中调用
+
+还有一个结构体非常重要的，就是
+
+```c
+struct PropertyRNA {
+  struct PropertyRNA *next, *prev;
+  // ...
+} 
+
+PropertyRNA *prop;
+if (prop->type == PROP_FLOAT) {
+	FloatPropertyRNA *fprop = (FloatPropertyRNA *)prop;
+} else if (prop->type == PROP_INT) {
+	IntPropertyRNA *iprop = (IntPropertyRNA *)prop;
+}
+```
+
+注意到上面的用法没有，这是C的结构体，不注意还以为是C++的多态了！C语言也能这样玩接口设计？让我打开眼界
+
+定义的在makesrna/intern/rna_internal_types.h文件中
+
 
 **作用** 
 
@@ -140,5 +135,4 @@ source/blender/makesrna
 
 Blender的RNA可以自动生成Python数据访问API，使得一切特性都可以像动画那样。
 
-这样DNA系统放弃文件的可读性，但提高了灵活性和速度。曽传闻XML会替换掉DNA系统，但有趣的是Google内部使用了类似的DNA系统来取代XML。Blender是第一个使用这种DNA系统的应用程序。
-可参考[Data API](<https://archive.blender.org/wiki/index.php/BlenderDev/Blender2.5/DataAPI/>)
+这样DNA系统放弃文件的可读性，但提高了灵活性和速度。曽传闻XML会替换掉DNA系统，但有趣的是Google内部使用了类似的DNA系统来取代XML。Blender是第一个使用这种DNA系统的应用程序。可参考[Data API](<https://archive.blender.org/wiki/index.php/BlenderDev/Blender2.5/DataAPI/>)

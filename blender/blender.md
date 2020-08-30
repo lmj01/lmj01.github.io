@@ -1,47 +1,23 @@
 
 # Blender
 
+由三种语言开发，data-api级别都是C，与各个其他模块的接口也是C-API居多，C++负责了一些需要高级抽象的概念，如跨平台的接口封装；python主要处理上层业务逻辑，且向外提供操作的服务。
 
-## 代码
+**abbr-prefix**
 
-```shell
-cd rootPath
-git clone git://git.blender.org/blender.git 
-cd rootPath/lib 
-svn checkout https://svn.blender.org/svnroot/bf-blender/trunk/lib/win64_vc15
-cd rootPath/blender 
-make.bat help 
-make.bat lite 
-```
-参考[building blender options](https://wiki.blender.org/wiki/Building_Blender/Options)
+blender的模块化很好，每个模块都有自己的缩写，理解缩写就很好理解模块本身代表的含义了。
 
-主要代码有三种C的数据结构，C++的跨平台，Python的业务逻辑接口且向外提供服务
-
-
-## 概念
-
-### abbr-prefix
-
-blender中的缩写真的让我感觉到二语言的痛苦，缺少一种文化后，你总是在意字面意思，
-而不能通过场景取理解那层意思，不能联想到那层感觉上去，也许这就是我英语一直没有学号的原因。
-
-- MEM=**Mem**ory Management,在`doc/guides/blender-guardedalloc.txt`描述了内存管理的使用规则，
-	Blender使用自己的一套函数，前缀为`MEM_`的系列函数。
-- BLI=**B**lender **Li**brary,  they're generic functions that are used all over Blender. 
-	This BLI was originally coded by Daniel Dunbar (zr)
+- MEM=**Mem**ory Management,在`doc/guides/blender-guardedalloc.txt`描述了内存管理的使用规则，	Blender使用自己的一套函数，前缀为`MEM_`的系列函数。
+- BLI=**B**lender **Li**brary,  they're generic functions that are used all over Blender. This BLI was originally coded by Daniel Dunbar (zr)
 - BKE=**B**lender **Ke**rnel
 - BIF=
 - NLA=Non Linear Animation非线性动画
 - UCS=User Cooordination System
 
-### 文档
+**文档**
 
 [当前版本文档](https://wiki.blender.org/wiki/Main_Page),
 [已存档的文档](https://archive.blender.org/wiki/index.php/)
-
-
-### ID Property System
-
 
 ## 数据结构
 
@@ -77,5 +53,7 @@ blender的MVC
 	- notifier关注的是发送到interface，刷新或改变views，是内部模式，不需要draw的使用notifiers 
 
 **blender的data api是针对blender的DNA和RNA的操作，但是部分模块并没有使用这些API接口，如bmesh和aud模块**
+
+
 
 

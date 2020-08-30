@@ -55,3 +55,8 @@
 - FRP-Fast Reverse Proxy
     - [github](https://github.com/fatedier/frp)
 - cpolar
+
+
+## 生活
+
+- [标准地图服务](http://bzdt.ch.mnr.gov.cn/)
