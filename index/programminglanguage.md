@@ -1,6 +1,9 @@
 # 编程语言
 
 - [多态](../articles/polymorphism.md)
+- [Interface 接口](../cpl/Interfaces.md)
+- [JavaScript](../cpl/JavaScript.md)
+
 
 ## rust
 

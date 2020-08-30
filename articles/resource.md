@@ -6,8 +6,12 @@
     - [github](https://github.com/frameworkless-movement)
 - [International Institute of Software Management, iiSM.ORG](https://iism.org/)
 - [Evidence-based Software Engineering](http://www.knosof.co.uk/ESEUR/index.html)
+- Functional Reactive Programming一种编程思想
+    - [RxJS-The Functional Reactive Programming extensions for JavaScript](https://github.com/Reactive-Extensions/RxJS)
+    - [RxMarbles](https://rxmarbles.com/)
+        - [github](https://github.com/staltz/rxmarbles)
 
-## 框架
+### 框架
 
 - [Plywood](https://plywood.arc80.com/)
     - [github](https://github.com/arc80)
@@ -16,6 +20,12 @@
 - web components
     - [A forward-thinking library of web components](https://shoelace.style/)
     - [FAST is a collection of technologies build on modern web componets and modern web standards](https://www.fast.design/)
+
+### 库
+
+- [Solid is a declarative JavaScript library for creating user interfaces](https://github.com/ryansolid/solid)
+- [Matplot++ is a graphics library for data visualization that provides interactive polotting](https://github.com/alandefreitas/matplotplusplus)
+- [Lithium's goal is to ease the development of C++ high performance HTTP APIs](https://github.com/matt-42/lithium)
 
 ### 插件式
 

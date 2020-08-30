@@ -21,7 +21,6 @@ void WM_init_opengl(struct Main *bmain);
  * DRWPass > DRWShadingGroup > DRWCall > DRWCallState
  *                           > DRWUniform
  */
- 
 extern DRWManager DST = {NULL};
 
 ```
@@ -44,7 +43,7 @@ void GPU_exit(void) {}
 
 gpu_platform_init函数处理不同厂家不同驱动类型，初始化的过程主要是处理一些特定GPU的问题，如某个版本的驱动bug导致不能使用blender的问题
 
-### gpu_codegen
+**gpu_codegen**
 
 gpu_codegen_init函数是重点，封装了很多概念，如
 - GPUPass
@@ -56,7 +55,7 @@ gpu_codegen_init函数是重点，封装了很多概念，如
 
 就是转换材质material node-tree到GLSL
 
-### gpu_material
+**gpu_material**
 
 gpu_material_library_init函数是初始化内建的材质信息
 是外部文件gpu_shader_material_*.glsl提供的一种映射，用于GPU_link
@@ -64,21 +63,12 @@ gpu_material_library_init函数是初始化内建的材质信息
 
 目前看到有关shader的，在OpenGL或webGL中还都是这样处理的，都是字符串的拼接逻辑，比较不会有非常大的shader文件，而在vulkan中引入的二进制是更底层的抽象。要进行字符串地拼接，流程上就需要更加强大的处理能力了，像blender这种三维编辑软件，又是随时可以改变的，要考虑的就非常复杂了。
 
-### gpu_framebuffer
-
+**gpu_framebuffer**
+> this is a wrapper for an OpenGL framebuffer object (FBO). in practice multiple FBO's may be created, to get around limitations on the number of attached textures and the dimension requirements. actual FBO creation & config is deferred until GPU_framebuffer_bind or GPU_framebuffer_check_valid to allow creation & config while another opengl context is bound (since FBOs are not shared between ogl contexts).
+>> GPU OffScreen, wrapper around framebuffer and texture for simple offscreen drawing
+ 
 gpu_framebuffer_module_init函数目前是占位作用，是帧缓冲区逻辑模块，向外提供的离屏缓冲区接口
 ```c
-/* GPU Framebuffer
- * - this is a wrapper for an OpenGL framebuffer object (FBO). in practice
- *   multiple FBO's may be created, to get around limitations on the number
- *   of attached textures and the dimension requirements.
- * - actual FBO creation & config is deferred until GPU_framebuffer_bind or
- *   GPU_framebuffer_check_valid to allow creation & config while another
- *   opengl context is bound (since FBOs are not shared between ogl contexts).
- */
-/* GPU OffScreen
- * - wrapper around framebuffer and texture for simple offscreen drawing
- */
 typedef struct GPUAttachment {
   struct GPUTexture *tex;
   int mip, layer;
@@ -119,19 +109,74 @@ struct GPUTexture {
 ```
 可以看到每个FrameBuffer有多个Attachment，每个Attachment就是Texture，而GPUTexture这里就没有看太明白，不知道这个结构关系是怎么来解读，关于这个可以看[3D API](../cg/API.md)中关于Buffer缓冲区的描述
 
-### gpu_batch
+**gpu_batch**
+> GPU geometry batch, Contains VAOs + VBOs + Shader representing a drawable entity.
 
 前面说了FrameBuffer，这里说说Attachment的那些buffer需要填充的数据。文件头的简单一句话就描述了整个模块的功能
 
-```c
-/** \file
- * \ingroup gpu
- *
- * GPU geometry batch
- * Contains VAOs + VBOs + Shader representing a drawable entity.
- */
+create_bindings
 
+把数据绑定到某个generic vertex attribute array上
+```c
+glEnableVertexAttribArray();
+glVertexAttribDivisor();
+glVertexAttribPointer();
 ```
+glEnableVertexAttribArray(GLuint index);
+> all generic vertex attribute arrays are disabled, if enabled, the values in the generic vertex attribute array will be accessed and used for rendering when calls are made to vertex array commands.
+
+通用顶点属性数组默认是disabled的，需要enabled才能被渲染函数获取到属性数组里面的数据,这一步很重要，数据激活才能使用的逻辑符合状态机的特性。
+
+glVertexAttribDivisor(GLuint index, GLuint divisor);
+> modifies the rate at which generic vertex attributes advance when rendering multiple instances of primitives in a single draw call. if divisor is zero, the attribute at slot index advances one per vertex. if divisor is non-zero, the attribute advance once per divisor instances of the set(s) of vertices being rendered. 
+
+控制当前shader获取属性数据的频率，默认值0表示shader每次执行时更新属性数据，1表示每个实例instance更新一次属性数据，x表示每x个instance更新一次数据。这对instance模式下绘制相同的模型时，可以减少shader获取数据的频率，并减少了shader中属性数据的计算量。
+
+glVertexAttribPointer
+> define an array of generic vertex attribute data to use when rendering
+
+把具体的数据类型绑定到通用顶点属性数组中
+
+GPU_draw_list
+
+```c
+// GPU_draw_list_create
+GLuint buffer_id = GPU_buf_alloc();
+glBindBuffer(GL_DRAW_INDIRECT_BUFFER, buffer_id);
+glBufferData(GL_DRAW_INDIRECT_BUFFER, buffer_size, NULL, GL_DYNMAIC_DRAW);
+// GPU_draw_list_init
+glBindBuffer();
+glBufferData();
+glMapBufferRange();
+// GPU_draw_list_submit
+glBindBuffer();
+glFlushMappedBufferRange();
+glUnmapBuffer();
+if (element) 
+    glMultiDrawElementsIndirect();
+else 
+    glMultiDrawArraysIndirect();
+```
+
+这里可以看到，buffer_id是blender内部自己管理的，没有使用glGenBuffers来generate buffer object names. 在**gpu_context_private.h**中声明了管理GL objects，是因为在多个context和线程中需要同一管理, 在**gpu_context.cpp**中实现了这些函数。
+
+缓存目标是GL_DRAW_INDIIRECT_BUFFER，这样glDrawArraysIndirect或glDrawElementsIndirect绘制时使用的参数该缓存中的偏移量
+
+**GPU_immediate**
+
+立即模式
+
+**GPU_buffers**
+
+buffer模式，数据使用了空间管理BVH结构
+
+**GPU_shader_interface**
+> GPU shader interface (C --> GLSL)
+
+
+```c 
+```
+
 
 
 ## GUI
