@@ -26,10 +26,18 @@ grep -rn "XXXFunction" --include="*.c"
     - 继续往上看，抓重点的就是WM_init函数了
 2. 从WM_main函数开始，先把握整体的框架
 	- 最简单的窗体就是splash，由它引入operator和UI
+    - 分析splash作为operator调用的流程，分析大致的逻辑
 3. 从WM_init函数分析
-    - wm_operatortype_init和wm_operatortypes_register深入operator，引入RNA
+    - wm_operatortype_init和wm_operatortypes_register深入operatortype
+    - 由operatortype引入了RNA
+    - 由operatortype引入了wmOperator,进入DNA
+    - 由operator_poll中得知python needs operator type，需要考虑python的入口
 4. data-api
     - RNA
+    - DNA
+5. python
+    - 分析python的嵌入式在blender中的继承
+    - 分析python中处理operator的逻辑
 
 ### 记录
 
