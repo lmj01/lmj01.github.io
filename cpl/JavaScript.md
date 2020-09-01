@@ -206,6 +206,5 @@ Variables in JavaScript are not directly associated with any particular value ty
 
 ## 参考
 
-- [RxJS-The Functional Reactive Programming extensions for JavaScript](https://github.com/Reactive-Extensions/RxJS)
 - [RxMarbles](https://rxmarbles.com/)
     - [github](https://github.com/staltz/rxmarbles)

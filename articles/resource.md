@@ -6,8 +6,8 @@
     - [github](https://github.com/frameworkless-movement)
 - [International Institute of Software Management, iiSM.ORG](https://iism.org/)
 - [Evidence-based Software Engineering](http://www.knosof.co.uk/ESEUR/index.html)
-- Functional Reactive Programming一种编程思想
-    - [RxJS-The Functional Reactive Programming extensions for JavaScript](https://github.com/Reactive-Extensions/RxJS)
+- Functional Reactive Programming一种编程paradigm范例，FRP是1997年提出，设计模式中就是观察者模式observer pattern
+    - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
     - [RxMarbles](https://rxmarbles.com/)
         - [github](https://github.com/staltz/rxmarbles)
 
