@@ -41,4 +41,10 @@
 - [Introducing OpenCL and OpenGL on DirectX](https://www.collabora.com/news-and-blog/news-and-events/introducing-opencl-and-opengl-on-directx.html)
 - [Direct Volume Rendering](https://cgl.ethz.ch/teaching/former/scivis_07/Notes/stuff/StuttgartCourse/VIS-Modules-06-Direct_Volume_Rendering.pdf)
 - [Visibility-Aware Direct Volume Rendering](http://www.cad.zju.edu.cn/home/ycwu/Files/visibility.pdf)
+- Ingrid Daubechies
+    - [Global point signature for shape analysis of carpal bones](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3966902/)
+    - [Bones, Teeth and Animation, ](http://helper.ipam.ucla.edu/publications/caws3/caws3_13755.pdf)
 
+### books
+
+- [Physically Based Rendering: From Theory to Implementation](http://www.pbr-book.org/)

@@ -8,6 +8,7 @@
 ## W3C
 
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/uievents-code/#key-alphanumeric-writing-system)
+- [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
 
 
 ## OpenGL
