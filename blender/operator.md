@@ -152,7 +152,12 @@ enum {
 };
 ```
 
-上面看到分为两类的类型INVOKE和EXEC，它们分别对应着invoke和exec函数指针，区别与是否有交互的需求，没有交互的直接exec，其他的都是invoke。
+上面看到分为两类的类型INVOKE和EXEC，它们分别对应着invoke和exec函数指针，区别与是否有交互的需求，没有交互的直接exec，其他的都是invoke。只有operatortype为exec时才能被录制为宏。 事件是通过函数参数来完成的，
+
+- exec，回调流程init,apply, exit
+- invoke, 回调流程init, apply
+- modal&cancel, 回到流程 apply, exit
+
 
 在intern/wm_init_exit.c中wm_operatortypes_init引入了ghash概念，所有的operator都挂载在一个ghash对象上
 

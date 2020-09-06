@@ -37,14 +37,34 @@ makesrna.c与makesdna.c 这两个文件会生成一系列的源文件，这种�
 ## DNA
 > DNA module，DNA structures definitions:All data structures that are saved into files are here. SDNA is abbr Struct-DNA
 
-**source/blender/makesdna**
+Ton Roosendaal在2008年解释了blender中的DNA，它的作用是保证向后兼容，可以追溯到1.00版本。Blender DNA与Blender一样古老，它是一个长字符串DNAstr，具有Blender数据的整个内部结构的编码类型，保持在每个.blender和每个Blender二进制文件中。有了DNA这种方式，它可以读取比较旧甚至更新的文件。 在DNA_genfile.h中有描述。
 
-
-***
-
-**作用** 
-
-Ton Roosendaal在2008年解释了blender中的DNA，它的作用是保证向后兼容，可以追溯到1.00版本。Blender DNA与Blender一样古老，它是一个长字符串，具有Blender数据的整个内部结构的编码类型，保持在每个.blender和每个Blender二进制文件中。有了DNA这种方式，它可以读取比较旧甚至更新的文件。 
+```c
+/** \file
+ * \ingroup DNA
+ *
+ * \brief Struct muncher for making SDNA.
+ *
+ * \section aboutmakesdnac About makesdna tool
+ * Originally by Ton, some mods by Frank, and some cleaning and
+ * extension by Nzc.
+ *
+ * Makesdna creates a .c file with a long string of numbers that
+ * encode the Blender file format. It is fast, because it is basically
+ * a binary dump. There are some details to mind when reconstructing
+ * the file (endianness and byte-alignment).
+ *
+ * This little program scans all structs that need to be serialized,
+ * and determined the names and types of all members. It calculates
+ * how much memory (on disk or in ram) is needed to store that struct,
+ * and the offsets for reaching a particular one.
+ *
+ * There is a facility to get verbose output from sdna. Search for
+ * \ref debugSDNA. This int can be set to 0 (no output) to some int. Higher
+ * numbers give more output.
+ */ 
+```
+makesdna.c文件是生成DNAstr的逻辑，解释了为什么这样做，因为这样的数据是最基本的二进制形式。
 
 makedna工程是一个executable文件，内部使用的，NA_documentation.h这个文档简单描述了相关事项
 

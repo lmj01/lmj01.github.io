@@ -1,6 +1,8 @@
-# addon
+# Add-ons
 
+Blender builds and release include python script add-ons that extend its functionality.     
 
+[Python Addon API](https://wiki.blender.org/wiki/Reference/Release_Notes/2.80/Python_API/Addons)
 
 如果直接进入debug模式来分析，跟踪代码的运行还是很难理解操作符的，但是addons使用了python的API来，对addon有了大致的了解后，也同时对operator type中的字段的作用有了更具体的视觉效果。
 
@@ -50,3 +52,4 @@ typedef struct IDProperty {
 可以看到ID属性是非常低级的数据，是Blender的数据的自定义数据的.blend文件的基础结构
 这也是blender兼容性的强大之处，就像基因一样，也是谜一样的数据结构思想。
 
+## 
