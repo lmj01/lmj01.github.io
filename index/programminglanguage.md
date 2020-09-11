@@ -28,3 +28,4 @@
 
 - [Language Independent Validation Rules](https://livr-spec.org/)
 - [The Principles of Functional Programming](https://www.freecodecamp.org/news/the-principles-of-functional-programming/)
+- [How Computers Speak: Assembly to AST](https://unicorn-utterances.com/posts/how-computers-speak/)
