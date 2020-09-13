@@ -64,60 +64,43 @@ Ton Roosendaal在2008年解释了blender中的DNA，它的作用是保证向后�
  * numbers give more output.
  */ 
 ```
-makesdna.c文件是生成DNAstr的逻辑，解释了为什么这样做，因为这样的数据是最基本的二进制形式。
+makesdna.c文件是生成DNAstr的逻辑，解释了为什么这样做，因为这样的数据是最基本的二进制形式。  
 
-makedna工程是一个executable文件，内部使用的，NA_documentation.h这个文档简单描述了相关事项
+在这个文件中，从main函数分析就值得有一个核心函数make_structDNA。更详细的应该是DNA_documentation.h文件中的描述了。
 
-**DNA_listBase.h** 是所有连接列表的基础，
+在build对应的目录中有dna.c和dna_type_offset.h和dna_verify.c三个文件。是由make_structDNA函数的三个文件参数，那函数的核心就分成三部分了，先verify，再DNAstr，再dna_type_offset.
 
-```C++
-/** \file
- * \ingroup DNA
- * \brief These structs are the foundation for all linked lists in the library system.
- *
- * Doubly-linked lists start from a ListBase and contain elements beginning
- * with Link.
- */
-/** Generic - all structs which are put into linked lists begin with this. */
-typedef struct Link {
-  struct Link *next, *prev;
-} Link;
+把生成的这三个文件在连接到bf_dna库中，这样blender内部就可以直接使用了。这在CMakeLists.txt文件中可以看到相关的配置。**调用makesdna生成文件的也是在CMake中调用的**
 
-/** Simple subclass of Link. Use this when it is not worth defining a custom one. */
-typedef struct LinkData {
-  struct LinkData *next, *prev;
-  void *data;
-} LinkData;
+verify就是对includefiles中的结构体进行了类型检查，比如DNA_listBase.h这文件中的结构体就三个Link, LinkData, LinkBase,它们通过offsetof()来验证内部是否发生了变化，
 
-/** Never change the size of this! dna_genfile.c detects pointer_size with it. */
-typedef struct ListBase {
-  void *first, *last;
-} ListBase;
+```c++
+// c-style
+#define offsetof(s, m) (size_t)((char*)(&((s*)0)->m))
+// cpp-style
+#define offsetof(s, m) (reinterpret_cast<size_t>(&reinterpret_cast<const volatile char&>(static_cast<s*>(nullptr)->m)))
 ```
 
-**DNA_ID.h** 
+就到了函数convert_include了，它读取文件，读取有效的结构体，把这些结构体记录下来，进行上面的验证，并得到每个结构体的字节数目。
 
-sDNA的基础
-看完后，自我的感觉就是好繁琐的东西，就像汇编代码一样，这么多的细节，都是放在这里，如何来管理呢？addition和deprecate这部分是如何出来的，对我而言，更多的是关注如何管理，保持代码的持续性。大概看完后，只能感叹我的记忆力绝对不够来玩这个，如同去玩抽象的数学一样，转不拐弯的状态。
+分析dna_write函数，可以看到DNAstr的内容了，输入的内容依次是下面这样的结构，都是按照字符ascii char输入的，可以对应到DNAstr中的每个数字，每行是20个字符加上每个字符之间的逗号，就是一行共40个字符
+```c
+SDNA
+NAME // names
+...
+TYPE // type
+...
+TLEN // type length
+...
+STRC // structs
+...
+```
 
-**DNA_vec_types.h** 主要有个dual quaternion对偶四元数的结构，是骨骼蒙皮算法中用得的
+可以看到makesdna.c文件核心作用就是生成了一个DNAstr来供外部使用，把所有的数据都统一在一个地方，这样保证一个版本与之前的版本的兼容。
 
-**DNA_view2d_types.h** view 2d数据，每个区域都维护各自的。
-tot是total的缩写！关于blender的缩写我现在真的体会到了不同，按照我的思维习惯来取名，肯定不会这样！也许是文化的差异，我过于在意字面意思，不能深入理解到一些习惯或其他的形式的对象，我总是在使用我的标准取看待问题。特别是越看这种底层的数据结构，越靠理解字面意思是很难掌握大量或大型的数据结构，就像聚焦一样，不能形成焦点就没法看清楚，我现在最大的感受就是这个了。
+全局搜索使用到了DNAstr的地方，一个就是loader加载模型文件时，一个就是dna_genfile.c文件中使用到了。
 
-**DNA_gpu_types.h** gpu dof(depth of field), SSAO effect
-
-
-**DNA_userdef_types.h** 定义了主题与插件相关的数据，细节太多啦，理解起来痛苦
-
-**DNA_key_types.h** defines structures for Shape-keys
-Shape-keys are used to deform objects into new shapes for animation. In other terminology, shape keys may be called morph targets or blend shapes.
-
-**DNA_world_types.h** 定义了通用的建模数据，background fill， gravity，color model等，混合了渲染数据和建模数据重力？这么久来一直不值得在三维建模软件中有这个特性
-
-**DNA_tracking_types.h** camera tracking and the movie-clip editor
-
-**DNA_action_types.h** 给动画系统定义了actions data-block
+在dna_genfile.c中可以看到上面推理的DNAstr完全符合，每个.blend文件都携带了DNAstr，这样不同版本之间的差异也是在这个文件中进行处理的。在这里就是执行了当前运行版本的DNAstr，就是DNA_sdna_current_init。
 
 
 ## RNA

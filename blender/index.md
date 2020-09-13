@@ -34,15 +34,15 @@ grep -rn "XXXFunction" --include="*.c"
     - 由operatortype引入了wmOperator,进入DNA
     - 由operator_poll中得知python needs operator type，需要考虑python的入口
 4. data-api
+    - DNA，由sdna引入DNAstr，再引入loader
     - RNA
-    - DNA
 5. python，注意到有两个宏WITH_PYTHON和WITH_PYTHON_MODULE两大类
     - 分析python的嵌入式在blender中的继承，本质就是python可以用c写的功能封装成一个module给其他代码调用，就是bpy的实现
     - 分析python中处理operator的逻辑
 6. editor
     - 由UI_init中引入
     - undo系统
-7. 
+7. loader模块，读取.blend文件的逻辑
 
 ### 记录
 

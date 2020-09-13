@@ -8,11 +8,14 @@
 blender的模块化很好，每个模块都有自己的缩写，理解缩写就很好理解模块本身代表的含义了。
 
 - MEM=**Mem**ory Management,在`doc/guides/blender-guardedalloc.txt`描述了内存管理的使用规则，	Blender使用自己的一套函数，前缀为`MEM_`的系列函数。
+	- 由内部提供的内存相关的地方，因为都是使用链表管理小内存的，所以很多地方又有一个特定的自动name用来表示申请内存的名字
 - BLI=**B**lender **Li**brary,  they're generic functions that are used all over Blender. This BLI was originally coded by Daniel Dunbar (zr)
 - BKE=**B**lender **Ke**rnel
 - BIF=
 - NLA=Non Linear Animation非线性动画
 - UCS=User Cooordination System
+
+
 
 **文档**
 
