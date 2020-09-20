@@ -102,6 +102,9 @@ STRC // structs
 
 在dna_genfile.c中可以看到上面推理的DNAstr完全符合，每个.blend文件都携带了DNAstr，这样不同版本之间的差异也是在这个文件中进行处理的。在这里就是执行了当前运行版本的DNAstr，就是DNA_sdna_current_init。
 
+上面谈到了创建DNAstr的过程，如何查询这个过程就需要SDNA这个结构体了，在DNA_sdna_types.h中定义，找到init_structDNA，按照上面的格式读取DNAstr的二进制，并通过ListBase来测试结构体的逻辑没有错误，并把names进行cache处理
+
+函数DNA_struct_get_compareflags处理了旧版本与当前版本的DNAstr的差异
 
 ## RNA
 > RNA definitions and functions. Sits on top of DNA to provide a low level data access and definitin API.

@@ -39,8 +39,9 @@ typedef struct ListBase {
     void *first, *last;
 } ListBase;
 
-int main(int argc, char **argv) 
-{
+void testStructMember() {
+    printf("\nTest struct member position");
+
     assert( offsetof1(struct Link, next) == 0);
     assert( offsetof1(struct Link, prev) == 8);
     assert( sizeof(struct Link) == 16);
@@ -64,5 +65,14 @@ int main(int argc, char **argv)
     assert( offsetof2(struct ListBase, first) == 0);
     assert( offsetof2(struct ListBase, last) == 8);
     
+    printf("\nend test struct member position\n");
+}
+
+
+int main(int argc, char **argv) 
+{
+    
+    testStructMember();
+
     return 0;
 }
