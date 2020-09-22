@@ -31,6 +31,7 @@
 - [3D软渲染教程](https://github.com/skywind3000/mini3d)
 - [3D渲染教程GPU](https://github.com/skywind3000/RenderHelp)
 - [Vulkan-Forward Plus Renderer](https://github.com/WindyDarian/Vulkan-Forward-Plus-Renderer)
+- [Writing an efficient Vulkan renderer](https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/)
 
 
 ## 相关文章
@@ -44,6 +45,7 @@
 - Ingrid Daubechies
     - [Global point signature for shape analysis of carpal bones](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3966902/)
     - [Bones, Teeth and Animation, ](http://helper.ipam.ucla.edu/publications/caws3/caws3_13755.pdf)
+- [Intel OSPRay, The Open, Scalable, and Portable Ray Tracing Engine](http://www.ospray.org/)
 
 ### books
 

@@ -15,3 +15,5 @@ let tmp1 = 2 == [[[2]]],
     tmp3 = 2 == [2];
 console.log(tmp1, tmp2, tmp3);
 
+let url = '/images/pre/front.svg';
+console.log(url.match(/\/pre\//ig), url.includes('/images/pre/'));

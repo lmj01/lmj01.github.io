@@ -28,7 +28,9 @@
 3. git push origin local_branch:remote_branch 远程remote_branch不存在
 
 ## 分支
-1. git branch -d <branch_name> 删除分支
+1. git branch -d <branch_name> 删除本地分支
+2. git push origin --delete <branch_name> 删除远程分支
+3. git checkout -b <branch_local> <branch_remote> // git checkout -b dev-local origin/dev 从远程dev分支创建本地分支dev-local
 
 ## 合并
 0. git remote add upstream repo-url 添加上游仓库地址

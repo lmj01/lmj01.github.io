@@ -203,6 +203,13 @@ js源文件转为生产文件后,调试非常麻烦,而对应的source map文件
 
 Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types
 
+### 错误处理
+
+Error， DOMException
+
+try...catch...不能捕获异步操作
+
+
 
 ## 参考
 

@@ -1,17 +1,25 @@
 
 # [HTML](https://whatwg.org/)
-> ss
 
-***
+## tags
 
-## 特别注意
+### img
 
-### 不可编辑
+[Intrinsic Sizes](https://www.w3.org/TR/css-sizing-3/#intrinsic-sizes)
+图像质量很容易改变的地方。
+
+### input
 
 ```html
 <input onfocus=this.blur()> <!-- 这样代码内部可以修改，相比readonly -->
 ```
 
+### script
+
+```html
+<script type="module" src="a.mjs">
+    
+```
 
 
 ## develop doc

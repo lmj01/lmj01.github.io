@@ -16,6 +16,13 @@ SSO(Single Sign-On)是服务于企业业务整合的解决方案之一，SSO使�
 - html
 - javascript
 
+### 缓存位置
+
+- Service Worker， 是运行在浏览器背后的独立线程，
+- Memory Cache，资源缓存在内存中使用preloader技术，是优化页面的常见手段
+- Disk Cache
+- Push Cache
+
 ### 表单缓存
 ```javascript
 document.yourFormName.reset();
@@ -41,6 +48,12 @@ document.yourFormName.reset();
 <div style='background:url(/path/resource/file.png?222'></div>
 ```
 
+### 参考
+
+- [深入理解浏览器缓存](https://www.jianshu.com/p/54cc04190252)
+- [HTTP/2 push is tougher than I thought](https://jakearchibald.com/2017/h2-push-tougher-than-i-thought/)
+
+
 ## Chrome
 
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/open)
@@ -59,6 +72,12 @@ Online可以设置网速
 
 ![network throttling](./images/chrome-network-throttling.png)
 
+### CEF
+
+Chromium Embedded Framework(CEF)是一个框架，用于在其他应用程序中嵌入基于Chromium的浏览器。
+嵌入式Chromium框架(简称CEF)，是一个基于Google Chromium的Webbrowser控件，支持用户插件，协议，JavaScript对象以及JavaScript扩展
+
+- [CEF开发总结](https://www.pressc.cn/1042.html)
 
 # 参考
 

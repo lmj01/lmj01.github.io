@@ -9,3 +9,6 @@ tmp1 = a1.reduce((acc, cur, idx, src)=>{
     return acc += cur;
 });
 console.log(tmp1);
+
+tmp1 = '1,0,0,1,0,0';
+console.log(tmp1.split(',').map(e=>parseFloat(e)));
