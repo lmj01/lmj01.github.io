@@ -55,6 +55,7 @@ grep -rn "XXXFunction" --include="*.c"
 - [data api](./data_api.md)
 - [addons](./addon.md)
 - [python](./python.md)
+- [loader -- read and write .blend format](./loader.md)
 - module editor
     - [interface](./editors/interface.md)
 

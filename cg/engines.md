@@ -46,6 +46,10 @@
     - [Global point signature for shape analysis of carpal bones](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3966902/)
     - [Bones, Teeth and Animation, ](http://helper.ipam.ucla.edu/publications/caws3/caws3_13755.pdf)
 - [Intel OSPRay, The Open, Scalable, and Portable Ray Tracing Engine](http://www.ospray.org/)
+- [计算机图形学与混合现实研讨会](http://games-cn.org/previouswebinar-ppt/)
+- [GAMES101](http://games-cn.org/intro-graphics/)
+    - [概述](https://sites.cs.ucsb.edu/~lingqi/teaching/resources/GAMES101_Lecture_01.pdf)
+    - [GAMES101: 现代计算机图形学入门](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html)
 
 ### books
 

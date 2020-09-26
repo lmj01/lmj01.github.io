@@ -106,6 +106,8 @@ STRC // structs
 
 函数DNA_struct_get_compareflags处理了旧版本与当前版本的DNAstr的差异
 
+除掉这个函数，sDNA模块其他都是struct的定义了。
+
 ## RNA
 > RNA definitions and functions. Sits on top of DNA to provide a low level data access and definitin API.
 
