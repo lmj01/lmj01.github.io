@@ -50,6 +50,7 @@
 - [GAMES101](http://games-cn.org/intro-graphics/)
     - [概述](https://sites.cs.ucsb.edu/~lingqi/teaching/resources/GAMES101_Lecture_01.pdf)
     - [GAMES101: 现代计算机图形学入门](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html)
+- [Vulkan FFT](https://github.com/DTolm/VkFFT)
 
 ### books
 

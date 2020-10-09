@@ -58,6 +58,7 @@ Vue.component('com-element', {
 	</div>`
 })
 ```
+
 ```vue
 // nodejs版本
 <template>
@@ -85,6 +86,7 @@ this.$refs.child.someMethod();
 ##### 跨Vue调用
 
 #### EventBus
+
 ```js
 const EventBus = new Vue() // 
 Vue.prototype.$EventBus = new Vue() //全局的事件总线, 此方法可以实现Pub/Sub发布与订阅的模式

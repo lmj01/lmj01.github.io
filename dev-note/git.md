@@ -37,6 +37,14 @@
 1. git fetch upstream 从上游更新
 2. git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
 
+## [stash](https://www.git-scm.com/docs/git-stash)
+
+- git stash list 罗列出所有的
+- git stash save "message" 给当前的stash加上message说明
+- git stash pop [--index] [<stash>] 恢复stash中的内容
+- git stash clear 清楚所有的 
+
+
 ## attributes
 [Git Attributes](https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes)
 合并分支指定文件忽略掉
@@ -47,12 +55,6 @@ git config merge.ours.driver true
 
 pox.xml merge=ours 
 *.xml merge=ours 
-
-注意在本地合并后再推送到远程
-## 冲突
-1. git stash 
-2. git stash pop 
-3. 
 
 ## 创建命令
 
