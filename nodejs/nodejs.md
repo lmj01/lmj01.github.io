@@ -1,6 +1,13 @@
 # NodeJS
 
-使用nodejs过程中的小事件
+## docs
+
+### Module模块
+
+[model](http://nodejs.cn/api/module.html)
+
+- [modules -- CommonJS](http://nodejs.cn/api/modules.html)
+- [ESM -- EcmaScript Module](http://nodejs.cn/api/esm.html)
 
 ## middleware
 中间件，是很多框架中使用的基础架构知识。

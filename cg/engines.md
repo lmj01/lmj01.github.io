@@ -34,6 +34,24 @@
 - [Writing an efficient Vulkan renderer](https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/)
 
 
+## RenderPass
+
+### Shadow
+
+for Shadows, there is a [shadow mapping](https://learnopengl.com/Advanced-Lighting/Shadows/Shadow-Mapping) 
+
+### SSAO 
+
+Screen Space Ambient Occlusion屏幕空间环境遮蔽
+
+for SSAO, like the order: 
+1. Forward Depth Pass
+2. A SSAO Pass
+3. Blur Pass
+4. Lighting Pass
+
+[A SSAO basic tutorial](https://learnopengl.com/Advanced-Lighting/SSAO)
+
 ## 相关文章
 
 - [Exposure Render: An Interactive Photo-Realistic Volume Rendering Framework ](https://pubmed.ncbi.nlm.nih.gov/22768292/)

@@ -19,3 +19,7 @@
 ## Images
 
 - [图像格式](../others/images.md)
+
+## 其他
+
+- [语义化版本控制规范 SemVer](https://semver.org/lang/zh-CN/)

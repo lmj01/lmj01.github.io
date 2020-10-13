@@ -44,6 +44,9 @@ DOCTYPE,文档类型说明Document Type Declaration,渲染模式有三种:**混�
 
 ***
 
+- [Event Loops](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop)
+- [User prompts](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#user-prompts)
+
 ## snippet code
 
 ## 模板引擎

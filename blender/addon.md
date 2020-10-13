@@ -52,4 +52,6 @@ typedef struct IDProperty {
 可以看到ID属性是非常低级的数据，是Blender的数据的自定义数据的.blend文件的基础结构
 这也是blender兼容性的强大之处，就像基因一样，也是谜一样的数据结构思想。
 
-## 
+## 社区插件
+
+- [is a blender(2.8 and above) addon for PBRT](https://github.com/joeyskeys/btop)

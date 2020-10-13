@@ -11,12 +11,20 @@ vim index.js
 node index.js
 ```
 
-安装包
+包管理
 
 ```shell
 npm install xxx	// 安装默认
 npm install xxx@a.b.c // 安装指定版本
 npm install -ddd // 可以查看安装的细节  
+```
+
+npm已经发展几个版本了，npm5发布于2017年，增加了package-lock.json文件，它对应node_modules中目录文件层结构是对应的，是锁定依赖安装结构
+
+清除node_modules目录的在非window的命令可参考
+
+```shell
+find . -name "node_modules" -print | xargs rm -rf
 ```
 
 ## 配置
