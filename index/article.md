@@ -16,3 +16,9 @@
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html)
 - [全栈开发者CJ](https://cjting.me/)
 - [3D Game Engine Programming](https://www.3dgep.com/)
+- [早期Linux源码阅读](http://www.oldlinux.org/)
+
+
+## 书
+
+- [Modern Robotics: Mechanics, Planning, and Control](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)
