@@ -134,16 +134,69 @@ linear transformations also can be represented by Matrix function. It combine mu
 ### WebAIM:web accessibility in mind
 - [Color Contrust Check](https://webaim.org/resources/contrastchecker/) 
 
-### Sass
+## Visual formatting model
+it is an algorithm that processes a document and display it on visual media.
+it transforms each element of the document and generates zero, one, or several boxes that conform to the **box model**
+
+
+## scss
+
+[scss doc](https://www.sasscss.com/documentation)
+
+注释：
+/*XXX*/ css中显示
+//XXX css中不显示
+/*XXX!*/ 重要注释，压缩不会删除
+
+### variables
+
+变量：
+$varName: varValue [qualify] 
+qualify: 如 !default, !global
+全局变量和局部变量，重复声明的局部变量会覆盖全局变量
+
+嵌套变量，需要使用#{}来包裹， 如
+```scss
+$left: left;
+.test {
+    border-#{$left}: 1px solid red;
+}
+```
+
+### nested rules
+嵌套规则
+
+选择器嵌套，可使用&来引用父元素
+
+继承
+```scss
+.container {
+    color: purple;
+}
+.mytext {
+    @extend .container; // 继承.container所有的样式
+    font-size: 2rem;
+}
+```
+
+### mixins 
+混合
+
+### functions 
+函数
+
+### Javascript
+
+如果使用js通过element.className来设置类，一定不用在style中添加scoped属性
+
+## Sass
 Syntactically Awesome StyleSheets
 语法格式有两类
 
 - SCSS，Sassy CSS，仅在CSS3基础上扩展，文件后缀为.scss
 - Sass，Indented Sass，使用“缩进”代替“花括号”，用“换行”代替“分号”，文件名后缀为.sass
 
-搜索
-
-使用node-sass比起ruby的sass容易很多搭建环境
+[参考使用方法](https://github.com/lmj01/startbootstrap-grayscale)
 
 ## 参考
 

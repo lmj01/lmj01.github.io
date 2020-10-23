@@ -44,6 +44,11 @@
 - git stash pop [--index] [<stash>] 恢复stash中的内容
 - git stash clear 清楚所有的 
 
+## tag
+
+- git tag 列出所有tag
+- git tag newTagName 新建tag
+
 
 ## attributes
 [Git Attributes](https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes)
