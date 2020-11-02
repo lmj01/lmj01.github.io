@@ -13,6 +13,8 @@ bash
 ## bat
 - echo %XXX-path% 打印环境变量
 - netstat -aon | findstr "9090" 查看端口号
+- tasklist | findstr "pid" 查看进程
+- taskkill /T /F /PID pid 终止进程pid
 
 
 ## curl

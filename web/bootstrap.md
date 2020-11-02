@@ -1,6 +1,11 @@
 
 # bootstrap
 
+[documents](https://getbootstrap.com/docs/versions/)
+[中文文档](https://www.bootcss.com/)
+[bootstrap icons](https://icons.getbootstrap.com/)
+
+
 ## 隐藏
 
 d-none
@@ -23,6 +28,12 @@ git clone https://github.com/twbs/bootstrap.git
 npm install
 npm run dist // 不要release，因doc生成要依赖大量其他的工具，很难配置
 
+### variables
 
 ### breakpoints
 bootstrap/scss/mixins/_breakpoints.scss
+
+
+
+## Vue
+

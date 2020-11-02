@@ -1,9 +1,7 @@
 
 # Cascading Style Sheets
 
-css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的效果也很容易。
-
-***
+css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的
 
 ## effect
 
@@ -21,8 +19,6 @@ css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的�
 /* offset-x:1 offset-y:2 blur-radius:3 spread-radius:4 */
 box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 ```
-
-## [CSS](https://www.w3.org/Style/CSS/)
 
 ### Cascading order - specificity
 [CSS2-Cascading order](https://www.w3.org/TR/CSS21/cascade.html#specificity)
@@ -44,13 +40,13 @@ class2 {
 ```
 结果是class2 > class3 > class1。
 
-### Concepts
 #### stacking context & z-index
 
 上下文的堆栈顺序决定了最后显示的效果
 
 
 ### selectors选择器
+
 #### combinators
 组合器是用来解释选择器之间的关系, 在两个简单选择器之间插入一个组合器.
 1. Adjacent Sibling:相邻,必须有相同的父元素,且必须是相邻的两个元素, 如`h2 + p`,所有跟着h2的p.
@@ -62,6 +58,7 @@ class2 {
 如`a:visited`匹配所有已经被访问的a的tag element `p::first-line`匹配所有p的第一行
 
 #### box-model
+
 浏览器的render engine渲染引擎把element当成一个长方形,css决定这些长方形的大小,位置和属性. 如果只有默认样式,element是在普通流中占一个位置,而位置所占大小由长方形模型来决定. 每个长方形模型是受如图中所描述的边距影响的.
 ![css-box-model](./images/css-box-model.png)
 box-model分为两类:块状block和行内inline,两种的区别:
@@ -70,8 +67,8 @@ box-model分为两类:块状block和行内inline,两种的区别:
 2. block独占一行,除非修改了element的样式,而inline只会在一行内显示
 3. block的width默认100%,而inline是根据element内容及element-child来决定
 
-
 ##### position
+
 1. **Normal Document Flow普通流**,指的是HTML代码的位置从上往下决定了element的位置;
 2. **relative相对定位**指element相对于**普通流**做了偏移;如果z-index不是auto,则产生新的**stacking context**
 3. **absolute绝对定位**,从**普通流**中移除,由距离它最近的**ancestor element**相对定位, 如果z-index不是auto,则产生新的**stacking context**
@@ -82,11 +79,13 @@ box-model分为两类:块状block和行内inline,两种的区别:
     3. element的display更改为block
     4. 浮动的前一个element不受影响,后一个element会围绕,如典型的文字围绕图片
 
-
 #### break word
+
 1. **word-break**: 允许单词在任何地方被打破(强行折断换行),本质上,break-all是将非CJK当作CJK文字处理, keep-all是反向的,将CJK当作非CJK.
 2. **line-break**: The line-break CSS property is used to specify how (or if) to break lines when working with punctuation and symbols. This only affects text in Chinese, Japanese, or Korean (CJK)
+
 #### @media
+
 语法
 ```
 @media mediatype and|not|only (media feature) {
@@ -122,13 +121,6 @@ linear transformations also can be represented by Matrix function. It combine mu
 
 ![](../images/css-matrix.svg)
 
-## Theme Style
-
-[boots-watch](https://bootswatch.com/)的demo展示了主体样式切换的原理，就是css文件的替换后自动刷新。
-
-它利用了scss预处理技术，把bootstrap中的变量进行了替换，和一些基本样式的更改，
-
-
 ## Tools
 
 ### WebAIM:web accessibility in mind
@@ -139,64 +131,21 @@ it is an algorithm that processes a document and display it on visual media.
 it transforms each element of the document and generates zero, one, or several boxes that conform to the **box model**
 
 
-## scss
+## [Sass](https://www.sasscss.com/)
 
-[scss doc](https://www.sasscss.com/documentation)
-
-注释：
-/*XXX*/ css中显示
-//XXX css中不显示
-/*XXX!*/ 重要注释，压缩不会删除
-
-### variables
-
-变量：
-$varName: varValue [qualify] 
-qualify: 如 !default, !global
-全局变量和局部变量，重复声明的局部变量会覆盖全局变量
-
-嵌套变量，需要使用#{}来包裹， 如
-```scss
-$left: left;
-.test {
-    border-#{$left}: 1px solid red;
-}
-```
-
-### nested rules
-嵌套规则
-
-选择器嵌套，可使用&来引用父元素
-
-继承
-```scss
-.container {
-    color: purple;
-}
-.mytext {
-    @extend .container; // 继承.container所有的样式
-    font-size: 2rem;
-}
-```
-
-### mixins 
-混合
-
-### functions 
-函数
-
-### Javascript
-
-如果使用js通过element.className来设置类，一定不用在style中添加scoped属性
-
-## Sass
 Syntactically Awesome StyleSheets
 语法格式有两类
 
 - SCSS，Sassy CSS，仅在CSS3基础上扩展，文件后缀为.scss
 - Sass，Indented Sass，使用“缩进”代替“花括号”，用“换行”代替“分号”，文件名后缀为.sass
 
+[scss doc](https://www.sasscss.com/documentation)
+
+
 [参考使用方法](https://github.com/lmj01/startbootstrap-grayscale)
+
+[boots-watch](https://bootswatch.com/)的demo展示了主体样式切换的原理，就是css文件的替换后自动刷新。它利用了scss预处理技术，把bootstrap中的变量进行了替换，和一些基本样式的更改，
+
 
 ## 参考
 

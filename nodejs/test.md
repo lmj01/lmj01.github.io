@@ -1,5 +1,17 @@
 # Test 
 
+# Test
+
+测试
+
+## TDD
+
+测试驱动开发， 在开发功能代码之前，先编写单元测试用例代码，确定需要编写的代码逻辑。TDD是XP(Extreme Programming)的核心实践
+
+## BDD
+
+行为驱动开发， 
+
 “开发软件系统最困难的部分就是准确说明开发什么” (“The hardest single part of building a software system is deciding precisely what to build” — No Silver Bullet, Fred Brooks)
 
 BDD(Behavior Driven Development), 提出者 Dan North 强调 BDD 不是关于测试的，它是在应用程序存在之前，写出用例与期望，从而描述应用程序的行为，并且促使在项目中的人们彼此互相沟通
@@ -45,15 +57,11 @@ TDD(Test Driven Development)测试驱动开发的框架，
 
 [Behavior-Driven JavaScript docs](https://jasmine.github.io/pages/docs_home.html)
 
-[2.0 describe it and ...](https://jasmine.github.io/2.0/introduction.html)
-
 [2.9](https://jasmine.github.io/2.9/introduction)
-
 
 ## [chai](https://github.com/chaijs/chai)
 
 [document](https://www.chaijs.com/)
-
 
 ## 参考
 
