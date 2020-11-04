@@ -1,5 +1,6 @@
 # JavaScript
 
+ECMAScript
 
 Blob-binary large object
 

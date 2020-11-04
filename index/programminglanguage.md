@@ -22,6 +22,8 @@
 > Declarative声明式 code is code that's more focused on describing the "what" outcome. Imperative命令式 code(the opposite) is focused on precisely instructing the computer "how" to do something.
 
 
+C++与C语言的关系还存在一个类似的，就是typescript与ECMAScript的关系，而C与ECMAScript的地位就决定C++与typescript不会失势了。
+
 ### 相关文章
 
 - [The Fatal Flaw of Ownership Semantics](https://www.gingerbill.org/article/2020/06/21/the-ownership-semantics-flaw/)
