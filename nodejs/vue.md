@@ -115,10 +115,12 @@ Vue.prototype.$myMethod = function (options) {
 #### 注册与使用 
 在vue/src/core/global-api/use.js中定义了如何使用插件
 
+### Vue Cli
 
-## MultiPage
+[文档](https://cli.vuejs.org/zh/)
 
-多页面时，跳转的路径需要加上模板的路径如
-page1: public/index.html
-page2: public/two.html
-从page1跳转到page2时 /two.html/#/router-path
+### Vue Router
+
+[文档](https://router.vuejs.org/zh/)
+
+全网页都当成静态页面使用，需要使用mode为hash的模式， 如果使用history模式，没有.html和#的字符，需要后台返回对应路径的html文件给前端的GET请求
