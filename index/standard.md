@@ -25,3 +25,7 @@
 ## 其他
 
 - [语义化版本控制规范 SemVer](https://semver.org/lang/zh-CN/)
+- [The BitTorrent Protocol Specification](https://www.bittorrent.org/beps/bep_0003.html)
+    - [Bittorrent Protocol Specification v1.0](https://wiki.theory.org/BitTorrentSpecification)
+    - [tinyTorrent: 从头写一个 Deno 的 BitTorrent 下载器](https://cjting.me/2020/10/31/tinytorrent-a-deno-bt-downloader/)
+    - [Simple, robust, BitTorrent tracker(client & server) implementation](https://github.com/webtorrent/bittorrent-tracker)
