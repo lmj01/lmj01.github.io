@@ -21,7 +21,7 @@
 ```html
 <script type="module" src="a.mjs">    
 ```
-## 禁用
+### 禁用事件
 在tag中加入代码
 ```html
 oncontextmenu="return false;" // 禁止鼠标右键
@@ -45,6 +45,10 @@ DOCTYPE,文档类型说明Document Type Declaration,渲染模式有三种:**混�
 
 - [Event Loops](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop)
 - [User prompts](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#user-prompts)
+
+## HTML5 Data-attribute
+
+HTML5具有扩展性的设计，数据与特定element相关联，不需要定义数据**data-\***属性允许在标准内于element存储额外的数据， **注意区别html的dataset属性**
 
 
 ## TemplateEngine
