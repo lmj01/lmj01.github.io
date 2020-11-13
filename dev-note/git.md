@@ -80,6 +80,12 @@ ssh-keygen -t rsa -C "lmjie_good@163.com"
 
 得到一个id_rsa和id_rsa.pub两个密钥，一个私钥，一个公钥
 
+ssh -v git@gitee.com // 这句会与服务器进行连接，看看客户端是否显示内容
+ssh-agent -s
+
+known_hosts
+在~/.ssh/known_hosts文件中存在git的public key
+
 ### 合并策略配置
 [Git Attributes](https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes)
 合并分支指定文件忽略掉
@@ -120,3 +126,4 @@ cd url_repository
 git fetch --unshallow 
 或者不用HTTP
 把https://改成git://
+
