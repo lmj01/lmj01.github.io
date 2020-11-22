@@ -32,3 +32,4 @@ C++与C语言的关系还存在一个类似的，就是typescript与ECMAScript�
 - [Language Independent Validation Rules](https://livr-spec.org/)
 - [The Principles of Functional Programming](https://www.freecodecamp.org/news/the-principles-of-functional-programming/)
 - [How Computers Speak: Assembly to AST](https://unicorn-utterances.com/posts/how-computers-speak/)
+- [Abstract Machines: Interpreters for Computer](https://drs.is/post/abstract-machines/)

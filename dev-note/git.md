@@ -65,6 +65,7 @@
 
 - git tag 列出所有tag
 - git tag newTagName 新建tag
+- git checkout tag 克隆tag那个点的分支
 
 ## config
 git的配置
