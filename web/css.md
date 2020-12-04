@@ -94,6 +94,9 @@ box-model分为两类:块状block和行内inline,两种的区别:
 <link rel="stylesheet" media=mediatype and|not|only (media feature)" href="customcss.css">
 ```
 
+### pseudo-classes
+- host, selects shadow root host用于阴影DOM限定范围的
+
 ### transform
 
 视觉格式模型[visual formatting model](https://www.w3.org/TR/CSS22/visuren.html)

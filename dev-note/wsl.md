@@ -6,7 +6,7 @@
 rem 查看window版本
 ver 
 rem 进入当前子系统
-wsl 
+wsl     
 bash 
 ```
 
@@ -14,6 +14,7 @@ bash
 - echo %XXX-path% 打印环境变量
 - netstat -aon | findstr "9090" 查看端口号
 - tasklist | findstr "pid" 查看进程
+- tasklist /fi "imagename eq nginx.exe"
 - taskkill /T /F /PID pid 终止进程pid
 
 

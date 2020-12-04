@@ -17,3 +17,11 @@ console.log(tmp1, tmp2, tmp3);
 
 let url = '/images/pre/front.svg';
 console.log(url.match(/\/pre\//ig), url.includes('/images/pre/'));
+
+tmp1 = '2020-08-25 09:49:34';
+console.log(tmp1.substr(0, 10), tmp1.substr(0, 10).replace(/-/g, '.'));
+
+let numStrs = ['0.1', '0.22', '1.22'];
+numStrs.forEach(e=>{
+    console.log(e, e.match(/^0.[1-9]{1}$/g));
+})
