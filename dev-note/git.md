@@ -59,12 +59,16 @@
     - git stash save "message" 给当前的stash加上message说明
     - git stash 等同于上面这一句
 - git stash pop [--index] [<stash>] 恢复stash中的内容
+- git stash drop [<stash>] 删除对应的stash的id
 - git stash clear 清楚所有的 
 
 ## tag
 
 - git tag 列出所有tag
-- git tag newTagName 新建tag
+- git tag -a tagName 新建tag    
+- git tag -d tagName 删除tag
+- git show tagName 查看tag信息
+- git push origin tagName 推送到远程的tagName
 - git checkout tag 克隆tag那个点的分支
 
 ## config

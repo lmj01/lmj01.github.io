@@ -20,3 +20,8 @@
 - 毛选，在读
 - 符号学：原理与推演，南京大学出版社，ISBN:9787305160516, 在读
 - 囚徒的困境-冯·诺依曼、博弈论和原子弹之谜，已读
+
+## 网上资源
+- [世界数字图书馆](https://www.wdl.org/zh/)
+- [英文文学在线书库](http://www.online-literature.com/)
+- [叻报是战前新加坡出版和行销最久的中文日报](http://www.lib.nus.edu.sg/lebao/index.htm)

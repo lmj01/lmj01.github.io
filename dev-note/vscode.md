@@ -5,7 +5,7 @@
 
 
 
-# VSCode
+## VSCode Portable
 
 vscode的配置有两种形式
 - User Settings，用户设置，全局设置，路径在%APPDATA%\Code\User\settings.json
@@ -25,13 +25,13 @@ vscode的配置有两种形式
 }
 ```
 
-## 第一步
+### 第一步
 
 下载[VSCode](https://code.visualstudio.com/Download), 选择非安装版zip格式的
 
 下载[MinWG-64](<https://sourceforge.net/projects/mingw-w64/files/>)预编译好的，seh是只有64位，sjlj包含32，64的编译。
 
-## 第二步
+### 第二步
 
 以VSCode为根目录,创建以下目录和文件
 
@@ -82,7 +82,7 @@ goto:eof
 
 VSCode的[extensions installed](<https://code.visualstudio.com/docs/editor/extension-gallery#_common-questions>)的路径
 
-## 第三步
+### 第三步
 
 配置插件
 
@@ -107,13 +107,13 @@ ${fileExtname}：当前打开文件的后缀名
 ${cwd}：当前执行目录
 ```
 
-# msys
+## msys
 
 mingw只是编译的运行库，缺少相关的系统级的工具，就需要msys了。
 
 [msys-1.0](<https://sourceforge.net/projects/mingw/>)下载这个系统级别工具，安装到指定目录
 
-## 方案1
+### 方案1
 
 把msys工具配置给mingw64使用，这样没有home路径，只能算是运行库和运行环境
 
@@ -126,15 +126,15 @@ set PATH=%PATH%;%mingw%;%msys%
 start C:\Windows\System32\cmd.exe
 ```
 
-## 方案2
+### 方案2
 
 使用msys为入口，这样就存在home，和根目录root，就可以安装指定的软件，可以编译相关的软件来使用了。
 
 在msys.bat文件里面添加mingw的路径
 
-# clang-llvm
+## clang-llvm
 
-## 方案1
+### 方案1
 
 编译[llvm 8.0.0](http://releases.llvm.org/8.0.0/)版本
 
@@ -167,7 +167,7 @@ mingw64-win32版本的mutex没有得到支持，编译不能通过，使用posix
 
 出现glibc的引发的连锁问题，改用vs编译发现lldb面前不支持window。这样就没有必要去做任何的尝试了。
 
-## 方案2
+### 方案2
 
 mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm download page](http://releases.llvm.org/download.html)下载编译好的
 
@@ -217,7 +217,12 @@ mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm 
 }
 ```
 
-# Latex
+### 快捷键
+
+Ctr + ` 打开集成终端
+Ctr + Shift + ` 打开新终端
+
+## Latex
 
 安装Tex Live软件,使用清华的镜像，在VSCode中安装插件
 - latex workshop
@@ -233,7 +238,7 @@ mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm 
 xxxx是tex的文件名，后缀.tex可省略，最后点击Latex的build控件执行生成pdf。只有在更改新的参考文档时，需要重新按照这个步骤执行。
 \begin{math}比起$$语法更加容易懂，注意，网上搜索到的都是毕竟旧的，要查看文档。
 
-# vscode
+## vscode
 
 分析一下vscode利用web技术来开发的桌面软件
 
