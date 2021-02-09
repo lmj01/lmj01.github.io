@@ -149,6 +149,11 @@ Syntactically Awesome StyleSheets
 
 [boots-watch](https://bootswatch.com/)的demo展示了主体样式切换的原理，就是css文件的替换后自动刷新。它利用了scss预处理技术，把bootstrap中的变量进行了替换，和一些基本样式的更改，
 
+## [Tailwind](https://tailwindcss.com/)
+
+npm install tailwindcss
+node_modules\.bin\tailwind init
+
 
 ## 参考
 

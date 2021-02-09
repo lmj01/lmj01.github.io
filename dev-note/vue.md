@@ -160,8 +160,6 @@ npm vue-cli-service inspect [--mode development]
 vue inspect --plugins 
 
 
-
-
 ## 源码解读
 
 ### 概念

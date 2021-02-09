@@ -10,6 +10,7 @@
 - svn commit -m "message" // 直接提交
 - svn st(status) // 状态
 - svn diff
+- svn log file-path // 查看某个文件的历史记录
 - svn revert
 - svn merge -r 608:602 "" // 从r608回滚到r602
 - svn info // 
