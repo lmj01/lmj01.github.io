@@ -217,3 +217,13 @@ changing commonly used methods(mouse, keyboard) on the fly.
 However, after 2.5 permits multiple windows for multi-screen setup, it is an exception to 
 the Non-Overlapping rule. 
 
+## Event
+
+切换camera时，可以使用numpad的数字触发事件，关注的函数是
+source/blender/windowmanager/intern/wm_event/system.c中wm_eventemulation
+
+从字面上提示的入口分析，因为RNA是UI层面的表现层的东西，直接搜索Numpad 0这样的字符，就发现有一个文件source/blender/maeksrna/intern/rna_wm.c中rna_enum_event_type_items中的EVT_PAD5也可以看到是在wm_eventemulation中
+
+继续溯源就跑到source/blender/editors/interface/interface_handlers.c中的ui_handle_menu_event函数
+关联到相关的Numpad事件，就是函数ui_handle_button_activate
+

@@ -108,8 +108,12 @@ STRC // structs
 
 除掉这个函数，sDNA模块其他都是struct的定义了。
 
+### SDNA
+SDNA存储了关键的索引信息，
+
 ## RNA
 > RNA definitions and functions. Sits on top of DNA to provide a low level data access and definitin API.
+> RNA也是大多数UI的property 
 
 在source/blender/makesrna/RNA_define.h中RNA_init和RNA_exit两个函数，
 
@@ -136,7 +140,6 @@ if (prop->type == PROP_FLOAT) {
 
 定义的在makesrna/intern/rna_internal_types.h文件中
 
-
 **作用** 
 
 在[2.50](https://archive.blender.org/wiki/index.php/Dev:2.5/Source/Architecture/RNA/)版本的特性，将DNA包装成一个非常nice的API的一套系统，这套API用来读取Blender的数据和属性。
@@ -144,3 +147,28 @@ if (prop->type == PROP_FLOAT) {
 Blender的RNA可以自动生成Python数据访问API，使得一切特性都可以像动画那样。
 
 这样DNA系统放弃文件的可读性，但提高了灵活性和速度。曽传闻XML会替换掉DNA系统，但有趣的是Google内部使用了类似的DNA系统来取代XML。Blender是第一个使用这种DNA系统的应用程序。可参考[Data API](<https://archive.blender.org/wiki/index.php/BlenderDev/Blender2.5/DataAPI/>)
+
+## ID
+
+这是很多重要的struct的第一个字段，这对C语言的内存模型来说，非常方便转换，解释每一个block内存块的一部分信息
+```c
+/* watch it: Sequence has identical beginning. */
+/**
+ * ID is the first thing included in all serializable types. It
+ * provides a common handle to place all data in double-linked lists.
+ * */
+```
+
+## action
+
+旧的动画系统old animation system deprecated.
+```c
+/* Define actions data-block for the animation system.
+ * A collection of animation curves and drivers to be assigned to data-blocks
+ * or sequenced in the non-linear-editor (NLA).
+ */
+```
+
+## workspace
+
+是指保留整个布局的关系与窗体的关系

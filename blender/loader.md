@@ -1,4 +1,5 @@
 # Loader
+> source/blender/blenloader/
 
 分析了sDNA模块后，提到了每个.blend文件中都包含了DNAstr，这算是blender向后兼容非常特别的功能。
 
@@ -119,4 +120,23 @@
  */ 
 ```
 
-sdf 
+## Main结构
+> source/blender/blenkernel/BKE_main.h
+
+Main is the root of the 'data-base' of a Blender context. All data is put into lists, and all these lists are stored here.
+
+从Main结构中可以看到所有的对象都是通过ListBase链表存在的，所有的数据的入口应该都是在Main结构中了。这些不同的ListBase就是ID，对应着不同的ID_type， 在source/blender/blenkernel/intern/idtype.c中函数id_type_init()定义了这些ID的值，每个id-type对应着一个library
+
+
+## Library
+
+前缀为BKE_lib_的文件都是data-blocks的操作工具，也是修改随后可能进行修改的工具函数
+而struct Library定义在source/blender/makesdna/DNA_ID.h中
+
+## FileData
+在文件DNA_sdna_types.h中BHead表示头，而BHead4和BHead8分别处理了32位和64位的对齐数据格式， 
+```c
+static BHeadN *get_bhead(FileData *fd)
+```
+在上函数中先读取头信息
+在这里有一个新的BHeadN结构
