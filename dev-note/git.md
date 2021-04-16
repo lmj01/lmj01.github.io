@@ -91,6 +91,17 @@ ssh-agent -s
 known_hosts
 在~/.ssh/known_hosts文件中存在git的public key
 
+### 凭证缓存
+因为gitlab的密码输出错误，导致权限HTTP Basic: Access Denied错误
+执行清楚权限帮助
+git config --system --unset credential.helper
+缓存
+git config credential.helper cache
+无限期保存
+git config credential.helper store
+[官方文档](https://git-scm.com/docs/git-credential-store)
+
+
 ### 合并策略配置
 [Git Attributes](https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes)
 合并分支指定文件忽略掉

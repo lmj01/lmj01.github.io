@@ -149,6 +149,22 @@ Syntactically Awesome StyleSheets
 
 [boots-watch](https://bootswatch.com/)的demo展示了主体样式切换的原理，就是css文件的替换后自动刷新。它利用了scss预处理技术，把bootstrap中的变量进行了替换，和一些基本样式的更改，
 
+```scss
+$top-height: 60px;
+div {
+    height: calc(100% - #{$top-height});
+    @media (max-width: 1200px) {
+        height: 100%;
+    }
+}
+@media screen and (orientation: landscape) {
+    @media screen and (max-width: 520px) {
+
+    }
+}
+```
+
+
 ## [Tailwind](https://tailwindcss.com/)
 
 npm install tailwindcss
