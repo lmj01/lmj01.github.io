@@ -3,6 +3,12 @@
 
 css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的
 
+## meta
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+```
+bootstrap-vue上看到的，让网页宽度自动适应手机屏幕
+
 ## effect
 
 ### scroll
@@ -12,13 +18,6 @@ css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的
 
 ### li 
 横向摆放，使用float-left模式来处理
-
-### box-shadow
-
-```css
-/* offset-x:1 offset-y:2 blur-radius:3 spread-radius:4 */
-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
-```
 
 ### Cascading order - specificity
 [CSS2-Cascading order](https://www.w3.org/TR/CSS21/cascade.html#specificity)
@@ -87,7 +86,7 @@ box-model分为两类:块状block和行内inline,两种的区别:
 #### @media
 
 语法
-```
+```css
 @media mediatype and|not|only (media feature) {
     css-code;
 }

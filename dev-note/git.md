@@ -51,6 +51,15 @@
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
 
+### 回滚
+git checkout branch-with-history 切换到带有历史记录的分支中
+git checkout -b XXX 新建本地分支XXX
+git reset --hard commit-id 回滚分支XXX上的某个提交点
+此时代码就是某个提交点的，就可以修改了
+
+git reset --hard彻底回退到某个版本，同时回退暂存区和版本库和工作区
+git reset --soft回退到某个版本，只回退到暂存区
+git reset --mixed默认不带参，只回退暂存区和本地版本库
 
 ## [stash](https://www.git-scm.com/docs/git-stash)
 
