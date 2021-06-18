@@ -1,5 +1,23 @@
 # SVG
 
+坐标系
+ 0-----> X
+ |
+ |
+\|/
+ y
+
+M = moveto
+L = lineto
+H = horizontal lineto
+V = vertical lineto
+C = curveto
+S = smooth curveto
+Q = quadratic Bézier curve
+T = smooth quadratic Bézier curveto
+A = elliptical Arc
+Z = closepath
+
 ## Attribute
 
 ### stroke

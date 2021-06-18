@@ -30,10 +30,11 @@
 
 ### submodule
 
-- git submodule add <repository> <path>添加子模块
+- git submodule add <repository> <path>添加子模块 path是相对根目录的路径
 - git submodule init初始化子模块
 - git submodule update更新子模块
 - git submodule foreach git pull拉取所有的子模块
+- git submodule sync
 - git rm --cached modulename删除子模块
 
 子模块删除
