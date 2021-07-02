@@ -47,7 +47,10 @@
 - git branch -d <branch_name> 删除本地分支
 - git push origin --delete <branch_name> 删除远程分支
 - git checkout -b <branch_local> <branch_remote> // git checkout -b dev-local origin/dev 从远程dev分支创建本地分支dev-local
-
+- git branch -m newName 在当前分支
+- git branch -m oldName newName 修改不在旧分支上
+- git push --delete origin oldName 删除远程分支
+- git push origin newName 把本地新的分支推送到远程
 - git remote add upstream repo-url 添加上游仓库地址
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
