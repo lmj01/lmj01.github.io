@@ -5,7 +5,8 @@
 
 ## 创建
 - git init 对当前目录进行git初始化
-- git remote add origin repo-url 添加远程仓库地址
+- git remote add repo-name repo-url 添加远程仓库地址
+- git remote rm repo-name
 - git push origin branch-name 把当前分支
 - git clone <repository> --recursive递归克隆整个项目
 
@@ -32,7 +33,7 @@
 
 - git submodule add <repository> <path>添加子模块 path是相对根目录的路径
 - git submodule init初始化子模块
-- git submodule update更新子模块
+- git submodule update更新子模块 // 切换分支后就需要执行它
 - git submodule foreach git pull拉取所有的子模块
 - git submodule sync
 - git rm --cached modulename删除子模块
@@ -54,6 +55,7 @@
 - git remote add upstream repo-url 添加上游仓库地址
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
+- git remote prune origin 删去本地显示远程已经删除的分支
 
 ### 回滚
 git checkout branch-with-history 切换到带有历史记录的分支中

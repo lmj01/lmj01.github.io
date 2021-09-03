@@ -132,7 +132,15 @@ linear transformations also can be represented by Matrix function. It combine mu
 it is an algorithm that processes a document and display it on visual media.
 it transforms each element of the document and generates zero, one, or several boxes that conform to the **box model**
 
-
+## variable
+```css
+:root {
+    --main-color: pink;
+}
+div {
+    background-color: var(--main-color, red);
+}
+```
 ## [Sass](https://www.sasscss.com/)
 
 Syntactically Awesome StyleSheets
