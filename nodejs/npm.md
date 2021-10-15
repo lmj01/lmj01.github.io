@@ -17,7 +17,9 @@ node index.js
 npm install XXX 安装但不写入package.json
 npm install XXX --save 安装且写入package.json中的dependencies
 npm install XXX --save-dev 安装且写入package.json中的devDependencies
-npm install xxx@a.b.c // 安装指定版本
+npm install xxx@a.b.c --save-dev // 安装指定版本
+npm install update xxx --save-dev 指定升级某个包
+npm install xxx@latest --save-dev 安装最新版本
 npm install -ddd // 可以查看安装的细节  
 npm install relative-path // 把某个本地包安装进当前工程
 ```
