@@ -9,7 +9,7 @@ cd rootPath/lib
 svn checkout https://svn.blender.org/svnroot/bf-blender/trunk/lib/win64_vc15
 cd rootPath/blender 
 make.bat help 
-make.bat lite 
+make.bat lite 2017 // window 2017 编译
 ```
 参考[building blender options](https://wiki.blender.org/wiki/Building_Blender/Options)
 
