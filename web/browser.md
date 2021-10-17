@@ -82,3 +82,11 @@ Chromium Embedded Framework(CEF)是一个框架，用于在其他应用程序中
 # 参考
 
 - [CAS实现SSO](http://www.coin163.com/java/cas/cas.html)
+
+## 搜索
+指定站点
+xx site:http://jianshu.com
+指定文件
+xx filetype:pdf
+不搜索指定域名
+xx -csdn.net
