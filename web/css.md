@@ -177,6 +177,8 @@ div {
 npm install tailwindcss
 node_modules\.bin\tailwind init
 
+## BEM 
+Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.是由Yandex团队提出的一种CSS Class的命名方法
 
 ## 参考
 
