@@ -56,6 +56,7 @@
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
 - git remote prune origin 删去本地显示远程已经删除的分支
+- git cherry-pick <commit-id> 合并某个commit，只能在本地操作，本地分支要有这个commit记录才可以合并
 
 ### 回滚
 git checkout branch-with-history 切换到带有历史记录的分支中
