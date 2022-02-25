@@ -87,6 +87,10 @@ git reset --mixed默认不带参，只回退暂存区和本地版本库
 - git push origin tagName 推送到远程的tagName
 - git checkout tag 克隆tag那个点的分支
 
+## diff
+
+- git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
+
 ## config
 git的配置
 

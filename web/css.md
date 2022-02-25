@@ -65,6 +65,7 @@ box-model分为两类:块状block和行内inline,两种的区别:
 1. block可以设置width,height,而inline设置无效
 2. block独占一行,除非修改了element的样式,而inline只会在一行内显示
 3. block的width默认100%,而inline是根据element内容及element-child来决定
+[box-sizing关于box-model的演化](https://css-tricks.com/box-sizing/)
 
 ##### position
 

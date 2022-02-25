@@ -54,9 +54,9 @@
     installFunc.e = function(e) {
         var t = []
           , n = o[e];
-        if (0 !== n)
+        if (0 !== n) {
             if (n)
-                t.push(n[2]);
+                t.push(n[2]); // 把exports的放入队列中
             else {
                 var s = new Promise((function(t, r) {
                     n = o[e] = [t, r]
@@ -99,7 +99,9 @@
                 l.onerror = l.onload = c,
                 document.head.appendChild(l)
             }
-        return ({
+        }
+        // 入口函数
+        ({
             3: [1817]
         }[e] || []).forEach((function(e) {
             var n = r[e];
@@ -131,8 +133,8 @@
                 )))
             }
         }
-        )),
-        Promise.all(t)
+        ));
+        return Promise.all(t);
     }
     installFunc.m = modules;
     installFunc.c = installedModules;
@@ -221,4 +223,11 @@
  * 
  * function(e,t,n){}拥有相同的参数名称，在执行阶段是不同值的对象
  * 这些函数通过执行器来调用，一般模式为XXX.call(e,t,n)
+ */
+
+/**
+ * function(e,t,n)分别是
+ * installFunc.e
+ * installFunc.t
+ * installFunc.n
  */
