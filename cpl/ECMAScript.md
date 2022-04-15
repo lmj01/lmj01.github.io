@@ -175,6 +175,10 @@ HTML5提供了一个javascript多线程解决方案，在之前DOM渲染与JavaS
 - 绑定worker.onmessage接受worker数据
 - 使用worker。terminate()终止一个worker
 
+## typescript
+
+
+
 ## 工程化
 
 Fetch API

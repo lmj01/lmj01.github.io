@@ -24,3 +24,14 @@ class c2 {
     }
 }
 console.log(Object.prototype.toString.call(new c2()));
+function f1(e) { console.log('fun1', e); return e; }
+function f2(e,t) { console.log('fun2', e, t); return {e:e,t:t} }
+const testF12 = (f1,f2);
+console.log('comma effect', testF12);
+
+const fO = (e,t) => n => {
+    n(f1(e));
+    n(f2(e,t));
+}
+const fN = fO(1, 2);
+console.log('fO', fN, fN((r)=>{console.log('recall', r)}))
