@@ -6,6 +6,8 @@
     - **grep -rn "xxx"**递归查找字符串xxx
     - **--exclude=*.{min.js}**排除文件类型
     - **-w,-word-regexp** 精准匹配
+    - grep **^xxx** 匹配以xxx开头
+    - grep -rno "xxx" 精确匹配内容，不显示多余的
 - compress
     - xz -d xxx.tar.xz and tar xvf xxx.tar分两步解压 
     - tar xvf xxx.tar -C /path 确保指定目录/path已存在

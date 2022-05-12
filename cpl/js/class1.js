@@ -20,6 +20,9 @@ class Class1 {
 let c1 = new Class1(3);
 c1.method1();
 
+/**
+ * {} is Object initializer
+ */
 class Tt extends class {
 }
 {
