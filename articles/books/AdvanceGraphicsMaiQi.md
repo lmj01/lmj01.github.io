@@ -1,6 +1,21 @@
 # 图形学研修班
 
 
+## 2022-6-14 10:00 星期二
+
+Lecture 4 ： 
+
+因余老师出差，推迟到今天，在美国时间改成上午。
+今天有几个点的概念清晰起来了。
+一个是平行投影，正交投影是平行投影的一种，是顶点vertex垂直于viewPlane的结果
+透视投影是converge point与顶点vertex连线，与viewPlane相交点就是结果。
+
+lighting model是着色过程，是3D space中的着色
+surface rendering是把3D space中着色的颜色值投影到2D viewPlane中，是一个3D to 2D的process过程
+
+flat shading是一个triangle with one normal with one color in triangle
+smooth shading是通过插值来完成的（使用barycentric coordinate重心坐标）
+
 ## 2022-5-27 16:30 星期四
 
 Lecture 3 ： Introduction to 3D Printing
