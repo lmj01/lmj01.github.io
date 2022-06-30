@@ -72,6 +72,10 @@ cd boost_1_xx_y_z
 ./b2 install 
 ```
 
+## win11
+安装完Ubuntu后，提示升级
+sudo apt update
+sudo apt upgrade
 
 
 ## 参考

@@ -1,9 +1,51 @@
 # 图形学研修班
 
+## 2022-6-28 10:00 星期二
+
+Lecture 6: Volumn Rendering
+
+体绘制，数据来源可能有两种，一种是2DArrayTexture，一种是3DTexture
+渲染这些输入得到的是一个图像，所以首先要slice，得到一张张的slice后的图像，把他映射到屏幕或文件上就是结果
+
+体绘制的过程中，是没有几何结构，就是没有surface，就是利用iso-surface得到一个平面，从视角方向得到的这个图像。
+
+Ray-tracing是多次迭代、反射的过程，
+Ray-casting是一次性的
+
+根据上面的理论可以得出不同的方案来处理体绘制
+1-first：取第一次相交的结果为值
+2-mean：平均值，在相交范围内取平均值
+3-MIP：最大值，在相交范围内取最大值
+4-accumulate：累积结果，把相交范围内的值都累积起来，做区别对待。
+
+把体绘制与光照结合起来，又是对结果的改善。
+
+
+## 2022-6-20 10:00 星期二
+
+Lecture 5: Ray Tracing
+
+direct illumination vs global illumination
+ADS(kaIa + kdId + ksIs) 是直接光照，A(DS)*
+global illumination是ray tracing实现的
+
+因为光线追踪的起始位置Lighting Position与结束位置Eye Position是确定的，其途径是由diffuse和specular影响的，可用L(D|S)+E来表示，
+
+图形学的核心就是3D投影到2D的过程，ray tracing是2D到3D的逆投影。因为最终得到的图像是确定大小的，这样的计算量就可以得到简化。
+
+为了简化，从lighting到eye是以一次性反射或折射计算的。
+### compute ray
+通过图像像素反推算ray line, 得到ray=p+td。
+多数情况下需要分正交投影与透视投影来计算ray
+### determine first point
+确定求交的第一个点，可判断是ray-sphere,ray-box,ray-triangle这些情况来分来
+### calculate color
+用shading计算出相交点的color值，但是为了更精准的值，需要进行对简化的模型进行迭代iteration和recursion操作，这些就是工程上的考虑与对需求结果的要求。
+
 
 ## 2022-6-14 10:00 星期二
 
-Lecture 4 ： 
+Lecture 4 ： 3D Viewing, Lighting and Shading in OpenGL
 
 因余老师出差，推迟到今天，在美国时间改成上午。
 今天有几个点的概念清晰起来了。
@@ -51,3 +93,8 @@ Lecture 1 ： Geometric Transformations
 但是余老师解释旋转时需要6位，即加工业要解决的至少6轴旋转技术也是这个东西，余老师从正方面解释了六轴
 3+2+1解释为一个空间点3维，一个轴向有两个平面确定2，一个旋转角度1
 反向解释5维，两个点各需要3维，共6维。但是这两点的连续是一个具体的长度，这个维度是不需要的，可以减去一维，就得到5维，加上旋转角度这一维。
+
+# 参考资料
+
+[Ray Tracing in One Weekend—The Book Series](https://raytracing.github.io/)
+[introduction-to-ray-tracing](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing)

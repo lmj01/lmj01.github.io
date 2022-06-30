@@ -257,3 +257,48 @@ Calculus is a core tool in computer graphics across not just physically based re
 5.Numerical Integration
 
 6.A Tale of Two Cities
+Most problems in applied computer science are today solved by randomized algorithms, also known as nondeterministic and stochastic methods.
+
+7.Monte Carlo Integration
+
+8.An Energy Example
+
+## [Path Tracing](https://graphicscodex.courses.nvidia.com/app.html?page=_rn_path)
+
+1.A Simple Implementation
+
+2.Algorithmic Complexity
+
+Elements of Path Tracing
+
+3.Applying Monte Carlo Integration
+
+The Camera Intergrals
+Pixels of an image represent energy that accumulated on a square area from light that passed through a camera aperture over the exposure time. Therefore, the units of a high-dynamic range (monochrome) virtual image pixel are joules. 
+
+Distributed Sampling
+
+The Transport Integral
+
+Terminal Cases
+
+4.Importance Sampling
+
+## [Ray Marching](https://graphicscodex.courses.nvidia.com/app.html?page=_rn_rayMrch)
+
+1.Intersection Algorithms
+
+Ray Marching
+is an algorithm for numerical estimation of arbitrary ray-surface intersections
+
+2.Marching
+
+3.Distance Estimators
+
+4.Sphere Tracing
+
+5.Some Distance Estimators
+
+6.Computing Normals
+
+7.A Sample GLSL Ray Caster
