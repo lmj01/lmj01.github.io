@@ -3,3 +3,4 @@
 articles/2020/tmp.md
 *.out
 cpl/ts/*.js
+.obsidian
