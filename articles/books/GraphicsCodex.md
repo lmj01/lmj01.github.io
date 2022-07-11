@@ -302,3 +302,68 @@ is an algorithm for numerical estimation of arbitrary ray-surface intersections
 6.Computing Normals
 
 7.A Sample GLSL Ray Caster
+
+8.Operations On Distance Estimators
+
+9.Some Useful Operators
+
+Union
+Intersection
+Subtraction
+Repetition
+Transformation
+Blending
+
+10.Increasing Performance
+
+Over-Relaxation
+Bounding Spheres
+Reintroducing Analytic Roots
+Other Optimization Strategies
+
+11.Some Online Examples in GLSL
+
+Educational
+Aspirational
+
+12.Further Reading
+
+## [parallel architectures](https://graphicscodex.courses.nvidia.com/app.html?page=_rn_parallel)
+
+1.SIMD
+
+2.Coherence
+
+3.Memory Coalescing
+
+4.Cores
+
+5.Thread Pools and Megakernels
+
+6.Occupancy
+
+7.Synchronization
+
+8.Pipelines
+
+9.Physics Revisited
+
+10.Super-Linear Speedups
+
+Intra-core Utilization
+Memory
+Physics Revisited
+
+11.Structure and Arrays
+
+## [The Eye](https://graphicscodex.courses.nvidia.com/app.html?page=_rn_hvs)
+
+1.Photoreceptors光感受器
+
+2.Photoreceptor Response
+
+3.Photopic Vision适应光的视觉
+
+4.Scotopic Vision适应暗光的视觉
+
+

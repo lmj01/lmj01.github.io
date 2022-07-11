@@ -56,7 +56,25 @@
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
 - git remote prune origin 删去本地显示远程已经删除的分支
+
+### merge合并
 - git cherry-pick <commit-id> 合并某个commit，只能在本地操作，本地分支要有这个commit记录才可以合并
+- git checkout -p(--patch) origin/A filename.ext 把A(本地或远程)分支的某个文件合并到现在分支。
+存在差异时有如下的缩写字母命令
+y - apply this hunk to index and worktree # 应用当前hook，把A分支的东西应用到当前分支
+n - do not apply this hunk to index and worktree # 放弃当前hook，放弃A分支的，用当前分支的。
+q - quit; do not apply this hunk or any of the remaining ones # 不使用任何hook，直接退出
+a - apply this hunk and all later hunks in the file # 在当前文件下应用此hook以及后续的所有hook
+d - do not apply this hunk or any of the later hunks in the file # 在当前文件下不应用此hook以及后续的所有hook
+g - select a hunk to go to # 选择一个hook
+/ - search for a hunk matching the given regex # 使用正则搜索hook
+j - leave this hunk undecided, see next undecided hunk # 先跳过当前hook，并跳转到下一个未处理hook
+J - leave this hunk undecided, see next hunk # 先跳过当前hook，并跳转到下一个hook
+k - leave this hunk undecided, see previous undecided hunk # 先跳过当前hook，并跳转到上一个未处理hook
+K - leave this hunk undecided, see previous hunk # 先跳过当前hook，并跳转到上一个hook
+s - split the current hunk into smaller hunks # 切割当前hook
+e - manually edit the current hunk # 编辑当前hook
+? - print help # 显示帮助信息
 
 ### 回滚
 git checkout branch-with-history 切换到带有历史记录的分支中
