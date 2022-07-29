@@ -6,6 +6,7 @@
 3. mysqld --initialize --console初始化数据库
 4. mysqld --console启动
 5. mysqladmin -u root shutdown关闭
+6. mysqld --install 安装服务到系统中
 
 修改密码
 ```sql

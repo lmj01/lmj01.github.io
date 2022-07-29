@@ -11,16 +11,3 @@ PdfFont f3 = PdfFontFactory.createFont("C:/Windows/Fonts/simhei.ttf", PdfEncodin
 document.add(new Paragraph("hellos你好").setFont(f2));
 document.add(new Paragraph("hellos你好").setFont(f3));
 ```
-
-## zxing
-
-条形码的生成
-
-
-## install 命令
-
-maven install后，没有jar文件的逻辑
-
-cannot find symbol
-
-
