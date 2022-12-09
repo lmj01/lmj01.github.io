@@ -32,6 +32,7 @@
 ### submodule
 
 - git submodule add <repository> <path>添加子模块 path是相对根目录的路径
+- git submodule add -b branch_name URL_to_Git_repo optional_directory_rename
 - git submodule init初始化子模块
 - git submodule update更新子模块 // 切换分支后就需要执行它
 - git submodule foreach git pull拉取所有的子模块

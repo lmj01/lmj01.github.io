@@ -42,3 +42,4 @@ pip install pyopengl
 ## 概念
 
 - PEP python的增强建议书
+- print(dir(moduleLib)) 查看当前模块库的接口

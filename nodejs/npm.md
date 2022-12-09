@@ -22,6 +22,7 @@ npm install update xxx --save-dev 指定升级某个包
 npm install xxx@latest --save-dev 安装最新版本
 npm install -ddd // 可以查看安装的细节  
 npm install relative-path // 把某个本地包安装进当前工程
+npm lx xxx 查询依赖的库信息
 ```
 
 npm已经发展几个版本了，npm5发布于2017年，增加了package-lock.json文件，它对应node_modules中目录文件层结构是对应的，是锁定依赖安装结构
