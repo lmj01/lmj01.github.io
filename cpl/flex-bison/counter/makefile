@@ -1,3 +1,3 @@
 fb: fb.l
 	flex fb.l
-	cc lex.yy.c -lfl
+	cc -o $@ lex.yy.c -lfl
