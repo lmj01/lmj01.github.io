@@ -2,6 +2,17 @@
 
 ## cli
 
+### find
+- find
+    - name
+    - user
+    - type
+```js
+find . -name "*libc*"
+
+```
+### grep
+
 - grep
     - **grep -rn "xxx"**递归查找字符串xxx
     - **--exclude=*.{min.js}**排除文件类型

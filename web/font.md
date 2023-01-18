@@ -32,10 +32,26 @@ body {
 ## 理论知识
 不同操作系统、不同浏览器内嵌的默认字体是不同的
 
-字体分类
+按字体族类分类为
 - serif衬线，是指在字的笔划开始及结束处的地方有额外的装饰，且笔画的粗细也有变化，衬线的字体比较突出，常见的有Times New Roman、宋体
 - sans-serif无衬线，是没有这些装饰，笔画粗细大致差不多，字形端庄，横平竖直，常见的有Tahoma、Arial、Verdana、Helvetica、微软雅黑
-- 等宽字体，指字符宽度相同的字体，通常用于编辑器以及技术文章编辑中，主要是针对西文字体的，courier是最常见的等宽字体
+- monospace等宽字体，指字符宽度相同的字体，通常用于编辑器以及技术文章编辑中，主要是针对西文字体的，courier是最常见的等宽字体
+- fantasy梦幻
+- cuisive草体
+
+![](./images/Serif-and-sansSerif.png)
+
+### 打印字体TrueType
+
+PDF内嵌字体
+
+TrueType(CID)
+编码 Identity-H
+[TrueType CID fonts causing issues for clients with older printers](https://forum.aspose.com/t/truetype-cid-fonts-causing-issues-for-clients-with-older-printers/13530/3)
+
 
 ## 参考
 [Web 字体 font-family 该如何设置？](https://zhuanlan.zhihu.com/p/313284552)
+[cmap — Character to Glyph Index Mapping Table](https://learn.microsoft.com/en-us/typography/opentype/spec/cmap#encoding-records-and-encodings)
+[Fonts & Encodings](https://book.douban.com/subject/2362953/)
+[打印机分辨率增强技术](https://www.docin.com/p-878782126.html)

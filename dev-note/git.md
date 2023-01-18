@@ -6,8 +6,8 @@
 ## 创建
 - git init 对当前目录进行git初始化
 - git remote add repo-name repo-url 添加远程仓库地址
-- git remote rm repo-name
-- git push origin branch-name 把当前分支
+- git remote rm repo-name 删除远程仓库关联
+- git push origin branch-name 把当前分支推送到origin
 - git clone <repository> --recursive递归克隆整个项目
 
 ### 推送
@@ -22,15 +22,7 @@
     - git rm -f file.ext 删除跟踪，并删除本地文件
     - git reset --hard xxxx // 退回到那个版本
 
-### 镜像
-- git remote add mirror repo-url 添加远程镜像仓库地址
-- git push origin master
-- git push mirror master
-- git pull origin master
-- git pull mirror master
-
 ### submodule
-
 - git submodule add <repository> <path>添加子模块 path是相对根目录的路径
 - git submodule add -b branch_name URL_to_Git_repo optional_directory_rename
 - git submodule init初始化子模块
@@ -97,18 +89,10 @@ git reset --mixed默认不带参，只回退暂存区和本地版本库
 - git stash drop [<stash>] 删除对应的stash的id
 - git stash clear 清楚所有的 
 
-## tag
-
-- git tag 列出所有tag
-- git tag -a tagName 新建tag    
-- git tag -d tagName 删除tag
-- git show tagName 查看tag信息
-- git push origin tagName 推送到远程的tagName
-- git checkout tag 克隆tag那个点的分支
-
 ## diff
 
 - git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
+- git diff branch1 branch2 --stat
 
 ## config
 git的配置
