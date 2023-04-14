@@ -10,6 +10,11 @@
 一个shader指整个文件中所有的Pass或kernel。Unity ShaderLab把一整个文件所有的Pass的所有代码和render state都打包到一起称为一个Shader。引擎工程中很多都是这样处理的。
 
 
+## Reference
+关键字在github全局搜索
+
+[关于RenderPass的封装](https://github.com/UL-FRI-LGM/RenderCore)
+
 
 
 

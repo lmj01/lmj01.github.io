@@ -97,6 +97,8 @@ git reset --mixed默认不带参，只回退暂存区和本地版本库
 ## config
 git的配置
 
+git config --global init.defaultBranch main // 更改默认分支git2.28支持
+
 ### git ssh
 在Linux中执行
 ssh-keygen -t rsa -C "lmjie_good@163.com"
