@@ -4,12 +4,14 @@
 
 ```shell
 cd rootPath
-git clone git://git.blender.org/blender.git 
+git clone https://github.com/lmj01/blender.git 镜像地址
 cd rootPath/lib 
 svn checkout https://svn.blender.org/svnroot/bf-blender/trunk/lib/win64_vc15
 cd rootPath/blender 
-make.bat help 
-make.bat lite 2017 // window 2017 编译
+make.bat help
+make.bat update // 确保分支是对的 
+make.bat lite 2019
+build_xxx\bin\Release\blender.exe // 运行blender
 ```
 参考[building blender options](https://wiki.blender.org/wiki/Building_Blender/Options)
 
@@ -46,16 +48,17 @@ grep -rn "XXXFunction" --include="*.c"
 
 ### 记录
 
-- [一些概念](./blender.md)
-- [creator](./creator.md)
-- [splash](./splash.md)
-- [module window manager](./windowmanager.md)
-- [module ghost -- General Handy Operating System Toolkit](./ghost.md)
-- [operator](./operator.md)
-- [data api](./data_api.md)
-- [addons](./addon.md)
-- [python](./python.md)
-- [loader -- read and write .blend format](./loader.md)
+- [一些概念](./concepts/blender.md)
+- [creator](./concepts/creator.md)
+- [splash](./concepts/splash.md)
+- [module window manager](./concepts/windowmanager.md)
+- [module ghost -- General Handy Operating System Toolkit](./concepts/ghost.md)
+- [operator](./concepts/operator.md)
+- [data api](./concepts/data_api.md)
+- [addons](./concepts/addon.md)
+- [python](./concepts/python.md)
+- [draw and shader](./concepts/index.md)
+- [loader -- read and write .blend format](./concepts/loader.md)
 - module editor
     - [interface](./editors/interface.md)
 

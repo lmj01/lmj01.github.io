@@ -46,6 +46,7 @@
 - [Real-Time Rendering](http://www.realtimerendering.com/)
 - [geeks3d resource](https://www.geeks3d.com/programming/)
 - [SIGGraph图形学相关论文的分析](https://replicability.graphics/)
+- [the Journal of Computer  Graphics Techniques -- perr-reviewed, open access, and free to all](https://jcgt.org/index.html)
 - [网页设计的博物馆 ](https://www.webdesignmuseum.org/)
 
 ## 电子书籍
@@ -62,6 +63,9 @@
 - Digital Image Processing, 4th Edition, 2018(在读)
 - Real-Time Rendering, Fourth Edition, 2018(已读)
 
+### 在线PDF
+
+- [Birds and Frogs Freeman Dyson](https://www.ams.org/notices/200902/rtx090200212p.pdf)
 ### 下载资源
 
 - [Book Cord](https://bookcord.com/)
