@@ -9,6 +9,7 @@
 - [裁剪](../cg/culling.md)
 - [四元数](../cg/quaternion.md)
 - [3D API](../cg/API.md)
+- [透视与绘画](../articles/2023/Perspective.md)
 
 ## 他人文章
 
