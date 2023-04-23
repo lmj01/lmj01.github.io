@@ -1,0 +1,19 @@
+:root {
+    --sideLeft: 200px;
+    --sideRight: 200px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.side-left {
+    width: var(--sideLeft);
+}
+.side-right {
+    width: var(--sideRight);
+}
+.main-content {
+    width:calc(100% - var(--sideLeft) - var(--sideRight));
+}

@@ -9,6 +9,9 @@ OpenGL Normalized Device Cooridnate System
 ![orthographic to ndc](../images/cg/opengl_orthographic_to_ndc.png)
 
 
+## perspectiveDepthToViewZ
+
+p_clip = 
 
 ## 参考
 
@@ -19,3 +22,7 @@ OpenGL Normalized Device Cooridnate System
 - [glPerspective](https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/gluPerspective.xml)
 
 - [sketchfab](https://sketchfab.com/)
+
+https://blog.csdn.net/qq_21476953/article/details/124053369
+https://mynameismjp.wordpress.com/2010/09/05/position-from-depth-3/
+https://mynameismjp.wordpress.com/2009/03/10/reconstructing-position-from-depth/
