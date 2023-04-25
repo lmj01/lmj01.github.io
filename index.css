@@ -10,9 +10,11 @@ body {
 }
 .side-left {
     width: var(--sideLeft);
+    border-right: 1px dashed lightblue;
 }
 .side-right {
     width: var(--sideRight);
+    border-left: 1px dashed lightblue;
 }
 .main-content {
     width:calc(100% - var(--sideLeft) - var(--sideRight));

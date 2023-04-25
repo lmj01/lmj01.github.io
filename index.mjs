@@ -1,15 +1,26 @@
-document.getElementById('content').innerHTML =
-      marked.parse('# Marked in the browser\n\nRendered by **marked**.');
+const rootRelative = location.pathname;
+const rootOrigin = location.origin;
+// 测试
+document.getElementById('content').innerHTML = marked.parse('# Marked in the browser\n\nRendered by **marked**.');
 
 function updateContent(text) {
     document.getElementById('content').innerHTML = marked.parse(text);
     document.querySelectorAll('.main-content a').forEach(a=>tagLinkUpdateEvent(a));
 }
 
+const patternExternal = /^(https?:|mailto:|tel:)/
 function tagLinkClickCaption(event, aLink) {
     event.stopPropagation();
     event.preventDefault();
-    fetch(aLink.href).then(res=>res.text()).then(text=>updateContent(text));
+    const isSameOrigin = aLink.href.startsWith(rootOrigin) && aLink.href.endsWith('.md');
+    if (isSameOrigin) {
+        // 只解析本地的markdown文件
+        const tmp = `${rootRelative}${aLink.href.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    
+        fetch(tmp)
+            .then(res=>res.text()).then(text=>updateContent(text));
+    } else {
+        window.open(aLink.href);
+    }
 }
 
 function tagLinkUpdateEvent(aLink) {
@@ -18,7 +29,4 @@ function tagLinkUpdateEvent(aLink) {
 }
 
 // 获取所有
-document.querySelectorAll('.side-left a').forEach(a => {
-    console.log('side-left', a)
-    tagLinkUpdateEvent(a)
-});
+document.querySelectorAll('.side-left a').forEach(a => tagLinkUpdateEvent(a));

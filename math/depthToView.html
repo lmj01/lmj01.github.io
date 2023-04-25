@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Depth to View</title>
+<link rel="icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../bootstrap-5.0.2-dist/bootstrap.min.css">
+<script src="../bootstrap-5.0.2-dist/bootstrap.min.js"></script>
+<script src="./mathjax.config.js" defer></script>
+</script>
+</head>
+<body>
+    <div class="container">
+        <div>投影矩阵
+            <p>
+            $$ p_{clip} = \begin{bmatrix}
+            2n \over {r - l} & 0 & {r + l} \over {r - l} & 0\\
+            0 & 2n \over {t - b} & {t + b} \over {t - b} & 0 \\ 
+            0 & 0 & A & B \\
+            0 & 0 & -1 & 0
+            \end{bmatrix}
+            $$
+            </p>
+            其中 
+            <div class="d-flex justify-content-center">
+                <p>$$A = - {{f + n} \over {f - n}}$$</p>
+                <p>$$B = {-2fn \over {f - n}}$$</p>
+            </div>
+            有<p>$$ z_{clip} = A \times z_{view} + B = -{{f + n} \over {f - n}} \times z_{view} + {-2fn \over {f - n}} $$</p>
+            因为 \(z = z_{view}\) 所以有<P>
+                $$
+                z_{ndc} = { {{-{f + n} \over {f - n}}z + {-2fn \over {f - n}}} \over -z} 
+                = {{ f + n + 2fn{1 \over z}} \over {f - n}} 
+                = {{ fz + nz + 2fn} \over {f - n}z }
+                \label{ref1}
+                $$
+            </P>
+        </div>
+        <div>
+            深度纹理depthBuffer的depth范围是 \( 0 \sim 1 \) \(z_{ndc}\) 范围是 \( -1 \sim 1\) 则有
+            <p>$$ depth = {z_{ndc}{1 \over 2}} + {1 \over 2} \label{ref2} $$</p>
+            把 [\ref{ref1}] 代入 [\ref{ref2}] 有
+            <p></p>
+        </div>
+        
+    </div>
+</body>
+</html>
