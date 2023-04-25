@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Depth to View</title>
+<link rel="icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../bootstrap-5.0.2-dist/bootstrap.min.css">
+<script src="../bootstrap-5.0.2-dist/bootstrap.min.js"></script>
+<script src="./mathjax.config.js" defer></script>
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="my-3">
+            <h3>transform in render detail</h3>
+            <div>
+                <img class="img-thumbnail w-100" src="../images/cg/transform.png" />
+            </div>
+            <h4></h4>
+            <div class="d-flex flex-wrap w-100">
+                <p>
+                    $$
+                    \begin{bmatrix}
+                    x_{eye} \\
+                    y_{eye} \\
+                    z_{eye} \\
+                    w_{eye}
+                    \end{bmatrix} 
+                    = M_{view} \cdot 
+                    M_{model} \cdot 
+                    \begin{bmatrix}
+                    x_{obj} \\
+                    y_{obj} \\
+                    z_{obj} \\
+                    w_{obj}
+                    \end{bmatrix}
+                    = M_{modelView} \cdot 
+                    \begin{bmatrix}
+                    x_{obj} \\
+                    y_{obj} \\
+                    z_{obj} \\
+                    w_{obj}
+                    \end{bmatrix}
+                    $$
+                </p>
+                <p>
+                    $$
+                    \begin{bmatrix}
+                    x_{clip} \\
+                    y_{clip} \\
+                    z_{clip} \\
+                    w_{clip}
+                    \end{bmatrix} 
+                    = M_{projection} \cdot 
+                    \begin{bmatrix}
+                    x_{eye} \\
+                    y_{eye} \\
+                    z_{eye} \\
+                    w_{eye}
+                    \end{bmatrix}
+                    = M_{projection} \cdot 
+                    M_{view} \cdot 
+                    M_{model} \cdot 
+                    \begin{bmatrix}
+                    x_{obj} \\
+                    y_{obj} \\
+                    z_{obj} \\
+                    w_{obj}
+                    \end{bmatrix}
+                    $$
+                </p>
+                <p>
+                    $$
+                    \begin{bmatrix}
+                    x_{ndc} \\
+                    y_{ndc} \\
+                    z_{ndc} 
+                    \end{bmatrix} 
+                    = \begin{bmatrix}
+                    { x_{clip} \over w_{clip} } \\
+                    { y_{clip} \over w_{clip} } \\
+                    { z_{clip} \over w_{clip} }
+                    \end{bmatrix}
+                    $$
+                </p>
+                <p>glViewport(topX, topY, width, height)和glDepthRange(near, far)</p>
+                <p>
+                    $$
+                    \begin{bmatrix}
+                    x_{screen} \\
+                    y_{screen} \\
+                    z_{screen} 
+                    \end{bmatrix} 
+                    = \begin{bmatrix}
+                    { {width \over 2}x_{ndc} + (topX + {width \over 2}) } \\
+                    { {height \over 2}y_{ndc} + (topY + {height \over 2}) } \\
+                    { {{far - near} \over 2}z_{ndc} + {(far + near) \over 2}) }
+                    \end{bmatrix}
+                    $$
+                </p>
+            </div>
+            <div>
+                <p>transform a normal vector from object to eye space</p>
+                <p>
+                    $$
+                    \begin{bmatrix}
+                    nx_{eye} \\
+                    ny_{eye} \\
+                    nz_{eye} \\
+                    nw_{eye} \\
+                    \end{bmatrix} 
+                    = (M_{modelView}^{-1})^{T}
+                    \begin{bmatrix}
+                    nx_{obj} \\
+                    ny_{obj} \\
+                    nz_{obj} \\
+                    nw_{obj}
+                    \end{bmatrix}
+                    $$
+                </p>
+            </div>
+        </div>
+        <div class="my-3">
+            OpenGL的NDC(Normalized Device Coordinate System)
+            <div class="d-flex">
+                <img class="img-thumbnail w-50" src="../images/cg/opengl_perspective_to_ndc.png" />
+                <img class="img-thumbnail w-50" src="../images/cg/opengl_orthographic_to_ndc.png" />
+            </div>
+            glFrustum/glOrtho是OpenGL的NDC坐标系统，top是正y，bottom是负y，参数(left,right,bottom,top)就是(xmin, xmax, ymin, ymax)
+        </div>
+        <div>
+            <h4>Depth and ViewZ </h4>
+            <h6>threejs的src\renderers\shaders\ShaderChunk\packing.glsl.js中包含了两个函数，在examples\webgl_depth_texture.html中渲染深度，显示使用这个方法</h6>
+            <code class="my-2">
+                <pre>
+                    float viewZToPerspectiveDepth(const in float viewZ, const in float near, const in float far) {
+                        return ( ( near + viewZ ) * far ) / ( ( far - near ) * viewZ)
+                    }
+                </pre>
+            </code>
+            <code class="my-2">
+                <pre>
+                    float perspectiveDepthToViewZ(const in float invClipZ, const in float near, const in float far) {
+                        return ( near * far ) / ( ( far - near ) * invClipZ - far )
+                    }
+                </pre>
+            </code>
+            <div>投影矩阵
+                <p>
+                $$ p_{clip} = \begin{bmatrix}
+                2n \over {r - l} & 0 & {r + l} \over {r - l} & 0\\
+                0 & 2n \over {t - b} & {t + b} \over {t - b} & 0 \\ 
+                0 & 0 & A & B \\
+                0 & 0 & -1 & 0
+                \end{bmatrix}
+                $$
+                </p>
+                其中 
+                <div class="d-flex justify-content-center">
+                    <p>$$A = - {{f + n} \over {f - n}}$$</p>
+                    <p>$$B = {-2fn \over {f - n}}$$</p>
+                </div>
+                有<p>$$ z_{clip} = A \times z_{view} + B = -{{f + n} \over {f - n}} \times z_{view} + {-2fn \over {f - n}} $$</p>
+                因为 \(z = z_{view}\) 所以有<P>
+                    $$
+                    z_{ndc} = { {{-{f + n} \over {f - n}}z + {-2fn \over {f - n}}} \over -z} 
+                    = {{ f + n + 2fn{1 \over z}} \over {f - n}} 
+                    = {{ fz + nz + 2fn} \over {f - n}z }
+                    \label{ref1}
+                    $$
+                </P>
+            </div>
+            <div>
+                深度纹理depthBuffer的depth范围是 \( 0 \sim 1 \) \(z_{ndc}\) 范围是 \( -1 \sim 1\) 则有
+                <p>$$ depth = {z_{ndc}{1 \over 2}} + {1 \over 2} \label{ref2} $$</p>
+                把 [\ref{ref1}] 代入 [\ref{ref2}] 有
+                <p>
+                    $$
+                    depth = {{fz + nz + 2fn} \over {2(f - n)z}} + {{(f - n)z} \over {z(f - n)z}}
+                    = {{fz + fn} \over {fz - nz}}
+                    = {{(n + z)f} \over {(f - n)z}}
+                    $$
+                </p>
+                求取z有, \(d = depth \)
+                <p>
+                    $$
+                        d(f - n)z = (n + z)f 
+                    $$
+
+                    $$
+                        \Rightarrow 
+                        z(d(f - n) - f) = nf 
+                    $$
+                    $$
+                        \Rightarrow 
+                        z = { nf \over {d(f - n) -f}}
+                    $$
+                </p>
+            </div>
+             
+        </div>
+        <div>
+            <h4>Reconstructing Position From Depth</h4>
+            <div><p>That finds great use for deferred rendering: reconstructing the 3D position of a previously-rendered pixel (either in view-space or world-space) from a single depth value</p></div>
+            <div></div>
+        </div>
+        <div>
+            <h4>参考</h4>
+            <div class="d-flex flex-column">
+                <p>符合含义</p>
+                <p>\(n\) camera near</p>
+                <p>\(f\) camera far</p>
+                <p><a href="http://www.songho.ca/opengl/gl_projectionmatrix_mathml.html">opengl projection matrix</a></p>
+                <p><a href="https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/gluPerspective.xml">glPerspective</a></p>
+                <p><a href="https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/glFrustum.xml">glFrustum</a></p>
+                <p><a href="https://mynameismjp.wordpress.com/2009/03/10/reconstructing-position-from-depth/">reconstructing-position-from-depth</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

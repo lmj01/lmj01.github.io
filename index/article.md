@@ -15,6 +15,7 @@
 ## 他人文章
 
 - [Steve's Computer Graphics Index](http://steve.hollasch.net/cgindex/)
+- [Aras Pranckevičius](https://aras-p.info/blog/)
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html)
 - [全栈开发者CJ](https://cjting.me/)
 - [3D Game Engine Programming](https://www.3dgep.com/)
