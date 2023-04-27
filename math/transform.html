@@ -15,8 +15,20 @@
             <div class="d-flex flex-column">
                 <ol>
                     <li><a href="#section1">Transform a normal vector from object to eye space</a></li>
-                    <li><a href="#section2">Projection matrix</a></li>
-                    <li><a href="#section3">Depth and ViewZ</a></li>
+                    <li>
+                        <a href="#section2">Projection matrix</a>
+                        <ol>
+                            <li><a href="#section2a">perspecitve</a></li>
+                            <li><a href="#section2b">orthographic</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#section3">Depth and ViewZ</a>
+                        <ol>
+                            <li><a href="#section3a">perspecitve</a></li>
+                            <li><a href="#section3b">orthographic</a></li>
+                        </ol>
+                    </li>
                     <li><a href="#section4">Reference</a></li>
                 </ol>
             </div>
@@ -177,7 +189,7 @@
                 <h4 id="section2">projection matrix</h4>
                 <p>与normal matrix推理类似来推理投影矩阵的公式关系,glFrustum/glOrtho是OpenGL的NDC(Normalized Device Coordinate System)坐标系统，top是正y，bottom是负y，参数(left,right,bottom,top)就是(xmin, xmax, ymin, ymax)</p>
                 <div class="my-2">
-                    <h5>perspective projection</h5>
+                    <h5 id="section2a">perspective projection</h5>
                     <div class="d-flex">
                         <img class="img-thumbnail w-50" src="../images/cg/opengl_perspective_to_ndc.png" />
                         <img class="img-thumbnail w-25" src="../images/cg/perspective-top-view.png" />
@@ -433,11 +445,13 @@
                     </div>
                 </div>
                 <div class="my-2">
-                    <h5>orthorgraphics projection</h5>
+                    <h5 id="section2b">orthorgraphics projection</h5>
                     <div class="d-flex">
                         <img class="img-thumbnail w-50" src="../images/cg/opengl_orthographic_to_ndc.png" />
                     </div>
-                    <p>正交投影矩阵相比透视投影矩阵的推理要简化很多，因为三个轴向\(x_{eye},y_{eye},z_{eye}\)都满足线性关系，其线性映射推理与公式[\ref{refPerspective3}]和[\ref{refPerspective4}]是一样的逻辑，
+                    <p>
+                        正交投影矩阵相比透视投影矩阵的推理要简化很多，因为三个轴向\(x_{eye},y_{eye},z_{eye}\)都满足线性关系，其线性映射推理与公式[\ref{refPerspective3}]和[\ref{refPerspective4}]是一样的逻辑，
+                        z轴代入的是\( [-f, 1]\), 注意near和far是传入的正值，推理时要加入负号
                     </p>
                     <div class="d-flex flex-column">
                         <p>
@@ -483,11 +497,11 @@
                             
                             \Rightarrow
                             
-                            1 = {{1 - (-1)} \over {-f - (-n)}} \cdot f + \beta
+                            1 = {{1 - (-1)} \over {-f - (-n)}} \cdot (-f) + \beta
 
                             \Rightarrow
 
-                            \beta = 1 - {{2f} \over {-f - (-n)}} = -{{f + n} \over {f - n}}
+                            \beta = 1 - {{-2f} \over {-f - (-n)}} = -{{f + n} \over {f - n}}
 
                             \Rightarrow
 
@@ -525,68 +539,125 @@
         </div>
         <div>
             <h4 id="section3">Depth and ViewZ</h4>
-            <h6>threejs的src\renderers\shaders\ShaderChunk\packing.glsl.js中包含了两个函数，在examples\webgl_depth_texture.html中渲染深度，显示使用这个方法</h6>
-            <code class="my-2">
-                <pre>
-                    float viewZToPerspectiveDepth(const in float viewZ, const in float near, const in float far) {
-                        return ( ( near + viewZ ) * far ) / ( ( far - near ) * viewZ)
-                    }
-                </pre>
-            </code>
-            <code class="my-2">
-                <pre>
-                    float perspectiveDepthToViewZ(const in float invClipZ, const in float near, const in float far) {
-                        return ( near * far ) / ( ( far - near ) * invClipZ - far )
-                    }
-                </pre>
-            </code>
             <div>
-                <p>根据透视投影矩阵[\ref{refPerspectiveX6}]可得到关系，这里的\(view=eye\)有</p>
+                <h5 id="section3a">Perspective</h5>
+                <h6>threejs的src\renderers\shaders\ShaderChunk\packing.glsl.js中包含了两个函数，在examples\webgl_depth_texture.html中渲染深度，显示使用这个方法</h6>
+                <code class="my-2">
+                    <pre>
+                        float viewZToPerspectiveDepth( const in float viewZ, const in float near, const in float far ) {
+                            return ( ( near + viewZ ) * far ) / ( ( far - near ) * viewZ );
+                        }
+                        float perspectiveDepthToViewZ( const in float invClipZ, const in float near, const in float far ) {
+                            return ( near * far ) / ( ( far - near ) * invClipZ - far );
+                        }
+                    </pre>
+                </code>
+                <div>
+                    <p>根据透视投影矩阵[\ref{refPerspectiveX6}]可得到关系，这里的\(view=eye\)有</p>
+                    <p>
+                        $$
+                        \begin{numcases}{}
+                        z_{clip} = -{{f + n} \over {f - n}} \times z_{view} + {-2fn \over {f - n}} \times {w_{view}} \\
+                        w_{clip} = -z_{view} 
+                        \end{numcases}
+                        $$
+                    </p>
+                    因为\(w_{view}=1\)和view(eye) space下的深度值 \(z = z_{view}, \)和[\ref{refNdcFromClip}] 所以有<P>
+                        $$
+                        z_{ndc} 
+                        = {{z_{clip}} \over {w_{clip}}}
+                        = { {{-{f + n} \over {f - n}}z + {-2fn \over {f - n}}} \over -z} 
+                        = {{ f + n + 2fn{1 \over z}} \over {f - n}} 
+                        = {{ fz + nz + 2fn} \over {f - n}z }
+                        \label{refNdcEq}
+                        $$
+                    </P>
+                </div>
+                <div>
+                    深度纹理depthBuffer的depth范围是 \( 0 \sim 1 \) \(z_{ndc}\) 范围是 \( -1 \sim 1\) 则其映射关系是
+                    <p>$$ depth = {z_{ndc}{1 \over 2}} + {1 \over 2} \label{refDepthEq} $$</p>
+                    把 [\ref{refNdcEq}] 代入 [\ref{refDepthEq}] 可求解得到当前帧的深度值的表达式
+                    <p>
+                        $$
+                        depth = {{fz + nz + 2fn} \over {2(f - n)z}} + {{(f - n)z} \over {2(f - n)z}}
+                        = {{(n + z)f} \over {(f - n)z}}
+                        $$
+                    </p>
+                    知道帧的深度值可反求视图空间中的z坐标值, \(d = depth \)
+                    <p>
+                        $$
+                        d(f - n)z = (n + z)f 
+
+                        \Rightarrow
+
+                        z(d(f - n) - f) = nf 
+
+                        \Rightarrow
+
+                        z = { nf \over {d(f - n) -f}}
+                        $$
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h5 id="section3b">Orhtorgraphics</h5>
+                <p>对正交矩阵的推理类型，根据式子[\ref{refOrhtographicX4}]可有</p>
                 <p>
                     $$
                     \begin{numcases}{}
-                    z_{clip} = -{{f + n} \over {f - n}} \times z_{view} + {-2fn \over {f - n}} \times {w_{view}} \\
-                    w_{clip} = -z_{view} 
+                    z_{clip} = {-2 \over {f - n}} \times z_{view} - {{f + n} \over {f - n}} \times {w_{view}} \\
+                    w_{clip} = w_{view} 
                     \end{numcases}
                     $$
                 </p>
-                因为\(w_{view}=1\)和view(eye) space下的深度值 \(z = z_{view}, \)和[\ref{refNdcFromClip}] 所以有<P>
+                因为\(w_{view}=1\)和view(eye) space下的深度值 \(z = z_{view}, \)和[\ref{refNdcFromClip}] 所以有
+                <P>
                     $$
                     z_{ndc} 
                     = {{z_{clip}} \over {w_{clip}}}
-                    = { {{-{f + n} \over {f - n}}z + {-2fn \over {f - n}}} \over -z} 
-                    = {{ f + n + 2fn{1 \over z}} \over {f - n}} 
-                    = {{ fz + nz + 2fn} \over {f - n}z }
-                    \label{refNdcEq}
+                    = { {{-2} \over {f - n}}z - {{f + n} \over {f - n}} \over 1} 
+                    = -{{ 2z + f + n} \over {f - n}}
+                    \label{refNdcEqOrth1}
                     $$
                 </P>
-            </div>
-            <div>
-                深度纹理depthBuffer的depth范围是 \( 0 \sim 1 \) \(z_{ndc}\) 范围是 \( -1 \sim 1\) 则其映射关系是
-                <p>$$ depth = {z_{ndc}{1 \over 2}} + {1 \over 2} \label{refDepthEq} $$</p>
-                把 [\ref{refNdcEq}] 代入 [\ref{refDepthEq}] 可求解得到当前帧的深度值的表达式
-                <p>
-                    $$
-                    depth = {{fz + nz + 2fn} \over {2(f - n)z}} + {{(f - n)z} \over {z(f - n)z}}
-                    = {{fz + fn} \over {fz - nz}}
-                    = {{(n + z)f} \over {(f - n)z}}
-                    $$
-                </p>
-                知道帧的深度值可反求视图空间中的z坐标值, \(d = depth \)
-                <p>
-                    $$
-                        d(f - n)z = (n + z)f 
-                    $$
+                <div>
+                    <p>把 [\ref{refNdcEqOrth1}] 代入 [\ref{refDepthEq}] 可求解得到当前帧的深度值的表达式</p>
+                    <p>
+                        $$
+                        depth = -{{2z + f + n} \over {2(f - n)}} + {{(f - n)} \over {2(f - n)}}
+                        = {{-2z - f - n + f - n} \over {2(f - n)}}
+                        = {{(z + n)} \over {n - f}}
+                        $$
+                    </p>
+                    知道帧的深度值可反求视图空间中的z坐标值, \(d = depth \)
+                    <p>
+                        $$
+                        d(n - f) = (z + n)
 
-                    $$
-                        \Rightarrow 
-                        z(d(f - n) - f) = nf 
-                    $$
-                    $$
-                        \Rightarrow 
-                        z = { nf \over {d(f - n) -f}}
-                    $$
-                </p>
+                        \Rightarrow    
+
+                        d(n - f) - n = z
+
+                        \Rightarrow
+
+                        z = {{d(n - f) - n}}
+                            
+                        $$
+                    </p>
+                </div>
+                <p>其glsl的代码也可以得到</p>
+                <code class="my-2">
+                    <pre>
+                        // NOTE: viewZ/eyeZ is < 0 when in front of the camera per OpenGL conventions
+
+                        float viewZToOrthographicDepth( const in float viewZ, const in float near, const in float far ) {
+                            return ( viewZ + near ) / ( near - far );
+                        }
+                        float orthographicDepthToViewZ( const in float linearClipZ, const in float near, const in float far ) {
+                            return linearClipZ * ( near - far ) - near;
+                        }
+                    </pre>
+                </code>
             </div>
         </div>
         <div>
