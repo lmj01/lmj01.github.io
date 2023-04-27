@@ -11,124 +11,520 @@
 <body>
     <div class="container">
         <div class="my-3">
-            <h3>transform in render detail</h3>
+            <h1>transform in render detail</h1>
+            <div class="d-flex flex-column">
+                <ol>
+                    <li><a href="#section1">Transform a normal vector from object to eye space</a></li>
+                    <li><a href="#section2">Projection matrix</a></li>
+                    <li><a href="#section3">Depth and ViewZ</a></li>
+                    <li><a href="#section4">Reference</a></li>
+                </ol>
+            </div>
             <div>
                 <img class="img-thumbnail w-100" src="../images/cg/transform.png" />
             </div>
             <h4></h4>
-            <div class="d-flex flex-wrap w-100">
-                <p>
-                    $$
-                    \begin{bmatrix}
-                    x_{eye} \\
-                    y_{eye} \\
-                    z_{eye} \\
-                    w_{eye}
-                    \end{bmatrix} 
-                    = M_{view} \cdot 
-                    M_{model} \cdot 
-                    \begin{bmatrix}
-                    x_{obj} \\
-                    y_{obj} \\
-                    z_{obj} \\
-                    w_{obj}
-                    \end{bmatrix}
-                    = M_{modelView} \cdot 
-                    \begin{bmatrix}
-                    x_{obj} \\
-                    y_{obj} \\
-                    z_{obj} \\
-                    w_{obj}
-                    \end{bmatrix}
-                    $$
-                </p>
-                <p>
-                    $$
-                    \begin{bmatrix}
-                    x_{clip} \\
-                    y_{clip} \\
-                    z_{clip} \\
-                    w_{clip}
-                    \end{bmatrix} 
-                    = M_{projection} \cdot 
-                    \begin{bmatrix}
-                    x_{eye} \\
-                    y_{eye} \\
-                    z_{eye} \\
-                    w_{eye}
-                    \end{bmatrix}
-                    = M_{projection} \cdot 
-                    M_{view} \cdot 
-                    M_{model} \cdot 
-                    \begin{bmatrix}
-                    x_{obj} \\
-                    y_{obj} \\
-                    z_{obj} \\
-                    w_{obj}
-                    \end{bmatrix}
-                    $$
-                </p>
-                <p>
-                    $$
-                    \begin{bmatrix}
-                    x_{ndc} \\
-                    y_{ndc} \\
-                    z_{ndc} 
-                    \end{bmatrix} 
-                    = \begin{bmatrix}
-                    { x_{clip} \over w_{clip} } \\
-                    { y_{clip} \over w_{clip} } \\
-                    { z_{clip} \over w_{clip} }
-                    \end{bmatrix}
-                    $$
-                </p>
-                <p>glViewport(topX, topY, width, height)和glDepthRange(near, far)</p>
-                <p>
-                    $$
-                    \begin{bmatrix}
-                    x_{screen} \\
-                    y_{screen} \\
-                    z_{screen} 
-                    \end{bmatrix} 
-                    = \begin{bmatrix}
-                    { {width \over 2}x_{ndc} + (topX + {width \over 2}) } \\
-                    { {height \over 2}y_{ndc} + (topY + {height \over 2}) } \\
-                    { {{far - near} \over 2}z_{ndc} + {(far + near) \over 2}) }
-                    \end{bmatrix}
-                    $$
-                </p>
-            </div>
             <div>
-                <p>transform a normal vector from object to eye space</p>
-                <p>
+                <div class="d-flex flex-wrap w-100">
+                    <p>
+                        $$
+                        \begin{bmatrix}
+                        x_{eye} \\
+                        y_{eye} \\
+                        z_{eye} \\
+                        w_{eye}
+                        \end{bmatrix} 
+                        = M_{view} \cdot 
+                        M_{model} \cdot 
+                        \begin{bmatrix}
+                        x_{obj} \\
+                        y_{obj} \\
+                        z_{obj} \\
+                        w_{obj}
+                        \end{bmatrix}
+                        = M_{modelView} \cdot 
+                        \begin{bmatrix}
+                        x_{obj} \\
+                        y_{obj} \\
+                        z_{obj} \\
+                        w_{obj}
+                        \end{bmatrix}
+                        $$
+                    </p>
+                    <p>
+                        $$
+                        \begin{bmatrix}
+                        x_{clip} \\
+                        y_{clip} \\
+                        z_{clip} \\
+                        w_{clip}
+                        \end{bmatrix} 
+                        = M_{projection} \cdot 
+                        \begin{bmatrix}
+                        x_{eye} \\
+                        y_{eye} \\
+                        z_{eye} \\
+                        w_{eye}
+                        \end{bmatrix}
+                        = M_{projection} \cdot 
+                        M_{view} \cdot 
+                        M_{model} \cdot 
+                        \begin{bmatrix}
+                        x_{obj} \\
+                        y_{obj} \\
+                        z_{obj} \\
+                        w_{obj}
+                        \end{bmatrix}
+                        \label{refClipProject}
+                        $$
+                    </p>
+                    <p>
+                        $$
+                        \begin{bmatrix}
+                        x_{ndc} \\
+                        y_{ndc} \\
+                        z_{ndc} 
+                        \end{bmatrix} 
+                        = \begin{bmatrix}
+                        { x_{clip} \over w_{clip} } \\
+                        { y_{clip} \over w_{clip} } \\
+                        { z_{clip} \over w_{clip} }
+                        \end{bmatrix}
+                        \label{refNdcFromClip}
+                        $$
+                    </p>
+                    <p>
+                        $$
+                        \begin{bmatrix}
+                        x_{screen} \\
+                        y_{screen} \\
+                        z_{screen} 
+                        \end{bmatrix} 
+                        = \begin{bmatrix}
+                        { {width \over 2}x_{ndc} + (topX + {width \over 2}) } \\
+                        { {height \over 2}y_{ndc} + (topY + {height \over 2}) } \\
+                        { {{far - near} \over 2}z_{ndc} + {(far + near) \over 2}) }
+                        \end{bmatrix}
+                        \label{refScreenFromNdc}
+                        $$
+                    </p>
+                </div>
+                <div>
+                    <p>[\ref{refScreenFromNdc}]对应的是glViewport(topX, topY, width, height)和glDepthRange(near, far)两个函数，取值范围也做了mapping映射</p>
+                </div>
+            </div>
+            <div class="my-3">
+                <h4 id="section1">transform a normal vector from object to eye space</h4>
+                <div class="d-flex">
+                    <p>
+                        $$
+                        \begin{bmatrix}
+                        nx_{eye} \\
+                        ny_{eye} \\
+                        nz_{eye} \\
+                        nw_{eye} \\
+                        \end{bmatrix} 
+                        = (M_{modelView}^{-1})^{T}
+                        \begin{bmatrix}
+                        nx_{obj} \\
+                        ny_{obj} \\
+                        nz_{obj} \\
+                        nw_{obj}
+                        \end{bmatrix}
+                        \label{refNormalTransform}
+                        $$
+                    </p>
+                    <p>
+                        $$
+                        \begin{bmatrix}
+                        n_{x} & n_{y} & n_{z} & n_{w} 
+                        \end{bmatrix} 
+                        \begin{bmatrix}
+                        x \\ y \\ z \\ w
+                        \end{bmatrix} = 0
+                        \Rightarrow {n^T}v= 0 
+                        \label{refNormalTransform1}
+                        $$
+                    </p> 
+                </div>               
+                <p>现在来解释一下为什么[\ref{refNormalTransform}]是可行的？法线是决定光照效果的重要因素，光照是在eye space中处理的，法线也要引入eye space中来，法线与三角面片的关系如[\ref{refNormalTransform1}]
+                    在其中间加入一个单位矩阵不影响结果，这样矩阵就变成如下，其法线与三角面片的关系也应该同时满足关系。
+                </p>
+                <p>                    
                     $$
-                    \begin{bmatrix}
-                    nx_{eye} \\
-                    ny_{eye} \\
-                    nz_{eye} \\
-                    nw_{eye} \\
-                    \end{bmatrix} 
-                    = (M_{modelView}^{-1})^{T}
-                    \begin{bmatrix}
-                    nx_{obj} \\
-                    ny_{obj} \\
-                    nz_{obj} \\
-                    nw_{obj}
-                    \end{bmatrix}
+                    \underbrace{
+                        \begin{bmatrix}
+                        n_{x} & n_{y} & n_{z} & n_{w} 
+                        \end{bmatrix} 
+                        {M_{modelView}}^{-1}
+                    }_{normal transform}
+                    \times
+                    \underbrace{
+                        M_{modelView}
+                        \begin{bmatrix}
+                        x \\ y \\ z \\ w
+                        \end{bmatrix}
+                    }_{vertex transofrm} = 0
                     $$
                 </p>
+                <p>\({n^T}M^{-1}\)就是顶点法线从model space到eye space的变换</p>
+                <h6>Conclusion</h6>
+                <p>Transforming a normal vector from object space to eye space multiplying by inverse and transpose matrix would work if the transform matrix contains translation and rotation. However, if the transform has scaling, the normal vector must be re-normalized to make it unit length.</p>
+                <p>Since a rotation-only matrix is orthogonal (the inverse matrix and transpose matrix are same, so the original matrx and the inverse then transpose matrx are also identical), we can skip the process to invert and to transpose the matrix.</p>
+                <p>To optimize the performance of normal transformations, it would be better to define a separate matrix for the normal vectors, which is only containing the rotation parts from GL_MODELVIEW matrix (ignoring translation and scaling), and use this matrix to transform normal vectors from object space to eye space without computing inverse and transpose.</p>
             </div>
-        </div>
-        <div class="my-3">
-            OpenGL的NDC(Normalized Device Coordinate System)
-            <div class="d-flex">
-                <img class="img-thumbnail w-50" src="../images/cg/opengl_perspective_to_ndc.png" />
-                <img class="img-thumbnail w-50" src="../images/cg/opengl_orthographic_to_ndc.png" />
+            <div class="my-3">
+                <h4 id="section2">projection matrix</h4>
+                <p>与normal matrix推理类似来推理投影矩阵的公式关系,glFrustum/glOrtho是OpenGL的NDC(Normalized Device Coordinate System)坐标系统，top是正y，bottom是负y，参数(left,right,bottom,top)就是(xmin, xmax, ymin, ymax)</p>
+                <div class="my-2">
+                    <h5>perspective projection</h5>
+                    <div class="d-flex">
+                        <img class="img-thumbnail w-50" src="../images/cg/opengl_perspective_to_ndc.png" />
+                        <img class="img-thumbnail w-25" src="../images/cg/perspective-top-view.png" />
+                        <img class="img-thumbnail w-25" src="../images/cg/perspective-side-view.png" />
+                    </div>      
+                    <p>
+                        左边的图是projection到ndc的过程，中间的图是对frustum的顶视图截面，右边图是对frustum的侧面视图截面。
+                        <code>
+                            <pre>
+                                void glFrustum(	GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble nearVal, GLdouble farVal);
+                            </pre>
+                        </code>
+                    </p>
+                    <p>利用三角形相似性，有如下公式</p>
+                    <div class="d-flex">
+                        <p>
+                            $$
+                            {x_{proj} \over x_{eye}} = {{-near} \over {z_{eye}}}
+
+                            \Rightarrow
+
+                            x_{proj} = {{-near \cdot x_{eye}} \over {z_{eye}}} = {{near \cdot x_{eye}} \over {-z_{eye}}}
+                            \label{refPerspective1a}
+                            $$
+                        </p>
+                        <p>
+                            $$
+                            {y_{proj} \over y_{eye}} = {{-near} \over {z_{eye}}}
+
+                            \Rightarrow
+
+                            y_{proj} = {{-near \cdot y_{eye}} \over {z_{eye}}} = {{near \cdot y_{eye}} \over {-z_{eye}}}                            
+                            \label{refPerspective1b}
+                            $$
+
+                        </p>
+                    </div>
+                    <div>
+                        <p>注意点\(x_{proj}\)和\(x_{proj}\)都依赖一个\(-z_{eye}\),由公式[\ref{refClipProject}]和[\ref{refNdcFromClip}]知道从eye space到clip space仍然是齐次坐标，在到NDC space过程中才除以\(w_{clip}\)的。
+                           让\(w_{clip}=-z_{eye}\)，则可以得出矩阵的应该满足如下模式[\ref{refPerspectiveX1}]
+                        </p>
+                        <p>
+                            $$
+                            \begin{bmatrix}
+                            x_{clip} \\
+                            y_{clip} \\
+                            z_{clip} \\
+                            w_{clip}
+                            \end{bmatrix} 
+                            = \begin{bmatrix}
+                            \cdot & \cdot & \cdot & \cdot \\
+                            \cdot & \cdot & \cdot & \cdot \\
+                            \cdot & \cdot & \cdot & \cdot \\
+                            0 & 0 & -1 & 0
+                            \end{bmatrix}  \cdot 
+                            \begin{bmatrix}
+                            x_{eye} \\
+                            y_{eye} \\
+                            z_{eye} \\
+                            w_{eye}
+                            \end{bmatrix}
+                            \label{refPerspectiveX1}
+                            $$
+                        </p>
+                        <p>
+                            继续利用上面的三角形相似性，\(x_{proj}\)和\(y_{proj}\)到\(x_{ndc}\)和\(y_{ndc}\)满足的线性映射关系，因为由frustum的近平面到Cubic的front正面是一个平面与平面的变化，满足线性关系,\([left, right] \Rightarrow [-1,1] \)和\([bottom, top] \Rightarrow [-1,1] \)
+                            对公式[\ref{refPerspective1}]代入\([x_{proj},x_{ndc}] = [right, 1]\)得到公式[\ref{refPerspective2}]，就可以求出proje与ndc的关系[\ref{refPerspective3}]
+                        </p>
+                        <div>
+                            <p>
+                                $$
+                                x_{ndc} = {{1 - (-1)} \over {right - left}} \cdot x_{proj} + \beta
+                                \label{refPerspective1}
+                                $$ 
+                                $$
+                                1 = {{1 - (-1)} \over {right - left}} \cdot right + \beta
+                                \Rightarrow
+                                \beta = 1 - {{2right} \over {right - left}} = {{right - left - 2right} \over {right - left}} = -{{right + left} \over {right - left}}
+                                \label{refPerspective2}
+                                $$
+                                $$
+                                x_{ndc} = {2x_{proj} \over {right - left}} - {{right + left} \over {right - left}}
+                                \label{refPerspective3}
+                                $$
+                            </p>
+                            <p>按照同样的逻辑可推理得到[\ref{refPerspective4}]</p>
+                            <p>
+                                $$
+                                y_{ndc} = {{1 - (-1)} \over {top - bottom}} \cdot y_{proj} + \beta
+                                $$ 
+                                $$
+                                1 = {{1 - (-1)} \over {top - bottom}} \cdot top + \beta
+                                \Rightarrow
+                                \beta = 1 - {{2top} \over {top - bottom}} = {{top - bottom - 2top} \over {top - bottom}} = -{{top + bottom} \over {top - bottom}}
+                                $$
+                                $$
+                                y_{ndc} = {2x_{proj} \over {top - bottom}} - {{top + bottom} \over {top - bottom}}
+                                \label{refPerspective4}
+                                $$
+                            </p>
+                            <p>现在可以把方程[\ref{refPerspective1a}]代入[\ref{refPerspective3}]求解</p>
+                            <p>
+                                $$
+                                x_{ndc} = {2x_{proj} \over {right - left}} - {{right + left} \over {right - left}}
+                                = {2{{near \cdot x_{eye}} \over {-z_{eye}}} \over {right - left}} - {{right + left} \over {right - left}}
+                                = (\underbrace{{{2near} \over {right - left}} \cdot x_{eye} + {{right + left} \over {right - left}} \cdot z_{eye}}_{x_{clip}})/-z_{eye}
+                                \label{refPerspective5}
+                                $$
+                            </p>
+                            <p>现在可以把方程[\ref{refPerspective1b}]代入[\ref{refPerspective4}]求解</p>
+                            <p>
+                                $$
+                                y_{ndc} = {2y_{proj} \over {top - bottom}} - {{top + bottom} \over {top - bottom}}
+                                = {2{{near \cdot y_{eye}} \over {-z_{eye}}} \over {top - bottom}} - {{top + bottom} \over {top - bottom}}
+                                = (\underbrace{{{2near} \over {top - bottom}} \cdot y_{eye} + {{top + bottom} \over {top - bottom}} \cdot z_{eye}}_{y_{clip}})/-z_{eye}
+                                \label{refPerspective6}
+                                $$
+                            </p>                            
+                            矩阵[\ref{refPerspectiveX1}]现在代入[\ref{refPerspective5}]和[\ref{refPerspective6}]可以得到新的矩阵
+                            <p>
+                                $$
+                                \begin{bmatrix}
+                                x_{clip} \\
+                                y_{clip} \\
+                                z_{clip} \\
+                                w_{clip}
+                                \end{bmatrix} 
+                                = \begin{bmatrix}
+                                {2near \over {right - left}} & 0 & {{right + left} \over {right - left}} & 0 \\
+                                0 & {2near \over {top - bottom}} & {{top + bottom} \over {top - bottom}} & 0 \\
+                                \cdot & \cdot & \cdot & \cdot \\
+                                0 & 0 & -1 & 0
+                                \end{bmatrix}  \cdot 
+                                \begin{bmatrix}
+                                x_{eye} \\
+                                y_{eye} \\
+                                z_{eye} \\
+                                w_{eye}
+                                \end{bmatrix}
+                                \label{refPerspectiveX2}
+                                $$
+                            </p>
+                            <p>现在剩下第3行未知了，\(z_{ndc}\)不能像之前的\(x_{ndc},y_{ndc}\)那样求解，因为不满足线性关系，投影得到的\(z_{proj}\)只出现在近平面上，我们借用特殊情况下的值来推\(z_{ndc},z_{eye}\)之间的关系，可加设矩阵是如下格式</p>
+                            <p>
+                                $$
+                                \begin{bmatrix}
+                                x_{clip} \\
+                                y_{clip} \\
+                                z_{clip} \\
+                                w_{clip}
+                                \end{bmatrix} 
+                                = \begin{bmatrix}
+                                {2near \over {right - left}} & 0 & {{right + left} \over {right - left}} & 0 \\
+                                0 & {2near \over {top - bottom}} & {{top + bottom} \over {top - bottom}} & 0 \\
+                                0 & 0 & A & B \\
+                                0 & 0 & -1 & 0
+                                \end{bmatrix}  \cdot 
+                                \begin{bmatrix}
+                                x_{eye} \\
+                                y_{eye} \\
+                                z_{eye} \\
+                                w_{eye}
+                                \end{bmatrix}
+                                \label{refPerspectiveX3}
+                                $$
+                            </p>
+                            <div class="d-flex">
+                                <p>
+                                    $$
+                                    \Rightarrow
+                                    z_{ndc} = z_{clip} / w_{clip} = {{Az_{eye} + Bw_{eye}} \over {-z_{eye}}}                                           
+                                    \label{refPerspectiveX4}                     
+                                    $$
+                                </p>
+                                <p>
+                                    $$
+                                    \Rightarrow
+                                    z_{ndc} = {{Az_{eye} + B} \over {-z_{eye}}}                                           
+                                    \label{refPerspectiveX5}                     
+                                    $$
+                                </p>                                
+                                <p>
+                                    $$
+                                    \begin{numcases}{}
+                                        -1 = {{-A \cdot near + B} \over {near}} \\
+                                        1 = {{-A \cdot far + B} \over {far}}
+                                    \end{numcases}
+                                    $$
+                                </p>
+                                <p>
+                                    $$
+                                    \begin{numcases}{}
+                                        A = -{{far + near} \over {far - near}} \\
+                                        B = -{{2far \cdot near} \over {far - near}}
+                                    \end{numcases}              
+                                    $$
+                                </p>
+                            </div>
+                            <p>矩阵相乘可得到公式[\ref{refPerspectiveX4}]，对公式[\ref{refPerspectiveX4}]，在eye space中一般设置为\(w_{eye}=1\),可得到简化的式子[\ref{refPerspectiveX5}]，为求得系数\(A,B\)代入端点值
+                                \([z_{eye},z_{ndc}], [-near,-1], [-far, 1]\)可推得系数\(A,B\),此时就可以得到最后的透视投影矩阵了[\ref{refPerspectiveX6}]
+                            </p>
+                            <p>
+                                $$
+                                \begin{bmatrix}
+                                x_{clip} \\
+                                y_{clip} \\
+                                z_{clip} \\
+                                w_{clip}
+                                \end{bmatrix} 
+                                = \begin{bmatrix}
+                                {2near \over {right - left}} & 0 & {{right + left} \over {right - left}} & 0 \\
+                                0 & {2near \over {top - bottom}} & {{top + bottom} \over {top - bottom}} & 0 \\
+                                0 & 0 & -{{far + near} \over {far - near}} & -{{2far \cdot near} \over {far - near}} \\
+                                0 & 0 & -1 & 0
+                                \end{bmatrix}  \cdot 
+                                \begin{bmatrix}
+                                x_{eye} \\
+                                y_{eye} \\
+                                z_{eye} \\
+                                w_{eye}
+                                \end{bmatrix}
+                                \label{refPerspectiveX6}
+                                $$
+                            </p>
+                            <p>透视投影矩阵[\ref{refPerspectiveX6}]是一个通用的推理，对于特殊情况下还可以继续简化，就是对称frustum，此时有如下关系</p>
+                            <div class="d-flex">
+                                <p>
+                                    $$
+                                    \begin{numcases}{}
+                                    right + left = 0 \\
+                                    right - left = 2right_{width} 
+                                    \end{numcases}
+                                    $$
+                                    $$
+                                    \begin{numcases}{}
+                                    top + bottom = 0 \\
+                                    top - bottom = 2top_{heihgt} 
+                                    \end{numcases}
+                                    $$
+                                </p>
+                                <p>
+                                    $$
+                                    m_{proj} = \begin{bmatrix}
+                                    {near \over right} & 0 & 0 & 0 \\
+                                    0 & {near \over top} & 0 & 0 \\
+                                    0 & 0 & -{{far + near} \over {far - near}} & -{{2far \cdot near} \over {far - near}} \\
+                                    0 & 0 & -1 & 0
+                                    \end{bmatrix}
+                                    $$
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <h5>orthorgraphics projection</h5>
+                    <div class="d-flex">
+                        <img class="img-thumbnail w-50" src="../images/cg/opengl_orthographic_to_ndc.png" />
+                    </div>
+                    <p>正交投影矩阵相比透视投影矩阵的推理要简化很多，因为三个轴向\(x_{eye},y_{eye},z_{eye}\)都满足线性关系，其线性映射推理与公式[\ref{refPerspective3}]和[\ref{refPerspective4}]是一样的逻辑，
+                    </p>
+                    <div class="d-flex flex-column">
+                        <p>
+                            $$
+                            x_{n} = {{1 - (-1)} \over {r - l}} \cdot x_{e} + \beta
+                            
+                            \Rightarrow
+                            
+                            1 = {{1 - (-1)} \over {r - l}} \cdot r + \beta
+
+                            \Rightarrow
+
+                            \beta = 1 - {{2r} \over {r - l}} = -{{r + l} \over {r - l}}
+
+                            \Rightarrow
+
+                            x_{n} = {2 \over {r - l}} \cdot x_{e} - {{r + l} \over {r - l}}
+
+                            \label{refOrhtographicX1}
+                            $$
+                        </p>
+                        <p>
+                            $$
+                            y_{n} = {{1 - (-1)} \over {t - b}} \cdot y_{e} + \beta
+                            
+                            \Rightarrow
+                            
+                            1 = {{1 - (-1)} \over {t - b}} \cdot t + \beta
+
+                            \Rightarrow
+
+                            \beta = 1 - {{2t} \over {t - b}} = -{{t + b} \over {t - b}}
+
+                            \Rightarrow
+
+                            y_{n} = {2 \over {t - b}} \cdot y_{e} - {{t + b} \over {t - b}}
+                            \label{refOrhtographicX2}
+                            $$
+                        </p>
+                        <p>
+                            $$
+                            z_{n} = {{1 - (-1)} \over {-f - (-n)}} \cdot z_{e} + \beta
+                            
+                            \Rightarrow
+                            
+                            1 = {{1 - (-1)} \over {-f - (-n)}} \cdot f + \beta
+
+                            \Rightarrow
+
+                            \beta = 1 - {{2f} \over {-f - (-n)}} = -{{f + n} \over {f - n}}
+
+                            \Rightarrow
+
+                            z_{n} = {-2z_{e} \over {f - n}} - {{f + n} \over {f - n}}
+                            \label{refOrhtographicX3}
+                            $$
+                        </p>
+                        <p>因为上面的映射关系是NDC与eye space下的关系，有\(x_{n} = {x_{clip} \over w_{clip}}\), 又因\(w_{e}=1\),可构造矩阵如下，让\(w_{clip}=1\)来满足上面的公式关系，就可以得到完整的正交投影矩阵[\ref{refOrhtographicX4}]</p>
+                        <p>
+                            $$
+                            \begin{bmatrix}
+                            x_{clip} \\
+                            y_{clip} \\
+                            z_{clip} \\
+                            w_{clip}
+                            \end{bmatrix} 
+                            = \begin{bmatrix}
+                            {2 \over {r - l}} & 0 & 0 & -{{r + l} \over {r - l}} \\
+                            0 & {2 \over {t - b}} & 0 & -{{t + b} \over {t - b}} \\
+                            0 & 0 & {{-2} \over {f - n}} & -{{f + n} \over {f - n}} \\
+                            0 & 0 & 0 & 1
+                            \end{bmatrix}  \cdot 
+                            \begin{bmatrix}
+                            x_{e} \\
+                            y_{e} \\
+                            z_{e} \\
+                            w_{e}
+                            \end{bmatrix}
+                            \label{refOrhtographicX4}
+                            $$
+                        </p>
+                    </div>
+                </div>
             </div>
-            glFrustum/glOrtho是OpenGL的NDC坐标系统，top是正y，bottom是负y，参数(left,right,bottom,top)就是(xmin, xmax, ymin, ymax)
         </div>
         <div>
-            <h4>Depth and ViewZ </h4>
+            <h4 id="section3">Depth and ViewZ</h4>
             <h6>threejs的src\renderers\shaders\ShaderChunk\packing.glsl.js中包含了两个函数，在examples\webgl_depth_texture.html中渲染深度，显示使用这个方法</h6>
             <code class="my-2">
                 <pre>
@@ -144,35 +540,31 @@
                     }
                 </pre>
             </code>
-            <div>投影矩阵
+            <div>
+                <p>根据透视投影矩阵[\ref{refPerspectiveX6}]可得到关系，这里的\(view=eye\)有</p>
                 <p>
-                $$ p_{clip} = \begin{bmatrix}
-                2n \over {r - l} & 0 & {r + l} \over {r - l} & 0\\
-                0 & 2n \over {t - b} & {t + b} \over {t - b} & 0 \\ 
-                0 & 0 & A & B \\
-                0 & 0 & -1 & 0
-                \end{bmatrix}
-                $$
-                </p>
-                其中 
-                <div class="d-flex justify-content-center">
-                    <p>$$A = - {{f + n} \over {f - n}}$$</p>
-                    <p>$$B = {-2fn \over {f - n}}$$</p>
-                </div>
-                有<p>$$ z_{clip} = A \times z_{view} + B = -{{f + n} \over {f - n}} \times z_{view} + {-2fn \over {f - n}} $$</p>
-                因为 \(z = z_{view}\) 所以有<P>
                     $$
-                    z_{ndc} = { {{-{f + n} \over {f - n}}z + {-2fn \over {f - n}}} \over -z} 
+                    \begin{numcases}{}
+                    z_{clip} = -{{f + n} \over {f - n}} \times z_{view} + {-2fn \over {f - n}} \times {w_{view}} \\
+                    w_{clip} = -z_{view} 
+                    \end{numcases}
+                    $$
+                </p>
+                因为\(w_{view}=1\)和view(eye) space下的深度值 \(z = z_{view}, \)和[\ref{refNdcFromClip}] 所以有<P>
+                    $$
+                    z_{ndc} 
+                    = {{z_{clip}} \over {w_{clip}}}
+                    = { {{-{f + n} \over {f - n}}z + {-2fn \over {f - n}}} \over -z} 
                     = {{ f + n + 2fn{1 \over z}} \over {f - n}} 
                     = {{ fz + nz + 2fn} \over {f - n}z }
-                    \label{ref1}
+                    \label{refNdcEq}
                     $$
                 </P>
             </div>
             <div>
-                深度纹理depthBuffer的depth范围是 \( 0 \sim 1 \) \(z_{ndc}\) 范围是 \( -1 \sim 1\) 则有
-                <p>$$ depth = {z_{ndc}{1 \over 2}} + {1 \over 2} \label{ref2} $$</p>
-                把 [\ref{ref1}] 代入 [\ref{ref2}] 有
+                深度纹理depthBuffer的depth范围是 \( 0 \sim 1 \) \(z_{ndc}\) 范围是 \( -1 \sim 1\) 则其映射关系是
+                <p>$$ depth = {z_{ndc}{1 \over 2}} + {1 \over 2} \label{refDepthEq} $$</p>
+                把 [\ref{refNdcEq}] 代入 [\ref{refDepthEq}] 可求解得到当前帧的深度值的表达式
                 <p>
                     $$
                     depth = {{fz + nz + 2fn} \over {2(f - n)z}} + {{(f - n)z} \over {z(f - n)z}}
@@ -180,7 +572,7 @@
                     = {{(n + z)f} \over {(f - n)z}}
                     $$
                 </p>
-                求取z有, \(d = depth \)
+                知道帧的深度值可反求视图空间中的z坐标值, \(d = depth \)
                 <p>
                     $$
                         d(f - n)z = (n + z)f 
@@ -196,15 +588,9 @@
                     $$
                 </p>
             </div>
-             
         </div>
         <div>
-            <h4>Reconstructing Position From Depth</h4>
-            <div><p>That finds great use for deferred rendering: reconstructing the 3D position of a previously-rendered pixel (either in view-space or world-space) from a single depth value</p></div>
-            <div></div>
-        </div>
-        <div>
-            <h4>参考</h4>
+            <h4 id="section4">参考</h4>
             <div class="d-flex flex-column">
                 <p>符合含义</p>
                 <p>\(n\) camera near</p>

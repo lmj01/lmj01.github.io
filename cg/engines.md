@@ -69,6 +69,9 @@ for SSAO, like the order:
     - [概述](https://sites.cs.ucsb.edu/~lingqi/teaching/resources/GAMES101_Lecture_01.pdf)
     - [GAMES101: 现代计算机图形学入门](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html)
 - [Vulkan FFT](https://github.com/DTolm/VkFFT)
+- [Order-Independent Texture Synthesis](https://arxiv.org/pdf/1406.7338.pdf)
+- [sphere tracing](http://gsd.web.elte.hu/lectures/bolyai/2019/sphere-tracing/sphere-tracing.pdf)
+- [Enhanced Sphere Tracing](https://diglib.eg.org/bitstream/handle/10.2312/stag.20141233.001-008/001-008.pdf)
 
 ### books
 

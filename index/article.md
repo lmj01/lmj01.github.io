@@ -20,6 +20,7 @@
 - [全栈开发者CJ](https://cjting.me/)
 - [3D Game Engine Programming](https://www.3dgep.com/)
 - [早期Linux源码阅读](http://www.oldlinux.org/)
+- [Shader Bits -- HLSL and UE4 Development Blog](https://shaderbits.com/blog)
 
 
 ## 书
