@@ -6,8 +6,9 @@
 或从window得store中安装
 
 - python -m xxx  内部执行
-- pip install virtualenv安装virtualenv到系统python全局下 可能没有加入path中，需要找一找
-- virtualenv --no-site-packages envNewAlonePython  参数--no-site-packages不拷贝python安装的第三方包
+- pip install virtualenv    安装virtualenv到系统python全局下 可能没有加入path中，需要找一找
+- cd parent-folder
+- virtualenv --no-site-packages envNewAlonePython 参数--no-site-packages不拷贝python安装的第三方包
 - Script\activate启动当前环境
 - Script\deactivate关闭当前环境
 
@@ -38,6 +39,12 @@ pip install pyopengl
 默认安装的是32位的， 需要手动安装64位的
 [py libary](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyopengl)
 安装后执行 python python/ogl.py测试一下
+
+### 常用包
+<!-- opencv的包有几种类型，注意安全需要的 -->
+- pip install opencv-contrib-python -i https://pypi.tuna.tsinghua.edu.cn/simple
+<!-- 处理图像的 -->
+- pip install pillow // 
 
 ## 概念
 
