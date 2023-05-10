@@ -45,6 +45,19 @@ pip install pyopengl
 - pip install opencv-contrib-python -i https://pypi.tuna.tsinghua.edu.cn/simple
 <!-- 处理图像的 -->
 - pip install pillow // 
+- pip install redis
+- pip install matplotlib // matplotlib是一个python 2D绘图库，利用它可以画出许多高质量的图像
+
+## python anaconda
+
+这是一个比较独立的环境，连安装包都是独立的
+
+_conda.exe --version
+_conda.exe env list
+Scripts\activate 进入当前环境中base
+condabin\conda create -p d:\anaconda3\envs\realSR // 新建一个环境
+Scripts\activate realSR // 进入当前环境
+
 
 ## 概念
 

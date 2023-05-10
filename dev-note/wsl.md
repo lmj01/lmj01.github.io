@@ -16,6 +16,8 @@ bash
 - tasklist | findstr "pid" 查看进程
 - tasklist /fi "imagename eq nginx.exe"
 - taskkill /T /F /PID pid 终止进程pid
+- ip addr
+- ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1
 
 
 ## curl
