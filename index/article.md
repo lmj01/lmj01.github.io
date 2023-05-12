@@ -27,6 +27,7 @@
 - [早期Linux源码阅读](http://www.oldlinux.org/)
 - [Shader Bits -- HLSL and UE4 Development Blog](https://shaderbits.com/blog)
 - [Red Blob Games --  from Amit Patel  make interactive visual explanations of math and algorithms, using motivating examples from computer games](https://www.redblobgames.com/)
+- [Daniel Holden](https://theorangeduck.com/page/all)
 
 
 ## 书

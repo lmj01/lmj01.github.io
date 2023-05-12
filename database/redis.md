@@ -14,4 +14,5 @@ bind 0.0.0.0
 - dbsize 查询个数
 - flushall 清空所有
 ## help
+- [官网](https://redis.io/)
 - [redis 命令手册](https://redis.com.cn/commands.html)

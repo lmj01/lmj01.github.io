@@ -1,4 +1,5 @@
 # SQL
+> 演变:从数据库中获取数据,SQL(Structured Query Language)是一句句查询处理的==>批处理sql语句==>存储过程的产生SP(Stored Procedure),解释一次,重复执行==>随着面向对象的普及产生ORM(Object Relational Mapping), 数据库的选择参考因素:开发速度,运行性能,可维护性
 
 ## 执行顺序
 SQL语言与其他语言区别最明显的特征是执行的顺序
