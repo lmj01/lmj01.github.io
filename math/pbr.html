@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Depth to View</title>
+<link rel="icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../bootstrap-5.0.2-dist/bootstrap.min.css">
+<script src="../bootstrap-5.0.2-dist/bootstrap.min.js"></script>
+<script src="./mathjax.config.js" defer></script>
+</script>
+</head>
+<body>
+    <div class="container-xl">
+        <h1>PBR -- Physically Based Rendering</h1>
+        <div class="d-flex flex-column">
+            <ol>
+                <li><a href="#section1">理论</a></li>
+            </ol>
+        </div>
+        <div>
+            <h4 id="section1">理论</h4>
+            <div>基于物理的渲染技术PBR，是指使用基于物理原理和微平面理论建模的着色或光照模型，以及使用现实中测量的表面参数来准确表示真实世界材质的渲染理念，自迪士尼在SIGGRAPH2012上提出了迪士尼原则Disney Principled的BRDF，被广泛采用。</div>
+            <h5>微平面理论Microfacet Theory</h5>
+            <div>
+                <p>微平面理论是将物体表面建模成无数微观尺度上有随机朝向的理想镜面反射的小平面microfacet，实践中表面的不规则性用粗糙度贴图或高光度贴图来表示</p>
+            </div>
+            <h5>能量守恒Energy Conservation</h5>
+            <div>
+                <p>出射光线的能量永远不能超过入射光线的能量</p>
+            </div>
+            <h5>菲涅尔反射Fresnel Reflectance</h5>
+            <div>
+                <p>光线以不同角度入射会有不同的反射率，相同的入射角不同的物质也会有不同的反射率</p>
+                <p>大多数非金属的F0是\(0.02 \sim 0.04\)，大多数的金属的F0范围是\(0.7 \sim 1.0\)</p>
+            </div>
+            <h5>线性空间Linear Space</h5>
+            <div>
+                <p>光照计算必须在线性空间完成，如shader中的带gamma的贴图可能需要转换成线性空间</p>
+                <p>描述物体表面属性的贴图如粗糙度、高光、金属等必须保证是线性空间的</p>
+            </div>
+            <h5>色调映射Tone Mapping</h5>
+            <div>
+                <p>是将宽范围的照明级别拟合到屏幕有限色域内的过程</p>
+                <p>基于HDR渲染出来的亮度值会超过显示器能够最大显示亮度，就需要将光照结果从HDR映射到LDR</p>
+            </div>
+            <h5>物质的光学特性Substance Optical Properties</h5>
+            <div>
+                <p>现实中的物理中物质可分为三类</p>
+                <ol>
+                    <li>绝缘体Insulators</li>
+                    <li>半导体semi-conductors</li>
+                    <li>导体conductors</li>
+                </ol>
+                <p>渲染中一般只对金属导体和非金属绝缘体，前者具有彩色的镜面反射颜色，后者具有单色或灰色镜面反射颜色</p>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

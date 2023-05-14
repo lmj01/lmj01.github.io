@@ -1,5 +1,6 @@
 # Add-ons
 
+## 基础
 Blender builds and release include python script add-ons that extend its functionality.     
 
 [Python Addon API](https://wiki.blender.org/wiki/Reference/Release_Notes/2.80/Python_API/Addons)
@@ -51,6 +52,15 @@ typedef struct IDProperty {
 
 可以看到ID属性是非常低级的数据，是Blender的数据的自定义数据的.blend文件的基础结构
 这也是blender兼容性的强大之处，就像基因一样，也是谜一样的数据结构思想。
+
+## 插件开发
+
+大型软件还是使用经典的软件模式，通过python的接口，进入register和unregistere来实现插件的逻辑嵌入在内部接口调用中。
+
+查看python的接口，直接在blender中打开Python Console中查看
+对应的源文件是scripts\modules\
+
+- [Blender Python API](https://docs.blender.org/api/current/index.html)
 
 ## 社区插件
 
