@@ -10,6 +10,8 @@
 - [四元数](../cg/quaternion.md)
 - [3D API](../cg/API.md)
 - [透视与绘画](../articles/2023/Perspective.md)
+- [打印相关](../articles/2023/printer.md)
+- [用户 角色 权限的通用设计](../articles/2023/printer.md)
 - [Markdown 例子](../articles/markdown.md)
 
 ## 他人文章

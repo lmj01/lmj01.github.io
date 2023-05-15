@@ -6,6 +6,14 @@
 - [rust](../cpl/rust.md)
 - [C](../cpl/c.md)
 
+## Dev
+
+- [CMD](../dev-note/cmd.md)
+- [cmake](../dev-note/cmake.md)
+- [git](../dev-note/git.md)
+- [svn](../dev-note/svn.md)
+- [wsl](../dev-note/wsl.md)
+
 ## Database
 
 - [redis](../database/redis.md)
