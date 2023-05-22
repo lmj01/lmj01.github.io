@@ -39,3 +39,7 @@ RIP -> 位图 -> 缓存 -> PPN -> 反走样图像 -> 印点调节器 -> 引擎
 - [ZPL 、EPL与TSPL指令区别](http://www.feyin.cn/blog/2019/12/08/differences-between-zpl-epl-and-tsc-instructions/)
 - [打印机分辨率增强技术](https://www.docin.com/p-878782126.html)
 - [Inkjet Printer Print Quality Enhancement Techniques](https://www.hpl.hp.com/hpjournal/94feb/feb94a5.pdf)
+
+## 3D打印机
+
+- [切片原理](https://support.snapmaker.com/hc/en-us/articles/4409195239575--Slicing-and-G-Code-The-Bridge-Between-3D-Model-and-3D-Printer)

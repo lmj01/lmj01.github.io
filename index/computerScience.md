@@ -24,7 +24,13 @@
 
 - [Ambient Occlusion](../cg/ambient-occlusion.md)
 - [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
+- [smallpt: Global Illumination in 99 lines of C++](http://www.kevinbeason.com/smallpt/)
+- [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
 
 ### Engine
 
 - [Bgfx](../cg/bgfx.md)
+
+## Web
+
+- [Web notes](../web/index.md)
