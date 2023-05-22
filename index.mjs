@@ -29,4 +29,4 @@ function tagLinkUpdateEvent(aLink) {
 }
 
 // 获取所有
-document.querySelectorAll('.side-left a').forEach(a => tagLinkUpdateEvent(a));
+document.querySelectorAll('.side-menu a').forEach(a => tagLinkUpdateEvent(a));

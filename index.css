@@ -27,3 +27,8 @@ body {
 .main-content {
     width:calc(100% - var(--sideMenu));
 }
+
+em {
+    font-style: normal;
+    font-weight: bolder;
+}

@@ -1,0 +1,15 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* 小于700像素的 */
+@media screen and (max-width: 700px) {
+    
+}
+
+em {
+    font-style: normal;
+    font-weight: bolder;
+}

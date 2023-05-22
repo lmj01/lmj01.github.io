@@ -23,6 +23,7 @@
 ## ComputerGraphics
 
 - [Ambient Occlusion](../cg/ambient-occlusion.md)
+- [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
 
 ### Engine
 

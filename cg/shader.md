@@ -40,8 +40,12 @@ mat3(
 - [关于RenderPass的封装](https://github.com/UL-FRI-LGM/RenderCore)
 - [Layout Qualifier (GLSL)](https://www.khronos.org/opengl/wiki/Layout_Qualifier_(GLSL))
 - [Data Type (GLSL)](https://www.khronos.org/opengl/wiki/Data_Type_(GLSL))
+
+### WebGPU
+
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/)
+- [WebGPU深入探索](http://www.bimant.com/blog/webgpu-deep-dive/)
 
 
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Depth to View</title>
+<link rel="icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../bootstrap-5.0.2-dist/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./math.css">
+<script src="../bootstrap-5.0.2-dist/bootstrap.min.js"></script>
+<script src="./mathjax.config.js" defer></script>
+</script>
+</head>
+<body>
+    <div class="container-xl">
+        <h1>GPU</h1>
+        <div class="d-flex flex-column">
+            <ol>
+                <li><a href="#section1">11</a></li>
+                <li><a href="#section99">参考</a></li>
+            </ol>
+        </div>
+        <div>
+            <h4 id="section1">ss</h4>
+            <div>
+                <dl>
+                    <dt>API Runtime</dt>
+                    <dd>开发者对API进行resource creation、state setting、draw calls。API runtime会跟踪你的应用程序设置的状态、参数一致性等。(D3D会进行严格一些的检查，OpenGL则是在驱动级别上进行处理)</dd>
+
+                    <dt>UMD</dt>
+                    <dd>
+                        <p>user-mode graphics driver用户模式图形驱动，它与应用程序和API runtime运行在相同的上下文和地址空间，它实现了一个调用较低级别的API(DDI)，在内存管理方面更加明确，显卡提供的文件nvd3dum.dll或atiumd*.dll</p>
+                        <ul>
+                            <li><p>UMD负责着色器编译工作，</p></li>
+                            <li><p>UMD处理一些遗留兼容事情</p></li>
+                            <li><p>UMD会处理一些指令，比如纹理创建命令，实际上UMD只是将它从KMD得到一些加大的内存块进行再分配</p></li>
+                            <li><p>所有的状态改变和绘图操作都会被UMD转换成硬件能理解的命令，就是一般来说，驱动程序会尽量把实际处理工作放在UMD中，即使UMD崩溃系统也不受影响</p></li>
+                            <li><p>图形调度器scheduler，决定那些应用程序访问真正的资源</p></li>
+                        </ul>
+                        <p>OpenGL与D3D有些不同，GLSL着色器的编译是放在驱动完成的，是由硬件厂商实现的规范，有自己的特性和bug，也许这就是D3D统一编译后的优势，游戏厂商选择它的原因吧！</p>
+                    </dd>
+
+                    <dt>KMD</dt>
+                    <dd><p>实际跟硬件沟通的就是KMD，可能有多个UMD，但只能有一个KMD</p>
+                        <ul>
+                            <li><p>实际分配和映射物理内存</p></li>
+                            <li><p>在启动时初始化GPU，设置显示模式，管理硬件鼠标光标</p></li>
+                            <li><p>对HW看门狗定时器进行编程，使GPU在一定时间内保持无响应时被重置</p></li>
+                            <li><p>对中断做出反应</p></li>
+                            <li><p></p></li>
+                        </ul>
+                        <p>KMD管理实际的命令缓冲区，事实上UMD产生的命令缓冲区只是GPU可寻址内存的随机片段。实际发生的是UMD完成申请，提交给调度器，调度器等该进程启动后再将UMD命令缓冲区传递给KMD，然后KMD将调用命令缓冲区写入<em>主缓冲区</em>，根据GPU命令处理器是否能从主内存读取，可能需要先DMA到显存</p>
+                        <p></p>
+                    </dd>
+
+                    <dt>The Command Processor</dt>
+                    <dd>命令处理器，实际读取KMD写入的命令部分</dd>
+
+                    <dt>The memory subsystem</dt>
+                    <dd>
+                        <p>GPU没有常规的内存子系统，与它有不同的地方是</p>
+                        <ol>
+                            <li><p>内存子系统内存宽带大</p></li>
+                            <li><p>时钟周期延迟大</p></li>
+                        </ol>
+                        <p>
+                            GPU获得宽带增加的代价就是延迟增加和功耗增加，这是一个关于DRAM的话题了，DRAM芯片的组织形式是2D网格-无论逻辑还是物理上，有行线(水平)和列线(垂直)，在这些线之间的每一个交点上都有一个晶体管和一个电容。
+                            就是DRAM中的一个位置的地址分为行地址和列地址，DRAM内部的读/写总是同时访问给定行的所有列，这意味着访问一片映射到DRAM行的内存比分步在多行的相同数量的内存要快很多。
+                        </p>
+                    </dd>
+
+                    <dt></dt>
+                    <dd></dd>
+                </dl>
+            </div>
+        </div>
+        <div>
+            <h4 id="section2">ss</h4>
+            <div>
+            </div>
+        </div>
+        <div>
+            <h4 id="section99">Reference</h4>
+            <div>
+                <p><a href="https://www.intel.com/content/www/us/en/docs/oneapi/optimization-guide-gpu/2023-1/overview.html">oneAPI GPU Optimization Guide</a></p>
+                <p><a href="https://alaingalvan.gitbook.io/a-trip-through-the-graphics-pipeline/">a trip through the graphics pipeline</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
