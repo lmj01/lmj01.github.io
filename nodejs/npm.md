@@ -1,4 +1,4 @@
-# npm
+# [npm](https://docs.npmjs.com/)
 
 ```bat
 node --harmony script.js --version --help
@@ -9,6 +9,7 @@ node --harmony script.js --version --help
 npm init
 vim index.js 
 node index.js
+npm init -w ./packages/a 创建子包
 ```
 
 包管理
