@@ -1,14 +1,8 @@
 # WSL
 
-
-**常用命令**
-```bat
-rem 查看window版本
-ver 
-rem 进入当前子系统
-wsl     
-bash 
-```
+wslconfig /list
+wsl --list
+wsl --shutdown
 
 ## bat
 - echo %XXX-path% 打印环境变量
@@ -27,7 +21,6 @@ curl http://127.0.0.1:8080/login?admin&passwd=12345678
 POST请求
 curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login
 curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
-
 
 
 ### 不能ping
@@ -78,12 +71,11 @@ cd boost_1_xx_y_z
 安装完Ubuntu后，提示升级
 sudo apt update
 sudo apt upgrade
+sudo dpkg-reconfigure locales 配置其他字体
 
 <!--  -->
 
 [NodeSource Node.js Binary Distributions](https://github.com/nodesource/distributions)
-
-
 
 
 ## 参考
