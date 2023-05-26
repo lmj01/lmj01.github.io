@@ -27,6 +27,7 @@
 - **:set hlsearch or :set nohlsearch**高亮搜索结果
 - **:set incsearch**逐步搜索模式
 - **:set wrapscan**重新搜索
+- **:set ff=unix**格式重置，针对shell-bash文件，需要unix模式
 
 ## 替换命令
 

@@ -31,6 +31,10 @@
 
 - [Bgfx](../cg/bgfx.md)
 
+### Tool
+
+- [PAG Portable Animated Graphics](https://pag.art/)
+
 ## Web
 
 - [Web notes](../web/index.md)

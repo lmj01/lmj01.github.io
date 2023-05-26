@@ -31,6 +31,10 @@ find . -name "*libc*"
 
 - service
     - sudo service --status-all 查看服务列表
+- curl
+    - 
+- network
+    - netstat -anp | grep 53
 
 ## 环境搭建
 
