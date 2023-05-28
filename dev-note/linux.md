@@ -36,6 +36,23 @@ find . -name "*libc*"
 - network
     - netstat -anp | grep 53
 
+
+### wsl的区别
+
+linux启动服务可能有两种
+- SysV init 系统，如wsl中的
+- systemd, 如ubuntu
+
+| systemd | sysvinit |
+| :---: | :---: |
+| systemctl start service_name | service service_name start |
+| stop | stop |
+| restart | restart |
+| systemctl status service_name | service service_name status |
+| systemctl enable service_name | chkconfig service_name on |
+| systemctl disable service_name | chkconfig service_name off|
+
+
 ## 环境搭建
 
 env 或 printenv

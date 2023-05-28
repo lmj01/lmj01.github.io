@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Depth to View</title>
-<link rel="icon" href="../favicon.ico" />
-<link rel="stylesheet" type="text/css" href="../bootstrap-5.0.2-dist/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="./math.css">
-<script src="../bootstrap-5.0.2-dist/bootstrap.min.js"></script>
+<title>PBR</title>
+<script src="./html.config.js" defer></script>
 <script src="./mathjax.config.js" defer></script>
 </script>
 </head>
@@ -14,46 +11,110 @@
         <h1>PBR -- Physically Based Rendering</h1>
         <div class="d-flex flex-column">
             <ol>
-                <li><a href="#section1">理论</a></li>
+                <li><a href="#section1">总纲</a></li>
+                <li><a href="#section2">微平面理论</a></li>
+                <li><a href="#section3">能量守恒</a></li>
                 <li><a href="#section99">参考</a></li>
             </ol>
         </div>
         <div>
-            <h4 id="section1">理论</h4>
+            <h4 id="section1">总纲</h4>
             <div>基于物理的渲染技术PBR，是指使用基于物理原理和微平面理论建模的着色或光照模型，以及使用现实中测量的表面参数来准确表示真实世界材质的渲染理念，自迪士尼在SIGGRAPH2012上提出了迪士尼原则Disney Principled的BRDF，被广泛采用。</div>
-            <h5>微平面理论Microfacet Theory</h5>
+            <h5>Scope of PBR</h5>
             <div>
-                <p>微平面理论是将物体表面建模成无数微观尺度上有随机朝向的理想镜面反射的小平面microfacet，实践中表面的不规则性用粗糙度贴图或高光度贴图来表示</p>
+                <p>PBR的范畴，PBR不仅仅是镜面反射采用微平面Cook-Torrance模型，Frostbite在SIGGRAPH2014的分享《Moving Frostbite to PBR》中提出基于物理渲染的范畴，有三部分组成</p>
+                <ul>
+                    <li>基于物理的材质 Material</li>
+                    <li>基于物理的光照 Lighting</li>
+                    <li>基于物理适配的摄像机 Camera</li>
+                </ul>
             </div>
-            <h5>能量守恒Energy Conservation</h5>
             <div>
-                <p>出射光线的能量永远不能超过入射光线的能量</p>
+                <p>PBR的总概念有</p>
+                <ul>
+                    <li>
+                        <h5>微平面理论Microfacet Theory</h5>
+                        <p>微平面理论是将物体表面建模成无数微观尺度上有随机朝向的理想镜面反射的小平面microfacet，实践中表面的不规则性用粗糙度贴图或高光度贴图来表示</p>
+                    </li>
+                    <li>
+                        <h5>能量守恒Energy Conservation</h5>
+                        <p>出射光线的能量永远不能超过入射光线的能量</p>
+                    </li>
+                    <li>
+                        <h5>菲涅尔反射Fresnel Reflectance</h5>
+                        <p>光线以不同角度入射会有不同的反射率，相同的入射角不同的物质也会有不同的反射率</p>
+                        <p>大多数非金属的F0是\(0.02 \sim 0.04\)，大多数的金属的F0范围是\(0.7 \sim 1.0\)</p>
+                    </li>
+                    <li>
+                        <h5>线性空间Linear Space</h5>
+                        <p>光照计算必须在线性空间完成，如shader中的带gamma的贴图可能需要转换成线性空间</p>
+                        <p>描述物体表面属性的贴图如粗糙度、高光、金属等必须保证是线性空间的</p>
+                    </li>
+                    <li>
+                        <h5>色调映射Tone Mapping</h5>
+                        <p>是将宽范围的照明级别拟合到屏幕有限色域内的过程</p>
+                        <p>基于HDR渲染出来的亮度值会超过显示器能够最大显示亮度，就需要将光照结果从HDR映射到LDR</p>
+                    </li>
+                    <li>
+                        <h5>物质的光学特性Substance Optical Properties</h5>
+                        <p>现实中的物理中物质可分为三类</p>
+                        <ol>
+                            <li>绝缘体Insulators</li>
+                            <li>半导体semi-conductors</li>
+                            <li>导体conductors</li>
+                        </ol>
+                        <p>渲染中一般只对金属导体和非金属绝缘体，前者具有彩色的镜面反射颜色，后者具有单色或灰色镜面反射颜色</p>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
             </div>
-            <h5>菲涅尔反射Fresnel Reflectance</h5>
+        </div>
+        <div>
+            <h4 id="section2">微平面理论</h4>
             <div>
-                <p>光线以不同角度入射会有不同的反射率，相同的入射角不同的物质也会有不同的反射率</p>
-                <p>大多数非金属的F0是\(0.02 \sim 0.04\)，大多数的金属的F0范围是\(0.7 \sim 1.0\)</p>
+                <h5>Microfacet Theory</h5>
+                <p><em>反射现象</em>，光在均匀介质中是沿直线传播的，光在两种物质分界面上改变传播方向又返回原来物质中的现象。两种反射：</p>
+                <ul>
+                    <li>一是镜面反射，反射面是光滑平面（如镜子），平行光线经反射后沿某一个方向平行射出，即只能在某一个方向接收到反射光线，如潜水艇上的潜望镜、穿衣镜都是镜面反射；</li>
+                    <li>二是漫反射，反射面是粗糙平面或曲面，平行光线经界面反射后向各个不同的方向反射出去，即在各个不同的方向都能接收到反射光线，如电影院里银幕上接收光线产生漫反射。</li>
+                </ul>
+                <p><em>光学平面</em>，指平面的粗糙度(即表面的起伏)远小于波长。表面对光的散射比较小，绝大部分光被反射(镜面)、透射(介质)、被吸收。简而言之，光学平面可以有效降低光散射，至于光的透射还是反射等取决于具体材料。</p>
+                <ul>
+                    <li>粗糙度较小，相对光滑，表面取向略有变化，导致反射光方向的微小变化，产生较清晰的反射</li>
+                    <li>粗糙度较大，表面上不同点的方向取向变化较大，导致反射光方向的高度变化，产生较模糊的反射</li>
+                </ul>
+                <p><em>非光学平坦表面Non-Optically-Flat Surfaces</em>,可以看成是微小的光学平面表面的大集合，表面上的每个点都以略微不同的对入射光反射等，最终的表面外观是许多不同微小平面的聚合结果。</p>
+                <p><em>漫反射</em>和<em>次表面散射</em>它们是相同的物理现象，本质都是折射光的次表面散射的结果，唯一的区别是相对于观察尺度的散射距离，即像素区域与散射距离的关系来确定，如果像素大于光线离开表面之前所经过的距离，可当场漫反射；像素小于散射距离，则当场次表面散射。</p>
+                <p>出于着色渲染的目的，通常使用统计方法去处理这种微观上的几何现象。</p>
             </div>
-            <h5>线性空间Linear Space</h5>
+        </div>
+        <div>
+            <h4 id="section3">能量守恒</h4>
             <div>
-                <p>光照计算必须在线性空间完成，如shader中的带gamma的贴图可能需要转换成线性空间</p>
-                <p>描述物体表面属性的贴图如粗糙度、高光、金属等必须保证是线性空间的</p>
+                <p>根据光学的物理学原理，渲染方程描述了光能在场景中的流动，其理论是能量守恒，而各种各样的渲染计算都是只是这个理论结果的一个近似。</p>
             </div>
-            <h5>色调映射Tone Mapping</h5>
             <div>
-                <p>是将宽范围的照明级别拟合到屏幕有限色域内的过程</p>
-                <p>基于HDR渲染出来的亮度值会超过显示器能够最大显示亮度，就需要将光照结果从HDR映射到LDR</p>
+                <h5>渲染方程The Rendering Equation</h5>
+                <p>是渲染中不可感知的抽象，是指导实现渲染的总纲。在一个特定的位置和方向，出射光\( \mathcal{Lo} \)是自发光\( \mathcal{Le} \)与反射光线之和，反射光线本身是各个方向的入射光\( \mathcal{Li} \)之和乘以表面反射率以及入射角。</p>
+                <p>某一点p的渲染方程，可以表示为</p>
+                <p>
+                    $$
+                    Lo = Le + \int_{\Omega}{f_{r} \cdot L_{i} \cdot (w_{i} \cdot n) \cdot dw_{i}}
+                    $$
+                </p>
+                <p>其中\(Lo\)是p点的出射光亮度; \(Le\)是p点发出的光亮度; \(f_{r}\)是p点入射方向到出射方向光的发射比例，即BxDF，一般是BRDF；\(L_{i}\)是p点入射光亮度；\((w_{i} \cdot n)\)是入射角带来的入射光衰减；\(\int_{\Omega}{...dw_{i}}\)是入射方向半球的积分(可理解为无穷小的累加和)。</p>
+                <div class="d-flex">
+                    <img class="m-auto" src="../images/cg/renderEquationT1.webp">
+                </div>
+                <p>在实时渲染中，常用反射方程The Reflectance Equation,是渲染方程的简化版本，或者说是一个特例。</p>
+                <p>
+                    $$
+                    Lo = \int_{\Omega}{f_{r} \cdot L_{i} \cdot (w_{i} \cdot n) \cdot dw_{i}}
+                    $$
+                </p>
             </div>
-            <h5>物质的光学特性Substance Optical Properties</h5>
-            <div>
-                <p>现实中的物理中物质可分为三类</p>
-                <ol>
-                    <li>绝缘体Insulators</li>
-                    <li>半导体semi-conductors</li>
-                    <li>导体conductors</li>
-                </ol>
-                <p>渲染中一般只对金属导体和非金属绝缘体，前者具有彩色的镜面反射颜色，后者具有单色或灰色镜面反射颜色</p>
-            </div>            
         </div>
         <div>
             <h4 id="section99">参考</h4>

@@ -99,7 +99,9 @@ git reset --mixed默认不带参，只回退暂存区和本地版本库
 
 ## config
 git的配置
-
+git config --global user.name "lmj01"
+git config --global user.email "lmjie_good@163.com"
+git config --global color.ui auto 增强命令输出的可读性
 git config --global init.defaultBranch main // 更改默认分支git2.28支持
 
 ### git ssh

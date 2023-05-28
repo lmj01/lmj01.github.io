@@ -14,7 +14,8 @@ types {
     text/vnd.sun.j2me.app-descriptor      jad;
     text/vnd.wap.wml                      wml;
     text/x-component                      htc;
-    text/x-markdown                      md;
+    text/x-markdown                       md;
+    text/javascript                       mjs;
 
     image/png                             png;
     image/tiff                            tif tiff;
