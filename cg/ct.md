@@ -5,3 +5,4 @@
 
 ## CornerstoneJS
 
+### 概念
