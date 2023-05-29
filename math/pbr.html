@@ -115,11 +115,62 @@
                     $$
                 </p>
             </div>
+            <div>
+                <h5>BxDF</h5>
+                <p>BxDF指几种双向分布函数的一个统一表示。</p>
+                <ul>
+                    <li>双向反射分布函数Bidirectional Reflectance Distribution Function,BRDF，最为简单，也最常用，对于很少透明的场景来说足够了，包括游戏和电影中都有应用。</li>
+                    <li>双向透射分布函数Bidirectional Transmittance,BTDF，用于半透明材质</li>
+                    <li>双向散射分布函数Bidirectional Scattering,BSDF可以看成是BRDF+BTDF，半透明材质和次表面散射材质</li>
+                    <li>双向散射表面反射分布函数Bidirectional Scattering-Surface Reflectance,BSSRDF可以指定不同的光线入射位置和出射位置。</li>
+                </ul>
+                <div>
+                    <h6>Disney Principled BxDF</h6>
+                    <p>迪士尼原则的BRDF的提出奠定了游戏和电影行业的PBR的方向和标准，由于其高度的通用性，将材质复杂的物理属性用非常直观的少量变量表达了出来。</p>
+                    <p>其核心理念是<em>着色模型是艺术导向Art Directable</em>的，而不一定要是完全物理正确physically correct的，并对微平面BRDF的各项都进行了严谨的调用，并提出了清晰明确而简单的解决方案。</p>
+                    <ul>
+                        <li>应使用直观的参数，而不是物理类的晦涩参数</li>
+                        <li>参数应尽可能少</li>
+                        <li>参数在其合理范围内应该为0到1</li>
+                        <li>允许参数在有意义时超出正常的合理范围</li>
+                        <li>所有参数组合应尽可能健壮和合理</li>
+                    </ul>
+                    <p>基于此理念，得到一个颜色参数和描述的标量参数</p>
+                    <ol>
+                        <li>baseColor基础色，表面颜色，通常由纹理贴图提供</li>
+                        <li>subsurface次表面，使用次表面近似控制漫反射形状</li>
+                        <li>metallic金属度，0电介质，1金属，两者不同模型之间的线性混合，金属没有漫反射，且具有等于基础色的入射镜面反射</li>
+                        <li>specular镜面反射强度，入射镜面反射量，用于取代折射率</li>
+                        <li>specularTint镜面反射颜色，对美术控制的让步，用于对基础色的入射镜面反射进行颜色控制，掠射镜面反射仍然是非彩色的。<em>掠射</em>指光从光疏介质向光密介质传播，入射角接近于90度时为掠射</li>
+                        <li>roughness粗糙度，表面粗糙度，控制漫反射和镜面反射</li>
+                        <li>anisotropic各向异性强度，用于控制镜面反射高光的纵横比，0各向同性，1最大的各向异性</li>
+                        <li>sheen光泽度，一种额外的掠射分量grazing component，主要用于布料</li>
+                        <li>sheenTint光泽颜色，对sheen的颜色控制</li>
+                        <li>clearcoat清漆强度，有特殊用途的第二个镜面波瓣specular lobe  </li>
+                        <li>clearcoatGloss清漆光泽度，控制透明涂层光泽度，0缎面satin外观，1光泽gloss外观</li>
+                    </ol>
+                </div>
+                <div>
+                    <h6>Disney Principled BSDF</h6>
+                    <p>2015年迪士尼动画工作室在BRDF基础上修订，提出了Extending the Disney BRDF to a BSDF with Integrated Subsurface Scattering。blender实现了Disney的BSDF。</p>
+                </div>
+            </div>
+            <div>
+                <h5>Diffuse BRDF</h5>
+                <p>漫反射BRDF模型</p>
+            </div>
+            <div>
+                <h5>Speecular BRDF</h5>
+                <p>镜面反射BRDF模型</p>
+            </div>
         </div>
         <div>
             <h4 id="section99">参考</h4>
             <div>
                 <p><a href="https://www.pbr-book.org/">Physically Based Rendering:From Theory To Implementation</a></p>
+                <p><a href="https://web.gps.caltech.edu/~vijay/Papers/BRDF/shell-04.pdf">Bidirectional Reflectance:An Overview with Remote Sensing Applications & Measurement Recommendations</a></p>
+                <p><a href="https://digibug.ugr.es/bitstream/handle/10481/19751/rmontes_LSI-2012-001TR.pdf">An Overview of BRDF Models</a></p>
+                <p><a href="https://media.disneyanimation.com/uploads/production/publication_asset/48/asset/s2012_pbs_disney_brdf_notes_v3.pdf">Physically Based Shading at Disney</a></p>
                 <p><a href="http://www.bimant.com/blog/three-js-pbr-intro/">Three.js PBR渲染入门</a></p>
             </div>
         </div>
