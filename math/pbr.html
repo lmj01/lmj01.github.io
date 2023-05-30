@@ -19,6 +19,7 @@
         </div>
         <div>
             <h4 id="section1">总纲</h4>
+            <p>本文基于<a href="https://zhuanlan.zhihu.com/p/53086060">基于物理的渲染（PBR）白皮书】（一） 开篇：PBR核心知识体系总结与概览</a>来布局内容，在此基础上加上自己的理解完成</p>
             <div>基于物理的渲染技术PBR，是指使用基于物理原理和微平面理论建模的着色或光照模型，以及使用现实中测量的表面参数来准确表示真实世界材质的渲染理念，自迪士尼在SIGGRAPH2012上提出了迪士尼原则Disney Principled的BRDF，被广泛采用。</div>
             <h5>Scope of PBR</h5>
             <div>
@@ -89,6 +90,15 @@
                 <p><em>漫反射</em>和<em>次表面散射</em>它们是相同的物理现象，本质都是折射光的次表面散射的结果，唯一的区别是相对于观察尺度的散射距离，即像素区域与散射距离的关系来确定，如果像素大于光线离开表面之前所经过的距离，可当场漫反射；像素小于散射距离，则当场次表面散射。</p>
                 <p>出于着色渲染的目的，通常使用统计方法去处理这种微观上的几何现象。</p>
             </div>
+            <div>
+                <p>微平面理论将微观几何microgeometry建模为微平面microfacet的思路，用来描述非光学平坦表面的表面反射。理论假设的是微观几何的尺度小于观察尺度，但大于可见光波长的尺度。该理论在2013以前仅用于推导单反射single-bounce表面反射的表达式，现在开始慢慢地实践多次反弹表面反射的一些探讨。</p>
+                <p>每个微平面的表面点将给定进入的光反射到单个出射方向，取决于微观几何法线\(\mathcal{m}\)的方向，在计算BRDF项时，指定光方向\(\mathcal{l}\)和视图方向\(\mathcal{v}\)，这样可以看成只有那些恰好可以将\(\mathcal{l}\)反射到\(\mathcal{v}\)的那些平面有助于BRDF值，其他方向有正有负，积分后就抵消掉。如下左侧图所示，只有\(\mathcal{m}=\mathcal{h}\)时，某个方向的光对应的视图方向的值就是这些的累计值。</p>
+                <p class="d-flex m-100">
+                    <img class="m-auto" src="../images/cg/pbr-a1.webp" />
+                    <img class="m-auto" src="../images/cg/pbr-a2.webp" />
+                </p>
+                <p>上图右侧所示，即使\(\mathcal{m}=\mathcal{h}\)时，也有些复杂的情况，被\(\mathcal{l}\)方向shadowing阴影遮蔽，\(\mathcal{v}\)方向掩蔽masking，microfacet模型理论忽略了一些反射，或多次次表面反射的情况，从结果上来看是可接受的。</p>
+            </div>
         </div>
         <div>
             <h4 id="section3">能量守恒</h4>
@@ -157,11 +167,24 @@
             </div>
             <div>
                 <h5>Diffuse BRDF</h5>
-                <p>漫反射BRDF模型</p>
+                <p>漫反射BRDF模型，分为传统型和基于物理型：传统主要是Lambert；基于物理的有多种。</p>
+                <ul>
+                    <li>Oren Nayar[1994]</li>
+                    <li>Simplified Oren-Nayar[2012]</li>
+                    <li>Disney Diffuse[2012]</li>
+                    <li>Renormalized Disney Diffuse[2014]</li>
+                    <li>Gotand Diffuse[2014]</li>
+                    <li>PBR diffuse for GGX+Smith[2017]</li>
+                    <li>MultiScattering Diffuse BRDF[2018]</li>
+                </ul>
             </div>
             <div>
                 <h5>Speecular BRDF</h5>
-                <p>镜面反射BRDF模型</p>
+                <p>镜面反射BRDF模型，目前游戏行业最主流的模型是基于微平面理论的Microfacet Cook-Torrance BRDF。怎么用物理量精确描述光线？这就要引入物理模型了。</p>
+                <p><em>辐射度量学</em>是对光照的一套测量系统和单位，它能够准确的描述光线的物理性质。先介绍一些概念</p>
+                <ul>
+                    <li><em>辐射能量Radiant energy和辐射通量Radiant flux</em>，辐射能量就是辐射出来的电磁能量，单位为焦耳；辐射通量或说辐射功率就是单位时间内的能量，具体地偏向用radiant flux来衡量光线的亮度，如说白炽灯灯泡时说的是60\(\mathcal{w}\)亮度</li>
+                </ul>
             </div>
         </div>
         <div>
