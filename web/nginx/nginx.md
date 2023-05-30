@@ -19,3 +19,5 @@ window上的直接下载zip版，在nginx.conf中添加
 include ./conf.d/*.conf;
 ```
 直接创建conf.d目录，拷贝内容
+
+[在线配置nginx](https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN)
