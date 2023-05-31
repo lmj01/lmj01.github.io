@@ -181,10 +181,30 @@
             <div>
                 <h5>Speecular BRDF</h5>
                 <p>镜面反射BRDF模型，目前游戏行业最主流的模型是基于微平面理论的Microfacet Cook-Torrance BRDF。怎么用物理量精确描述光线？这就要引入物理模型了。</p>
-                <p><em>辐射度量学</em>是对光照的一套测量系统和单位，它能够准确的描述光线的物理性质。先介绍一些概念</p>
+                <p><em>辐射度量学</em>是对光照的一套测量系统和单位，它能够准确的描述光线的物理性质。<a href="https://zhuanlan.zhihu.com/p/145410416">先介绍一些概念</a></p>
                 <ul>
                     <li><em>辐射能量Radiant energy和辐射通量Radiant flux</em>，辐射能量就是辐射出来的电磁能量，单位为焦耳；辐射通量或说辐射功率就是单位时间内的能量，具体地偏向用radiant flux来衡量光线的亮度，如说白炽灯灯泡时说的是60\(\mathcal{w}\)亮度</li>
+                    <li><em>辐射强度Radiant intensity</em>， 一种亮度，可以理解为radiant flux的单位值
+                        <ol>
+                            <li>Radiant intensity就是指从一个光源处向某个方向上的亮度，就是<em>每单位立体角上的功率</em></li>
+                            <li>irradiance是指某一微小平面所接收到的光线亮度</li>
+                            <li>radiance是衡量一条传播光线所具有的亮度</li>
+                        </ol>
+                        <p><img src="../images/cg/pbr-a3.webp"></p>
+                    </li>
                 </ul>
+                <p>上面说到立体角，先从二维的弧度radians定义说起，\(\theta=\frac{l}{r}\)，三维的立体角steradians定义是\(\Omega=\frac{A}{r^2}\)。确定球体空间中的一个方向\(\theta,\phi\),在这两个角度上分别增加一个微分值，其中\(rd\theta\)是微分面积元的高，\(rsin\theta d\phi\)是微分面积元的宽,则有</p>
+                <p>
+                    $$
+                    d\omega = \frac{dA}{r^2} = \frac{(rd\theta) \cdot rsin\theta d\phi}{r^2} = sin\theta d\theta d\phi
+                    $$
+                </p>
+                <p>可以对\(d\omega\)在整个球体上求积分来验证三维立体角的定义</p>
+                <p>
+                    $$
+                    \Omega = \int_{S^2}{d\omega} = \int_{0}^{2\pi}{\int_{0}^{\pi}{sin\theta d\theta d\phi}} = 4\pi
+                    $$
+                </p>
             </div>
         </div>
         <div>
