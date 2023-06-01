@@ -5,12 +5,12 @@
 
 xcopy /s /e /i /y win\nginx.conf e:\tools\nginx-1.25.0\conf\nginx.conf
 
-xcopy /s /e /i /y cert\localhost\localhost.crt e:\tools\nginx-1.25.0\conf\cert\localhost.crt
-xcopy /s /e /i /y cert\localhost\localhost.key e:\tools\nginx-1.25.0\conf\cert\localhost.key
+# xcopy /s /e /i /y cert\localhost\localhost.crt e:\tools\nginx-1.25.0\conf\cert\localhost.crt
+# xcopy /s /e /i /y cert\localhost\localhost.key e:\tools\nginx-1.25.0\conf\cert\localhost.key
 
 (Get-Content f:\meijie\lmj01.github.io\web\nginx\lmj01.conf) -Replace '/mnt/f/meijie/lmj01.github.io', 'f:/meijie/lmj01.github.io' | Set-Content e:\tools\nginx-1.25.0\conf\conf.d\lmj01.conf
 
-(Get-Content f:\meijie\lmj01.github.io\web\nginx\9930.conf) -Replace '/mnt/f/fullstack/mjdemo', 'f:/fullstack/mjdemo' | Set-Content e:\tools\nginx-1.25.0\conf\conf.d\9930.conf
+# (Get-Content f:\meijie\lmj01.github.io\web\nginx\9930.conf) -Replace '/mnt/f/fullstack/mjdemo', 'f:/fullstack/mjdemo' | Set-Content e:\tools\nginx-1.25.0\conf\conf.d\9930.conf
 
 # 临时的
 # (Get-Content f:\meijie\lmj01.github.io\web\nginx\9950.conf) -Replace '/mnt/f/fullstack/mjdemo', 'f:/fullstack/mjdemo' | Set-Content e:\tools\nginx-1.25.0\conf\conf.d\9950.conf

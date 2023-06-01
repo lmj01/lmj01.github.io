@@ -20,4 +20,20 @@ include ./conf.d/*.conf;
 ```
 直接创建conf.d目录，拷贝内容
 
+
+## 文档
+
+### [location](https://nginx.org/en/docs/http/ngx_http_core_module.html#location)
+
+- 精确匹配(=), 用于不含正则表达式的uri前，如果匹配成功不再进行后续查找
+- 前缀匹配(^~), 与(=)区别是符合前缀的都可以
+- 正则匹配(~), 区分大小写
+- 正则匹配(~*), 不区分大小写
+- 空，普通匹配，最长字符匹配，
+
+优先级
+
+location = > location full-path > location ^~ path > location ~,~* > location part-path > location /
+
+
 [在线配置nginx](https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN)

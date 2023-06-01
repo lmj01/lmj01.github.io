@@ -46,6 +46,6 @@ certutil.exe -addstore root .\cert\ca\ca.crt
 
 [分发的有效根 CA 证书显示为不受信任的问题提供了解决方法](https://learn.microsoft.com/zh-cn/troubleshoot/windows-server/identity/valid-root-ca-certificates-untrusted)
 
-## minica
+## 参考
 
-minica封装了openssl的api，可以快速生成证书
+- [使用Openssl为localhost生成ssl证书](https://www.jianshu.com/p/9d9596e7fc37)
