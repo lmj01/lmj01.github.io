@@ -183,16 +183,19 @@
                 <p>镜面反射BRDF模型，目前游戏行业最主流的模型是基于微平面理论的Microfacet Cook-Torrance BRDF。怎么用物理量精确描述光线？这就要引入物理模型了。</p>
                 <p><em>辐射度量学</em>是对光照的一套测量系统和单位，它能够准确的描述光线的物理性质。<a href="https://zhuanlan.zhihu.com/p/145410416">先介绍一些概念</a></p>
                 <ul>
-                    <li><em>辐射能量Radiant energy和辐射通量Radiant flux</em>，辐射能量就是辐射出来的电磁能量，单位为焦耳；辐射通量或说辐射功率就是单位时间内的能量，具体地偏向用radiant flux来衡量光线的亮度，如说白炽灯灯泡时说的是60\(\mathcal{w}\)亮度</li>
-                    <li><em>辐射强度Radiant intensity</em>， 一种亮度，可以理解为radiant flux的单位值
-                        <ol>
-                            <li>Radiant intensity就是指从一个光源处向某个方向上的亮度，就是<em>每单位立体角上的功率</em></li>
-                            <li>irradiance是指某一微小平面所接收到的光线亮度</li>
-                            <li>radiance是衡量一条传播光线所具有的亮度</li>
-                        </ol>
-                        <p><img src="../images/cg/pbr-a3.webp"></p>
-                    </li>
+                    <li><em>辐射能量Radiant energy和辐射通量Radiant flux</em>，辐射能量就是辐射出来的电磁能量，单位为焦耳\(\mathcal{Q[J=Joule]}\)；辐射通量或说辐射功率就是单位时间内的能量，具体地偏向用radiant flux来衡量光线的亮度，如说白炽灯灯泡时说的是60\(\mathcal{w}\)亮度，它的定义是\(\Phi \equiv \frac{d\mathcal{Q}}{dt}[W=Watt][lm=Lumen]\)</li>
+                    <li><em>辐射强度Radiant intensity</em>，是指从一个光源处向某个方向上的亮度，就是<em>每单位立体角上的功率</em>\(I(\omega) \equiv \frac{d\Phi}{d\omega}[\frac{W}{sr}][\frac{lm}{sr}=cd=candela]\)</li>
+                    <li><em>irradiance</em>是指每单位照射面积所接收到的power，\(E(x) \equiv \frac{d\Phi(x)}{dA}[\frac{W}{m^2}][\frac{lm}{m^2}=lux]\)，借助于irradiance可以解释在Billn-Phone所提到的Lambert's Law，即光线亮度在计算时需要乘上一个\(cos\theta\)。在Blinn-Phong模型所提到的光线越远衰减越快，此现象可用irradiance解释，因为光的功率始终一致，离点光源所照射到的圆面积越大，分母越大，分子不变，值就越小啦。</li>
+                    <li><em>radiance</em>是衡量一条传播光线所具有的亮度，就是<em>每单位立体角，每单位垂直面积的功率</em>，它同时指定了光的方向与照射到的表面所接收到的亮度。\(L(p,\omega) \equiv \frac{d^2\Phi(p,\omega)}{d\omega dAcos\theta}[\frac{W}{srm^2}][\frac{cd}{m^2}=\frac{lm}{srm^2}=nit]\), \(cos\theta\) accounts for projected surface area</li>
                 </ul>
+                <p><img src="../images/cg/pbr-a3.webp"></p>
+                <p>上图中分别图示了几个概念的物理现象，从左到右，最终的计算要落实到radiance上来，与irradiance的关系也随之而出</p>
+                <p>
+                    $$
+                    L(p,\omega) = \frac{dE(p)}{d\omega cos\theta} \Rightarrow dE(p,\omega) = L_{i}(p,\omega) cos\theta d\omega \Rightarrow E(p) = \int_{H^2}{L_{i}(p,\omega) cos\theta d\omega}
+                    $$
+                </p>
+                <p>其中\(E(p)\)就是点p的irradiance，其物理含义就是提到的过点p的<em>每单位照射面积的功率</em>，而\(L_{i}(p,\omega)\)是指入射光<em>每立体角每垂直面积的功率</em>,对\(d\omega\)积分，相当于对所有不同角度的入射光线做一个求和。含义就是<em>一个点（微分面积元）所接收到的亮度irradiance，由所有不同方向的入射光线亮度radiance共同贡献所得。</em></p>
                 <p>上面说到立体角，先从二维的弧度radians定义说起，\(\theta=\frac{l}{r}\)，三维的立体角steradians定义是\(\Omega=\frac{A}{r^2}\)。确定球体空间中的一个方向\(\theta,\phi\),在这两个角度上分别增加一个微分值，其中\(rd\theta\)是微分面积元的高，\(rsin\theta d\phi\)是微分面积元的宽,则有</p>
                 <p>
                     $$
