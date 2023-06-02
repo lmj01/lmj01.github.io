@@ -26,6 +26,8 @@ body {
 }
 .main-content {
     width:calc(100% - var(--sideMenu));
+    height: auto;
+    overflow: hidden;
 }
 
 em {

@@ -3,7 +3,9 @@
 [官方文档](https://git-scm.com/docs)
 [中文官方文档](https://git-scm.com/book/zh/v2)
 
-## 创建
+## 常用命令
+
+### 创建
 - git init 对当前目录进行git初始化
 - git remote add repo-name repo-url 添加远程仓库地址
 - git remote rm repo-name 删除远程仓库关联
@@ -73,16 +75,23 @@ e - manually edit the current hunk # 编辑当前hook
 ? - print help # 显示帮助信息
 
 ### 回滚
+
+```shell
 git checkout branch-with-history 切换到带有历史记录的分支中
 git checkout -b XXX 新建本地分支XXX
 git reset --hard commit-id 回滚分支XXX上的某个提交点
+```
 此时代码就是某个提交点的，就可以修改了
 
-git reset --hard彻底回退到某个版本，同时回退暂存区和版本库和工作区
-git reset --soft回退到某个版本，只回退到暂存区
-git reset --mixed默认不带参，只回退暂存区和本地版本库
+- git reset --hard彻底回退到某个版本，同时回退暂存区和版本库和工作区
+- git reset --soft回退到某个版本，只回退到暂存区
+- git reset --mixed默认不带参，只回退暂存区和本地版本库
 
-## [stash](https://www.git-scm.com/docs/git-stash)
+### 打包
+
+- git archive --format zip --output path/zipfile.zip branch-name
+
+### [stash](https://www.git-scm.com/docs/git-stash)
 
 - git stash list 罗列出所有的
 - 暂存修改
@@ -92,17 +101,21 @@ git reset --mixed默认不带参，只回退暂存区和本地版本库
 - git stash drop [<stash>] 删除对应的stash的id
 - git stash clear 清楚所有的 
 
-## diff
+### diff
 
 - git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
 - git diff branch1 branch2 --stat
 
-## config
+## 配置
+
+### config
 git的配置
+```shell
 git config --global user.name "lmj01"
 git config --global user.email "lmjie_good@163.com"
 git config --global color.ui auto 增强命令输出的可读性
 git config --global init.defaultBranch main // 更改默认分支git2.28支持
+```
 
 ### git ssh
 在Linux中执行
@@ -156,6 +169,9 @@ pox.xml merge=ours
 2. *.zip 过滤所有.zip文件
 3. /mtk/do.c 过滤指定文件
 4. !/mtk/one.txt 添加指定文件
+
+
+## 其他
 
 ### 错误
 
