@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>光照模型</title>
+<script src="./html.config.js" defer></script>
+<script src="./mathjax.config.js" defer></script>
+</script>
+</head>
+<body>
+    <div class="container-xl">
+        <h1>局部光照模型</h1>
+        <div class="d-flex flex-column">
+            <ol>
+                <li><a href="#section1">光照模型</a></li>
+                <li><a href="#section2">泛光模型</a></li>
+                <li><a href="#section3">Lambert漫反射模型</a></li>
+                <li><a href="#section4">Phong反射模型</a></li>
+                <li><a href="#section5">Blinn-Phong反射模型</a></li>
+                <li><a href="#section6">着色方法（频率）</a></li>
+                <li><a href="#section99">参考与引用</a></li>
+            </ol>
+        </div>
+        <div>
+            <h4 id="section1">光照模型</h4>
+            <p>着色shadin，简单说就是计算出每个采样像素点的颜色值是多少，早期限于硬件水平，多数使用局部光照模型来模拟，虽然不准确，但优点是计算快，效果还可接受。我们如何能够看到物体呢？
+                <em>物体之所以能被我们观察到，是因为人眼接收到了从物体来的光</em>， 从物体上发出光的来分析，有三种情况</p>
+                <ul>
+                    <li><em>环境光Ambient Lighting</em></li>
+                    <li><em>漫反射Diffuse Reflection</em></li>
+                    <li><em>镜面反射Specular Hightlights</em></li>
+                </ul>
+                这里面的光强、光的亮度、光的能量都是同一个概念，从简到繁的历史发展的顺序来梳理一下概念。
+        </div>        
+        <div>
+            <h4 id="section2">泛光模型</h4>
+            <p>泛光模型即只考虑环境光，是最简单的<em>经验</em>模型,不强度精确描述，强度环境光的影响</p>
+            <p>$$I_{env} = K_{a}I_{a}$$</p>
+            <p>其中\(K_{a}\)代表物体表面对环境光的反射率，\(I_{a}\)代表入射环境光的亮度， 即人眼所能看到从物体表面反射的环境光的亮度。但泛光模型只能看到<em>物体的一个平面形状</em>，为了有体积感，就引入了漫反射，即Lambert漫反射模型。</p>
+        </div>        
+        <div>
+            <h4 id="section3">Lambert漫反射模型</h4>
+            <p>漫反射是指光从<em>一定角度</em>入射之后<em>从入射点向四面八方发反射</em>，且每个不同方向反射的光的强度相等，而产生漫反射的原因是物体表面的粗糙导致了这种物理现象。这就是Lambert's consin law，入射角让光强产生一个能量的差异，\(cos\theta=\mathcal{l} \cdot \mathcal{n}\), 其中的\(\mathcal{l}\)是入射光方向，\(\mathcal{n}\)为平面法线方向。</p>
+            <p>还有一个现象，Light Falloff，想想中心为一个光源点，光线均匀的向周围发射，发射出来的能量是固定的，<em>相同角度下的光发射出来的能量</em>也是固定的，但扇形区域会越来越大，位置越远接收到的光强就越小了。</p>
+            <p>$$L_{d}=k_{d}(\frac{I}{r^2})max(0, n \cdot l)$$</p>
+            <p>其中\(k_{d}\)为漫反射系数，\(I\)为入射光强度，\(n,l\)分别是平面法线向量和入射方向，max是为了剔除夹角大于90°的光。<em>注意漫反射光线强度与出射方向无关的，是各向同性的。</em>漫反射已经可以看出体积感，依然不够真实，缺少高光，引入镜面反射的就是Phong模型</p>
+        </div>        
+        <div>
+            <h4 id="section4">Phong反射模型</h4>
+            <p>镜面反射是很真实的生活场景，比如早上起来穿衣，站在镜子面前整理衣服。光照模型中<em>观察方向在镜面反射时</em>是很重要的，因为只有当<em>观察方向集中在反射方向周围附近时</em>才能看见反射光，离得远就不应该看见镜面反射，为了达到这个效果，对角度乘一个指数\(p\)来加速衰减</p>
+            <p>$$L_{s}=k_{s}(\frac{I}{r^2})max(0, cos\alpha)^{p}\label{eqPhongLighting}$$</p>
+            <p>把\(\I_{env}, L_{d}, L_{s})的结果累加起来就得到Phong模型效果</p>
+        </div>        
+        <div>
+            <h4 id="section5">Blinn-Phong反射模型</h4>
+            <p>是对Phong模型的改进，针对<em>计算反射方向与人眼观察方向角度</em>的一个优化。将反射方向与人眼观察方向夹角替换成一个<em>半程向量和法线向量的夹角</em></p>
+            <p>$$h=bisector(v, l) = \frac{v + l}{\|v+l\|}, [\ref{eqPhongLighting}] \Rightarrow L_{s} = k_{s}(\frac{I}{r^2})max(0, n \cdot h)^p $$</p>
+            <p>得到的结果与真实计算反射与人眼观察夹角的结果非常近似，优化的好处是在于加速了角度计算，提升效率（计算半程向量与反射向量）。所以ADS就是Blinn-Phong Reflection的结果</p>
+            <p>$$L=L_{a} + L_{d} + L_{s} = k_{a}I_{a} + k_{d}(\frac{I}{r^2})max(0, n \cdot l) + k_{s}(\frac{I}{r^2})max(0, n \cdot h)^p$$</p>
+        </div>        
+        <div>
+            <h4 id="section6">着色方法（频率）</h4>
+            <p>局部光照模型中，利用了<em>人眼观察方向、入射光线方向与法向量</em>的位置关系，其中的<em>法线</em>没有具体说是三角形面的法线还是三角形顶点的法线，这就是牵扯出来着色频率了，<em>面着色、顶点着色、像素着色</em>，分别有对应的方法来实现这三种不同的频率。</p>
+            <div>
+                <h5>FLat Shading</h5>
+                <p>面着色，利用每个面的法线进行一次Blinn-Phong反射光照模型的计算，将得到的颜色作为整个三角面的颜色。虽然计算快，但效果很差，明显地看到是一块块的三角面块的形状。</p>
+            </div>
+            <div>
+                <h5>Gouraud Shading</h5>
+                <p>更细化地就是对三角形的每个顶点进行一次着色，因为只有面的法线，顶点的法线可以将所有共享这个点的面的法线向量叠加求均值，把这个向量再单位化后赋值给顶点法线，这样算出了对应三个顶点的颜色值，三角形内部的颜色如何确定了？</p>
+                <p>$$c=\alpha c_{0} + \beta c_{1} + \gamma c_{2}$$</p>
+                <p>上面的公式是重心坐标插值，这样计算出来的结果相比Flat Shading要好很多，但依然只是对三角形的顶点进行了着色，三角形填充区域的颜色是插值计算得来的，光照模型对着色细节还不够细腻，就引出了Phong Shading.<em>重心坐标一定要是原世界坐标系中的重心坐标，在实际中计算一般会使用投影之后的二维平面来计算重心坐标，存在一个误差需要校正；插值可使用双线性插值来；</em></p>
+            </div>
+            <div>
+                <h5>Phong Shading</h5>
+                <p>上面由面法线到顶点法线，同样通过重心坐标系，可以把法线插值得到每个点的法线，即<em>图像上每个点都有对应的法线，再对每个像素点进行Blinn-Phong光照进行着色</em></p>
+                <p>$$n=\alpha n_{0} + \beta n_{1} + \gamma n_{2}$$</p>
+                <p>按照同样的逻辑，想要精细的结果就对每个点都做一次计算着色，这样平滑很多，都<em>通过插值方法来平滑过度相邻颜色值</em>，但这是对相同模型渲染出来的结果进行比对比的结果，如果模型本身精细尺度不一样了？<em>低精度模型与高精度模型</em>的差异与着色频率有关，就是内存与空间的辩证关系。</p>
+            </div>
+        </div>        
+        <div>
+            <h4 id="section99">参考与引用</h4>
+            <p><a href="https://zhuanlan.zhihu.com/p/144331612">计算机图形学五：局部光照模型(Blinn-Phong 反射模型)与着色方法</a></p>
+        </div>
+    </div>
+</body>
+</html>

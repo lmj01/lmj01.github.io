@@ -20,7 +20,7 @@
         <div>
             <h4 id="section1">总纲</h4>
             <p>本文基于<a href="https://zhuanlan.zhihu.com/p/53086060">基于物理的渲染（PBR）白皮书】（一） 开篇：PBR核心知识体系总结与概览</a>来布局内容，在此基础上加上自己的理解完成</p>
-            <div>基于物理的渲染技术PBR，是指使用基于物理原理和微平面理论建模的着色或光照模型，以及使用现实中测量的表面参数来准确表示真实世界材质的渲染理念，自迪士尼在SIGGRAPH2012上提出了迪士尼原则Disney Principled的BRDF，被广泛采用。</div>
+            <div>相比<a href="./lighting.html">局部光照模型与着色</a>而言，基于物理的渲染技术PBR，是指使用基于物理原理和微平面理论建模的着色或光照模型，以及使用现实中测量的表面参数来准确表示真实世界材质的渲染理念，自迪士尼在SIGGRAPH2012上提出了迪士尼原则Disney Principled的BRDF，被广泛采用。</div>
             <h5>Scope of PBR</h5>
             <div>
                 <p>PBR的范畴，PBR不仅仅是镜面反射采用微平面Cook-Torrance模型，Frostbite在SIGGRAPH2014的分享《Moving Frostbite to PBR》中提出基于物理渲染的范畴，有三部分组成</p>
@@ -181,6 +181,18 @@
             <div>
                 <h5>Speecular BRDF</h5>
                 <p>镜面反射BRDF模型，目前游戏行业最主流的模型是基于微平面理论的Microfacet Cook-Torrance BRDF。怎么用物理量精确描述光线？这就要引入物理模型了。</p>
+                <p>在进入物理模型前先介绍一下立体角，先从二维的弧度radians定义说起，\(\theta=\frac{l}{r}\)，三维的立体角steradians定义是\(\Omega=\frac{A}{r^2}\)。确定球体空间中的一个方向\(\theta,\phi\),在这两个角度上分别增加一个微分值，其中\(rd\theta\)是微分面积元的高，\(rsin\theta d\phi\)是微分面积元的宽,则有</p>
+                <p>
+                    $$
+                    d\omega = \frac{dA}{r^2} = \frac{(rd\theta) \cdot rsin\theta d\phi}{r^2} = sin\theta d\theta d\phi
+                    $$
+                </p>
+                <p>可以对\(d\omega\)在整个球体上求积分来验证三维立体角的定义</p>
+                <p>
+                    $$
+                    \Omega = \int_{S^2}{d\omega} = \int_{0}^{2\pi}{\int_{0}^{\pi}{sin\theta d\theta d\phi}} = 4\pi
+                    $$
+                </p>
                 <p><em>辐射度量学</em>是对光照的一套测量系统和单位，它能够准确的描述光线的物理性质。<a href="https://zhuanlan.zhihu.com/p/145410416">先介绍一些概念</a></p>
                 <ul>
                     <li><em>辐射能量Radiant energy和辐射通量Radiant flux</em>，辐射能量就是辐射出来的电磁能量，单位为焦耳\(\mathcal{Q[J=Joule]}\)；辐射通量或说辐射功率就是单位时间内的能量，具体地偏向用radiant flux来衡量光线的亮度，如说白炽灯灯泡时说的是60\(\mathcal{w}\)亮度，它的定义是\(\Phi \equiv \frac{d\mathcal{Q}}{dt}[W=Watt][lm=Lumen]\)</li>
@@ -196,18 +208,7 @@
                     $$
                 </p>
                 <p>其中\(E(p)\)就是点p的irradiance，其物理含义就是提到的过点p的<em>每单位照射面积的功率</em>，而\(L_{i}(p,\omega)\)是指入射光<em>每立体角每垂直面积的功率</em>,对\(d\omega\)积分，相当于对所有不同角度的入射光线做一个求和。含义就是<em>一个点（微分面积元）所接收到的亮度irradiance，由所有不同方向的入射光线亮度radiance共同贡献所得。</em></p>
-                <p>上面说到立体角，先从二维的弧度radians定义说起，\(\theta=\frac{l}{r}\)，三维的立体角steradians定义是\(\Omega=\frac{A}{r^2}\)。确定球体空间中的一个方向\(\theta,\phi\),在这两个角度上分别增加一个微分值，其中\(rd\theta\)是微分面积元的高，\(rsin\theta d\phi\)是微分面积元的宽,则有</p>
-                <p>
-                    $$
-                    d\omega = \frac{dA}{r^2} = \frac{(rd\theta) \cdot rsin\theta d\phi}{r^2} = sin\theta d\theta d\phi
-                    $$
-                </p>
-                <p>可以对\(d\omega\)在整个球体上求积分来验证三维立体角的定义</p>
-                <p>
-                    $$
-                    \Omega = \int_{S^2}{d\omega} = \int_{0}^{2\pi}{\int_{0}^{\pi}{sin\theta d\theta d\phi}} = 4\pi
-                    $$
-                </p>
+                
             </div>
         </div>
         <div>
