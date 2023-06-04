@@ -41,3 +41,5 @@
 
 ## 其他
 
+- [计算机专业学习路线](https://hackway.org/docs/cs/intro)
+

@@ -93,7 +93,7 @@
             <div>
                 <p>微平面理论将微观几何microgeometry建模为微平面microfacet的思路，用来描述非光学平坦表面的表面反射。理论假设的是微观几何的尺度小于观察尺度，但大于可见光波长的尺度。该理论在2013以前仅用于推导单反射single-bounce表面反射的表达式，现在开始慢慢地实践多次反弹表面反射的一些探讨。</p>
                 <p>每个微平面的表面点将给定进入的光反射到单个出射方向，取决于微观几何法线\(\mathcal{m}\)的方向，在计算BRDF项时，指定光方向\(\mathcal{l}\)和视图方向\(\mathcal{v}\)，这样可以看成只有那些恰好可以将\(\mathcal{l}\)反射到\(\mathcal{v}\)的那些平面有助于BRDF值，其他方向有正有负，积分后就抵消掉。如下左侧图所示，只有\(\mathcal{m}=\mathcal{h}\)时，某个方向的光对应的视图方向的值就是这些的累计值。</p>
-                <p class="d-flex m-100">
+                <p class="d-flex w-100 flex-wrap">
                     <img class="m-auto" src="../images/cg/pbr-a1.webp" />
                     <img class="m-auto" src="../images/cg/pbr-a2.webp" />
                 </p>
@@ -195,9 +195,10 @@
                 </p>
                 <p><em>辐射度量学</em>是对光照的一套测量系统和单位，它能够准确的描述光线的物理性质。<a href="https://zhuanlan.zhihu.com/p/145410416">先介绍一些概念</a></p>
                 <ul>
-                    <li><em>辐射能量Radiant energy和辐射通量Radiant flux</em>，辐射能量就是辐射出来的电磁能量，单位为焦耳\(\mathcal{Q[J=Joule]}\)；辐射通量或说辐射功率就是单位时间内的能量，具体地偏向用radiant flux来衡量光线的亮度，如说白炽灯灯泡时说的是60\(\mathcal{w}\)亮度，它的定义是\(\Phi \equiv \frac{d\mathcal{Q}}{dt}[W=Watt][lm=Lumen]\)</li>
+                    <li><em>辐射能量Radiant energy</em>，辐射能量就是辐射出来的电磁能量，单位为焦耳\(\mathcal{Q[J=Joule]}\)。</li>
+                    <li><em>辐射通量Radiant flux</em>，辐射通量，或说辐射功率Radiant power，是单位时间内的能量，具体地偏向用radiant flux来衡量光线的亮度，如说白炽灯灯泡时说的是60\(\mathcal{w}\)亮度，它的定义是\(\Phi \equiv \frac{d\mathcal{Q}}{dt}[W=Watt][lm=Lumen]\)。</li>
                     <li><em>辐射强度Radiant intensity</em>，是指从一个光源处向某个方向上的亮度，就是<em>每单位立体角上的功率</em>\(I(\omega) \equiv \frac{d\Phi}{d\omega}[\frac{W}{sr}][\frac{lm}{sr}=cd=candela]\)</li>
-                    <li><em>irradiance</em>是指每单位照射面积所接收到的power，\(E(x) \equiv \frac{d\Phi(x)}{dA}[\frac{W}{m^2}][\frac{lm}{m^2}=lux]\)，借助于irradiance可以解释在Billn-Phone所提到的Lambert's Law，即光线亮度在计算时需要乘上一个\(cos\theta\)。在Blinn-Phong模型所提到的光线越远衰减越快，此现象可用irradiance解释，因为光的功率始终一致，离点光源所照射到的圆面积越大，分母越大，分子不变，值就越小啦。</li>
+                    <li><em>irradiance</em>是指每单位照射面积所接收到的能量power，\(E(x) \equiv \frac{d\Phi(x)}{dA}[\frac{W}{m^2}][\frac{lm}{m^2}=lux]\)，借助于irradiance可以解释在Billn-Phone所提到的Lambert's Law，即光线亮度在计算时需要乘上一个\(cos\theta\)。在Blinn-Phong模型所提到的光线越远衰减越快，此现象可用irradiance解释，因为光的功率始终一致，离点光源所照射到的圆面积越大，分母越大，分子不变，值就越小啦。</li>
                     <li><em>radiance</em>是衡量一条传播光线所具有的亮度，就是<em>每单位立体角，每单位垂直面积的功率</em>，它同时指定了光的方向与照射到的表面所接收到的亮度。\(L(p,\omega) \equiv \frac{d^2\Phi(p,\omega)}{d\omega dAcos\theta}[\frac{W}{srm^2}][\frac{cd}{m^2}=\frac{lm}{srm^2}=nit]\), \(cos\theta\) accounts for projected surface area</li>
                 </ul>
                 <p><img src="../images/cg/pbr-a3.webp"></p>
@@ -210,6 +211,38 @@
                 <p>其中\(E(p)\)就是点p的irradiance，其物理含义就是提到的过点p的<em>每单位照射面积的功率</em>，而\(L_{i}(p,\omega)\)是指入射光<em>每立体角每垂直面积的功率</em>,对\(d\omega\)积分，相当于对所有不同角度的入射光线做一个求和。含义就是<em>一个点（微分面积元）所接收到的亮度irradiance，由所有不同方向的入射光线亮度radiance共同贡献所得。</em></p>
                 
             </div>
+            <div>
+                <h5>双向反射分布函数BRDF</h5>
+                <p>有了上面的一些概念，现在从理解光线的反射开始，<em>一个点p（微分面积元）在接收到一定方向上的亮度（\(d E_{{\omega}_{i}}\)）之后，再向不同方向把能量辐射出去（\(d L_{r}({\omega}_{i})\)）</em>，<em>理想光滑平面</em>会把入射光线完全反射到镜面反射方向，其他方向则完全没有反射；<em>理想粗糙表面</em>会把入射光线均匀的反射到所有方向。因此所谓<em>BRDF就是描述这样一个从不同方向入射之后，反射光线分布情况的函数。</em>，其定义如下</p>
+                <p>$$f_{r}({\omega}_{i} \rightarrow {\omega}_{r})=\frac{dL_{r}({\omega}_{r})}{dE_{i}({\omega}_{i})}=\frac{dL_{r}({\omega}_{r})}{L_{i}({\omega}_{i}) cos{\theta}_{i} d{\omega}_{i}}[\frac{1}{sr}]$$</p>
+                <p>BRDF函数接收两个参数，入射光方向\({\omega}_{i}\)，反射光方向\({\omega}_{r}\)，函数值为反射光的radiance与入射光的irradiance的比值。现在<em>反射方程</em>就可以是如下形式了</p>
+                <p>$$L_{r}(p, {\omega}_{r})=\int_{H^2}{f_{r}(p, {\omega}_{i} \rightarrow {\omega}_{r})L_{i}(p, {\omega}_{i}) cos{\theta}_{i} d{\omega}_{i}}$$</p>
+                <p>即摄像机（人眼观察方向）所接收到的\({\omega}_{r}\)方向上的反射光，是由所有不同方向上入射光线的irradiance贡献得到的，而不同方向入射光线的irradiance对反射方向\({\omega}_{r}\)的贡献程度是受限物体表面材质属性，这就是乘上一个BRDF函数的原因。至此，通过<em>辐射度量学和BRDF系数得到的反射方程是一个完全正确的光线传播模型</em>，由<em>反射方程</em>逆推<em>渲染方程</em>，就是多一个自发光项。</p>
+                <p>公式中的入射光线的radiance不仅仅是光源所引起的（直接的），还有可能是由其他物体上着色点的反射光线的radiance，恰好反射到当前的着色点p（间接的），同时其他物体上的反射光线的radiance依然是由直接与间接的光照构成的，这就变成一个递归过程，查字典一样的逻辑，要求解方程还是比较难的。</p>
+            </div>
+            <div>
+                <h5>渲染方程的物理含义解释</h5>
+                <p>上面从物理概念到最后的完全正确的光线传播模型，是理论上的推导，实践中的计算可能没法对正确的光线传播模型进行精确求解，但可以简化计算的过程，而简化后的计算模型也必须符合物理含义才行。通用的渲染方程现在可写成</p>
+                <p>$$L_{o}(p,{\omega}_{o}) = L_{e}(p, {\omega}_{o}) + \int_{{\Omega}^{+}}{L_{i}(p,{\omega}_{i}) f_{r}(p, {\omega}_{i}, {\omega}_{o}) (n \cdot {\omega}_{i}) d{\omega}_{i}}$$</p>
+                <p>先简化场景为<em>一个点光源和单个物体的场景</em>的渲染</p>                
+                <p>$$L_{r}(x, {\omega}_{r}) = L_{e}(x, {\omega}_{r}) + L_{i}(x, {\omega}_{i})f(x, {\omega}_{i}, {\omega}_{r})({\omega}_{i}, n)$$</p>
+                <p><em>多个点光源和单个物体</em>下</p>                
+                <p>$$L_{r}(x, {\omega}_{r}) = L_{e}(x, {\omega}_{r}) + \sum{L_{i}(x, {\omega}_{i})f(x, {\omega}_{i}, {\omega}_{r})({\omega}_{i}, n)}$$</p>
+                <p><em>面光源</em>可以看成由无穷多个点光源的集合，只需要对面光源所在的立体角范围内进行积分，且能够确定不同立体角方向的面光源的入射光radiance，就有如下</p>                
+                <p>$$L_{r}(x, {\omega}_{r}) = L_{e}(x, {\omega}_{r}) + \int_{\Omega}{L_{i}(x, {\omega}_{i})f(x, {\omega}_{i}, {\omega}_{r}) cos{\theta}_{i} d{\omega}_{i}}$$</p>
+                <p>在场景中加入<em>多个物体</em>，物体之间发生的光线交互：</p>                
+                <p>$$L_{r}(x, {\omega}_{r}) = L_{e}(x, {\omega}_{r}) + \int_{\Omega}{L_{r}(x^{'}, -{\omega}_{i})f(x, {\omega}_{i}, {\omega}_{r}) cos{\theta}_{i} d{\omega}_{i}}\label{eqWithMultiIndirectLighting}$$</p>
+                <p>把<em>其他物体看成是面光源</em>，对其所占立体角进行积分，只不过对其他物体的立体角积分不像面光源是所有入射方向都有radiance，它们的立体角可能只有个别几个方向上有入射的radiance（即多次间接光照反射之后恰好照射到当前点x），这样看来其他间接光都可视作面光源看待。</p>
+                <p>方程[\ref{eqWithMultiIndirectLighting}]中有两个radiance，其他项都是已知的，现在进行numerically处理，fredholm integral equation of second kind with canonical form，得到下面的公式</p>
+                <p>$$\mathcal{l}(u) = e(u) + \int{\mathcal{l}(u)K(u,v)dv}$$</p>
+                <p>与方程[\ref{eqWithMultiIndirectLighting}]中各项一一对应<em>（有数学严格推导的，可查阅相关资料）</em>，其中\(K(u,v)dv\)是kernel of equation Light Transport Operator。把公式离散化成线性代数的形式</p>
+                <P>$$L=E+KL$$</P>
+                <p>其中\(L,E\)是向量，L就是要求的反射光，E是自发光（就是光源的发光项），\(K\)是light transport matrix可以理解为对光线进行反射的一种算子操作。利用线性代数的知识推导可有</p>
+                <p>$$L=E+KL \Rightarrow IL - KL = E \Rightarrow L = (I - K)^{-1}E $$</p>
+                <p>其中I为单位矩阵，对\((I-K)^{-1}\)使用广义二项式定理得到</p>
+                <p>$$L=(I+K+K^2+K^3+...)E \Rightarrow L = E + KE + K^2E + K^3E + ...$$</p>
+                <p>这个式子中，E是光源发出的光，K为反射算子，KE表示对光源反射一次的结果，即直接光照，前两项之和就是光栅化当中的着色所考虑的结果；对于全局光照来说，就是后续的项的累计了，\(K^2E\)是一次弹射的间接照明，\(K^3E\)是两次弹射的间接照明，依次类推下去。从渲染方程推导出来的这个抽象公式，解释了渲染方程的物理意义。</p>
+            </div>
         </div>
         <div>
             <h4 id="section99">参考</h4>
@@ -219,6 +252,7 @@
                 <p><a href="https://digibug.ugr.es/bitstream/handle/10481/19751/rmontes_LSI-2012-001TR.pdf">An Overview of BRDF Models</a></p>
                 <p><a href="https://media.disneyanimation.com/uploads/production/publication_asset/48/asset/s2012_pbs_disney_brdf_notes_v3.pdf">Physically Based Shading at Disney</a></p>
                 <p><a href="http://www.bimant.com/blog/three-js-pbr-intro/">Three.js PBR渲染入门</a></p>
+                <p><a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html"><cite>Ray Tracing in One Weekend</cite></a></p>
             </div>
         </div>
     </div>

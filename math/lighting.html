@@ -48,7 +48,7 @@
             <h4 id="section4">Phong反射模型</h4>
             <p>镜面反射是很真实的生活场景，比如早上起来穿衣，站在镜子面前整理衣服。光照模型中<em>观察方向在镜面反射时</em>是很重要的，因为只有当<em>观察方向集中在反射方向周围附近时</em>才能看见反射光，离得远就不应该看见镜面反射，为了达到这个效果，对角度乘一个指数\(p\)来加速衰减</p>
             <p>$$L_{s}=k_{s}(\frac{I}{r^2})max(0, cos\alpha)^{p}\label{eqPhongLighting}$$</p>
-            <p>把\(\I_{env}, L_{d}, L_{s})的结果累加起来就得到Phong模型效果</p>
+            <p>把\(I_{env}, L_{d}, L_{s}\)的结果累加起来就得到Phong模型效果</p>
         </div>        
         <div>
             <h4 id="section5">Blinn-Phong反射模型</h4>
@@ -80,6 +80,7 @@
         <div>
             <h4 id="section99">参考与引用</h4>
             <p><a href="https://zhuanlan.zhihu.com/p/144331612">计算机图形学五：局部光照模型(Blinn-Phong 反射模型)与着色方法</a></p>
+            <p><a href="https://www.comp.nus.edu.sg/~lowkl/publications/lowk_persp_interp_techrep.pdf">Perspective-Correct Interpolation透视矫正插值</a></p>
         </div>
     </div>
 </body>

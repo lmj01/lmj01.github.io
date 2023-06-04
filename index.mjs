@@ -6,6 +6,8 @@ document.getElementById('content').innerHTML = marked.parse('# Marked in the bro
 function updateContent(text, options = {}) {
     const elContent = document.getElementById('content');
     if (options.isLink) {
+        elContent.classList.add('iframe')
+        console.log('22', elContent.style)
         const elIframe = document.createElement('iframe');
         elIframe.src = text;
         elIframe.width = '100%';
@@ -20,6 +22,7 @@ function updateContent(text, options = {}) {
         elContent.replaceChildren();
         elContent.appendChild(elIframe);
     } else {
+        elContent.classList.remove('iframe');
         elContent.innerHTML = marked.parse(text);
         document.querySelectorAll('.main-content a').forEach(a=>tagLinkUpdateEvent(a));
     }

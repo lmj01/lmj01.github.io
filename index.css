@@ -26,7 +26,14 @@ body {
 }
 .main-content {
     width:calc(100% - var(--sideMenu));
-    height: auto;
+    height: 100%;
+}
+#content {
+    height: 100%;
+    overflow: auto;
+}
+#content.iframe {
+    height: 100%;
     overflow: hidden;
 }
 
