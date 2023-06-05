@@ -11,6 +11,7 @@
 - [wsl](../dev-note/wsl.md)
 - [vscode](../dev-note/vscode.md)
 - [cmd](../dev-note/cmd.md)
+- [Mathjax](../articles/mathjax.md)
 
 ## 整理总结
 
