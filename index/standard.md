@@ -25,12 +25,13 @@
 - [图像格式](../others/images.md)
 
 ### OHIF
-[Open Health Imaging Foundation](https://ohif.org/)
-[cornerstone.js JavaScript library to display interactive medical images including but not limited to DICOM](https://github.com/cornerstonejs)
-[OHIF viewer](https://github.com/OHIF/Viewers)
-[DICOM PS3.5 2013 Data Structures and Enconding](http://dicom.nema.org/dicom/2013/output/chtml/part05/PS3.5.html)
-[DCMTK](https://dcmtk.org/)
-[DCMTK on github](https://github.com/DCMTK/dcmtk)
+
+- [Open Health Imaging Foundation](https://ohif.org/)
+- [cornerstone.js JavaScript library to display interactive medical images including but not limited to DICOM](https://github.com/cornerstonejs)
+- [OHIF viewer](https://github.com/OHIF/Viewers)
+- [DICOM PS3.5 2013 Data Structures and Enconding](http://dicom.nema.org/dicom/2013/output/chtml/part05/PS3.5.html)
+- [DCMTK](https://dcmtk.org/)
+- [DCMTK on github](https://github.com/DCMTK/dcmtk)
 
 ## 其他
 

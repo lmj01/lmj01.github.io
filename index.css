@@ -12,7 +12,7 @@ body {
     flex-direction: row;
 }
 .side-menu {
-    width: var(--sideLeft);
+    width: var(--sideMenu);
     border-right: 1px dashed lightblue;
 }
 .main-content {

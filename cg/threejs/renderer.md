@@ -1,4 +1,0 @@
-# Renderer
-
-
-WebGLProgram -> WebGLPrograms -> WebGLRenderer
