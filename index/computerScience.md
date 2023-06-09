@@ -22,6 +22,7 @@
 
 ## ComputerGraphics
 
+- [Real-Time Rendering Resources](https://www.realtimerendering.com/)
 - [Ambient Occlusion](../cg/ambient-occlusion.md)
 - [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
 - [smallpt: Global Illumination in 99 lines of C++](http://www.kevinbeason.com/smallpt/)
@@ -34,7 +35,7 @@
 
 #### threejs
 
-- [threejs 笔记](../cg/threejs.md)
+- [threejs 笔记](../cg/threejs/index.md)
 - [Beispiele webGL mit three.js ](https://hofk.de/main/threejs/)
 - [3D Grafik - WebGL mit three.js](https://xprofan.net/intl/de/php,html,js/3d-grafik-webgl-mit-three-js/)
 - [use your mouse to control the camera and build an andorid](https://hofk.de/main/threejs/raycaster/raycaster.html)

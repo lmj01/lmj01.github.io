@@ -22,12 +22,19 @@ body {
 }
 ```
 
-## Google Fonts
+## Fonts
 
-[地址](http://www.googlefonts.cn/)
-[cn地址](http://www.googlefonts.cn/)
+### Google Fonts
+
+- [地址](http://www.googlefonts.cn/)
+- [cn地址](http://www.googlefonts.cn/)
 
 谷歌字体是一个云字库平台，使用起来很方便，不需要进行格式的转换，直接在网页中引用。
+
+### Fira Code
+Fira Code: free monospaced font with programming ligatures
+
+- [github](https://github.com/tonsky/FiraCode?_pjax=#js-repo-pjax-container)
 
 ## 理论知识
 不同操作系统、不同浏览器内嵌的默认字体是不同的
