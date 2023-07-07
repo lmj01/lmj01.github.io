@@ -47,6 +47,7 @@ pip install pyopengl
 - pip install pillow // 
 - pip install redis
 - pip install matplotlib // matplotlib是一个python 2D绘图库，利用它可以画出许多高质量的图像
+- pip install openmesh // openmesh
 
 ## python anaconda
 
@@ -55,8 +56,10 @@ pip install pyopengl
 _conda.exe --version
 _conda.exe env list
 Scripts\activate 进入当前环境中base
-condabin\conda create -p d:\anaconda3\envs\realSR // 新建一个环境
-Scripts\activate realSR // 进入当前环境
+condabin\conda create --prefix d:\anaconda3\envs\realSR // 新建一个环境
+condabin\conda create --name conda2 // 新建一个环境
+condabin\conda info --envs // 新建一个环境
+Scripts\activate conda2 // 进入当前环境
 
 
 ## 概念

@@ -23,6 +23,7 @@
     - git rm --cached file.ext 删除file.ext的跟踪， 并保留本地的
     - git rm -f file.ext 删除跟踪，并删除本地文件
     - git reset --hard xxxx // 退回到那个版本
+- git pull origin main --allow-unrelated-histories //历史记录不一样
 
 ### submodule
 - git submodule add <repository> <path>添加子模块 path是相对根目录的路径

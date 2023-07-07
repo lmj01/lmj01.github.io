@@ -10,3 +10,8 @@
 Parcel is a zero configuration build tool for the web
 
 - [Parcel](https://parceljs.org/docs/)
+
+## 使用的库
+
+- [jspdf](https://github.com/parallax/jsPDF)
+    - [npmjs](https://www.npmjs.com/package/jspdf)

@@ -10,6 +10,9 @@ sudo apt-get update
 sudo apt-get install -y nginx
 sudo service nginx start 启动服务
 sudo service nginx stop
+nginx -s signal // stop quit reload reopen
+nginx -h
+nginx -t 测试配置
 ```
 
 ### 配置
