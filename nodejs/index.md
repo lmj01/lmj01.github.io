@@ -15,3 +15,4 @@ Parcel is a zero configuration build tool for the web
 
 - [jspdf](https://github.com/parallax/jsPDF)
     - [npmjs](https://www.npmjs.com/package/jspdf)
+- [Element Plus](https://element-plus.org/en-US/component/button.html)

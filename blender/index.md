@@ -61,6 +61,7 @@ grep -rn "XXXFunction" --include="*.c"
 - [loader -- read and write .blend format](./concepts/loader.md)
 - module editor
     - [interface](./editors/interface.md)
+- [cycles渲染器](./cycles.md)
 
 ## wiki
 

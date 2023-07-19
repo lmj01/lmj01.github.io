@@ -36,6 +36,7 @@
 
 ## 其他
 
+- [Media Types](https://www.iana.org/assignments/media-types/)
 - [语义化版本控制规范 SemVer](https://semver.org/lang/zh-CN/)
 - [The BitTorrent Protocol Specification](https://www.bittorrent.org/beps/bep_0003.html)
     - [Bittorrent Protocol Specification v1.0](https://wiki.theory.org/BitTorrentSpecification)

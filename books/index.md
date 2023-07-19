@@ -1,5 +1,11 @@
 # Books
 
+## reading
+- [Learn OpenGL](../books/Learn%20OpenGL.md)
+
+## readed
+- [软件设计-从专业到卓越](../books/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1-%E4%BB%8E%E4%B8%93%E4%B8%9A%E5%88%B0%E5%8D%93%E8%B6%8A.md)
+
 ## online
 
 - [Physically Based Rendering](https://www.pbr-book.org/3ed-2018/contents)

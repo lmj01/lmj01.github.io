@@ -12,6 +12,14 @@
             <h1>transform in render detail</h1>
             <div class="d-flex flex-column">
                 <ol>
+                    <li>
+                        <a href="#section0">Coordinate System</a>
+                        <ol>
+                            <li><a href="#section0a">Screen Space</a></li>
+                            <li><a href="#section0b">NDC(Normalized Device Coordinate) space</a></li>
+                            <li><a href="#section0c">Raster Space</a></li>
+                        </ol>
+                    </li>
                     <li><a href="#section1">Transform a normal vector from object to eye space</a></li>
                     <li>
                         <a href="#section2">Projection matrix</a>
@@ -34,6 +42,21 @@
                 <img class="img-thumbnail w-100" src="../images/cg/transform.png" />
             </div>
             <h4></h4>
+            <div class="my-3">
+                <h4 id="section0">Coordinate System</h4>
+                <div>
+                    <h5 id="section0a">Screen Space</h5>
+                    <p>Screen space is defined on the film plane. The camera projects objects in camera space onto the film plane; the parts inside the screen window are visible in the image that is generated. Depth  values in screen space range from 0 to 1, corresponding to points at the near and far clipping planes, respectively. Note that, although this is called “screen” space, it is still a 3D coordinate system, since  values are meaningful.</p>
+                </div>
+                <div>
+                    <h5 id="section0b">NDC(Normalized Device Coordinate) space</h5>
+                    <p>This is the coordinate system for the actual image being rendered. In  x and y, this space ranges from (0,0) to (1,1) , with (0,0) being the upper-left corner of the image. Depth values are the same as in screen space, and a linear transformation converts from screen to NDC space.</p>
+                </div>
+                <div>
+                    <h5 id="section0c">Raster Space</h5>
+                    <p>This is almost the same as NDC space, except the  and  coordinates range from  to.</p>
+                </div>
+            </div>
             <div>
                 <div class="d-flex flex-wrap w-100">
                     <p>

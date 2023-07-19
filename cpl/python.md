@@ -47,7 +47,7 @@ pip install pyopengl
 - pip install pillow // 
 - pip install redis
 - pip install matplotlib // matplotlib是一个python 2D绘图库，利用它可以画出许多高质量的图像
-- pip install openmesh // openmesh
+- pip install openmesh // openmesh https://www.graphics.rwth-aachen.de/media/openmesh_static/Documentations/OpenMesh-6.2-Documentation/a00036.html
 
 ## python anaconda
 
