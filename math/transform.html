@@ -15,6 +15,9 @@
                     <li>
                         <a href="#section0">Coordinate System</a>
                         <ol>
+                            <li><a href="#section0e">Object Space</a></li>
+                            <li><a href="#section0d">World Space</a></li>
+                            <li><a href="#section0f">Camera Space</a></li>
                             <li><a href="#section0a">Screen Space</a></li>
                             <li><a href="#section0b">NDC(Normalized Device Coordinate) space</a></li>
                             <li><a href="#section0c">Raster Space</a></li>
@@ -45,16 +48,52 @@
             <div class="my-3">
                 <h4 id="section0">Coordinate System</h4>
                 <div>
+                    <h5 id="section0e">Object Space</h5>
+                    <p>
+                        This is the coordinate system in which geometric primitives are defined. 
+                        For example, spheres in pbrt are defined to be centered at the origin of their object space
+                    </p>
+                </div>
+                <div>
+                    <h5 id="section0d">World Space</h5>
+                    <p>
+                        While each primitive may have its own object space, all objects in the scene are placed in relation to a single world space. 
+                        Each primitive has an object-to-world transformation that determines where it is located in world space. 
+                        World space is the standard frame that all other spaces are defined in terms of.
+                    </p>
+                </div>
+                <div>
+                    <h5 id="section0f">Camera Space</h5>
+                    <p>
+                        A camera is placed in the scene at some world space point with a particular viewing direction and orientation. 
+                        This camera defines a new coordinate system with its origin at the camera’s location. 
+                        The \(Z\) axis of this coordinate system is mapped to the viewing direction, and the \(y\) axis is mapped to the up direction. 
+                        This is a handy space for reasoning about which objects are potentially visible to the camera. 
+                        For example, if an object’s camera space bounding box is entirely behind the \(Z=0\) plane (and the camera doesn’t have a field of view wider than 180 degrees), 
+                        the object will not be visible to the camera.
+                    </p>
+                </div>
+                <div>
                     <h5 id="section0a">Screen Space</h5>
-                    <p>Screen space is defined on the film plane. The camera projects objects in camera space onto the film plane; the parts inside the screen window are visible in the image that is generated. Depth  values in screen space range from 0 to 1, corresponding to points at the near and far clipping planes, respectively. Note that, although this is called “screen” space, it is still a 3D coordinate system, since  values are meaningful.</p>
+                    <p>
+                        Screen space is defined on the film plane. The camera projects objects in camera space onto the film plane; 
+                        the parts inside the screen window are visible in the image that is generated. 
+                        Depth  values in screen space range from 0 to 1, corresponding to points at the near and far clipping planes, respectively. 
+                        Note that, although this is called “screen” space, it is still a 3D coordinate system, since  values are meaningful.
+                    </p>
                 </div>
                 <div>
                     <h5 id="section0b">NDC(Normalized Device Coordinate) space</h5>
-                    <p>This is the coordinate system for the actual image being rendered. In  x and y, this space ranges from (0,0) to (1,1) , with (0,0) being the upper-left corner of the image. Depth values are the same as in screen space, and a linear transformation converts from screen to NDC space.</p>
+                    <p>
+                        This is the coordinate system for the actual image being rendered. In \(x\) and \(y\), this space ranges from \((0,0)\) to \((1,1)\) , 
+                        with \((0,0)\) being the upper-left corner of the image. Depth values are the same as in screen space, and a linear transformation converts from screen to NDC space.
+                    </p>
                 </div>
                 <div>
                     <h5 id="section0c">Raster Space</h5>
-                    <p>This is almost the same as NDC space, except the  and  coordinates range from  to.</p>
+                    <p>
+                        This is almost the same as NDC space, except the \(x\) and \(y\) coordinates range from \((0,0)\) to \((resolution.x,resolution.y)\).
+                    </p>
                 </div>
             </div>
             <div>
