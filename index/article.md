@@ -6,6 +6,7 @@
 
 ## dev-note 
 - [git](../dev-note/git.md)
+- [cmake](../dev-note/cmake.md)
 - [linux](../dev-note/linux.md)
 - [ssh](../dev-note/ssh.md)
 - [wsl](../dev-note/wsl.md)
