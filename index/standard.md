@@ -15,10 +15,11 @@
 - [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
 
 
-## OpenGL
+## khronos
 
 - [Khronos OpenGL Refpages](https://www.khronos.org/registry/OpenGL-Refpages/)
 - [Computer Graphics Matrix](../cg/cgMatrix.md)
+- [vk spec](https://registry.khronos.org/vulkan/specs/1.2/pdf/vkspec.pdf)
 
 ## Images
 

@@ -2,6 +2,11 @@
 
 ## Architecture
 
+### Actor
+
+- [CAF is an open source implementation of the actor model for C++ featuring lightweight & fast actor implementations, pattern matching for messages, network transparent messaging, and more.](https://www.actor-framework.org/)
+    - [document](https://actor-framework.readthedocs.io/en/stable/Introduction.html)
+
 ### Publish/Subscribe messaging paradigm
 
 - [Publisher-Subscriber pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)

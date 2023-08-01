@@ -26,4 +26,7 @@ MSBuild.exe INSTALL.vcxproj /p:Configuration=release
 ```
 
 ## 参考
+- [官网文档](https://cmake.org/cmake/help/latest/index.html)
+    - [tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
 - [cmake常用命令](https://zhuanlan.zhihu.com/p/315768216)
+- [CMake-tutorial中文教程](https://www.cnblogs.com/lnlin/p/16576418.html)
