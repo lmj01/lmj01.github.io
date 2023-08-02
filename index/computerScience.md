@@ -30,15 +30,19 @@
 
 - [Real-Time Rendering Resources](https://www.realtimerendering.com/)
 - [Ambient Occlusion](../cg/ambient-occlusion.md)
-- [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
 - [smallpt: Global Illumination in 99 lines of C++](http://www.kevinbeason.com/smallpt/)
-- [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
 - [manifold,Manifold is a geometry library dedicated to creating and operating on manifold triangle meshes. A manifold mesh is a mesh that represents a solid object, and so is very important in manufacturing, CAD, structural analysis, etc. Further information can be found on the wiki.](https://github.com/elalish/manifold)
     - [manifold-3d npm](https://www.npmjs.com/package/manifold-3d)
 - [3D打印模型文件](https://www.thingiverse.com/)
 - [bezierjs ](https://pomax.github.io/bezierjs/)
     - [github](https://github.com/Pomax/bezierjs)
 
+### 网格
+- [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
+- [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
+- [维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces/blob/main/Readme.md)
+    - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
+    - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 ### api
 
 - [OpenGL](../cg/opengl.md)

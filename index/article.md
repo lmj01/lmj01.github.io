@@ -3,10 +3,12 @@
 - [留心的资源](../articles/resource.md)
 - [个人认识](../articles/personal.ideas.md)
 - [3D引擎](../cg/engines.md)
+- [网页开发内容](../web/index.md)
 
 ## dev-note 
 - [git](../dev-note/git.md)
 - [cmake](../dev-note/cmake.md)
+- [node - npm](../nodejs/index.md)
 - [linux](../dev-note/linux.md)
 - [ssh](../dev-note/ssh.md)
 - [wsl](../dev-note/wsl.md)

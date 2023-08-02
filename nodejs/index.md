@@ -2,6 +2,9 @@
 
 - [Electron](./electron.md)
 - [NPM](./npm.md)
+- [test测试](./test.md)
+- [diff算法](./diff.md)
+- [图像处理](./ImageManipulation.md)
 
 ## 构建工具
 
