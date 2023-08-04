@@ -40,12 +40,13 @@
 ### 网格
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
 - [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
-- [维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces/blob/main/Readme.md)
+- [Brillouin zone visualisation tool，维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces)
     - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
     - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 ### api
 
 - [OpenGL](../cg/opengl.md)
+- [webgl](../cg/webgl.md)
 - [Shader](../cg/shader.md)
 - [vulkan]()
     - [Official Khronos Vulkan Samples](https://github.com/KhronosGroup/Vulkan-Samples)
