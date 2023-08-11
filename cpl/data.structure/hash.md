@@ -46,3 +46,20 @@ h(key) = _LOW(n x (A x key % 1))， 取小数部分是A x key % 1 = A x key - _L
 当发生冲突时，在源地址新建一个链表，把相同的结果以链表节点存储起来。
 
 HashMap
+
+### [Swisstable](https://abseil.io/about/design/swisstables#swiss-tables-design-notes)
+
+通过相邻地址法来解决hash冲突，一个平台的内存结构，能够提高CPU cache命中率
+
+在key上执行hash函数，得到一个64位的hash值，并分高7位和低57位
+- 低57位用于定位桶中slot的位置
+- 高7位用于在control byte中解决hash冲突
+
+hash捅中每个slot对应一个byte的控制字节，高1位表示状态，低7位用于存储hashcode的高7位
+- 未使用 0xff
+- 已删除 0x80
+- 在使用 0x00~0x7f 
+
+
+## 参考
+

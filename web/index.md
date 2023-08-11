@@ -28,3 +28,17 @@
     - [github](https://github.com/usablica/intro.js)
 - [Bootstrap Tour](https://bootstraptour.com/)
     - [github](https://github.com/sorich87/bootstrap-tour)
+
+### 富文本编辑器
+
+- [Trusted WYSIWYG editor很简洁，没有图片](https://github.com/tinymce/)
+    - [TinyMCE](https://github.com/tinymce/tinymce)
+
+- [过时的YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. ](https://clarle.github.io/yui3/)
+    - [github yui3 ](https://github.com/yui/yui3)
+
+- [The WYSIWYG Editor of tomorrow available today](https://ckeditor.com/)
+    - [CKEditor 5 is an ultra-modern JavaScript rich-text editor with MVC architecture, a custom data model, and virtual DOM](https://github.com/ckeditor/ckeditor5)
+
+- [Your powerful rich text editor.](https://quilljs.com/)
+    - [github](https://github.com/quilljs/quill)
