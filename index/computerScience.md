@@ -7,13 +7,7 @@
 - [C](../cpl/c.md)
 - [Cplusplus](../cpl/cplusplus.md)
 - [lua](../cpl/lua.md)
-
-### 数据结构
-
-- [hash](../cpl/data.structure/hash.md)
-- [LRU](../cpl/data.structure/LRU.md)
-
-## Dev
+### Dev
 
 - [CMD](../dev-note/cmd.md)
 - [cmake](../dev-note/cmake.md)
@@ -21,11 +15,17 @@
 - [svn](../dev-note/svn.md)
 - [wsl](../dev-note/wsl.md)
 
-## Database
+### Database
 
 - [redis](../database/redis.md)
 - [MySql](../database/mysql.md)
 - [sql](../database/sql.md)
+
+
+### 数据结构
+
+- [hash](../cpl/data.structure/hash.md)
+- [LRU](../cpl/data.structure/LRU.md)
 
 ## ComputerGraphics
 
@@ -39,6 +39,8 @@
     - [github](https://github.com/Pomax/bezierjs)
 
 ### 网格
+- [GMesh]()
+- [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
 - [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
 - [Brillouin zone visualisation tool，维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces)
@@ -81,9 +83,11 @@
 - [PAG Portable Animated Graphics](https://pag.art/)
 - [3d model file](../cg/modelFile.md)
 
-## DataStructure
+### paper
 
-### Hash
+- [Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines](https://www.jcgt.org/published/0011/01/01/)
+    - [github](https://github.com/Paul180297/BezierLightLTC)
+    - [Real-Time Polygonal-Light Shading with Linearly Transformed Cosines](https://eheitzresearch.wordpress.com/415-2/)
 
 ## Web
 
