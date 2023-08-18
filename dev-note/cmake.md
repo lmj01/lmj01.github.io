@@ -31,3 +31,4 @@ MSBuild.exe INSTALL.vcxproj /p:Configuration=release
 - [cmake常用命令](https://zhuanlan.zhihu.com/p/315768216)
 - [CMake-tutorial中文教程](https://www.cnblogs.com/lnlin/p/16576418.html)
 - [CMake入门笔记系列（一）：CMake编译过程详解 | Micro CMake for C++](https://zhuanlan.zhihu.com/p/620839692)
+- [一个简单例子，完全入门CMake语法与CMakeList编写](https://zhuanlan.zhihu.com/p/630144233)

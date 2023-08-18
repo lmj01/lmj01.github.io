@@ -1,13 +1,43 @@
 
 # Cascading Style Sheets
 
-css本身就集成了非常丰富的功能，使用好CSS做出艺术级别的
 
 ## meta
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 ```
 bootstrap-vue上看到的，让网页宽度自动适应手机屏幕
+
+## 布局
+
+- [参考1](https://www.jianshu.com/p/5c6f761ff769)
+
+### 标准文档流
+
+### 浮动布局
+
+### 定位布局
+
+### flex
+
+#### 轴
+
+- 主轴main axis
+- 交叉轴cross axis
+
+#### 容器
+
+父容器可以统一设置子容器的排列方式，子容器可以单独设置自身的排列方式，如果两者同时设置，以子容器的设置为准。
+
+- 父容器container
+    - justify-content
+        - 位置排列 flex-start flex-end center
+        - 分步排列 space-between space-around 
+- 子容器item
+    - align-items
+        - 位置排列 flex-start flex-end center
+        - 基线排列 baseline
+        - 拉伸排列 stretch
 
 ## effect
 
@@ -172,11 +202,6 @@ div {
 }
 ```
 
-
-## [Tailwind](https://tailwindcss.com/)
-
-npm install tailwindcss
-node_modules\.bin\tailwind init
 
 ## BEM 
 Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.是由Yandex团队提出的一种CSS Class的命名方法

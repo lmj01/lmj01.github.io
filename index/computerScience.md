@@ -57,6 +57,7 @@
     - [Vulkan Guide](https://github.com/KhronosGroup/Vulkan-Guide)
     - [Vulkan Tutorial ](https://vulkan-tutorial.com/)
     - [vulkan-renderer,Inexor is an open-source project which combines modern C++ with Vulkan API.](https://github.com/inexorgame/vulkan-renderer)
+    - [vulkan with pbrt](https://github.com/Lachei/VulkanPBRT/tree/master/shaders)
 
 ### UI
 
@@ -77,11 +78,13 @@
 - [3D Grafik - WebGL mit three.js](https://xprofan.net/intl/de/php,html,js/3d-grafik-webgl-mit-three-js/)
 - [use your mouse to control the camera and build an andorid](https://hofk.de/main/threejs/raycaster/raycaster.html)
 - [webgl examples](https://alteredqualia.com/)
+- [](https://github.com/brunosimon/folio-2019)
 
 ### Tool
 
 - [PAG Portable Animated Graphics](https://pag.art/)
 - [3d model file](../cg/modelFile.md)
+- [Effekseer特效编辑器](https://github.com/effekseer/Effekseer)
 
 ### paper
 

@@ -42,3 +42,10 @@
 
 - [Your powerful rich text editor.](https://quilljs.com/)
     - [github](https://github.com/quilljs/quill)
+
+### PDF
+
+- [PDF-LIB可写可修改](https://pdf-lib.js.org/) 字体必须内嵌，这样文件非常大，拷贝合并pdf时，内嵌字体还没法删除
+    - [github](https://github.com/Hopding/pdf-lib)
+
+- [jspdf只能写](https://github.com/parallax/jsPDF)

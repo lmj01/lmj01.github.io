@@ -28,3 +28,4 @@
 - [Daniel Holden](https://theorangeduck.com/page/all)
 - [BimAnt](http://www.bimant.com/blog/)
 - [云风的BLOG](https://blog.codingnow.com/)
+- [cppmore](https://www.cppmore.com/)

@@ -218,5 +218,6 @@ try...catch...不能捕获异步操作
 
 ## 参考
 
+- [Standard ECMA-262 6th Edition / June 2015 ECMAScript® 2015 Language  Specification ](https://262.ecma-international.org/6.0/)
 - [RxMarbles](https://rxmarbles.com/)
     - [github](https://github.com/staltz/rxmarbles)
