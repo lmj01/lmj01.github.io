@@ -11,6 +11,48 @@ shader本身是一个泛概念
 
 一个shader指整个文件中所有的Pass或kernel。Unity ShaderLab把一整个文件所有的Pass的所有代码和render state都打包到一起称为一个Shader。引擎工程中很多都是这样处理的。
 
+### 框架
+这是shader执行的抽象过程
+```javascript
+const viewportList = [];
+const passSequence = {
+  passes: [
+    {
+      subpasses: [],
+    },
+  ],  
+};
+// 渲染主循环
+function doRender() {
+  for (let i = 0; i < viewportList.length; i++) {
+    const sizeOfViewport = get(i);
+    const cameraOfViewport = get(i);
+    cameraOfViewport.update();
+    renderAdpater.setViewport(get(i));
+    renderAdpater.renderSequence(passSequence);
+  }
+}
+// 单渲染
+function renderSequence(passSequence) {
+  const render = this.render;
+  for (const pass of passSequence.passes) {
+    for (const subpass of pass.subpasses) {
+      // 单frame渲染的结果存放的地方
+      // 当前单帧的数据是融合blend还是显屏出来
+      doBeforeRender();
+      const renderTarget = get(pass,subpass);
+      const camera = get(pass, subpass);
+      const scene = get(pass, subpass);
+      render.setRenderTarget(renderTarget);
+      render.render(scene, camera);
+      render.setRenderTarget(null);
+      doAfterRender();
+    }
+  }
+}
+```
+
+
 ## GLSL- Shader
 
 着色器是一种可编程的渲染管线，与其他编程语言一样，先对源码编译Compile再链接Link最后生成Program。Shader是提供给GPU运行的程序，特点就是并行处理相同的逻辑不同的数据。着色器类型有

@@ -1,6 +1,7 @@
 # [lua](http://www.lua.org/)
 
 ## 参考
+- [Lua Awesome-lua官方链接上的记录](https://github.com/LewisJEllis/awesome-lua)
 - [Quickly view and test GLSL fragment shaders while allowing lua scripting to modify uniforms ](https://github.com/nevilc/ShaderPreview)
 - [luafxbuilder is a proof of concept test to use lua as effect file format primarily for shaders](https://github.com/pixeljetstream/luafxbuilder)
 - [lua-cpp一个用C++11封装lua的库](https://gitee.com/linuxtongyong/lua-cpp-wrapper)

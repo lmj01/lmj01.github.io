@@ -1,5 +1,8 @@
 # Maven
 
+## 命令
+- mvn test
+
 ## itext7
 
 itext7 的字体涉及到版权问题，基本就是与adobe有关
