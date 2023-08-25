@@ -43,3 +43,6 @@ RIP -> 位图 -> 缓存 -> PPN -> 反走样图像 -> 印点调节器 -> 引擎
 ## 3D打印机
 
 - [切片原理](https://support.snapmaker.com/hc/en-us/articles/4409195239575--Slicing-and-G-Code-The-Bridge-Between-3D-Model-and-3D-Printer)
+
+## 参考
+- [paper size打印纸张大小](https://www.papersizes.org/a-paper-sizes.htm)
