@@ -1,3 +1,4 @@
+# jpeg格式
 
 ## JPEG
 是一种有损压缩,损失的部分是人眼视觉不容易发现的部分，利用人眼对计算机色彩中的高频信息部分不敏感的特点，研究发现人眼对亮度变换的敏感度比色彩变化的敏感度高，因此可以认为Y分量比UV分量重要，故采样时降低UV分量的采样率。对原始图像进行JPEG编码分成两步：
@@ -46,3 +47,5 @@ quality依赖图像色域，图像的对比度，用户对图像的敏感度
 75% JPEG quality and lower begins to show obvious differences in the image, which can reduce your website user experience.
 60% JPEG quality good for web
 
+## 参考
+- [This section contains TIFF related topics. It includes a freeware TIFF Tag Viewer application, the LibTiff mailing list archive, and a TIFF-specific links page](https://www.awaresystems.be/imaging.html)

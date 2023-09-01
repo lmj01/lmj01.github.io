@@ -25,6 +25,10 @@
 
 - [图像格式](../others/images.md)
 - [The DICOM Standard Current Edition](https://www.dicomstandard.org/current)
+- [Color Profile](../gimp/ColorProfile.md)
+- [exif tool](../gimp/exif.md)
+- [JPEG](../gimp/JPEG.md)
+- [CT](../cg/ct.md)
 
 ### OHIF
 
