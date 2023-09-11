@@ -28,7 +28,9 @@
 - [Color Profile](../gimp/ColorProfile.md)
 - [exif tool](../gimp/exif.md)
 - [JPEG](../gimp/JPEG.md)
+    - [Image Process](../gimp/ImageProcessing.md)
 - [CT](../cg/ct.md)
+- [GIMP](../gimp/using.md)
 
 ### OHIF
 

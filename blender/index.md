@@ -72,3 +72,6 @@ grep -rn "XXXFunction" --include="*.c"
 
 - [Sorcar](https://github.com/aachman98/Sorcar)
 - [Precision-Drawing-Tools](https://github.com/Clockmender/Precision-Drawing-Tools)
+- [Add Stamp Brush and Fix Airbrush](https://devtalk.blender.org/t/add-stamp-brush-and-fix-airbrush/30884)
+    - [github](https://github.com/ShenCiao/Ciallo)
+    - [web demo](https://shenciao.github.io/Ciallo/)

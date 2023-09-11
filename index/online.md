@@ -29,3 +29,8 @@
 - [BimAnt](http://www.bimant.com/blog/)
 - [云风的BLOG](https://blog.codingnow.com/)
 - [cppmore](https://www.cppmore.com/)
+
+## 工具
+
+### 在线工具
+- [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
