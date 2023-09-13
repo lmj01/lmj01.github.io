@@ -126,6 +126,22 @@ img.onload = ()=>{
 ```
 
 
+## [Resampling Methods](https://www.microimages.com/documentation/TechGuides/77resampling.pdf)
+
+在Fourier analysis for signal processing的观念下，一切都是采样的频率问题
+
+- [image scaling](https://renderpool.net/blog/image-scaling/)
+    - Nearest-neighbor Interpolation 
+    - Bilinear and Bicubic Interpolation
+    - Box Sampling
+- [Testing Interpolator Quality](https://www.panotools.org/dersch/interpolator/interpolator.html)
+- [Lanczos Filtering in One And Two Dimensions](https://icess.eri.ucsb.edu/gem/Duchon_1979_JAM_Lanczos.pdf)
+- [What is the idea behind scaling an image using Lanczos?](https://stackoverflow.com/questions/1854146/what-is-the-idea-behind-scaling-an-image-using-lanczos)
+- [What is Lanczos resampling useful for in a spatial context?](https://gis.stackexchange.com/questions/10931/what-is-lanczos-resampling-useful-for-in-a-spatial-context)
+- [js Lanczos resampling](https://ytiurin.github.io/downscale/)
+- [Lanczos resampling](https://handwiki.org/wiki/Lanczos_resampling)
+
+
 ## 参考
 
 - [数字图像处理系列](https://zhuanlan.zhihu.com/digital-image-processing)

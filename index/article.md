@@ -37,5 +37,6 @@
     - [three, ctm](https://alteredqualia.com/three/examples/webgl_loader_ctm_materials.html)
 - [Bezier.js, for doing Bezier curve things](https://pomax.github.io/bezierjs/)
     - [github](https://github.com/Pomax/bezierjs)
+    - [N阶贝塞尔曲线生成器](https://github.com/Aaaaaaaty/bezierMaker.js)
 
 ### [openmesh](https://www.graphics.rwth-aachen.de/software/openmesh/)

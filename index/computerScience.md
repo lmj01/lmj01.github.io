@@ -101,6 +101,9 @@
 
 - [Web notes](../web/index.md)
 
+## AI 
+- [模型](../ai/model.md)
+
 ## 其他
 
 - [计算机专业学习路线](https://hackway.org/docs/cs/intro)

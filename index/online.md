@@ -32,5 +32,7 @@
 
 ## 工具
 
+### 文档
+- [HandWiki is a wiki encyclopedia for collaborative editing of articles on computing, science, technology and general knowledge](https://handwiki.org/wiki/Start)
 ### 在线工具
 - [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
