@@ -3,12 +3,10 @@
 - [留心的资源](../articles/resource.md)
 - [个人认识](../articles/personal.ideas.md)
 - [3D引擎](../cg/engines.md)
-- [网页开发内容](../web/index.md)
 
 ## dev-note 
 - [git](../dev-note/git.md)
 - [cmake](../dev-note/cmake.md)
-- [node - npm](../nodejs/index.md)
 - [linux](../dev-note/linux.md)
 - [ssh](../dev-note/ssh.md)
 - [wsl](../dev-note/wsl.md)
@@ -16,6 +14,17 @@
 - [cmd](../dev-note/cmd.md)
 - [Mathjax](../articles/mathjax.md)
 - [app 2023](../articles/2023/app.md)
+
+### web
+- [网页开发内容](../web/index.md)
+
+#### [nodejs](../nodejs/index.md)
+- [测试模块](../nodejs/test.md)
+- [npm](../nodejs/npm.md)
+- [pnpm](../nodejs/pnpm.md)
+- [图像处理](../nodejs/ImageManipulation.md)
+- [diff算法原理](../nodejs/diff.md)
+- [electron框架](../nodejs/electron.md)
 
 ## 整理总结
 
