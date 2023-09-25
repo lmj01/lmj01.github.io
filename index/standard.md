@@ -21,6 +21,10 @@
 - [Computer Graphics Matrix](../cg/cgMatrix.md)
 - [vk spec](https://registry.khronos.org/vulkan/specs/1.2/pdf/vkspec.pdf)
 
+### [gl](https://registry.khronos.org/OpenGL/specs/gl/)
+- [GLSLangSpec.4.40](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.40.pdf)
+- [glspec4.6](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
+
 ## Images
 
 - [图像格式](../others/images.md)
