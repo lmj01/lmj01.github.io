@@ -28,6 +28,9 @@
 - [hash](../cpl/data.structure/hash.md)
 - [LRU](../cpl/data.structure/LRU.md)
 
+### 规范
+- [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
+
 ## ComputerGraphics
 
 - [Real-Time Rendering Resources](https://www.realtimerendering.com/)
