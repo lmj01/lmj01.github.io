@@ -1,14 +1,15 @@
-# 打印机
+# 打印技术
 
+## 打印机
 工作场景中是开发的一个生产系统中，有个标签打印需求，原来客户使用的工业打印机Xprinter XP-H500E和ZDesigner GT800(EPL)，后者是专业打印机，没有系统驱动供打印，需要调用设备的驱动程序来打印，使用EPL打印指令。
 
 与普通打印方式相比，采用打印语言的优点在于速度快，精度高。它们的工作原理其实很简单：利用这些编程语言，编辑好一个打印的指令集，发送给条码打印机，条码打印机就会按照你事先编辑的命令去进行打印的工作。但由于没有统一的标准打印语言，使得用户在使用不同机器时会产生一定的麻烦，比如现在我们想通过网页来开发打印，没有对应的操作系统的打印界面。
 
-## 激光与喷墨
+### 激光与喷墨
 
 激光适合打印文档，喷墨适合打印照片，那是因为耗材不一样，激光使用碳粉，喷墨使用墨水，碳粉颗粒比墨水大
 
-## 低分辨率打印增强
+### 低分辨率打印增强
 
 部分软件有一个功能，可以改善打印的清晰度，比如金山office中的PDF打印就有一个低分辨率打印增强，这个功能是不需要在驱动层去改变，应该是从图像层面来改善的，但具体的细节还不清楚
 
@@ -43,6 +44,17 @@ RIP -> 位图 -> 缓存 -> PPN -> 反走样图像 -> 印点调节器 -> 引擎
 ## 3D打印机
 
 - [切片原理](https://support.snapmaker.com/hc/en-us/articles/4409195239575--Slicing-and-G-Code-The-Bridge-Between-3D-Model-and-3D-Printer)
+
+### [Ultimaker Cura成为3D打印机、软件和耗材无缝衔接的桥梁，让您每次都能获得完美的打印效果。](https://ultimaker.cn/SoftwareCure.aspx)
+
+### [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer)
+PrusaSlicer takes 3D models (STL, OBJ, AMF) and converts them into G-code instructions for FFF printers or PNG layers for mSLA 3D printers. It's compatible with any modern printer based on the RepRap toolchain, including all those based on the Marlin, Prusa, Sprinter and Repetier firmware. It also works with Mach3, LinuxCNC and Machinekit controllers.
+
+- [Libnest2D is a library and framework for the 2D bin packaging problem. Inspired from the SVGNest Javascript library the project is built from scratch in C++11](https://github.com/tamasmeszaros/libnest2d)
+
+当年就像做这个作为课题，那是无知不知道清空，大学老师也没有给我指导这些，让我困死在这里面，想象在这里面
+
+- [网页版的SVG图形切割](https://github.com/Jack000/SVGnest)
 
 ## 参考
 - [paper size打印纸张大小](https://www.papersizes.org/a-paper-sizes.htm)

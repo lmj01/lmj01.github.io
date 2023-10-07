@@ -21,7 +21,8 @@
 - [redis](../database/redis.md)
 - [MySql](../database/mysql.md)
 - [sql](../database/sql.md)
-
+- [Provides easy browsing of tables, variables, functions and configuration settings.](https://www.timestored.com/qstudio/)
+- [HeidiSQL is free software, and has the aim to be easy to learn. "Heidi" lets you see and edit data and structures from computers running one of the database systems MariaDB, MySQL, Microsoft SQL, PostgreSQL and SQLite.](https://www.heidisql.com/)
 
 ### 数据结构
 
@@ -50,6 +51,7 @@
 - [Brillouin zone visualisation tool，维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces)
     - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
     - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
+- [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
 ### api
 
 - [OpenGL](../cg/opengl.md)
@@ -93,6 +95,8 @@
 - [Effekseer特效编辑器](https://github.com/effekseer/Effekseer)
 - [Mitsuba渲染器](http://www.mitsuba-renderer.org/)
     - [github](https://github.com/mitsuba-renderer/mitsuba3)
+- [可视化3D旋转This is a tool to help convert an visualise 3D rotations](http://asliceofrendering.com/ConversionTool/)
+    - [github](https://github.com/BugzTroll/ConversionTool)
 
 ### paper
 
