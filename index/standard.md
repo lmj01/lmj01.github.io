@@ -36,6 +36,13 @@
 - [CT](../cg/ct.md)
 - [GIMP](../gimp/using.md)
 
+### Tool
+
+- [ImageMagick](https://imagemagick.org/index.php)
+    - [The WebAssembly library for ImageMagick: magick-wasm](https://github.com/dlemstra/magick-wasm)
+        - [browser demo](https://dlemstra.github.io/magick-wasm-docs/classes/magick-image)
+
+
 ### OHIF
 
 - [Open Health Imaging Foundation](https://ohif.org/)

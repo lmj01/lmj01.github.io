@@ -37,6 +37,12 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 - [Moveable is Draggable, Resizable, Scalable, Rotatable, Warpable, Pinchable, Groupable, Snappable](https://github.com/daybrush/moveable)
 - [rrweb refers to 'record and replay the web', which is a tool for recording and replaying users' interactions on the web](https://github.com/rrweb-io/rrweb)
 
+### [SWIG](https://swig.org/)
+
+SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages. SWIG is used with different types of target 
+
+languages including common scripting languages such as Javascript, Perl, PHP, Python, Tcl and Ruby.
+
 ## DICOM
 
 - IODs Information Object Definitions信息对象定义

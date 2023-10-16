@@ -17,6 +17,8 @@
 
 ### web
 - [网页开发内容](../web/index.md)
+- [webassembly](../web/webAssembly.md)
+- [http](../web/http.md)
 
 #### [nodejs](../nodejs/index.md)
 - [测试模块](../nodejs/test.md)
@@ -25,6 +27,7 @@
 - [图像处理](../nodejs/ImageManipulation.md)
 - [diff算法原理](../nodejs/diff.md)
 - [electron框架](../nodejs/electron.md)
+- [quill富文本编辑器](../nodejs/quill.md)
 
 ## 整理总结
 

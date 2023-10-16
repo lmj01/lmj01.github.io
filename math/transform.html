@@ -15,6 +15,7 @@
                     <li>
                         <a href="#section0">Coordinate System</a>
                         <ol>
+                            <li><a href="#section0g">Standard Basis</a></li>
                             <li><a href="#section0e">Object Space</a></li>
                             <li><a href="#section0d">World Space</a></li>
                             <li><a href="#section0f">Camera Space</a></li>
@@ -47,6 +48,19 @@
             <h4></h4>
             <div class="my-3">
                 <h4 id="section0">Coordinate System</h4>
+                <div>
+                    <h5 id="section0g">Standard Basis</h5>
+                    <p>space空间是一个集合，如欧几里得空间是点集，是有序实数元组。</p>
+                    <p>向量空间：欧几里得空间以向量的视角来看：欧几里得空间是起点到原点的向量集合。向量运算的结果是封闭closure的，满足一些性质。通常说的向量，就是欧几里得空间的元素。</p>
+                    <p>广义向量空间：把非欧几里得空间的向量空间称为广义向量空间。</p>
+                    <p>一个空间的基中，向量的个数称为维度。一个n维空间任何一组线性无关的向量，都是这个n维空间的一组基。n个非零正交向量一定是n维空间的基。</p>
+                    <p>正交基：如果一个空间的一组基两两正交，则称这组基为一组正交基。标准正交基Orthogonal Basis：如果一个空间的一组正交基，模均为1，则称这组基是一组标准正交基。</p>
+                    <p>从一维投影到高维投影，通过投影向量得到单位向量，就可以找出对应的一组正交基了。</p>
+                    <blockquote cite="https://www.cnblogs.com/webor2006/p/14376460.html">
+                        格拉姆-施密特过程（Gram-Schmidt过程），就是求正交基的过程
+                    </blockquote>
+                    <p>空间的基与坐标系是一一对应的关系，在n维空间，如果给定一组基，任何一个向量都可以表示成这组基的线性组合，且表示方法唯一。其他坐标系与标准坐标系的转换，任意坐标系的互换，本质就是线性变换。</p>
+                </div>
                 <div>
                     <h5 id="section0e">Object Space</h5>
                     <p>
