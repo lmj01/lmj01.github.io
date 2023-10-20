@@ -2,13 +2,25 @@
 
 ## 构建工具
 
-### Parcel
+### [Parcel](https://parceljs.org/docs/)
 
 Parcel is a zero configuration build tool for the web
 
-- [Parcel](https://parceljs.org/docs/)
+### [rollup](https://rollupjs.org/introduction/)
+
+Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application. I
+
 
 ## 相关库
+
+### UI
+- [bootstrap](https://getbootstrap.com/)
+    - [fast bootstrap](https://fastbootstrap.com/)
+
+- [naive ui](https://www.naiveui.com/en-US/os-theme)
+
+
+### 其他
 
 - [jspdf](https://github.com/parallax/jsPDF)
     - [npmjs](https://www.npmjs.com/package/jspdf)

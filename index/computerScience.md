@@ -2,12 +2,15 @@
 
 ## Programing Language
 
+- [编程语言](./programminglanguage.md)
 - [python](../cpl/python.md)
 - [rust](../cpl/rust.md)
 - [C](../cpl/c.md)
 - [Cplusplus](../cpl/cplusplus.md)
+- [ECMAScript](../cpl/ECMAScript.md)
 - [lua](../cpl/lua.md)
 - [Java](../java/Java.md)
+
 ### Dev
 
 - [CMD](../dev-note/cmd.md)

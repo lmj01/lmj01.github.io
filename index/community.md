@@ -22,6 +22,10 @@
 
 ## 协议
 
+### [IDL(Interface Definition Language)](https://www.omg.org/spec/IDL/)
+
+- [An OMG® Interface Definition Language™ Publication Interface Definition Language™](https://www.omg.org/spec/IDL/4.2/PDF)
+
 ### [mqtt](https://mqtt.org/)
 MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一种基于发布/订阅（publish/subscribe）模式的“轻量级”通讯协议，该协议构建于TCP/IP协议上，由IBM在1999年发布。
 
