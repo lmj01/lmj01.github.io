@@ -18,6 +18,11 @@ bootstrap-vue上看到的，让网页宽度自动适应手机屏幕
 
 ### 定位布局
 
+**absolute**
+如果没有指定top,right,bottom,left等参数,它的位置关系是relative to its closest positioned ancestor(if any) or to the initial containing block.
+
+这样可以实现dropdown的样式,
+
 ### flex
 
 #### 轴

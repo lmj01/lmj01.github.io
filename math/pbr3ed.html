@@ -65,6 +65,32 @@
                 </blockquote>
                 <p></p>
             </div>
+            <div>
+                <h5>7.4 The Halton Sampler</h5>
+                <p>The first Sampler implementation that we will introduce subdivides pixel areas into rectangular regions and generates a single sample inside each region. These regions are commonly called strata, and this sampler is called the StratifiedSampler.</p>
+                <blockquote cite="https://developer.nvidia.com/rtx/dlss">
+                    分层抽样（Stratified Sampling）
+                </blockquote>
+                <p>
+                    The bits of an integer quantity can be efficiently reversed with a series of logical bit operations. The first line of the ReverseBits32() function, which reverses the bits of a 32-bit integer, swaps the lower 16 bits with the upper 16 bits of the value. The next line simultaneously swaps the first 8 bits of the result with the second 8 bits and the third 8 bits with the fourth. This process continues until the last line, which swaps adjacent bits. To understand this code, it’s helpful to write out the binary values of the various hexadecimal constants. For example, 0xff00ff00 is 11111111000000001111111100000000 in binary; it’s easy to see that a bitwise OR with this value masks off the first and third 8-bit quantities.                     
+                    <pre>
+                        inline uint32_t ReverseBits32(uint32_t n) {
+                            n = (n << 16) | (n >> 16);
+                            n = ((n & 0x00ff00ff) << 8) | ((n & 0xff00ff00) >> 8);
+                            n = ((n & 0x0f0f0f0f) << 4) | ((n & 0xf0f0f0f0) >> 4);
+                            n = ((n & 0x33333333) << 2) | ((n & 0xcccccccc) >> 2);
+                            n = ((n & 0x55555555) << 1) | ((n & 0xaaaaaaaa) >> 1);
+                            return n;
+                        }
+                        inline uint64_t ReverseBits64(uint64_t n) {
+                            uint64_t n0 = ReverseBits32((uint32_t)n);
+                            uint64_t n1 = ReverseBits32((uint32_t)(n >> 32));
+                            return (n0 << 32) | n1;
+                        }
+                    </pre>
+                </p>
+                <p></p>
+            </div>
         </div>
     </div>
 </body>

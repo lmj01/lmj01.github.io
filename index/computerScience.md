@@ -46,7 +46,7 @@
 - [bezierjs ](https://pomax.github.io/bezierjs/)
     - [github](https://github.com/Pomax/bezierjs)
 
-### 网格
+### 网格与CAD
 - [GMesh]()
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
@@ -55,6 +55,8 @@
     - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
     - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 - [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
+- [LNLib is a C++ NURBS Algorithms Library. These algorithms are primary referenced from The NURBS Book 2nd Edition. ](https://github.com/BIMCoderLiang/LNLib)
+
 ### api
 
 - [OpenGL](../cg/opengl.md)

@@ -37,3 +37,9 @@
 - [HandWiki is a wiki encyclopedia for collaborative editing of articles on computing, science, technology and general knowledge](https://handwiki.org/wiki/Start)
 ### 在线工具
 - [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
+
+### 其他
+
+- [MedPeer应用先进的新闻资讯抓取和分析技术，对用户关心的内容进行深度分类和整理，力求提供及时的生物医药行业资讯，依托MedPeer人工智能翻译系统对国外资讯、文献、报告和视频进行翻译，帮助国内用户轻松理解。编辑器免费，组件收费](https://medpeer.cn/)
+- [Design Editor JS SDK Polotno for canvas | Polotno](https://polotno.com/)
+    - [github](https://github.com/polotno-project)

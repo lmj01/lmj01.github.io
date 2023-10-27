@@ -3,6 +3,7 @@
 - [留心的资源](../articles/resource.md)
 - [个人认识](../articles/personal.ideas.md)
 - [3D引擎](../cg/engines.md)
+- [汉语拼音网](http://www.hanyupinyin.org/)
 
 ## dev-note 
 - [git](../dev-note/git.md)
@@ -19,6 +20,7 @@
 - [网页开发内容](../web/index.md)
 - [webassembly](../web/webAssembly.md)
 - [http](../web/http.md)
+- [css](../web/css.md)
 
 #### [nodejs](../nodejs/index.md)
 - [测试模块](../nodejs/test.md)
