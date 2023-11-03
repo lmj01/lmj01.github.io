@@ -7,7 +7,13 @@
 - [CAF is an open source implementation of the actor model for C++ featuring lightweight & fast actor implementations, pattern matching for messages, network transparent messaging, and more.](https://www.actor-framework.org/)
     - [document](https://actor-framework.readthedocs.io/en/stable/Introduction.html)
 
-### Publish/Subscribe messaging paradigm
+### Paradigm
+
+[What,if anything, is a programming paradigm? Robert Harper Carnegie Mellon University April 2017](https://www.cs.cmu.edu/~rwh/papers/paradigms/paradigm.pdf)
+
+[Programming paradigms for dummies: what every programmer should know](https://blog.acolyer.org/2019/01/25/programming-paradigms-for-dummies-what-every-programmer-should-know/)
+
+#### Publish/Subscribe messaging paradigm
 
 - [Publisher-Subscriber pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)
 
