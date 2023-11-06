@@ -22,6 +22,7 @@
 - [webassembly](../web/webAssembly.md)
 - [http](../web/http.md)
 - [css](../web/css.md)
+- [canvas](../cg/canvas.md)
 
 #### [nodejs](../nodejs/index.md)
 - [测试模块](../nodejs/test.md)
