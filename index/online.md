@@ -34,7 +34,13 @@
 ## 工具
 
 ### 文档
+
+- [msdn](https://learn.microsoft.com/zh-cn/)
+    - [个人关于微软的开发文档](https://msdn.itellyou.cn/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - [HandWiki is a wiki encyclopedia for collaborative editing of articles on computing, science, technology and general knowledge](https://handwiki.org/wiki/Start)
+
+
 ### 在线工具
 - [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
 

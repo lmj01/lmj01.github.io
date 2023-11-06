@@ -7,6 +7,7 @@
 
 ## dev-note 
 - [git](../dev-note/git.md)
+- [svn](../dev-note/svn.md)
 - [cmake](../dev-note/cmake.md)
 - [linux](../dev-note/linux.md)
 - [ssh](../dev-note/ssh.md)
@@ -24,6 +25,7 @@
 
 #### [nodejs](../nodejs/index.md)
 - [测试模块](../nodejs/test.md)
+- [vue](../nodejs/vue.md)
 - [npm](../nodejs/npm.md)
 - [pnpm](../nodejs/pnpm.md)
 - [图像处理](../nodejs/ImageManipulation.md)

@@ -11,14 +11,6 @@
 - [lua](../cpl/lua.md)
 - [Java](../java/Java.md)
 
-### Dev
-
-- [CMD](../dev-note/cmd.md)
-- [cmake](../dev-note/cmake.md)
-- [git](../dev-note/git.md)
-- [svn](../dev-note/svn.md)
-- [wsl](../dev-note/wsl.md)
-
 ### Database
 
 - [database](../database/database.md)
@@ -48,6 +40,8 @@
     - [github](https://github.com/Pomax/bezierjs)
 
 ### 网格与CAD
+- [HalfEdge半边结构](../cg/half-edge.md)
+- [网格划分](../cg/mesh-generation.md)
 - [GMesh]()
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
@@ -109,10 +103,6 @@
 - [Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines](https://www.jcgt.org/published/0011/01/01/)
     - [github](https://github.com/Paul180297/BezierLightLTC)
     - [Real-Time Polygonal-Light Shading with Linearly Transformed Cosines](https://eheitzresearch.wordpress.com/415-2/)
-
-## Web
-
-- [Web notes](../web/index.md)
 
 ## AI 
 - [模型](../ai/model.md)
