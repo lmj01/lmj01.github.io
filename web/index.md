@@ -49,3 +49,8 @@
     - [github](https://github.com/Hopding/pdf-lib)
 
 - [jspdf只能写](https://github.com/parallax/jsPDF)
+
+### 数学
+- [regression-js是JS库，包含了linear least-squares filting methods对的数据分析方法，支持linear、exponential、logarithmic、power、polynomial几种常见的](https://github.com/Tom-Alexander/regression-js)
+
+- [ever polate -- Javascript Numerical Inerpolation library](https://github.com/BorisChumichev/everpolate)
