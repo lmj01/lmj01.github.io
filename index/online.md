@@ -33,8 +33,11 @@
 
 ## 工具
 
+
 ### 文档
 
+- [PubScholar公益学术平台](https://pubscholar.cn/)
+- [国家标准全文公开系统](https://openstd.samr.gov.cn/bzgk/gb/index)
 - [msdn](https://learn.microsoft.com/zh-cn/)
     - [个人关于微软的开发文档](https://msdn.itellyou.cn/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)

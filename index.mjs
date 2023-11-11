@@ -7,7 +7,6 @@ function updateContent(text, options = {}) {
     const elContent = document.getElementById('content');
     if (options.isLink) {
         elContent.classList.add('iframe')
-        console.log('22', elContent.style)
         const elIframe = document.createElement('iframe');
         elIframe.src = text;
         elIframe.width = '100%';

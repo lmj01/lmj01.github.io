@@ -43,6 +43,7 @@
 - [用户 角色 权限的通用设计](../articles/2023/userRolePermission.md)
 - [Markdown 例子](../articles/markdown.md)
 - [Mathjax](../articles/mathjax.md)
+- [农历历法](../articles/2023/chineseCalendar.md)
 
 ## 工作中遇到的
 - [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)
