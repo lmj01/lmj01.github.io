@@ -50,6 +50,8 @@ const ChinaDay = ["\u65e5","\u4e00","\u4e8c","\u4e09","\u56db","\u4e94","\u516d"
 // ['初','十','廿','卅','闰']
 const ChinaElement = ["\u521d","\u5341","\u5eff","\u5345", "\u95f0"]
 
+
+
 // 农历日中文显示，参数日期day
 export const toChinaDay = function(day) {
     let str = '';
@@ -91,6 +93,66 @@ export const leapDays = function(year) {
         return (lunarYears[year-1900] & 0x10000) ? 30 : 29;
     }
     return 0;
+}
+
+/**
+ * 阳历月份天数
+ * 平年2月28天，闰年2月29天
+ * 4、6、9、11是30天
+ * 1、3、5、7、8、10、12是31天
+ * 
+ */
+const SolarMonthDays = [0,31,28,31,30,31,30,60,31,31,30,31,30,31];
+const isSolarLeap = (year) => {
+    return ((year %4) == 0 && (year%100) !== 0) || (year%100) === 0;
+}
+/**
+ * 农历转阳历，算同一年内两个月份的差异，以九月初三为例来说明
+ * 阳历   农历
+ * x-y   9-3
+ * 9-3   7-11
+ * 
+ * @param y 
+ * @param m 
+ * @param d 
+ */
+export const lunarToSolar = (y, m, d) => {
+    // 当年阳历对应的农历
+    const solar93 = solarToLunar(y, m, d);
+    // 当年农历的月份天数
+    const months = lunarMonthDays(y);
+    const dayList = [];    
+    // 对应阳历的农历到目标农历的天数
+    // 当月天数
+    dayList.push(months[solar93.lunarM] - solar93.lunarD);
+    for (let i = solar93.lunarM + 1; i < m;i++) {
+        dayList.push(months[i]);
+    }
+    dayList.push(d);
+    // 因为阳历天数是固定的，算出来
+    // 假设的阳历加上这个天数差就是
+    let total = dayList.reduce((p,c)=>p+c,0);    
+    let month = m, day = d;
+    for (let i = m; ;) {
+        const theMonthDays = SolarMonthDays[i];
+        // 第一个月
+        if (i === m && theMonthDays - d < total) {
+            total -= (theMonthDays - d - 1);
+            i++;
+        } else {
+            if (total > theMonthDays) {
+                total -= theMonthDays;
+                i++; // 下一个月
+            } else {
+                day = total;
+                month = i;
+                break;
+            }
+        }
+    }
+    return {
+        month, day
+    };
 }
 
 // 某年份农历各月天数

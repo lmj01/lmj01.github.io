@@ -14,8 +14,10 @@
 - [wsl](../dev-note/wsl.md)
 - [vscode](../dev-note/vscode.md)
 - [cmd](../dev-note/cmd.md)
+- [bazel](../dev-note/bazel.md)
 - [Mathjax](../articles/mathjax.md)
 - [app 2023](../articles/2023/app.md)
+
 
 ### web
 - [网页开发内容](../web/index.md)

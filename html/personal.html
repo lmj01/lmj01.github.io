@@ -23,10 +23,12 @@
                     <label>幺儿生日<input id="input20220828" type="text" disabled value="2022-08-28"></label>
                 </div>
                 <div id="div19870903">
-                    <label>自己生日<input id="input19870903" type="text" disabled value="1987-10-25"></label>
+                    <label>自己生日<input id="input19870903" type="text" disabled value="1987-09-03"></label>
                 </div>
                 <div id="divOtherBirth">
                     <label>别人生日<input id="inputOtherBirth" type="text" placeholder="请输入年-月-日格式"></label>
+                    <label>农历出生<input id="checkboxOtherBirth" type="checkbox" checked ></label>
+                    <label>出生按农历<input id="checkboxOtherBirthType" type="checkbox" checked ></label>
                     <div id="divOtherInfo"></div>
                 </div>
             </div>
@@ -34,7 +36,7 @@
         <div></div>
         <script type="module">
             import { timeDay, timeYear, timeMonth } from "https://cdn.skypack.dev/d3-time@3";
-            import { solarToLunar, toChinaMonth, toChinaDay, lunarMonthDays, leapMonth } from './calendar.mjs';
+            import { solarToLunar, toChinaMonth, toChinaDay, lunarMonthDays, leapMonth, lunarToSolar } from './calendar.mjs';
             const div19960124 = document.getElementById('div19960124');
             const div20220828 = document.getElementById('div20220828');
             const div19870903 = document.getElementById('div19870903');
@@ -43,21 +45,34 @@
             const birthSelf = new Date(document.getElementById('input19870903').value);            
             const today = new Date();
             
-            function computeTimeDate(el, date, birthDayUseChineseCalendar = true) {
+            function computeTimeDate(el, date, isChineseCalendar = true, doBirthInChinsesCalendar = true) {
                 if (['divOtherInfo'].includes(el.id)) {
                     el.replaceChildren();
                 }
+                const birthYear = date.getFullYear(), birthMonth = date.getMonth() + 1, birthDay = date.getDate();
                 // 出生农历年
-                const chineseCalendar = solarToLunar(date.getFullYear(), date.getMonth()+1, date.getDate());
-                const infoChineseCalendar = `农历${chineseCalendar.lunarY}年${toChinaMonth(chineseCalendar.lunarM, chineseCalendar.isLeap)}${toChinaDay(chineseCalendar.lunarD)}`;
+                const chineseCalendar = solarToLunar(birthYear, birthMonth, birthDay);
+                // 算对立的出生日期
+                let anotherBirthday = '', date2;
+                if (isChineseCalendar) {
+                    anotherBirthday = `农历${toChinaMonth(chineseCalendar.lunarM, chineseCalendar.isLeap)}${toChinaDay(chineseCalendar.lunarD)}`;
+                } else {
+                    // 从农历算阳历，到差天数来算
+                    const solarCalendar = lunarToSolar(birthYear, birthMonth, birthDay);
+                    console.log(solarCalendar)
+                    date2 = new Date(birthYear,solarCalendar.month, solarCalendar.day)
+                    anotherBirthday = `阳历${solarCalendar.month}月${solarCalendar.day}日`;
+                }
                 let p = document.createElement('p');
                 p.classList.add('ms-3');
                 const totalYear = timeYear.count(date, today);
                 const totalMonth = timeMonth.count(date, today);
-                p.innerText = `出生于${infoChineseCalendar}、距今已有${totalYear}年${totalMonth - 12 * totalYear}月、成长天数为${timeDay.count(date, today)}`;
+                // 当月过生日那天的日期与现在天数大小
+                const havingPassedDay = today.getDate() < date.getDate();
+                p.innerText = `出生于${anotherBirthday}、虚岁${totalYear}年${totalMonth - 12 * totalYear - (!havingPassedDay ? 0 : 1)}月、成长天数为${timeDay.count(isChineseCalendar?date:date2, today)}`;
                 el.appendChild(p);
                 p = p.cloneNode(true);
-                if (birthDayUseChineseCalendar) {
+                if (doBirthInChinsesCalendar) {
                     const thisChineseCalendar = solarToLunar(today.getFullYear(), today.getMonth()+1, today.getDate());
                     const thisYear = today.getFullYear();
                     const thisMonth = chineseCalendar.lunarM;
@@ -90,17 +105,19 @@
                     dayList.push(chineseCalendar.lunarD);
                     p.innerText = `下个农历生日还有${dayList.reduce((p,c)=>p+c, 0) - 1}天到来`;
                 } else {
-                    const nextBirthDay = new Date(today.getFullYear()+1, date.getMonth(), date.getDate());
+                    const nextBirthDay = new Date(today.getFullYear()+1, birthMonth-1, birthDay);
                     p.innerText = `下个阳历生日还有${timeDay.count(today, nextBirthDay)}天到来`;
                 }
                 el.appendChild(p);
             }
-            computeTimeDate(div20220828, birthSon, false);
-            computeTimeDate(div19960124, birthDarling);
-            computeTimeDate(div19870903, birthSelf);
+            computeTimeDate(div20220828, birthSon, true, false);
+            computeTimeDate(div19960124, birthDarling, true, true);
+            computeTimeDate(div19870903, birthSelf, false, true);
             document.getElementById('inputOtherBirth').addEventListener('change', (event)=>{
                 const otherBirth = event.target.value;
-                if (otherBirth)  computeTimeDate(divOtherInfo, new Date(otherBirth));
+                if (otherBirth)  computeTimeDate(divOtherInfo, new Date(otherBirth), 
+                    document.getElementById('checkboxOtherBirth').checked, 
+                    document.getElementById('checkboxOtherBirth').checked);
             })
         </script>
     </div>
