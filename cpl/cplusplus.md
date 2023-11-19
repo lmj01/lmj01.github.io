@@ -126,3 +126,7 @@ int main() {
 
 在一些数据范围小答案可以枚举，且时间上较为苛刻的，使用暴力枚举得出答案，将答案写入数组中。是指先生成一些数据可直接使用，减少运行的时间，对计算量大的可以这样优化。别人把特定计算放在一些文件中，部署出去的程序就跑得飞快，其他人还好奇为什么你的就这么快。
 
+## 其他
+
+### Fiber
+React中引入Fiber，其概念来自C++，[C++ Fiber的基本知识](https://agraphicsguynotes.com/posts/fiber_in_cpp_understanding_the_basics/)
