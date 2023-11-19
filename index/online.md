@@ -30,6 +30,7 @@
 - [云风的BLOG](https://blog.codingnow.com/)
 - [cppmore](https://www.cppmore.com/)
 - [李逸-数学教授-基本分析讲义](https://math.seu.edu.cn/ly/list.htm)
+- [A Graphics Guy's Note](https://agraphicsguynotes.com/posts/)
 
 ## 工具
 
