@@ -55,6 +55,24 @@
 
 - [ever polate -- Javascript Numerical Inerpolation library](https://github.com/BorisChumichev/everpolate)
 
+### 颜色库
+
+- [Modular, design-conscious color picker widget for JavaScript](https://iro.js.org/)
+    - [github](https://github.com/jaames/iro.js/)
+
+### 其他
+
+- [Create, read and edit .zip files with Javascript ](https://stuk.github.io/jszip/)
+    - [github](https://github.com/Stuk/jszip)
+```js
+jszip.loadAsync(new Blob([buffer])).then(zip=>{
+    zip.file('filename').async('ArrayBuffer').then(data=>{
+        console.log(data)
+    })
+})
+```
+
 ## 参考
 
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
+

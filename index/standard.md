@@ -27,14 +27,16 @@
 
 ## Images
 
+- [颜色](../cg/Color.md)
 - [图像格式](../others/images.md)
 - [The DICOM Standard Current Edition](https://www.dicomstandard.org/current)
-- [Color Profile](../gimp/ColorProfile.md)
-- [exif tool](../gimp/exif.md)
-- [JPEG](../gimp/JPEG.md)
-    - [Image Process](../gimp/ImageProcessing.md)
+- [Color Profile](../cg/image/ColorProfile.md)
+- [exif tool](../cg/image/exif.md)
+- [JPEG](../cg/image//JPEG.md)
+    - [Image Process](../cg/image/ImageProcessing.md)
 - [CT](../cg/ct.md)
-- [GIMP](../gimp/using.md)
+- [GIMP](../cg/image/gimp.md)
+- [ImageMagick](../cg/image/imageMagick.md)
 
 ### Tool
 

@@ -62,3 +62,12 @@ HDR高动态范围High dynamic range，就是添加更多的动态范围到图�
 - 亮度Lightness、Luminance
 - 明度Brightness、Value
 - 辉度Luma，把使用色觉校正的结果称为辉度
+
+## JS
+
+- [iro-core实现了颜色的转换核心](https://github.com/irojs/iro-core)
+- [Okhsv and Okhsl -- Two new color spaces for color picking](https://bottosson.github.io/posts/colorpicker/)
+- [Project Status, and iro.js 6.0](https://github.com/jaames/iro.js/issues/217#issuecomment-1214403290)
+    - [Chroma.js is a tiny small-ish zero-dependency JavaScript library (13.5kB) for all kinds of color conversions and color scales.](https://github.com/gka/chroma.js/)
+    - [Color conversion & manipulation library by the editors of the CSS Color specifications ](https://github.com/LeaVerou/color.js)
+    - [A comprehensive color library for JavaScript.](https://github.com/Evercoder/culori)

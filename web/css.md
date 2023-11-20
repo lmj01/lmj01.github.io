@@ -1,5 +1,4 @@
-
-# Cascading Style Sheets
+# CSS-Cascading Style Sheets
 
 
 ## meta
@@ -158,6 +157,20 @@ CSS Transform property allows to scale, rotate, skew and move HTML elements.
 linear transformations also can be represented by Matrix function. It combine multiple transform properties into single matrix function. Thanks to this wikipedia image which makes clear everything about matrix transformation.
 
 ![](../images/css-matrix.svg)
+
+## API 
+
+- clip-path 裁剪不规则形状
+
+```css
+div {
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 0%;);
+}
+```
+- [css实现不规则](https://juejin.cn/post/7081595150661025829)
+
+- [CSS Painting API]
+    - [clip-path](https://juejin.cn/post/7171609307253833764)
 
 ## Tools
 
