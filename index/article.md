@@ -35,6 +35,7 @@
 - [diff算法原理](../nodejs/diff.md)
 - [electron框架](../nodejs/electron.md)
 - [quill富文本编辑器](../nodejs/quill.md)
+- [压缩](../nodejs/zip.md)
 
 ## 整理总结
 

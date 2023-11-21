@@ -42,6 +42,7 @@
 ### 网格与CAD
 - [HalfEdge半边结构](../cg/half-edge.md)
 - [网格划分](../cg/mesh-generation.md)
+- [曲线](../cg/curve.md)
 - [GMesh]()
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)

@@ -35,6 +35,7 @@
 - [JPEG](../cg/image//JPEG.md)
     - [Image Process](../cg/image/ImageProcessing.md)
 - [CT](../cg/ct.md)
+- [gif](../cg/image/gif.md)
 - [GIMP](../cg/image/gimp.md)
 - [ImageMagick](../cg/image/imageMagick.md)
 

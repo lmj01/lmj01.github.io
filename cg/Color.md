@@ -1,4 +1,5 @@
-# Color
+# [Color](https://www.color.org/index.xalter)
+> ICC International Color Consortium
 
 色彩主观就是光线给人眼的感觉，客观地说就是人眼对可见光0.43um到0.78um的波长，不同的波长对人眼产生不同的神经信号，传递大脑的感知就是色彩，非可见光人眼是无法感知的。
 
@@ -36,6 +37,10 @@ HSL/HSV解释：L是指从最暗的黑色到色相纯色再到白色，L最大�
 
 ![](../images/cg/hsl_hsv.png)
 
+### [DCI-p3](https://www.color.org/chardata/rgb/DCIP3.xalter)
+
+js中canvas的颜色getImageData中setting有这个参数
+
 ## Gamma Correction
 
 gamma校正，存在的原因有
@@ -49,13 +54,11 @@ gamma校正，存在的原因有
 - gamma meta在不同应用中解释不一致，缺乏标准
 - 与RGB应用时，需要转换，否则产生意外的结果
 
-## 其他
+## HDR
 
 把场景变成数字化的图片，需要光学信号进行采样sampling和数字化，sampling决定了图片的分辨率，即单位尺度内的单位像素的个数；数字化，在常见色彩空间下，用8bits，共256个阶梯来数字化
 
 HDR高动态范围High dynamic range，就是添加更多的动态范围到图片中，人眼对场景采样是有能自动**变焦频率**的，即在明暗对比度比较强烈的场景下人眼都能看得各个部分的细节，但相机等在拍照时由于变焦固定或频率很低，得到的图片就只有一个焦距上的细节，导致细节上的缺失。通过多次曝光，得到不同亮度不同焦距内的细节组合起来提高清晰度，这就是HDR。
-
-
 
 ## 术语
 
