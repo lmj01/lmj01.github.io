@@ -28,6 +28,7 @@
 ## Images
 
 - [颜色](../cg/Color.md)
+- [图像相关的算法](../cg/image/algorithm.md)
 - [图像格式](../others/images.md)
 - [The DICOM Standard Current Edition](https://www.dicomstandard.org/current)
 - [Color Profile](../cg/image/ColorProfile.md)

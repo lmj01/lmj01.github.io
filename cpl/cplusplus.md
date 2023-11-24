@@ -126,7 +126,29 @@ int main() {
 
 在一些数据范围小答案可以枚举，且时间上较为苛刻的，使用暴力枚举得出答案，将答案写入数组中。是指先生成一些数据可直接使用，减少运行的时间，对计算量大的可以这样优化。别人把特定计算放在一些文件中，部署出去的程序就跑得飞快，其他人还好奇为什么你的就这么快。
 
+### Template
+
+NTTP-non-type template parameters
+```c++
+template <std::size_T N>
+struct string_literal {
+    // str is a reference to an array N of constant char
+    constexpr string_literal(char const (&str)[N]) {
+        std::copy_n(str, N, value);
+    }
+    char value[N];
+}
+```
+
 ## 其他
 
 ### Fiber
 React中引入Fiber，其概念来自C++，[C++ Fiber的基本知识](https://agraphicsguynotes.com/posts/fiber_in_cpp_understanding_the_basics/)
+
+## 参考
+
+- [C++ stories](https://www.cppstories.com/)
+
+### 里缪
+> 我看标准的这些机制设计和其他一些架构，其中很重要的一条原则就是追求一致性。不仅是美学上的追求，一旦符合这种一致性，系统本身就具备适应变化的能力，从而能够抵抗非连续性问题。一切本质的东西都很简单，且具有美感。设计之初就追求一致性，本质是一种多阶思维，看似麻烦，往往能够解决很多未能提前发现的问题。
+>> 很多架构都是一致性的体现，一个项目之初如果不用架构，后面慢慢修改抽象，不断演进最后发现跟已有架构一个思路

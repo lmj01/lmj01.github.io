@@ -26,3 +26,7 @@
 CanvasRenderingContext2D.isPointInPath()
 ```
 ![Applying winding rules to a path](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Art/winding_path_crossing_2x.png)
+
+## 参考
+
+- [OffscreenCanvas-离屏canvas使用说明](https://zhuanlan.zhihu.com/p/100375855)

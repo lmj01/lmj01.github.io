@@ -14,3 +14,5 @@ Content-Disposition:'attachment=filename;'。
 Response.AppendHeader("Content-Disposition","attachment;filename=FileName.txt");
 attachment会以附件方式下载
 阿里云的OSS有一个政策就是对这个进行了控制，导致显示不能直接在浏览器中打开
+
+## response
