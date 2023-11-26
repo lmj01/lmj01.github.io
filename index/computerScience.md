@@ -80,6 +80,9 @@
 - [babylonjs](../babylonjs/index.md)
 - [The-Forge](https://github.com/ConfettiFX/The-Forge)
 - [腾讯开源替换Skia的渲染器](https://github.com/Tencent/tgfx)
+- [OGLplus: a C++ wrapper for modern OpenGL©](https://oglplus.org/)
+    - [github](https://github.com/matus-chochlik/eagine-all)
+- [Magnum — Lightweight and modular C++11/C++14 graphics middleware for games and data visualization](https://github.com/mosra/magnum)
 
 #### threejs
 

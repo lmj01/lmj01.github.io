@@ -272,6 +272,9 @@ if(ptr)
 glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 ```
 
+## UI库
+- [NanoGUI is a a minimalistic cross-platform widget library for OpenGL 3.x. It supports automatic layout generation, stateful C++11 lambdas callbacks, a variety of useful widget types and Retina-capable rendering on Apple devices thanks to NanoVG by Mikko Mononen. Python bindings of all functionality are provided using pybind11. ](https://github.com/wjakob/nanogui)
 ## 参考
 
 - [OpenGL基础，一个韩国人写的基础知识](http://www.songho.ca/opengl/index.html)
+- [OpenGL教程和资料集合](https://zhuanlan.zhihu.com/p/41818595)
