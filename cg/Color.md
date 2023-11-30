@@ -70,6 +70,8 @@ HDR高动态范围High dynamic range，就是添加更多的动态范围到图�
 
 - [iro-core实现了颜色的转换核心](https://github.com/irojs/iro-core)
 - [Using JavaScript to Adjust Saturation and Brightness of RGB Colors](https://css-tricks.com/using-javascript-to-adjust-saturation-and-brightness-of-rgb-colors/#top-of-site)
+- [Mar 12, 2019 ⋅ 5 min read How to manipulate CSS colors with JavaScript](https://blog.logrocket.com/how-to-manipulate-css-colors-with-javascript-fb547113a1b8/)
+- [The Fundamentals of Color: Hue, Saturation, And Lightness](https://vanseodesign.com/web-design/hue-saturation-and-lightness/)
 - [Okhsv and Okhsl -- Two new color spaces for color picking](https://bottosson.github.io/posts/colorpicker/)
 - [Project Status, and iro.js 6.0](https://github.com/jaames/iro.js/issues/217#issuecomment-1214403290)
     - [Chroma.js is a tiny small-ish zero-dependency JavaScript library (13.5kB) for all kinds of color conversions and color scales.](https://github.com/gka/chroma.js/)

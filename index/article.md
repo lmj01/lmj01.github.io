@@ -23,6 +23,7 @@
 - [网页开发内容](../web/index.md)
 - [webassembly](../web/webAssembly.md)
 - [http](../web/http.md)
+- [html](../web/html.md)
 - [css](../web/css.md)
 - [canvas](../cg/canvas.md)
 
@@ -36,6 +37,7 @@
 - [electron框架](../nodejs/electron.md)
 - [quill富文本编辑器](../nodejs/quill.md)
 - [压缩](../nodejs/zip.md)
+- [Rxjs库](../nodejs/rxjs.md)
 
 ## 整理总结
 

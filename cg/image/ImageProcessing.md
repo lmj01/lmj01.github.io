@@ -145,3 +145,5 @@ img.onload = ()=>{
 ## 参考
 
 - [数字图像处理系列](https://zhuanlan.zhihu.com/digital-image-processing)
+- [Orenda Williams Understanding Matrices to Perform Basic Image Processing on Digital Image](https://www.math.utah.edu/~gustafso/s2016/2270/published-projects-2016/williamsOrenda-matrix-operations-digital-images.pdf)
+- [1 Image Convolution](https://web.pdx.edu/~jduh/courses/Archive/geog481w07/Students/Ludwig_ImageConvolution.pdf)

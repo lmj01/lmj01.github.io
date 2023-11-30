@@ -47,6 +47,9 @@
 ### 在线工具
 - [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
 - [图形计算器GeoGebra--在线绘制图形](https://www.geogebra.org/graphing?lang=zh_CN)
+- [在线编译文件](https://wandbox.org/)
+- [在线编译--可查看汇编](https://godbolt.org/)
+- [在线编译--可查看预处理-方便调试宏](https://www.build-bench.com/)
 
 ### 其他
 

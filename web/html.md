@@ -16,40 +16,51 @@
 <input onfocus=this.blur()> <!-- 这样代码内部可以修改，相比readonly -->
 ```
 
+### form
+
+在开发中form的提交表单很舒服,主要使用浏览器自带的属性required和disabled,但是使用时务必注意到使用button的submit提交时, 
+
+- [Sending form data](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+    - [form action](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data#the_action_attribute), 如果没有指定url,会跳转到current page.    
+    - vue框架中,默认第一次时会propagation到上级,因没有指明路径,router接管到指定的页面,这样产生了默认跳转的逻辑.
+
 ### script
 
 ```html
 <script type="module" src="a.mjs">    
 ```
-### 禁用事件
-在tag中加入代码
-```html
-oncontextmenu="return false;" // 禁止鼠标右键
-ondragstart="return false;" // 禁止鼠标拖动
-onselectstart="return false;" // 文字禁止鼠标选中
-onselect="documnet.selection.empty();" // 禁止复制
-```
+
+### HTML5 Data-attribute
+
+HTML5具有扩展性的设计，数据与特定element相关联，不需要定义数据**data-\***属性允许在标准内于element存储额外的数据， **注意区别html的dataset属性**
 
 ### DTD
 DOCTYPE,文档类型说明Document Type Declaration,渲染模式有三种:**混杂模式**,不写DOCTYPE;**近似标准模式**;**标准模式**.`<!DOCTYPE html>`强制HTML5标准模式.\
 
-### [WebComponent](https://www.w3.org/wiki/WebComponents/)
+## [WebComponent](https://www.w3.org/wiki/WebComponents/)
 网页模块化开发，如CSS的import和JS的script type="module"以及HTML的 [Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/)等相关的技术，让前端也可以开发大型复杂项目了。如BIM这类的。
 
-#### [custom-element](http://w3c.github.io/webcomponents/spec/custom/)
+### [custom-element](http://w3c.github.io/webcomponents/spec/custom/)
 
 自定义element
 
-#### Virtual DOM
+### Virtual DOM
 随着前端的逻辑越来越多，数据与模型之间的变化不需要刷新页面而是跟着数据改变而自动渲染变化的部分,演化史：直接操作DOM ==》 MVVM框架 ==》Virtual DOM.Virtual DOM就是在直接操作DOM与数据之间建立一层，数据变化影响到Virtual DOM上，Virtual DOM在利用diff差异的算法来更新真正需要更新的真实DOM的过程
 
 - [Event Loops](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop)
 - [User prompts](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#user-prompts)
 
-## HTML5 Data-attribute
 
-HTML5具有扩展性的设计，数据与特定element相关联，不需要定义数据**data-\***属性允许在标准内于element存储额外的数据， **注意区别html的dataset属性**
 
+## 事件
+在tag中加入代码
+```js
+// 禁用事件,就是更改全局函数
+oncontextmenu="return false;" // 禁止鼠标右键
+ondragstart="return false;" // 禁止鼠标拖动
+onselectstart="return false;" // 文字禁止鼠标选中
+onselect="documnet.selection.empty();" // 禁止复制
+```
 
 ## TemplateEngine
 
