@@ -37,12 +37,10 @@
 - [electron框架](../nodejs/electron.md)
 - [quill富文本编辑器](../nodejs/quill.md)
 - [压缩](../nodejs/zip.md)
-- [Rxjs库](../nodejs/rxjs.md)
+- [FRP-Functional Reactive Programming](../nodejs/frp.md)
 
 ## 整理总结
 
-- [裁剪](../cg/culling.md)
-- [四元数](../cg/quaternion.md)
 - [透视与绘画](../articles/2023/Perspective.md)
 - [打印相关](../articles/2023/printer.md)
 - [用户 角色 权限的通用设计](../articles/2023/userRolePermission.md)
@@ -50,6 +48,12 @@
 - [Mathjax](../articles/mathjax.md)
 - [农历历法](../articles/2023/chineseCalendar.md)
 - [回归分析法](../articles/2023/regression.md)
+
+### 图形学
+- [裁剪](../cg/culling.md)
+- [四元数](../cg/quaternion.md)
+- [meshlab](../cg/meshlab.md)
+- [eigen](../cg/eigen.md)
 
 ## 工作中遇到的
 - [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)
