@@ -65,6 +65,7 @@
     - [Vulkan Tutorial ](https://vulkan-tutorial.com/)
     - [vulkan-renderer,Inexor is an open-source project which combines modern C++ with Vulkan API.](https://github.com/inexorgame/vulkan-renderer)
     - [vulkan with pbrt](https://github.com/Lachei/VulkanPBRT/tree/master/shaders)
+    - [Vulkan-Hpp: C++ Bindings for Vulkan](https://github.com/KhronosGroup/Vulkan-Hpp)
 
 ### UI
 
@@ -83,6 +84,8 @@
 - [OGLplus: a C++ wrapper for modern OpenGL©](https://oglplus.org/)
     - [github](https://github.com/matus-chochlik/eagine-all)
 - [Magnum — Lightweight and modular C++11/C++14 graphics middleware for games and data visualization](https://github.com/mosra/magnum)
+- [Hazel is primarily an early-stage interactive application and rendering engine for Windows.](https://github.com/TheCherno/Hazel)
+
 
 #### threejs
 
