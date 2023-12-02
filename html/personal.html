@@ -112,13 +112,25 @@
             }
             computeTimeDate(div20220828, birthSon, true, false);
             computeTimeDate(div19960124, birthDarling, true, true);
-            computeTimeDate(div19870903, birthSelf, false, true);
+            computeTimeDate(div19870903, birthSelf, false, true);            
+            let ud = {
+                otherBirth: '',
+            }
             document.getElementById('inputOtherBirth').addEventListener('change', (event)=>{
-                const otherBirth = event.target.value;
-                if (otherBirth)  computeTimeDate(divOtherInfo, new Date(otherBirth), 
-                    document.getElementById('checkboxOtherBirth').checked, 
-                    document.getElementById('checkboxOtherBirth').checked);
+                ud.otherBirth = event.target.value;
+                updateOtherBirth();
             })
+            document.getElementById('checkboxOtherBirth').addEventListener('change', (event)=>{
+                updateOtherBirth();
+            });
+            document.getElementById('checkboxOtherBirthType').addEventListener('change', (event)=>{
+                updateOtherBirth();
+            });
+            function updateOtherBirth() {
+                computeTimeDate(divOtherInfo, new Date(ud.otherBirth), 
+                    document.getElementById('checkboxOtherBirth').checked, 
+                    document.getElementById('checkboxOtherBirthType').checked);
+            }
         </script>
     </div>
 </body>
