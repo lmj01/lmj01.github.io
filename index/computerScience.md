@@ -24,6 +24,7 @@
 
 - [hash](../cpl/data.structure/hash.md)
 - [LRU](../cpl/data.structure/LRU.md)
+- [树形结构](../cpl/data.structure/Tree.md)
 
 ### 规范
 - [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
