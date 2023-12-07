@@ -113,6 +113,12 @@
     - [github](https://github.com/Paul180297/BezierLightLTC)
     - [Real-Time Polygonal-Light Shading with Linearly Transformed Cosines](https://eheitzresearch.wordpress.com/415-2/)
 
+
+## Distributed System
+> 分布式系统
+
+- [协同编辑](../articles/2023/associateEditor.md)
+
 ## AI 
 - [模型](../ai/model.md)
 
