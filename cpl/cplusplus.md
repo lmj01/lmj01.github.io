@@ -146,7 +146,7 @@ struct string_literal {
 React中引入Fiber，其概念来自C++，[C++ Fiber的基本知识](https://agraphicsguynotes.com/posts/fiber_in_cpp_understanding_the_basics/)
 
 ## 参考
-
+- [C++ Template这个文章描述的很清晰,思路也很通畅](https://www.3dgep.com/beginning-cpp-template-programming/)
 - [C++ stories](https://www.cppstories.com/)
 
 ### 里缪
