@@ -31,6 +31,7 @@
 - [cppmore](https://www.cppmore.com/)
 - [李逸-数学教授-基本分析讲义](https://math.seu.edu.cn/ly/list.htm)
 - [A Graphics Guy's Note](https://agraphicsguynotes.com/posts/)
+- [figma的博客,有关figma实现的一些思路和总结,值得借鉴](https://www.figma.com/blog/)
 
 ## 工具
 
