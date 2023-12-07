@@ -48,6 +48,7 @@
 - [Mathjax](../articles/mathjax.md)
 - [农历历法](../articles/2023/chineseCalendar.md)
 - [回归分析法](../articles/2023/regression.md)
+- [协同编辑](../articles/2023/associateEditor.md)
 
 ### 图形学
 - [裁剪](../cg/culling.md)

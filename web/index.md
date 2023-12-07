@@ -72,6 +72,16 @@ jszip.loadAsync(new Blob([buffer])).then(zip=>{
 })
 ```
 
+#### 放大镜
+- [loupe.js 2.0 allows you to add photorealistic loupes (magnifier) to images on your webpages. The design is changeable by use of an image editing program. It uses unobtrusive javascript to keep your code clean. ](http://www.netzgesta.de/loupe/)
+
+##### loupe-js
+
+实现原理很简单, 就是图像因为窗口被压缩,放大镜的作用就是对原图采样截图图片,算好位置,可直接使用css来截图,不像loupe.js这个库使用的是两张图来截取.
+
+- [An image magnifier for JavaScript](https://github.com/nishanths/loupe-js)
+    - [demo](https://nishanths.github.io/loupe-js/?shape=rectangle)
+
 ## 参考
 
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)

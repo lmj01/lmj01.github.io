@@ -101,6 +101,20 @@
                         }
                     </pre>
                 </p>
+            </div>            
+            <div>
+                <h5>7.8.1 Filter Functions</h5>
+                <p>
+                    box filter, one of the most commonly used filters in graphics,
+                    when filtering and reconstruction aren’t addressed explicitly, the box filter is the de facto result
+                    The box filter equally weights all samples within a square region of the image. Although computationally efficient, it’s just about the worst filter possible.
+                </p>
+                <p>
+                    triangle filter, gives slightly better results than the box: the weight falls off linearly from the filter center over the square extent of the filter. 
+                </p>
+                <p>
+                    Gaussian Filter, Unlike the box and triangle filters, the Gaussian filter gives a reasonably good result in practice. This filter applies a Gaussian bump that is centered at the pixel and radially symmetric around it. The Gaussian’s value at the end of its extent is subtracted from the filter value, in order to make the filter go to 0 at its limit
+                </p>
             </div>
         </div>
     </div>
