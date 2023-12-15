@@ -26,3 +26,4 @@ RxJS最核心概念是stream,相比数组多了一个时间维度的概念.
 
 - [rxjs 源码分析1-(fromEvent)](https://juejin.cn/post/6844903730425364494)
 - [从业务视角来聊一聊为什么我们需要 RxJS？](https://juejin.cn/post/7090422222195523621)
+- [OMI-Web Components Framework WebComponents + JSX + Signal + onstructableStyle + OOP/DOP ](https://omi.cdn-go.cn/home/latest/)

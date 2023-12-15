@@ -51,9 +51,14 @@
 - [在线编译文件](https://wandbox.org/)
 - [在线编译--可查看汇编](https://godbolt.org/)
 - [在线编译--可查看预处理-方便调试宏](https://www.build-bench.com/)
+- [draw.io diagramming applications are the leading solutions for web based sketching and diagramming functionality](https://www.drawio.com/)
+- [嘉立创EDA](https://lceda.cn/editor)
+- [This is a online vector graphics editor.](https://skeditor.github.io/)
+    - [github](https://github.com/skeditor/skeditor)
 
 ### 其他
 
 - [MedPeer应用先进的新闻资讯抓取和分析技术，对用户关心的内容进行深度分类和整理，力求提供及时的生物医药行业资讯，依托MedPeer人工智能翻译系统对国外资讯、文献、报告和视频进行翻译，帮助国内用户轻松理解。编辑器免费，组件收费](https://medpeer.cn/)
 - [Design Editor JS SDK Polotno for canvas | Polotno](https://polotno.com/)
     - [github](https://github.com/polotno-project)
+- [基于连续费马螺旋线的数控加工刀路规划](http://www.ncmis.cas.cn/kyjz/kycg/201912/t20191218_533668.html)

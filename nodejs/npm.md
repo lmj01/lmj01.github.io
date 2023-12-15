@@ -15,6 +15,7 @@ npm init -w ./packages/a 创建子包
 包管理
 
 ```shell
+npm install --registry=https://registry.npm.taobao.org 指定淘宝源的安装
 npm install XXX 安装但不写入package.json
 npm install XXX --save 安装且写入package.json中的dependencies
 npm install XXX --save-dev 安装且写入package.json中的devDependencies

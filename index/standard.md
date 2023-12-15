@@ -40,6 +40,7 @@
 - [tif/tiff](../cg/image/tiff.md)
 - [png](../cg/image/png.md)
 - [GIMP](../cg/image/gimp.md)
+- [SVG](../cg/svg.md)
 - [ImageMagick](../cg/image/imageMagick.md)
 
 ### Tool

@@ -4,6 +4,8 @@
 - [个人认识](../articles/personal.ideas.md)
 - [3D引擎](../cg/engines.md)
 - [汉语拼音网](http://www.hanyupinyin.org/)
+- [Markdown 例子](../articles/markdown.md)
+- [Mathjax](../articles/mathjax.md)
 
 ## dev-note 
 - [git](../dev-note/git.md)
@@ -16,7 +18,6 @@
 - [cmd](../dev-note/cmd.md)
 - [bazel](../dev-note/bazel.md)
 - [Mathjax](../articles/mathjax.md)
-- [app 2023](../articles/2023/app.md)
 
 
 ### web
@@ -26,6 +27,7 @@
 - [html](../web/html.md)
 - [css](../web/css.md)
 - [canvas](../cg/canvas.md)
+- [小程序开发](../web/mini.md)
 
 #### [nodejs](../nodejs/index.md)
 - [测试模块](../nodejs/test.md)
@@ -38,17 +40,6 @@
 - [quill富文本编辑器](../nodejs/quill.md)
 - [压缩](../nodejs/zip.md)
 - [FRP-Functional Reactive Programming](../nodejs/frp.md)
-
-## 整理总结
-
-- [透视与绘画](../articles/2023/Perspective.md)
-- [打印相关](../articles/2023/printer.md)
-- [用户 角色 权限的通用设计](../articles/2023/userRolePermission.md)
-- [Markdown 例子](../articles/markdown.md)
-- [Mathjax](../articles/mathjax.md)
-- [农历历法](../articles/2023/chineseCalendar.md)
-- [回归分析法](../articles/2023/regression.md)
-- [协同编辑](../articles/2023/associateEditor.md)
 
 ### 图形学
 - [裁剪](../cg/culling.md)
@@ -69,3 +60,14 @@
     - [N阶贝塞尔曲线生成器](https://github.com/Aaaaaaaty/bezierMaker.js)
 
 ### [openmesh](https://www.graphics.rwth-aachen.de/software/openmesh/)
+
+## 2023
+
+- [app 2023](../articles/2023/app.md)
+- [透视与绘画](../articles/2023/Perspective.md)
+- [打印相关](../articles/2023/printer.md)
+- [用户 角色 权限的通用设计](../articles/2023/userRolePermission.md)
+- [农历历法](../articles/2023/chineseCalendar.md)
+- [回归分析法](../articles/2023/regression.md)
+- [协同编辑](../articles/2023/associateEditor.md)
+- [Fractional Indexing小数索引技术](../articles/2023/fractionalIndexing.md)

@@ -15,3 +15,4 @@ MIMEType: image/jpeg,image/tiff
 ### EXIF
 oritentation horizontal(normal)
 
+[exif tags names](https://exiftool.org/TagNames/EXIF.html)
