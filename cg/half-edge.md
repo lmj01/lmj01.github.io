@@ -16,7 +16,7 @@ geometric interpretations，称为embeddings，与半边结构的关系是
 
 但也存在两个很重要的限制于关系的描述
 - no non-orientalbe sureface(Moebius strip)莫比乌斯带
-
+- no non-manifold surface非流形表面，如两个立方体共享一个顶点
 
 
 

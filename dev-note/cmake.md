@@ -1,5 +1,13 @@
 # CMake 
 
+## 详解
+
+### BUILD_INTERFACE
+In CMake, BUILD_INTERFACE is a generator expression that can be used with target_include_directories to specify include directories that should only be used when building the target itself, and not when building any other targets that may depend on it.
+
+### cmake_parse_arguments
+在[库glad](https://github.com/Dav1dde/glad)中使用了这个来解析glad_add_library函数
+
 ## cmd-tool
 
 cmake 
