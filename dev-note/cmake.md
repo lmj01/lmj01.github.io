@@ -2,6 +2,13 @@
 
 ## 详解
 
+### aux_source_directory
+查找某个路径下的所有资源文件
+
+### add_subdirectory
+
+添加一个子目录并构建子目录
+
 ### BUILD_INTERFACE
 In CMake, BUILD_INTERFACE is a generator expression that can be used with target_include_directories to specify include directories that should only be used when building the target itself, and not when building any other targets that may depend on it.
 

@@ -31,6 +31,10 @@ CanvasRenderingContext2D.isPointInPath()
 
 常规的旋转，很少使用矩阵，[利用 ImageData 实现图片左右旋转 90°](https://blog.csdn.net/frgod/article/details/106055830)
 
+### text
+
+[标准文档中的canvas text style](https://html.spec.whatwg.org/multipage/canvas.html#text-styles)
+
 ## 参考
 
 - [OffscreenCanvas-离屏canvas使用说明](https://zhuanlan.zhihu.com/p/100375855)

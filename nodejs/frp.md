@@ -20,7 +20,10 @@ fromEvent(el, 'click').piep(throttleTime(3000)).subscribe(()=>{
 })
 ```
 
-RxJS最核心概念是stream,相比数组多了一个时间维度的概念.
+RxJS最核心概念是stream,相比数组多了一个时间维度的概念，Rxjs通过Observable(可观测对象)来具象化stream,
+
+### [Marbles](https://rxmarbles.com/)
+可视化RxJS的stream，也叫弹珠Marbles，所有的RxJS相关内容和Operators都可以用Marbles来表示
 
 ## 参考
 

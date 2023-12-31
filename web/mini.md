@@ -11,21 +11,24 @@
 渲染层解析WXML和WXSS并渲染出页面。
 [小程序没有 DOM 接口，原因,涉及小程序架构框架思路](https://developers.weixin.qq.com/community/develop/article/doc/000462336ccf080229a9eb37c59413)
 
+- wxml是动态绑定数据，就是先有数据再绑定，比html5要慢一个过程，这也是小程序嵌入的逻辑问题
+
 ### 同层渲染
 - [小程序同层渲染原理剖析](https://developers.weixin.qq.com/community/develop/article/doc/000c4e433707c072c1793e56f5c813)
 
 部分组件没有使用WebView渲染，而是由客户端原生渲染，所谓的native-component。这种就是多个图层叠加出最后的效果，由客户端不同实现也可能不同。
 
-native-component能提供一些html5不能实现的功能，对用户的体验流畅度非常好，如音频视频等，还减少进程间通信开销。
+[native-component](https://developers.weixin.qq.com/miniprogram/dev/component/native-component.html)能提供一些html5不能实现的功能，对用户的体验流畅度非常好，如音频视频等，还减少进程间通信开销。
 
 ### [wxss](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html)
 
 rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏幕宽为750rpx。
 
+### [Image](https://developers.weixin.qq.com/miniprogram/dev/component/image.html)
+为了性能，小程序默认死Image的宽高
 
-## 注意事项
-- wxml是动态绑定数据，就是先有数据再绑定，比html5要慢一个过程，这也是小程序嵌入的逻辑问题
 
+## 支付宝小程序
 
 ## OMI框架
 ```js
@@ -49,8 +52,5 @@ npm omi-cli init-js smile
 - [小程序海报组件-生成朋友圈分享海报并生成图片](https://github.com/jasondu/wxa-plugin-canvas/tree/master)
     - [轻松生成小程序分享海报 ](https://juejin.cn/post/6844903663840788493)
 - [小程序canvas 缩放/拖动/还原/封装和实例--开箱即用](https://blog.csdn.net/iamlujingtao/article/details/128289849)
-- 
+- [优秀实践教程推荐](https://github.com/TencentCloudBase/Good-practice-tutorial-recommended)
 
-## 报错异常
-
-- 只能转es6到es5，否则报错很多
