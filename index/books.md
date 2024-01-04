@@ -11,6 +11,11 @@
 
 - [what every programmer should know about memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
 
+## 数学
+
+- [Introduction to Modern Statistics (2nd Ed)现代统计学](https://openintro-ims2.netlify.app/)
+
+
 ## 设计
 
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读

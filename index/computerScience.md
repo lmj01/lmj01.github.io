@@ -87,6 +87,7 @@
 - [Magnum — Lightweight and modular C++11/C++14 graphics middleware for games and data visualization](https://github.com/mosra/magnum)
 - [Hazel is primarily an early-stage interactive application and rendering engine for Windows.](https://github.com/TheCherno/Hazel)
 
+- [Blend2D -- 2D Vector Graphics Powered by a JIT Compiler.](https://github.com/blend2d/blend2d)
 
 #### threejs
 

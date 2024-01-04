@@ -2,7 +2,28 @@
 
 > 既然是图形库，那一定使用了很多图形学的技术
 
-## path
+## 尺寸
+
+设计会以标准桌面1920X1080来设计和canvas在1920X1080下是1，其他情况下可能有问题。
+
+- 屏幕尺寸，指屏幕的对角线的尺寸，1in=2.54cm
+- 像素，根据语境不同可能有不同的含义
+    - 设备像素，也是物理像素
+    - PPI，pixels per inch指每英寸的像素数目，用于度量设备像素密度
+    - DPI，dots per inch指每英寸点数，用于度量空间点的密度
+    - 理论上，PPI = sqrt(w^2 + h^2) / d, 其中w是水平上的像素数，h是竖直方向的像素数，d是屏幕尺寸，如21英寸的1920*1680的PPI=Math.sqrt(1920*1920+1680*1680)/21=121.49
+    - CSS像素，devicePixelRatio, 编程语言中的概念，用于表示逻辑上的像素，是设备上物理像素和设备独立像素device-independent-pixel的比值，
+    - device-independent-pixel，设备独立像素，也叫做逻辑像素，一种基于计算机坐标系统的物理单位，应用程序将独立像素告诉操作系统系统，操作系统将独立设备像素转换为物理像素。
+- 分辨率，泛指系统对细节的分辨能力
+    - 屏幕分辨率，屏幕像素的像素总数
+        - 物理分辨率，是固定的，不可变的
+        - 显示器分辨率，由操作系统设定的，
+    - 图像分辨率，单位英寸中所包含的像素总数
+
+
+## 元素信息
+
+### path
 
 - [Cocoa Drawing Guide, Paths苹果关于winding rules to path](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Paths/Paths.html)
 
@@ -12,10 +33,10 @@
 
 判断自相交，多边形在平面内的除顶点外还有其他公共点
 
-### Non-Zero Winding Number Rule
+#### Non-Zero Winding Number Rule
 使多边形的边变成矢量，将环绕数初始化为0，从该点p做任意方向的一条射线，当从p点沿射线方向移动时，对在每个方向上穿过射线的边计数，当多边形的边从左到右穿过射线时，环绕数加1，从右到左时，环绕数减1.遍历完多边形所有相关边之后，若环绕数非零，则p为内部点interior，否则为外部点。
 
-### Odd-even Rule
+#### Odd-even Rule
 从该点p任意方向的一条射线，若与该射线相交的多边形边数的数目为奇数，则p是多边形内部点，否则是外部点。即奇数在内，偶数在外。
 
 图形是否填充就需要Even-Odd Rule和winding Rule结合来判断
@@ -27,7 +48,7 @@ CanvasRenderingContext2D.isPointInPath()
 ```
 ![Applying winding rules to a path](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Art/winding_path_crossing_2x.png)
 
-## rotate 
+### rotate 
 
 常规的旋转，很少使用矩阵，[利用 ImageData 实现图片左右旋转 90°](https://blog.csdn.net/frgod/article/details/106055830)
 

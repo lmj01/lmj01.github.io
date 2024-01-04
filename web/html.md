@@ -16,6 +16,10 @@
 <input onfocus=this.blur()> <!-- 这样代码内部可以修改，相比readonly -->
 ```
 
+#### range
+
+[Styling range input with CSS and JavaScript for better UX](https://nikitahl.com/style-range-input-css)
+
 ### form
 
 在开发中form的提交表单很舒服,主要使用浏览器自带的属性required和disabled,但是使用时务必注意到使用button的submit提交时, 

@@ -4,6 +4,15 @@
     - [The C++ Core Guidelines are a collaborative effort led by Bjarne Stroustrup, much like the C++ language itself. They are the result of many person-years of discussion and design across a number of organizations.](https://github.com/isocpp/CppCoreGuidelines)
     - [The Guidelines Support Library (GSL) contains functions and types that are suggested for use by the C++ Core Guidelines maintained by the Standard C++ Foundation. This repo contains Microsoft's implementation of GSL.](https://github.com/Microsoft/GSL)
 
+## 语言特性
+
+### 头文件
+未避免头文件多次被编译，C/C++中有两种方法来避免，一种是 header include guards，一种是#pragma once
+
+- header include guards，标准文件方法，它不能区分相同的macro名称在一个或多个文件中重名，可能造成问题
+- [pragma](https://en.cppreference.com/w/cpp/preprocessor/impl)，在文件系统层面上标识文件，但不能保证多个文件的存在
+
+
 ## TMP(template metaprogramming)
 
 可参考的内容

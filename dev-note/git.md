@@ -2,6 +2,7 @@
 
 [官方文档](https://git-scm.com/docs)
 [中文官方文档](https://git-scm.com/book/zh/v2)
+[A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ## 常用命令
 
