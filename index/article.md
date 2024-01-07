@@ -42,10 +42,11 @@
 - [FRP-Functional Reactive Programming](../nodejs/frp.md)
 
 ### 图形学
-- [裁剪](../cg/culling.md)
-- [四元数](../cg/quaternion.md)
-- [meshlab](../cg/meshlab.md)
-- [eigen](../cg/eigen.md)
+- [裁剪](../cg/tools/culling.md)
+- [四元数](../cg/tools/quaternion.md)
+- [meshlab](../cg/tools/meshlab.md)
+- [eigen](../cg/library/eigen.md)
+- [Gizmo](../cg/tools/gizmo.md)
 
 ## 工作中遇到的
 - [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)

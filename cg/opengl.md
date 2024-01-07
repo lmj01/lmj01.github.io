@@ -284,6 +284,3 @@ glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 - [OpenGL教程和资料集合](https://zhuanlan.zhihu.com/p/41818595)
 - [OpenGL Loading Library](https://www.khronos.org/opengl/wiki/OpenGL_Loading_Library)
 - [GLRF - OpenGL Realtime Framework](https://github.com/DunkleMango/GLRF)
-
-### gizmo
-- [izmo control library for 3D object manipulation (4x4 matrix) ](https://github.com/CedricGuillemet/LibGizmo)

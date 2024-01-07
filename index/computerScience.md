@@ -32,7 +32,7 @@
 ## ComputerGraphics
 
 - [Real-Time Rendering Resources](https://www.realtimerendering.com/)
-- [Ambient Occlusion](../cg/ambient-occlusion.md)
+- [Ambient Occlusion](../cg/lighting/ambient-occlusion.md)
 - [smallpt: Global Illumination in 99 lines of C++](http://www.kevinbeason.com/smallpt/)
 - [manifold,Manifold is a geometry library dedicated to creating and operating on manifold triangle meshes. A manifold mesh is a mesh that represents a solid object, and so is very important in manufacturing, CAD, structural analysis, etc. Further information can be found on the wiki.](https://github.com/elalish/manifold)
     - [manifold-3d npm](https://www.npmjs.com/package/manifold-3d)
@@ -41,9 +41,9 @@
     - [github](https://github.com/Pomax/bezierjs)
 
 ### 网格与CAD
-- [HalfEdge半边结构](../cg/half-edge.md)
-- [网格划分](../cg/mesh-generation.md)
-- [曲线](../cg/curve.md)
+- [HalfEdge半边结构](../cg/tools/half-edge.md)
+- [网格划分](../cg/mesh/mesh-generation.md)
+- [曲线](../cg/tools/curve.md)
 - [GMesh]()
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
@@ -101,7 +101,7 @@
 ### Tool
 
 - [PAG Portable Animated Graphics](https://pag.art/)
-- [3d model file](../cg/modelFile.md)
+- [3d model file](../cg/tools/modelFile.md)
 - [Effekseer特效编辑器](https://github.com/effekseer/Effekseer)
 - [Mitsuba渲染器](http://www.mitsuba-renderer.org/)
     - [github](https://github.com/mitsuba-renderer/mitsuba3)
