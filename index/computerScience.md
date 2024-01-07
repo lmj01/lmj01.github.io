@@ -115,10 +115,20 @@
     - [Real-Time Polygonal-Light Shading with Linearly Transformed Cosines](https://eheitzresearch.wordpress.com/415-2/)
 
 
-## Distributed System
+## 网络
+
+- [著名技术作者 Beej 新发布的计算机网络底层概念的英文教程Beej's Guide to Network Concepts）](https://beej.us/guide/bgnet0/html/split/index.html)
+### Distributed System
 > 分布式系统
 
 - [协同编辑](../articles/2023/associateEditor.md)
+- [Building a collaborative text editor in Go协同开发文本编辑器的go实现思考](https://www.aadhav.me/posts/collaborative-editor)
+
+
+## 数值计算
+> numeric calculation
+
+- [求取近似值的一个小技巧](https://www.johndcook.com/blog/2023/02/07/mediant-approximation-trick/)
 
 ## AI 
 - [模型](../ai/model.md)

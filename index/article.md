@@ -4,7 +4,7 @@
 - [个人认识](../articles/personal.ideas.md)
 - [3D引擎](../cg/engines.md)
 - [汉语拼音网](http://www.hanyupinyin.org/)
-- [Markdown 例子](../articles/markdown.md)
+- [Markdown](../articles/markdown.md)
 - [Mathjax](../articles/mathjax.md)
 
 ## dev-note 
