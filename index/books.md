@@ -10,6 +10,7 @@
     - 通过webpack对nodejs支持js的module理解更透彻，实践就是用到的
 
 - [what every programmer should know about memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+- [Effective Debugging有效调试](https://celthi.github.io/effective-debugging-zh/)
 
 ## 数学
 

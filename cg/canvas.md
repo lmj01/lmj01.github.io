@@ -56,6 +56,12 @@ CanvasRenderingContext2D.isPointInPath()
 
 [标准文档中的canvas text style](https://html.spec.whatwg.org/multipage/canvas.html#text-styles)
 
+### color-space or color-model
+
+[Canvas Drawing images standard doc](https://html.spec.whatwg.org/multipage/canvas.html#drawing-images)
+[A Standard Default Color Space for the Internet - sRGB](https://www.w3.org/Graphics/Color/sRGB.html)
+[CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/#rgb-color)
+
 ## 参考
 
 - [OffscreenCanvas-离屏canvas使用说明](https://zhuanlan.zhihu.com/p/100375855)

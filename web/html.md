@@ -1,7 +1,10 @@
 
 # [HTML](https://whatwg.org/)
 
-> 文档[mozilla html doc](https://developer.mozilla.org/en-US/docs/Web/HTML),[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5).
+>  [HTML Living Standard ](https://html.spec.whatwg.org/multipage/)
+
+[mozilla html doc文档](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
 
 ## tags
 
