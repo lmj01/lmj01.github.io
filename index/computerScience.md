@@ -55,7 +55,7 @@
 - [LNLib is a C++ NURBS Algorithms Library. These algorithms are primary referenced from The NURBS Book 2nd Edition. ](https://github.com/BIMCoderLiang/LNLib)
 
 ### CAD
-
+- [CAD相关笔记](../cg/tools/CAD.md)
 - [FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size](https://github.com/FreeCAD/FreeCAD)
 
 ### api

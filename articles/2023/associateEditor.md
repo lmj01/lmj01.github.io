@@ -6,6 +6,7 @@
 
 ### CRDT
 > CRDT 的正式定义出现在 Marc Shapiro 2011 年的论文Conflict-free replicated data types中(而2006 的Woot可能是最早的研究)。提出的动机是因为最终一致性(Eventual Consistency) 的冲突解决设计很困难，很少有文章给出设计指导建议，而随意的设计的方案容易出错。所以这篇文章提出了简单的、理论证明的方式来达到最终一致性，也就是 CRDT。
+>> 高性能库[Y.js Shared data types for building collaborative software ](https://github.com/yjs/yjs)
 
 CRDT(conflict-free replicated data type)无冲突复制数据类型,是一种可以在网络中的多台计算机上复制的数据结构,副本可以独立和并行更新,不需要在副本之间协调,并保证不会有冲突.
 

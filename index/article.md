@@ -18,6 +18,7 @@
 - [cmd](../dev-note/cmd.md)
 - [bazel](../dev-note/bazel.md)
 - [Mathjax](../articles/mathjax.md)
+- [build System](../dev-note/buildSystem.md)
 
 
 ### web
