@@ -103,6 +103,10 @@
 - [webgl examples](https://alteredqualia.com/)
 - [](https://github.com/brunosimon/folio-2019)
 
+### 动画
+
+- [快速生成3D动画模型 Magical 3D motion studio with AI Generate production-ready animations in a minute, offering endless possibilities](https://mootion.com/landing)
+
 ### Tool
 
 - [PAG Portable Animated Graphics](https://pag.art/)
