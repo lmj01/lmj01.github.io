@@ -58,6 +58,8 @@
 - [CAD相关笔记](../cg/tools/CAD.md)
 
 - [FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size](https://github.com/FreeCAD/FreeCAD)
+- [Analysis Situs, Analysis Situs is the open-source application and SDK for CAD feature recognition and more](https://analysissitus.org/index.html)
+- [Yet another modeling kernel? Hell, no.关于是否要从0开发一个新的几何内核](https://quaoar.su/blog/page/modeling-kernel-no-thanks)
 
 ### api
 
@@ -106,6 +108,8 @@
 ### 动画
 
 - [快速生成3D动画模型 Magical 3D motion studio with AI Generate production-ready animations in a minute, offering endless possibilities](https://mootion.com/landing)
+- [Tracking Everything Everywhere All at Once](https://omnimotion.github.io/)
+    - [PyTorch Implementation for paper Tracking Everything Everywhere All at Once, ICCV 2023.](https://github.com/qianqianwang68/omnimotion)
 
 ### Tool
 

@@ -6,6 +6,10 @@ Language design guidelines
 
 - 分层语言设计,严格的函数式核心,紧接着是声明式并发,然后是异步消息传递,最后是全局命名状态.
 
+什么是编程范式， 它是一个分类学和基因组学的问题。避免形态学morphology的干扰，重点关注程序结构中自我表达的基因上。编程的基因组学是类型理论type theory，是计算的系统研究，其最初制定为一种数学基础，其中命题是统一了语言语义、程序验证和编译器实现的程序设计语言研究中心组织原则的类型和证明。
+
+类型理论与逻辑学、代数、拓扑学有着深刻联系，是编程语言中真理的试金石，隔离和澄清计算的核心概念。Paradigms are clades. Types are genes.范式是进化树，而类型是基因。Each paradigm has its own 'soul' that can only be understood by actually using the paradigm. We recommend that you explore the paradigms by actually programming in them.
+
 ## Declarative Paradigm
 
 ### Declarative concurrency

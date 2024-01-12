@@ -43,127 +43,28 @@ FBO(Frame Buffer Object)帧缓冲区对象，它并不是内存块，不实际�
 上面说的是骨架，动笔绘画时就是绘制过程，针对没有索引提供了glDrawArrays绘制，有索引的提供了glDrawElements.
 
 ### Buffer Object
+> 这里只考虑有shader的流程，较老的api存在部分差异，[glBindVertexArray在3.1后才支持的](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindVertexArray.xhtml)，流程上有些API的差异。因为随着GPU硬件的改进，只会越来越使用shader的了
+
+VAO(Vertex Array Object)顶点数组对象，与FBO一样的概念，更像容器一样的感觉，它们都不是BufferObject，是为了管理数据而抽象成更高一层的概念，是一个状态容器。
 
 ```c
-glGenBuffers(GLsizei n, GLuint *buffers);
-glBindBuffer(GLenum target, GLuint buffer); 
-glBufferData(target, ...);
-
-// update one
-glBufferData(target, ...);
-// update two
-glBufferSubData(target, ...);
-// update three
-glMapBufferRange(target, ...);
-glUnmapBuffer(target, ...);
+// 关联VAO，从CPU端可上传到GPU显存中
+glBindVertexArray(VAO);
+// 绑定VBO到VAO对象下
+// 关闭VAO
+glBindVertexArray(0);
 ```
-
-Target有
+VA(Vertex Array)，VA是client客户端的，是在CPU内存中，需要传输到服务端GPU显存中
+VBO(Vertex Buffer Object)类型有
 - GL_ARRAY_BUFFER顶点属性
 - GL_ELEMENT_ARRAY_BUFFER 顶点索引
 - GL_TEXTURE_BUFFER 纹理
 - GL_PIXEL_UNPACK_BUFFER
 - GL_PIXEL_PACK_BUFFER 像素数据，PBO(Pixel Buffer Object), 可通过DMA(Direct Memory Access)快速在显卡上传输
 
-从glVertex的glBegin和glEnd升级到VA(Vertex Array)，VA是client客户端的，是在内存中，还需要传输到服务端GPU显存中，glCallList列表一旦设置后就不能更改，在固定管线中还可以，在可编程管线中就没有优势了，为了解决这些问题就是VBO(Vertex Buffer Object)产生的原因
+Context负责切换时，也只需要切换不同的VAO就可以了，数据都在VAO初始化完成，渲染只关联对应的VAO并获取对应的Buffer就可以渲染了，或者每个Mesh一个VAO也方便数据的管理。
 
-数据的准备
-```c
-glGenBuffers(1, &vboPos);
-glBufferData(GL_ARRAY_BUFFER, sizeof(dataPos), dataPos, GL_STREAM_DRAW);
 
-glGenBuffers(1, &vboTex);
-glBufferData(GL_ARRAY_BUFFER, sizeof(dataTex), dataTex, GL_STREAM_DRAW);
-
-glGenBuffers(1, &vboIdx);
-glBufferData(GL_ARRAY_BUFFER, sizeof(dataIdx), dataIdx, GL_STREAM_DRAW);
-```
-
-没有shader的流程
-```c
-glBindBuffer(GL_ARRAY_BUFFER, vboPos);
-glEnableClientState(GL_VERTEX_ARRAY);
-glVertexPointer(2, GL_FLOAT, 0, NULL);
-
-glBindBuffer(GL_ARRAY_BUFFER, vboTex);
-glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-glTexCoordPointer(2, GL_FLOAT, 0, NULL);
-
-glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vboIdx);
-glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, NULL);
-glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-
-glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-glDisableClientState(GL_VERTEX_ARRAY);
-
-glBindBuffer(GL_ARRAY_BUFFER, 0);
-```
-
-有shader的流程
-```c
-glBindBuffer(GL_ARRAY_BUFFER, vboPos);
-glEnableVertexAttribArray(location1)
-glVertexAttribDivisor(location1); // 多实例技术
-glVertexAttribPointer(location1, 2, GL_INT, GL_FALSE, 0, 0);
-
-glBindBuffer(GL_ARRAY_BUFFER, vboTex);
-glEnableVertexAttribArray(location2)
-glVertexAttribPointer(location2, 2, GL_INT, GL_FALSE, 0, 0);
-
-glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vboIdx);
-glDrawArrays(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, 0);
-
-glDisableVertexAttribArray(location1);
-glDisableVertexAttribArray(location2);
-
-glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-glBindBuffer(GL_ARRAY_BUFFER, 0);
-```
-
-通过上面的分析可以指定，从最初的单个数据的传输到现在的块传输，都是与硬件相关的，现在的GPU并行是很强的，所以一块块的传输数据就是性能的关键，上面的数据还不够紧凑，还可以进行优化。
-
-VAO(Vertex Array Object)顶点数组对象
-> 与FBO一样的概念，更抽象容器一样的描述
-
-它不是Buffer-Object, 是为了管理数据而引入的。可以看到它是一个状态容器，关联了VBO的状态。这样处理是因为VBO把数据放在了GPU服务器端，一个渲染流程有多份不同渲染逻辑时，Context负责进行切换，为了数据共享，这就是VAO的作用，把数据都放在初始化阶段，每个渲染逻辑关联不同的Buffer Object就更高效了。
-
-```c
-glGenBuffers(1, &vboPos);
-glBingBuffer(GL_ARRAY_BUFFER, vboPos);
-glBufferData(GL_ARRAY_BUFFER, sizeof(dataPos), dataPos, GL_STREAM_DRAW);
-
-glGenBuffers(1, &vboTex);
-glBingBuffer(GL_ARRAY_BUFFER, vboTex);
-glBufferData(GL_ARRAY_BUFFER, sizeof(dataTex), dataTex, GL_STREAM_DRAW);
-
-glGenBuffers(1, &vboIdx);
-glBingBuffer(GL_ARRAY_BUFFER, vboIdx);
-glBufferData(GL_ARRAY_BUFFER, sizeof(dataIdx), dataIdx, GL_STREAM_DRAW);
-
-// 
-glGenVertexArrays(1, &vao);
-glBindVertexArray(vao);
-
-glBindBuffer(GL_ARRAY_BUFFER, vboPos);
-glEnableVertexAttribArray(location1)
-glVertexAttribPointer(location1, 2, GL_INT, GL_FALSE, 0, 0);
-
-glBindBuffer(GL_ARRAY_BUFFER, vboTex);
-glEnableVertexAttribArray(location2)
-glVertexAttribPointer(location2, 2, GL_INT, GL_FALSE, 0, 0);
-
-glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vboIdx);
-
-glBindVertexArray(0);
-
-glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-// use 
-glBindVertexArray(vao);
-glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, 0);
-glBindVertexArray(0);
-```
 
 FBO(Frame Buffer Object)
 
@@ -273,11 +174,14 @@ glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 ```
 
 ## UI库
+
 - [NanoGUI is a a minimalistic cross-platform widget library for OpenGL 3.x. It supports automatic layout generation, stateful C++11 lambdas callbacks, a variety of useful widget types and Retina-capable rendering on Apple devices thanks to NanoVG by Mikko Mononen. Python bindings of all functionality are provided using pybind11. ](https://github.com/wjakob/nanogui)
+
 ## oglplus
 
 - [OGLplus's Documentation!](https://matus-chochlik.github.io/oglplu2/sphinx/index.html)
 - [github](https://github.com/matus-chochlik/oglplus)
+
 ## 参考
 
 - [OpenGL基础，一个韩国人写的基础知识](http://www.songho.ca/opengl/index.html)

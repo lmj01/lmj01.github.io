@@ -64,6 +64,10 @@
 
 ### [openmesh](https://www.graphics.rwth-aachen.de/software/openmesh/)
 
+## 2024
+
+- [2024趋势](../articles/2024/trend.md)
+
 ## 2023
 
 - [app 2023](../articles/2023/app.md)

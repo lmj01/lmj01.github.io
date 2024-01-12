@@ -135,7 +135,7 @@ int main() {
 
 在一些数据范围小答案可以枚举，且时间上较为苛刻的，使用暴力枚举得出答案，将答案写入数组中。是指先生成一些数据可直接使用，减少运行的时间，对计算量大的可以这样优化。别人把特定计算放在一些文件中，部署出去的程序就跑得飞快，其他人还好奇为什么你的就这么快。
 
-### Template
+### NTTP
 
 NTTP-non-type template parameters
 ```c++
@@ -148,6 +148,40 @@ struct string_literal {
     char value[N];
 }
 ```
+
+### 解耦
+模板用来解耦，
+如果send函数的逻辑复制，需要抽离出来复用，这时候就可以考虑使用模板来解耦，还可以避免相互依赖问题
+```c++
+// 
+class Connection {
+public:
+    void send() {
+        Helper helper(this);
+        helper.send();
+    }
+private:
+    friend class Helper<Connection>; // 为了Helper访问私有对象
+    std::string buf;
+}
+```
+```c++
+// helper.hpp
+template <typename T>
+class Helper {
+public:
+    Helper(T *t) : buf(t->buf) {}
+    void send() { std::cout << buf << std::endl; }
+private:
+    std::string& buf;
+}
+// 因为模板类，需要填写模板参数，可以使用C++17的deduction guide来消除这个模板参数
+template <typename T>
+Helper(T *t) -> Helper<T>; // deduction guide c++17
+```
+
+[**Deduction Guide**推断指引,CTAD-class template argument deduction](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction)是C++17的新语法，当用类模板新建一个类时，希望编译器通过给定的规则创建与构造器传入参数对应的模板类型时，
+给定的规则就是推断指引。当模板名称显示为推导类类型的类型说明符时，使用推断指引。
 
 ## 其他
 
