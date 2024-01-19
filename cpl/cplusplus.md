@@ -12,6 +12,82 @@
 - header include guards，标准文件方法，它不能区分相同的macro名称在一个或多个文件中重名，可能造成问题
 - [pragma](https://en.cppreference.com/w/cpp/preprocessor/impl)，在文件系统层面上标识文件，但不能保证多个文件的存在
 
+### 资源释放
+睡着C++的发展，资源的管理也在发生变化，如动态分配的内存。
+- Rule of Three, 经典规则，C11之前的代码，如果实现了一个，就需要实现其他两个
+    - 析构函数，释放资源
+    - 拷贝构造函数，构造新对象时复制资源
+    - 拷贝赋值运算符，在已经存在的对象之间赋值时资源的复制
+- Rule of Five, C++开始引入移动语义和右值引用，如果Three中的任何一个函数实现了，那么现在应该是五个函数都需要实现了
+    - 析构函数、拷贝构造函数、拷贝赋值运算符
+    - 移动构造函数，创建新对象时，从源对象窃取资源，而不是复制
+    - 移动赋值运算符，在对象之间赋值时，从源对象窃取资源
+- Rule of Zero, 推荐使用现代C++特性，如智能指针管理，则类不应该自定义任何拷贝控制函数，而应该让编译器自动生成这些函数
+    - std::shared_ptr
+    - std::unique_ptr
+
+```c++
+class Three {
+    char* buffer;
+public:
+    Three(size_t length) {
+        buffer = new char[length];
+    }
+    ~Three() {
+        delete[] buffer;
+    }
+    Three(const Three& other) {
+        buffer = new char[strlen(other.buffer)+1];
+        strcpy(buffer, other.buffer);
+    }
+    Three& operator=(const Three& other) {
+        if (this != &other) {
+            delete[] buffer;
+            buffer = new char[strlen(other.buffer) + 1];
+            strcpy(buffer, other.buffer);
+        }
+        return *this;
+    }
+};
+class Five {
+    char* buffer;
+public:
+    Five(size_t length) {
+        buffer = new char[length];
+    }
+    ~Five() {
+        delete[] buffer;
+    }
+    Five(const Five& other) {
+        buffer = new char[strlen(other.buffer)+1];
+        strcpy(buffer, other.buffer);
+    }
+    Five& operator=(const Five& other) {
+        if (this != &other) {
+            delete[] buffer;
+            buffer = new char[strlen(other.buffer) + 1];
+            strcpy(buffer, other.buffer);
+        }
+        return *this;
+    }
+    Five(Five&& other) noexcept : buffer(other.buffer) {
+        other.buffer = nullptr;
+    }
+    Five& operator=(Five&& other) noexcept {
+        if (this!= &other) {
+            delete[] buffer;
+            buffer = other.buffer;
+            other.buffer = nullptr;
+        }
+        return *this;
+    }
+};
+class Zero {
+    std::unique_ptr<char[]> buffer;
+public:
+    Zero(size_t length):buffer(new char[length]){}
+};
+```
 
 ## TMP(template metaprogramming)
 

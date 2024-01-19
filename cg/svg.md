@@ -23,6 +23,7 @@ clean-flag标记顺时针1逆时针0
 x y 圆弧终点坐标
 Z = closepath, To close together the SVG path. Factors – None
 
+
 ## Attribute
 
 ### stroke
@@ -30,6 +31,13 @@ Z = closepath, To close together the SVG path. Factors – None
 描边
 
 可以使用SVG+CSS3实现文字的动态霓虹灯效果，就是多个描边动画使用不同的animatino-delay即可。
+
+### path Arc
+
+[Drawing a circular arc in an SVG ](https://alexwlchan.net/2022/circle-party/)它的一张图来说明参数![path arc](../images/svg/PathArc.svg)
+[Interactive Circle Arc](http://xahlee.info/js/svg_circle_arc.html)
+
+
 
 ## free icons
 

@@ -1,6 +1,7 @@
 # Maven
 
 ## 命令
+配置好环境后，使用vscode开发，不使用IDE
 - mvn test
 
 ## itext7

@@ -47,5 +47,9 @@ quality依赖图像色域，图像的对比度，用户对图像的敏感度
 75% JPEG quality and lower begins to show obvious differences in the image, which can reduce your website user experience.
 60% JPEG quality good for web
 
+## 注意事项
+
+- jpg格式不支持透明，因为其色彩模式和压缩方法，基于DCT(离散余弦变换),变换到频域才能压缩，有透明部分无法进行傅里叶变换。
+
 ## 参考
 - [This section contains TIFF related topics. It includes a freeware TIFF Tag Viewer application, the LibTiff mailing list archive, and a TIFF-specific links page](https://www.awaresystems.be/imaging.html)

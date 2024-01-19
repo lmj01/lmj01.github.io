@@ -17,8 +17,6 @@
 - [redis](../database/redis.md)
 - [MySql](../database/mysql.md)
 - [sql](../database/sql.md)
-- [Provides easy browsing of tables, variables, functions and configuration settings.](https://www.timestored.com/qstudio/)
-- [HeidiSQL is free software, and has the aim to be easy to learn. "Heidi" lets you see and edit data and structures from computers running one of the database systems MariaDB, MySQL, Microsoft SQL, PostgreSQL and SQLite.](https://www.heidisql.com/)
 
 ### 数据结构
 

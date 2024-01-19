@@ -188,3 +188,4 @@ glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 - [OpenGL教程和资料集合](https://zhuanlan.zhihu.com/p/41818595)
 - [OpenGL Loading Library](https://www.khronos.org/opengl/wiki/OpenGL_Loading_Library)
 - [GLRF - OpenGL Realtime Framework](https://github.com/DunkleMango/GLRF)
+- [g-truc creation， OpenGL Mathematics (GLM) OpenGL Image (GLI)等有关opengl的文档与知识](https://www.g-truc.net/)

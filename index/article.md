@@ -66,6 +66,7 @@
 
 ## 2024
 
+- [2024经验](../articles/2024/experience.md)
 - [2024趋势](../articles/2024/trend.md)
 
 ## 2023
