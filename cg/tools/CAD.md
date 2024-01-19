@@ -15,3 +15,9 @@
 ### Frame
 图框
 ### 组
+
+## 参考
+
+- [FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size](https://github.com/FreeCAD/FreeCAD)
+- [Analysis Situs, Analysis Situs is the open-source application and SDK for CAD feature recognition and more](https://analysissitus.org/index.html)
+- [Yet another modeling kernel? Hell, no.关于是否要从0开发一个新的几何内核](https://quaoar.su/blog/page/modeling-kernel-no-thanks)

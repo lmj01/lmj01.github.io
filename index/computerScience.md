@@ -41,6 +41,7 @@
 ### 网格
 - [HalfEdge半边结构](../cg/tools/half-edge.md)
 - [网格划分](../cg/mesh/mesh-generation.md)
+- [NURBS](../cg/mesh/NURBS.md)
 - [曲线](../cg/tools/curve.md)
 - [GMesh]()
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
@@ -50,14 +51,8 @@
     - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
     - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 - [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
-- [LNLib is a C++ NURBS Algorithms Library. These algorithms are primary referenced from The NURBS Book 2nd Edition. ](https://github.com/BIMCoderLiang/LNLib)
 
-### CAD
 - [CAD相关笔记](../cg/tools/CAD.md)
-
-- [FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size](https://github.com/FreeCAD/FreeCAD)
-- [Analysis Situs, Analysis Situs is the open-source application and SDK for CAD feature recognition and more](https://analysissitus.org/index.html)
-- [Yet another modeling kernel? Hell, no.关于是否要从0开发一个新的几何内核](https://quaoar.su/blog/page/modeling-kernel-no-thanks)
 
 ### api
 

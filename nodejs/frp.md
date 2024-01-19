@@ -1,5 +1,6 @@
 # FRP
 > Functional Reactive Programming, 是针对复杂的,多状态,异步,注重时序控制的场景, 在FRP领域,由[ReactiveX](https://reactivex.io/)简称Rx,是由微软推出得通过可观察得流来进行异步编程得API是FRP最经典得实现范本之一.
+>> [反应式宣言](https://www.reactivemanifesto.org/)
 
 Rx结合了Observer观察者模式,Iterator迭代器模式,functional programming函数式编程的精华思想.这种思想诞生一种新的编程范式,是一种以异步数据流Async Data Stream为中心的编程范式.
 
@@ -25,6 +26,20 @@ RxJS最核心概念是stream,相比数组多了一个时间维度的概念，Rxj
 RxJS可以做防腐层，抽离一个层来，对上就是对接Service和Mock一些数据和不同入口的处理；对下只对View层负责更新。这种View只对UI负责。整个框架就变得非常清晰了。
 
 与前端状态管理最理想的框架是基于Flux实现的Redux，但Redux有种种问题，通过RxJS这种思路可以有更好的替换，如[CycleJS--A functional and reactive JavaScript framework for predictable code](https://github.com/cyclejs/cyclejs). Redux单向数据流，操作非常复杂，RxJS完全在于数据流stream的提供和操作，不关心细节上的细分。
+
+代码的大致的流程
+- 创建流，from,fromEvent, of
+- 执行流，subscribe
+- 销毁流unsubscribe
+
+模板可参考
+- Observable
+- pipe
+    - operator, 返回的必须是Observable才可以
+        - operator1, Observable1,
+        - ....
+        - operatorX, ObservableX,
+- subscribe
 
 ### 操作符
 
