@@ -16,6 +16,10 @@
 图框
 ### 组
 
+## [exocad](https://exocad.com/)
+
+Exocad是一款跨平台的应用程序，免费使用。
+
 ## 参考
 
 - [FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size](https://github.com/FreeCAD/FreeCAD)

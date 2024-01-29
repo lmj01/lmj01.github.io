@@ -138,5 +138,9 @@ mat3(
 - [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/)
 - [WebGPU深入探索](http://www.bimant.com/blog/webgpu-deep-dive/)
 
+## 参考
+
+- [the books of shader详细解说shader的开源书籍](https://thebookofshaders.com/)
+- [GPU Pro 360 Guide to Geometry Manipulation书籍]()
 
 
