@@ -8,7 +8,7 @@ npm config edit 打开默认的配置文件
 npm config set sharp_binary_host "https://npmmirror.com/mirrors/sharp"
 npm config set sharp_libvips_binary_host "https://npmmirror.com/mirrors/sharp-libvips"
 
-## rollup打包
+### rollup打包
 看不懂webpack的逻辑，直接增加rollup打包，思路就清晰了
 npm install rollup --save-dev    
 npm install @rollup/plugin-typescript --save-dev
@@ -18,6 +18,23 @@ npm install @rollup/plugin-node-resolve --save-dev
 npm install @rollup/plugin-commonjs --save-dev   
 npm install rollup-plugin-postcss --save-dev
 npm install rollup-plugin-rawsvg --save-dev
+
+- 2024-1, 作者发布新版2.0了，暂时不去私自编译了，可以直接使用npm包了。
+
+## modules
+
+### clipboard
+复制剪切板
+
+### image
+
+内部的image的sanitize时，只支持http,https,data这三种模型，其他情况会赋值为'//:0'
+比如拦截时，url需要临时设置成blob:http
+```js
+const image = Quill.import('formats/image');
+image.sanitize = (url) => url;
+```
+
 
 ## [delta](https://github.com/quilljs/delta)
 Delta 是用于描述富文本文档结构的内容与变更。由于其描述的通用性，quill.js 将其独立维护。它的数据结构是基于 JSON 格式的，方便服务间进行互解析

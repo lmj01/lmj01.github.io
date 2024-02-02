@@ -13,6 +13,9 @@
 ### 软件工程与架构
 
 - [Front-End-Basics，这是一个从前端基础慢慢汇总成体系，再扩展到全栈的技术文档同时也是一个普通人想成长为更好的自己的探索文档](https://docs.chenfangxu.com/)
+- [Game Programming Pattern游戏编程模式，笔记全面得资料](http://gameprogrammingpatterns.com/)
+    - [ Source repo for the book gameprogrammingpatterns.com ](https://github.com/munificent/game-programming-patterns)
+    - [online-free](http://gameprogrammingpatterns.com/contents.html)
 
 ## Blogs
 

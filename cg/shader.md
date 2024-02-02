@@ -143,4 +143,5 @@ mat3(
 - [the books of shader详细解说shader的开源书籍](https://thebookofshaders.com/)
 - [GPU Pro 360 Guide to Geometry Manipulation书籍]()
 
-
+- [A node.js-style module system for GLSL! ](https://github.com/glslify/glslify)
+  - [A reusable GLSL directional light function ](https://github.com/hughsk/glsl-directional-light)

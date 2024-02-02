@@ -6,3 +6,19 @@
 - [Conformal Geometric Algebra -- CGA](https://conformalgeometricalgebra.org/wiki/index.php?title=Main_Page)
 - [Rigid Geometric Algebra -- RGA](https://rigidgeometricalgebra.org/wiki/index.php?title=Main_Page)
 - [A C++ library that implements much of this math is available under the MIT license on GitHub](https://github.com/EricLengyel/Terathon-Math-Library)
+
+## Isogeometric Anylasis
+CAD/CAE领域中的等几何分析，等几何分析目前是被视作CAE最具革命性的突破。
+
+CAD的开花理论，
+由Bezier Spline，推广未B样条B-Spline曲线和曲面，目前非均匀有理B样条曲面成为工业标准，2000Tom Sederberg博士进一步推广为T样条曲面。
+
+在传统NURBS(non-uniform rational B-Spline surface)上，节点细化是全局的，即我们在一处添加节点，都需要保持节点构成四边形网格，因此需要沿着曲面上的一条曲线添加节点。很多时候，我们只希望局部改变NURBS的节点结构，不希望影响全局
+
+几乎所有的物理定律都是由偏微分方程来描述。各种物理现象的数值模拟等价于在几何模型上求解各种偏微分方程。计算机辅助工程 CAE（Computer Aided Engineering）的核心就是在几何体上进行多物理场数值模拟。1940年代由克朗（Courant）等应用数学家发展起来的有限元方法（Finite Element Method）是CAE中最为普遍的方法，我国的数学家冯康也独立地奠定了有限元的理论基础。
+
+传统的有限元方法是将几何体进行三角剖分，然后在三角剖分上建立基函数。有限元算法中，我们在每个单元（四面体）上计算刚度矩阵，然后再组装成整体的刚度矩阵。传统的CAD工业中，所有的几何体都被表示成NURBS曲面；而在传统的CAE工业中，几何体被表示为网格剖分，很多时候是三角剖分。将CAD模型转换成三角剖分是整个数字模拟仿真流程中最为耗时、耗费计算资源的步骤，一般占所有计算时间的以上。同时，网格离散会带来几何误差，这是影响仿真问题精度的一个关键因素。
+
+2005年，Tom Hughes博士提出了等几何分析的思想（isogeometric analysis），核心是采用统一的样条语言来表达几何形状和物理场：利用平面NURBS参数曲面或者体NURBS参数体积作为计算域，计算单元为节点区间对应的曲面单元或者体单元；以NURBS基函数作为物理场的基函数（形函数），以控制顶点的物理数学分量作为未知变量。这样，形状几何与分析几何在同一样条空间，避免了数据交换；在精确CAD几何上进行仿真计算，避免了几何离散误差；在同样自由度下，达到较高计算精度，或者在同样的精度下，需要较少的自由度。同时，物理仿真保持了光滑性。从工程角度而言，等几何分析与传统的有限元方法兼容，等几何分析可以集成到现有的有限元环境之中。
+
+虽然等几何分析具有很多传统方法无法比拟的优点，但是等几何分析并没有被工业界广泛采纳，核心在于传统CAD工业中的样条曲面无法满足等几何分析的要求。传统NURBS大量应用裁剪样条，裁剪样条无法分解成规则单元，需要重新构造；传统NURBS缺乏水密性，存在大量缝隙，因此有很多弥补缝隙的碎片样条，需要融合成整片样条；最为致命的问题是传统CAD模型只表达了几何体的边界曲面，而等几何分析需要将整个实体的内部也表达成样条。

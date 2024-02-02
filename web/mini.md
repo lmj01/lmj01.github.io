@@ -48,6 +48,12 @@ npm omi-cli init-js smile
     - [OMI github](https://github.com/Tencent/omi/)
 
 ### 小程序案例    
+
+#### 微信小程序库
+
+- [微信的FormData对象](https://github.com/lmj01/wx-formdata)
+
+#### 微信小程序
 - [如何实现圣诞节星星飘落效果](https://developers.weixin.qq.com/community/develop/article/doc/000e443b1247a039fd99230b457013)
 - [小程序海报组件-生成朋友圈分享海报并生成图片](https://github.com/jasondu/wxa-plugin-canvas/tree/master)
     - [轻松生成小程序分享海报 ](https://juejin.cn/post/6844903663840788493)

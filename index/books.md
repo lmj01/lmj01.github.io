@@ -11,6 +11,8 @@
 
 - [what every programmer should know about memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
 - [Effective Debugging有效调试](https://celthi.github.io/effective-debugging-zh/)
+- [Algorithmica is an open-access web book dedicated to the art and science of computing.](https://en.algorithmica.org/)
+    - [github](https://github.com/algorithmica-org/algorithmica)
 
 ## 数学
 

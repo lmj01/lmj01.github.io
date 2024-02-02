@@ -21,6 +21,10 @@ webGL也是建立在OpenGL上的，在网页中使用多个Canvas比单独在一
 
 缓冲区是一个很泛的概念，很容易混肴，下面针对主要的进行说明一下
 
+Buffer Object
+
+### FBO
+
 FBO(Frame Buffer Object)帧缓冲区对象，它并不是内存块，不实际存储数据，就像画画中的一个画板，画画时需要画布，在画布上才能进行绘制。帧缓冲区也需要画布附着Attachment在上面。FBO支持三种Attachment：
 
 - Color颜色，存储区域称为ColorBuffer， 就是绘制的图像数据，即RGBA数据，如果使用了Multiple Render Targets技术，Color Attachment的数量可能有多个
@@ -42,7 +46,7 @@ FBO(Frame Buffer Object)帧缓冲区对象，它并不是内存块，不实际�
 
 上面说的是骨架，动笔绘画时就是绘制过程，针对没有索引提供了glDrawArrays绘制，有索引的提供了glDrawElements.
 
-### Buffer Object
+### VAO And VBO
 > 这里只考虑有shader的流程，较老的api存在部分差异，[glBindVertexArray在3.1后才支持的](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glBindVertexArray.xhtml)，流程上有些API的差异。因为随着GPU硬件的改进，只会越来越使用shader的了
 
 VAO(Vertex Array Object)顶点数组对象，与FBO一样的概念，更像容器一样的感觉，它们都不是BufferObject，是为了管理数据而抽象成更高一层的概念，是一个状态容器。
@@ -177,6 +181,8 @@ glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 
 - [NanoGUI is a a minimalistic cross-platform widget library for OpenGL 3.x. It supports automatic layout generation, stateful C++11 lambdas callbacks, a variety of useful widget types and Retina-capable rendering on Apple devices thanks to NanoVG by Mikko Mononen. Python bindings of all functionality are provided using pybind11. ](https://github.com/wjakob/nanogui)
 
+- [RmlUi - The HTML/CSS User Interface library evolved ](https://github.com/mikke89/RmlUi)
+
 ## oglplus
 
 - [OGLplus's Documentation!](https://matus-chochlik.github.io/oglplu2/sphinx/index.html)
@@ -189,3 +195,4 @@ glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 - [OpenGL Loading Library](https://www.khronos.org/opengl/wiki/OpenGL_Loading_Library)
 - [GLRF - OpenGL Realtime Framework](https://github.com/DunkleMango/GLRF)
 - [g-truc creation， OpenGL Mathematics (GLM) OpenGL Image (GLI)等有关opengl的文档与知识](https://www.g-truc.net/)
+

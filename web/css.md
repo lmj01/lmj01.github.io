@@ -190,6 +190,7 @@ div {
     background-color: var(--main-color, red);
 }
 ```
+
 ## [Sass](https://www.sasscss.com/)
 
 Syntactically Awesome StyleSheets
@@ -220,6 +221,9 @@ div {
 }
 ```
 
+## [Stylus](https://github.com/stylus/stylus/)
+
+Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用它。
 
 ## BEM 
 Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.是由Yandex团队提出的一种CSS Class的命名方法

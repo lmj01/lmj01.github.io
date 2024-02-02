@@ -53,6 +53,7 @@
 - [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
 
 - [CAD相关笔记](../cg/tools/CAD.md)
+- [几何](../cg/geometry.md)
 
 ### api
 
@@ -113,6 +114,7 @@
     - [github](https://github.com/mitsuba-renderer/mitsuba3)
 - [可视化3D旋转This is a tool to help convert an visualise 3D rotations](http://asliceofrendering.com/ConversionTool/)
     - [github](https://github.com/BugzTroll/ConversionTool)
+- [粒子特效A simple program to simulate artificial life using attraction/reuplsion forces between many particles ](https://github.com/hunar4321/particle-life)
 
 ### paper
 
@@ -135,9 +137,11 @@
 > numeric calculation
 
 - [求取近似值的一个小技巧](https://www.johndcook.com/blog/2023/02/07/mediant-approximation-trick/)
+- [ALGLIB is a cross-platform numerical analysis and data processing library. It supports five programming languages (C++, C#, Java, Python, Delphi) and several operating systems (Windows and POSIX, including Linux). ](https://www.alglib.net/)
 
 ## AI 
 - [模型](../ai/model.md)
+- [参考应用模型](../ai/demo.md)
 
 ## 其他
 
