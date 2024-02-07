@@ -1,26 +1,30 @@
 # CSS-Cascading Style Sheets
 
 
-## meta
+## Web-CSS-Standard
+### meta
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 ```
 bootstrap-vue上看到的，让网页宽度自动适应手机屏幕
 
-## 布局
+### 布局
 
 - [参考1](https://www.jianshu.com/p/5c6f761ff769)
 
-### 标准文档流
-
-### 浮动布局
-
-### 定位布局
+- 标准文档流
+- 浮动布局
+- 定位布局
 
 **absolute**
 如果没有指定top,right,bottom,left等参数,它的位置关系是relative to its closest positioned ancestor(if any) or to the initial containing block.
 
 这样可以实现dropdown的样式,
+
+### Visual formatting model
+it is an algorithm that processes a document and display it on visual media.
+it transforms each element of the document and generates zero, one, or several boxes that conform to the **box model**
+
 
 ### flex
 
@@ -43,17 +47,17 @@ bootstrap-vue上看到的，让网页宽度自动适应手机屏幕
         - 基线排列 baseline
         - 拉伸排列 stretch
 
-## effect
+### effect
 
-### scroll
+#### scroll
 
 如果要是scroll起作用，一定是在子元素设置min-width,这样就会超出父元素，在父元素设置overflow-auto就可以有滚动条了。
 是子元素冒出父元素，不是父元素使用子元素
 
-### li 
+#### li 
 横向摆放，使用float-left模式来处理
 
-### Cascading order - specificity
+#### Cascading order - specificity
 [CSS2-Cascading order](https://www.w3.org/TR/CSS21/cascade.html#specificity)
 [css-cascade-4](https://drafts.csswg.org/css-cascade-4/#important)
 [CSS Specificity And Inheritance](https://www.smashingmagazine.com/2010/04/css-specificity-and-inheritance/)关于CSS的权重问题，这个概念很复杂
@@ -158,7 +162,7 @@ linear transformations also can be represented by Matrix function. It combine mu
 
 ![](../images/css-matrix.svg)
 
-## API 
+### API 
 
 - clip-path 裁剪不规则形状
 
@@ -172,16 +176,7 @@ div {
 - [CSS Painting API]
     - [clip-path](https://juejin.cn/post/7171609307253833764)
 
-## Tools
-
-### WebAIM:web accessibility in mind
-- [Color Contrust Check](https://webaim.org/resources/contrastchecker/) 
-
-## Visual formatting model
-it is an algorithm that processes a document and display it on visual media.
-it transforms each element of the document and generates zero, one, or several boxes that conform to the **box model**
-
-## variable
+### variable
 ```css
 :root {
     --main-color: pink;
@@ -190,6 +185,19 @@ div {
     background-color: var(--main-color, red);
 }
 ```
+
+## Tools
+
+### WebAIM:web accessibility in mind
+- [Color Contrust Check](https://webaim.org/resources/contrastchecker/) 
+
+### BEM 
+Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.是由Yandex团队提出的一种CSS Class的命名方法
+
+### 高难度
+
+- [CSS实现的机械装置， 作者有一系列的创作](https://cohost.org/blackle/post/42994-div-style-pointer)
+
 
 ## [Sass](https://www.sasscss.com/)
 
@@ -200,7 +208,6 @@ Syntactically Awesome StyleSheets
 - Sass，Indented Sass，使用“缩进”代替“花括号”，用“换行”代替“分号”，文件名后缀为.sass
 
 [scss doc](https://www.sasscss.com/documentation)
-
 
 [参考使用方法](https://github.com/lmj01/startbootstrap-grayscale)
 
@@ -220,22 +227,18 @@ div {
     }
 }
 ```
+- [循环测试](https://sass-lang.com/playground/#eJyFUttuwjAMfe9XeKVTKGoGZS2M9oU97wP2nEFKI/WmkKlMKP8+N70yJhHJOk58ObZj33dqcVTpB/+JIPTAX6EgrhFfG0E9QAwQQ5QN6hvELeJbI6jvEHdhDNaes0MKjgBRwJAWrhbAS01nV0foRgcwpqhxXIBfXeBJ5FUpFStUjHZtactaLsE5ZOx8ppXkibhEUNO4ed0npQSngESWOfigUll+n1JYB8iDZqRCommkxnuhe+tAPneK5TpwF/5q9XxTgHHTDWAZpg4T8S4lBrXWuZ2L4rN5taNwu6kuHtgZ++KZHRFRsSNxvXvH7WZ341gwKcuaVofO2zXUTlv0lA3TEBNEInIoM+IBOaufjJPIFNZzTd3KJDlzRSeuOZMnUdCMJ2pK1/+Y4vn4aUjej2uf86NgMMc2aDe42TVnFT1xNTdhHulbJK52xzF3mdt2TO6hs9EJ/n7yJHn75HU9uZreEQ+WeMz3cD3a82hJ2vNPNe04XX27QPE0To+XQdXTtfoF1vbwVQ==)
+
+### playground
+
+- [sass](https://sass-lang.com/playground/)
+- [sass meister](https://www.sassmeister.com/)
 
 ## [Stylus](https://github.com/stylus/stylus/)
 
 Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用它。
 
-## BEM 
-Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.是由Yandex团队提出的一种CSS Class的命名方法
-
-## 高难度
-
-- [CSS实现的机械装置， 作者有一系列的创作](https://cohost.org/blackle/post/42994-div-style-pointer)
 
 ## 参考
 
 - [css 3d transforms](https://polypane.app/css-3d-transform-examples/)
-
-
-
-

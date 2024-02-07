@@ -125,6 +125,9 @@ mat3(
   vec2, float);   // third column
 ```
 
+### [Interface Block (GLSL)](https://www.khronos.org/opengl/wiki/Interface_Block_(GLSL))
+一块块的声明变量。
+
 ## Reference
 关键字在github全局搜索
 
@@ -145,3 +148,7 @@ mat3(
 
 - [A node.js-style module system for GLSL! ](https://github.com/glslify/glslify)
   - [A reusable GLSL directional light function ](https://github.com/hughsk/glsl-directional-light)
+
+- [The Book of Shaders by Patricio Gonzalez Vivo & Jen Lowe ](https://thebookofshaders.com/00/)
+- [OpenGL 图元处理，一些关于OpenGL的概念](https://www.jianshu.com/p/3d974e69f842)
+  - [Learning practice demo for examples in OpenGL Super Bible 6th ](https://github.com/StarryThrone/OpenGL-SBible-example-code)

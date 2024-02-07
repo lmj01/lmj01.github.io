@@ -6,6 +6,7 @@
 - [汉语拼音网](http://www.hanyupinyin.org/)
 - [Markdown](../articles/markdown.md)
 - [Mathjax](../articles/mathjax.md)
+- [数学概念笔记](../articles/notes/math.md)
 
 ## dev-note 
 - [git](../dev-note/git.md)
