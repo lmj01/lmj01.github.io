@@ -1,6 +1,6 @@
 # 小程序
-> 国内的特定环境下的产物
->> 微信小程序有自己的一套流程，嵌入在定制的浏览器中
+> 国内的特定环境下的产物，基本都是以Webkit内核分支下的产物，
+>> 小程序的宿主是App，App提供了浏览器的角色，云端放置一份小程序资源，下载到App内部，由App提供渲染。小程序使用两个线程分别处理视图层以WebView渲染，逻辑层以JsCore运行脚本
 
 ## 微信小程序框架
 
@@ -47,16 +47,13 @@ npm omi-cli init-js smile
 - [OMI](https://omi.cdn-go.cn/home/latest/)
     - [OMI github](https://github.com/Tencent/omi/)
 
-### 小程序案例    
-
-#### 微信小程序库
-
 - [微信的FormData对象](https://github.com/lmj01/wx-formdata)
-
-#### 微信小程序
 - [如何实现圣诞节星星飘落效果](https://developers.weixin.qq.com/community/develop/article/doc/000e443b1247a039fd99230b457013)
 - [小程序海报组件-生成朋友圈分享海报并生成图片](https://github.com/jasondu/wxa-plugin-canvas/tree/master)
     - [轻松生成小程序分享海报 ](https://juejin.cn/post/6844903663840788493)
 - [小程序canvas 缩放/拖动/还原/封装和实例--开箱即用](https://blog.csdn.net/iamlujingtao/article/details/128289849)
 - [优秀实践教程推荐](https://github.com/TencentCloudBase/Good-practice-tutorial-recommended)
+
+- [官方的小程序开发指南](https://developers.weixin.qq.com/ebook?action=get_post_info&volumn=1&lang=zh_CN&book=miniprogram&docid=0008aeea9a8978ab0086a685851c0a)
+- [微信小程序开发教程手册文档](https://www.w3cschool.cn/weixinapp/9wou1q8j.html)
 

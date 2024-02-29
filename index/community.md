@@ -2,6 +2,11 @@
 
 ## Architecture
 
+- IaaS, Infrastructure as a service
+- PaaS, Platform as a service
+- SaaS, Software as a service
+- IQaaS, Intelligence as a service
+
 ### Actor
 
 - [CAF is an open source implementation of the actor model for C++ featuring lightweight & fast actor implementations, pattern matching for messages, network transparent messaging, and more.](https://www.actor-framework.org/)

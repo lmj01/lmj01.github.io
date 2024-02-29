@@ -186,6 +186,14 @@ div {
 }
 ```
 
+### Color颜色
+
+渐变色，linear-gradient创建一个对象gradient，是一种特别的image，就像使用canvas直接生成一个色条一样，不能使用到color对象上
+
+```css
+border-image: linear-gradient(90deg, #B3ADD3 0%, #96BED7 21%, #EB9582 41%, #C3C68C 62%, #FAACAC 81%, #FED09F 99%) 1;
+```
+
 ## Tools
 
 ### WebAIM:web accessibility in mind

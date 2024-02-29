@@ -3,6 +3,11 @@
 [官方文档](https://git-scm.com/docs)
 [中文官方文档](https://git-scm.com/book/zh/v2)
 [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+    - 未读完
+## 概念
+- 补丁，即git diff生成的内容
+- commit，提交内容
+- version，版本
 
 ## 常用命令
 
@@ -18,12 +23,6 @@
 - git push 远程的remote_branch存在且关联local_branch，把local_branch推送到remote_branch
 - git push -u origin/remote_branch 远程有分支但未关联本地分支 
 - git push origin local_branch:remote_branch 远程remote_branch不存在
-- 删除修改
-    - git reset --hard origin/master 强制用服务器覆盖本地的修改
-    - git rebase 已服务器远程仓库为基准
-    - git rm --cached file.ext 删除file.ext的跟踪， 并保留本地的
-    - git rm -f file.ext 删除跟踪，并删除本地文件
-    - git reset --hard xxxx // 退回到那个版本
 - git pull origin main --allow-unrelated-histories //历史记录不一样
 
 ### submodule
@@ -33,12 +32,6 @@
 - git submodule update更新子模块 // 切换分支后就需要执行它
 - git submodule foreach git pull拉取所有的子模块
 - git submodule sync
-- git rm --cached modulename删除子模块
-
-子模块删除
-- 删除.gitsubmodule里的那一部分
-- 删除.git/config文件的相关字段
-- 删除子模块的目录
 
 ### branch
 分支
@@ -57,41 +50,6 @@
     - git rm -rf . // 删除当前目录下的文件
     - 添加新的文件
 
-### merge合并
-- git cherry-pick <commit-id> 合并某个commit，只能在本地操作，本地分支要有这个commit记录才可以合并
-- git checkout -p(--patch) origin/A filename.ext 把A(本地或远程)分支的某个文件合并到现在分支。
-存在差异时有如下的缩写字母命令
-y - apply this hunk to index and worktree # 应用当前hook，把A分支的东西应用到当前分支
-n - do not apply this hunk to index and worktree # 放弃当前hook，放弃A分支的，用当前分支的。
-q - quit; do not apply this hunk or any of the remaining ones # 不使用任何hook，直接退出
-a - apply this hunk and all later hunks in the file # 在当前文件下应用此hook以及后续的所有hook
-d - do not apply this hunk or any of the later hunks in the file # 在当前文件下不应用此hook以及后续的所有hook
-g - select a hunk to go to # 选择一个hook
-/ - search for a hunk matching the given regex # 使用正则搜索hook
-j - leave this hunk undecided, see next undecided hunk # 先跳过当前hook，并跳转到下一个未处理hook
-J - leave this hunk undecided, see next hunk # 先跳过当前hook，并跳转到下一个hook
-k - leave this hunk undecided, see previous undecided hunk # 先跳过当前hook，并跳转到上一个未处理hook
-K - leave this hunk undecided, see previous hunk # 先跳过当前hook，并跳转到上一个hook
-s - split the current hunk into smaller hunks # 切割当前hook
-e - manually edit the current hunk # 编辑当前hook
-? - print help # 显示帮助信息
-
-### 回滚
-
-```shell
-git checkout branch-with-history 切换到带有历史记录的分支中
-git checkout -b XXX 新建本地分支XXX
-git reset --hard commit-id 回滚分支XXX上的某个提交点
-```
-此时代码就是某个提交点的，就可以修改了
-
-- git reset --hard彻底回退到某个版本，同时回退暂存区和版本库和工作区
-- git reset --soft回退到某个版本，只回退到暂存区
-- git reset --mixed默认不带参，只回退暂存区和本地版本库
-
-### 打包
-
-- git archive --format zip --output path/zipfile.zip branch-name
 
 ### [stash](https://www.git-scm.com/docs/git-stash)
 
@@ -172,22 +130,72 @@ pox.xml merge=ours
 3. /mtk/do.c 过滤指定文件
 4. !/mtk/one.txt 添加指定文件
 
+## 回滚
 
-## 其他
+```shell
+git checkout branch-with-history 切换到带有历史记录的分支中
+git checkout -b XXX 新建本地分支XXX
+git reset --hard commit-id 回滚分支XXX上的某个提交点
+```
+此时代码就是某个提交点的，就可以修改了
 
-### 错误
+- git reset --hard彻底回退到某个版本，同时回退暂存区和版本库和工作区
+- git reset --soft回退到某个版本，只回退到暂存区
+- git reset --mixed默认不带参，只回退暂存区和本地版本库
+- git reset --hard origin/master 强制用服务器覆盖本地的修改
+- git reset --hard xxxx // 退回到那个版本
+- git rebase 以服务器远程仓库为基准
 
-error: RPC failed; curl 18 transfer closed with outstanding read data remaining
-fatal: The remote end hung up unexpectedly
-fatal: early EOF
-fatal: index-pack failed
+## 删除
+- git rm --cached file.ext 删除file.ext的跟踪， 并保留本地的
+- git rm -f file.ext 删除跟踪，并删除本地文件    
+- git rm --cached modulename 删除子模块
 
-通过设置来解决
-git config --global http.postBuffer 524288000
-上面没有解决时，换个思路
-git clone url_repository --depth 1
-cd url_repository 
-git fetch --unshallow 
-或者不用HTTP
-把https://改成git://
+子模块删除
+- 删除.gitsubmodule里的那一部分
+- 删除.git/config文件的相关字段
+- 删除子模块的目录
 
+## 合并
+
+- git cherry-pick <commit-id> 合并某个commit，只能在本地操作，本地分支要有这个commit记录才可以合并
+- git checkout -p(--patch) origin/A filename.ext 把A(本地或远程)分支的某个文件合并到现在分支。
+
+存在差异时有如下的缩写字母命令
+y - apply this hunk to index and worktree # 应用当前hook，把A分支的东西应用到当前分支
+n - do not apply this hunk to index and worktree # 放弃当前hook，放弃A分支的，用当前分支的。
+q - quit; do not apply this hunk or any of the remaining ones # 不使用任何hook，直接退出
+a - apply this hunk and all later hunks in the file # 在当前文件下应用此hook以及后续的所有hook
+d - do not apply this hunk or any of the later hunks in the file # 在当前文件下不应用此hook以及后续的所有hook
+g - select a hunk to go to # 选择一个hook
+/ - search for a hunk matching the given regex # 使用正则搜索hook
+j - leave this hunk undecided, see next undecided hunk # 先跳过当前hook，并跳转到下一个未处理hook
+J - leave this hunk undecided, see next hunk # 先跳过当前hook，并跳转到下一个hook
+k - leave this hunk undecided, see previous undecided hunk # 先跳过当前hook，并跳转到上一个未处理hook
+K - leave this hunk undecided, see previous hunk # 先跳过当前hook，并跳转到上一个hook
+s - split the current hunk into smaller hunks # 切割当前hook
+e - manually edit the current hunk # 编辑当前hook
+? - print help # 显示帮助信息
+
+### 迁移
+cherry-pick对子目录不太友好，会改变目录结构，迁移时更多选择
+- git apply 可应用补丁，不创建commit，提交前测试git diff（即补丁），也可将构建前将补丁应用到第三方库
+- git am 可应用补丁，要创建commit，适用于协作和接收他人的贡献代码，从邮件或git format-patch生成文件中应用补丁
+
+- git diff > changes.patch 补丁信息
+- git diff commit1 commit2 比较两个提交的差异
+- git format-patch -1 --stdout > changes.patch 获取最新commit生成patch补丁
+- git format-patch <start_commit>..<end_commit> 两个提交之间的补丁
+- git format-patch <start_commit>..<end_commit> --stdout > changes.patch 多个补丁合并成一个补丁
+
+开启-3或--3way,有冲突时可以查看diff信息， --directory通过指定目录来迁移，比cherry-pick更友好
+
+- git apply --3way --directory=extension changes.patch
+- git am --3way --directory=extensioin changes.patch
+
+
+
+
+## 打包
+
+- git archive --format zip --output path/zipfile.zip branch-name

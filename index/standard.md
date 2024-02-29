@@ -30,6 +30,7 @@
 
 ## Images
 
+- [图片处理工具-库，程序](../cg/image/tool.md)
 - [颜色](../cg/Color.md)
 - [图像相关的算法](../cg/image/algorithm.md)
 - [图像格式](../others/images.md)

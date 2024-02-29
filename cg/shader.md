@@ -150,5 +150,6 @@ mat3(
   - [A reusable GLSL directional light function ](https://github.com/hughsk/glsl-directional-light)
 
 - [The Book of Shaders by Patricio Gonzalez Vivo & Jen Lowe ](https://thebookofshaders.com/00/)
+  - Introduction
 - [OpenGL 图元处理，一些关于OpenGL的概念](https://www.jianshu.com/p/3d974e69f842)
   - [Learning practice demo for examples in OpenGL Super Bible 6th ](https://github.com/StarryThrone/OpenGL-SBible-example-code)

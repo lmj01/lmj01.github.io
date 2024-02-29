@@ -1,4 +1,17 @@
 # Browser
+> 浏览器
+
+浏览器的两大核心是
+- 渲染引擎，即内核，负责对网页语法的解释并渲染成网页内容、排版等
+- JS引擎，是执行在一个线程里，不像其他语言那样多线程并可阻塞主线程，而是通过事件机制来解决。
+- JS线程、工作线程、渲染线程之间的通信机制叫做事件循环EventLoop，其一是Call Stack宏任务，其一是Task Queue微任务，其执行流程是：
+    - 工作线程完成异步任务，会把消息（注册时的回调函数）推到Task Queue中
+    - 当Call Stack为空时，主线程从Task Queue取消息放入Call Stack来执行
+    - 主线程一直重复前两步的逻辑直到消息队列为空
+
+[WebKit is the web browser engine used by Safari, Mail, App Store, and many other apps on macOS, iOS, and Linux. ](https://webkit.org/)发展一个分支，支撑了现代浏览器的大部分功能，
+chrome是Webkit的分支发展的，后来由于沙箱设计上产生冲突，逐渐发展成了Blink内核，脱离了Webkit。
+
 
 ## 认证与登录
 

@@ -36,6 +36,8 @@
 - [A Graphics Guy's Note](https://agraphicsguynotes.com/posts/)
 - [figma的博客,有关figma实现的一些思路和总结,值得借鉴](https://www.figma.com/blog/)
 
+- [Denis Bakhvalov, 关于性能优化的一个博客](https://easyperf.net/)
+- [SaschaWillems,业余贡献实时3D以Khronos标准软件开发者](https://www.saschawillems.de/)
 
 ## 工具
 

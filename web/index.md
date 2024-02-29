@@ -15,7 +15,7 @@
     - [typescript](./typescript.md)
     - [bable](./babel.md)
     - [vue](./vue.md)
-- [多语言i18n](./language.md)
+- [多语言i18n](./i18n.md)
 
 ## library
 
