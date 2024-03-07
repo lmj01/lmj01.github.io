@@ -267,6 +267,7 @@ React中引入Fiber，其概念来自C++，[C++ Fiber的基本知识](https://ag
 ## 参考
 - [C++ Template这个文章描述的很清晰,思路也很通畅](https://www.3dgep.com/beginning-cpp-template-programming/)
 - [C++ stories](https://www.cppstories.com/)
+- [PDFHummus is a Fast and Free C++ Library for Creating, Parsing an Manipulating PDF Files and Streams.](https://github.com/galkahana/PDF-Writer)
 
 ### 里缪
 > 我看标准的这些机制设计和其他一些架构，其中很重要的一条原则就是追求一致性。不仅是美学上的追求，一旦符合这种一致性，系统本身就具备适应变化的能力，从而能够抵抗非连续性问题。一切本质的东西都很简单，且具有美感。设计之初就追求一致性，本质是一种多阶思维，看似麻烦，往往能够解决很多未能提前发现的问题。

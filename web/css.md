@@ -28,15 +28,11 @@ it transforms each element of the document and generates zero, one, or several b
 
 ### flex
 
-#### 轴
-
+轴
 - 主轴main axis
 - 交叉轴cross axis
 
-#### 容器
-
-父容器可以统一设置子容器的排列方式，子容器可以单独设置自身的排列方式，如果两者同时设置，以子容器的设置为准。
-
+容器,父容器可以统一设置子容器的排列方式，子容器可以单独设置自身的排列方式，如果两者同时设置，以子容器的设置为准。
 - 父容器container
     - justify-content
         - 位置排列 flex-start flex-end center
@@ -47,6 +43,17 @@ it transforms each element of the document and generates zero, one, or several b
         - 基线排列 baseline
         - 拉伸排列 stretch
 
+```scss
+.father {
+    display: flex;
+    flex-flow: row nowrap;
+    .son1 {}
+    .son2 {
+        flex-grow: 1; // 占满最后一个
+    }
+}
+```
+- flex-grow, 设置剩余的占满的
 ### effect
 
 #### scroll

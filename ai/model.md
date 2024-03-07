@@ -1,5 +1,8 @@
 # 模型
 
+- [3D 可视化 GPT 大语言模型](https://bbycroft.net/llm)
+    - []()
+
 ## Model
 How AI models are made: Data is a crucial component
 
@@ -21,13 +24,13 @@ data is upstream in process of developing good models
 [Stable Diffusion 1.0]()
 [CodeV1]()
 
-## [DSD(Dense-Sparse-Dense)](https://arxiv.org/pdf/1607.04381.pdf)
+### [DSD(Dense-Sparse-Dense)](https://arxiv.org/pdf/1607.04381.pdf)
 
 - [模型数据下载](https://songhan.github.io/DSD/)
 
 如何通过改进训练过程提高传统模型的准确率
 
-## [onnx](https://onnx.ai/)
+### [onnx](https://onnx.ai/)
 > Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves.
 
 [microsoft的版本](https://github.com/onnx/onnx)和[ORT--ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator](https://github.com/Microsoft/onnxruntime)
@@ -35,6 +38,10 @@ data is upstream in process of developing good models
 [onnx example中可以找到一个例子，找到模型，把模型参数传入就可以得到结果了](https://github.com/microsoft/onnxruntime-inference-examples)
 
 [开源可用的一些模型A collection of pre-trained, state-of-the-art models in the ONNX format ](https://github.com/onnx/models)
+
+### [HPC-AI Tech](https://hpc-ai.com/)
+- [HPC-AI Tech github, We are a global team to help you train and deploy your AI models](https://github.com/hpcaitech)
+- [Colossal-AI: Making large AI models cheaper, faster, and more accessible](https://github.com/hpcaitech/ColossalAI)
 
 ## 其他
 

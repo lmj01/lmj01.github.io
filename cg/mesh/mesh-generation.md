@@ -5,6 +5,7 @@
 
 核心思想是将边界离散为短边Generation front，然后以每一条短边为基准Base，在区域内找到一个最优的点，形成最优的三角形，同时更新短边的集合，直到集合中的所有短边都被处理。
 
+- [OpenCMP is a computational multiphysics software package based on the finite element method. It is primarily intended for physicochemical processes involving significant convective flow. ](https://github.com/uw-comphys/opencmp)
 
 ## Delaunay三角剖分
 可对给定的任意离散点集，做最优的三角化。所谓最优就是得到的所有三角形的最小的内角最大。

@@ -7,6 +7,7 @@
 - [Markdown](../articles/markdown.md)
 - [Mathjax](../articles/mathjax.md)
 - [数学概念笔记](../articles/notes/math.md)
+- [软硬件一体的项目](../others/robot.md)
 
 ## dev-note 
 - [git](../dev-note/git.md)
