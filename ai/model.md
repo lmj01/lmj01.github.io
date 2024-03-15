@@ -46,3 +46,4 @@ data is upstream in process of developing good models
 ## 其他
 
 - [Port of Facebook's LLaMA model in C/C++ ](https://github.com/ggerganov/llama.cpp)
+- [ChatGLM3 series: Open Bilingual Chat LLMs | 开源双语对话语言模型 ](https://github.com/THUDM/ChatGLM3)
