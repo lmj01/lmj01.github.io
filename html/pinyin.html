@@ -7,13 +7,14 @@
 </script>
 </head>
 <body>
-    <div class="container-xl">
-        <h1>拼音翻译</h1>
-        <div>
-            <h4 id="section1">生日</h4>            
-            <div>
-                <textarea id="idSrc" rows="3"></textarea>
-                <textarea id="idDst" rows="3" readonly></textarea>
+    <div class="container-xl d-flex flex-column">
+        <h1>拼音</h1>
+        <h6><a class="mx-3" href="https://fayin.love/">爱发音</a></h6>
+        <div class="w-100 d-flex flex-column">
+            <h4 id="section1">汉字转换拼音</h4>            
+            <div class="w-100 d-flex my-3 justify-content-evenly">
+                <textarea id="idSrc" class="w-50" rows="3"></textarea>
+                <textarea id="idDst" class="w-50" rows="3" readonly></textarea>
             </div>
         </div>
         <div></div>
@@ -21,8 +22,8 @@
             const { pinyin } = pinyinPro;            
             const elTextareaSrc = document.getElementById('idSrc');
             const elTextareaDst = document.getElementById('idDst');
-            elTextareaSrc.addEventListener('input', (event)=>{
-                elTextareaDst.textContent = pinyin(elTextareaSrc.textContent);
+            elTextareaSrc.addEventListener('change', (event)=>{
+                elTextareaDst.value = pinyin(elTextareaSrc.value);
             })
         </script>
     </div>
