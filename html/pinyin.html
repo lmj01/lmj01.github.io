@@ -5,6 +5,16 @@
 <script src="./html.config.js" defer></script>
 <script src="./third/pinyin-pro.js" defer></script>
 </script>
+<style>
+    /* css */
+    .py-chinese-item {
+        position: relative;
+        /* color: blue; */
+    }
+    .py-pinyin-item {
+        color: #d08080;
+    }
+</style>
 </head>
 <body>
     <div class="container-xl d-flex flex-column">
@@ -12,18 +22,18 @@
         <h6><a class="mx-3" href="https://fayin.love/">爱发音</a></h6>
         <div class="w-100 d-flex flex-column">
             <h4 id="section1">汉字转换拼音</h4>            
-            <div class="w-100 d-flex my-3 justify-content-evenly">
-                <textarea id="idSrc" class="w-50" rows="3"></textarea>
-                <textarea id="idDst" class="w-50" rows="3" readonly></textarea>
+            <div class="w-100 d-flex my-3 flex-column justify-content-evenly">
+                <textarea id="idSrc" class="w-100" rows="4"></textarea>
+                <div id="idDst" class="w-100 d-flex flex-wrap"></div>
             </div>
         </div>
         <div></div>
         <script type="module">
-            const { pinyin } = pinyinPro;            
+            const { pinyin, html } = pinyinPro;            
             const elTextareaSrc = document.getElementById('idSrc');
-            const elTextareaDst = document.getElementById('idDst');
+            const elDivDst = document.getElementById('idDst');
             elTextareaSrc.addEventListener('change', (event)=>{
-                elTextareaDst.value = pinyin(elTextareaSrc.value);
+                elDivDst.innerHTML = html(elTextareaSrc.value);
             })
         </script>
     </div>
