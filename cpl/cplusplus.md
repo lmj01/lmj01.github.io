@@ -264,10 +264,28 @@ Helper(T *t) -> Helper<T>; // deduction guide c++17
 ### Fiber
 React中引入Fiber，其概念来自C++，[C++ Fiber的基本知识](https://agraphicsguynotes.com/posts/fiber_in_cpp_understanding_the_basics/)
 
+### 兼容C
+
+#### 索引
+
+C规定a[b]严格等价于*(a+b)，所以a[0]和0[a]是一样的，C++有运算符重载，不是严格等价
+
+base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访问的元素是a[b]
+- a[b]，a是有类型的，b只是一个数字，所以不能这么运算。a[b]可以计算为a+ sizoef(a) × b
+- 但是换成b[a]的时候，你忽略掉了b是没有类型可言的,既然1[a]逻辑上解释不过去，那就只能当做a[1]才能计算
+
+从语义上去理解这个
+
 ## 参考
 - [C++ Template这个文章描述的很清晰,思路也很通畅](https://www.3dgep.com/beginning-cpp-template-programming/)
 - [C++ stories](https://www.cppstories.com/)
 - [PDFHummus is a Fast and Free C++ Library for Creating, Parsing an Manipulating PDF Files and Streams.](https://github.com/galkahana/PDF-Writer)
+
+## 工具
+
+- [C++在线编译器，可以查看汇编等细节](https://godbolt.org/)
+- [C++分析，可看到预处理状态](https://cppinsights.io/)
+- [C++Benchmark](https://quick-bench.com/q/6tDxsmk3FMX55B8W1RrdiG_s7_k)
 
 ### 里缪
 > 我看标准的这些机制设计和其他一些架构，其中很重要的一条原则就是追求一致性。不仅是美学上的追求，一旦符合这种一致性，系统本身就具备适应变化的能力，从而能够抵抗非连续性问题。一切本质的东西都很简单，且具有美感。设计之初就追求一致性，本质是一种多阶思维，看似麻烦，往往能够解决很多未能提前发现的问题。

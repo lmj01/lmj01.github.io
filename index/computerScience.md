@@ -57,6 +57,7 @@
 
 ### api
 
+- [GPU](../cg/gpu.md)
 - [OpenGL](../cg/opengl.md)
 - [webgl](../cg/webgl.md)
 - [Shader](../cg/shader.md)
@@ -140,6 +141,7 @@
 - [ALGLIB is a cross-platform numerical analysis and data processing library. It supports five programming languages (C++, C#, Java, Python, Delphi) and several operating systems (Windows and POSIX, including Linux). ](https://www.alglib.net/)
 
 ## AI 
+- [神经网络](../ai/neural.network.md)
 - [模型](../ai/model.md)
 - [参考应用模型](../ai/demo.md)
 

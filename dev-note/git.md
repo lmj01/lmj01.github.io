@@ -193,8 +193,12 @@ cherry-pick对子目录不太友好，会改变目录结构，迁移时更多选
 - git apply --3way --directory=extension changes.patch
 - git am --3way --directory=extensioin changes.patch
 
+### 批量合并
 
-
+- git checkout --ours ./folderA/ 文件夹folderA下都使用本地的
+- git checkout --theirs ./folderB/ 文件夹folderA下都使用他人的
+- git checkout origin/master -- ./folderC/ 文件夹folderC都使用远程的
+- git checkout upstream/dev -- ./ 冲突使用上游分支
 
 ## 打包
 

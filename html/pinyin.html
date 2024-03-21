@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Depth to View</title>
+<script src="./html.config.js" defer></script>
+<script src="./third/pinyin-pro.js" defer></script>
+</script>
+</head>
+<body>
+    <div class="container-xl">
+        <h1>拼音翻译</h1>
+        <div>
+            <h4 id="section1">生日</h4>            
+            <div>
+                <textarea id="idSrc" rows="3"></textarea>
+                <textarea id="idDst" rows="3" readonly></textarea>
+            </div>
+        </div>
+        <div></div>
+        <script type="module">
+            const { pinyin } = pinyinPro;            
+            const elTextareaSrc = document.getElementById('idSrc');
+            const elTextareaDst = document.getElementById('idDst');
+            elTextareaSrc.addEventListener('input', (event)=>{
+                elTextareaDst.textContent = pinyin(elTextareaSrc.textContent);
+            })
+        </script>
+    </div>
+</body>
+</html>
