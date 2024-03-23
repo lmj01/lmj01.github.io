@@ -1,8 +1,5 @@
 # 模型
 
-- [3D 可视化 GPT 大语言模型](https://bbycroft.net/llm)
-    - []()
-
 ## Model
 How AI models are made: Data is a crucial component
 

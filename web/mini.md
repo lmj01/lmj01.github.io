@@ -28,15 +28,10 @@ rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏�
 为了性能，小程序默认死Image的宽高
 
 
-## 支付宝小程序
+### Skyline
+新增的一个Skyline渲染引擎
 
-## OMI框架
-```js
-npm install omi-cli -g --registry=https://registry.npm.taobao.org
-npm omi-cli init-mps smile
-npx omi-cli init-mps smile
-npm omi-cli init-js smile
-```
+## 支付宝小程序
 
 ## 文档参考
 
@@ -44,13 +39,7 @@ npm omi-cli init-js smile
 
 - [weui官方文档，可支持扩展原生支持](https://wechat-miniprogram.github.io/weui/docs/#weui%E7%BB%84%E4%BB%B6%E5%BA%93%E7%AE%80%E4%BB%8B)
 - [TDesign文档](https://tdesign.tencent.com/)
-- [OMI](https://omi.cdn-go.cn/home/latest/)
-    - [OMI github](https://github.com/Tencent/omi/)
-
 - [微信的FormData对象](https://github.com/lmj01/wx-formdata)
-- [如何实现圣诞节星星飘落效果](https://developers.weixin.qq.com/community/develop/article/doc/000e443b1247a039fd99230b457013)
-- [小程序海报组件-生成朋友圈分享海报并生成图片](https://github.com/jasondu/wxa-plugin-canvas/tree/master)
-    - [轻松生成小程序分享海报 ](https://juejin.cn/post/6844903663840788493)
 - [小程序canvas 缩放/拖动/还原/封装和实例--开箱即用](https://blog.csdn.net/iamlujingtao/article/details/128289849)
 - [优秀实践教程推荐](https://github.com/TencentCloudBase/Good-practice-tutorial-recommended)
 
