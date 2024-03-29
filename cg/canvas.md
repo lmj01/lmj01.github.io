@@ -20,6 +20,17 @@
         - 显示器分辨率，由操作系统设定的，
     - 图像分辨率，单位英寸中所包含的像素总数
 
+### 适配
+适配高清屏幕
+```js
+let dpr = window.devicePixelRatio;
+let width = 100, height = 100;
+canvas.width = width * dpr;
+canvas.height = height * dpr;
+canvas.style.width = `${width}px`;
+canvas.style.height = `${height}px`;
+```
+
 
 ## 元素信息
 
@@ -61,6 +72,22 @@ CanvasRenderingContext2D.isPointInPath()
 [Canvas Drawing images standard doc](https://html.spec.whatwg.org/multipage/canvas.html#drawing-images)
 [A Standard Default Color Space for the Internet - sRGB](https://www.w3.org/Graphics/Color/sRGB.html)
 [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/#rgb-color)
+
+### 坐标系
+
+左上角为原点，横轴向右是X正轴， 竖轴向下是Y正轴
+
+```js
+const ctx = canvas.getContent('2d');
+// 以中心点center缩放scale系数
+ctx.translate(center.x, center.y);
+ctx.scale(scale, scale);
+ctx.translate(-center.x, -center.y);
+```
+
+目标坐标 = 屏幕坐标（点击产生） + （图形坐标（所求图形） - 屏幕坐标） x 缩放倍数
+
+如果canvas没有缩放超出视口范围，都好处理
 
 ## 参考
 

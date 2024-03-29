@@ -82,6 +82,11 @@ y轴方向上的调整,
 
 使用二次曲线来拟合切缘曲线
 
+## 交互
+
+### 放大镜
+笑窗调整曲线的关键点时，
+
 ## 问题
 
 ### 至2024-2-26
@@ -117,3 +122,5 @@ y轴方向上的调整,
 - [catmull](https://github.com/actionnick/cat-rom-spline)
 - [gl-vec2](https://github.com/stackgl/gl-vec2)
 - [ffmpeg.wasm把视频导出的问题](https://ffmpegwasm.netlify.app/)
+- [SmileFy is the Smile Design solution](https://smilefy.com/)
+- [Smile Creator – exocad’s innovative in-CAD smile design solution for predictable esthetic smile makeovers](https://exocad.com/our-products/exocad-dentalcad/smile-creator/)
