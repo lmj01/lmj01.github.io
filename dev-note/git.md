@@ -37,7 +37,6 @@
 分支
 - git branch -d <branch_name> 删除本地分支
 - git push origin --delete <branch_name> 删除远程分支
-- git checkout -b <branch_local> <branch_remote> // git checkout -b dev-local origin/dev 从远程dev分支创建本地分支dev-local
 - git branch -m newName 在当前分支
 - git branch -m oldName newName 修改不在旧分支上
 - git push --delete origin oldName 删除远程分支
@@ -45,11 +44,6 @@
 - git remote add upstream repo-url 添加上游仓库地址
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
-- git remote prune origin 删去本地显示远程已经删除的分支
-- git checkout --orphan branchName // 创建空的分支
-    - git rm -rf . // 删除当前目录下的文件
-    - 添加新的文件
-
 
 ### [stash](https://www.git-scm.com/docs/git-stash)
 
@@ -65,6 +59,19 @@
 
 - git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
 - git diff branch1 branch2 --stat
+
+## 分支
+
+### git checkout
+
+- git checkout --orphan branchName // 创建空的分支
+
+- git checkout -b <new-branch-name> [<existing-branch>] 
+基于存在的分支创建，未指定即当前分支
+相当于执行git branch 和git checkout 命令组合
+
+- git checkout -b feature-branch origin/feature-branch
+创建并切换到远程分支
 
 ## 配置
 
@@ -147,9 +154,12 @@ git reset --hard commit-id 回滚分支XXX上的某个提交点
 - git rebase 以服务器远程仓库为基准
 
 ## 删除
+
+- git remote prune origin 删去本地显示远程已经删除的分支
 - git rm --cached file.ext 删除file.ext的跟踪， 并保留本地的
 - git rm -f file.ext 删除跟踪，并删除本地文件    
 - git rm --cached modulename 删除子模块
+- git rm -rf . // 删除当前目录下的文件
 
 子模块删除
 - 删除.gitsubmodule里的那一部分

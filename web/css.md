@@ -201,6 +201,16 @@ div {
 border-image: linear-gradient(90deg, #B3ADD3 0%, #96BED7 21%, #EB9582 41%, #C3C68C 62%, #FAACAC 81%, #FED09F 99%) 1;
 ```
 
+### Sprite
+
+也称雪碧图，是一种图像合成技术，使用时截取一部分。这种技术减少了请求资源与避免
+```css
+background-image: url('sprite.png');
+background-position: 60px 60px;
+width: 48px;
+height: 48px;
+```
+
 ## Tools
 
 ### WebAIM:web accessibility in mind

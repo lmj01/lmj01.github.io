@@ -29,3 +29,7 @@ base_s *base = (base_s*)parent;
 linux内核中使用的C语言的面向对象的设计思考参考
 - [Object-oriented design patterns in the kernel, part 1](https://lwn.net/Articles/444910/)
 - [Object-oriented design patterns in the kernel, part 2](https://lwn.net/Articles/446317/)
+
+## 工具
+
+- [build-once run-anywhere c library可移植portable的C库编译工具](https://github.com/jart/cosmopolitan)

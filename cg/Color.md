@@ -66,7 +66,19 @@ HDR高动态范围High dynamic range，就是添加更多的动态范围到图�
 - 明度Brightness、Value
 - 辉度Luma，把使用色觉校正的结果称为辉度
 
-## JS
+## web-color
+
+在canvas中或CSS中，可以使用某个属性来表示颜色，纯色、渐变色等
+```js
+// CanvasRenderingContext2D.strokeStyle property of the Canvas 2D API specifies the color, gradient, or pattern to use for the strokes (outlines) around shapes.
+const canvasGradient = ctx.createLinearGradient(50, 50, 250, 50);
+canvasGradient.addColorStop(0, 'blue');
+canvasGradient.addColorStop(0.2, 'green');
+canvasGradient.addColorStop(1, 'red');
+ctx.strokeStyle = canvasGradient;
+```
+
+### JS
 
 - [iro-core实现了颜色的转换核心](https://github.com/irojs/iro-core)
 - [Using JavaScript to Adjust Saturation and Brightness of RGB Colors](https://css-tricks.com/using-javascript-to-adjust-saturation-and-brightness-of-rgb-colors/#top-of-site)
