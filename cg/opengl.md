@@ -1,6 +1,9 @@
 # OpenGL
+> [The Wiki is a collection of information about OpenGL, as well as frequently asked questions about OpenGL and its API. ](https://www.khronos.org/opengl/wiki/Main_Page)
 
-Context上下文是OpenGL的核心，因为OpenGL就是一个状态机，上下文中就保存了各种状态值，是所有执行指令的基础， 这个概念比较接近底层，且跨平台的OS接口不一致，多封装成库供使用，如Freeglut，glew等。
+- [opengl 4.x](https://registry.khronos.org/OpenGL-Refpages/gl4/)
+
+Context上下文是OpenGL的核心，因为OpenGL就是一个状态机，上下文中就保存了各种状态值，是所有执行指令的基础， 这个概念比较接近底层。统一的API是由显卡驱动提供的，负责沟通驱动与系统接口的是一些跨平台的库，如glew，glad，glad是更现代的库。
 
 客户端与服务端也是OpenGL的一个很重要的概念，一般把应用层属于客户端，硬件与驱动程序看成服务端，它们各自维护着各自的状态，正是这个特性，使得OpenGL的接口非常精简，基本没有任何的数据结构在API层表现出来。
 
