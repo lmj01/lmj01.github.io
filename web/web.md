@@ -1,6 +1,13 @@
 
 # web
 
+## API
+
+### OPFS文件系统
+
+- [Web 文件系统（OPFS 及工具）介绍](https://hughfenghen.github.io/posts/2024/03/14/web-storage-and-opfs/)
+
+
 ## 认证机制
 
 目前可参考的方案
