@@ -75,10 +75,17 @@ CanvasRenderingContext2D.isPointInPath()
 
 ### 坐标系
 
-左上角为原点，横轴向右是X正轴， 竖轴向下是Y正轴
+左上角为原点，横轴向右是X正轴， 竖轴向下是Y正轴. 引入“当前坐标系”概念，否则没有这个概念，所有的translate，rotate，scale都是依赖原点操作的。
+[Showing how to use transform methods on the HTML5 Canvas Context to selectively zoom in and out. Drag to pan](http://phrogz.net/tmp/canvas_zoom_to_cursor.html)
+
+二维的变换加上平移就是3x3的矩阵变换
+
+[canvas transform demo](https://playcode.io/1820156)
 
 ```js
 const ctx = canvas.getContent('2d');
+// 当前坐标系的原点是(0,0)
+ctx.translate(50, 50); // 现在坐标系的坐标点就是(50,50)
 // 以中心点center缩放scale系数
 ctx.translate(center.x, center.y);
 ctx.scale(scale, scale);
@@ -87,7 +94,7 @@ ctx.translate(-center.x, -center.y);
 
 目标坐标 = 屏幕坐标（点击产生） + （图形坐标（所求图形） - 屏幕坐标） x 缩放倍数
 
-如果canvas没有缩放超出视口范围，都好处理
+- [Pannable and zoomable area for graphic editors like Photoshop ](https://github.com/rokobuljan/zoompan)
 
 ## 参考
 

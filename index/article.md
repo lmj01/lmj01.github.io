@@ -22,6 +22,7 @@
 - [Mathjax](../articles/mathjax.md)
 - [build System](../dev-note/buildSystem.md)
 - [debug](../dev-note/debug.md)
+- [npm](../nodejs/npm.md)
 
 
 ### web
@@ -36,8 +37,6 @@
 #### [nodejs](../nodejs/index.md)
 - [测试模块](../nodejs/test.md)
 - [vue](../nodejs/vue.md)
-- [npm](../nodejs/npm.md)
-- [pnpm](../nodejs/pnpm.md)
 - [图像处理](../nodejs/ImageManipulation.md)
 - [diff算法原理](../nodejs/diff.md)
 - [electron框架](../nodejs/electron.md)

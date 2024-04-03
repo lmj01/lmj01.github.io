@@ -2,6 +2,13 @@
 
 ## bezier
 
+- [A Primer on Bézier Curves A free, online book for when you really need to know how to do Bézier things.](https://pomax.github.io/bezierinfo/)
+    - [github](https://github.com/lmj01/BezierInfo-2)
+
+## B-spline
+
+- [B-spline Curves: Closed Curves ](https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/spline/B-spline/bspline-curve-closed.html)
+
 ## Catmull-Rom 
 
 [Parameterization of Catmull-Rom Curves](http://www.cemyuksel.com/research/catmullrom_param/)

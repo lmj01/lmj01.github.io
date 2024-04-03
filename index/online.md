@@ -41,6 +41,10 @@
 
 ## 工具
 
+### 搜索技巧
+
+- 指定网站搜索， 如 canvas pick color area site:stackoverflow.com
+
 ### 文档
 
 - [PubScholar公益学术平台](https://pubscholar.cn/)
@@ -50,6 +54,9 @@
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - [HandWiki is a wiki encyclopedia for collaborative editing of articles on computing, science, technology and general knowledge](https://handwiki.org/wiki/Start)
 
+### playground
+
+- [Javascript Playground--邮箱meijie.lmj@outlook.com](https://playcode.io/)
 
 ### 在线工具
 - [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
