@@ -9,7 +9,9 @@ node --harmony script.js --version --help
 npm init
 vim index.js 
 node index.js
-npm init -w ./packages/a 创建子包
+npm init -w ./packages/a // 创建子包
+npm install libraryX --workspace packages/pA // 子工作区按照特定依赖
+npm i libraryX -w packages/pA
 ```
 
 包管理
