@@ -56,9 +56,17 @@ TrueType(CID)
 编码 Identity-H
 [TrueType CID fonts causing issues for clients with older printers](https://forum.aspose.com/t/truetype-cid-fonts-causing-issues-for-clients-with-older-printers/13530/3)
 
+## 渲染
+
+figma文字 > 矢量形状 > 屏幕像素
+
+- [canvas-editor基于canvas/svg的富文本编辑器](https://hufe.club/canvas-editor-docs/)
+
 
 ## 参考
 [Web 字体 font-family 该如何设置？](https://zhuanlan.zhihu.com/p/313284552)
 [cmap — Character to Glyph Index Mapping Table](https://learn.microsoft.com/en-us/typography/opentype/spec/cmap#encoding-records-and-encodings)
 [Fonts & Encodings](https://book.douban.com/subject/2362953/)
 [打印机分辨率增强技术](https://www.docin.com/p-878782126.html)
+- [opentype.js is an OpenType and TrueType font parser and writer. It allows you to access the letterforms of text from the browser or node.js. ](https://opentype.js.org/) 
+  - [github-Read and write OpenType fonts using JavaScript. ](https://github.com/opentypejs/opentype.js/)

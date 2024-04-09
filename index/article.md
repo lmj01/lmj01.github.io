@@ -22,8 +22,8 @@
 - [Mathjax](../articles/mathjax.md)
 - [build System](../dev-note/buildSystem.md)
 - [debug](../dev-note/debug.md)
-- [npm](../nodejs/npm.md)
-
+- [nodejs包管理](../nodejs/pkg.md)
+- [包管理C++](../dev-note/pkg.md)
 
 ### web
 - [网页开发内容](../web/index.md)
@@ -33,16 +33,14 @@
 - [css](../web/css.md)
 - [canvas](../cg/canvas.md)
 - [小程序开发](../web/mini.md)
-
-#### [nodejs](../nodejs/index.md)
-- [测试模块](../nodejs/test.md)
-- [vue](../nodejs/vue.md)
-- [图像处理](../nodejs/ImageManipulation.md)
-- [diff算法原理](../nodejs/diff.md)
-- [electron框架](../nodejs/electron.md)
-- [quill富文本编辑器](../nodejs/quill.md)
-- [压缩](../nodejs/zip.md)
-- [FRP-Functional Reactive Programming](../nodejs/frp.md)
+- [字体](../web/font.md)
+- [框架](../web/framework.md)
+- [测试模块](../web/test.md)
+- [图像处理](../web/ImageManipulation.md)
+- [diff算法原理](../web/diff.md)
+- [quill富文本编辑器](../web/quill.md)
+- [压缩](../web/zip.md)
+- [FRP-Functional Reactive Programming](../cpl/frp.md)
 
 ### 图形学
 - [裁剪](../cg/tools/culling.md)
