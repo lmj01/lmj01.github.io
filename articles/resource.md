@@ -73,3 +73,13 @@
 - [Top free book](https://www.topfreebooks.org/)
 - [公共电子书搜索](https://www.gitenberg.org/)
 - [在线数学之欧几里德](https://projecteuclid.org/)
+
+# 工具
+
+## 搜索
+```js
+// filetype:pdf // 搜索特定文件格式
+// A site http://XXX.com 搜索某网页中的内容
+// 格式：A intitle B （注意有2个空格）结果页面标题包含关键词
+// ss site stackoverflow.com
+```
