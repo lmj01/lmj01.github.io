@@ -1,8 +1,6 @@
 # CT
 
 - [vtk-js doc](https://kitware.github.io/vtk-js/docs/)
-- [CornerstoneJS](./library/cornerstonejs.md)
-
 
 ## 解剖名词
 ![解剖图示](../images/axial_sagittal.webp)
