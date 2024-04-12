@@ -38,21 +38,9 @@
 
 - [Denis Bakhvalov, 关于性能优化的一个博客](https://easyperf.net/)
 - [SaschaWillems,业余贡献实时3D以Khronos标准软件开发者](https://www.saschawillems.de/)
+- [Agner Fog Research, 涉及很多编程知识，很好的文档几何，作者自己更新自己的理解与文档](https://www.agner.org/?e=0#0)
 
 ## 工具
-
-### 搜索技巧
-
-- 指定网站搜索， 如 canvas pick color area site:stackoverflow.com
-
-### 文档
-
-- [PubScholar公益学术平台](https://pubscholar.cn/)
-- [国家标准全文公开系统](https://openstd.samr.gov.cn/bzgk/gb/index)
-- [msdn](https://learn.microsoft.com/zh-cn/)
-    - [个人关于微软的开发文档](https://msdn.itellyou.cn/)
-- [MDN Web Docs](https://developer.mozilla.org/en-US/)
-- [HandWiki is a wiki encyclopedia for collaborative editing of articles on computing, science, technology and general knowledge](https://handwiki.org/wiki/Start)
 
 ### playground
 

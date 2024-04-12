@@ -99,3 +99,4 @@ ctx.translate(-center.x, -center.y);
 ## 参考
 
 - [OffscreenCanvas-离屏canvas使用说明](https://zhuanlan.zhihu.com/p/100375855)
+- [canvas-scale](https://dustinpfister.github.io/2019/03/06/canvas-scale/),这篇文章很详细的介绍了canvas关于scale的细节，配合[playground](https://playcode.io/1833399)查看结果

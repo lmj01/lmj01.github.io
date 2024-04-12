@@ -81,5 +81,5 @@
 // filetype:pdf // 搜索特定文件格式
 // A site http://XXX.com 搜索某网页中的内容
 // 格式：A intitle B （注意有2个空格）结果页面标题包含关键词
-// ss site stackoverflow.com
+// ss site stackoverflow.com 指定网站搜索， 如 canvas pick color area site:stackoverflow.com
 ```

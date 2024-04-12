@@ -11,7 +11,6 @@
 
 ## [DICOM--Digital Imaging and Communications in Medicine](https://www.dicomlibrary.com/)
 
-
 ### 概念
 
 **Application Entity (AE)**，Application Entity 代表DICOM通信中的一个终端，可以代表一个系统或者一个程序。每个系统中的AE拥有一个唯一的Application Entity Title (AET) 。AET的要求时不能超过16个字节。一个设备上面可以有很多个AE。

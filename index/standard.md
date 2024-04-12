@@ -5,10 +5,10 @@
 - [Promises/A+](https://promisesaplus.com/)
 - [then Differences from Promises/A](https://promisesaplus.com/differences-from-promises-a)
 
-## W3C
+## [W3C](https://www.w3.org/)
 
-[MDN的文档用语](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Conventions_definitions#Experimental)
-
+- [W3C standards and drafts docs](https://www.w3.org/TR/?filter-tr-name=file+api)
+- [MDN的文档用语](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Conventions_definitions#Experimental)
 - [IETF Document](https://tools.ietf.org/html/)
 - [Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/uievents-code/#key-alphanumeric-writing-system)
@@ -52,6 +52,7 @@
 - [ImageMagick](https://imagemagick.org/index.php)
     - [The WebAssembly library for ImageMagick: magick-wasm](https://github.com/dlemstra/magick-wasm)
         - [browser demo](https://dlemstra.github.io/magick-wasm-docs/classes/magick-image)
+- [The Insight Toolkit (ITK) is an open-source, cross-platform toolkit for N-dimensional scientific image processing, segmentation, and registration. ](https://github.com/InsightSoftwareConsortium/ITK)
 
 
 ### OHIF
@@ -71,3 +72,9 @@
     - [Bittorrent Protocol Specification v1.0](https://wiki.theory.org/BitTorrentSpecification)
     - [tinyTorrent: 从头写一个 Deno 的 BitTorrent 下载器](https://cjting.me/2020/10/31/tinytorrent-a-deno-bt-downloader/)
     - [Simple, robust, BitTorrent tracker(client & server) implementation](https://github.com/webtorrent/bittorrent-tracker)
+- [PubScholar公益学术平台](https://pubscholar.cn/)
+- [国家标准全文公开系统](https://openstd.samr.gov.cn/bzgk/gb/index)
+- [msdn](https://learn.microsoft.com/zh-cn/)
+    - [个人关于微软的开发文档](https://msdn.itellyou.cn/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [HandWiki is a wiki encyclopedia for collaborative editing of articles on computing, science, technology and general knowledge](https://handwiki.org/wiki/Start)

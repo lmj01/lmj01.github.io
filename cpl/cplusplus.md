@@ -280,6 +280,8 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [C++ Template这个文章描述的很清晰,思路也很通畅](https://www.3dgep.com/beginning-cpp-template-programming/)
 - [C++ stories](https://www.cppstories.com/)
 - [PDFHummus is a Fast and Free C++ Library for Creating, Parsing an Manipulating PDF Files and Streams.](https://github.com/galkahana/PDF-Writer)
+- [Software optimization resources,涉及很多底层的技术和文档，值得去看看](https://www.agner.org/optimize/#manuals)
+    - [Calling conventions for different C++ compilers and operating systems](https://www.agner.org/optimize/calling_conventions.pdf),更新到2023年的技术
 
 ## 工具
 

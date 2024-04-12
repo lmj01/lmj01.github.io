@@ -1,10 +1,8 @@
 # articles
 
-- [留心的资源](../articles/resource.md)
-- [个人认识](../articles/personal.ideas.md)
+- [资源与工具](../articles/resource.md)
 - [3D引擎](../cg/engines.md)
 - [Markdown](../articles/markdown.md)
-- [资源与工具](../articles/resource.md)
 - [Mathjax](../articles/mathjax.md)
 - [数学概念笔记](../articles/notes/math.md)
 - [软硬件一体的项目](../articles/others/robot.md)

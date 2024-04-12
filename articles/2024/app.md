@@ -29,8 +29,9 @@ Electron面向纯前端开发者
 ## 放大镜Loupe
 
 对图片放大本质就是截取一种部分图片数据来显示
-- [Loupe.js allows you to add photorealistic loupes (magnifier) to images on your webpages. ](https://sprayhank.github.io/CVI/loupe/")这个使用canvas来实现，是因为它们需要一个更酷的效果,但是这个使用了两张图片来实现更酷的效果，这也是为什么需要两个canvas的原因
-- [Loupe demo (mouse over the image)](https://nishanths.github.io/loupe-js/)这个实现简单些，利用css背景截图来实现的部分效果
+- [Loupe.js allows you to add photorealistic loupes (magnifier) to images on your webpages. ](http://sprayhank.github.io/CVI/loupe/)这个使用canvas来实现，是因为它们需要一个更酷的效果,但是这个使用了两张图片来实现更酷的效果，这也是为什么需要两个canvas的原因
+- [Loupe demo (mouse over the image)](https://nishanths.github.io/loupe-js/)这个实现简单些，利用css背景截图来实现的部分效果[github有源码](https://github.com/nishanths/loupe-js)
+- [文言一心给出的一个方案，这个方案很简单，但是不能自绘canvas](https://playcode.io/1833399?v=2)
 - 游戏中也有放大的功能
     1. 实现倍镜，就是利用渲染区域的变化来控制，实现必须是perspective camera来投影渲染。是整块视图都改变了 
     2. 用两个摄像机，主相机不变，副相机渲染成一张RenderTexture，并将这种RenderTexture赋值给MirrorObject对象上,MirrorObject对副相机不可见
