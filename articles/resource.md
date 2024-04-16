@@ -77,6 +77,9 @@
 # 工具
 
 ## 搜索
+- [文言一心](https://yiyan.baidu.com/)
+- [kimi](https://kimi.moonshot.cn/chat/coe9ebcudu60c1rv78j0)
+
 ```js
 // filetype:pdf // 搜索特定文件格式
 // A site http://XXX.com 搜索某网页中的内容

@@ -1,6 +1,8 @@
-# CT
+# Computed Tomography
+> CT(Computed Tomography), 计算机断层成像
 
 - [vtk-js doc](https://kitware.github.io/vtk-js/docs/)
+- [DICOM Standard Browser](https://dicom.innolitics.com/ciods)
 
 ## 解剖名词
 ![解剖图示](../images/axial_sagittal.webp)
@@ -10,6 +12,15 @@
 
 
 ## [DICOM--Digital Imaging and Communications in Medicine](https://www.dicomlibrary.com/)
+
+- [DICOMweb™ is the DICOM Standard for web-based medical imaging. ](https://www.dicomstandard.org/using/dicomweb)
+- [C.11 Look Up Tables and Presentation States](https://dicom.nema.org/dicom/2013/output/chtml/part03/sect_C.11.html)
+    - [DICOM image display - DCMTK - three conversions of pixel data](https://programming.vip/docs/dicom-image-display-dcmtk-three-conversions-of-pixel-data.html)
+        1. pixel data,
+        2. modality lut 标准映射，不同厂家的范围调整到一个标准范围
+        3. voi lut 
+        4. presentation lut
+    - [[Medical] DICOM - 醫學影像的窗位、窗寬、調整斜率與調整截距心得筆記](https://dotblogs.azurewebsites.net/MemoryRecall/2021/07/17/170824)
 
 ### 概念
 
@@ -65,3 +76,11 @@ WADO:Web Access to DICOM Objects
 - hdr
 - ext
 - img
+
+## 术语
+
+- CT(Computed Tomography), 计算机断层成像，观察形态和密度
+- MRI(Magnetic Resonance Imaging), 核磁共振成像，可多参数、多序列、多方位成像，在软组织对比度方面具有较高优势
+- PET(Positron Emission Tomography), 正电子发射断层成像，PET 对疾病诊断的灵敏度高，但分辨率低
+- Ultrasound, 超声，可以清晰显示脏器及周围器官的各种断面像，接近解剖真实结构，因其价廉、简便、迅速、无创、无辐射性、准确、可连续动态及重复扫描等优势应用甚广
+- VOI(volumes of interest), 感兴趣区域
