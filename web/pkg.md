@@ -1,3 +1,11 @@
+# [node]()
+
+## update
+
+```js
+npm install -g n 非window上使用n来管理
+```
+
 # [npm](https://docs.npmjs.com/)
 
 ```bat
@@ -7,7 +15,7 @@ node --harmony script.js --version --help
 
 ```javascript
 npm init
-vim index.js 
+vim index.js
 node index.js
 npm init -w ./packages/a // 创建子包
 npm install libraryX --workspace packages/pA // 子工作区按照特定依赖
@@ -24,7 +32,7 @@ npm install XXX --save-dev 安装且写入package.json中的devDependencies
 npm install xxx@a.b.c --save-dev // 安装指定版本
 npm install update xxx --save-dev 指定升级某个包
 npm install xxx@latest --save-dev 安装最新版本
-npm install -ddd // 可以查看安装的细节  
+npm install -ddd // 可以查看安装的细节
 npm install relative-path // 把某个本地包安装进当前工程
 npm lx xxx 查询依赖的库信息
 ```
@@ -41,12 +49,12 @@ find . -name "node_modules" -print | xargs rm -rf
 
 ### proxy
 
-```shell 
-npm config get proxy 
-npm config get https-proxy 
+```shell
+npm config get proxy
+npm config get https-proxy
 // 确定没有设置代理， 返回为null， 否则强制设置为null
-npm config set proxy null 
-npm config set https-proxy null 
+npm config set proxy null
+npm config set https-proxy null
 
 npm config get registry
 npm config delete registry
@@ -96,7 +104,12 @@ pnpm i // 重新按照
 ```
 
 # [Yarn is a package manager](https://yarnpkg.com/)
+```js
+yarn install
+```
 
-# [Rollup](https://rollupjs.org/introduction/)
+# 打包工具
 
-# [webpack](https://www.webpackjs.com/)
+## [Rollup](https://rollupjs.org/introduction/)
+
+## [webpack](https://www.webpackjs.com/)

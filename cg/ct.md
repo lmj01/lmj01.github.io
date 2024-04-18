@@ -13,6 +13,7 @@
 
 ## [DICOM--Digital Imaging and Communications in Medicine](https://www.dicomlibrary.com/)
 
+- [DICOM简介](https://www.cnblogs.com/springyangwc/archive/2012/02/15/2353092.html)
 - [DICOMweb™ is the DICOM Standard for web-based medical imaging. ](https://www.dicomstandard.org/using/dicomweb)
 - [C.11 Look Up Tables and Presentation States](https://dicom.nema.org/dicom/2013/output/chtml/part03/sect_C.11.html)
     - [DICOM image display - DCMTK - three conversions of pixel data](https://programming.vip/docs/dicom-image-display-dcmtk-three-conversions-of-pixel-data.html)
@@ -21,6 +22,7 @@
         3. voi lut 
         4. presentation lut
     - [[Medical] DICOM - 醫學影像的窗位、窗寬、調整斜率與調整截距心得筆記](https://dotblogs.azurewebsites.net/MemoryRecall/2021/07/17/170824)
+
 
 ### 概念
 
