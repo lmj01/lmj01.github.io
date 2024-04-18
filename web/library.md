@@ -1,4 +1,5 @@
 # Quill
+> quill富文本编辑器
 
 ## dev
 
@@ -10,12 +11,12 @@ npm config set sharp_libvips_binary_host "https://npmmirror.com/mirrors/sharp-li
 
 ### rollup打包
 看不懂webpack的逻辑，直接增加rollup打包，思路就清晰了
-npm install rollup --save-dev    
+npm install rollup --save-dev
 npm install @rollup/plugin-typescript --save-dev
 npm install @rollup/plugin-image --save-dev
 npm install @rollup/plugin-replace --save-dev
 npm install @rollup/plugin-node-resolve --save-dev
-npm install @rollup/plugin-commonjs --save-dev   
+npm install @rollup/plugin-commonjs --save-dev
 npm install rollup-plugin-postcss --save-dev
 npm install rollup-plugin-rawsvg --save-dev
 
@@ -48,3 +49,32 @@ Parchment is Quill's document model. It is a parallel tree structure to the DOM 
 
 通过Parchment你可以自定义出Quill能够识别的内容和格式，或者添加全新的内容和格式。
 [一个例子](https://kang-bing-kui.gitbook.io/quill/zhi-nan-guides/clonewithparchment)
+
+# jszip
+
+```js
+new Promise(()=>{
+
+}).then(res=>{
+    // 字符串
+    if (res.byteLength < 100) {
+        const tmp = JSON.parse(new TextDecoder().decode(new Uint8Array(res)));
+    } else {
+        const zip = new JSZip();
+        zip.loadAsync(res).then(zip=>{
+            let i = 0;
+            for (const fname in zip.files) {
+                zip.file(fname).async('arraybuffer').then(img=>{
+                    const blob = new Blob([img]);
+                    i++;
+                    if (i == 4) {
+                    }
+                });
+            }
+        });
+    }
+})
+```
+# [node-gyp](https://github.com/nodejs/node-gyp)
+node-gyp is a cross-platform command-line tool written in Node.js for compiling native addon modules for Node.js. It contains a vendored copy of the gyp-next project that was previously used by the Chromium team and extended to support the development of Node.js native addons.
+

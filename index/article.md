@@ -21,7 +21,7 @@
 - [build System](../dev-note/buildSystem.md)
 - [debug](../dev-note/debug.md)
 - [powershell](../dev-note/powershell.md)
-- [nodejs包管理](../nodejs/pkg.md)
+- [nodejs包管理](../web/pkg.md)
 - [包管理C++](../dev-note/pkg.md)
 
 ### web
@@ -37,8 +37,7 @@
 - [测试模块](../web/test.md)
 - [图像处理](../web/ImageManipulation.md)
 - [diff算法原理](../web/diff.md)
-- [quill富文本编辑器](../web/quill.md)
-- [压缩](../web/zip.md)
+- [使用过的库](../web/library.md)
 - [FRP-Functional Reactive Programming](../cpl/frp.md)
 
 ### 图形学
