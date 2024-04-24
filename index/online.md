@@ -39,6 +39,7 @@
 - [Denis Bakhvalov, 关于性能优化的一个博客](https://easyperf.net/)
 - [SaschaWillems,业余贡献实时3D以Khronos标准软件开发者](https://www.saschawillems.de/)
 - [Agner Fog Research, 涉及很多编程知识，很好的文档几何，作者自己更新自己的理解与文档](https://www.agner.org/?e=0#0)
+- [Bjarne StroustrupC++之父的网站](https://www.stroustrup.com/)
 
 ## 工具
 

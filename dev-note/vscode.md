@@ -11,14 +11,14 @@ vscode的配置有两种形式
 ```json
 {
 	// 预览模式关闭，直接打开新的tab页面
-    "workbench.editor.enablePreview":false, 
-	
+    "workbench.editor.enablePreview":false,
+
 	// Customizes which terminal to run on Windows.
-	"terminal.external.windowsExec": "C:\\windows\\System32\\cmd.exe", 
-	
+	"terminal.external.windowsExec": "C:\\windows\\System32\\cmd.exe",
+
 	// The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
 	"terminal.integrated.shell.windows": "C:\\windows\\system32\\cmd.exe",
-	
+
 }
 ```
 
@@ -58,7 +58,7 @@ rem %USERPROFILE% 当前用户的配置文件目录
 rem %HOMEPATH% 当前用户的配置文件目录
 rem %APPDATA% 当前用户的配置文件目录
 rem 设置绝对路径
-call:set_absolute_path USERPROFILE .\.portable\User 
+call:set_absolute_path USERPROFILE .\.portable\User
 call:set_absolute_path APPDATA .\.portable\User\AppData\Roaming
 call:set_absolute_path mingwbin .\.portable\mingw64\bin
 call:set_absolute_path msysbin E:\IDE\msys1.0\bin
@@ -74,7 +74,7 @@ rem %~fX 将%X扩充到一个完全合格的路径名
 rem %~dX 将%X扩充到一个驱动号
 :set_absolute_path
 for /f %%p in ("%2") do (set %1=%%~fp)
-goto:eof 
+goto:eof
 ```
 
 VSCode的[extensions installed](<https://code.visualstudio.com/docs/editor/extension-gallery#_common-questions>)的路径
@@ -104,74 +104,6 @@ ${fileExtname}：当前打开文件的后缀名
 ${cwd}：当前执行目录
 ```
 
-## msys
-
-mingw只是编译的运行库，缺少相关的系统级的工具，就需要msys了。
-
-[msys-1.0](<https://sourceforge.net/projects/mingw/>)下载这个系统级别工具，安装到指定目录
-
-### 方案1
-
-把msys工具配置给mingw64使用，这样没有home路径，只能算是运行库和运行环境
-
-```bat
-@echo off
-set mingw=H:\\tools\\VSCode-win32-x64-1.38.0\\.portable\\mingw64
-set msys=H:\\tools\\msys\\1.0\\bin
-set PATH=%PATH%;%mingw%;%msys%
-
-start C:\Windows\System32\cmd.exe
-```
-
-### 方案2
-
-使用msys为入口，这样就存在home，和根目录root，就可以安装指定的软件，可以编译相关的软件来使用了。
-
-在msys.bat文件里面添加mingw的路径
-
-## clang-llvm
-
-### 方案1
-
-编译[llvm 8.0.0](http://releases.llvm.org/8.0.0/)版本
-
-```shell
-// llvm根目录
-llvm
-// 其他部分源码分两大类，tools和projects
-llvm/tools/clang
-llvm/tools/clang/tools/extra
-llvm/tools/lld
-llvm/tools/lldb
-llvm/tools/polly
-llvm/projects/compiler-rt
-llvm/projects/libcxx
-llvm/projects/libcxxabi
-llvm/projects/libunwind
-llvm/projects/openmp
-//
-```
-
-[编译参考](https://llvm.org/docs/CMake.html)
-
-```shell
-cmake -G"Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=~/llvm/install/8.0.0 ../../llvm-8.0.0
-cmake --build .
-cmake --build . --target install
-```
-
-mingw64-win32版本的mutex没有得到支持，编译不能通过，使用posix版通过至10%
-
-出现glibc的引发的连锁问题，改用vs编译发现lldb面前不支持window。这样就没有必要去做任何的尝试了。
-
-### 方案2
-
-mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm download page](http://releases.llvm.org/download.html)下载编译好的
-
-但是有个缺点就是没有lldb。 
-
-目前只能用来编译代码，还不能调试。
-
 ## 配置VSCode
 
 在VSCode的启动batch文件中设置LLVM的bin环境
@@ -188,7 +120,7 @@ mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm 
             "intelliSenseMode": "clang-x64",
             "includePath": [
                 "${workspaceFolder}",
-                "D:/App/MinGW/mingw64/include",         
+                "D:/App/MinGW/mingw64/include",
                 "D:\\llvm\\7.0.1-win64\\LLVM\\include",
                 "H:\\tools\\VSCode-win32-x64-1.38.0\\.portable\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0",
                 "H:\\tools\\VSCode-win32-x64-1.38.0\\.portable\\mingw64\\x86_64-w64-mingw32\\include"
@@ -201,7 +133,7 @@ mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm 
             ],
             "browse": {
                 "path": [
-                    "${workspaceFolder}"                    
+                    "${workspaceFolder}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
@@ -214,6 +146,8 @@ mingw的环境编译存在些许问题，相关的依赖库很难配齐，[llvm 
 }
 ```
 
+- Workbench › Editor: Enable Preview, 打开新的页面
+
 ### 快捷键
 
 Ctr + ` 打开集成终端
@@ -223,7 +157,7 @@ Ctr + Shift + ` 打开新终端
 
 安装Tex Live软件,使用清华的镜像，在VSCode中安装插件
 - latex workshop
-- latex preview 
+- latex preview
 
 配置参数, 参考使用就是啦！
 注意的是目录和参考文档的生成是需要中间文件的，而且是需要多次执行的

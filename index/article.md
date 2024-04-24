@@ -23,6 +23,7 @@
 - [powershell](../dev-note/powershell.md)
 - [nodejs包管理](../web/pkg.md)
 - [包管理C++](../dev-note/pkg.md)
+- [maven](../java/maven.md)
 
 ### web
 - [网页开发内容](../web/index.md)

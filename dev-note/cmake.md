@@ -47,3 +47,4 @@ MSBuild.exe INSTALL.vcxproj /p:Configuration=release
 - [CMake-tutorial中文教程](https://www.cnblogs.com/lnlin/p/16576418.html)
 - [CMake入门笔记系列（一）：CMake编译过程详解 | Micro CMake for C++](https://zhuanlan.zhihu.com/p/620839692)
 - [一个简单例子，完全入门CMake语法与CMakeList编写](https://zhuanlan.zhihu.com/p/630144233)
+- [CMake的自动传递依赖Configuring Transitive Dependencies with Modern CMake](https://www.cppmore.com/2024/04/22/configuring-transitive-dependencies-with-modern-cmake/)

@@ -100,3 +100,11 @@ ctx.translate(-center.x, -center.y);
 
 - [OffscreenCanvas-离屏canvas使用说明](https://zhuanlan.zhihu.com/p/100375855)
 - [canvas-scale](https://dustinpfister.github.io/2019/03/06/canvas-scale/),这篇文章很详细的介绍了canvas关于scale的细节，配合[playground](https://playcode.io/1833399)查看结果
+
+## 经验
+
+### 2024-4-19
+在使用CanvasRenderingContext2D.drawImage以canvas为参数时，关于图像的放大问题，会陷入使用图像的逻辑中，先以中心点放大，再截图。
+在使用canvas实现这个逻辑时，小程序上的实现让我很郁闷。表现出了不是预期的情况。
+最后就是简单的绘制一部分到另外一个canvas上，就产生了预期的结果。实在令人困扰。
+这个可能与微信中canvas实现机制有关，那就好奇实现原理了。

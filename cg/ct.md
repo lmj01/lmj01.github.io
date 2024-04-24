@@ -86,3 +86,4 @@ WADO:Web Access to DICOM Objects
 - PET(Positron Emission Tomography), 正电子发射断层成像，PET 对疾病诊断的灵敏度高，但分辨率低
 - Ultrasound, 超声，可以清晰显示脏器及周围器官的各种断面像，接近解剖真实结构，因其价廉、简便、迅速、无创、无辐射性、准确、可连续动态及重复扫描等优势应用甚广
 - VOI(volumes of interest), 感兴趣区域
+- Slab Thickness(), 三维图像数据中的一个切片或体检元素Voxel

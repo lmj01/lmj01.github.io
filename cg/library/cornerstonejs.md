@@ -19,3 +19,11 @@ yarn run serve-static-examples
 
 ## 文档
 - [一文(10图)了解Cornerstone3D核心概念(万字总结附导图) ](https://juejin.cn/post/7326432875955798027)
+
+## [OHIF Medical Imaging Viewer](https://github.com/lmj01/Viewers)
+
+### DICOM
+关于处理DICOM的部分，分了三部分
+- DICOM RT(Radiation Therapy)，是DICOM3.0的标准扩展，专门用于放射治疗
+- DICOM Seg(Segmentation), 涉及图像分割，是一种将医学影像中的特定结构、感兴趣区域与周围组织分离的过程
+- DICOM SR(Structured Reporting), 是DICOM标准的一部分，

@@ -6,6 +6,7 @@
 - PaaS, Platform as a service
 - SaaS, Software as a service
 - IQaaS, Intelligence as a service
+- [设计模式目录](https://refactoringguru.cn/design-patterns/catalog)
 
 ### Actor
 
