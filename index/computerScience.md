@@ -9,7 +9,7 @@
 - [Cplusplus](../cpl/cplusplus.md)
 - [ECMAScript](../cpl/ECMAScript.md)
 - [lua](../cpl/lua.md)
-- [Java](../java/Java.md)
+- [Java](../cpl/Java.md)
 
 ### Database
 
