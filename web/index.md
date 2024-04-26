@@ -1,22 +1,41 @@
 # Web
 
-- [web](./web.md)
-    - [浏览器](./browser.md)
-- [html](./html.md)
-    - [hover](./hover.md)
-- [CSS](./css.md)
-    - [适配屏幕](./adapt.screen.md)
-    - [font](./font.md)
-    
-- [http](./http.md)
-    - [nginx](./nginx.md)
-
-- [javascript](./JavaScript.md)
-    - [typescript](./typescript.md)
-    - [bable](./babel.md)
-    - [vue](./vue.md)
-- [多语言i18n](./i18n.md)
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
+- [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
+
+## 多语言
+> i18n是国际化的英文为 internationalization，为了方便，通常会简写为 i18n（开头的 i、中间的 18 个字符、末尾的 n）
+
+分三类信息，
+- message，文本的替换
+- date time format，时间日期的格式
+- number，数字格式，货币形式等
+
+但难点还是很多的：
+- 多语言的没有标准，使用起来就存在各种兼容的问题，如中文有zh,zh_CN等来区分中文， 可参考BCP 47，全称为Best Current Practice for Tags for the Identification of Languages，是一个基于RFC 5646标准的语言标签格式的建议标准。
+- 多语言还是影响视觉设计，开发时就需要考虑这些问题，不同语言的表述会导致字符的长度差异较大
+- 语言的字段是复用还是语义化，都是一个难点，随着需求的变化可能会有很大的影响
+- 符合用户习惯与不同文化的需求
+
+
+### **vue**
+
+把i18n实列对象放入Vue的实例中，通过this.$i18n.locale='zh'来设置对应的语言
+
+也可以存储在store或cookie中，
+
+但对惰性组件，如echarts这类需要重新渲染的，就需要手动处理了，方法有：
+- 利用watch监听locale字段是否发现变化，主动调用重新渲染
+- locale变化时直接this.reload强制刷新页面
+
+```js 
+new Vuei81n({
+    locale:'',
+    messages: {}, // $t(path)
+    numberFormats: {}, // $n()
+    dateTimeFormats: {}, // $d()
+})
+```
 
 ## library
 
@@ -41,7 +60,7 @@
 - [The WYSIWYG Editor of tomorrow available today](https://ckeditor.com/)
     - [CKEditor 5 is an ultra-modern JavaScript rich-text editor with MVC architecture, a custom data model, and virtual DOM](https://github.com/ckeditor/ckeditor5)
 
-- [Your powerful rich text editor.](https://quilljs.com/)
+- [Quill -- Your powerful rich text editor.](https://quilljs.com/)
     - [github](https://github.com/quilljs/quill)
 
 ### PDF
@@ -49,7 +68,7 @@
 - [PDF-LIB可写可修改](https://pdf-lib.js.org/) 字体必须内嵌，这样文件非常大，拷贝合并pdf时，内嵌字体还没法删除
     - [github](https://github.com/Hopding/pdf-lib)
 
-- [jspdf只能写](https://github.com/parallax/jsPDF)
+- [jspdf只能写 github](https://github.com/parallax/jsPDF)
 
 ### 数学
 - [regression-js是JS库，包含了linear least-squares filting methods对的数据分析方法，支持linear、exponential、logarithmic、power、polynomial几种常见的](https://github.com/Tom-Alexander/regression-js)
@@ -83,24 +102,6 @@ jszip.loadAsync(new Blob([buffer])).then(zip=>{
 - [An image magnifier for JavaScript](https://github.com/nishanths/loupe-js)
     - [demo](https://nishanths.github.io/loupe-js/?shape=rectangle)
 
-## 参考
-
-- [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
-
-# Node
-
-## 构建工具
-
-### [Parcel](https://parceljs.org/docs/)
-
-Parcel is a zero configuration build tool for the web
-
-### [rollup](https://rollupjs.org/introduction/)
-
-Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application. I
-
-
-## 相关库
 
 ### UI
 - [bootstrap](https://getbootstrap.com/)
@@ -108,11 +109,6 @@ Rollup is a module bundler for JavaScript which compiles small pieces of code in
 
 - [naive ui](https://www.naiveui.com/en-US/os-theme)
 
-
-### 其他
-
-- [jspdf](https://github.com/parallax/jsPDF)
-    - [npmjs](https://www.npmjs.com/package/jspdf)
 - [Element Plus](https://element-plus.org/en-US/component/button.html)
 
 - [ Fabric.js is a powerful and simple Javascript HTML5 canvas library ](http://fabricjs.com/)
@@ -127,3 +123,75 @@ Rollup is a module bundler for JavaScript which compiles small pieces of code in
     - [open jscad](https://openjscad.xyz/)
     - [CADit.app](https://cadit.app/)
     - [A jscad UI playground developed here and meant to be later contributed into jscad](https://github.com/hrgdavor/jscadui)
+
+## 参考
+
+# Test 
+
+# Test
+
+测试
+
+## TDD
+
+测试驱动开发， 在开发功能代码之前，先编写单元测试用例代码，确定需要编写的代码逻辑。TDD是XP(Extreme Programming)的核心实践
+
+## BDD
+
+行为驱动开发， 
+
+“开发软件系统最困难的部分就是准确说明开发什么” (“The hardest single part of building a software system is deciding precisely what to build” — No Silver Bullet, Fred Brooks)
+
+BDD(Behavior Driven Development), 提出者 Dan North 强调 BDD 不是关于测试的，它是在应用程序存在之前，写出用例与期望，从而描述应用程序的行为，并且促使在项目中的人们彼此互相沟通
+
+测试相关的配置
+
+vue创建工程时，有一个[Manually select features](https://lmiller1990.github.io/vue-testing-handbook/zh-CN/setting-up-for-tdd.html#%E5%AE%89%E8%A3%85-vue-cli)中可配置
+
+## Vue Test Utils
+
+the official unit testing utility library for Vue
+
+组件对应的测试文件<Component Name>.spec.js
+
+
+## Jest 
+
+
+## Karma
+
+npm install --save-dev karma karma-mocha karma-chrome-launcher karma-mocha-reporter karma-webpack mocha mocha-sinon sinon sinon-chai webpack karma-chai chai
+
+运行
+node .\node_modules\karma\bin\karma start
+node .\node_modules\karma\bin\karma init 
+
+- [karma.conf.js配置](https://karma-runner.github.io/5.2/config/configuration-file.html)
+- [karma-coverage](https://github.com/karma-runner/karma-coverage)测试覆盖率
+
+## webpack
+
+需要打包vue组件
+webpack karma-webpack 
+
+使用bable处理ES6语法
+babel-core babel-loader babel-preset-es2015
+
+Vue-cli3开始把webpack.config.js隐藏在node_modules/@vue/cli-service/webpack.config.js 直接引用这个就可以了, **这一步很重要，否则webpack的配置很难处理**
+
+## [Jasmine](https://github.com/jasmine/jasmine)
+
+TDD(Test Driven Development)测试驱动开发的框架，
+
+[Behavior-Driven JavaScript docs](https://jasmine.github.io/pages/docs_home.html)
+
+[2.9](https://jasmine.github.io/2.9/introduction)
+
+## [chai](https://github.com/chaijs/chai)
+
+[document](https://www.chaijs.com/)
+
+## 参考
+
+- [BDD](https://insights.thoughtworks.cn/when-we-talk-about-bdd/)
+- [vue unit test](https://vuejs.org/v2/cookbook/unit-testing-vue-components.html)

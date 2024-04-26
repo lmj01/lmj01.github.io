@@ -56,6 +56,9 @@ pnpm add libName --save // 按照库
 pnpm store status // 会出现问题，
 pnpm store path // 缓存路径
 pnpm store prune // 删除缓存
+// 工作区
+pnpm add react -w // 全局公共依赖
+pnpm add react --filter pkg1 // 指定项目按照
 ```
 
 ## [Yarn is a package manager](https://yarnpkg.com/)
@@ -77,9 +80,16 @@ yarn config delete registry
 yarn add libraryName -W --registry https://registry.npm.taobao.org
 ```
 
-## [Rollup](https://rollupjs.org/introduction/)
+## 打包工具
 
-## [webpack](https://www.webpackjs.com/)
+### [Rollup](https://rollupjs.org/introduction/)
+Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.
+
+### [webpack](https://www.webpackjs.com/)
+
+### [Parcel](https://parceljs.org/docs/)
+
+Parcel is a zero configuration build tool for the web
 
 ## 相关库
 
