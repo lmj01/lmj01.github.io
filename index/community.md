@@ -38,6 +38,11 @@
 
 ## 协议
 
+### License
+
+[Licensecc -- a C++ software license manager](https://github.com/open-license-manager/licensecc)
+
+
 ### [IDL(Interface Definition Language)](https://www.omg.org/spec/IDL/)
 
 - [An OMG® Interface Definition Language™ Publication Interface Definition Language™](https://www.omg.org/spec/IDL/4.2/PDF)
