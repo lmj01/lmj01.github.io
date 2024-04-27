@@ -24,6 +24,12 @@
 
 ### [Effective Debugging中文翻译开源版](https://celthi.github.io/effective-debugging-zh/)
 
+### [Fundamentals of Computer Graphhics fifth edition](https://book.douban.com/subject/35755152/)
+> 看过第四版了，现在当工具书使用
+
+### [Polygon Mesh Processing](https://book.douban.com/subject/5463738/)
+[官网有资源](http://www.pmp-book.org/)
+
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读
 - 囚徒的困境-冯·诺依曼、博弈论和原子弹之谜，已读

@@ -11,6 +11,8 @@
 - [lua](../cpl/lua.md)
 - [Java](../cpl/Java.md)
 
+- [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
+
 ### Database
 
 - [database](../database/database.md)
@@ -24,8 +26,9 @@
 - [LRU](../cpl/data.structure/LRU.md)
 - [树形结构](../cpl/data.structure/Tree.md)
 
-### 规范
+### 相关参考
 - [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
+- [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
 
 ## ComputerGraphics
 

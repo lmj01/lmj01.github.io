@@ -1,11 +1,11 @@
 # articles
 
-- [资源与工具](../articles/resource.md)
-- [3D引擎](../cg/engines.md)
-- [Markdown](../articles/markdown.md)
-- [Mathjax](../articles/mathjax.md)
-- [数学概念笔记](../articles/notes/math.md)
-- [软硬件一体的项目](../articles/others/robot.md)
+- [资源与工具](/articles/resource.md)
+- [3D引擎](/cg/engines.md)
+- [Markdown](/articles/markdown.md)
+- [Mathjax](/articles/mathjax.md)
+- [数学概念笔记](/articles/notes/math.md)
+- [软硬件一体的项目](/articles/others/robot.md)
 
 ### web
 - [网页开发内容](../web/index.md)
@@ -62,6 +62,7 @@
 - [2024](../articles/2024/app.md)
 - [2024经验](../articles/2024/experience.md)
 - [2024趋势](../articles/2024/trend.md)
+- [三维网格](../articles/notes/mesh.md)
 
 ## 2023
 
