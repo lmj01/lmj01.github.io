@@ -30,6 +30,9 @@
 ### [Polygon Mesh Processing](https://book.douban.com/subject/5463738/)
 [官网有资源](http://www.pmp-book.org/)
 
+### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
+> 该系列现在有6本了，属于理论比较高深的
+
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读
 - 囚徒的困境-冯·诺依曼、博弈论和原子弹之谜，已读

@@ -102,7 +102,7 @@
 - [3D Grafik - WebGL mit three.js](https://xprofan.net/intl/de/php,html,js/3d-grafik-webgl-mit-three-js/)
 - [use your mouse to control the camera and build an andorid](https://hofk.de/main/threejs/raycaster/raycaster.html)
 - [webgl examples](https://alteredqualia.com/)
-- [](https://github.com/brunosimon/folio-2019)
+- [22](https://github.com/brunosimon/folio-2019)
 
 ### 动画
 
@@ -136,6 +136,7 @@
 
 - [协同编辑](../articles/2023/associateEditor.md)
 - [Building a collaborative text editor in Go协同开发文本编辑器的go实现思考](https://www.aadhav.me/posts/collaborative-editor)
+- [CRDT相关的资料集A Conflict-free Replicated Data Type (CRDT) is a data structure that simplifies distributed data storage systems and multi-user applications.](https://crdt.tech/)
 
 
 ## 数值计算

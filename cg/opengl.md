@@ -191,6 +191,33 @@ glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 - [OGLplus's Documentation!](https://matus-chochlik.github.io/oglplu2/sphinx/index.html)
 - [github](https://github.com/matus-chochlik/oglplus)
 
+## tools
+
+### [glad](https://glad.dav1d.de/)
+
+- [Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specifications for multiple languages.](https://github.com/Dav1dde/glad)
+- [This is a webservice for glad, a multi-language Vulkan/GL/GLES/EGL/GLX/WGL loader-generator based on the official specifications.](https://github.com/Dav1dde/glad-web)
+
+初始化时，一定注意顺序，特别是封装成框架时，一定要注意这个顺序，否则调用任何gl的函数都会失败
+```js
+void initOpenGl() {
+    // 必须先执行
+    glewInit();
+    // glad的执行前提窗体的上下文context中，即需要先创建窗体
+    this->window = glfwCreateWindow(resolution.width, resolution.height, "OpenGL", NULL, NULL);
+    if (!this->window) {
+        glfwTerminate();
+        throw std::runtime_error("Failed to create GLFW window!");
+    }
+    glfwMakeContextCurrent(this->window);
+    // 执行任何gl函数前，需要初始化glad
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+    }
+}
+```
+
+
 ## 参考
 
 - [OpenGL基础，一个韩国人写的基础知识](http://www.songho.ca/opengl/index.html)
