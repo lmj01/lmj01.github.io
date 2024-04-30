@@ -86,6 +86,14 @@ yarn add libraryName -W --registry https://registry.npm.taobao.org
 Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.
 
 ### [webpack](https://www.webpackjs.com/)
+需要打包vue组件
+webpack karma-webpack 
+
+使用bable处理ES6语法
+babel-core babel-loader babel-preset-es2015
+
+Vue-cli3开始把webpack.config.js隐藏在node_modules/@vue/cli-service/webpack.config.js 直接引用这个就可以了, **这一步很重要，否则webpack的配置很难处理**
+
 
 ### [Parcel](https://parceljs.org/docs/)
 
@@ -94,6 +102,10 @@ Parcel is a zero configuration build tool for the web
 ## 相关库
 
 ### [nrm切缘源的工具](https://github.com/Pana/nrm)
+```js
+nrm ls
+nrm use
+```
 
 ### [nvm-windows](https://github.com/coreybutler/nvm-windows/releases)
 

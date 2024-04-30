@@ -1,5 +1,29 @@
 # Web
 
+- [网页开发内容](/web/index.md)
+- [webassembly](/web/webAssembly.md)
+- [http](/web/http.md)
+- [html](/web/html.md)
+- [css](/web/css.md)
+- [canvas](/cg/canvas.md)
+- [小程序开发](/web/mini.md)
+- [字体](/web/font.md)
+- [框架](/web/framework.md)
+- [测试模块](/web/test.md)
+- [图像处理](/web/ImageManipulation.md)
+- [diff算法原理](/web/diff.md)
+- [使用过的库](/web/library.md)
+- [FRP-Functional Reactive Programming](/cpl/frp.md)
+- [web](/web.md)
+- [浏览器](/web/browser.md)
+- [html](/web/html.md)
+- [CSS](/web/css.md)
+- [适配屏幕](/web/adapt.screen.md)
+- [font](/web/font.md)    
+- [http](/web/http.md)
+- [nginx](/web/nginx.md)
+- [javascript](/cpl/web/ECMAScript.md)
+
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
 
@@ -124,19 +148,13 @@ jszip.loadAsync(new Blob([buffer])).then(zip=>{
     - [CADit.app](https://cadit.app/)
     - [A jscad UI playground developed here and meant to be later contributed into jscad](https://github.com/hrgdavor/jscadui)
 
-## 参考
+## Test
 
-# Test 
-
-# Test
-
-测试
-
-## TDD
+**TDD**
 
 测试驱动开发， 在开发功能代码之前，先编写单元测试用例代码，确定需要编写的代码逻辑。TDD是XP(Extreme Programming)的核心实践
 
-## BDD
+**BDD**
 
 行为驱动开发， 
 
@@ -147,18 +165,18 @@ BDD(Behavior Driven Development), 提出者 Dan North 强调 BDD 不是关于测
 测试相关的配置
 
 vue创建工程时，有一个[Manually select features](https://lmiller1990.github.io/vue-testing-handbook/zh-CN/setting-up-for-tdd.html#%E5%AE%89%E8%A3%85-vue-cli)中可配置
+- [BDD](https://insights.thoughtworks.cn/when-we-talk-about-bdd/)
 
-## Vue Test Utils
+### [Jasmine](https://github.com/jasmine/jasmine)
 
-the official unit testing utility library for Vue
+TDD(Test Driven Development)测试驱动开发的框架，
 
-组件对应的测试文件<Component Name>.spec.js
+[Behavior-Driven JavaScript docs](https://jasmine.github.io/pages/docs_home.html)
+[2.9](https://jasmine.github.io/2.9/introduction)
 
+### Jest 
 
-## Jest 
-
-
-## Karma
+### Karma
 
 npm install --save-dev karma karma-mocha karma-chrome-launcher karma-mocha-reporter karma-webpack mocha mocha-sinon sinon sinon-chai webpack karma-chai chai
 
@@ -169,29 +187,6 @@ node .\node_modules\karma\bin\karma init
 - [karma.conf.js配置](https://karma-runner.github.io/5.2/config/configuration-file.html)
 - [karma-coverage](https://github.com/karma-runner/karma-coverage)测试覆盖率
 
-## webpack
-
-需要打包vue组件
-webpack karma-webpack 
-
-使用bable处理ES6语法
-babel-core babel-loader babel-preset-es2015
-
-Vue-cli3开始把webpack.config.js隐藏在node_modules/@vue/cli-service/webpack.config.js 直接引用这个就可以了, **这一步很重要，否则webpack的配置很难处理**
-
-## [Jasmine](https://github.com/jasmine/jasmine)
-
-TDD(Test Driven Development)测试驱动开发的框架，
-
-[Behavior-Driven JavaScript docs](https://jasmine.github.io/pages/docs_home.html)
-
-[2.9](https://jasmine.github.io/2.9/introduction)
-
-## [chai](https://github.com/chaijs/chai)
+### [chai](https://github.com/chaijs/chai)
 
 [document](https://www.chaijs.com/)
-
-## 参考
-
-- [BDD](https://insights.thoughtworks.cn/when-we-talk-about-bdd/)
-- [vue unit test](https://vuejs.org/v2/cookbook/unit-testing-vue-components.html)

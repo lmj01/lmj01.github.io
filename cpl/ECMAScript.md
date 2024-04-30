@@ -299,3 +299,9 @@ struct list_head {
 ### cutils.h/cutils.c
 
 一些位操作，与内存，字符编码，排序等有关的函数
+
+# Babel
+babel7舍弃了以前的 babel-*-* 的命名方式，改成了@babel/*-*
+处理流程
+
+![](../images/babel.png)

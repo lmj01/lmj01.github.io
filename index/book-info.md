@@ -10,6 +10,9 @@
 - 毛选，在读
 - 符号学：原理与推演，南京大学出版社，ISBN:9787305160516, 在读
 
+### [图解儿童逆反心理](https://book.douban.com/subject/20373323/)
+> 了解孩子的过程，就像有些道理知道，但是去做就是另一回事儿，阅读至少加深在做这个字眼上的付出
+
 ### [Learn OpenGL](../books/Learn%20OpenGL.md)
 
 模板测试，Object outlining的流程处理给出了一个方案
@@ -30,8 +33,6 @@
 ### [Polygon Mesh Processing](https://book.douban.com/subject/5463738/)
 [官网有资源](http://www.pmp-book.org/)
 
-### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
-> 该系列现在有6本了，属于理论比较高深的
 
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读
@@ -62,6 +63,8 @@
 - [A collection of academic papers, articles, and other resources that I plan to read or have read. ](https://github.com/jeffrey-xiao/papers/tree/master)
 - [Modern Robotics: Mechanics, Planning, and Control现代机器人学：机构、规划与控制](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)
 
+### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
+> 该系列现在有6本了，属于编程语言理论比较高深的, 程序的自动证明甚至程序的自动生成都是未来可能成熟的技术，形式化
 
 
 ## 网上资源
