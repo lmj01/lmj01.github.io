@@ -4,8 +4,8 @@
 - [3D引擎](/cg/engines.md)
 - [Markdown](/articles/markdown.md)
 - [Mathjax](/articles/mathjax.md)
-- [数学概念笔记](/articles/notes/math.md)
-- [数学概念笔记](/articles/notes/excel.md)
+- [数学笔记](/articles/notes/math.md)
+- [excel笔记](/articles/notes/excel.md)
 - [软硬件一体的项目](/articles/others/robot.md)
 
 ### 图形学
