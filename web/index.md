@@ -1,6 +1,5 @@
 # Web
 
-- [网页开发内容](/web/index.md)
 - [webassembly](/web/webAssembly.md)
 - [http](/web/http.md)
 - [html](/web/html.md)
@@ -23,6 +22,8 @@
 - [http](/web/http.md)
 - [nginx](/web/nginx.md)
 - [javascript](/cpl/web/ECMAScript.md)
+
+- [excel](/articles/notes/excel.md)
 
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)

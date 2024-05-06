@@ -8,10 +8,16 @@
 It provides data binding, data validation, filtering, sorting, and CRUD operations.
 >> 展示excel
 
+样式需要在这里指定
+
 ## [前端 Excel Workbook Manager ](https://github.com/exceljs/exceljs)
 > Read, manipulate and write spreadsheet data and styles to XLSX and JSON.
 > Reverse engineered from Excel spreadsheet files as a project.
 >> 读写和解析excel
+
+### 术语
+
+
 
 - [中文内容](https://github.com/exceljs/exceljs/blob/master/README_zh.md)
 

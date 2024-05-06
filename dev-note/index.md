@@ -16,3 +16,5 @@
 - [nodejs包管理](/web/pkg.md)
 - [包管理C++](/dev-note/pkg.md)
 - [maven](/dev-note/maven.md)
+
+- [硬件配置](/dev-note/hardware.md)

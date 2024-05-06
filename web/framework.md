@@ -11,7 +11,7 @@ window.addEventListener('hashchange', initial, false);
 Vue3.0新增了一个组件Teleport组件，将其所在组件模板内容内容移动到特定的DOM位置
 
 ## 参考
-- [Vue 技术栈 Vue3 + Pinia + Vite5 实现](https://github.com/zyronon/douyin)
+- [Vue 技术栈 Vue3 + Pinia + Vite5 实现, 可参考别人的代码逻辑](https://github.com/zyronon/douyin)
 
 # [Egg 后台框架](https://www.eggjs.org/)
 
