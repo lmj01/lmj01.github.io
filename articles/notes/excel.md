@@ -3,6 +3,11 @@
 
 [Excel JavaScript API 概述](https://learn.microsoft.com/zh-cn/office/dev/add-ins/reference/overview/excel-add-ins-reference-overview)
 
+## 概念
+
+### 自动筛选器
+就是设置过滤器，过滤一列的数据中的某种模式
+
 ## [Handsontable](https://github.com/handsontable/handsontable)
 > Handsontable is a JavaScript component that combines data grid features with spreadsheet-like UX.
 It provides data binding, data validation, filtering, sorting, and CRUD operations.
@@ -14,9 +19,6 @@ It provides data binding, data validation, filtering, sorting, and CRUD operatio
 > Read, manipulate and write spreadsheet data and styles to XLSX and JSON.
 > Reverse engineered from Excel spreadsheet files as a project.
 >> 读写和解析excel
-
-### 术语
-
 
 
 - [中文内容](https://github.com/exceljs/exceljs/blob/master/README_zh.md)
