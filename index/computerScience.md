@@ -2,29 +2,29 @@
 
 ## Programing Language
 
-- [编程语言](./programminglanguage.md)
-- [python](../cpl/python.md)
-- [rust](../cpl/rust.md)
-- [C](../cpl/c.md)
-- [Cplusplus](../cpl/cplusplus.md)
-- [ECMAScript](../cpl/ECMAScript.md)
-- [lua](../cpl/lua.md)
-- [Java](../cpl/Java.md)
+- [编程语言](/cpl/language.md)
+- [python](/cpl/python.md)
+- [rust](/cpl/rust.md)
+- [C](/cpl/c.md)
+- [Cplusplus](/cpl/cplusplus.md)
+- [ECMAScript](/cpl/ECMAScript.md)
+- [lua](/cpl/lua.md)
+- [Java](/cpl/Java.md)
 
 - [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
 
 ### Database
 
-- [database](../database/database.md)
-- [redis](../database/redis.md)
-- [MySql](../database/mysql.md)
-- [sql](../database/sql.md)
+- [database](/database/database.md)
+- [redis](/database/redis.md)
+- [MySql](/database/mysql.md)
+- [sql](/database/sql.md)
 
 ### 数据结构
 
-- [hash](../cpl/data.structure/hash.md)
-- [LRU](../cpl/data.structure/LRU.md)
-- [树形结构](../cpl/data.structure/Tree.md)
+- [hash](/cpl/data.structure/hash.md)
+- [LRU](/cpl/data.structure/LRU.md)
+- [树形结构](/cpl/data.structure/Tree.md)
 
 ### 相关参考
 - [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
@@ -42,10 +42,10 @@
     - [github](https://github.com/Pomax/bezierjs)
 
 ### 网格
-- [HalfEdge半边结构](../cg/tools/half-edge.md)
-- [网格划分](../cg/mesh/mesh-generation.md)
-- [NURBS](../cg/mesh/NURBS.md)
-- [曲线](../cg/tools/curve.md)
+- [HalfEdge半边结构](/cg/tools/half-edge.md)
+- [网格划分](/cg/mesh/mesh-generation.md)
+- [NURBS](/cg/mesh/NURBS.md)
+- [曲线](/cg/tools/curve.md)
 - [GMesh]()
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
@@ -55,15 +55,15 @@
     - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 - [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
 
-- [CAD相关笔记](../cg/tools/CAD.md)
-- [几何](../cg/geometry.md)
+- [CAD相关笔记](/cg/tools/CAD.md)
+- [几何](/cg/geometry.md)
 
 ### api
 
-- [GPU](../cg/gpu.md)
-- [OpenGL](../cg/opengl.md)
-- [webgl](../cg/webgl.md)
-- [Shader](../cg/shader.md)
+- [GPU](/cg/gpu.md)
+- [OpenGL](/cg/opengl.md)
+- [webgl](/cg/webgl.md)
+- [Shader](/cg/shader.md)
 - [vulkan]()
     - [Official Khronos Vulkan Samples](https://github.com/KhronosGroup/Vulkan-Samples)
     - [Vulkan C++ examples and demos ](https://github.com/SaschaWillems/Vulkan)
@@ -83,9 +83,9 @@
 
 ### Engine
 
-- [Bgfx](../cg/bgfx.md)
+- [Bgfx](/cg/bgfx.md)
 - [Iolite a modern,portable game engine with an embedded editor. Completely scriptable in Lua, Free for personal](https://iolite-engine.com/)
-- [babylonjs](../babylonjs/index.md)
+- [babylonjs](/cg/babylonjs/index.md)
 - [The-Forge](https://github.com/ConfettiFX/The-Forge)
 - [腾讯开源替换Skia的渲染器](https://github.com/Tencent/tgfx)
 - [OGLplus: a C++ wrapper for modern OpenGL©](https://oglplus.org/)
@@ -97,7 +97,7 @@
 
 #### threejs
 
-- [threejs 笔记](../cg/threejs/index.md)
+- [threejs 笔记](/cg/threejs/index.md)
 - [Beispiele webGL mit three.js ](https://hofk.de/main/threejs/)
 - [3D Grafik - WebGL mit three.js](https://xprofan.net/intl/de/php,html,js/3d-grafik-webgl-mit-three-js/)
 - [use your mouse to control the camera and build an andorid](https://hofk.de/main/threejs/raycaster/raycaster.html)
@@ -113,7 +113,7 @@
 ### Tool
 
 - [PAG Portable Animated Graphics](https://pag.art/)
-- [3d model file](../cg/tools/modelFile.md)
+- [3d model file](/cg/tools/modelFile.md)
 - [Effekseer特效编辑器](https://github.com/effekseer/Effekseer)
 - [Mitsuba渲染器](http://www.mitsuba-renderer.org/)
     - [github](https://github.com/mitsuba-renderer/mitsuba3)
@@ -146,13 +146,13 @@
 - [ALGLIB is a cross-platform numerical analysis and data processing library. It supports five programming languages (C++, C#, Java, Python, Delphi) and several operating systems (Windows and POSIX, including Linux). ](https://www.alglib.net/)
 
 ## AI 
-- [神经网络](../ai/neural.network.md)
-- [模型](../ai/model.md)
-- [参考应用模型](../ai/demo.md)
+- [神经网络](/ai/neural.network.md)
+- [模型](/ai/model.md)
+- [参考应用模型](/ai/demo.md)
 
 ## 其他
 
 - [计算机专业学习路线](https://hackway.org/docs/cs/intro)
-- [安全之攻击](../others/attacks.md)
+- [安全之攻击](/articles/time.attacks.md)
 - [The original sources of MS-DOS 1.25, 2.0, and 4.0 for reference purposes ](https://github.com/microsoft/MS-DOS)
 

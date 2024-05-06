@@ -30,3 +30,12 @@ null reference与Maybe语义
 
 ### 所有权
 rust语言的安全，就是通过所有权的确定来保证在运行期不会出现意外。
+
+### MSL(Memory-safe Language)
+内存安全语言，随着rust的普及，这种编程语言特性越来越重要了，2024-3月美国白宫周报提醒放弃使用不具备MSL的编程语言进行编程。
+- [C++ safety, in context译C++ 可靠性的背景](https://herbsutter.com/2024/03/11/safety-in-context/)
+
+### Composable
+> 可组合的，强调函数，是大型软件和云开发的一些概念基础
+
+- [A build system for development of composable software.JS版的可组合的管理开发](https://github.com/teambit/bit)
