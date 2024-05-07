@@ -2,8 +2,8 @@
 
 ## 编程
 
-- [溢出分析](../articles/overflow.md)
-- [计时攻击](../articles/time.attacks.md)
+- [溢出分析](/articles/safe/overflow.md)
+- [计时攻击](/articles/safe/time.attacks.md)
 
 ## 逆向工程
 
@@ -14,3 +14,13 @@
 ## 工具
 
 - [ImHex](https://github.com/WerWolv/ImHex)
+
+## 术语
+
+### [CVE(Common Vulnerabilities and Exposures)](https://www.cve.org/)
+> 公共漏洞和暴露，是公开披露的网络安全漏洞列表
+
+[通用漏洞评估系统（Common Vulnerability Scoring System，CVSS）是广泛应用的漏洞评分开放标准。CVSS的分值代表漏洞的严重程度，分值范围为0.0到10.0，数字越大漏洞的严重程度越高。CVSS评分往往是漏扫工具、安全分析工具不可或缺的信息。](https://www.cvedetails.com/)
+
+- [什么是 CVE（常见漏洞和暴露）？](https://informationsecurityasia.com/zh-CN/what-is-cve/)
+- [什么是CVE？](https://info.support.huawei.com/info-finder/encyclopedia/zh/CVE.html)

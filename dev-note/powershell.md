@@ -1,6 +1,8 @@
 # PowerShell
 
-[PowerShell 文档](https://learn.microsoft.com/zh-cn/powershell/)
+- [什么是 PowerShell？](https://learn.microsoft.com/zh-cn/powershell/scripting/overview?view=powershell-7.4)
+- [PowerShell 文档](https://learn.microsoft.com/zh-cn/powershell/)
+
 
 ```shell
 # 默认关闭

@@ -28,7 +28,20 @@
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
 
-## 多语言
+
+## WebGL
+
+### [threejs](https://threejs.org/)
+
+- [笔记](/cg/threejs/index.md)
+
+### [BabylonJS](https://www.babylonjs.com/)
+
+- [笔记](/cg/babylonjs/index.md)
+
+## library
+
+### 多语言
 > i18n是国际化的英文为 internationalization，为了方便，通常会简写为 i18n（开头的 i、中间的 18 个字符、末尾的 n）
 
 分三类信息，
@@ -43,7 +56,7 @@
 - 符合用户习惯与不同文化的需求
 
 
-### **vue**
+#### **vue**
 
 把i18n实列对象放入Vue的实例中，通过this.$i18n.locale='zh'来设置对应的语言
 
@@ -61,8 +74,6 @@ new Vuei81n({
     dateTimeFormats: {}, // $d()
 })
 ```
-
-## library
 
 ### 引导库
 

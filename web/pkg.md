@@ -50,6 +50,8 @@ npm config list
 
 ## [pnpm](https://pnpm.io/)
 
+- [中文文档](https://pnpm.io/zh/motivation)
+
 ```js
 pnpm i // 安装依赖
 pnpm add libName --save // 按照库
