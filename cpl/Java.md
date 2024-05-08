@@ -3,6 +3,10 @@
 
 - 编码
 	- Java默认字符是Unicode编码，而String类型的编码方式与JVM编码方式都与本机操作系统的默认字符集有关
+- [OpenJDK ](https://openjdk.org/)
+- jdk1.8需要maven3.3及以上 
+- jdk17需要maven3.8.8及以上
+
 
 ## 语言特性
 

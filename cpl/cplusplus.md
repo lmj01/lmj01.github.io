@@ -282,6 +282,7 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [PDFHummus is a Fast and Free C++ Library for Creating, Parsing an Manipulating PDF Files and Streams.](https://github.com/galkahana/PDF-Writer)
 - [Software optimization resources,涉及很多底层的技术和文档，值得去看看](https://www.agner.org/optimize/#manuals)
     - [Calling conventions for different C++ compilers and operating systems](https://www.agner.org/optimize/calling_conventions.pdf),更新到2023年的技术
+- [微软出品C++下一代的多态Proxy: Next Generation Polymorphism in C++](https://github.com/microsoft/proxy)
 
 ## 工具
 
@@ -289,6 +290,9 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [C++分析，可看到预处理状态](https://cppinsights.io/)
 - [C++Benchmark](https://quick-bench.com/q/6tDxsmk3FMX55B8W1RrdiG_s7_k)
 
+## 观点
+
 ### 里缪
+#### 2024
 > 我看标准的这些机制设计和其他一些架构，其中很重要的一条原则就是追求一致性。不仅是美学上的追求，一旦符合这种一致性，系统本身就具备适应变化的能力，从而能够抵抗非连续性问题。一切本质的东西都很简单，且具有美感。设计之初就追求一致性，本质是一种多阶思维，看似麻烦，往往能够解决很多未能提前发现的问题。
 >> 很多架构都是一致性的体现，一个项目之初如果不用架构，后面慢慢修改抽象，不断演进最后发现跟已有架构一个思路

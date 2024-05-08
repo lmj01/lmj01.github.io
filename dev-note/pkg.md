@@ -30,4 +30,10 @@ set(VCPKG_LIBRARY_LINKAGE dynamic)
 set(VCPKG_PLATFORM_TOOLSET v140)
 ``` 
 
-# []()
+# [vfox](https://github.com/version-fox/vfox)
+
+[文档](https://vfox.lhan.me/)
+
+- 绑定到shell中
+- vfox availabel 查看插件
+- vfox search java 查看所有版本

@@ -47,6 +47,8 @@
 
 ## online
 
+- [关于WebGL的shader的免费书籍The Book of Shaders -- by Patricio Gonzalez Vivo and Jen Lowe](https://thebookofshaders.com/)
+    - 
 - [Physically Based Rendering](https://www.pbr-book.org/3ed-2018/contents)
 - [设计数据密集型应用 - 中文翻译](http://ddia.vonng.com/#/)
     - [github](https://github.com/Vonng/ddia)
