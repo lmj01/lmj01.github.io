@@ -213,3 +213,13 @@ cherry-pick对子目录不太友好，会改变目录结构，迁移时更多选
 ## 打包
 
 - git archive --format zip --output path/zipfile.zip branch-name
+
+## ssh
+```shell
+sudo apt install ssh
+ssh-kengen -t rsa -C "your@eamil.com" # 生成密码，需要两次输入密钥，及密码，把生产的公钥拷贝到github上
+ssh -T git@github.com # 测试生成的是否连同
+mkdir repo-foloder && cd repo-folder
+git init
+git remote add origin git@github.com:Username/Repositories_Name.git # 现在这样仓库就处理好了。
+```
