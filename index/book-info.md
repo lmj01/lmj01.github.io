@@ -31,8 +31,7 @@
 > 看过第四版了，现在当工具书使用
 
 ### [Polygon Mesh Processing](https://book.douban.com/subject/5463738/)
-[官网有资源](http://www.pmp-book.org/)
-
+[记录](/cg/mesh/PolygonMeshProcessing.md)
 
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读

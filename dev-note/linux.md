@@ -1,17 +1,61 @@
 # Linux
 
+linux启动服务可能有两种
+- SysV init 系统，如wsl中的
+- systemd, 如ubuntu
+
+## packages
+> 包管理，是unix-like的系统的常用工具
+
+### [apt](https://www.debian.org/doc/manuals/apt-guide/index.en.html)
+
+```shell
+# 修改源
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bk
+sudo sed -i 's/security.ubuntu/mirrors.aliyun/g' /etc/apt/sources.list 
+sudo sed -i 's/archive.ubuntu/mirrors.aliyun/g' /etc/apt/sources.list
+sudo apt update
+sudo apt-get upgrade // 更新已安装的包到最新的
+
+apt-get update // 更新源
+apt-get install package 
+apt-get -f install // 修复安装
+apt-get remove package 
+apt-get remove package --purge 删除包，包括配置文件等
+apt-get clean & apt-get autoclean 清理无用的包
+apt-cache search package 
+apt-cache show package 获取包相关信息，如说明，大小，版本等
+
+apt-get build-dep package 安装相关的编译环境
+apt-get source package 下载当前包的源代码
+apt-get check 检查是否有损坏的依赖
+
+apt-get install build-essential 安装编译环境 这是编译系统时所依赖的软件包，这个时在Debian/Ubuntu的系统上进行编译开发必须的，与系统相关的功能有很强的依赖。这就是运行环境的安装，对比Window上的也是如此，你需要安装对应的SDK，否则你没法进行开发，因为应用开发都是在这些基础上的，在这个基础上你可以使用其他的软件或工具等进行开发。
+
+# 升级系统从18.04升级到20.04
+lsb_release -a // 查看当前信息
+uname -mrs // 内核
+# 更新源
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+sudo reboot
+# 
+sudo apt --purge autoremove
+sudo apt install update-manager-core
+sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认相关操作了
+```
+
+
 ## cli
 
-### find
 - find
     - name
     - user
     - type
-```js
+```shell
 find . -name "*libc*"
-
 ```
-### grep
 
 - grep
     - **grep -rn "xxx"**递归查找字符串xxx
@@ -31,27 +75,15 @@ find . -name "*libc*"
 
 - service
     - sudo service --status-all 查看服务列表
+
 - curl
+    1. GET请求， curl http://127.0.0.1:8080/login?admin&passwd=12345678
+    2. POST请求 curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login
+    3. curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
+
     - 
 - network
     - netstat -anp | grep 53
-
-
-### wsl的区别
-
-linux启动服务可能有两种
-- SysV init 系统，如wsl中的
-- systemd, 如ubuntu
-
-| systemd | sysvinit |
-| :---: | :---: |
-| systemctl start service_name | service service_name start |
-| stop | stop |
-| restart | restart |
-| systemctl status service_name | service service_name status |
-| systemctl enable service_name | chkconfig service_name on |
-| systemctl disable service_name | chkconfig service_name off|
-
 
 ## 环境搭建
 
@@ -89,3 +121,37 @@ unset DOWNLOAD
 # 重启电脑或执行才能起效
 source /etc/profile
 ```
+
+# WSL
+
+wslconfig /list
+wsl --list
+wsl --shutdown
+
+## bat
+- echo %XXX-path% 打印环境变量
+- netstat -aon | findstr "9090" 查看端口号
+- tasklist | findstr "pid" 查看进程
+- tasklist /fi "imagename eq nginx.exe"
+- taskkill /T /F /PID pid 终止进程pid
+- ip addr
+- ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1
+
+### 不能ping
+之前设置npm的淘宝镜像后，很多地方被改动了，查看resolv.con文件时是乱码，
+删除文件后重新设置如下字段就可以ping了。
+vim /etc/resolv.conf
+```bat
+nameserver 8.8.8.8
+nameserver 114.114.114.114
+```
+
+## win11
+安装完Ubuntu后，提示升级
+sudo apt update
+sudo apt upgrade
+sudo dpkg-reconfigure locales 配置其他字体
+
+## 参考
+
+- [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
