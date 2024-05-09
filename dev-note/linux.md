@@ -4,6 +4,8 @@ linux启动服务可能有两种
 - SysV init 系统，如wsl中的
 - systemd, 如ubuntu
 
+
+
 ## packages
 > 包管理，是unix-like的系统的常用工具
 
@@ -49,6 +51,8 @@ sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认�
 
 ## cli
 
+- echo $XDG_CURRENT_DESKTOP 查看当前图形GUI
+- echo $SHELL 查看shell是bash，zsh等那个
 - find
     - name
     - user
