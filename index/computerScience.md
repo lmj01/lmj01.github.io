@@ -25,7 +25,6 @@
 - [hash](/cpl/data.structure/hash.md)
 - [LRU](/cpl/data.structure/LRU.md)
 - [树形结构](/cpl/data.structure/Tree.md)
-
 ### 相关参考
 - [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
 - [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
@@ -112,6 +111,7 @@
 
 ### Tool
 
+- [数值计算](/cg/library/NumericCalculation.md)
 - [PAG Portable Animated Graphics](https://pag.art/)
 - [3d model file](/cg/tools/modelFile.md)
 - [Effekseer特效编辑器](https://github.com/effekseer/Effekseer)
@@ -131,19 +131,13 @@
 ## 网络
 
 - [著名技术作者 Beej 新发布的计算机网络底层概念的英文教程Beej's Guide to Network Concepts）](https://beej.us/guide/bgnet0/html/split/index.html)
+
 ### Distributed System
 > 分布式系统
 
-- [协同编辑](../articles/2023/associateEditor.md)
+- [协同编辑](/articles/2023/associateEditor.md)
 - [Building a collaborative text editor in Go协同开发文本编辑器的go实现思考](https://www.aadhav.me/posts/collaborative-editor)
 - [CRDT相关的资料集A Conflict-free Replicated Data Type (CRDT) is a data structure that simplifies distributed data storage systems and multi-user applications.](https://crdt.tech/)
-
-
-## 数值计算
-> numeric calculation
-
-- [求取近似值的一个小技巧](https://www.johndcook.com/blog/2023/02/07/mediant-approximation-trick/)
-- [ALGLIB is a cross-platform numerical analysis and data processing library. It supports five programming languages (C++, C#, Java, Python, Delphi) and several operating systems (Windows and POSIX, including Linux). ](https://www.alglib.net/)
 
 ## AI 
 - [神经网络](/ai/neural.network.md)
