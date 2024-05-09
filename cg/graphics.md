@@ -1,20 +1,89 @@
 # Graphics
 
-## 图形接口
-
 早期3D的API由驱动层提供，所有细节都是驱动贴近硬件实现的，在经过shader发展中，现代硬件越来越复杂了
 新时代的抽象图形接口vulkan来了，需要更具象化的过程，就是需要自己负责更多的事情
 - 任务调度
 - driver驱动
 
-## Thingking
+## GPU
+> Graphics Processing Unit
 
-### 2022-5-12
+- Asynchronous accelerator for graphics异步图形加速
+- parallel problem并行处理
+    1. if a single ALU take a branch, all ALUs will take it.一个分支所有都执行这个分支
+- GPU通过驱动获取API，意味着不能直接获取硬件信息
+- cache
+    1. constant cache
+    2. R/W cache
+    3. Texture cache
+    4. ROP(Render OutPut) cache
 
-开始分析图形学的工程实践了。
+渲染流程上分immediate mode和tiled-based GPU，各自有各种的优劣势
+```js
+// immediate mode
+foreach(triangle)
+    foreach(fragment in triangle)
+        load FBO data(color, depth, ...)
+        call fragment shader
+        store new FBO data
+// tiled-based
+foreach(fragment)
+    load FBO data(color, depth, ...)
+    foreach(triangle)
+        call fragment shader
+    store new FBO data
+// tile based rendering
+foreach(tile)
+    load tile FBO data(color, depth, ...)
+    foreach(triangle in tile)
+        foreach(fragment in triangle in tile)
+            call fragment shader
+    store new tile FBO data
+```
 
-### 2020-8-9
+### 参考
 
-图形学，在一些理论基础上，算是固定的，或是教科书上能列出来的东西，都是算是知识点，可是除了这些，还有一些特效，是在当前技术不能实现或达到要求的，通过迂回的方法来获得类似的结果，至少大部分人区分不了这些之间的差别。
-最近在分析别人的实现，隐适美的3D场景的显示，与实现的计算方案时，选择一个引擎，就发现其中的各种限制，比如关于orthographic camera的实现，目前还没有查到是与浏览器的实现，或本事就是存在的一种差异，比如对于阴影的实现，threejs是利用perspective camera来生成了一个结果来应用到结果上，如果全是orthographic camera的话，会产生什么样的结果呢？
-每次看到别人把多个引擎，多个三维软件的结果做对比，可见我还只是停留在知识点上。系统的分析其内容是需要深厚的知识储备的。
+- [GPU Architectures A CPU Perspective](https://courses.cs.washington.edu/courses/cse471/13sp/lectures/GPUsStudents.pdf)
+- [CPU vs. GPU Key Differences & Uses Explained](https://www.run.ai/guides/multi-gpu/cpu-vs-gpu)
+- [关于他的一篇GPU Architecture文章](https://github.com/Kangz)
+- [tiny-gpu A minimal GPU implementation in Verilog optimized for learning about how GPUs work from the ground up](https://github.com/adam-maj/tiny-gpu)
+
+## Render
+> 渲染器
+
+### phong
+
+### parallax mapping
+是一种类似于法线贴图的纹理技术，能显著增强模型或纹理的表面细节和凹凸感
+[GLRF_example实现了一个视差映射的demo](https://github.com/DunkleMango/GLRF_Example)
+
+
+## CAD
+
+### 编辑器子概念
+
+#### 吸附Absorb
+
+对一个元素拖拽时,生成当前元素与其他元素对齐的参考线,
+实现相近元素间的四条边与水平中心线或垂直中心线对齐.
+在拖动完成后实现自动吸附对齐
+
+应该是在编辑情况下,对于拖拽的元素自动对齐的功能
+
+#### 自动布局
+
+#### Frame
+图框
+#### 组
+
+### [exocad](https://exocad.com/)
+
+Exocad是一款跨平台的应用程序，免费使用。
+
+### 参考
+
+- [FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size](https://github.com/FreeCAD/FreeCAD)
+- [Analysis Situs, Analysis Situs is the open-source application and SDK for CAD feature recognition and more](https://analysissitus.org/index.html)
+- [Yet another modeling kernel? Hell, no.关于是否要从0开发一个新的几何内核](https://quaoar.su/blog/page/modeling-kernel-no-thanks)
+- [A 3D CAD application on your browser](https://chili3d.com/)
+    - [github](https://github.com/xiangechen/chili3d)

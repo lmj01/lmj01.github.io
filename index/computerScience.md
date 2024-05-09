@@ -31,6 +31,7 @@
 
 ## ComputerGraphics
 
+- [graphics图形学](/cg/graphics.md)
 - [Real-Time Rendering Resources](https://www.realtimerendering.com/)
 - [Ambient Occlusion](../cg/lighting/ambient-occlusion.md)
 - [smallpt: Global Illumination in 99 lines of C++](http://www.kevinbeason.com/smallpt/)
@@ -45,7 +46,6 @@
 - [网格划分](/cg/mesh/mesh-generation.md)
 - [NURBS](/cg/mesh/NURBS.md)
 - [曲线](/cg/tools/curve.md)
-- [GMesh]()
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
 - [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
@@ -53,15 +53,12 @@
     - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
     - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 - [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
-
-- [CAD相关笔记](/cg/tools/CAD.md)
 - [几何](/cg/geometry.md)
 
 ### api
 
-- [GPU](/cg/gpu.md)
 - [OpenGL](/cg/opengl.md)
-- [webgl](/cg/webgl.md)
+- [webgl](/cg/canvas.md)
 - [Shader](/cg/shader.md)
 - [vulkan]()
     - [Official Khronos Vulkan Samples](https://github.com/KhronosGroup/Vulkan-Samples)

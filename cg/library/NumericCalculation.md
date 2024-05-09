@@ -15,5 +15,6 @@ All Eigen matrices default to column-major storage order, but this can be change
 [github Cmake编译库，从源码拉起下来进行编译](https://github.com/scivision/mumps)
 
 ## 其他
+- [oneMKL Interfaces is an open-source implementation of the oneMKL Data Parallel C++ (DPC++) interface according to the oneMKL specification. It works with multiple devices (backends) using device-specific libraries underneath](https://github.com/oneapi-src/oneMKL)
 - [求取近似值的一个小技巧](https://www.johndcook.com/blog/2023/02/07/mediant-approximation-trick/)
 - [ALGLIB is a cross-platform numerical analysis and data processing library. It supports five programming languages (C++, C#, Java, Python, Delphi) and several operating systems (Windows and POSIX, including Linux). ](https://www.alglib.net/)
