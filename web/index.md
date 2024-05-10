@@ -28,6 +28,7 @@
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
 
+- [正则表达式](/cpl/js/regularExpressions.js)
 
 ## WebGL
 

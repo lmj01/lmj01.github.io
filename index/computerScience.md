@@ -10,6 +10,10 @@
 - [ECMAScript](/cpl/ECMAScript.md)
 - [lua](/cpl/lua.md)
 - [Java](/cpl/Java.md)
+- [Go](/cpl/go.md)
+- [Julia](https://julialang.org/)
+- [Elixir](https://elixir-lang.org/)
+- [Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.](https://ziglang.org/)
 
 - [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
 

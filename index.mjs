@@ -31,7 +31,7 @@ const patternExternal = /^(https?:|mailto:|tel:)/
 function tagLinkClickCaption(event, aLink) {
     event.stopPropagation();
     event.preventDefault();
-    const isSameOrigin = aLink.href.startsWith(rootOrigin) && aLink.href.endsWith('.md');
+    const isSameOrigin = aLink.href.startsWith(rootOrigin) && ['.md','.js','.cpp','.lua'].find(e=>aLink.href.endsWith(e));
     if (isSameOrigin) {
         // 只解析本地的markdown文件
         const tmp = `${rootRelative}${aLink.href.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    

@@ -1,5 +1,9 @@
 # 线上文章
 
+## 数学
+
+- [数学家记录史MacTutor is a free online resource containing biographies of more than 3000 mathematicians and over 2000 pages of essays and supporting materials. ](https://mathshistory.st-andrews.ac.uk/)
+
 ## 计算机
 
 ### 可视化
