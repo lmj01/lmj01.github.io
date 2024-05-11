@@ -22,7 +22,15 @@ function updateContent(text, options = {}) {
         elContent.appendChild(elIframe);
     } else {
         elContent.classList.remove('iframe');
-        elContent.innerHTML = marked.parse(text);
+        if (options.isSourceFile) {
+            const elPre = document.createElement('pre');
+            elPre.textContent = text;
+            elContent.replaceChildren();
+            elContent.appendChild(elPre);
+        } else {
+            elContent.innerHTML = marked.parse(text);
+        }
+        
         document.querySelectorAll('.main-content a').forEach(a=>tagLinkUpdateEvent(a));
     }
 }
@@ -33,10 +41,11 @@ function tagLinkClickCaption(event, aLink) {
     event.preventDefault();
     const isSameOrigin = aLink.href.startsWith(rootOrigin) && ['.md','.js','.cpp','.lua'].find(e=>aLink.href.endsWith(e));
     if (isSameOrigin) {
+        const isSourceFile = !aLink.href.endsWith('.md');
         // 只解析本地的markdown文件
         const tmp = `${rootRelative}${aLink.href.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    
         fetch(tmp)
-            .then(res=>res.text()).then(text=>updateContent(text));
+            .then(res=>res.text()).then(text=>updateContent(text, {isSourceFile}));
     } else {
         // window.open(aLink.href);
         /**

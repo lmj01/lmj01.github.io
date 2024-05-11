@@ -44,4 +44,5 @@ rust语言的安全，就是通过所有权的确定来保证在运行期不会�
 ## 工具
 
 ### [正则表达式regular expression](https://www.regular-expressions.info/)
-[js RegExp](/cpl/js/regularExpressions.js)
+- [New regular expression features in ECMAScript 6](https://2ality.com/2015/07/regexp-es6.html)
+- [js RegExp](/cpl/js/regularExpressions.js)
