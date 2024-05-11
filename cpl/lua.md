@@ -1,11 +1,6 @@
 # [lua](http://www.lua.org/)
 
-注释 
-
-```lua
--- xxx to c // xxx
---[[ xxx ]] to c /* xxx */
-```
+- [注释](/cpl/lua/comment.lua)
 
 ## 模块与包
 
@@ -13,27 +8,11 @@ lua的模块是由变量，函数等组成的table，其是加载机制通过req
 
 require的路径是全局变量package.path中的，lua启动后，有三个大致范围
 
-```lua
-print(package.path) -- 编译后执行的路径，并未安装
--- /usr/local/share/lua/x.y/?.lua;/usr/local/share/lua/x.y/?/init.lua;/usr/local/lib/lua/x.y/?.lua;/usr/local/lib/lua/x.y/?/init.lua;./?.lua;./?/init.lua
--- 添加环境变量 export LUA_PATH="~/lua/?.lua;;" 最后的;;表示加上原来默认的路径
-```
-
 C包，使用C为lua写包，是动态库的调用方式
 
 # lua-src
 
 lua把虚拟机执行代码的效率作为一个设计目标。lua的vm是Register based VM。
-
-```c
-// register based vm
-add a b c;
-// stack based vm
-push b;
-push c;
-add
-mov a
-```
 
 ## lopcodes
 
@@ -62,8 +41,6 @@ pow(2,18)=262144 => [0, 262143]
 ```shell
 luac -l -l src.lua
 ```
-
-
 
 ## 编译系统
 
@@ -95,16 +72,8 @@ proto对象是lua内部代表一个closure原型的对象，有关函数的大�
 
 lua没有使用llex和yacc生成，而是完全手写的词法和语法分析器，按功能划分，主要有三个模块
 
-#### 词法分析模块
 
-llex.h/c
-
-#### 语法分析模块
-
-lparser.h/c
-
-
-![](./images/lua-opcode.png)
+![lua-opcode](/images/lua_opcode.png)
 
 
 ```c
@@ -119,35 +88,6 @@ lparser.h/c
 - m，op model，就是iABC,iABx,iAsBx,iAx
 
 这里存在些疑惑，Opcode只占6bit，而opmode中的值占8bit，令人不解，多出来的一个bit是什么地方来的？
-
-#### 指令生成模块
-
-lcode.h/c
-
-#### 其他
-
-lprefix.h
-
-luaconf.h
-
-lua.h/c
-
-主要接口
-
-lctype.h/c
-
-针对非ASCII进行定义一些基础字符
-
-lmem.h/c
-
-lzio.h/c
-
-buffered streams，内存是stream形式，与C的File有点类似，核心就是两个函数luaZ_read,luaZ_fill
-
-lobject.h/c
-
-lua的类型定义
-
 
 ## 参考
 - [Lua Awesome-lua官方链接上的记录](https://github.com/LewisJEllis/awesome-lua)

@@ -1,10 +1,30 @@
+import hljs from './highlight/core.min.mjs';
+import languageJavascript from './highlight/languages/javascript.min.mjs';
+import languageLua from './highlight/languages/lua.min.mjs';
+import languageCpp from './highlight/languages/cpp.min.mjs';
+
+hljs.registerLanguage('javascript', languageJavascript);
+hljs.registerLanguage('lua', languageLua);
+hljs.registerLanguage('cpp', languageCpp);
+
 const rootRelative = location.pathname;
 const rootOrigin = location.origin;
+const ud = {};
 // 测试
 document.getElementById('content').innerHTML = marked.parse('# Marked in the browser\n\nRendered by **marked**.');
-
+const elBtnBack = document.createElement('button');
+elBtnBack.classList.add('btn', 'btn-primary', 'position-absolute', 'top-0', 'right-0');
+elBtnBack.textContent = 'Back';
+elBtnBack.addEventListener('click', ()=>{
+    if (ud.cacheHref) {
+        const elTag = document.createElement('a');
+        elTag.href = ud.cacheHref;
+        tagLinkClickCaption(null, elTag)
+    }
+})
 function updateContent(text, options = {}) {
     const elContent = document.getElementById('content');
+    elContent.classList.add('position-relative');
     if (options.isLink) {
         elContent.classList.add('iframe')
         const elIframe = document.createElement('iframe');
@@ -22,36 +42,48 @@ function updateContent(text, options = {}) {
         elContent.appendChild(elIframe);
     } else {
         elContent.classList.remove('iframe');
-        if (options.isSourceFile) {
+        const ext = options.ext || 'md';
+        if (ext == 'md') {
+            const elDiv = document.createElement('div');
+            elDiv.classList.add('w-100','h-100','d-flex','flex-column');
+            elDiv.innerHTML = marked.parse(text);
+            elContent.replaceChildren();
+            elContent.appendChild(elDiv);
+        } else {
+            const fixed = {js:'javascript', lua:'lua', cpp:'cpp'};
+            const res = hljs.highlight(text, {language:fixed[ext]});
             const elPre = document.createElement('pre');
-            elPre.textContent = text;
+            const elCode = document.createElement('pre');
+            elCode.innerHTML = res.value;
+            elPre.appendChild(elCode);
             elContent.replaceChildren();
             elContent.appendChild(elPre);
-        } else {
-            elContent.innerHTML = marked.parse(text);
         }
-        
         document.querySelectorAll('.main-content a').forEach(a=>tagLinkUpdateEvent(a));
     }
+    elContent.appendChild(elBtnBack);
 }
 
 const patternExternal = /^(https?:|mailto:|tel:)/
 function tagLinkClickCaption(event, aLink) {
-    event.stopPropagation();
-    event.preventDefault();
-    const isSameOrigin = aLink.href.startsWith(rootOrigin) && ['.md','.js','.cpp','.lua'].find(e=>aLink.href.endsWith(e));
-    if (isSameOrigin) {
-        const isSourceFile = !aLink.href.endsWith('.md');
+    if (event) {
+        event.stopPropagation();
+        event.preventDefault();
+    }
+    const strHref = aLink.href;
+    ud.cacheHref = strHref;
+    const ext = strHref.substring(strHref.lastIndexOf('.') + 1);
+    const isSameOrigin = strHref.startsWith(rootOrigin) && ['md','js','cpp','lua'].includes(ext);
+    if (isSameOrigin) {        
         // 只解析本地的markdown文件
-        const tmp = `${rootRelative}${aLink.href.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    
-        fetch(tmp)
-            .then(res=>res.text()).then(text=>updateContent(text, {isSourceFile}));
+        const tmp = `${rootRelative}${strHref.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    
+        fetch(tmp).then(res=>res.text()).then(text=>updateContent(text, {ext: ext}));
     } else {
         // window.open(aLink.href);
         /**
          * 不调整，还是留着当前页面内
          */
-        updateContent(aLink.href, {isLink:true})
+        updateContent(strHref, {isLink:true})
     }
 }
 

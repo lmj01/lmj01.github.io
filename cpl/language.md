@@ -45,4 +45,11 @@ rust语言的安全，就是通过所有权的确定来保证在运行期不会�
 
 ### [正则表达式regular expression](https://www.regular-expressions.info/)
 - [New regular expression features in ECMAScript 6](https://2ality.com/2015/07/regexp-es6.html)
+- [JS的XRegExp扩展的正则表达式 The one of a kind JavaScript regular expression library](https://xregexp.com/)
+    - [XRegExp Regular Expression Library for JavaScript](https://www.regular-expressions.info/xregexp.html)
+    - [github XRegExp provides augmented (and extensible) JavaScript regular expressions](https://github.com/slevithan/xregexp)
 - [js RegExp](/cpl/js/regularExpressions.js)
+
+### 语法高亮
+
+- [js版的highlight高亮配置,选中语言，下载后选择es版本的](https://highlightjs.org/download)

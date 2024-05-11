@@ -284,11 +284,15 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
     - [Calling conventions for different C++ compilers and operating systems](https://www.agner.org/optimize/calling_conventions.pdf),更新到2023年的技术
 - [微软出品C++下一代的多态Proxy: Next Generation Polymorphism in C++](https://github.com/microsoft/proxy)
 
-## 工具
+### 工具
 
 - [C++在线编译器，可以查看汇编等细节](https://godbolt.org/)
 - [C++分析，可看到预处理状态](https://cppinsights.io/)
 - [C++Benchmark](https://quick-bench.com/q/6tDxsmk3FMX55B8W1RrdiG_s7_k)
+### 代码例子
+- [crtp](/cpl/cpp/crtp.cpp)
+- [offsetof](/cpl/cpp/offsetof.cpp)
+- [reference](/cpl/cpp/reference.cpp)
 
 ## 观点
 

@@ -122,6 +122,13 @@
     - [github](https://github.com/BugzTroll/ConversionTool)
 - [粒子特效A simple program to simulate artificial life using attraction/reuplsion forces between many particles ](https://github.com/hunar4321/particle-life)
 
+### SVG
+> SVG编辑器
+- [Powerful SVG-Editor for your browser ](https://github.com/SVG-Edit/svgedit)
+    - fork的项目，更简单一些，取消了图层等功能
+        - [github Method Draw, the SVG Editor for Method of Action ](https://github.com/methodofaction/Method-Draw)
+        - [在线运行](https://editor.method.ac/)
+
 ### paper
 
 - [Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines](https://www.jcgt.org/published/0011/01/01/)
