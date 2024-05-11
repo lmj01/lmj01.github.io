@@ -47,3 +47,10 @@ em {
     font-style: normal;
     font-weight: bolder;
 }
+.mj-navigate-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px; 
+}

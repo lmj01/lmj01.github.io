@@ -9,16 +9,20 @@ hljs.registerLanguage('cpp', languageCpp);
 
 const rootRelative = location.pathname;
 const rootOrigin = location.origin;
-const ud = {};
+const ud = {
+    cacheUrls: [],
+};
 // 测试
 document.getElementById('content').innerHTML = marked.parse('# Marked in the browser\n\nRendered by **marked**.');
 const elBtnBack = document.createElement('button');
-elBtnBack.classList.add('btn', 'btn-primary', 'position-absolute', 'top-0', 'right-0');
+elBtnBack.classList.add('btn', 'btn-primary', 'mj-navigate-btn');
 elBtnBack.textContent = 'Back';
 elBtnBack.addEventListener('click', ()=>{
-    if (ud.cacheHref) {
+    console.log(ud.cacheUrls)
+    ud.cacheUrls.pop();
+    if (ud.cacheUrls.length > 0) {
         const elTag = document.createElement('a');
-        elTag.href = ud.cacheHref;
+        elTag.href = ud.cacheUrls.pop();
         tagLinkClickCaption(null, elTag)
     }
 })
@@ -71,7 +75,7 @@ function tagLinkClickCaption(event, aLink) {
         event.preventDefault();
     }
     const strHref = aLink.href;
-    ud.cacheHref = strHref;
+    ud.cacheUrls.push(strHref);
     const ext = strHref.substring(strHref.lastIndexOf('.') + 1);
     const isSameOrigin = strHref.startsWith(rootOrigin) && ['md','js','cpp','lua'].includes(ext);
     if (isSameOrigin) {        
@@ -79,7 +83,6 @@ function tagLinkClickCaption(event, aLink) {
         const tmp = `${rootRelative}${strHref.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    
         fetch(tmp).then(res=>res.text()).then(text=>updateContent(text, {ext: ext}));
     } else {
-        // window.open(aLink.href);
         /**
          * 不调整，还是留着当前页面内
          */
@@ -93,4 +96,5 @@ function tagLinkUpdateEvent(aLink) {
 }
 
 // 获取所有
+ud.cacheUrls = [];
 document.querySelectorAll('.side-menu a').forEach(a => tagLinkUpdateEvent(a));
