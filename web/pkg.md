@@ -2,7 +2,7 @@
 
 ## update
 
-```js
+```shell
 node --harmony script.js --version --help --harmony 传递给node参数的修饰
 npm install -g n 非window上使用n来管理
 npm config list
@@ -15,7 +15,7 @@ npm config list
 
 [npm-config](https://docs.npmjs.com/cli/v10/commands/npm-config)
 
-```js
+```shell
 npm init // 初始化工程
 npm init -w ./packages/a // 创建子包
 npm install libraryX --workspace packages/pA // 子工作区按照特定依赖
