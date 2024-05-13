@@ -1,3 +1,4 @@
+import {} from './marked.v4.3.0.min.js';
 import hljs from './highlight/core.min.mjs';
 import languageJavascript from './highlight/languages/javascript.min.mjs';
 import languageLua from './highlight/languages/lua.min.mjs';

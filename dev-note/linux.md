@@ -60,7 +60,6 @@ sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认�
 ```shell
 find . -name "*libc*"
 ```
-
 - grep
     - **grep -rn "xxx"**递归查找字符串xxx
     - **--exclude=*.{min.js}**排除文件类型
@@ -113,6 +112,17 @@ export PATH=$PATH:/home/lmj/anacoda2
 unset DOWNLOAD
 ```
 
+### ssh(Secure Shell Protocol)
+
+```shell
+sudo apt-get update
+sudo apt-get install openssh-server
+sudo systemctl status ssh 
+sudo ufw allow ssh 防火墙 -- ubuntu
+sudo systemctl disable --now ssh 禁用ssh
+sudo systemctl enable --now ssh 启用
+ssh lmj01@github.com 登录
+```
 永久设置环境变量，可直接更改系统启动文件或当前用户的启动文件
 
 - /etc/profile

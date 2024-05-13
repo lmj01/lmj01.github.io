@@ -1,10 +1,8 @@
 # dev-note 
 
 - [git](/dev-note/git.md)
-- [svn](/dev-note/svn.md)
 - [cmake](/dev-note/cmake.md)
 - [linux](/dev-note/linux.md)
-- [ssh](/dev-note/ssh.md)
 - [powershell](/dev-note/powershell.md)
 - [wsl](/dev-note/wsl.md)
 - [vscode](/dev-note/vscode.md)

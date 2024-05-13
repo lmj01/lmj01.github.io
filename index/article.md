@@ -2,7 +2,7 @@
 
 - [资源与工具](/articles/resource.md)
 - [3D引擎](/cg/engines.md)
-- [Markdown](/articles/markdown.md)
+- [Markdown](/articles/others/markdown.md)
 - [Mathjax](/articles/mathjax.md)
 - [数学笔记](/articles/notes/math.md)
 - [excel笔记](/articles/notes/excel.md)

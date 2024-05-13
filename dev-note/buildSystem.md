@@ -14,3 +14,9 @@
 > Ninja is a small build system with a focus on speed
 
 [github](https://github.com/ninja-build/ninja)
+[How To Install ninja-build on Ubuntu 20.04](https://installati.one/install-ninja-build-ubuntu-20-04/)
+
+## [bazel](https://bazel.google.cn/?hl=en)
+> a fast, scalable, multi-language and extensible build system.
+
+[github代码](https://github.com/bazelbuild/bazel)
