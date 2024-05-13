@@ -52,7 +52,7 @@ npm config list
 
 - [中文文档](https://pnpm.io/zh/motivation)
 
-```js
+```shell
 pnpm i // 安装依赖
 pnpm add libName --save // 按照库
 pnpm store status // 会出现问题，
@@ -67,7 +67,7 @@ pnpm add react --filter pkg1 // 指定项目按照
 
 - [yarn add](https://classic.yarnpkg.com/en/docs/cli/add)
 
-```js
+```shell
 yarn install
 yarn install --registry https://registry.npm.taobao.org
 // 清除缓存
@@ -104,7 +104,7 @@ Parcel is a zero configuration build tool for the web
 ## 相关库
 
 ### [nrm切缘源的工具](https://github.com/Pana/nrm)
-```js
+```shell
 nrm ls
 nrm use
 ```
@@ -117,7 +117,7 @@ nrm use
 - NVM_HOME， NVM_SYMLINK，PATH:%NVM_HOME%;%NVM_SYMLINK% 环境变量的设置
 
 ### sharp
-```js
+```shell
 yarn config set sharp_binary_host "https://npm.taobao.org/mirrors/sharp"
 yarn config set sharp_libvips_host "https://npm.taobao.org/mirrors/sharp-libvips"
 ```

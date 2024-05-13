@@ -33,10 +33,14 @@
 ### [Polygon Mesh Processing](https://book.douban.com/subject/5463738/)
 [记录](/cg/mesh/PolygonMeshProcessing.md)
 
+### [The Nurbs Book](https://book.douban.com/subject/3989660/)
+[记录](/cg/mesh/NURBS)
+
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读
 - 囚徒的困境-冯·诺依曼、博弈论和原子弹之谜，已读
 - 深度探索 C++对象模型，2001, 侯捷，已读
+- 阿城《棋王·树王·孩子王》,讲文革时代，抛弃20世纪80年代的语言逻辑回归宋明小说的语境之中，文字朴实。
 ### [软件设计-从专业到卓越](https://book.douban.com/subject/35966115/)
 > 豆瓣某编辑送阅的
 

@@ -3,7 +3,7 @@
 
 ## dev
 
-按照sharp
+安装sharp
 npm config get userconfig 获取配置信息
 npm config edit 打开默认的配置文件
 npm config set sharp_binary_host "https://npmmirror.com/mirrors/sharp"
@@ -20,7 +20,7 @@ npm install @rollup/plugin-commonjs --save-dev
 npm install rollup-plugin-postcss --save-dev
 npm install rollup-plugin-rawsvg --save-dev
 
-- 2024-1, 作者发布新版2.0了，暂时不去私自编译了，可以直接使用npm包了。
+- 2024-1, 作者发布新版2.0了，暂时不去私自编译了，可以直接使用npm包了。之前这样处理是因为作者有很长一个版本的锁定，没有正式发布，版本后不能切换到开放模式，自己打包提取核心功能以便工程需要。
 
 ## modules
 
@@ -50,9 +50,18 @@ Parchment is Quill's document model. It is a parallel tree structure to the DOM 
 通过Parchment你可以自定义出Quill能够识别的内容和格式，或者添加全新的内容和格式。
 [一个例子](https://kang-bing-kui.gitbook.io/quill/zhi-nan-guides/clonewithparchment)
 
+# [tinymce](https://www.tiny.cloud/docs/tinymce/latest/)
+> 自己需要一个编辑器，用来编辑并保存为HTML5格式，且需要数学公式，就需要这个强大的编辑器
+
+- [github项目](https://github.com/lmj01/tinymce)
+- [mathjax插件](https://github.com/lmj01/tinymce-mathjax)
+
+插件的写法可参考安装后的code插件来写。
+modules\tinymce\src\core\main\ts\api\Options.ts
+
 # jszip
 
-```js
+```javascript
 new Promise(()=>{
 
 }).then(res=>{
@@ -80,3 +89,6 @@ new Promise(()=>{
 # [node-gyp](https://github.com/nodejs/node-gyp)
 node-gyp is a cross-platform command-line tool written in Node.js for compiling native addon modules for Node.js. It contains a vendored copy of the gyp-next project that was previously used by the Chromium team and extended to support the development of Node.js native addons.
 
+# 其他库
+
+- [excel](/articles/notes/excel.md)

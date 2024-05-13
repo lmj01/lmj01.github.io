@@ -1,5 +1,7 @@
 # Web
 
+- [使用过的库](/web/library.md)
+- [正则表达式](/cpl/js/regularExpressions.js)
 - [webassembly](/web/webAssembly.md)
 - [http](/web/http.md)
 - [html](/web/html.md)
@@ -11,7 +13,6 @@
 - [测试模块](/web/test.md)
 - [图像处理](/web/ImageManipulation.md)
 - [diff算法原理](/web/diff.md)
-- [使用过的库](/web/library.md)
 - [FRP-Functional Reactive Programming](/cpl/frp.md)
 - [web](/web.md)
 - [浏览器](/web/browser.md)
@@ -23,12 +24,10 @@
 - [nginx](/web/nginx.md)
 - [javascript](/cpl/web/ECMAScript.md)
 
-- [excel](/articles/notes/excel.md)
 
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
 
-- [正则表达式](/cpl/js/regularExpressions.js)
 
 ## WebGL
 
@@ -88,7 +87,7 @@ new Vuei81n({
 
 ### 富文本编辑器
 
-- [Trusted WYSIWYG editor很简洁，没有图片](https://github.com/tinymce/)
+- [企业版的开源富文本编辑器The rich text editor behind great content creation experiences](https://github.com/tinymce/)
     - [TinyMCE](https://github.com/tinymce/tinymce)
 
 - [过时的YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. ](https://clarle.github.io/yui3/)

@@ -52,4 +52,4 @@ rust语言的安全，就是通过所有权的确定来保证在运行期不会�
 
 ### 语法高亮
 
-- [js版的highlight高亮配置,选中语言，下载后选择es版本的](https://highlightjs.org/download)
+- [js版的highlight高亮配置,选中语言，下载后选择es版本的，选择特定语言即可](https://highlightjs.org/download)
