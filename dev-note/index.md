@@ -1,5 +1,6 @@
 # dev-note 
 
+- [nodejs包管理](/web/pkg.md)
 - [git](/dev-note/git.md)
 - [cmake](/dev-note/cmake.md)
 - [linux](/dev-note/linux.md)
@@ -11,7 +12,6 @@
 - [build System](/dev-note/buildSystem.md)
 - [debug](/dev-note/debug.md)
 - [powershell](/dev-note/powershell.md)
-- [nodejs包管理](/web/pkg.md)
 - [包管理C++](/dev-note/pkg.md)
 - [maven](/dev-note/maven.md)
 

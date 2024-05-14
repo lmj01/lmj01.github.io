@@ -43,6 +43,9 @@ body {
     }
 }
 
+#content pre {
+    overflow: unset;
+}
 em {
     font-style: normal;
     font-weight: bolder;
@@ -53,4 +56,8 @@ em {
     right: 0;
     margin-right: 10px;
     margin-top: 10px; 
+}
+/* chrome浏览器的滚动条大小 */
+::-webkit-scrollbar {
+    width: 2px !important;
 }

@@ -1,8 +1,8 @@
-# [node]()
+# [node](https://nodejs.org/en)
 
 ## update
 
-```shell
+```js
 node --harmony script.js --version --help --harmony 传递给node参数的修饰
 npm install -g n 非window上使用n来管理
 npm config list

@@ -1,4 +1,4 @@
-import {} from './marked.v4.3.0.min.js';
+import { md2Html } from './libs/marked/mj-marked.mjs';
 import hljs from './highlight/core.min.mjs';
 import languageJavascript from './highlight/languages/javascript.min.mjs';
 import languageLua from './highlight/languages/lua.min.mjs';
@@ -14,7 +14,7 @@ const ud = {
     cacheUrls: [],
 };
 // 测试
-document.getElementById('content').innerHTML = marked.parse('# Marked in the browser\n\nRendered by **marked**.');
+document.getElementById('content').innerHTML = md2Html('# Marked in the browser\n\nRendered by **marked**.');
 const elBtnBack = document.createElement('button');
 elBtnBack.classList.add('btn', 'btn-primary', 'mj-navigate-btn');
 elBtnBack.textContent = 'Back';
@@ -51,7 +51,7 @@ function updateContent(text, options = {}) {
         if (ext == 'md') {
             const elDiv = document.createElement('div');
             elDiv.classList.add('w-100','h-100','d-flex','flex-column');
-            elDiv.innerHTML = marked.parse(text);
+            elDiv.innerHTML = md2Html(text);
             elContent.replaceChildren();
             elContent.appendChild(elDiv);
         } else {
@@ -99,3 +99,6 @@ function tagLinkUpdateEvent(aLink) {
 // 获取所有
 ud.cacheUrls = [];
 document.querySelectorAll('.side-menu a').forEach(a => tagLinkUpdateEvent(a));
+fetch('/articles/demo.md').then(res=>res.text()).then(text=>{
+    document.getElementById('content').innerHTML = md2Html(text);
+})

@@ -36,6 +36,10 @@
 ### [The Nurbs Book](https://book.douban.com/subject/3989660/)
 [记录](/cg/mesh/NURBS)
 
+### [金字塔原理丛书](https://book.douban.com/subject/25935981/)
+- MECE（发音：me see）分析法是 Mutually Exclusive Collectively Exhaustive的首字母缩写词，中文意思是"相互独立、完全穷尽"，即所谓的 "无重复、无遗漏"。
+
+
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读
 - 囚徒的困境-冯·诺依曼、博弈论和原子弹之谜，已读
@@ -62,6 +66,8 @@
 - [Algorithmica is an open-access web book dedicated to the art and science of computing.](https://en.algorithmica.org/)
     - [github](https://github.com/algorithmica-org/algorithmica)
 - [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.可在线可下载，适合博士或研究资料](https://softwarefoundations.cis.upenn.edu/)
+- [清华邓俊辉两门课，数据结构和计算几何](https://dsa.cs.tsinghua.edu.cn/~deng/index.htm)
+
 
 ### github resource
 
