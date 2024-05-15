@@ -19,7 +19,6 @@ const elBtnBack = document.createElement('button');
 elBtnBack.classList.add('btn', 'btn-primary', 'position-absolute', 'top-0', 'end-0', 'mt-3', 'me-3');
 elBtnBack.textContent = 'Back';
 elBtnBack.addEventListener('click', ()=>{
-    console.log(ud.cacheUrls)
     ud.cacheUrls.pop();
     if (ud.cacheUrls.length > 0) {
         const elTag = document.createElement('a');
@@ -75,7 +74,6 @@ function tagLinkClickCaption(event, aLink) {
         event.stopPropagation();
         event.preventDefault();
     }
-    console.log('22click', event, aLink, aLink.href)
     const strHref = aLink.href;
     ud.cacheUrls.push(strHref);
     const ext = strHref.substring(strHref.lastIndexOf('.') + 1);
