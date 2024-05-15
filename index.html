@@ -1,36 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- KaTeX requires the use of the HTML5 doctype. Without it, KaTeX may not render properly -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./libs/bootstrap-5.0.2-dist/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./index.css">
-    <script src="./libs/bootstrap-5.0.2-dist/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./highlight/styles/default.min.css">
-    <link rel="stylesheet" type="text/css" href="./highlight/styles/xcode.min.css">
-    <link rel="stylesheet" type="text/css" href="./libs/marked/katex.min.css">
-    <title>lmj01 document</title>
-  </head>
-  <body class="mj-body">
-    <section class="side-menu d-flex flex-column">
-      <a href="./index/book-info.md">book</a>
-      <a href="./dev-note/index.md">dev-note</a>
-      <a href="./web/index.md">dev-web</a>
-      <a href="./index/article.md">个人笔记</a>
-      <a href="./index/online.md">线上资源</a>
-      <a href="./index/standard.md">标准</a>
-      <a href="./index/community.md">Community</a>      
-      <a href="./index/computerScience.md">CS</a>      
-      <a href="./index/medicalScience.md">医学技术</a>
-      <a href="./cg/blender/index.md">Blender</a>
-      <a href="./html/index.html">网页</a>
-      <a href="./exercises/index.md">练习题</a>
-    </section>
-    <main class="main-content">
-      <div id="content"></div>
-    </main>
-    <script type="module" src="index.mjs"></script>
-  </body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./libs/bootstrap-5.0.2-dist/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script src="./libs/bootstrap-5.0.2-dist/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./highlight/styles/default.min.css">
+  <link rel="stylesheet" type="text/css" href="./highlight/styles/xcode.min.css">
+  <link rel="stylesheet" type="text/css" href="./libs/marked/katex.min.css">
+  <title>lmj01 Doc</title>
+</head>
+
+<body class="">
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">lmj01's Doc</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index/book-info.md">book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dev-note/index.md">dev-note</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/web/index.md">web</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index/article.md">笔记</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index/online.md">资源</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index/standard.md">标准</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index/community.md">社区</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index/computerScience.md">CS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index/medicalScience.md">医学</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/exercises/index.md">习题</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="d-flex">
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <main class="main-content my-2">
+    <div id="content"></div>
+  </main>
+  <script type="module" src="index.mjs"></script>
+</body>
+
 </html>

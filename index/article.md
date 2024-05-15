@@ -7,6 +7,7 @@
 - [数学笔记](/articles/notes/math.md)
 - [excel笔记](/articles/notes/excel.md)
 - [软硬件一体的项目](/articles/others/robot.md)
+- [Blender](/cg/blender/index.md)
 
 ### 图形学
 - [裁剪](../cg/tools/culling.md)

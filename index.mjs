@@ -16,7 +16,7 @@ const ud = {
 // 测试
 document.getElementById('content').innerHTML = md2Html('# Marked in the browser\n\nRendered by **marked**.');
 const elBtnBack = document.createElement('button');
-elBtnBack.classList.add('btn', 'btn-primary', 'mj-navigate-btn');
+elBtnBack.classList.add('btn', 'btn-primary', 'position-absolute', 'top-0', 'end-0', 'mt-3', 'me-3');
 elBtnBack.textContent = 'Back';
 elBtnBack.addEventListener('click', ()=>{
     console.log(ud.cacheUrls)
@@ -64,7 +64,7 @@ function updateContent(text, options = {}) {
             elContent.replaceChildren();
             elContent.appendChild(elPre);
         }
-        document.querySelectorAll('.main-content a').forEach(a=>tagLinkUpdateEvent(a));
+        catchAllTagLink();
     }
     elContent.appendChild(elBtnBack);
 }
@@ -75,6 +75,7 @@ function tagLinkClickCaption(event, aLink) {
         event.stopPropagation();
         event.preventDefault();
     }
+    console.log('22click', event, aLink, aLink.href)
     const strHref = aLink.href;
     ud.cacheUrls.push(strHref);
     const ext = strHref.substring(strHref.lastIndexOf('.') + 1);
@@ -95,10 +96,12 @@ function tagLinkUpdateEvent(aLink) {
     aLink.removeEventListener('click', tagLinkClickCaption);
     aLink.addEventListener('click', (event)=> tagLinkClickCaption(event, aLink), false);
 }
-
+function catchAllTagLink() {
+    document.querySelectorAll('a').forEach(a => tagLinkUpdateEvent(a));
+}
 // 获取所有
 ud.cacheUrls = [];
-document.querySelectorAll('.side-menu a').forEach(a => tagLinkUpdateEvent(a));
+catchAllTagLink();
 fetch('/articles/demo.md').then(res=>res.text()).then(text=>{
     document.getElementById('content').innerHTML = md2Html(text);
 })
