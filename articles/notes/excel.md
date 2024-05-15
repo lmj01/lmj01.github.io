@@ -13,6 +13,8 @@
 It provides data binding, data validation, filtering, sorting, and CRUD operations.
 >> 展示excel
 
+- [api doc](https://handsontable.com/docs/javascript-data-grid/api/)
+
 样式需要在这里指定
 
 ## [前端 Excel Workbook Manager ](https://github.com/exceljs/exceljs)
