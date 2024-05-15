@@ -35,6 +35,10 @@
 
 ## ComputerGraphics
 
+- [OpenGL](/cg/api.opengl.md)
+- [webgl](/cg/canvas.md)
+- [Shader](/cg/shader.md)
+- [vulkan](/cg/api.modern.md)
 - [graphics图形学](/cg/graphics.md)
 - [Real-Time Rendering Resources](https://www.realtimerendering.com/)
 - [Ambient Occlusion](../cg/lighting/ambient-occlusion.md)
@@ -58,20 +62,6 @@
     - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 - [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
 - [几何](/cg/geometry.md)
-
-### api
-
-- [OpenGL](/cg/opengl.md)
-- [webgl](/cg/canvas.md)
-- [Shader](/cg/shader.md)
-- [vulkan]()
-    - [Official Khronos Vulkan Samples](https://github.com/KhronosGroup/Vulkan-Samples)
-    - [Vulkan C++ examples and demos ](https://github.com/SaschaWillems/Vulkan)
-    - [Vulkan Guide](https://github.com/KhronosGroup/Vulkan-Guide)
-    - [Vulkan Tutorial ](https://vulkan-tutorial.com/)
-    - [vulkan-renderer,Inexor is an open-source project which combines modern C++ with Vulkan API.](https://github.com/inexorgame/vulkan-renderer)
-    - [vulkan with pbrt](https://github.com/Lachei/VulkanPBRT/tree/master/shaders)
-    - [Vulkan-Hpp: C++ Bindings for Vulkan](https://github.com/KhronosGroup/Vulkan-Hpp)
 
 ### UI
 

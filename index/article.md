@@ -29,6 +29,8 @@
 
 ### [openmesh](https://www.graphics.rwth-aachen.de/software/openmesh/)
 
+- [本项目的计划](/articles/selfPlans.md)
+
 ## 2024
 
 - [2024](../articles/2024/app.md)

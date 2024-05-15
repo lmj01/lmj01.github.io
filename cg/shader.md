@@ -137,6 +137,7 @@ mat3(
 
 ### WebGPU
 
+- [gpuweb](https://www.w3.org/community/gpu/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/)
 - [WebGPU深入探索](http://www.bimant.com/blog/webgpu-deep-dive/)
@@ -147,6 +148,8 @@ mat3(
 
 ## 参考
 
+- [Nvidia Turing GPU 光栅化管线中的全新渲染技术](http://on-demand.gputechconf.com/gtc-cn/2018/pdf/CH8801.pdf)
+- [Task/Mesh Pipeline](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
 - [the books of shader详细解说shader的开源书籍](https://thebookofshaders.com/)
 - [GPU Pro 360 Guide to Geometry Manipulation书籍]()
 
