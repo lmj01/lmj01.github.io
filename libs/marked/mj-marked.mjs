@@ -21218,12 +21218,10 @@ function md2Html(md) {
         var str = el.textContent || '';
         if (((_a = str.match(regex)) === null || _a === void 0 ? void 0 : _a.length) == 2) {
             str = str.replace(regex, '');
-            console.log(1, el.textContent);
             katex.render(str, el, {
                 throwOnError: false,
                 leqno: true,
             });
-            console.log(2, el.textContent);
         }
     });
     return elDiv.innerHTML;
