@@ -27,3 +27,10 @@ CAD的开花理论，
 
 ## 参考
 - [代数几何小科普3：怎么知道方程(组)有解？ ](https://blog.sciencenet.cn/blog-1646100-818073.html)
+- [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
+- [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
+- [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
+- [Brillouin zone visualisation tool，维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces)
+    - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
+    - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
+- [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)

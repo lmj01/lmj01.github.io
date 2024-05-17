@@ -28,6 +28,8 @@ apt-get clean & apt-get autoclean 清理无用的包
 apt-cache search package 
 apt-cache show package 获取包相关信息，如说明，大小，版本等
 
+apt search '^g\+\+-[0-9]+$' 获取可安装的版本
+
 apt-get build-dep package 安装相关的编译环境
 apt-get source package 下载当前包的源代码
 apt-get check 检查是否有损坏的依赖

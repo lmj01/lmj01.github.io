@@ -34,18 +34,18 @@
 
 ## 2024
 
-- [2024](../articles/2024/app.md)
-- [2024经验](../articles/2024/experience.md)
-- [2024趋势](../articles/2024/trend.md)
-- [三维网格](../articles/notes/mesh.md)
+- [2024](/articles/2024/app.md)
+- [2024经验](/articles/2024/experience.md)
+- [2024趋势](/articles/2024/trend.md)
+- [三维网格](/articles/notes/mesh.md)
 
 ## 2023
 
-- [2023](../articles/2023/app.md)
-- [透视与绘画](../articles/2023/Perspective.md)
-- [打印相关](../articles/2023/printer.md)
-- [用户 角色 权限的通用设计](../articles/2023/userRolePermission.md)
-- [农历历法](../articles/2023/chineseCalendar.md)
-- [回归分析法](../articles/2023/regression.md)
-- [协同编辑](../articles/2023/associateEditor.md)
-- [Fractional Indexing小数索引技术](../articles/2023/fractionalIndexing.md)
+- [2023](/articles/2023/app.md)
+- [透视与绘画](/articles/2023/Perspective.md)
+- [打印相关](/articles/2023/printer.md)
+- [用户 角色 权限的通用设计](/articles/2023/userRolePermission.md)
+- [农历历法](/articles/2023/chineseCalendar.md)
+- [回归分析法](/articles/2023/regression.md)
+- [协同编辑](/articles/2023/associateEditor.md)
+- [Fractional Indexing小数索引技术](/articles/2023/fractionalIndexing.md)
