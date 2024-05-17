@@ -43,3 +43,6 @@ em {
 ::-webkit-scrollbar {
     width: 2px !important;
 }
+.navbar-nav .nav-link.active {
+    color: var(--bs-primary)!important;
+}

@@ -73,6 +73,16 @@ function tagLinkClickCaption(event, aLink) {
     if (event) {
         event.stopPropagation();
         event.preventDefault();
+        const target = event.target.parentNode;
+        if (target instanceof HTMLLIElement && target.classList.contains('nav-item')) {
+            const elUl = target.parentNode;
+            for (let i = 0; i < elUl.children.length; i++) {
+                const elLi = elUl.children[i];
+                elLi.children[0].classList.remove('active');
+            }
+            event.target.classList.add('active');
+        }
+        console.log(target, event)
     }
     const strHref = aLink.href;
     ud.cacheUrls.push(strHref);
