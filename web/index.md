@@ -160,6 +160,12 @@ jszip.loadAsync(new Blob([buffer])).then(zip=>{
     - [CADit.app](https://cadit.app/)
     - [A jscad UI playground developed here and meant to be later contributed into jscad](https://github.com/hrgdavor/jscadui)
 
+
+## [组件开发]()
+
+- [表情拾取组件A lightweight emoji picker, distributed as a web component.](https://github.com/nolanlawson/emoji-picker-element)
+- [一个纯JS实现的框架](https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/)
+
 ## Test
 
 **TDD**

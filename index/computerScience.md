@@ -23,6 +23,7 @@
 - [redis](/database/redis.md)
 - [MySql](/database/mysql.md)
 - [sql](/database/sql.md)
+- [sqlite](/database/sqlite.md)
 
 ### 数据结构
 

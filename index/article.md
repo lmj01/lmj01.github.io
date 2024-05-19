@@ -37,6 +37,7 @@
 - [2024](/articles/2024/app.md)
 - [2024经验](/articles/2024/experience.md)
 - [2024趋势](/articles/2024/trend.md)
+- [nocobase项目](/articles/2024/nocobase.md)
 - [三维网格](/articles/notes/mesh.md)
 
 ## 2023

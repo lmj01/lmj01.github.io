@@ -1,5 +1,11 @@
 
 # dev
+```shell
+npm install or 
+PUPPETEER_SKIP_DOWNLOAD=true npm install on ubuntu
+npm run build:dev 安装工具
+npm watch dev
+```
 先执行
 npm run start
 打开packages/tools目录下服务，执行相应的script
