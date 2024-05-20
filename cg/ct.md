@@ -69,6 +69,7 @@ WADO:Web Access to DICOM Objects
 - [itk-document](https://docs.itk.org/en/latest/learn/faq.html#how-do-i-read-a-volume-from-a-dicom-series)
     - [itk-wasm document](https://wasm.itk.org/en/latest/typescript/distribution/vite.html)
 - [医疗业务学习笔记--DICOM协议的基础内容](https://zhuanlan.zhihu.com/p/74966427)
+- [一些资源与解析库A curated list of awesome DICOM resources and libraries.](https://github.com/open-dicom/awesome-dicom)
 
 ## [NII](https://nifti.nimh.nih.gov/pub/dist/doc/ANALYZE75.pdf)
 
