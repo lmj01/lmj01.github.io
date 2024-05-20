@@ -23,6 +23,7 @@
 - [redis](/database/redis.md)
 - [MySql](/database/mysql.md)
 - [sql](/database/sql.md)
+- [sqlite](/database/sqlite.md)
 
 ### 数据结构
 
@@ -39,7 +40,7 @@
 - [webgl](/cg/canvas.md)
 - [Shader](/cg/shader.md)
 - [vulkan](/cg/api.modern.md)
-- [graphics图形学](/cg/graphics.md)
+- [图形学概述](/cg/graphics.md)
 - [Real-Time Rendering Resources](https://www.realtimerendering.com/)
 - [Ambient Occlusion](../cg/lighting/ambient-occlusion.md)
 - [smallpt: Global Illumination in 99 lines of C++](http://www.kevinbeason.com/smallpt/)
@@ -54,45 +55,14 @@
 - [网格划分](/cg/mesh/mesh-generation.md)
 - [NURBS](/cg/mesh/NURBS.md)
 - [曲线](/cg/tools/curve.md)
-- [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
-- [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
-- [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
-- [Brillouin zone visualisation tool，维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces)
-    - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
-    - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
-- [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
 - [几何](/cg/geometry.md)
-
-### UI
-
-- [U++ is a C++ cross-platform rapid application development framework focused on programmers productivity. It includes a set of libraries (GUI, SQL, etc.), and an integrated development environment.欧洲人用得较多](https://www.ultimatepp.org/)
-    - [github ultimatepp](https://github.com/ultimatepp)
-- [IUP is a multi-platform toolkit for building graphical user interfaces. It offers a simple API in three basic languages: C, Lua and LED. IUP's purpose is to allow a program source code to be compiled in different systems without any modification.](https://www.tecgraf.puc-rio.br/iup/)
-- [Nuklear is a minimal-state, immediate-mode graphical user interface toolkit written in ANSI C and licensed under public domain. It was designed as a simple embeddable user interface for application and does not have any dependencies, a default render backend or OS window/input handling but instead provides a highly modular, library-based approach, with simple input state for input and draw commands describing primitive shapes as output.](https://github.com/Immediate-Mode-UI/Nuklear)
-- [CopperSpice is a set of individual libraries which can be used to develop cross platform software applications in C++.](../cg/library/copperspice.md)
 
 ### Engine
 
+- [引擎技术](/cg/engines.md)
 - [Bgfx](/cg/bgfx.md)
-- [Iolite a modern,portable game engine with an embedded editor. Completely scriptable in Lua, Free for personal](https://iolite-engine.com/)
-- [babylonjs](/cg/babylonjs/index.md)
-- [The-Forge](https://github.com/ConfettiFX/The-Forge)
-- [腾讯开源替换Skia的渲染器](https://github.com/Tencent/tgfx)
-- [OGLplus: a C++ wrapper for modern OpenGL©](https://oglplus.org/)
-    - [github](https://github.com/matus-chochlik/eagine-all)
-- [Magnum — Lightweight and modular C++11/C++14 graphics middleware for games and data visualization](https://github.com/mosra/magnum)
-- [Hazel is primarily an early-stage interactive application and rendering engine for Windows.](https://github.com/TheCherno/Hazel)
-
-- [Blend2D -- 2D Vector Graphics Powered by a JIT Compiler.](https://github.com/blend2d/blend2d)
-
-#### threejs
-
+- [UI](/cg/ui.md)
 - [threejs 笔记](/cg/threejs/index.md)
-- [Beispiele webGL mit three.js ](https://hofk.de/main/threejs/)
-- [3D Grafik - WebGL mit three.js](https://xprofan.net/intl/de/php,html,js/3d-grafik-webgl-mit-three-js/)
-- [use your mouse to control the camera and build an andorid](https://hofk.de/main/threejs/raycaster/raycaster.html)
-- [webgl examples](https://alteredqualia.com/)
-- [22](https://github.com/brunosimon/folio-2019)
 
 ### 动画
 

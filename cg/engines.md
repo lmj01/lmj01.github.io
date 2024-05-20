@@ -1,7 +1,5 @@
 # 3D引擎
 
-## 开源引擎
-
 - [irrlicht](http://irrlicht.sourceforge.net/)
 - [OpenSceneGraph](http://www.openscenegraph.org/)
     - [code](https://github.com/openscenegraph/OpenSceneGraph)
@@ -21,7 +19,8 @@
 - [GeeXLab](https://geeks3d.com/geexlab/)
 - [PBRT-v4](https://github.com/mmp/pbrt-v4)
 
-### 渲染器
+## Render
+> 渲染器
 
 - [Soft Rendering](https://github.com/huanzai/SoftRendering)
 - [Tiny renderer for how opengl works](https://github.com/ssloy/tinyrenderer)
@@ -32,9 +31,27 @@
 - [3D渲染教程GPU](https://github.com/skywind3000/RenderHelp)
 - [Vulkan-Forward Plus Renderer](https://github.com/WindyDarian/Vulkan-Forward-Plus-Renderer)
 - [Writing an efficient Vulkan renderer](https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/)
+- [Iolite a modern,portable game engine with an embedded editor. Completely scriptable in Lua, Free for personal](https://iolite-engine.com/)
+- [babylonjs](/cg/babylonjs/index.md)
+- [The-Forge](https://github.com/ConfettiFX/The-Forge)
+- [腾讯开源替换Skia的渲染器](https://github.com/Tencent/tgfx)
+- [OGLplus: a C++ wrapper for modern OpenGL©](https://oglplus.org/)
+    - [github](https://github.com/matus-chochlik/eagine-all)
+- [Magnum — Lightweight and modular C++11/C++14 graphics middleware for games and data visualization](https://github.com/mosra/magnum)
+- [Hazel is primarily an early-stage interactive application and rendering engine for Windows.](https://github.com/TheCherno/Hazel)
+
+- [Blend2D -- 2D Vector Graphics Powered by a JIT Compiler.](https://github.com/blend2d/blend2d)
 
 
-## RenderPass
+### phong
+
+### parallax mapping
+是一种类似于法线贴图的纹理技术，能显著增强模型或纹理的表面细节和凹凸感
+[GLRF_example实现了一个视差映射的demo](https://github.com/DunkleMango/GLRF_Example)
+
+
+
+### RenderPass
 
 ### Shadow
 
@@ -51,6 +68,8 @@ for SSAO, like the order:
 4. Lighting Pass
 
 [A SSAO basic tutorial](https://learnopengl.com/Advanced-Lighting/SSAO)
+
+### [Tone Mapping](https://64.github.io/tonemapping/)
 
 ## 相关文章
 

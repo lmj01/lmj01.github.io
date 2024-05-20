@@ -1,6 +1,6 @@
 # 硬件配置
 
-## Dell Inspiron 15
+## Dell Inspiron-3568
 > 老婆的大学时期的笔记本
 
 按照Linux系统的过程
