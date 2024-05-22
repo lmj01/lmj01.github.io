@@ -22,3 +22,15 @@ attachment会以附件方式下载
 [A curated list of free courses & certifications](https://github.com/cloudcommunity/Free-Certifications)
 [Create Your Secure Online Presence with Our Self-Certified HTTPS Certificate Generator ](https://github.com/selfcertificationhub/selfcertificationhub)
 [自签名HTTPS证书生成器, 适用于产品发布前需要HTTPS验证的场景](https://selfcertificationhub.github.io/selfcertificationhub/generate)
+
+### [mkcert](https://github.com/FiloSottile/mkcert)
+
+使用Go写的一个工具，A simple zero-config tool to make locally trusted development certificates with any names you'd like.
+
+自编译后使用工具，是学习的一个Go的案例
+```shell
+mkcert-v1.4.4-windows-amd64.exe -install
+mkcert-v1.4.4-windows-amd64.exe -CAROOT
+mkcert-v1.4.4-windows-amd64.exe localhost 127.0.0.1 ::1 192.168.0.138 // 生成自签证书
+```
+

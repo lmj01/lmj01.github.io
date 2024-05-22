@@ -95,9 +95,6 @@ node-gyp is a cross-platform command-line tool written in Node.js for compiling 
 
 ## [Daikon](https://github.com/rii-mango/Daikon)
 
-## [Mock Service Worker](https://mswjs.io/)
-Industry standard API mocking for JavaScript.
-
 # 其他库
 
 - [excel](/articles/notes/excel.md)

@@ -1,10 +1,8 @@
 # Web
 
-- [nginx](/web/nginx/nginx.md)
 - [使用过的库](/web/library.md)
 - [正则表达式](/cpl/js/regularExpressions.js)
 - [webassembly](/web/webAssembly.md)
-- [http](/web/http.md)
 - [html](/web/html.md)
 - [css](/web/css.md)
 - [canvas](/cg/canvas.md)
@@ -30,15 +28,31 @@
 
 - [CanIUse网站查看接口的普及率](https://caniuse.com/)
 
-## WebGL
 
-### [threejs](https://threejs.org/)
+## [MDN Web Api](https://developer.mozilla.org/en-US/docs/Web/API)
 
-- [笔记](/cg/threejs/index.md)
+现代浏览器技术开发API有大量的接口，需要去了解
 
-### [BabylonJS](https://www.babylonjs.com/)
+### [http](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 
-- [笔记](/cg/babylonjs/index.md)
+- [http](/web/http.md)
+- [nginx](/web/nginx/nginx.md)
+
+### [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+
+- [Mock Service Worker Industry standard API mocking for JavaScript](https://mswjs.io/)
+- [broswer集成时需要设置worker](https://mswjs.io/docs/integrations/browser)
+```shell
+
+```
+
+
+### [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
+
+- [threejs](https://threejs.org/)
+    - [笔记](/cg/threejs/index.md)
+- [BabylonJS](https://www.babylonjs.com/)
+    - [笔记](/cg/babylonjs/index.md)
 
 
 ## library
