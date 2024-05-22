@@ -1,17 +1,15 @@
 # [node](https://nodejs.org/en)
 
-## update
+- [api doc](https://nodejs.org/docs/latest/api/)
 
 ```js
+node --watch index.js // v18.15.0后增加的，可以不用每次都输入，直接关联某个文件的变化
 node --harmony script.js --version --help --harmony 传递给node参数的修饰
-npm install -g n 非window上使用n来管理
-npm config list
 ```
 
-# 包管理
+## 包管理
 
-
-## [npm](https://docs.npmjs.com/)
+### [npm](https://docs.npmjs.com/)
 
 [npm-config](https://docs.npmjs.com/cli/v10/commands/npm-config)
 
@@ -19,6 +17,7 @@ npm config list
 npm init // 初始化工程
 npm init -w ./packages/a // 创建子包
 npm install libraryX --workspace packages/pA // 子工作区按照特定依赖
+npm install libraryX --save-dev --workspaces // 安装
 npm i libraryX -w packages/pA
 npm install XXX 安装但不写入package.json
 npm install XXX --save 安装且写入package.json中的dependencies
@@ -48,7 +47,7 @@ npm cache clean --force
 npm config list
 ```
 
-## [pnpm](https://pnpm.io/)
+### [pnpm](https://pnpm.io/)
 
 - [中文文档](https://pnpm.io/zh/motivation)
 
@@ -63,7 +62,7 @@ pnpm add react -w // 全局公共依赖
 pnpm add react --filter pkg1 // 指定项目按照
 ```
 
-## [Yarn is a package manager](https://yarnpkg.com/)
+### [Yarn is a package manager](https://yarnpkg.com/)
 
 - [yarn add](https://classic.yarnpkg.com/en/docs/cli/add)
 
@@ -100,6 +99,7 @@ Vue-cli3开始把webpack.config.js隐藏在node_modules/@vue/cli-service/webpack
 ### [Parcel](https://parceljs.org/docs/)
 
 Parcel is a zero configuration build tool for the web
+Parcel默认把所有文件打包进js包中，不存在单独的静态文件目录，需要借助插件来完成[parcel-reporter-static-files-copy](https://www.npmjs.com/package/parcel-reporter-static-files-copy)
 
 ## 相关库
 

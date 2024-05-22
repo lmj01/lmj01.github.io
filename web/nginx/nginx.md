@@ -40,3 +40,4 @@ location = > location full-path > location ^~ path > location ~,~* > location pa
 
 
 [在线配置nginx](https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN)
+[正确的Nginx跨域配置（后端Nginx CORS跨域配置、CORS设置，后端允许跨域请求）](https://www.cnblogs.com/zhoading/p/15987927.html)

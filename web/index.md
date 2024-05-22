@@ -1,5 +1,6 @@
 # Web
 
+- [nginx](/web/nginx/nginx.md)
 - [使用过的库](/web/library.md)
 - [正则表达式](/cpl/js/regularExpressions.js)
 - [webassembly](/web/webAssembly.md)
@@ -21,13 +22,13 @@
 - [适配屏幕](/web/adapt.screen.md)
 - [font](/web/font.md)    
 - [http](/web/http.md)
-- [nginx](/web/nginx.md)
 - [javascript](/cpl/web/ECMAScript.md)
 
 
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
 
+- [CanIUse网站查看接口的普及率](https://caniuse.com/)
 
 ## WebGL
 
@@ -39,7 +40,12 @@
 
 - [笔记](/cg/babylonjs/index.md)
 
+
 ## library
+
+### [Browserslist](https://github.com/browserslist/browserslist)
+对一些工具起作用的 使用[Can I Use data](https://caniuse.com/)数据来判断
+- [A smaller version of caniuse-db, with only the essentials! ](https://github.com/browserslist/caniuse-lite)
 
 ### 多语言
 > i18n是国际化的英文为 internationalization，为了方便，通常会简写为 i18n（开头的 i、中间的 18 个字符、末尾的 n）

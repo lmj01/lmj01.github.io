@@ -3,6 +3,7 @@
 - [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
     - [The C++ Core Guidelines are a collaborative effort led by Bjarne Stroustrup, much like the C++ language itself. They are the result of many person-years of discussion and design across a number of organizations.](https://github.com/isocpp/CppCoreGuidelines)
     - [The Guidelines Support Library (GSL) contains functions and types that are suggested for use by the C++ Core Guidelines maintained by the Standard C++ Foundation. This repo contains Microsoft's implementation of GSL.](https://github.com/Microsoft/GSL)
+- [What's In a Class? - The Interface Principle, This article appeared in C++ Report, 10(3), March 1998.](http://www.gotw.ca/publications/mill02.htm)
 
 ## 语言特性
 
@@ -284,6 +285,8 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
     - [Calling conventions for different C++ compilers and operating systems](https://www.agner.org/optimize/calling_conventions.pdf),更新到2023年的技术
 - [微软出品C++下一代的多态Proxy: Next Generation Polymorphism in C++](https://github.com/microsoft/proxy)
 - [反射库refl-cpp is a header-only library which provides compile-time reflection and introspection capabilities to C++](https://github.com/veselink1/refl-cpp)
+- [Google 开源了其内部多年使用的 C++ 代码库](https://github.com/abseil/abseil-cpp)
+- [folly库 An open-source C++ library developed and used at Facebook. ](https://github.com/facebook/folly)
 
 ### 工具
 

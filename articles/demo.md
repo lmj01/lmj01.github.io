@@ -149,6 +149,8 @@ $\lVert \boldsymbol{X}_i - \boldsymbol{S}_j \rVert^2$
 $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 
 <!-- 积分公式会导致正则规则不匹配 -->
+<!-- $$ \left. \frac{ {\rm d} u} { {\rm d} x} \right| _{x=0} $$ -->
+$$ \frac{ {\rm d} u} { {\rm d} x} | _{x=0} $$
 
 分数
 
