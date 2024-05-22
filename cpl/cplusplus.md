@@ -3,7 +3,6 @@
 - [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
     - [The C++ Core Guidelines are a collaborative effort led by Bjarne Stroustrup, much like the C++ language itself. They are the result of many person-years of discussion and design across a number of organizations.](https://github.com/isocpp/CppCoreGuidelines)
     - [The Guidelines Support Library (GSL) contains functions and types that are suggested for use by the C++ Core Guidelines maintained by the Standard C++ Foundation. This repo contains Microsoft's implementation of GSL.](https://github.com/Microsoft/GSL)
-- [What's In a Class? - The Interface Principle, This article appeared in C++ Report, 10(3), March 1998.](http://www.gotw.ca/publications/mill02.htm)
 
 ## 语言特性
 
@@ -88,6 +87,14 @@ class Zero {
 public:
     Zero(size_t length):buffer(new char[length]){}
 };
+```
+
+### [ADL](https://en.cppreference.com/w/cpp/language/adl)
+Argument-dependent lookup, 在[What's In A Class?][1] 中第一次看到Koenig lookup
+就是关于class的定义，减少显式的说明调用函数与其他的关系
+```cpp
+std::cout << 1; // 等价于
+operator<< (std::cout, 1) // 当初函数调用，传入参数
 ```
 
 ## TMP(template metaprogramming)
@@ -287,6 +294,7 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [反射库refl-cpp is a header-only library which provides compile-time reflection and introspection capabilities to C++](https://github.com/veselink1/refl-cpp)
 - [Google 开源了其内部多年使用的 C++ 代码库](https://github.com/abseil/abseil-cpp)
 - [folly库 An open-source C++ library developed and used at Facebook. ](https://github.com/facebook/folly)
+- [What's In a Class? - The Interface Principle, This article appeared in C++ Report, 10(3), March 1998.](http://www.gotw.ca/publications/mill02.htm)
 
 ### 工具
 
@@ -297,6 +305,8 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [crtp](/cpl/cpp/crtp.cpp)
 - [offsetof](/cpl/cpp/offsetof.cpp)
 - [reference](/cpl/cpp/reference.cpp)
+
+[1]: <http://www.gotw.ca/publications/mill02.htm> (What's In A Class?)
 
 ## 观点
 

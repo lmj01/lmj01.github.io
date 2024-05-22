@@ -8,6 +8,7 @@ function func(a, b) {
 }
 ```
 
+[What's In A Class?] [1]
 
 ## [alert](https://github.com/bent10/marked-extensions/tree/main/packages/alert)
 - [Enables GFM alerts](https://github.com/orgs/community/discussions/16925)
@@ -234,3 +235,7 @@ $$
 - [marked github](https://github.com/markedjs/marked)
 - [demo可下载发布后的文件](https://marked.js.org/demo/)
 - [marked插件 github](https://github.com/bent10/marked-extensions)
+
+ 公共引用区域, 如果:只有右边一个空格，可以隐藏，两边都有空格，显示，但是引用就不调整。
+
+[1]: <http://www.gotw.ca/publications/mill02.htm> (What's In A Class?)
