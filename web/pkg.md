@@ -60,6 +60,7 @@ pnpm store prune // 删除缓存
 // 工作区
 pnpm add react -w // 全局公共依赖
 pnpm add react --filter pkg1 // 指定项目按照
+pnpm config set store-dir e:\dev-data\.pnpm-store\v3 --global // 设置存储目录
 ```
 
 ### [Yarn is a package manager](https://yarnpkg.com/)
@@ -72,6 +73,7 @@ yarn install --registry https://registry.npm.taobao.org
 // 清除缓存
 yarn cache dir  // 查看路径
 yarn cache clean // 清理
+yarn config set cache-folder e:\dev-data\.yarn-store\v6 // 设置缓存路径
 // 镜像设置
 yarn config get registry
 yarn config set registry https://registry.npmmirror.com

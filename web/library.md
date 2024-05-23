@@ -1,6 +1,6 @@
 # 库
 
-相关库，工作中使用过
+相关库，工作中使用过，分析并学习的库
 
 ## Quill
 > quill富文本编辑器
@@ -93,7 +93,8 @@ new Promise(()=>{
 ## [node-gyp](https://github.com/nodejs/node-gyp)
 node-gyp is a cross-platform command-line tool written in Node.js for compiling native addon modules for Node.js. It contains a vendored copy of the gyp-next project that was previously used by the Chromium team and extended to support the development of Node.js native addons.
 
-## [Daikon](https://github.com/rii-mango/Daikon)
+## [UMI](https://umijs.org/)
+- [笔记](/articles/2024/umi.md)
 
 # 其他库
 

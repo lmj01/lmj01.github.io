@@ -96,6 +96,7 @@ Argument-dependent lookup, 在[What's In A Class?][1] 中第一次看到Koenig l
 std::cout << 1; // 等价于
 operator<< (std::cout, 1) // 当初函数调用，传入参数
 ```
+[CPO](https://www.zhihu.com/question/518132411)
 
 ## TMP(template metaprogramming)
 
