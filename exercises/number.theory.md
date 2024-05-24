@@ -10,5 +10,57 @@
 - 排列组合
 
 ## 完全剩余系
-Complete Residue System是数论中的一个概念，指在模n的条件下从1到n-1的一个整数集合，这个集合中的每个数都与n互斥，并且这个集合包含了所有可能的模n的余数。
+Complete Residue System是数论中的一个概念，指在模n的条件下从1到n-1的一个整数集合，这个集合中的每个数都与n互斥，并且这个集合包含了所有可能的模n的余数。用数学语言描述如下
 
+$$
+\text{如果有一个整数集合}\{a_{1},a_{2},\cdots\cdots,a_{n-1}\}, \text{其中每个元素}a_{i}(1 \le i \le n-1). \text{满足如下条件} \newline
+\text{1. } 0 \le a_{i} \le n \newline
+\text{2. } a_{i} \equiv a_{1} + {i \times k} \pmod n \text{对某个整数}k \newline
+\text{3. } gcd(a_{i}, n) \equiv = 1 \in all (1 \le i \le n-1)
+$$
+
+这样的集合就被称为模n的一个完全剩余系。如模5的情况下，集合1，2，3，4就是一个完全剩余系。它在数论中非常重要，帮助我们理解模n的算术结构。
+如拉格朗日定理指出，
+
+$\text{如果} gcd(a,n) \equiv 1, \text{那么a的幂在模n下会经历一个完全剩余系}$
+
+
+
+## 中国剩余定理
+
+Chinese Remainder Theorem
+
+- [剩余定理情未了](https://mp.weixin.qq.com/s/H1ZYmHPXXi_iwCoFdZfmGg)
+
+《孙子算经》与《孙子歌诀》等只能解答简单的题目，直到南宋数学家秦九韶将它推广，在《数书九章》中用大衍求一术给出了一个系统性解法。德国数学家高斯（K.F. Gauss，公元1777-1855年）于1801年出版的《算术探究》中用现代数学语言把它明确地写成一个定理。
+
+同余定理：
+
+$\text{设整数} m_{1}, m_{2}, \cdots\cdots, m_{n} \text{两两互质，则同余方程组}$
+
+$$
+\begin{cases}
+x \equiv a_{1} \pmod m_{1} \newline
+x \equiv a_{2} \pmod m_{2} \newline
+ \vdots \newline
+x \equiv a_{n} \pmod m_{n}
+\end{cases}
+$$
+
+有唯一解
+
+$x = \sum_{i=1}^{n}a_{i}t_{i}M_{i} \pmod M$
+
+其中
+
+$M=m_{1}m_{2}\cdots m_{n}, M_{i}=\frac{M}{m_{i}}, t_{i}M_{i} \equiv 1 \pmod m_{i}$
+
+$\text{定理中的}m_{i}\text{称为模数}, a_{i}\text{称为余数}, M\text{是模数的最小公倍数，而}m_{i}\text{称为衍数，即局部（除}m_{i}\text{外的）公倍数},t_{i}\text{称为乘率}, t_{i}M_{i}\equiv 1 \pmod m_{i}\text{称为求一术}$。
+
+可见大衍yan求一术是将求解一组一次同余式问题简化为求解单个同余式的问题。目前解一组一次同余式最有效的是Garner算法。
+
+剩余定理在科技领域中最成功的应用是实现通讯保密，如RSA算法， DLP算法，ECC算法。为此需要推广同余的概念。从同余到平方剩余，从无限数域到有限域，再到椭圆曲线，同余的发展和应用反映了西方工业文明过程中的科学探索精神。
+
+- 自然数网络
+- 网络动力学
+- 数论与网络

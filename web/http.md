@@ -7,6 +7,9 @@
 cache mode的状态决定了浏览器的操作行为，这是httpRequest的参数决定了是否进行操作的逻辑
 
 ## header
+
+### [Content-Disposition]()
+
 Content-Disposition是MIME协议扩展，指示如何显示附加的文件
 
 Content-Disposition:'attachment=filename;'。
@@ -15,7 +18,14 @@ Response.AppendHeader("Content-Disposition","attachment;filename=FileName.txt");
 attachment会以附件方式下载
 阿里云的OSS有一个政策就是对这个进行了控制，导致显示不能直接在浏览器中打开
 
-## response
+### [Referrer Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
+
+用于控制浏览器在发生跳转请求时，将当前页面的URL信息如何包含在Referrer首部字段中，
+
+- Referrer是 HTTP 请求的一个首部字段，它用于指示请求是从哪个页面跳转而来的。
+- Referrer Policy是一种安全策略，允许网站控制浏览器在发送请求时，是否将当前页面的 URL 信息包含在 Referrer 首部中，以及如何包含。这有助于保护用户的隐私和提高安全性。
+
+要设置 Referrer Policy，您需要在服务器端配置您的网站或应用程序的
 
 ## HTTPS
 

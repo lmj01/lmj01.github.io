@@ -10,8 +10,13 @@
 - 毛选，在读
 - 符号学：原理与推演，南京大学出版社，ISBN:9787305160516, 在读
 
-### [图解儿童逆反心理](https://book.douban.com/subject/20373323/)
-> 了解孩子的过程，就像有些道理知道，但是去做就是另一回事儿，阅读至少加深在做这个字眼上的付出
+
+### [Computer Graphics  Theory and Practice (Gomes, Jonas Velho, Luiz Costa Sousa, Mario 1st Edition) (Z-Library)2012](https://www.amazon.com/Computer-Graphics-Practice-Jonas-Gomes/dp/1568815808)
+豆瓣上都没有找到，在Amazon找到的
+
+### [上帝创造整数](https://book.douban.com/subject/30376433/)
+
+- 2024-5-23 关于欧几里得是我认为讲得最清晰最明白的一本书了
 
 ### [Learn OpenGL](../books/Learn%20OpenGL.md)
 
@@ -51,6 +56,8 @@
 - 优质代码的外部特征
     - 1.3.1 为什么代码难以理解，业务概念共识是一个很重要的因素，很多问题可能都是因为没有共识，产生了认识与理解上的差异。以一种范式理解另一种范式是很容易产生的，这样的问题也会非常多。
     - 1.5.2 提升复用能力的手段， ==选择合适的复用粒度==， 业务模块的复用，也有比较成熟的经验了，就是以领域为中心的设计。通过恰当的确定问题的领域边界，保持各个子域边界之间的抽象和隔离，就是典型的例子。如短信发送、地图服务、聊天消息等模块。
+### [图解儿童逆反心理](https://book.douban.com/subject/20373323/)
+> 了解孩子的过程，就像有些道理知道，但是去做就是另一回事儿，阅读至少加深在做这个字眼上的付出
 
 ## online
 
