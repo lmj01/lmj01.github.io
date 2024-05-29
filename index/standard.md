@@ -30,22 +30,13 @@
 
 ## Images
 
-- [图片处理工具-库，程序](../cg/image/tool.md)
-- [颜色](../cg/Color.md)
-- [图像相关的算法](../cg/image/algorithm.md)
-- [图像格式](../others/images.md)
+- [图像相关笔记](/cg/image/image.md)
+- [图片处理工具-库，程序](/cg/image/tool.md)
+- [颜色](/cg/Color.md)
+- [图像相关的算法](/cg/image/algorithm.md)
 - [The DICOM Standard Current Edition](https://www.dicomstandard.org/current)
-- [Color Profile](../cg/image/ColorProfile.md)
-- [exif tool](../cg/image/exif.md)
-- [JPEG](../cg/image//JPEG.md)
-    - [Image Process](../cg/image/ImageProcessing.md)
 - [CT](../cg/ct.md)
-- [gif](../cg/image/gif.md)
-- [tif/tiff](../cg/image/tiff.md)
-- [png](../cg/image/png.md)
-- [GIMP](../cg/image/gimp.md)
 - [SVG](../cg/svg.md)
-- [ImageMagick](../cg/image/imageMagick.md)
 
 ### Tool
 
