@@ -105,12 +105,6 @@ Parcel默认把所有文件打包进js包中，不存在单独的静态文件目
 
 ## 相关库
 
-### [nrm切缘源的工具](https://github.com/Pana/nrm)
-```shell
-nrm ls
-nrm use
-```
-
 ### [nvm-windows](https://github.com/coreybutler/nvm-windows/releases)
 
 [windows安装nvm的两种方式](https://www.jianshu.com/p/1d80cf35abd2)参考了noinstall的方式，还是会报错
@@ -122,4 +116,31 @@ nrm use
 ```shell
 yarn config set sharp_binary_host "https://npm.taobao.org/mirrors/sharp"
 yarn config set sharp_libvips_host "https://npm.taobao.org/mirrors/sharp-libvips"
+```
+
+### [Husky](https://typicode.github.io/husky/)
+
+它可以在项目中植入你设定的 git hooks，在 git 提交代码的前后，你预设的 git hooks 可以得到执行，以对代码、文件等进行预设的检查，
+一旦检查不通过，就可以阻止当前的代码提交，避免了不规范的代码和 git 提交出现在项目中
+
+[github](https://github.com/typicode/husky)
+
+用来提交是可以编译，这样部署上去的代码才不能编译报错！
+```shell
+# 安装
+pnpm add --save-dev husky # 安装
+pnpm exec husky init # 配置
+
+# 脚本1
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+# 分支名字
+current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+echo $current_branch
+
+exec < /dev/tty
+# 测试能编译否
+pnpm test-build
+# 正常退出
+exit 0
 ```

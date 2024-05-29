@@ -37,7 +37,9 @@
 - [2024](/articles/2024/app.md)
 - [2024经验](/articles/2024/experience.md)
 - [2024趋势](/articles/2024/trend.md)
-- [nocobase项目](/articles/2024/nocobase.md)
+- [umi企业级框架](/articles/2024/umi.md)
+- [nocobase开源项目](/articles/2024/nocobase.md)
+- [vfs虚拟文件系统](/articles/2024/vfs.md)
 - [三维网格](/articles/notes/mesh.md)
 
 ## 2023
