@@ -1,6 +1,10 @@
-# markdown demo
-> markdown渲染成HTML的插件
+# [markdown](https://commonmark.org/)
 
+[中文文档](https://markdown.com.cn/)
+
+markdown渲染成HTML的插件
+
+如果不方便表示的，可以直接使用HTML5的标签来表示内容
 
 ```js
 function func(a, b) {
@@ -9,6 +13,10 @@ function func(a, b) {
 ```
 
 [What's In A Class?] [1]
+
+<details>
+<summary>alert</summary>
+
 
 ## [alert](https://github.com/bent10/marked-extensions/tree/main/packages/alert)
 - [Enables GFM alerts](https://github.com/orgs/community/discussions/16925)
@@ -33,6 +41,8 @@ function func(a, b) {
 
 > **Warning**
 > This is a warning
+
+</details>
 
 ## table
 
@@ -63,6 +73,10 @@ function func(a, b) {
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
+
+
+<details>
+<summary>katex</summary>
 
 ## [katex](https://katex.org/)
 
@@ -225,6 +239,7 @@ $$
 
 [maths symbols for latex](https://mirrors.jlu.edu.cn/CTAN/info/symbols/math/maths-symbols.pdf)
 
+</details>
 
 ## 其他
 

@@ -2,7 +2,8 @@
 
 ## 模数
 
-### 2024-5-23
+<details>
+<summary>2024-5-23</summary>
 
 $$
 A = 1 \times 3 \times 5 \times 7 \times 9 \times 11 \times \cdots \cdots \times 2023 \text{的末两位是多少？}
@@ -47,7 +48,11 @@ $$
 
 所以答案是末三位数是625
 
-### 2024-5-24剩余定理
+</details>
+
+<details>
+<summary>2024-5-24剩余定理</summary>
+
 
 就是组合数学中的同余概念
 
@@ -71,9 +76,12 @@ $ x \equiv (2 \times 70 + 4 \times 21 + 6 \times 15) \pmod 105 = 104 \to 104 + 9
 
 可参考[数论笔记](/exercises/number.theory.md)中的关于同余定理。
 
+</details>
+
 ## 组合
 
-### 2024-5-24
+<details>
+<summary>2024-5-24</summary>
 
 一个自然数经过不同的排列，可以组成不同的多位数，例如102，共有4中不同的排列方法。
 102，120，201，210。那问有9种排列方法的4位数共有多少个呢？
@@ -97,8 +105,4 @@ $ x \equiv (2 \times 70 + 4 \times 21 + 6 \times 15) \pmod 105 = 104 \to 104 + 9
 
 这种题型也是慢慢地分析，分类后一一判断。本题也可以拓展，9种排列改成12，6等。
 
-
-
-
-
-
+</details>
