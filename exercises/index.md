@@ -20,4 +20,13 @@
 
 ## 工具
 
+<details>
+<summary>Geogebra开源在线工具</summary>
+
+### [Geogebra](https://www.geogebra.org/)
+
 - [Geogebra几何平面作图在线工具，用meijie.lmj@outlook.com登录的](https://www.geogebra.org/geometry?lang=zh_CN)
+- [Geogebra经典版](https://www.geogebra.org/classic?lang=zh_CN)
+- [github](https://github.com/lmj01/geogebra)
+
+</details>

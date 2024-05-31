@@ -1,5 +1,8 @@
 # 图像
 
+- 支持动态展示图像的格式有gif，png，webp。
+
+
 - [工具](/cg/image/tool.md)
 
 - [gif](/cg/image/gif.md)
