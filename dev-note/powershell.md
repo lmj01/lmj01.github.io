@@ -19,3 +19,10 @@
 # /q 不显示
 xcopy src dst /W /u /s /y 
 ```
+
+## ssh
+
+window上可以直接sshLinux下，在家里的局域网测试成功
+```shell
+ssh name@ip
+```

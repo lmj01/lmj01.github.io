@@ -138,13 +138,38 @@ ssh lmj01@github.com 登录
 source /etc/profile
 ```
 
-# WSL
+## 网络
+```shell
+sudo apt install net-tools
+```
+### 静态地址
+```shell
+ifconfig 
+# 第一步获取信息
+inet 192.168.1.9  netmask 255.255.255.0  broadcast 192.168.1.255
+# 第二步填写静态值 
+地址192.168.1.9 子网掩码255.255.255.0 网关196.168.1.1
+sudo gedit /etc/network/interfaces中的值
+# 此时还不能联网，DNS需要修改
+# 第三步
+sudo gedit /etc/resolv.conf中的nameserver值为8.8.8.8
+sudo systemctl restart NetworkManager #重启网络配置
+# 第四步上面修改的nameserver每次重启后会改变，
+sudo gedit /etc/systemd/resolved.conf中的DNS=8.8.8.8
+sudo systemctl restart systemd-resolved
+sudo systemctl enable systemd-resolved
+sudo mv /etc/resolv.conf /etc/resolv.conf.bak
+sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+```
+
+
+## WSL
 
 wslconfig /list
 wsl --list
 wsl --shutdown
 
-## bat
+### bat
 - echo %XXX-path% 打印环境变量
 - netstat -aon | findstr "9090" 查看端口号
 - tasklist | findstr "pid" 查看进程
@@ -153,7 +178,7 @@ wsl --shutdown
 - ip addr
 - ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1
 
-### 不能ping
+#### 不能ping
 之前设置npm的淘宝镜像后，很多地方被改动了，查看resolv.con文件时是乱码，
 删除文件后重新设置如下字段就可以ping了。
 vim /etc/resolv.conf
@@ -162,12 +187,12 @@ nameserver 8.8.8.8
 nameserver 114.114.114.114
 ```
 
-## win11
+### win11
 安装完Ubuntu后，提示升级
 sudo apt update
 sudo apt upgrade
 sudo dpkg-reconfigure locales 配置其他字体
 
-## 参考
+### 参考
 
 - [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
