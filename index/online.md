@@ -1,20 +1,11 @@
 # 线上文章
 
-## 数学
-
 - [数学家记录史MacTutor is a free online resource containing biographies of more than 3000 mathematicians and over 2000 pages of essays and supporting materials. ](https://mathshistory.st-andrews.ac.uk/)
-
-## 计算机
-
-### 可视化
 
 - [Visual Information Theory可视化信息理论](https://colah.github.io/posts/2015-09-Visual-Information/)
 
-### 图形学
 - [Let's remove Quaternions from every 3D Engine](https://marctenbosch.com/quaternions/)
 - [Hexagonal Grids -- from Red Blob Games](https://www.redblobgames.com/grids/hexagons/)
-
-### 软件工程与架构
 
 - [Front-End-Basics，这是一个从前端基础慢慢汇总成体系，再扩展到全栈的技术文档同时也是一个普通人想成长为更好的自己的探索文档](https://docs.chenfangxu.com/)
 - [Game Programming Pattern游戏编程模式，笔记全面得资料](http://gameprogrammingpatterns.com/)
@@ -45,10 +36,9 @@
 - [Agner Fog Research, 涉及很多编程知识，很好的文档几何，作者自己更新自己的理解与文档](https://www.agner.org/?e=0#0)
 - [Bjarne StroustrupC++之父的网站](https://www.stroustrup.com/)
 - [ ISO C++ 标准委员会主席, 已经订阅其博客working at the intersection of programming language design/UX, people, and high performance code.](https://herbsutter.com/)
+- [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)
 
 ## 工具
-
-### playground
 
 - [Javascript Playground--邮箱meijie.lmj@outlook.com](https://playcode.io/)
 

@@ -11,6 +11,8 @@
 
 - [ImageMagick](/cg/image/imageMagick.md)
 
+- [ToneMapping](/cg/tools/tone.mapping.md)
+
 ## 压缩
 
 - [Caesium is an image compression software that helps you store, send and share digital pictures, supporting JPG, PNG and WebP formats. You can quickly reduce the file size (and resolution, if you want) by preserving the overall quality of the image. ](https://github.com/Lymphatus/caesium-image-compressor)

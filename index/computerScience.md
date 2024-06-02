@@ -60,6 +60,7 @@
 ### Engine
 
 - [引擎技术](/cg/engines.md)
+- [PBR基于物理的渲染](/cg/lighting/pbr.md)
 - [Bgfx](/cg/bgfx.md)
 - [UI](/cg/ui.md)
 - [threejs 笔记](/cg/threejs/index.md)

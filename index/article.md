@@ -39,6 +39,7 @@
 - [2024趋势](/articles/2024/trend.md)
 - [umi企业级框架](/articles/2024/umi.md)
 - [nocobase开源项目](/articles/2024/nocobase.md)
+- [GeoGebra开源项目](/articles/2024/geogebra.md)
 - [vfs虚拟文件系统](/articles/2024/vfs.md)
 - [三维网格](/articles/notes/mesh.md)
 
