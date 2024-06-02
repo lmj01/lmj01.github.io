@@ -5,7 +5,24 @@
 ## 几何
 
 <details>
-<summary>2024-5-30</summary>
+<summary>2024-5-33初三模拟习题</summary>
+
+$$
+\text{在} \vartriangle{ABC},AB=AC,\angle{ABC}=2\alpha,(\alpha \lt \alpha 90^{\circ}), D\text{是}BC\text{中点},E\text{是}BD\text{中点}. \newline
+\text{连接}AE,\text{将射线}AE\text{绕点}A\text{逆时针旋转}\alpha\text{得到射线}AM,\text{过点}E\text{作} EF \perp AE \text{交射线} AM \text{于点} F. \newline
+(1) \text{a. 依题意补全图形} \newline
+\text{b. 求证} \angle{B} = \angle{AFE} \newline
+(2) \text{连接}CF,DF,\text{用等式表示}CF,DF\text{之间的数量关系，并证明。}
+$$
+
+
+[参考来源](https://mp.weixin.qq.com/s/1qPL3lE5eBai-V0VP8o_0Q)
+
+</details>
+
+
+<details>
+<summary>2024-5-30初一入门级</summary>
 
 $\text{已知} AB=AC=5,BC=6,BD=AE, AF \perp DE,\text{求解}\frac{AF}{DE}=?$
 
@@ -31,7 +48,7 @@ $\angle{AFM} = \angle{C} + \angle{CAF}$
 另一个角DEG较复杂些，需要用到三角形内角和定理和平角定义
 
 $$
-\angle{DEG} = \pi - \angle{CEG} - \angle{AED} \text{--三角形内角和等于180} \newline
+\angle{DEG} = \pi - \angle{CEG} - \angle{AED} & \text{--三角形内角和等于180} \newline
 = \pi - (\frac{\pi}{2} - \angle{C}) - (\frac{\pi}{2} - \angle{CAF}) \newline
 = \angle{C} + \angle{CAF}
 $$

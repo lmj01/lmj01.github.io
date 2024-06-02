@@ -59,3 +59,15 @@
 - [Design Editor JS SDK Polotno for canvas | Polotno](https://polotno.com/)
     - [github](https://github.com/polotno-project)
 - [基于连续费马螺旋线的数控加工刀路规划](http://www.ncmis.cas.cn/kyjz/kycg/201912/t20191218_533668.html)
+
+#### [Win11Debloat](https://github.com/Raphire/Win11Debloat)
+
+A simple, easy to use powershell script to remove bloatware apps from windows, disable telemetry, bing in windows search aswell as perform various other changes to declutter and improve your windows experience. This script works for both windows 10 and windows 11. 
+
+```shell
+# powershell设置
+Set-ExecutionPolicy Unrestricted -Scope Process #
+cd folder
+.\Win11Debloat.ps1 # 执行
+.\Win11Debloat.ps1 -RemoveApps -DisableBing -Silent
+```
