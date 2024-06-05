@@ -12,6 +12,7 @@
 - [二次方程](/exercises/quadratic.equation.md)
 - [夹逼法](/exercises/sequeezing.md)
 - [几何](/exercises/geometry.md)
+- [线性代数](/exercises/linear.algebra.md)
 
 
 ## 物理学

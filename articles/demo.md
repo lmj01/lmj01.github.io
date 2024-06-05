@@ -12,11 +12,23 @@ function func(a, b) {
 }
 ```
 
+[mermaid API](https://mermaid.js.org/config/setup/modules/mermaidAPI.html)
+
+<pre class="mermaid">
+    graph TD
+    A[Client] --> B[Load Balancer]
+    B --> C[Server01]
+    B --> D[Server02]
+</pre>
+<pre class="mermaid">
+flowchart LR
+  A --> B
+</pre>
+
 [What's In A Class?] [1]
 
 <details>
 <summary>alert</summary>
-
 
 ## [alert](https://github.com/bent10/marked-extensions/tree/main/packages/alert)
 - [Enables GFM alerts](https://github.com/orgs/community/discussions/16925)

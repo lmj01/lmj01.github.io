@@ -42,7 +42,15 @@
 
 - [Javascript Playground--邮箱meijie.lmj@outlook.com](https://playcode.io/)
 
-### 在线工具
+### 流程图
+
+- [图示流程Developer Roadmaps Browse the ever-growing list of up-to-date, community driven roadmaps](https://roadmap.sh/roadmaps)
+- [Mermaid Diagramming and charting tool](https://mermaid.js.org/)
+    - [github](https://github.com/mermaid-js/mermaid)
+
+- [在线办公软件Univer is an open-source alternative to Google Sheets, Slides, and Docs ](https://github.com/lmj01/univer)
+
+### 其他
 - [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
 - [图形计算器GeoGebra--在线绘制图形](https://www.geogebra.org/graphing?lang=zh_CN)
 - [在线编译文件](https://wandbox.org/)
@@ -53,8 +61,7 @@
 - [This is a online vector graphics editor.](https://skeditor.github.io/)
     - [github](https://github.com/skeditor/skeditor)
 
-### 其他
-
+- [文件管理器](http://q-dir.com/)
 - [MedPeer应用先进的新闻资讯抓取和分析技术，对用户关心的内容进行深度分类和整理，力求提供及时的生物医药行业资讯，依托MedPeer人工智能翻译系统对国外资讯、文献、报告和视频进行翻译，帮助国内用户轻松理解。编辑器免费，组件收费](https://medpeer.cn/)
 - [Design Editor JS SDK Polotno for canvas | Polotno](https://polotno.com/)
     - [github](https://github.com/polotno-project)

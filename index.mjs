@@ -1,8 +1,8 @@
-import { md2Html } from './libs/marked/mj-marked.mjs';
-import hljs from './highlight/core.min.mjs';
-import languageJavascript from './highlight/languages/javascript.min.mjs';
-import languageLua from './highlight/languages/lua.min.mjs';
-import languageCpp from './highlight/languages/cpp.min.mjs';
+import { md2Html, parseMermaidHtml } from './libs/marked/index.js';
+import hljs from './libs/highlight/core.min.mjs';
+import languageJavascript from './libs/highlight/languages/javascript.min.mjs';
+import languageLua from './libs/highlight/languages/lua.min.mjs';
+import languageCpp from './libs/highlight/languages/cpp.min.mjs';
 
 hljs.registerLanguage('javascript', languageJavascript);
 hljs.registerLanguage('lua', languageLua);
@@ -26,7 +26,7 @@ elBtnBack.addEventListener('click', ()=>{
         tagLinkClickCaption(null, elTag)
     }
 })
-function updateContent(text, options = {}) {
+async function updateContent(text, options = {}) {
     const elContent = document.getElementById('content');
     elContent.classList.add('position-relative');
     if (options.isLink) {
@@ -48,11 +48,7 @@ function updateContent(text, options = {}) {
         elContent.classList.remove('iframe');
         const ext = options.ext || 'md';
         if (ext == 'md') {
-            const elDiv = document.createElement('div');
-            elDiv.classList.add('w-100','h-100','d-flex','flex-column');
-            elDiv.innerHTML = md2Html(text);
-            elContent.replaceChildren();
-            elContent.appendChild(elDiv);
+            await toHtmlData(elContent, text);
         } else {
             const fixed = {js:'javascript', lua:'lua', cpp:'cpp'};
             const res = hljs.highlight(text, {language:fixed[ext]});
@@ -66,6 +62,15 @@ function updateContent(text, options = {}) {
         catchAllTagLink();
     }
     elContent.appendChild(elBtnBack);
+}
+
+async function toHtmlData(elContent, text) {
+    const elDiv = document.createElement('div');
+    elDiv.classList.add('w-100','h-100','d-flex','flex-column');
+    elDiv.innerHTML = md2Html(text);
+    elContent.replaceChildren();
+    elContent.appendChild(elDiv);
+    await parseMermaidHtml(elDiv);
 }
 
 const patternExternal = /^(https?:|mailto:|tel:)/
@@ -111,5 +116,5 @@ function catchAllTagLink() {
 ud.cacheUrls = [];
 catchAllTagLink();
 fetch('/articles/demo.md').then(res=>res.text()).then(text=>{
-    document.getElementById('content').innerHTML = md2Html(text);
+    toHtmlData(document.getElementById('content'), text);
 })

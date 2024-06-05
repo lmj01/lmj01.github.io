@@ -82,6 +82,7 @@ git config --global user.name "lmj01"
 git config --global user.email "lmjie_good@163.com"
 git config --global color.ui auto 增强命令输出的可读性
 git config --global init.defaultBranch main // 更改默认分支git2.28支持
+git config --local user.name 
 ```
 
 ### git ssh
@@ -143,6 +144,8 @@ pox.xml merge=ours
 git checkout branch-with-history 切换到带有历史记录的分支中
 git checkout -b XXX 新建本地分支XXX
 git reset --hard commit-id 回滚分支XXX上的某个提交点
+git reset --soft HEAD^ 撤销上一个提交，回到staging状态
+git reset --soft HEAD~2 撤销多个提交
 ```
 此时代码就是某个提交点的，就可以修改了
 

@@ -4,6 +4,14 @@
 
 ## 几何
 
+
+<details>
+<summary>2024-5-33初三模拟习题</summary>
+
+[几何之旅：塞瓦定理与角元塞瓦定理——角格点问题的通解方法](https://zhuanlan.zhihu.com/p/122455316?utm_campaign=shareopn&utm_medium=social&utm_psn=1781370747668807680&utm_source=wechat_session)
+
+</details>
+
 <details>
 <summary>2024-5-33初三模拟习题</summary>
 

@@ -18,7 +18,16 @@
 # /exclude:FileName1[+[FileName2]][+[FileName3]( )] 排除指定文件，文件中列出了文件名，或字符串与复制文件的绝对路径存在匹配时，排除
 # /q 不显示
 xcopy src dst /W /u /s /y 
+
+
+# 进程
+Get-Process -Name sb* # 获取进程名
+Get-Process -Name sb* | Stop-Process
+Stop-Process -Name t*,e* -Confirm
 ```
+## powershell
+拷贝目录到另一个目录
+xcopy /s /e /h /i /y .\third\snippet\ .\third2\snippet\
 
 ## ssh
 
