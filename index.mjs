@@ -115,6 +115,7 @@ function catchAllTagLink() {
 // 获取所有
 ud.cacheUrls = [];
 catchAllTagLink();
-fetch('/articles/demo.md').then(res=>res.text()).then(text=>{
-    toHtmlData(document.getElementById('content'), text);
+fetch('/articles/demo.md').then(res=>res.text()).then(async(text)=>{
+    await toHtmlData(document.getElementById('content'), text);
+    catchAllTagLink();
 })

@@ -23,6 +23,15 @@ $$
 (2) \text{连接}CF,DF,\text{用等式表示}CF,DF\text{之间的数量关系，并证明。}
 $$
 
+![2024-6-6](/images/geogebra/geogebra-2024-6-6.png)
+
+解体：(1a)
+
+$\text{作}EF \perp AE \text{交}AM\text{于点}F$
+
+(1b)
+
+
 
 [参考来源](https://mp.weixin.qq.com/s/1qPL3lE5eBai-V0VP8o_0Q)
 

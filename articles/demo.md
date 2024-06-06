@@ -12,18 +12,7 @@ function func(a, b) {
 }
 ```
 
-[mermaid API](https://mermaid.js.org/config/setup/modules/mermaidAPI.html)
-
-<pre class="mermaid">
-    graph TD
-    A[Client] --> B[Load Balancer]
-    B --> C[Server01]
-    B --> D[Server02]
-</pre>
-<pre class="mermaid">
-flowchart LR
-  A --> B
-</pre>
+- [mermaid](/articles/mermaid.md)
 
 [What's In A Class?] [1]
 

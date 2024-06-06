@@ -15,3 +15,5 @@
 - tasklist
 - taskkill /f /t /im 9340
 - taskkill /IM "xxx.exe" /F
+- wmic process where ProcessId=1024 get ParentProcessId 获取父进程ID
+- wmic process where name="xxx.exe" call terminate

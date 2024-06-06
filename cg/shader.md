@@ -55,6 +55,9 @@ function renderSequence(passSequence) {
 
 ## GLSL- Shader
 
+[Tessellation](/cg/mesh/shader.tessellation.md)
+[Geometry](/cg/mesh/shader.geometry.md)
+
 着色器是一种可编程的渲染管线，与其他编程语言一样，先对源码编译Compile再链接Link最后生成Program。Shader是提供给GPU运行的程序，特点就是并行处理相同的逻辑不同的数据。着色器类型有
 
 - VertexShader，逐顶点运算的持续，每个顶点都会执行一次，顶点运算过程中无法获取其他顶点的数据。典型的顶点运算有坐标变换(由模型坐标转换到归一化坐标系)、逐顶点光照等。数据输入主要是
