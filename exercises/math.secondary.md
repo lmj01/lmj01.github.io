@@ -31,7 +31,40 @@ $\text{作}EF \perp AE \text{交}AM\text{于点}F$
 
 (1b)
 
+$\text{由题意可知} \angle{BAD}, \angle{EAF} \text{都是} \alpha, \text{两个三角形都是直角三角形，另外两个角}\angle{B},\angle{AFE}\text{必然相等}$
 
+（2）遇到证明线段关系的几何问题，由于不能测量必然想着把线段放在三角形中去推理其数量关系。
+
+从几何角度来思考，题意中也提到旋转，把三角形EDF绕点E旋转180°后得到了三角形BEF'，这是两个全等三角形，因此线段DF等于线段BF'。
+
+$$
+\text{连接线段}AF'，\text{可知}AFF'\text{是等腰三角形}, \angle{EAF'}\text{和}\angle{EAF}\text{相等于}\alpha. \newline
+\text{三角形}ABF'\text{和三角形}ACF\text{是全等三角形，是旋转}\alpha\text{角度的相等三角形，这样线段}BF'\text{和线段}CF\text{相等}
+$$
+
+这样就得到两个线段FC和DF是相等的，数量关系就是相等。
+
+这个解法还是太几何化了，需要很强的洞擦力，还有一种策略就是把需要证明的目标纳入已知，这样就可以增加很多几何性质，思路就会更容易打开一些。
+
+如果线段DF和CF相等，那么三角形DCF是等腰三角形，等腰三角形的常见性质是**顶点到底边的垂线，其垂足也是底边的中点**。用数学语言即，点F到边CD的投影点
+就是这个线段的中点。这样就从证明边相等变成了证明点F到边DC的垂足不变。
+
+$$
+\text{由(1b)证明了}\angle{B}=\angle{AFE} \to \angle{AFE}=\angle{ACB} \newline
+\text{由于三角形}AFE\text{是直角三角形，可以推出AEFC四点共圆, 是由同弧AE所对圆周角相等，由同弧EF可以推出}\angle{EAF}=\angle{ECF}=\alpha \newline
+\angle{ACF}=\angle{ECF}+\angle{ACB}=\angle{EAF}+\angle{ACB}=\alpha+\angle{B}=\frac{\pi}{2} \to \text{ACF是直角三角形}
+$$
+
+有了这些基础后，直接坐标化，以点D为原点，依题意有如下代数关系
+
+$$
+\text{点}D(0,0), \text{点}A(0,a), \text{点}B(-c,0), \text{点}E(-\frac{c}{2},0), \text{点}C(c,0), \text{并设点}F(x,y) \newline
+\text{由两个直角三角形AEF和ACF理由毕达哥拉斯定理-勾股定理有} AE^{2} + EF^{2} = AF^{2} = AC^{2} + CF^{2} \newline 
+(-\frac{c}{2} - 0)^2 + (0 - a)^2 + (-frac{c}{2} - x)^2 + (0 - y)^2 = (c - 0)^2 + (0 - a)^2 + (x - c)^2 + (y - 0)^2 \newline
+\to 3cx^2 = \frac{3}{2}c^2 \to x = \frac{1}{2}c
+$$
+
+这样确认了点F的在边DC的垂足是中心点，即DFC是等腰三角形，则线段DF等于线段CF。
 
 [参考来源](https://mp.weixin.qq.com/s/1qPL3lE5eBai-V0VP8o_0Q)
 
