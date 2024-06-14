@@ -2,6 +2,15 @@
 
 ## 详解
 
+- 目标Target
+- 属性Properties
+- private私有属性在内部使用
+- interface接口属性由外部使用
+
+CMake缓存变量
+- Normal Variable，普通变量，相当于一个局部变量。在同一个CMake工程中使用，会有作用域限制或区分。
+- Cache Variable，缓存变量，相当于一个全局变量。在同一个CMake工程中任何地方都可以使用
+
 ### aux_source_directory
 查找某个路径下的所有资源文件
 

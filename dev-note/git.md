@@ -227,6 +227,8 @@ git init
 git remote add origin git@github.com:Username/Repositories_Name.git # 现在这样仓库就处理好了。
 ```
 
+## [hook](https://git-scm.com/docs/githooks)
+
 # Subversion 
 
 

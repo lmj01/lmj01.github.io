@@ -20,3 +20,21 @@
 > a fast, scalable, multi-language and extensible build system.
 
 [github代码](https://github.com/bazelbuild/bazel)
+
+## [VisualStudio]()
+
+[devenv](https://learn.microsoft.com/zh-cn/visualstudio/ide/reference/devenv-command-line-switches?view=vs-2019)
+[使用生成项目时，建议使用MSBuild](https://learn.microsoft.com/zh-cn/visualstudio/msbuild/msbuild-command-line-reference?view=vs-2019)
+
+```shell
+# *.vcproj vs2008之前
+# *.vcxproj vs2010之后
+# *.sln 包含多个项目以及依赖关系
+msbuild name.vcxproj
+# -p 编译参数 -t 编译目标
+# /p:configuration=debug/release
+# /p:platform=x64/x32
+# /p:PreferredToolArchitecture=x64 // 使用64位编译工具
+# /t:rebuild
+# /t:clean
+```

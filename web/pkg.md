@@ -5,6 +5,7 @@
 ```js
 node --watch index.js // v18.15.0后增加的，可以不用每次都输入，直接关联某个文件的变化
 node --harmony script.js --version --help --harmony 传递给node参数的修饰
+node -p // node REPL 交互环境
 ```
 
 ## 包管理
@@ -46,6 +47,13 @@ npm config get cache // 缓存路径
 npm cache clean --force
 npm config list
 ```
+#### 2024-6-7
+```json
+"script":{
+    "dev": "cross-env VITE_APP_VERSION=$(node -p \"require('./package.json').version\") vite --mode localdev",
+}
+```
+在sprintRay的一个AICAD中，通过这样来获取环境变量，其实
 
 ### [pnpm](https://pnpm.io/)
 
@@ -70,6 +78,7 @@ pnpm config set store-dir e:\dev-data\.pnpm-store\v3 --global // 设置存储目
 ```shell
 yarn install
 yarn install --registry https://registry.npm.taobao.org
+yarn install --force // 强制按照
 // 清除缓存
 yarn cache dir  // 查看路径
 yarn cache clean // 清理
@@ -102,6 +111,12 @@ Vue-cli3开始把webpack.config.js隐藏在node_modules/@vue/cli-service/webpack
 
 Parcel is a zero configuration build tool for the web
 Parcel默认把所有文件打包进js包中，不存在单独的静态文件目录，需要借助插件来完成[parcel-reporter-static-files-copy](https://www.npmjs.com/package/parcel-reporter-static-files-copy)
+
+### [Lerna](https://lerna.js.org/)
+
+Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+
+[github](https://github.com/lerna/lerna)
 
 ## 相关库
 
