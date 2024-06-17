@@ -1,9 +1,10 @@
 # Git
 
-[官方文档](https://git-scm.com/docs)
-[中文官方文档](https://git-scm.com/book/zh/v2)
-[A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [官方文档](https://git-scm.com/docs)
+- [中文官方文档](https://git-scm.com/book/zh/v2)
+- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
     - 未读完
+
 ## 概念
 - 补丁，即git diff生成的内容
 - commit，提交内容
@@ -16,7 +17,8 @@
 - git remote add repo-name repo-url 添加远程仓库地址
 - git remote rm repo-name 删除远程仓库关联
 - git push origin branch-name 把当前分支推送到origin
-- git clone <repository> --recursive递归克隆整个项目
+- git clone <repository> 
+- git clone --recurse-submodules repo-url 自动初始化并更新每个子模块，包括嵌套的子模块
 
 ### 推送
 推送本地local_branch到远程remote_branch并建立关联关系
@@ -25,13 +27,21 @@
 - git push origin local_branch:remote_branch 远程remote_branch不存在
 - git pull origin main --allow-unrelated-histories //历史记录不一样
 
-### submodule
+### [submodule](https://git-scm.com/docs/git-submodule)
 - git submodule add <repository> <path>添加子模块 path是相对根目录的路径
 - git submodule add -b branch_name URL_to_Git_repo optional_directory_rename
 - git submodule init初始化子模块
 - git submodule update更新子模块 // 切换分支后就需要执行它
+- git submodule update --init 
+- git submodule update --init --recursive
 - git submodule foreach git pull拉取所有的子模块
-- git submodule sync
+- git submodule sync --recursive
+- git config -f .gitmodules submodule.DbConnector.branch branchName 设置或更新某个分支
+
+删除
+
+- git submodule deinit mod_name
+- git rm --cached mod_name
 
 ### branch
 分支
@@ -65,58 +75,53 @@
 ### git checkout
 
 - git checkout --orphan branchName // 创建空的分支
-
-- git checkout -b <new-branch-name> [<existing-branch>] 
-基于存在的分支创建，未指定即当前分支
-相当于执行git branch 和git checkout 命令组合
-
-- git checkout -b feature-branch origin/feature-branch
-创建并切换到远程分支
+- git checkout -b <new-branch-name> [<existing-branch>] 基于存在的分支创建，未指定即当前分支,相当于执行git branch 和git checkout 命令组合
+- git checkout -b feature-branch origin/feature-branch 创建并切换到远程分支
 
 ## 配置
 
 ### config
-git的配置
 ```shell
 git config --global user.name "lmj01"
 git config --global user.email "lmjie_good@163.com"
 git config --global color.ui auto 增强命令输出的可读性
 git config --global init.defaultBranch main // 更改默认分支git2.28支持
 git config --local user.name 
+### 配置稀疏文件
+git config core.sparsecheckout true
+echo "absolute-path" >> .git/info/sparse-checktout
+git pull --depth=1 origin master
 ```
+### gitignore
+
+1. /mtk/ 过滤整个文件夹
+2. *.zip 过滤所有.zip文件
+3. /mtk/do.c 过滤指定文件
+4. !/mtk/one.txt 添加指定文件
 
 ### git ssh
-在Linux中执行
-ssh-keygen -t rsa -C "lmjie_good@163.com"
-执行后，直接回车三次
-
+- 在Linux中执行ssh-keygen -t rsa -C "lmjie_good@163.com"执行后，直接回车三次
 - 第一次是要输入路径，否则默认数据
 - 第二次是passphrase
 - 第三次确认passphrase
 
 得到一个id_rsa和id_rsa.pub两个密钥，一个私钥，一个公钥
 
-ssh -v git@gitee.com // 这句会与服务器进行连接，看看客户端是否显示内容
-ssh-agent -s
+- ssh -v git@gitee.com // 这句会与服务器进行连接，看看客户端是否显示内容
+- ssh-agent -s
 
-known_hosts
-在~/.ssh/known_hosts文件中存在git的public key
+- known_hosts 在~/.ssh/known_hosts文件中存在git的public key
 
-### 凭证缓存
-因为gitlab的密码输出错误，导致权限HTTP Basic: Access Denied错误
-执行清楚权限帮助
-git config --system --unset credential.helper
-缓存
-git config credential.helper cache
-无限期保存
-git config credential.helper store
-[官方文档](https://git-scm.com/docs/git-credential-store)
-
+### [凭证缓存](https://git-scm.com/docs/git-credential-store)
+因为gitlab的密码输出错误，导致权限HTTP Basic: Access Denied错误, 执行清楚权限帮助
+- git config --system --unset credential.helper
+- git config credential.helper cache  缓存
+- git config credential.helper store 无限期保存
 
 ### 合并策略配置
 [Git Attributes](https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes)
 合并分支指定文件忽略掉
-git config merge.ours.driver true 
+- git config merge.ours.driver true 
 
 在根目录下添加文件.gitattributes
 文件中每一行就是对文件的属性进行处理
@@ -125,19 +130,6 @@ pox.xml merge=ours
 *.xml merge=ours 
 ```
 	
-### 配置稀疏文件
-
-- git config core.sparsecheckout true
-- echo "absolute-path" >> .git/info/sparse-checktout
-- git pull --depth=1 origin master
-
-### gitignore
-
-1. /mtk/ 过滤整个文件夹
-2. *.zip 过滤所有.zip文件
-3. /mtk/do.c 过滤指定文件
-4. !/mtk/one.txt 添加指定文件
-
 ## 回滚
 
 ```shell
@@ -175,20 +167,20 @@ git reset --soft HEAD~2 撤销多个提交
 - git checkout -p(--patch) origin/A filename.ext 把A(本地或远程)分支的某个文件合并到现在分支。
 
 存在差异时有如下的缩写字母命令
-y - apply this hunk to index and worktree # 应用当前hook，把A分支的东西应用到当前分支
-n - do not apply this hunk to index and worktree # 放弃当前hook，放弃A分支的，用当前分支的。
-q - quit; do not apply this hunk or any of the remaining ones # 不使用任何hook，直接退出
-a - apply this hunk and all later hunks in the file # 在当前文件下应用此hook以及后续的所有hook
-d - do not apply this hunk or any of the later hunks in the file # 在当前文件下不应用此hook以及后续的所有hook
-g - select a hunk to go to # 选择一个hook
-/ - search for a hunk matching the given regex # 使用正则搜索hook
-j - leave this hunk undecided, see next undecided hunk # 先跳过当前hook，并跳转到下一个未处理hook
-J - leave this hunk undecided, see next hunk # 先跳过当前hook，并跳转到下一个hook
-k - leave this hunk undecided, see previous undecided hunk # 先跳过当前hook，并跳转到上一个未处理hook
-K - leave this hunk undecided, see previous hunk # 先跳过当前hook，并跳转到上一个hook
-s - split the current hunk into smaller hunks # 切割当前hook
-e - manually edit the current hunk # 编辑当前hook
-? - print help # 显示帮助信息
+- y - apply this hunk to index and worktree # 应用当前hook，把A分支的东西应用到当前分支
+- n - do not apply this hunk to index and worktree # 放弃当前hook，放弃A分支的，用当前分支的。
+- q - quit; do not apply this hunk or any of the remaining ones # 不使用任何hook，直接退出
+- a - apply this hunk and all later hunks in the file # 在当前文件下应用此hook以及后续的所有hook
+- d - do not apply this hunk or any of the later hunks in the file # 在当前文件下不应用此hook以及后续的所有hook
+- g - select a hunk to go to # 选择一个hook
+- / - search for a hunk matching the given regex # 使用正则搜索hook
+- j - leave this hunk undecided, see next undecided hunk # 先跳过当前hook，并跳转到下一个未处理hook
+- J - leave this hunk undecided, see next hunk # 先跳过当前hook，并跳转到下一个hook
+- k - leave this hunk undecided, see previous undecided hunk # 先跳过当前hook，并跳转到上一个未处理hook
+- K - leave this hunk undecided, see previous hunk # 先跳过当前hook，并跳转到上一个hook
+- s - split the current hunk into smaller hunks # 切割当前hook
+- e - manually edit the current hunk # 编辑当前hook
+- ? - print help # 显示帮助信息
 
 ### 迁移
 cherry-pick对子目录不太友好，会改变目录结构，迁移时更多选择

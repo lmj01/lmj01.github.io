@@ -1,5 +1,14 @@
 # 趋势
 
+## ui headless
+
+去年github上增长最快的一个库，是[shadcn/ui组件库](https://ui.shadcn.com/)
+
+无头系统（Headless System）是指已配置为无须显示器（即“头”）、键盘和鼠标操作的计算机系统或设备。无头系统通常通过网络连接控制，但也有部分无头系统的设备需要通过RS-232串行连接进行设备的管理。服务器通常采用无头模式以降低运作成本。
+
+[Headless UI 全称是 Headless User Interface](https://www.merrickchristensen.com/articles/headless-user-interface-components/)，是一种前端开发的方法论（亦或者是一种设计模式），其核心思想是将 用户界面（UI）的逻辑和交互行为 与 视觉表现（CSS 样式） 分离开来；具体而言，Headless UI 的组件通常是纯粹的 JavaScript（或其他编程语言）组件，它们包含了一些交互逻辑和状态管理，但没有任何与视觉样式相关的代码。
+
+
 ## AI 
 
 美国作家Clifford Stoll的一句话，曾很好地概括了这一点，也可以回应你的这个问题，他曾说过：“数据不是知识。知识不是智慧。智慧不一定是聪明”。

@@ -10,6 +10,19 @@
 - mvn install
 - mvn clean install -Dmaven.test.skip=true 
 
+### springboot
+- mvn spring-boot:run
+
+## 配置
+
+### config/setting.xml
+设置私有库,需要更改三处地方
+```xml
+<localRepository>E://repoJava</localRepository>
+<server></server>
+<mirror></mirror>
+```
+
 ## itext7
 
 itext7 的字体涉及到版权问题，基本就是与adobe有关
