@@ -1,7 +1,8 @@
 # Books
 
-[只收录优质在线工具的导航网站](https://www.tboxn.com/)
-[zlibrary网站状态](https://www.tboxn.com/sites/320.html)
+- [只收录优质在线工具的导航网站](https://www.tboxn.com/)
+- [zlibrary网站状态](https://www.tboxn.com/sites/320.html)
+- [程序员开发的书籍By Developers, For Developers](https://pragprog.com/)
 
 ## reading
 

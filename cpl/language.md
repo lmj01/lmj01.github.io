@@ -57,3 +57,16 @@ rust语言的安全，就是通过所有权的确定来保证在运行期不会�
 
 - [js版的highlight高亮配置,选中语言，下载后选择es版本的，选择特定语言即可](https://highlightjs.org/download)
 
+
+## OOP
+ object-orientation
+
+- [What's In a Class? - The Interface Principle](http://www.gotw.ca/publications/mill02.htm)
+
+- [Tell-Don't-Ask is a principle that helps people remember that object-orientation is about bundling data with the functions that operate on that data.](https://martinfowler.com/bliki/TellDontAsk.html)
+
+logic 指的就是 functions，logic 和 data 分离，就是 C 时期的 functions + struct；合并起来，就是 class。尽管 trivial getters/setters 是用 class 写的，但和 function + struct 并没有区别，只是在对象里面转发了一下数据而已，反而会使 API 膨胀，显得十分冗余。
+
+class 抽象的是想法，而不是一堆数据。private 和 public 访问控制分离了抽象层次，private 里面应该放的是 data，public 里面应该放的是 idea。public 里面的接口要对人，而非对数据，要表现有关抽象的意义，而不是有关抽象的实现。
+
+trivial getters/setters 并没有使接口更安全，只是把对于数据的抽象转移到了接口上，这样的封装没有体现任何抽象的意义，也没有体现任何数据间的联系，未能施展 OOP 的 class 概念和访问控制能力。那为什么还要用 class 呢？

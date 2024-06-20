@@ -62,6 +62,10 @@ figma文字 > 矢量形状 > 屏幕像素
 
 - [canvas-editor基于canvas/svg的富文本编辑器](https://hufe.club/canvas-editor-docs/)
 
+使用 freetype 库 用opengl显示 ，无法显示汉字， 
+freetype可以根据ttf等格式的font文件 提取到文字轮廓 然后根据轮廓三角化就行了，可以借助[CGAL库](https://www.cgal.org/)
+
+[FTGL is a free cross-platform Open Source C++ library that uses Freetype2 to simplify rendering fonts in OpenGL applications. FTGL supports bitmaps, pixmaps, texture maps, outlines, polygon mesh, and extruded polygon rendering modes.](https://sourceforge.net/projects/ftgl/)
 
 ## 参考
 [Web 字体 font-family 该如何设置？](https://zhuanlan.zhihu.com/p/313284552)

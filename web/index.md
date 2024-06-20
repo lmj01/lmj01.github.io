@@ -10,7 +10,7 @@
 - [css](/web/css.md)
 - [canvas](/cg/canvas.md)
 - [小程序开发](/web/mini.md)
-- [字体](/web/font.md)
+- [字体](/cg/font.md)
 - [框架](/web/framework.md)
 - [测试模块](/web/test.md)
 - [图像处理](/web/ImageManipulation.md)
@@ -21,7 +21,6 @@
 - [html](/web/html.md)
 - [CSS](/web/css.md)
 - [适配屏幕](/web/adapt.screen.md)
-- [font](/web/font.md)    
 - [http](/web/http.md)
 - [javascript](/cpl/web/ECMAScript.md)
 

@@ -12,6 +12,7 @@
 
 ### springboot
 - mvn spring-boot:run
+- mvn package 打包后用java -jar来运行
 
 ## 配置
 

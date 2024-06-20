@@ -37,6 +37,7 @@
 ## ComputerGraphics
 
 - [OpenGL](/cg/api.opengl.md)
+- [字体](/cg/font.md)
 - [webgl](/cg/canvas.md)
 - [Shader](/cg/shader.md)
 - [vulkan](/cg/api.modern.md)
