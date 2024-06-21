@@ -10,10 +10,10 @@
 - [高中数学](/exercises/math.high.md)
 - [高等数学](/exercises/advanced.mathematics.md)
 - [数论](/exercises/number.theory.md)
-- [二次方程](/exercises/quadratic.equation.md)
-- [夹逼法](/exercises/sequeezing.md)
 - [几何](/exercises/geometry.md)
 - [线性代数](/exercises/linear.algebra.md)
+- [多项式](/exercises/polynomial.md)
+    - [二次方程](/exercises/quadratic.equation.md)
 
 
 ## 物理学

@@ -19,6 +19,7 @@ yarn run serve-static-examples
 
 ## 文档
 - [一文(10图)了解Cornerstone3D核心概念(万字总结附导图) ](https://juejin.cn/post/7326432875955798027)
+- [Cornerstone3D 概念解析](https://gitcode.com/jianyaoo/vue-cornerstone-demo/overview)
 
 ## [OHIF Medical Imaging Viewer](https://github.com/lmj01/Viewers)
 

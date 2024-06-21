@@ -56,11 +56,10 @@
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
 
 ### [stash](https://www.git-scm.com/docs/git-stash)
-
+此操作非常耗时
 - git stash list 罗列出所有的
-- 暂存修改
-    - git stash save "message" 给当前的stash加上message说明
-    - git stash 等同于上面这一句
+- git stash save "message" 给当前的stash加上message说明
+- git stash 等同于上面这一句
 - git stash pop [--index] [<stash>] 恢复stash中的内容
 - git stash drop [<stash>] 删除对应的stash的id
 - git stash clear 清楚所有的 
@@ -223,10 +222,10 @@ git remote add origin git@github.com:Username/Repositories_Name.git # 现在这�
 
 ## [hook](https://git-scm.com/docs/githooks)
 
-# Subversion 
+## Subversion 
 
 
-## 常用命令
+### 常用命令
 
 - svn up(update) 
 - svn update -r r644 // 切换到版本644
@@ -239,3 +238,17 @@ git remote add origin git@github.com:Username/Repositories_Name.git # 现在这�
 - svn revert
 - svn merge -r 608:602 "" // 从r608回滚到r602
 - svn info // 
+
+## 规范
+
+### angular
+- feat 增加新功能
+- fix 修复问题或bug
+- style 代码风格与运行结果无关
+- perf 优化/性能提升
+- refactor 重构
+- revert 撤销修改
+- test 测试相关
+- docs 文档/注释
+- chore 依赖更新或脚手架配置修改
+- ci 持续集成或自动部署
