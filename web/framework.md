@@ -19,6 +19,7 @@ Vue3.0新增了一个组件Teleport组件，将其所在组件模板内容内容
 
 ### 参考
 - [Vue 技术栈 Vue3 + Pinia + Vite5 实现, 可参考别人的代码逻辑](https://github.com/zyronon/douyin)
+- [入门级vue3+vite+Ts的多页面（MPA）模板，支持单模块构建，引入pinia，vueUse，naive-ui，axios等主流库用于开发，配置husky+commit+prettier+eslint来规范代码。 ](https://github.com/dv-cli/vue3-vite-multiple-page)
 
 ## [React](https://react.dev/)
 

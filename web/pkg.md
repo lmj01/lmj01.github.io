@@ -16,10 +16,6 @@ node -p // node REPL 交互环境
 
 ```shell
 npm init // 初始化工程
-npm init -w ./packages/a // 创建子包
-npm install libraryX --workspace packages/pA // 子工作区按照特定依赖
-npm install libraryX --save-dev --workspaces // 安装
-npm i libraryX -w packages/pA
 npm install XXX 安装但不写入package.json
 npm install XXX --save 安装且写入package.json中的dependencies
 npm install XXX --save-dev 安装且写入package.json中的devDependencies
@@ -29,31 +25,30 @@ npm install xxx@latest --save-dev 安装最新版本
 npm install -ddd // 可以查看安装的细节， 查看安装细节卡住哪里
 npm install relative-path // 把某个本地包安装进当前工程
 npm lx xxx 查询依赖的库信息
-// proxy代理设置
-npm config get proxy
+npm config get proxy // proxy代理设置
 npm config get https-proxy
-// 确定没有设置代理， 返回为null， 否则强制设置为null
-npm config set proxy null
+npm config set proxy null // 确定没有设置代理， 返回为null， 否则强制设置为null
 npm config set https-proxy null
-// 镜像设置
-npm config get registry // 获取
+npm config get registry // 获取 // 镜像设置
 npm config delete registry // 删除注册表
 npm config set registry https://registry.npmmirror.com // 使用镜像源
 npm config set registry https://registry.npmjs.org // 官方源
 npm install -g mirror-config-china --registry=https://registry.npm.taobao.org
 npm install --registry=https://registry.npm.taobao.org 指定淘宝源的安装
-// 清理
-npm config get cache // 缓存路径
+npm config get cache // 清理 // 缓存路径
 npm cache clean --force
 npm config list
 ```
-#### 2024-6-7
-```json
-"script":{
-    "dev": "cross-env VITE_APP_VERSION=$(node -p \"require('./package.json').version\") vite --mode localdev",
-}
+
+#### [workspaces](https://docs.npmjs.com/cli/v10/using-npm/workspaces)
+
+```shell
+npm init -w ./packages/a // 创建子包
+npm install abbrev -w a
+npm install libraryX --workspace packages/pA // 子工作区按照特定依赖
+npm install libraryX --save-dev --workspaces // 安装
+npm i libraryX -w packages/pA
 ```
-在sprintRay的一个AICAD中，通过这样来获取环境变量，其实
 
 ### [pnpm](https://pnpm.io/)
 
