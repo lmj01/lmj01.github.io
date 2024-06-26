@@ -225,6 +225,10 @@ try...catch...不能捕获异步操作
 ## typescript
 > javascript的超集，更加面向对象的编程语言，可以便宜为纯Javascript
 
+```shell
+tsc --init 自动生成tsconfig.json文件
+```
+
 ### 特性
 
 union
@@ -282,23 +286,6 @@ declare var A: A_Static;
 
 ## QuickJS
 > 是一个轻量，嵌入式的Javascript引擎
-
-### list
-
-- list.h
-
-```c
-struct list_head {
-  	struct list_head *prev;
-  	struct list_head *next;
-};
-```
-
-链表头的实现。这样看来不是把数据嵌入到链表中，而是把链表嵌入到其它对象中，来维护这些对象之间的链表关系。
-
-### cutils.h/cutils.c
-
-一些位操作，与内存，字符编码，排序等有关的函数
 
 # Babel
 babel7舍弃了以前的 babel-*-* 的命名方式，改成了@babel/*-*
