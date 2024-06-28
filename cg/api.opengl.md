@@ -2,6 +2,8 @@
 > [The Wiki is a collection of information about OpenGL, as well as frequently asked questions about OpenGL and its API. ](https://www.khronos.org/opengl/wiki/Main_Page)
 
 - [opengl 4.x](https://registry.khronos.org/OpenGL-Refpages/gl4/)
+- [opengl4.5新增了DSA(direct_state_access)，更改VAO，VBO，EBO的新用法](https://www.khronos.org/opengl/wiki/Direct_State_Access)
+- [OpenGL Error](https://www.khronos.org/opengl/wiki/OpenGL_Error#Meaning_of_errors)
 
 Context上下文是OpenGL的核心，因为OpenGL就是一个状态机，上下文中就保存了各种状态值，是所有执行指令的基础， 这个概念比较接近底层。统一的API是由显卡驱动提供的，负责沟通驱动与系统接口的是一些跨平台的库，如glew，glad，glad是更现代的库。
 
@@ -226,4 +228,5 @@ void initOpenGl() {
 - [GLRF - OpenGL Realtime Framework](https://github.com/DunkleMango/GLRF)
     - [GLRF笔记](/cg/library/GLRF.md)
 - [g-truc creation， OpenGL Mathematics (GLM) OpenGL Image (GLI)等有关opengl的文档与知识](https://www.g-truc.net/)
+- [A Guide to Modern OpenGL Functions](https://github.com/fendevel/Guide-to-Modern-OpenGL-Functions)
 

@@ -41,7 +41,7 @@ npm config list
 ```
 
 #### [workspaces](https://docs.npmjs.com/cli/v10/using-npm/workspaces)
-
+workspace在node_modules创建了一个link,指向每个子包项目,这样各个子包项目可以互相直接引入代码
 ```shell
 npm init -w ./packages/a // 创建子包
 npm install abbrev -w a

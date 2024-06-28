@@ -2,6 +2,7 @@
 
 
 ## Web-CSS-Standard
+
 ### meta
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -138,6 +139,11 @@ box-model分为两类:块状block和行内inline,两种的区别:
 }
 <link rel="stylesheet" media=mediatype and|not|only (media feature)" href="customcss.css">
 ```
+```js
+// 通过css的media样式来判断当前的js页面是否属于某种情况，CSS-JS交互的接口
+const tabletMedia = window.matchMedia(StylesheetVariables.tabletMedia).matches
+```
+
 
 ### pseudo-classes
 - host, selects shadow root host用于阴影DOM限定范围的

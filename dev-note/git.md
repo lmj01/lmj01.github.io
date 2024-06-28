@@ -59,9 +59,10 @@
 此操作非常耗时
 - git stash list 罗列出所有的
 - git stash save "message" 给当前的stash加上message说明
-- git stash 等同于上面这一句
+- git stash 等同于上面这一句，系统默认添加说明
 - git stash pop [--index] [<stash>] 恢复stash中的内容
 - git stash drop [<stash>] 删除对应的stash的id
+- git stash drop stash@{3}
 - git stash clear 清楚所有的 
 
 ### diff

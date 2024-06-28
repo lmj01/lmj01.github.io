@@ -53,3 +53,5 @@ Catmull-Rom样条线是由四个控制点p0,p1,p2,p3定义的插值样条曲线�
 [Computing Curve Skeletons from Medial Surfaces of 3D Shapes](https://diglib.eg.org/bitstream/handle/10.2312/LocalChapterEvents.TPCG.TPCG12.099-106/099-106.pdf?sequence=1)
 
 [Physically-Based Facial Modeling, Analysis, and Animation](https://web.cs.ucla.edu/~dt/papers/vca90/vca90.pdf)
+
+- [Implementation of my HPG2020 paper: Quadratic Approximation of Cubic Curves ](https://github.com/ttnghia/QuadraticApproximation)

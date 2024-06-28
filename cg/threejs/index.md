@@ -4,6 +4,8 @@
 - [Bump map](/cg/threejs/bumpmap.md)
 - [RayCaster](/cg/threejs/raycaster.md)
 - [Loader细节](/cg/threejs/loader.md)
+- [Grid实现](/cg/threejs/grid.md)
+- [shader](/cg/threejs/shader.md)
 
 ## 参考
 
@@ -15,3 +17,4 @@
 - [use your mouse to control the camera and build an andorid](https://hofk.de/main/threejs/raycaster/raycaster.html)
 - [webgl examples](https://alteredqualia.com/)
 - [22](https://github.com/brunosimon/folio-2019)
+- [THREE.js rendering order渲染顺序](https://segmentfault.com/a/1190000041221932/en)
