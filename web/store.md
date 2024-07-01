@@ -6,6 +6,8 @@
 小数据，比如用户登录信息，使用localestorage存储
 大数据，比如用户选择的图片信息，使用indexdb存储
 
+- [用 JavaScript 编写、运行在浏览器里的 NoSQL 数据库，它能够在离线状态下将数据存储至本地，并在网络恢复后自动同步数据，保持数据与服务器同步PouchDB is an open-source JavaScript database inspired by Apache CouchDB that is designed to run well within the browser.](https://github.com/pouchdb/pouchdb)
+
 ## store
 
 vuex是vue的状态全局关联的模式

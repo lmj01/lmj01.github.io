@@ -22,3 +22,4 @@
 
 - [MDN--Documenting web technologies, including CSS, HTML, and JavaScript, since 2005.](https://developer.mozilla.org/en-US/docs/Web)
 - [Google的开发工具,面向开发者的Android](https://developer.android.google.cn/?hl=zh-cn)
+- [远程终端工具Mosh is a remote terminal application that supports intermittent connectivity, allows roaming, and provides speculative local echo and line editing of user keystrokes.](https://github.com/mobile-shell/mosh)

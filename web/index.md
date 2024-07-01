@@ -9,6 +9,7 @@
 - [web概念](/web/web.md)
 - [html](/web/html.md)
 - [css](/web/css.md)
+- [store存储数据](/web/store.md)
 - [canvas](/cg/canvas.md)
 - [小程序开发](/web/mini.md)
 - [字体](/cg/font.md)
