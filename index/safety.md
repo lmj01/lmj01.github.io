@@ -1,9 +1,6 @@
 # 安全
 
-## 编程
-
-- [溢出分析](/articles/safe/overflow.md)
-- [计时攻击](/articles/safe/time.attacks.md)
+- [相关技术](/articles/safe/index.md)
 
 ## 逆向工程
 
@@ -24,3 +21,9 @@
 
 - [什么是 CVE（常见漏洞和暴露）？](https://informationsecurityasia.com/zh-CN/what-is-cve/)
 - [什么是CVE？](https://info.support.huawei.com/info-finder/encyclopedia/zh/CVE.html)
+
+### [ZKP-Zero-Knowledge Proof]()
+
+零知识证明是一种密码学协议，它允许一个参与者（证明者）向另一个参与者（验证者）证明某个陈述是正确的，而无需提供除了该陈述的真实性之外的任何信息。
+
+- [零知识证明入门教程。Comprehensive Zero-Knowledge Proofs Tutorial](https://github.com/WTFAcademy/WTF-zk)

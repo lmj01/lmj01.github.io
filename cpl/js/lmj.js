@@ -1,3 +1,27 @@
+const q2in2024 = {
+    p: [
+        0.15,
+        0.15,
+        0.35,
+        0.05,
+        0.10,
+        0.10,
+        0.05,
+        0.03,
+        0.02,
+    ],
+    r: [
+        70, 
+        70,
+        90, // 暂停
+        90, // 暂停
+        95,
+        90,
+        100,
+        100,
+        100,
+    ],
+}
 const q1in2024 = {
     p: [
         0.20,
@@ -48,7 +72,7 @@ const q4in2023 = {
         100,    
     ],
 }
-const arrayList = [q1in2024, q4in2023];
+const arrayList = [q2in2024, q1in2024, q4in2023];
 function toScroe(data) {
     console.log('one-quater-year')
     return data.p.reduce((pv,cv,i)=>{

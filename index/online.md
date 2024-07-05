@@ -41,6 +41,7 @@
 ## 工具
 
 - [Javascript Playground--邮箱meijie.lmj@outlook.com](https://playcode.io/)
+- [用 HTML 的方式展示乐谱Scribe renders music notation in HTML.](https://github.com/stephband/scribe)
 
 ### 流程图
 

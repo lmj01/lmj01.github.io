@@ -6,6 +6,7 @@
 - [Loader细节](/cg/threejs/loader.md)
 - [Grid实现](/cg/threejs/grid.md)
 - [shader](/cg/threejs/shader.md)
+- [material材质](/cg/threejs/material.md)
 
 ## 参考
 

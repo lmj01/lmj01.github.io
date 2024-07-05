@@ -1,6 +1,8 @@
 # [Color](https://www.color.org/index.xalter)
 > ICC International Color Consortium
 
+- [The Importance of Being Linear](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear)
+
 色彩主观就是光线给人眼的感觉，客观地说就是人眼对可见光0.43um到0.78um的波长，不同的波长对人眼产生不同的神经信号，传递大脑的感知就是色彩，非可见光人眼是无法感知的。
 
 如果一束光，它的光子都是同一波长的，就是单色光；不同波长的光合在一起就是混合光；

@@ -33,5 +33,5 @@ xcopy /s /e /h /i /y .\third\snippet\ .\third2\snippet\
 
 window上可以直接sshLinux下，在家里的局域网测试成功
 ```shell
-ssh name@ip
+ssh name@ip // 登录后会让你输入密码
 ```

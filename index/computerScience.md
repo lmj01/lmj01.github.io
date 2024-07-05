@@ -1,4 +1,4 @@
-# Computer Science
+# 计算机科学
 
 ## Programing Language
 
@@ -117,6 +117,6 @@
 ## 其他
 
 - [计算机专业学习路线](https://hackway.org/docs/cs/intro)
-- [安全之攻击](/articles/time.attacks.md)
+- [安全](/articles/safe/index.md)
 - [The original sources of MS-DOS 1.25, 2.0, and 4.0 for reference purposes ](https://github.com/microsoft/MS-DOS)
 

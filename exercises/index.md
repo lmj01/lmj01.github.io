@@ -22,6 +22,9 @@
 
 ## 工具
 
+- [Wolfram MathWorld](https://mathworld.wolfram.com/)
+- [提供各种数学问题的交互式解法和动画](https://www.cut-the-knot.org/)
+
 <details>
 <summary>Geogebra开源在线工具</summary>
 
