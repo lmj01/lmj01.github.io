@@ -1,18 +1,30 @@
 # Maven
 
+maven 是打包工具，执行还是需要调用Java
+
 ## 命令
+
 配置好环境后，使用vscode开发，不使用IDE
+
 - mvn test 跑test下的所有类
 - mvn test -Dtest=ReportTest 跑test下指定的类
 - mvn compile 编译
 - mvn clean
-- mvn package
+- mvn package // 打包后jar文件包含资源和编译的Java类
 - mvn install
 - mvn clean install -Dmaven.test.skip=true 
 
 ### springboot
+
+Spring Boot 通过 Spring Boot Maven Plugin 在 Apache Maven 中提供了对 Spring Boot 的支持。
+
 - mvn spring-boot:run
 - mvn package 打包后用java -jar来运行
+
+调用springboot打包后的文件启动服务
+
+- java -jar target/spring-boot-artifacts-2.jar 
+- java -jar target/orth.war
 
 ## 配置
 
@@ -37,5 +49,14 @@ document.add(new Paragraph("hellos你好").setFont(f3));
 ```
 
 ## 工具
-[mvn的仓库](https://mvnrepository.com/)
-[ Spring Initializr在线生成工程模板](https://start.spring.io/)
+- [mvn的仓库](https://mvnrepository.com/)
+- [ Spring Initializr在线生成工程模板](https://start.spring.io/)
+- [Spring-boot:repackage 和 Maven package](https://springdoc.cn/spring-boot-repackage-vs-mvn-package/)
+
+
+### 开发配置
+```shell
+cd matchyun-orthodontic
+mvn spring-boot:run
+cd ..
+```

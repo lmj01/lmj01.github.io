@@ -1,4 +1,8 @@
 # Font
+
+- [SLUG--Dynamic GPU Font Rendering and Advanced Text Layout ](https://sluglibrary.com/)
+  - [GPU-Centered Font Rendering Directly from Glyph Outlines](https://jcgt.org/published/0006/02/02/)
+
 字体在网页中的应用
 
 去各大网站上看看其他网站默认的字体，一般都是对body样式中存在这样的值

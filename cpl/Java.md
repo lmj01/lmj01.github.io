@@ -8,6 +8,7 @@
 - jdk17需要maven3.8.8及以上
 - jdk21需要maven3.8.8及以上
 
+- [maven笔记](/dev-note/maven.md)
 
 ## 语言特性
 
@@ -154,7 +155,11 @@ public保证接口的向后兼容，内部的实现与size可能会改变， 这
 4. spring
 
 ## SpringBoot
-> 框架，快速开发，适合构建微服务系统，集成度较高，底层很难修改
+
+框架，快速开发，适合构建微服务系统，集成度较高，底层很难修改
+
+- [Spring 源码阅读系列](https://github.com/xuchengsheng/spring-reading)
+  - [掘金网站](https://juejin.cn/user/4251135018533068/posts)
 
 ### IoC
 
