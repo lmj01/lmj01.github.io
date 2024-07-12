@@ -38,3 +38,7 @@
 ### 感受
 
 - [2024](/exercises/2024.md)
+
+<details>
+<summary>xxx</summary>
+</details>

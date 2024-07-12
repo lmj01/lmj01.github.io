@@ -69,4 +69,16 @@ AA^{T}=UDU^{T} \newline
 D\text{为特征值的对角矩阵，}V,U\text{为正交矩阵}
 $$
 
+[利用Weyl's不等式证明 Eckhart-Young定理](https://mp.weixin.qq.com/s/ErHlXWNvZC6vdPUZs2ycGQ)
+
+在现代机器学习中，降维处理数据中，很重要的工具也是SVD，即
+
+$$
+A_{m \times n}=U_{m \times m} \sum_{m \times n} V_{n \times n}^{T} = \begin{bmatrix} u_{1} & \cdots & u_{m} \end{bmatrix} \begin{bmatrix} \sigma_{1} & & & & \newline & \cdots & & & \newline & & \sigma_{r} & & \newline & & & \cdots & \newline & & & & 0 \end{bmatrix} \begin{bmatrix} v_{1}^T \newline \vdots \newline v_{n}^T \end{bmatrix} = \textstyle \sum_{i=1}^{r} \sigma^{i}u_{i}v_{i}^T
+$$
+
+可以看到右边式子中的项数是r，与矩阵的秩相同，实际应用中，r很大，一个想法就是降低其值，用一个秩较低的矩阵来近似。SVD分解就具有这样的特性：
+
+任何秩k小于r的截断分解都能以最佳方式近似A，这是Eckhart-Young 定理的内容：当B等于A的截断SVD 时，Frobenius 范数（衡量原始矩阵A与任何低秩矩阵B之间的差异）将最小化
+
 </details>

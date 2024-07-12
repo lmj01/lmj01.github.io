@@ -1,6 +1,9 @@
-# Maven
+# [Maven](https://maven.apache.org/)
 
-maven 是打包工具，执行还是需要调用Java
+Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information. 
+
+maven是项目管理工具，将项目分成了三个生命周期，clean，default，site
+ 是打包工具，执行还是需要调用Java
 
 ## 命令
 
@@ -14,11 +17,14 @@ maven 是打包工具，执行还是需要调用Java
 - mvn install
 - mvn clean install -Dmaven.test.skip=true 
 
-### springboot
+### [Spring Boot Maven Plugin](https://docs.spring.io/spring-boot/maven-plugin/index.html)
+
+- [插件源码](https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-tools/spring-boot-maven-plugin)
 
 Spring Boot 通过 Spring Boot Maven Plugin 在 Apache Maven 中提供了对 Spring Boot 的支持。
 
 - mvn spring-boot:run
+- mvn spring-boot:repackage
 - mvn package 打包后用java -jar来运行
 
 调用springboot打包后的文件启动服务

@@ -1,5 +1,5 @@
 # NURBS
->
+
 非均匀有理B样条, 这是一种数学表示3D几何的方法，能够准确描述从简单的2D线、圆、弧或曲线到非常复杂的3D自由曲面或实体的任何形状。如今，NURBS已成为CAD和计算机图形学的国际标准。
 
 ## [The Nurbs Book]()
@@ -7,6 +7,7 @@
 
 ## 参考
 
+- [OpenNURBS is an open-source NURBS-based geometric modeling library and toolset, with meshing and display / output functions. ](https://github.com/OpenNURBS/OpenNURBS)
 - [A small C++ library containing some NURBS-based geometric modeling algorithms and features I've been working on since 2013.](https://gitlab.com/ssv/Mobius)
 - [LNLib is a C++ NURBS Algorithms Library. These algorithms are primary referenced from The NURBS Book 2nd Edition. ](https://github.com/BIMCoderLiang/LNLib)
 - [LNLibViewer is a 3d viewer matches C++ NURBS algorithm library LNLib](https://github.com/BIMCoderLiang/LNLibViewer)
