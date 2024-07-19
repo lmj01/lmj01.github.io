@@ -3,6 +3,7 @@
 > 既然是图形库，那一定使用了很多图形学的技术
 
 - [WebGL Report](https://webglreport.com/)
+- [webgl](/cg/tools/webgl.md)
 
 ## 尺寸
 

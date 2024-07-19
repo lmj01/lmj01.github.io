@@ -261,11 +261,3 @@ spring.data.neo4j.uri=http://localhost:7474
 前端静态资源，通过元素a跳转到指定的href即可，后台的请求就可以全部使用RestController啦！
 不直接返回页面，后面的页面也不处理！
 
-
-
-
-## 库
-
-### [itext](https://api.itextpdf.com/iText/java/latest/)
-
-- A4 width:595.0, height:842.0

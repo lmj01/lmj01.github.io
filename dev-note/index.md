@@ -12,7 +12,7 @@
 - [build System](/dev-note/buildSystem.md)
 - [debug](/dev-note/debug.md)
 - [powershell](/dev-note/powershell.md)
-- [包管理C++](/dev-note/pkg.md)
+- [包管理 -- vcPkg, vfox](/dev-note/pkg.md)
 - [maven](/dev-note/maven.md)
 
 - [硬件配置](/dev-note/hardware.md)

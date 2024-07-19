@@ -42,7 +42,12 @@ Spring Boot 通过 Spring Boot Maven Plugin 在 Apache Maven 中提供了对 Spr
 <mirror></mirror>
 ```
 
-## itext7
+## [itext](https://api.itextpdf.com/iText/java/latest/)
+
+- [FAQ](https://kb.itextpdf.com/itext/faq)
+- [stackoverflow](https://stackoverflow.com/questions/tagged/itext+itext7)
+
+- A4 width:595.0, height:842.0
 
 itext7 的字体涉及到版权问题，基本就是与adobe有关
 
@@ -53,6 +58,11 @@ PdfFont f3 = PdfFontFactory.createFont("C:/Windows/Fonts/simhei.ttf", PdfEncodin
 document.add(new Paragraph("hellos你好").setFont(f2));
 document.add(new Paragraph("hellos你好").setFont(f3));
 ```
+
+### [7.1.8](https://api.itextpdf.com/iText/java/7.1.8/)
+
+- [How to fill a rectangle with color?](https://kb.itextpdf.com/itext/how-to-fill-a-rectangle-with-color)
+
 
 ## 工具
 - [mvn的仓库](https://mvnrepository.com/)

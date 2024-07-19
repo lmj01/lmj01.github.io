@@ -98,6 +98,20 @@ operator<< (std::cout, 1) // 当初函数调用，传入参数
 ```
 [CPO](https://www.zhihu.com/question/518132411)
 
+### [Copy elision](https://en.cppreference.com/w/cpp/language/copy_elision)
+
+- copy elision拷贝消除，一种拷贝优化，
+- RVO(Return Value Optimization)返回值优化
+- NRVO(Named Return Value Optimization)命名返回值优化
+
+### auto
+```cpp
+std::shared_ptr<int> spA = std::make_shared<int>(5);
+auto& p = spA; // 引用
+auto p = spA; // 赋值
+```
+
+
 ## TMP(template metaprogramming)
 
 可参考的内容
