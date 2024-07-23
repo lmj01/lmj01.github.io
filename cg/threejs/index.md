@@ -1,5 +1,6 @@
 # Threejs
 
+- [问题集](/cg/threejs/use.md)
 - [乱记](/cg/threejs/threejs.md)
 - [Bump map](/cg/threejs/bumpmap.md)
 - [RayCaster](/cg/threejs/raycaster.md)

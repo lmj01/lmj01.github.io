@@ -93,6 +93,19 @@ new Promise(()=>{
 ## [node-gyp](https://github.com/nodejs/node-gyp)
 node-gyp is a cross-platform command-line tool written in Node.js for compiling native addon modules for Node.js. It contains a vendored copy of the gyp-next project that was previously used by the Chromium team and extended to support the development of Node.js native addons.
 
+## [PartyKit simplifies developing multiplayer applications.](https://github.com/partykit/partykit)
+With PartyKit, you can focus on building multiplayer apps or adding real-time experiences to your existing projects with as little as one line of code. Meanwhile, PartyKit will handle operational complexity and real-time infrastructure scaling.
+
+- [doc](https://docs.partykit.io/)
+
+## [reveal.js](https://revealjs.com/)
+
+用来做PPT展示内容的。非常适合文档展示的。
+
+reveal.js is an open source HTML presentation framework.
+
+- [github](https://github.com/hakimel/reveal.js)
+
 ## [UMI](https://umijs.org/)
 - [笔记](/articles/2024/umi.md)
 

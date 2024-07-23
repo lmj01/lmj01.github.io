@@ -12,6 +12,9 @@
     - [ Source repo for the book gameprogrammingpatterns.com ](https://github.com/munificent/game-programming-patterns)
     - [online-free](http://gameprogrammingpatterns.com/contents.html)
 
+- [WebGL Report](https://webglreport.com/)
+- [WebGPU Report](https://webgpureport.org/)
+
 ## Blogs
 
 - [Long Luo, 一个严肃的程序员](http://www.longluo.me/)

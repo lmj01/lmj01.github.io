@@ -1,4 +1,4 @@
-# WebGL
+# [WebGL](https://registry.khronos.org/webgl/specs/latest/)
 
 - [threejs](https://threejs.org/)
     - [笔记](/cg/threejs/index.md)

@@ -64,6 +64,7 @@ pnpm store prune // 删除缓存
 pnpm add react -w // 全局公共依赖
 pnpm add react --filter pkg1 // 指定项目按照
 pnpm config set store-dir e:\dev-data\.pnpm-store\v3 --global // 设置存储目录
+pnpm --registry https://registry.npm.taobao.org  install // 临时使用其他源按照
 ```
 
 ### [Yarn is a package manager](https://yarnpkg.com/)

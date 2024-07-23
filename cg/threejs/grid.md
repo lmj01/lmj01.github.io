@@ -4,6 +4,9 @@
 - [Grids](https://godotshaders.com/snippet/grids/)
 - [Shadertoy: Grid Shader](https://worldofzero.com/posts/shadertoy-grid-shader/)
 - [Anti-Aliased Grid Shader](https://madebyevan.com/shaders/grid/)
+- [How to achieve this material effect](https://discourse.threejs.org/t/how-to-achieve-this-material-effect-gif-image/1270/5)
+- [Help with GridHelper - 3d coordinates](https://discourse.threejs.org/t/help-with-gridhelper-3d-coordinates/27336)
+- [【源码】效果最好的网格Shader（迄今为止）](https://mp.weixin.qq.com/s/WJLwJMdvug98QWyFvV4e7A)
 
 ## 透视下
 
