@@ -14,6 +14,11 @@
 - 毛选，在读
 - 符号学：原理与推演，南京大学出版社，ISBN:9787305160516, 在读
 
+### [Design Patterns in Modern C++](https://book.douban.com/subject/30200080/)
+
+- crtp
+
+
 ### [OpenGL SuperBible](https://github.com/openglsuperbible)
 
 [github code](https://github.com/openglsuperbible)

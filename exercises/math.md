@@ -98,12 +98,6 @@
 
 ## 高等数学
 
-## 数论
-
-数论是一个有些特殊的板块，它是唯一一个完整的学科，大学数学系都有一门课是初等数论，基本就是完完整整地讲了一遍高中竞赛的全部内容，不多不少。数论的学习最重要的是知识体系的建立。
-
-- [初等数论-北大出版社](https://book.douban.com/subject/21267842/)
-- [数论讲义（上册）](https://book.douban.com/subject/1653408/)[数论讲义（下册）](https://book.douban.com/subject/1237669/)
 
 ### 几何
 
@@ -116,3 +110,20 @@
 - [James Munkres. Topology]()
 - [John L. Kelley General Topology]()
 - [EH Spanier. Algebraic Topology]()
+
+## 数论
+
+数论是一个有些特殊的板块，它是唯一一个完整的学科，大学数学系都有一门课是初等数论，基本就是完完整整地讲了一遍高中竞赛的全部内容，不多不少。数论的学习最重要的是知识体系的建立。
+
+- [初等数论-北大出版社](https://book.douban.com/subject/21267842/)
+- [数论讲义（上册）](https://book.douban.com/subject/1653408/)[数论讲义（下册）](https://book.douban.com/subject/1237669/)
+
+## 对称性
+
+收集与对称性关联的相关知识
+
+### IFS
+
+Iterated Function System迭代函数系统
+- [Chapter 9 Iterated function systems—self-similar and self-affine sets](https://www.ma.ic.ac.uk/~jswlamb/M345PA46/F03%20chap%209.pdf)
+- [TRANSITION PHENOMENA FOR THE ATTRACTOR OF AN ITERATED FUNCTION SYSTEM](https://arxiv.org/pdf/2205.01185)

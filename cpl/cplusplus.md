@@ -5,6 +5,7 @@
     - [The Guidelines Support Library (GSL) contains functions and types that are suggested for use by the C++ Core Guidelines maintained by the Standard C++ Foundation. This repo contains Microsoft's implementation of GSL.](https://github.com/Microsoft/GSL)
 
 - [TMP -- Template Meta Programming](/cpl/cpp/tmp.md)
+- [CRTP -- Curiously Recurring Template Pattern](/cpl/cpp/crtp.md)
 
 ## 语言特性
 
@@ -148,7 +149,7 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [C++分析，可看到预处理状态](https://cppinsights.io/)
 - [C++Benchmark](https://quick-bench.com/q/6tDxsmk3FMX55B8W1RrdiG_s7_k)
 ### 代码例子
-- [crtp](/cpl/cpp/crtp.cpp)
+- 
 - [offsetof](/cpl/cpp/offsetof.cpp)
 - [reference](/cpl/cpp/reference.cpp)
 

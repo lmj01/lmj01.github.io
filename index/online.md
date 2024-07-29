@@ -41,6 +41,12 @@
 - [ ISO C++ 标准委员会主席, 已经订阅其博客working at the intersection of programming language design/UX, people, and high performance code.](https://herbsutter.com/)
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)
 
+## 游戏
+
+### [space-station-14](https://spacestation14.com/)
+该项目是经典游戏《Space Station 13》的开源重制版。在这款回合制多人角色扮演的游戏中，玩家可以选择各种角色，如工程师、船长和叛徒，并与其他玩家合作或竞争，在资源有限的环境中生存。
+- [github](https://github.com/space-wizards/space-station-14)
+
 ## 工具
 
 - [Javascript Playground--邮箱meijie.lmj@outlook.com](https://playcode.io/)

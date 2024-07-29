@@ -1,6 +1,7 @@
 # Geometry
 
 - [Polygon Mesh Processing书籍](/cg/mesh/PolygonMeshProcessing.md)
+- [Isogeometric Anylasis](/cg/mesh/IsogeometricAnylasis.md)
 
 ## Projective Geometric Algebra
 

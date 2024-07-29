@@ -63,7 +63,21 @@ Parchment is Quill's document model. It is a parallel tree structure to the DOM 
 插件的写法可参考安装后的code插件来写。
 modules\tinymce\src\core\main\ts\api\Options.ts
 
-## jszip
+## [node-gyp](https://github.com/nodejs/node-gyp)
+node-gyp is a cross-platform command-line tool written in Node.js for compiling native addon modules for Node.js. It contains a vendored copy of the gyp-next project that was previously used by the Chromium team and extended to support the development of Node.js native addons.
+
+## [PartyKit simplifies developing multiplayer applications.](https://github.com/partykit/partykit)
+With PartyKit, you can focus on building multiplayer apps or adding real-time experiences to your existing projects with as little as one line of code. Meanwhile, PartyKit will handle operational complexity and real-time infrastructure scaling.
+
+- [doc](https://docs.partykit.io/)
+
+## [UMI](https://umijs.org/)
+- [笔记](/articles/2024/umi.md)
+
+## 展示类
+
+
+### jszip
 
 ```javascript
 new Promise(()=>{
@@ -89,16 +103,7 @@ new Promise(()=>{
 })
 ```
 
-
-## [node-gyp](https://github.com/nodejs/node-gyp)
-node-gyp is a cross-platform command-line tool written in Node.js for compiling native addon modules for Node.js. It contains a vendored copy of the gyp-next project that was previously used by the Chromium team and extended to support the development of Node.js native addons.
-
-## [PartyKit simplifies developing multiplayer applications.](https://github.com/partykit/partykit)
-With PartyKit, you can focus on building multiplayer apps or adding real-time experiences to your existing projects with as little as one line of code. Meanwhile, PartyKit will handle operational complexity and real-time infrastructure scaling.
-
-- [doc](https://docs.partykit.io/)
-
-## [reveal.js](https://revealjs.com/)
+### [reveal.js](https://revealjs.com/)
 
 用来做PPT展示内容的。非常适合文档展示的。
 
@@ -106,8 +111,13 @@ reveal.js is an open source HTML presentation framework.
 
 - [github](https://github.com/hakimel/reveal.js)
 
-## [UMI](https://umijs.org/)
-- [笔记](/articles/2024/umi.md)
+### [JavaScript image viewer. viewerjs](https://fengyuanchen.github.io/viewerjs/)
+
+用来查看图片的前端库
+
+- [github](https://github.com/lmj01/viewerjs)
+
+### [mxGraph](https://jgraph.github.io/mxgraph/)
 
 # 其他库
 

@@ -1,6 +1,8 @@
 # Isogeometric
 
-## Isogeometric Anylasis
+- [Isogeometric Anylasis](/cg/mesh/IsogeometricAnylasis.md)
+
+## [IGA -- Isogeometric Anylasis]()
 
 等几何分析始于Thomas Hughes教授参与关于从CAD模型创建有限元模型的研究。研究的要点表达了这样一个主题：尽管对网格生成进行了多年的研究，但CAD到Mesh创建问题依然是有效使用FEA（有限元分析）的重大瓶颈，对于复杂的工程设计来说，这个问题似乎越来越严重。
 

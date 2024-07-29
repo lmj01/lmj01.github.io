@@ -10,6 +10,7 @@
 - [高中数学](/exercises/math.high.md)
 - [高等数学](/exercises/advanced.mathematics.md)
 - [数论](/exercises/number.theory.md)
+- [微积分](/exercises/differential.integral.md)
 - [数值计算](/exercises/numerical.calculation.md)
 - [几何](/exercises/geometry.md)
 - [线性代数](/exercises/linear.algebra.md)
