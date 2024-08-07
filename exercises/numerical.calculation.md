@@ -32,3 +32,12 @@ Gauss型求积算法是数值稳定的，且对有限闭区间上的连续函数
 
 - [高斯积分](http://staff.ustc.edu.cn/~rui/textbooks/nm/slides/num-integration-gauss.html#/16)
 - [第四章 数值积分与数值微分 朱升峰 华东师范大学 数学科学学院](https://math.ecnu.edu.cn/~sfzhu/course/NumerAnal/NumerInt3.pdf)
+
+## 回归分析法
+
+- [regression-js is a JavaScript module containing a collection of linear least-squares fitting methods for simple data analysis. ](https://github.com/Tom-Alexander/regression-js)
+- [A JavaScript library for performing in-browser linear regression.](https://github.com/McCulloughRT/regress-js)
+
+### Gaussian elimination
+
+### 术语

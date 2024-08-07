@@ -55,6 +55,14 @@
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
 
+### tag
+
+- git tag -a tagName -m "描述" 添加标签
+- git push origin tagName 推送指定的标签
+- git push origin --tags 推送所有的
+- git push origin --delete tagName 删除远程标签
+- git checkout -b branchName tagName 以某个标签为指定版本
+
 ### [stash](https://www.git-scm.com/docs/git-stash)
 此操作非常耗时
 - git stash list 罗列出所有的

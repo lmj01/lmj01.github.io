@@ -20,3 +20,4 @@
 - [webgl examples](https://alteredqualia.com/)
 - [22](https://github.com/brunosimon/folio-2019)
 - [THREE.js rendering order渲染顺序](https://segmentfault.com/a/1190000041221932/en)
+- [A camera control for three.js, similar to THREE.OrbitControls yet supports smooth transitions and more features. ](https://github.com/lmj01/camera-controls)

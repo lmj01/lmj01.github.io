@@ -81,3 +81,11 @@ Exocad是一款跨平台的应用程序，免费使用。
 - [Yet another modeling kernel? Hell, no.关于是否要从0开发一个新的几何内核](https://quaoar.su/blog/page/modeling-kernel-no-thanks)
 - [A 3D CAD application on your browser](https://chili3d.com/)
     - [github](https://github.com/xiangechen/chili3d)
+
+## 开源图像
+
+### [HARFANG®3D builds real-time 3D tools for industry professionals.](https://www.harfang3d.com/en_US/)
+
+底层使用bgfx，可以分析分析别人使用的框架逻辑
+
+- [github](https://github.com/harfang3d/harfang3d)

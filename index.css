@@ -46,3 +46,6 @@ em {
 .navbar-nav .nav-link.active {
     color: var(--bs-primary)!important;
 }
+img {
+    width: 100%;
+}

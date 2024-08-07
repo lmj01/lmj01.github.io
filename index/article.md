@@ -10,11 +10,12 @@
 - [Blender](/cg/blender/index.md)
 
 ### 图形学
-- [裁剪](../cg/tools/culling.md)
-- [四元数](../cg/tools/quaternion.md)
-- [meshlab](../cg/tools/meshlab.md)
-- [eigen](../cg/library/eigen.md)
-- [Gizmo](../cg/tools/gizmo.md)
+- [裁剪](/cg/tools/culling.md)
+- [四元数](/cg/tools/quaternion.md)
+- [meshlab](/cg/tools/meshlab.md)
+- [eigen](/cg/library/eigen.md)
+- [Gizmo](/cg/tools/gizmo.md)
+- [threejs使用记录](/cg/threejs/use.md)
 
 ## 工作中遇到的
 - [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)
@@ -50,6 +51,5 @@
 - [打印相关](/articles/2023/printer.md)
 - [用户 角色 权限的通用设计](/articles/2023/userRolePermission.md)
 - [农历历法](/articles/2023/chineseCalendar.md)
-- [回归分析法](/articles/2023/regression.md)
 - [协同编辑](/articles/2023/associateEditor.md)
 - [Fractional Indexing小数索引技术](/articles/2023/fractionalIndexing.md)

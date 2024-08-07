@@ -36,6 +36,7 @@ npm config set registry https://registry.npmjs.org // 官方源
 npm install -g mirror-config-china --registry=https://registry.npm.taobao.org
 npm install --registry=https://registry.npm.taobao.org 指定淘宝源的安装
 npm config get cache // 清理 // 缓存路径
+npm config set cache "e:\dev-data\npm-cache" 设置新的缓存
 npm cache clean --force
 npm config list
 ```

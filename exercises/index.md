@@ -10,6 +10,7 @@
 - [高中数学](/exercises/math.high.md)
 - [高等数学](/exercises/advanced.mathematics.md)
 - [数论](/exercises/number.theory.md)
+- [组合](/exercises/combinatorics.md)
 - [微积分](/exercises/differential.integral.md)
 - [数值计算](/exercises/numerical.calculation.md)
 - [几何](/exercises/geometry.md)
@@ -24,6 +25,7 @@
 
 - [Wolfram MathWorld](https://mathworld.wolfram.com/)
 - [提供各种数学问题的交互式解法和动画](https://www.cut-the-knot.org/)
+- [图形计算器，用meijie.lmj@outlook.com登录的](https://www.desmos.com/calculator?lang=zh-CN)
 
 <details>
 <summary>Geogebra开源在线工具</summary>
