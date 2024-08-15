@@ -10,6 +10,7 @@
 - [JPEG](/cg/image/JPEG.md)
     - [Image Process](/cg/image/ImageProcessing.md)
 - [tiff](/cg/image/tiff.md)
+- [ffmpeg](/cg/image/ffmpeg.md)
 
 
 - [ImageMagick](/cg/image/imageMagick.md)

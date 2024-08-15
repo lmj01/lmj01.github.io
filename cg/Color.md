@@ -1,21 +1,23 @@
 # [Color](https://www.color.org/index.xalter)
-> ICC International Color Consortium
-
-- [The Importance of Being Linear](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear)
 
 色彩主观就是光线给人眼的感觉，客观地说就是人眼对可见光0.43um到0.78um的波长，不同的波长对人眼产生不同的神经信号，传递大脑的感知就是色彩，非可见光人眼是无法感知的。
 
 如果一束光，它的光子都是同一波长的，就是单色光；不同波长的光合在一起就是混合光；
 
-## Color Model & Space
+## 概念
+
+- ICC International Color Consortium
+- 亮度Lightness、Luminance
+- 明度Brightness、Value
+- 辉度Luma，把使用色觉校正的结果称为辉度
+
+### 颜色模型与颜色空间
 
 - Color Model色彩模型是指一个抽象的数学模型，用来描述一个颜色怎么样被表达成一组数字，通常会用3个或4个数值表示
 - Color Space是色彩模型有了数值具体的表述和规则，所有色彩形成一个封闭集合，并有计算属性，这个集合就是色彩空间
 
 - additive model，加性模型，根据三原色原理规定一个坐标轴分别代表RGB立体数学模型
 - 减性模型，越混合越黑
-
-
 - RGB，大多与显示设备、输入设备(数码相机、扫描仪)相关联的
     - sRGB，1996，较小色域空间，主要应用在网页浏览，在色彩调整及转换时会保存信息以备使用
     - AdobeRGB,1998，为解决sRGB不能覆盖CMYK的问题，为了显示器，主要在蓝绿色方向进行扩展，完全覆盖sRGB，基本覆盖CMYK
@@ -43,7 +45,7 @@ HSL/HSV解释：L是指从最暗的黑色到色相纯色再到白色，L最大�
 
 js中canvas的颜色getImageData中setting有这个参数
 
-## Gamma Correction
+### Gamma Correction
 
 gamma校正，存在的原因有
 
@@ -62,13 +64,10 @@ gamma校正，存在的原因有
 
 HDR高动态范围High dynamic range，就是添加更多的动态范围到图片中，人眼对场景采样是有能自动**变焦频率**的，即在明暗对比度比较强烈的场景下人眼都能看得各个部分的细节，但相机等在拍照时由于变焦固定或频率很低，得到的图片就只有一个焦距上的细节，导致细节上的缺失。通过多次曝光，得到不同亮度不同焦距内的细节组合起来提高清晰度，这就是HDR。
 
-## 术语
 
-- 亮度Lightness、Luminance
-- 明度Brightness、Value
-- 辉度Luma，把使用色觉校正的结果称为辉度
+### Color in Web
 
-## web-color
+- [ThreeJs中的color](/cg/threejs/color.md)
 
 在canvas中或CSS中，可以使用某个属性来表示颜色，纯色、渐变色等
 ```js
@@ -91,3 +90,14 @@ ctx.strokeStyle = canvasGradient;
     - [Chroma.js is a tiny small-ish zero-dependency JavaScript library (13.5kB) for all kinds of color conversions and color scales.](https://github.com/gka/chroma.js/)
     - [Color conversion & manipulation library by the editors of the CSS Color specifications ](https://github.com/LeaVerou/color.js)
     - [A comprehensive color library for JavaScript.](https://github.com/Evercoder/culori)
+
+## 参考
+
+- [The RGB-XYZ Matrix Calculator](https://www.russellcottrell.com/photo/matrixCalculator.htm)
+
+- [OpenColorIO, A complete color management solution geared towards motion picture production with an emphasis on visual effects and computer animation.](https://opencolorio.org/)
+    - [Blender Color Management](https://docs.blender.org/manual/en/latest/render/color_management.html)
+
+- [The Importance of Being Linear](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear)
+
+- [What every coder should know about gamma](https://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/)

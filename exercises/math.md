@@ -36,6 +36,9 @@
     2. 鸽巢原理Pigeonhole principle（抽屉原理），是一个基本的组合数学原理，表明n+1个鸽子放置n个巢中，至少有一个巢有两个鸽子。
 - 证明，是验证的过程
 
+- 传统数学是指以几何（即视觉推理）和实数代数相关的
+- 进入20世纪后，希尔伯特引领将数学形式化为一组公理和演绎逻辑推理。
+
 </details>
 
 <details>
@@ -127,3 +130,12 @@
 Iterated Function System迭代函数系统
 - [Chapter 9 Iterated function systems—self-similar and self-affine sets](https://www.ma.ic.ac.uk/~jswlamb/M345PA46/F03%20chap%209.pdf)
 - [TRANSITION PHENOMENA FOR THE ATTRACTOR OF AN ITERATED FUNCTION SYSTEM](https://arxiv.org/pdf/2205.01185)
+
+## 竞赛
+
+### 国际数学奥林匹克
+面向中学生的数学竞赛，考察的主要是几何（视觉推理）和实数代数一类东西
+
+这些数学领域与相当的具体事物相关，数字和形状，这些概念也是非常扎实的。
+
+构造是一个大的思路，很多技巧都是精心构造出来的。
