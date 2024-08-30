@@ -1,12 +1,35 @@
 # 问题集
 
-## 2024-8-6
+## render view with offset
+
+2024-8-16
+
+一直知道可以一个画布可以绘制多个区域，每个区域还能配置各种的内容。但是如何实现的一直没有让我明白透彻！
+
+在multiple views例子中，注意bottom是从下往上设置的
+
+## grid with plane
+
+2024-8-6
 
 看到的grid绘制，但是不是使用threejs自带的控制器，这些控制器不是改变物体，而是改变camera的位置和朝向。
 
 这样使用多个renderTarget来合成单个图像，就存在一个显示问题，鼠标操作的应该是object对象的移动，而不是camera的移动。
 
-## 2024-7-30
+## camera
+
+### light
+
+2024-8-27
+
+- pointLight跟着camera走，就是把执行add到camera中，并执行camera.updateMatrixWorld()更新
+- 但camera必须也在scene中，scene.add(camera)，不加进去也不会有灯光效果
+    - 此时的control居然不卡顿啦！
+- [Adding Controls to each element](https://threejs.org/manual/?q=canvase#en/multiple-scenes) 这里说明了加入scene.add(camera), camera.add(light)的目的，就是为了跟着视角走，确保视角正向就是就是光照的方向
+
+### perspective & orthographic camera switch
+
+2024-7-30
 
 正交与透视camera的切换，且场景的大小不能改变！
 之前项目中的代码看不出什么逻辑上的设置，现在就是从透视到正交切换时，缩放差异很大，
@@ -28,13 +51,13 @@ camera的近远曲线的趋势。
 ![投影切换](/images/cg/switch-persp-ortho.png "Switch persp to ortho and ortho to persp")
 ![log graph](/images/cg/desmos-graph-log.svg "log graph")
 
-## 2024-7-19
+## flickering
 
 接手公司项目时，使用他们的代码拷贝过来，产生了一个问题，就是渲染时牙龈边沿处的跳动。
 
 牙龈根据牙齿数据来生成，目前存在牙龈穿过牙齿的现象。
 
-### flickering 
+### 2024-7-19
 
 渲染边沿出现跳动flicker的现象通常由几个常见的原因组成
 - z-fighting, 是webgl常见的问题，当两个表面或多个表面非常接近时，它们的深度值可能会重叠，导致在渲染时不知道切换那个表面,可以增加一个偏移来避免

@@ -55,3 +55,7 @@ Catmull-Rom样条线是由四个控制点p0,p1,p2,p3定义的插值样条曲线�
 [Physically-Based Facial Modeling, Analysis, and Animation](https://web.cs.ucla.edu/~dt/papers/vca90/vca90.pdf)
 
 - [Implementation of my HPG2020 paper: Quadratic Approximation of Cubic Curves ](https://github.com/ttnghia/QuadraticApproximation)
+
+- [Modeling 3D Curves of Minimal Energy荷兰埃因霍芬理工大学的Veltkamp与Wesselink]()
+    - [基于最小能量理论的曲线构造](https://mp.weixin.qq.com/s/UI6xDWl3g5Yik3HkhCtQ5Q)
+- [能量优化法曲线拟合](https://mp.weixin.qq.com/s/5crb2OO-_WruPMmDy0aXhg)

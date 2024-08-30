@@ -205,7 +205,16 @@ div {
 
 ```css
 border-image: linear-gradient(90deg, #B3ADD3 0%, #96BED7 21%, #EB9582 41%, #C3C68C 62%, #FAACAC 81%, #FED09F 99%) 1;
+/*  */
+input[type="ckeckbox"],
+input[type="radio"],
+input[type="range"],
+progress {
+    accent-color: 'auto';
+}
 ```
+- [Accent强调](https://developer.mozilla.org/en-US/docs/Glossary/Accent)强调属性，固有的值也可以修改
+    - [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)可以更改input和progress的默认颜色
 
 ### Sprite
 

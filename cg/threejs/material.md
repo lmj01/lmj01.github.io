@@ -4,12 +4,18 @@
 
 ## linear workflow
 
+是指any sRGB input colors (as found in most textures, color pickers, CSS, and HTML) are converted from sRGB to a linear working color space for rendering, and the rendered image is converted back to sRGB for display，即输入的sRGB要转换为线性的方便渲染，渲染后的图像要转换回sRGB给显示。
+
+- 在引起内部的计算都是线性的，输入的sRGB需要转线性
+- 渲染后的图像，输出时都是sRGB的，便于格式的交换和显示
+
 在r152中引入这个概念，
 
 - [The Importance of Being Linear](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear)
 - [Updates to Color Management in three.js r152](https://discourse.threejs.org/t/updates-to-color-management-in-three-js-r152/50791)
 - [Updates to lighting in three.js r155](https://discourse.threejs.org/t/updates-to-lighting-in-three-js-r155/53733)
 - [Shadow and color problems going from v64 to v161](https://discourse.threejs.org/t/shadow-and-color-problems-going-from-v64-to-v161/61640)
+
 
 
 ```js

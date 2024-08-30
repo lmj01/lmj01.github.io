@@ -9,13 +9,76 @@
 - 等差数列求和运算
 - 排列组合
 
+## 模运算
+
+$$
+\text{基本性质,如果}a \equiv b \mod m \text{且有} c \equiv d \mod m \text{,，那下面的模运算律成立： } \newline
+a + c \equiv b + d \mod m \newline
+a - c \equiv b - d \mod m \newline
+a \times c \equiv b \times d \mod m \newline
+$$
+
+对一个数进行取模，那么模了再加、减、乘都是不影响答案的，**特别注意没有除法**
+
+### 费马小定理
+
+<details>
+<summary>2024-8-20</summary>
+由二项式展开，在n是素数时，除去中间部分，因为中间部分在取模后为0，就得到一个恒等式。
+
+$(x + y)^n \equiv x^n + y^n \mod n$
+
+现在用x替换(u-1)，y替换为1，则有
+
+$((u-1) + 1)^n \equiv (u-1)^n + 1 \mod n$
+
+用(u-1)替换(u-2)+1，则有
+
+
+$(u-1)^n + 1  \mod n \equiv ((u-2) + 1)^n + 1  \mod n \equiv (u-2)^n + 1 + 1  \mod n \equiv (u-2)^n + 2 \mod n$
+
+继续重复替换这样消去高次的有, 
+
+$u^n \equiv u \mod n$
+
+这就是费马小定理的恒等式。它是现代数论基础之一，对从抽象代数到密码学的许多领域都是至关重要。它也有更一般化的版本，即欧拉定理
+
+</details>
+
+### 欧拉定理
+
+<details>
+<summary>2024-8-20</summary>
+
+$$
+\text{若p为素数，n为整数，且} p \ge n \text{,考虑二项式系数} \binom{p}{n}=\frac{p!}{n!(p-n)!} \text{并限定n不为p或0，则由于部分分子有素数p，但分母不含p，故分子的p能保留，不被约分除去，即} \binom{p}{n} \mod p \newline
+\text{再考虑}(b+1)^p\text{的二项式展开模p，则有} \newline
+(b+1)^p \mod p \equiv \binom{p}{p}b^p + \binom{p}{p-1}b^{p-1} + \binom{p}{p-2}b^{p-2} + \dots + \binom{p}{2}b^{2} + \binom{p}{1}b^{1} + \binom{p}{0}b^{0} \mod p \newline
+\equiv \binom{p}{p}b^p + \binom{p}{0}b^0 \mod p \newline
+\equiv b^p + 1 \mod p \newline 
+\text{因此有} (b+1)^p \equiv b^p + 1 \mod p \newline
+\equiv (b-1)^p + 1 + 1 \mod p \newline
+\equiv (b-2)^p + 1 + 1 + 1 \mod p \newline
+\dots \newline
+\equiv \underbrace{1 + 1 + \dots + 1 + 1} \mod p \newline
+\equiv b + 1 \mod p \newline
+\text{令}a=b+1,\text{即得}a^p \equiv a \mod p
+$$
+
+</details>
+
+
 ## 完全剩余系
+
+<details>
+<summary>2024</summary>
+
 Complete Residue System是数论中的一个概念，指在模n的条件下从1到n-1的一个整数集合，这个集合中的每个数都与n互斥，并且这个集合包含了所有可能的模n的余数。用数学语言描述如下
 
 $$
 \text{如果有一个整数集合}\{a_{1},a_{2},\cdots\cdots,a_{n-1}\}, \text{其中每个元素}a_{i}(1 \le i \le n-1). \text{满足如下条件} \newline
 \text{1. } 0 \le a_{i} \le n \newline
-\text{2. } a_{i} \equiv a_{1} + {i \times k} \pmod n \text{对某个整数}k \newline
+\text{2. } a_{i} \equiv a_{1} + {i \times k} \mod n \text{对某个整数}k \newline
 \text{3. } gcd(a_{i}, n) \equiv = 1 \in all (1 \le i \le n-1)
 $$
 
@@ -23,10 +86,12 @@ $$
 如拉格朗日定理指出，
 
 $\text{如果} gcd(a,n) \equiv 1, \text{那么a的幂在模n下会经历一个完全剩余系}$
-
-
+</details>
 
 ## 中国剩余定理
+
+<details>
+<summary>2024</summary>
 
 Chinese Remainder Theorem
 
@@ -40,22 +105,22 @@ $\text{设整数} m_{1}, m_{2}, \cdots\cdots, m_{n} \text{两两互质，则同�
 
 $$
 \begin{cases}
-x \equiv a_{1} \pmod m_{1} \newline
-x \equiv a_{2} \pmod m_{2} \newline
+x \equiv a_{1} \mod m_{1} \newline
+x \equiv a_{2} \mod m_{2} \newline
  \vdots \newline
-x \equiv a_{n} \pmod m_{n}
+x \equiv a_{n} \mod m_{n}
 \end{cases}
 $$
 
 有唯一解
 
-$x = \sum_{i=1}^{n}a_{i}t_{i}M_{i} \pmod M$
+$x = \sum_{i=1}^{n}a_{i}t_{i}M_{i} \mod M$
 
 其中
 
-$M=m_{1}m_{2}\cdots m_{n}, M_{i}=\frac{M}{m_{i}}, t_{i}M_{i} \equiv 1 \pmod m_{i}$
+$M=m_{1}m_{2}\cdots m_{n}, M_{i}=\frac{M}{m_{i}}, t_{i}M_{i} \equiv 1 \mod m_{i}$
 
-$\text{定理中的}m_{i}\text{称为模数}, a_{i}\text{称为余数}, M\text{是模数的最小公倍数，而}m_{i}\text{称为衍数，即局部（除}m_{i}\text{外的）公倍数},t_{i}\text{称为乘率}, t_{i}M_{i}\equiv 1 \pmod m_{i}\text{称为求一术}$。
+$\text{定理中的}m_{i}\text{称为模数}, a_{i}\text{称为余数}, M\text{是模数的最小公倍数，而}m_{i}\text{称为衍数，即局部（除}m_{i}\text{外的）公倍数},t_{i}\text{称为乘率}, t_{i}M_{i}\equiv 1 \mod m_{i}\text{称为求一术}$
 
 可见大衍yan求一术是将求解一组一次同余式问题简化为求解单个同余式的问题。目前解一组一次同余式最有效的是Garner算法。
 
@@ -69,3 +134,4 @@ $\text{定理中的}m_{i}\text{称为模数}, a_{i}\text{称为余数}, M\text{�
 - 自然数网络
 - 网络动力学
 - 数论与网络
+</details>

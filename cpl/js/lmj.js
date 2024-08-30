@@ -1,3 +1,4 @@
+// 2024-8-20
 const q2in2024 = {
     p: [
         0.15,
@@ -83,4 +84,5 @@ function toScroe(data) {
     }, 0)
 }
 
+// total --  [ 85.5, 78.5, 69.25999999999999 ]
 console.log('total -- ', arrayList.map(e=>toScroe(e)));

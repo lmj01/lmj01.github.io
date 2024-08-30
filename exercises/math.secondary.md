@@ -36,6 +36,17 @@ $e^{\pi i} + 1 = 0 \to e^{\pi i} = -1$
 ## 几何
 
 <details>
+<summary>2024-8-23塞瓦定理</summary>
+
+- [一个很哇塞的定理 ](https://mp.weixin.qq.com/s/teDnXG-v53GHxvdlrND-DA)
+
+你有没有发现这样一个现象：三角形的三条高线（或其延长线）、三条角平分线、三条中线都会分别交于一点。你可以试着画出各种不同三角形的高线（或其延长线）、角平分线、中线，会发现无论什么样的三角形，它的三条高线（或其延长线）都会交于同一个点，角平分线和中线也是如此。
+
+“塞瓦定理”记录在塞瓦（Giovanni Ceva，1648～1734，意大利水利工程师，数学家）于1678年发表的《直线论》一书中。“塞瓦定理”是塞瓦的重大发现，因此后世以他的名字来命名，将其称为“塞瓦定理”。
+
+</details>
+
+<details>
 <summary>2024-5-33初三模拟习题</summary>
 
 [几何之旅：塞瓦定理与角元塞瓦定理——角格点问题的通解方法](https://zhuanlan.zhihu.com/p/122455316?utm_campaign=shareopn&utm_medium=social&utm_psn=1781370747668807680&utm_source=wechat_session)

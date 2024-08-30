@@ -14,3 +14,10 @@
     - X轴：平行于牙槽嵴平面，代表牙齿的近远中移动方向（如向前或向后移动）
     - Y轴：垂直于X轴和Z轴，代表牙齿的颊舌向移动（如唇向或舌向移动）
     
+## 美学
+
+- [前牙美学标准](https://mp.weixin.qq.com/s/BWKfHP8vAqO-QeATLjYyeA)
+
+## JawBone
+
+- [Human Jawbones Collection Yellow参考，有纹理的渲染效果](https://www.turbosquid.com/3d-models/3d-model-human-jawbones-collection-yellow-4-models-1752186)

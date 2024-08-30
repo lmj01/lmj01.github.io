@@ -10,3 +10,8 @@
 ## [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
 
 [Rendering algorithms implemented in raw WebGL 2](https://github.com/tsherif/webgl2examples)
+
+## 参考
+
+- [Rendering & Art](http://www.artvily.com/)
+    - [github voxweb3d High Performence WebGL 3D Engine System(Env: PC/Mobile) ](https://github.com/vilyLei/voxweb3d)

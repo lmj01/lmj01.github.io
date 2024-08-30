@@ -21,6 +21,7 @@ Vue3.0新增了一个组件Teleport组件，将其所在组件模板内容内容
 - [Vue 技术栈 Vue3 + Pinia + Vite5 实现, 可参考别人的代码逻辑](https://github.com/zyronon/douyin)
 - [入门级vue3+vite+Ts的多页面（MPA）模板，支持单模块构建，引入pinia，vueUse，naive-ui，axios等主流库用于开发，配置husky+commit+prettier+eslint来规范代码。 ](https://github.com/dv-cli/vue3-vite-multiple-page)
 
+
 ## [React](https://react.dev/)
 
 - [中文版](https://zh-hans.react.dev/)
@@ -31,11 +32,22 @@ Vue3.0新增了一个组件Teleport组件，将其所在组件模板内容内容
 - [中文版](https://angular.cn/)
 - [github](https://github.com/angular/angular)
 
+## [Svelte](https://svelte.dev/)
+
+相比vue等有虚拟DOM的运行库，svelte是全编译的，打包即编译好一切啦
+
+- [v2](https://v2.svelte.dev/)
+
+### 相关库
+
+- [three.js lib](https://github.com/lmj01/threlte)
+
 
 ## [Egg 后台框架](https://www.eggjs.org/)
 
 ## [Next.js 后台框架](https://nextjs.org/)
-> Next.js is a React framework for building full-stack web applications.
+
+Next.js is a React framework for building full-stack web applications.
 
 ## Electron
 

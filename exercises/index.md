@@ -4,6 +4,8 @@
 
 ## 数学
 
+- [相关推荐的书籍](/exercises/book-info.md)
+
 - [数学](/exercises/math.md)
 - [小学数学](/exercises/math.primary.md)
 - [初中数学](/exercises/math.secondary.md)
@@ -16,6 +18,7 @@
 - [几何](/exercises/geometry.md)
 - [线性代数](/exercises/linear.algebra.md)
 - [多项式](/exercises/polynomial.md)
+- [概率与统计](/exercises/probability.statistics.md)
 
 ## 物理学
 
@@ -26,6 +29,8 @@
 - [Wolfram MathWorld](https://mathworld.wolfram.com/)
 - [提供各种数学问题的交互式解法和动画](https://www.cut-the-knot.org/)
 - [图形计算器，用meijie.lmj@outlook.com登录的](https://www.desmos.com/calculator?lang=zh-CN)
+- [math is fun](https://www.mathsisfun.com/)
+    - [数学乐-中文版](https://www.shuxuele.com/index.html)
 
 <details>
 <summary>Geogebra开源在线工具</summary>

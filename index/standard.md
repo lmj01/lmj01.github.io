@@ -64,9 +64,15 @@
     - [tinyTorrent: 从头写一个 Deno 的 BitTorrent 下载器](https://cjting.me/2020/10/31/tinytorrent-a-deno-bt-downloader/)
     - [Simple, robust, BitTorrent tracker(client & server) implementation](https://github.com/webtorrent/bittorrent-tracker)
 - [PubScholar公益学术平台](https://pubscholar.cn/)
-- [国家标准全文公开系统](https://openstd.samr.gov.cn/bzgk/gb/index)
 - [msdn](https://learn.microsoft.com/zh-cn/)
     - [个人关于微软的开发文档](https://msdn.itellyou.cn/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - [HandWiki is a wiki encyclopedia for collaborative editing of articles on computing, science, technology and general knowledge](https://handwiki.org/wiki/Start)
 - [美国国家工业与学术Working with industry and academia to enhance economic security and improve our quality of life.](https://www.nist.gov/)
+- [ODA致力于促进开放的、工业标准的CAD数据和遗留的CAD数据的格式交换](https://www.opendesign.com/cn)
+
+### 中国
+
+- [国家标准全文公开系统](https://openstd.samr.gov.cn/bzgk/gb/index)
+- [全国行政区划信息查询平台](http://xzqh.mca.gov.cn/map)
+- [行业标准信息服务平台](https://hbba.sacinfo.org.cn/)

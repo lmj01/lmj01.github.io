@@ -42,6 +42,7 @@
 - [Bjarne StroustrupC++之父的网站](https://www.stroustrup.com/)
 - [ ISO C++ 标准委员会主席, 已经订阅其博客working at the intersection of programming language design/UX, people, and high performance code.](https://herbsutter.com/)
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)
+- [WEBGPU贡献值之一Web Platform Advocate](https://surma.dev/)
 
 ## 游戏
 

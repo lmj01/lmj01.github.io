@@ -121,4 +121,5 @@ reveal.js is an open source HTML presentation framework.
 
 # 其他库
 
+- [Compact GUI for fine-tuning parameters and monitoring value changes 比dat.GUI更舒服的库](https://github.com/cocopon/tweakpane)
 - [excel](/articles/notes/excel.md)
