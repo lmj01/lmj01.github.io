@@ -54,6 +54,7 @@
 ### 网格
 - [HalfEdge半边结构](/cg/tools/half-edge.md)
 - [网格划分](/cg/mesh/mesh-generation.md)
+- [三角面片](/cg/mesh/mesh.triangle.md)
 - [NURBS](/cg/mesh/NURBS.md)
 - [曲线](/cg/tools/curve.md)
 - [几何](/cg/geometry.md)

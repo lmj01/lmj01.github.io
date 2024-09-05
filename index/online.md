@@ -35,6 +35,8 @@
 - [李逸-数学教授-基本分析讲义](https://math.seu.edu.cn/ly/list.htm)
 - [A Graphics Guy's Note](https://agraphicsguynotes.com/posts/)
 - [figma的博客,有关figma实现的一些思路和总结,值得借鉴](https://www.figma.com/blog/)
+- [奇安信X实验室--网格安全博客](https://blog.xlab.qianxin.com/)
+- [JavaScript和WASM专家software engineer and/or computer scientist and/or generalist nerd](https://cfallin.org/)
 
 - [Denis Bakhvalov, 关于性能优化的一个博客](https://easyperf.net/)
 - [SaschaWillems,业余贡献实时3D以Khronos标准软件开发者](https://www.saschawillems.de/)

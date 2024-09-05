@@ -20,3 +20,7 @@ Don't confuse luminance with luma - luma is the equivalent of the luminance comp
 [Filmic Worlds Blog - John Hable](http://filmicworlds.com/blog/)
 [Tone Mapping (slides) - R. Mantiuk](https://www.cl.cam.ac.uk/%7Erkm38/pdfs/tone_mapping.pdf)
 [Dynamic Range, Exposure and Tone Mapping - Seena Burns](https://seenaburns.com/dynamic-range/)
+
+## [Tone Mappers]()
+
+- [github A collection of tone mappers for the display of 3D graphics ](https://github.com/KhronosGroup/ToneMapping)

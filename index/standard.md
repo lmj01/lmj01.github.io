@@ -55,6 +55,17 @@
 - [DCMTK](https://dcmtk.org/)
 - [DCMTK on github](https://github.com/DCMTK/dcmtk)
 
+## [ Object Management Group (OMG)](https://www.omg.org/)
+
+The Object Management Group® Standards Development Organization (OMG® SDO) is a global, open membership, non-profit consortium. 
+
+### [The DDS specification describes a Data-Centric Publish-Subscribe (DCPS) model for distributed application communication and integration.](https://www.omg.org/spec/DDS/About-DDS/)
+
+- [eprosima Fast DDS is a C++ implementation of the DDS (Data Distribution Service) standard of the OMG (Object Management Group).](https://github.com/eProsima/Fast-DDS)
+- [fast-dds doc api](https://fast-dds.docs.eprosima.com/en/latest/index.html)
+
+
+
 ## 其他
 
 - [Media Types](https://www.iana.org/assignments/media-types/)

@@ -25,7 +25,13 @@ LoadingManager是一个独立封装的，类似一个函数，全部在construct
 ```js
 /**
  * 使用方法，传入
- * str JSON.stringify(scene.toJSON())
+ * str JSON.stringify(scene.toJSON(), null, 2)
+ * 如果报错如下
+ * Uncaught RangeError: Invalid string length
+ * at JSON.stringify (<anonymous>)
+ * 则是scene对象中的geometries中的模型数据太大导致的，需要对geometry一个个单独导出
+ * 问题本质是JSON.stringify超出JS引起或内存的限制导致的
+ * 其实抓取网页的数据逻辑也是如此的操作
  */
 (function(str, type, filename){
     const encode = new TextEncoder();

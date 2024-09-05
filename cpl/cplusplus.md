@@ -6,6 +6,7 @@
 
 - [TMP -- Template Meta Programming](/cpl/cpp/tmp.md)
 - [CRTP -- Curiously Recurring Template Pattern](/cpl/cpp/crtp.md)
+- [C++代码的查询搜索-号称有一亿的代码](https://cpp.hotexamples.com/)
 
 ## 语言特性
 

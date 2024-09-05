@@ -2,7 +2,6 @@
 
 - [问题集](/cg/threejs/use.md)
 - [乱记](/cg/threejs/threejs.md)
-- [Bump map](/cg/threejs/bumpmap.md)
 - [RayCaster](/cg/threejs/raycaster.md)
 - [模型-导入-导出](/cg/threejs/model.md)
 - [Grid实现](/cg/threejs/grid.md)
@@ -11,6 +10,27 @@
 - [灯光](/cg/lighting/light.md)
 - [数学相关](/cg/threejs/math.md)
 - [灯光](/cg/tools/camera.md)
+
+## [three playcode playground](https://playcode.io/)
+邮箱meijie.lmj@outlook.com登录
+
+### 颜色
+- [THREE.jsGreaterThanR151](https://playcode.io/1992266)
+- [THREE.jsLessThanR151](https://playcode.io/1992266)
+
+## demo
+
+- [Collection of Examples Links to https://discourse.threejs.org/ and originals in source code ](https://hofk.de/main/discourse.threejs/)
+
+### [RSM-Reflective Shadow Map](http://www.klayge.org/material/3_12/GI/rsm.pdf)
+
+- [Reflective shadow map experiment with a newer version of three.](https://github.com/lmj01/rsm)
+
+### 其他
+
+- [perlin noise v2,效果看起来非常舒服](https://codepen.io/vcomics/pen/RwQgXzv)
+- [Shaky / Jumpy - Camera Interpolation Along Curve](https://discourse.threejs.org/t/shaky-jumpy-camera-interpolation-along-curve/52278/2)
+    - [Extruded tube with holes相机跟着视角变化，钻洞的效果](https://codepen.io/boytchev/pen/poxpGZN)
 
 ## 参考
 
@@ -25,12 +45,6 @@
 - [22](https://github.com/brunosimon/folio-2019)
 - [THREE.js rendering order渲染顺序](https://segmentfault.com/a/1190000041221932/en)
 - [A camera control for three.js, similar to THREE.OrbitControls yet supports smooth transitions and more features. ](https://github.com/lmj01/camera-controls)
-
-### threejs discourse
-- [perlin noise v2,效果看起来非常舒服](https://codepen.io/vcomics/pen/RwQgXzv)
-- [Shaky / Jumpy - Camera Interpolation Along Curve](https://discourse.threejs.org/t/shaky-jumpy-camera-interpolation-along-curve/52278/2)
-    - [Extruded tube with holes相机跟着视角变化，钻洞的效果](https://codepen.io/boytchev/pen/poxpGZN)
-    
 
 ### 成熟的框架
 

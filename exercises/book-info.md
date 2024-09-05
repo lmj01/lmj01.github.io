@@ -2,10 +2,12 @@
 
 - [物理科学和技术中使用的数学符号](https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D812E4D3A7E05397BE0A0AB82A)
     - [pdf](https://journal.cricaas.com.cn/attached/file/20210517/20210517161953_566.pdf)
+- [在线英语语法书籍--旋元佑](https://llwslc.github.io/grammar-club/)
 
 ## 线性代数
 
 - [Serge Lang《linear algebra》](https://book.douban.com/subject/2314300/)
+- [Sheldon Axler《Linear Algebra Done Right》4th 作者官网提供了中英文两个版本可下载](https://linear.axler.net/)
 
 ## 分析
 
@@ -22,3 +24,8 @@
     - 不需要测度论知识，从可数或有限样本空间中来学习概率论
 - [Rick Durrett《Probability: Theory and Examples》]()
     - 概率论有左手和右手。左手是使用测度论工具进行的严谨的基础工作。右手‘以概率方式思考’，将问题简化为赌博情况、抛硬币和物理粒子的运动。
+
+## 其他
+
+- [德国赫尔曼·外尔《对称》](https://book.douban.com/subject/30308531/)
+    - 相似性与自同构，用几何描述代数词，这样理解起来很容易，也很轻松，不需要很多抽象的感悟，由直观到具体化

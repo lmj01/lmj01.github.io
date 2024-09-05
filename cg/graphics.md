@@ -8,8 +8,9 @@
 - 任务调度
 - driver驱动
 
-## GPU
-> Graphics Processing Unit
+## GPU-Graphics Processing Unit
+
+- [GPU天梯排行榜](https://topic.expreview.com/GPU/)
 
 - Asynchronous accelerator for graphics异步图形加速
 - parallel problem并行处理
@@ -43,6 +44,19 @@ foreach(tile)
             call fragment shader
     store new tile FBO data
 ```
+### 强制使用显卡
+
+很多设备因为考虑性能，特别是新买的电脑，默认会是关闭独立显卡使用集成显卡来彰显耗电低的宣传。
+
+- [多显卡的强制调用n卡的方法](https://developer.download.nvidia.cn/devzone/devcenter/gamegraphics/files/OptimusRenderingPolicies.pdf)
+```c
+// 使用NVIDIA卡
+extern "C" {
+    _declspec(dllexport) DWORD NvOptiumsEnablement = 0x00000001;
+    _declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1;
+}
+```
+或是通过设置wgl的扩展接口来调用
 
 ### 参考
 

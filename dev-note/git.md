@@ -143,21 +143,16 @@ pox.xml merge=ours
 ```shell
 git checkout branch-with-history 切换到带有历史记录的分支中
 git checkout -b XXX 新建本地分支XXX
-git reset --hard commit-id 回滚分支XXX上的某个提交点
-git reset --soft HEAD^ 撤销上一个提交，回到staging状态
+git reset --hard commit-id 回滚分支XXX上的某个提交点 彻底回退到某个版本，同时回退暂存区和版本库和工作区
+git reset --soft HEAD^ 撤销上一个提交，回到staging状态 回退到某个版本，只回退到暂存区
 git reset --soft HEAD~2 撤销多个提交
 git reflog --show 查看操作记录
 git checkout -b branName commit-id 
+git rebase 以服务器远程仓库为基准
+git reset --hard origin/master 强制用服务器覆盖本地的修改
+git reset --hard xxxx // 退回到那个版本
+git reset --mixed默认不带参，只回退暂存区和本地版本库
 ```
-此时代码就是某个提交点的，就可以修改了
-
-- git reset --hard彻底回退到某个版本，同时回退暂存区和版本库和工作区
-- git reset --soft回退到某个版本，只回退到暂存区
-- git reset --mixed默认不带参，只回退暂存区和本地版本库
-- git reset --hard origin/master 强制用服务器覆盖本地的修改
-- git reset --hard xxxx // 退回到那个版本
-- git rebase 以服务器远程仓库为基准
-
 ## 删除
 
 - git remote prune origin 删去本地显示远程已经删除的分支
@@ -170,6 +165,12 @@ git checkout -b branName commit-id
 - 删除.gitsubmodule里的那一部分
 - 删除.git/config文件的相关字段
 - 删除子模块的目录
+
+清空历史记录中得某个大文件，如视频文件
+- git filter-branch --force --index-filter "git rm --cached --ignore-unmatch assets/video/mydentalx-2024-7-3.mp4" --prune-empty
+- git reflog expire --expire=now --all  
+- git gc --prune=now  
+- git gc --aggressive --prune=now
 
 ## 合并
 
@@ -247,6 +248,10 @@ git remote add origin git@github.com:Username/Repositories_Name.git # 现在这�
 - svn revert
 - svn merge -r 608:602 "" // 从r608回滚到r602
 - svn info // 
+
+## [Git Large File Storage](https://git-lfs.com/)
+
+如果你在命令行用 git push > 50MB 的文件，你会收到一个 warning，但是你仍然可以正常 push，但是 > 100MB 的时候就无法 push 了。如果你是在浏览器要上传文件的话，这个限制更为严重，不能超过 25MB，这是 Github 对仓库的限制。Git lfs 就是用于解决这个问题
 
 ## 规范
 

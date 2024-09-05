@@ -163,3 +163,6 @@ mat3(
   - Introduction
 - [OpenGL 图元处理，一些关于OpenGL的概念](https://www.jianshu.com/p/3d974e69f842)
   - [Learning practice demo for examples in OpenGL Super Bible 6th ](https://github.com/StarryThrone/OpenGL-SBible-example-code)
+
+- [Circle C++ shaders ](https://github.com/seanbaxter/shaders)
+  - The Circle shader extension aims to bring the entire capability of the OpenGL Shading Language (GLSL) into C++ as a first-class language feature. Write graphics code using Standard C++ and mark interface variables and shader functions with C++ attributes to indicate their role in the graphics pipeline. When the program is compiled, all shader declarations are lowered to the SPIR-V binary intermediate representation, which is the portable shader storage format Vulkan and OpenGL programs. 使用C++昨晚shader的超集语言，统一编译成SPIR-V二进制格式，因为这个是portable的
