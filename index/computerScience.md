@@ -16,6 +16,8 @@
 - [Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.](https://ziglang.org/)
 
 - [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
+- [Numerical Computation Guide](https://docs.oracle.com/cd/E19957-01/806-3568/ncgTOC.html)
+    - [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
 
 ### Database
 
@@ -66,6 +68,7 @@
 - [Bgfx](/cg/bgfx.md)
 - [UI](/cg/ui.md)
 - [threejs 笔记](/cg/threejs/index.md)
+- [Galacean](/cg/galacean/index.md)
 
 ### 动画
 

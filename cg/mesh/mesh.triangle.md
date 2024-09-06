@@ -1,5 +1,6 @@
 # 三角面片
 
+- [重新审视褶皱表面的模拟](http://image.diku.dk/projects/media/morten.mikkelsen.08.pdf)
 
 ## Normal
 
@@ -10,12 +11,14 @@
 
 ## Tangent
 
+切线空间是一个局部坐标系，原点就是vertex顶点位置，通常Z轴与顶点的法线对齐，X轴由顶点的切线Tangent、y轴由顶点的副切线Bitangent定义。
+
+- [Lesson 6bis: tangent space normal mapping](https://github.com/ssloy/tinyrenderer/wiki/Lesson-6bis:-tangent-space-normal-mapping)
+
 ### per-vertex tangent spaces    
 - [Computing Tangent Space Basis Vectors for an Arbitrary Mesh](https://terathon.com/blog/tangent-space.html)
 - [课件](https://www.cs.upc.edu/~virtual/G/index.php?dir=)
     - [pdf](https://www.cs.upc.edu/~virtual/G/1.%20Teoria/06.%20Textures/Tangent%20Space%20Calculation.pdf)
-
-- [threejs的Tangent支持](https://threejs.org/docs/#examples/en/utils/BufferGeometryUtils.computeMikkTSpaceTangents)
 
 <details>
 <summary>顶点切线的数学推理</summary>
@@ -89,6 +92,27 @@ $$
 
 </details>
 
+#### [threejs的Tangent支持](https://threejs.org/docs/#examples/en/utils/BufferGeometryUtils.computeMikkTSpaceTangents)
+```c
+#ifdef USE_TANGENT
+attribute vec4 tangent;
+#endif
+vec3 objectTangent = vec3( tangent.xyz );
+// src\renderers\shaders\ShaderChunk\normal_pars_fragment.glsl.js 
+// src\renderers\shaders\ShaderChunk\normal_pars_vertex.glsl.js
+varying vec3 vTangent;
+varying vec3 vBitangent;
+// src\renderers\shaders\ShaderChunk\defaultnormal_vertex.glsl.js
+vec3 transformedTangent = objectTangent; // 变形的影响
+// src\renderers\shaders\ShaderChunk\normal_vertex.glsl.js
+vTangent = normalize( transformedTangent );
+vBitangent = normalize( cross( vNormal, vTangent ) * tangent.w );
+// src\renderers\shaders\ShaderChunk\normal_fragment_begin.glsl.js
+mat3 tbn = mat3( normalize( vTangent ), normalize( vBitangent ), normal );
+// src\renderers\shaders\ShaderChunk\normal_fragment_maps.glsl.js
+normal = normalize( tbn * mapN );
+```
+
 ### MikkTSpace
 - [Tangent Space Normal Maps](http://www.mikktspace.com/)
     - [github c](https://github.com/mmikk/MikkTSpace)
@@ -96,5 +120,11 @@ $$
 
 <details>
 <summary>MikkTSpace切线的数学推理</summary>
+
+MikkTSpace的方案成了事实上的标准，blender就用它来生成Normal Mapping的，光照计算中也是一个非常角色。
+MikkTSpace生成tangent space即使改变了点索引，面的顺序，删除primitive等等都不影响且对triangles和quads都支持的。
+
+顶点必须具有属性：位置Position，法线Normal，纹理坐标UV
+
 
 </details>

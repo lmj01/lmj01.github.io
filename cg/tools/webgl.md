@@ -6,6 +6,7 @@
     - [笔记](/cg/threejs/index.md)
 - [BabylonJS](https://www.babylonjs.com/)
     - [笔记](/cg/babylonjs/index.md)
+- [galacean笔记](/cg/tools/galacean.md)
 
 ## [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
 

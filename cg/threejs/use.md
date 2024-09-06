@@ -66,7 +66,7 @@ camera的近远曲线的趋势。
 牙龈根据关键点生成了面片数据，包含了顶点、uv、索引。
 
 前端对生成的数据进行了处理，处理顶点法线，position,uv,normal,tangent。
-又根据uv和tangent算出了一个uv2和tangent2. 至于为什么有这样的逻辑？忙猜是逆向过程中看到这样的逻辑。
+又根据uv和tangent算出了一个uv2和tangent2. 大致逻辑是拷贝，处理相同点的问题，在shader中取tangent和tangent2的均值作为最终值来使用。
 
 ### flickering
 2024-7-19
