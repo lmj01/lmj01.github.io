@@ -44,6 +44,14 @@ oritentation horizontal(normal)
 
 - [临时1](https://juejin.cn/post/7044561761747337223)
 
+## [tev — The EXR Viewer](https://github.com/Tom94/tev)
+
+High dynamic range (HDR) image viewer for graphics people 
+
+Image viewer and comparison tool for graphics people.
+
+- [键盘快捷键可视化网页](https://keycombiner.com/collecting/collections/shared/f050cc02-f23a-425c-b032-b4c3659c7ef4/)
+
 ## GIMP
 
 ### 抠图

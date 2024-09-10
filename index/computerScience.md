@@ -32,9 +32,6 @@
 - [hash](/cpl/data.structure/hash.md)
 - [LRU](/cpl/data.structure/LRU.md)
 - [树形结构](/cpl/data.structure/Tree.md)
-### 相关参考
-- [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
-- [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
 
 ## ComputerGraphics
 
@@ -56,7 +53,7 @@
 ### 网格
 - [HalfEdge半边结构](/cg/tools/half-edge.md)
 - [网格划分](/cg/mesh/mesh-generation.md)
-- [三角面片](/cg/mesh/mesh.triangle.md)
+- [切线](/cg/mesh/tangent.md)
 - [NURBS](/cg/mesh/NURBS.md)
 - [曲线](/cg/tools/curve.md)
 - [几何](/cg/geometry.md)

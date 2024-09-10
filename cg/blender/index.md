@@ -15,6 +15,8 @@ build_xxx\bin\Release\blender.exe // 运行blender
 ```
 参考[building blender options](https://wiki.blender.org/wiki/Building_Blender/Options)
 
+- [The official Blender project repository](https://projects.blender.org/blender/blender)
+
 ## 源码分析
 
 分析的思路流程，先大量阅读一些文档，特别是设计架构上的一些认识，最后使用万能的大法

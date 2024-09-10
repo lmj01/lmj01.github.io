@@ -1,7 +1,5 @@
 # 三角面片
 
-- [重新审视褶皱表面的模拟](http://image.diku.dk/projects/media/morten.mikkelsen.08.pdf)
-
 ## Normal
 
 ### threejs
@@ -121,10 +119,22 @@ normal = normalize( tbn * mapN );
 <details>
 <summary>MikkTSpace切线的数学推理</summary>
 
-MikkTSpace的方案成了事实上的标准，blender就用它来生成Normal Mapping的，光照计算中也是一个非常角色。
-MikkTSpace生成tangent space即使改变了点索引，面的顺序，删除primitive等等都不影响且对triangles和quads都支持的。
+MikkTSpace的方案成了事实上的标准，是Normal Map和光照计算中也是一个非常角色。
+MikkTSpace生成tangent space即使改变了点索引，面的顺序，删除primitive等等都不影响且对triangles和quads都支持的。事实上使用的有
+- [blender，blender就用它来生成Normal Mapping](https://projects.blender.org/blender/blender/src/branch/main/intern/mikktspace)
+- xNormal
+- Unity
+- Subtance
+- [Unreal Engine](https://github.com/EpicGames/UnrealEngine/tree/release/Engine/Source/ThirdParty/MikkTSpace)
+- 3D Coat
+- [Houdini plug-in bringing mikktspace library ](https://github.com/teared/mikktspace-for-houdini)
 
 顶点必须具有属性：位置Position，法线Normal，纹理坐标UV
 
 
 </details>
+
+### [论文--重新审视褶皱表面的模拟Simulation of Wrinkled Surfaces Revisited](http://image.diku.dk/projects/media/morten.mikkelsen.08.pdf)
+
+- wrinkled surface皱折面
+- normal mapping is almost as common as texture mapping and directly supported in a wide range of graphics tools. However, normal mapping is hard to get right without following a strict set of rules. 正确的显示一定是约束在一些规则内才可以 A wrong implementation can lead to discontinuities in the shading.

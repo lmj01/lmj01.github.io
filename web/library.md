@@ -89,6 +89,12 @@ With PartyKit, you can focus on building multiplayer apps or adding real-time ex
 
 ## 展示类
 
+### [jsPDF](https://github.com/lmj01/jsPDF/tree/master)
+
+Client-side JavaScript PDF generation for everyone. 
+
+- [paper size打印纸张大小](https://www.papersizes.org/a-paper-sizes.htm)
+
 ### jszip
 
 ```javascript

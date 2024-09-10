@@ -70,3 +70,8 @@ logic 指的就是 functions，logic 和 data 分离，就是 C 时期的 functi
 class 抽象的是想法，而不是一堆数据。private 和 public 访问控制分离了抽象层次，private 里面应该放的是 data，public 里面应该放的是 idea。public 里面的接口要对人，而非对数据，要表现有关抽象的意义，而不是有关抽象的实现。
 
 trivial getters/setters 并没有使接口更安全，只是把对于数据的抽象转移到了接口上，这样的封装没有体现任何抽象的意义，也没有体现任何数据间的联系，未能施展 OOP 的 class 概念和访问控制能力。那为什么还要用 class 呢？
+
+## 参考
+
+- [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
+- [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
