@@ -3,6 +3,28 @@
 - [Polygon Mesh Processing书籍](/cg/mesh/PolygonMeshProcessing.md)
 - [Isogeometric Anylasis](/cg/mesh/IsogeometricAnylasis.md)
 
+
+## Normal
+
+- [Tangent正切线](/cg/mesh/tangnent.md)
+
+几何法线Geometric Normal通常指的是在几何建模阶段为每个顶点计算的法线向量，它代表了在该顶点处表面的平滑近似。
+
+- 顶点法线，计算每个顶点相连的的所有三角形的面法线的平均值来得到顶点法线。
+    - 
+
+
+- Normals in geometry a normal is a vector or a line that is perpendicular to a given object (e.g. plane normal, vertex normal ). 
+- Normals in graphics are usually used for light calculations, such as calculating Diffuse reflection across a surface by taking the dot product between the light direction and surface normals. Normals are usually calculated based on the geometrical properties of the mesh (Faces/Vertices), by taking the cross product of any two non-parallel edges that lies on the same plane.
+- In OpenGL normals are specified per vertex (hence called vertex attributes) even though they might be calculated only for each face in this case you need to specifiy the same normal for each vertex in a face. Normals can be interpolated by OpenGL across each vertex of a face(triangle) so you can calculate the reflected light per pixel not per vertex, hence giving a more accurate result.
+
+
+
+### threejs
+
+在文件src\core\BufferGeometry.js中有计算computeVertexNormals就是对每个顶点计算其所在面的法线
+三个点中任意两两构成共面的法向量相乘得到其面的法线，作为顶点的法线，**注意VertexNormal只算了当前面片的法线**，并没有像光照时的理论上那样把每个相邻的取均值。
+
 ## Projective Geometric Algebra
 
 - [Projective Geometric Algebra](http://projectivegeometricalgebra.org/)    

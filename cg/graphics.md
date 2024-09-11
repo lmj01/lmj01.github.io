@@ -4,6 +4,7 @@
 - [threejs社区](https://discourse.threejs.org/)
 
 - [光照模型](/cg/lighting/illumination.model.md)
+    - [BumpMapping](/cg/lighting/bump.mapping.md)
 
 早期3D的API由驱动层提供，所有细节都是驱动贴近硬件实现的，在经过shader发展中，现代硬件越来越复杂了
 新时代的抽象图形接口vulkan来了，需要更具象化的过程，就是需要自己负责更多的事情

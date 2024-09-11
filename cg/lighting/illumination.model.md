@@ -22,10 +22,19 @@ $$
 
 ### Diffuse Reflection
 
+- Rough surfaces tend to cause more diffuse reflection than smooth surfaces.
+
+There are three types of diffuse reflection: Lambertian, Oren-Nayar, and Phong.
+- Lambertian reflection, is the simplest type of diffuse reflection. It assumes that the surface is perfectly diffuse, meaning that the angle at which light hits the surface has no effect on how much light is reflected. This results in a smooth, even reflection without any highlights or shadows.
+
+- Oren-Nayar reflection is a more realistic type of diffuse reflection that takes into account the fact that light doesn’t always hit a surface evenly. It accounts for both the angle at which light hits the surface and the roughness of the surface. This results in a more natural-looking reflection with highlights and shadows.
+
+- Phong reflection is the most realistic type of diffuse reflection. It takes into account not only the angle at which light hits the surface and the roughness of the surface but also the shininess of the surface. This results in a very natural-looking reflection with highlights, shadows, and specular reflections (the bright highlights you see on polished surfaces).
+
 $$
-I_{diff} = K_{d}I_{p}cos\theta = K_{d}I_{p}(N \dot L) \newline
-I_{p} \text{the point light intensity}, K_{d} \text{ surface diffuse reflectivity } \in [0,1], \newline
-N \text{the surface normal}, L \text{the light direction}
+R_{d} = K_{d} \times I \times max(0, N * L) = K_{d}I(N \cdot L) \newline
+I \text{光照强度light intensity}, K_{d} \text{表面散射系数surface diffuse reflectivity } \in [0,1], \newline
+N \text{表面法线the surface normal}, L \text{光照方向the light direction}
 $$
 
 - Normals in geometry a normal is a vector or a line that is perpendicular to a given object (e.g. plane normal, vertex normal ).

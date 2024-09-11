@@ -1,19 +1,10 @@
-# 三角面片
-
-## Normal
-
-### threejs
-
-在文件src\core\BufferGeometry.js中有计算computeVertexNormals就是对每个顶点计算其所在面的法线
-三个点中任意两两构成共面的法向量相乘得到其面的法线，作为顶点的法线，**注意VertexNormal只算了当前面片的法线**，并没有像光照时的理论上那样把每个相邻的取均值。
-
-## Tangent
+# Tangent
 
 切线空间是一个局部坐标系，原点就是vertex顶点位置，通常Z轴与顶点的法线对齐，X轴由顶点的切线Tangent、y轴由顶点的副切线Bitangent定义。
 
 - [Lesson 6bis: tangent space normal mapping](https://github.com/ssloy/tinyrenderer/wiki/Lesson-6bis:-tangent-space-normal-mapping)
 
-### per-vertex tangent spaces    
+## per-vertex tangent spaces    
 - [Computing Tangent Space Basis Vectors for an Arbitrary Mesh](https://terathon.com/blog/tangent-space.html)
 - [课件](https://www.cs.upc.edu/~virtual/G/index.php?dir=)
     - [pdf](https://www.cs.upc.edu/~virtual/G/1.%20Teoria/06.%20Textures/Tangent%20Space%20Calculation.pdf)
@@ -90,7 +81,7 @@ $$
 
 </details>
 
-#### [threejs的Tangent支持](https://threejs.org/docs/#examples/en/utils/BufferGeometryUtils.computeMikkTSpaceTangents)
+### [threejs的Tangent支持](https://threejs.org/docs/#examples/en/utils/BufferGeometryUtils.computeMikkTSpaceTangents)
 ```c
 #ifdef USE_TANGENT
 attribute vec4 tangent;
@@ -111,7 +102,7 @@ mat3 tbn = mat3( normalize( vTangent ), normalize( vBitangent ), normal );
 normal = normalize( tbn * mapN );
 ```
 
-### MikkTSpace
+## MikkTSpace
 - [Tangent Space Normal Maps](http://www.mikktspace.com/)
     - [github c](https://github.com/mmikk/MikkTSpace)
     - [MikkTSpace vertex tangent calculation for JavaScript/TypeScript/Node.js, using Web Assembly. ](https://github.com/donmccurdy/mikktspace-wasm)
@@ -134,7 +125,7 @@ MikkTSpace生成tangent space即使改变了点索引，面的顺序，删除pri
 
 </details>
 
-### [论文--重新审视褶皱表面的模拟Simulation of Wrinkled Surfaces Revisited](http://image.diku.dk/projects/media/morten.mikkelsen.08.pdf)
+## [论文--重新审视褶皱表面的模拟Simulation of Wrinkled Surfaces Revisited](http://image.diku.dk/projects/media/morten.mikkelsen.08.pdf)
 
 - wrinkled surface皱折面
 - normal mapping is almost as common as texture mapping and directly supported in a wide range of graphics tools. However, normal mapping is hard to get right without following a strict set of rules. 正确的显示一定是约束在一些规则内才可以 A wrong implementation can lead to discontinuities in the shading.
