@@ -9,7 +9,7 @@
 - [软硬件一体的项目](/articles/others/robot.md)
 - [Blender](/cg/blender/index.md)
 
-### 图形学
+### [图形学](/cg/graphics.md)
 - [几何](/cg/geometry.md)
 - [裁剪](/cg/tools/culling.md)
 - [四元数](/cg/tools/quaternion.md)

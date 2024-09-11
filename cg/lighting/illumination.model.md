@@ -20,6 +20,13 @@ I_{amb} = K_{a}I_{a} \newline
 I_{a} \text{ambient light intensity}, K_{a} \text{ surface ambient reflectivity } \in [0,1]
 $$
 
+```glsl
+uniform vec3 ambientLightColor; // intensity也是放在shader之外得逻辑中
+void main() {
+    vec3 aColor = ambientLightColor;
+}
+```
+
 ### Diffuse Reflection
 
 - Rough surfaces tend to cause more diffuse reflection than smooth surfaces.
@@ -37,10 +44,24 @@ I \text{光照强度light intensity}, K_{d} \text{表面散射系数surface diff
 N \text{表面法线the surface normal}, L \text{光照方向the light direction}
 $$
 
+```glsl
+attribute vec3 position;
+attribute vec3 normal;
+uniform vec3 lightPos;
+void main() {
+    vec3 norm = normalize(normal);
+    vec3 lightDir = normalize(lightPos - position); // 入射光方向
+    float diff = max(dot(norm, lightDir), 0.0);
+    vec3 dColor = lightColor * diff * objectColor;
+}
+```
+
 - Normals in geometry a normal is a vector or a line that is perpendicular to a given object (e.g. plane normal, vertex normal ).
     - 用于光照计算，如Diffuse reflection漫反射
 
 ### Specular Reflection
+
+模拟高光
 
 $$
 I_{spec} = W(\theta)I_{I}cos^{n}(\phi) = K_{s}I_{I}cos^{n}(\phi) \newline
@@ -48,6 +69,10 @@ N \text{the surface normal}, L \text{the light direction} \newline
 R \text{direction of reflected ray}, V \text{direction of observer} \newline
 \theta \text{angle between L and R}, \phi \text{angle between R and V} \newline
 $$
+
+### Phong
+
+ADS = Ambient + Diffuse + Specular
 
 ## 物理渲染模型
 

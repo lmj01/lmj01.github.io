@@ -3,10 +3,22 @@ import hljs from './libs/highlight/core.min.mjs';
 import languageJavascript from './libs/highlight/languages/javascript.min.mjs';
 import languageLua from './libs/highlight/languages/lua.min.mjs';
 import languageCpp from './libs/highlight/languages/cpp.min.mjs';
+import languageC from './libs/highlight/languages/c.min.mjs';
+import languageGlsl from './libs/highlight/languages/glsl.min.mjs';
 
 hljs.registerLanguage('javascript', languageJavascript);
 hljs.registerLanguage('lua', languageLua);
 hljs.registerLanguage('cpp', languageCpp);
+hljs.registerLanguage('c', languageC);
+hljs.registerLanguage('glsl', languageGlsl);
+
+const mapLanguage = {
+    js: 'javascript', 
+    lua: 'lua', 
+    cpp: 'cpp',
+    c: 'c',
+    glsl: 'glsl',
+};            
 
 const rootRelative = location.pathname;
 const rootOrigin = location.origin;
@@ -47,11 +59,11 @@ async function updateContent(text, options = {}) {
     } else {
         elContent.classList.remove('iframe');
         const ext = options.ext || 'md';
+        
         if (ext == 'md') {
             await toHtmlData(elContent, text);
         } else {
-            const fixed = {js:'javascript', lua:'lua', cpp:'cpp'};
-            const res = hljs.highlight(text, {language:fixed[ext]});
+            const res = hljs.highlight(text, {language:mapLanguage[ext]});
             const elPre = document.createElement('pre');
             const elCode = document.createElement('pre');
             elCode.innerHTML = res.value;
@@ -71,6 +83,13 @@ async function toHtmlData(elContent, text) {
     elContent.replaceChildren();
     elContent.appendChild(elDiv);
     await parseMermaidHtml(elDiv);
+    document.querySelectorAll('code').forEach(node=>{
+        const lang = node.className.split('language-').pop();
+        if (mapLanguage[lang]) {
+            const res = hljs.highlight(node.textContent, {language:mapLanguage[lang]});    
+            node.innerHTML = res.value;
+        }
+    });
 }
 
 const patternExternal = /^(https?:|mailto:|tel:)/
