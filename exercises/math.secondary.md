@@ -60,6 +60,14 @@ $e^{\pi i} + 1 = 0 \to e^{\pi i} = -1$
 <details>
 <summary>2024-8-23塞瓦定理</summary>
 
+- [用圆幂及消点法解2024年高中数学联赛加试几何题](https://mp.weixin.qq.com/s/A-NDWhNZ_EeUFDv8bi2YXA)
+
+</details>
+
+
+<details>
+<summary>2024-8-23塞瓦定理</summary>
+
 - [一个很哇塞的定理 ](https://mp.weixin.qq.com/s/teDnXG-v53GHxvdlrND-DA)
 
 你有没有发现这样一个现象：三角形的三条高线（或其延长线）、三条角平分线、三条中线都会分别交于一点。你可以试着画出各种不同三角形的高线（或其延长线）、角平分线、中线，会发现无论什么样的三角形，它的三条高线（或其延长线）都会交于同一个点，角平分线和中线也是如此。

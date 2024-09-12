@@ -1,4 +1,4 @@
-# [Shader](https://threejs.org/docs/index.html?q=material)
+# [材质material](https://threejs.org/docs/index.html?q=material)
 
 - [[SOLVED] Why does object get dimmer/darker when light gets closer to it?](https://discourse.threejs.org/t/solved-why-does-object-get-dimmer-darker-when-light-gets-closer-to-it/3475)
 
@@ -31,14 +31,13 @@ It would require some changes to use this with the THREE.EffectComposer, sorry. 
 
 - [描述fog的一个思路应用，效果很好](https://discourse.threejs.org/t/tesseract-open-world-planetary-engine/1473/7)
 
-## [Shader](https://threejs.org/docs/index.html?q=shader#api/en/materials/ShaderMaterial)
+## [ShaderMaterial](https://threejs.org/docs/index.html?q=shader#api/en/materials/ShaderMaterial)
 
 在源码src\renderers\webgl\WebGLProgram.js中函数WebGLProgram组装最后的代码到prefixVertex, prefixFragment
 
-```js
-renderer.toneMapping = LinearToneMapping;
-renderer.toneMappingExposure = 0.1;
-```
+对象renderer.info.programs中缓存了WebGLProgram，WebGLProgram.cacheKey作为了一个shader对象的unique值，它是由src\renderers\webgl\WebGLPrograms.js文件中getProgramCacheKey决定的一个string值。
+
+
 
 ### BumpMap
 

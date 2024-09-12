@@ -20,7 +20,7 @@ LoadingManager是一个独立封装的，类似一个函数，全部在construct
 
 ## 导出
 
-### JSON
+### string
 导出当前内存的对象为JSON文件
 ```js
 /**
@@ -44,5 +44,3 @@ LoadingManager是一个独立封装的，类似一个函数，全部在construct
     window.URL.revokeObjectURL(url);
 })();
 ```
-
-
