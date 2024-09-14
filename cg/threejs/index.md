@@ -4,7 +4,7 @@
 - [乱记](/cg/threejs/threejs.md)
 - [RayCaster](/cg/threejs/raycaster.md)
 - [模型-导入-导出](/cg/threejs/model.md)
-- [Grid实现](/cg/threejs/grid.md)
+- [Grid实现](/cg/tools/grid.md)
 - [shader](/cg/threejs/shader.md)
 - [material材质](/cg/threejs/material.md)
 - [灯光](/cg/lighting/light.md)

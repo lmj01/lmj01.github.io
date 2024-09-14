@@ -1,5 +1,4 @@
 # ECMAScript
-> 
 
 - [Standard ECMA-262 6th Edition / June 2015 ECMAScript® 2015 Language  Specification ](https://262.ecma-international.org/6.0/)
 - [RxMarbles](https://rxmarbles.com/)
@@ -13,6 +12,9 @@ ECMAScript
 
 Blob-binary large object
 
+### [The Global Object](https://tc39.es/ecma262/multipage/global-object.html#sec-global-object)
+
+globalThis对象可以访问全局的, 比如一个通用的库编译成es，umd等format时，umd的方法可以在古老的地方使用，如jsp中
 
 ### 不常用特性与新语法
 

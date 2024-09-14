@@ -12,6 +12,7 @@
 ### [图形学](/cg/graphics.md)
 - [几何](/cg/geometry.md)
 - [裁剪](/cg/tools/culling.md)
+- [网格](/cg/tools/grid.md)
 - [四元数](/cg/tools/quaternion.md)
 - [meshlab](/cg/tools/meshlab.md)
 - [eigen](/cg/library/eigen.md)

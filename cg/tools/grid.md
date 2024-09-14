@@ -8,6 +8,8 @@
 - [Help with GridHelper - 3d coordinates](https://discourse.threejs.org/t/help-with-gridhelper-3d-coordinates/27336)
 - [【源码】效果最好的网格Shader（迄今为止）](https://mp.weixin.qq.com/s/WJLwJMdvug98QWyFvV4e7A)
 
+- [FreeCAD Grid](https://github.com/FreeCAD/FreeCAD/blob/main/src/Mod/Mesh/App/Core/Grid.h)
+
 ## 透视下
 
 - [无穷网格，很容易更改为ES6版本](https://github.com/Fyrestar/THREE.InfiniteGridHelper)
