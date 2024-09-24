@@ -4,6 +4,11 @@
     - [pdf](https://journal.cricaas.com.cn/attached/file/20210517/20210517161953_566.pdf)
 - [在线英语语法书籍--旋元佑](https://llwslc.github.io/grammar-club/)
 
+## 数论
+
+- [[日]远山启《数学女王的邀请--初等数论入门》](https://book.douban.com/subject/35097523/)
+- [ G.H.Hardy / Edward M.Wright / Heath-Brown / Joseph H.Silverman《哈代数论（第6版）An Introduction to the Theory of Numbers，6E》](https://book.douban.com/subject/5290474/)
+
 ## 线性代数
 
 - [Serge Lang《linear algebra》](https://book.douban.com/subject/2314300/)

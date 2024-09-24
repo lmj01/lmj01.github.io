@@ -1,6 +1,5 @@
 # Camera
 
-
 ## 插值
 
 要实现缩放动画并应用插值，修改camera的以下属性值，并逐步更新这些值就形成了动画的缩放
@@ -22,6 +21,28 @@ Dolly-Zoom一般分为两种类型：
 
 实现Dolly-Zoom效果，需要保存开始缩放时物体位置处的frustum高度，然后随着相机的移动，找到新的距离，并调整FOV以保持物体在物体位置处的相同高度，这样就可以实现Dolly-Zoom效果
 
+## [three.js](https://github.com/mrdoob/three.js/blob/dev/src/math/Matrix4.js)
+
+函数makePerspective实现的就是[OpenGL的投影矩阵OpenGL Projection Matrix](https://songho.ca/opengl/gl_projectionmatrix.html)
+
+对称透视投影矩阵
+
+```js
+// use vertical FOV, side view of symmetric frustum
+top / near = tan(theta/2);
+right = top * aspect = tan(theta/2) * near * aspect;    
+// use horizontal FOV, top view of symmetric frustum
+right / near = tan(theta/2);
+top = right / aspect = tan(theta/2) * near / aspect;
+// vertex v[xyz] to screen point s[x,y]
+// https://community.khronos.org/t/fovy-or-zoom-value/24950/2
+sx = (2n * v.x)(f - n) / ((right - left)(-2fn)v.z);
+sy = (2n * v.y)(f - n) / ((top - bottom)(-2fn)v.z);
+```
+
+[CombinedCamera的实现](https://github.com/mrdoob/three.js/blob/7f43f4e6ef087cec168fea25bb53591052d5ff12/examples/js/cameras/CombinedCamera.js)
+
 ## 参考
 
 - [The Dolly Zoom Effect, Explained (And 7 Examples in Movies)](https://whatnerd.com/contra-zoom-film-technique-explained-examples/)
+- [Field of View - Rectilinear and Fishye Lenses ](https://bobatkins.com/photography/technical/field_of_view.html)

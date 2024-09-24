@@ -5,6 +5,13 @@
 - [Library Genesis 图书馆创世纪 – 中文 (中国)](https://librarygenesis.net/zh/)
 - [程序员开发的书籍By Developers, For Developers](https://pragprog.com/)
 
+## 公版
+
+- [古登堡计划Project Gutenberg is a library of over 70,000 free eBooks](https://www.gutenberg.org/)
+- [国学导航](http://www.guoxue123.com/)
+- [漢川草廬--一個文史哲愛好者所建立的正體中文古籍網站--繁体-台湾](http://www.漢川草廬.tw/index.php)
+- [中國哲學書電子化計劃](https://ctext.org/zh)
+
 ## reading
 
 - [vulkan tutorial](https://vulkan-tutorial.com/)

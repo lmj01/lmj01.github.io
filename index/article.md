@@ -11,6 +11,7 @@
 
 ### [图形学](/cg/graphics.md)
 - [几何](/cg/geometry.md)
+- [相机](/cg/tools/camera.md)
 - [裁剪](/cg/tools/culling.md)
 - [网格](/cg/tools/grid.md)
 - [四元数](/cg/tools/quaternion.md)

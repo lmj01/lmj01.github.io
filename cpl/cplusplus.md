@@ -10,6 +10,12 @@
 
 ## 语言特性
 
+### 生成代码
+
+- [Code generation in C++](https://github.com/cor3ntin/CppInjectionReflection/blob/master/doc.md)
+
+宏会被code injection 替代
+
 ### 头文件
 未避免头文件多次被编译，C/C++中有两种方法来避免，一种是 header include guards，一种是#pragma once
 

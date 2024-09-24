@@ -22,6 +22,13 @@
 
 - [Collection of Examples Links to https://discourse.threejs.org/ and originals in source code ](https://hofk.de/main/discourse.threejs/)
 
+### globe
+
+- [Globe with markers and label: thoughts, ideas, approaches, solutions](https://discourse.threejs.org/t/globe-with-markers-and-label-thoughts-ideas-approaches-solutions/34995)
+    - [Globe of Points: Markers + Label Paul ](https://codepen.io/prisoner849/pen/oNopjyb)    
+- [WebGL Globe is a platform for visualizing latitude longitude based information using WebGL. ](https://github.com/dataarts/webgl-globe)
+- [UI component for Globe Data Visualization using ThreeJS/WebGL ](https://github.com/vasturiano/globe.gl)
+
 ### [RSM-Reflective Shadow Map](http://www.klayge.org/material/3_12/GI/rsm.pdf)
 
 - [Reflective shadow map experiment with a newer version of three.](https://github.com/lmj01/rsm)
@@ -31,6 +38,11 @@
 - [perlin noise v2,效果看起来非常舒服](https://codepen.io/vcomics/pen/RwQgXzv)
 - [Shaky / Jumpy - Camera Interpolation Along Curve](https://discourse.threejs.org/t/shaky-jumpy-camera-interpolation-along-curve/52278/2)
     - [Extruded tube with holes相机跟着视角变化，钻洞的效果](https://codepen.io/boytchev/pen/poxpGZN)
+- [A solution to visualize and explore 3D models in your browser. UI很nice](https://github.com/kovacsv/Online3DViewer)
+    - 这个项目的学习型很强，很多都是最基本的操作，抽象也很简单，架构也灵活，很少第三方的基础库
+    - 封装task的engine/core/taskrunner
+    - 简单的engine/geometry/octree，
+    - 因为支持可导入导出数据，内部自己管理了所有的数据结构，对数据也进行了处理，比如拓扑结构的存储等，three.js只是渲染库使用
 
 ## 参考
 

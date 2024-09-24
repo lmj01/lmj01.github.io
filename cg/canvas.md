@@ -103,17 +103,4 @@ ctx.translate(-center.x, -center.y);
 
 - [OffscreenCanvas-离屏canvas使用说明](https://zhuanlan.zhihu.com/p/100375855)
 - [canvas-scale](https://dustinpfister.github.io/2019/03/06/canvas-scale/),这篇文章很详细的介绍了canvas关于scale的细节，配合[playground](https://playcode.io/1833399)查看结果
-
-## 经验
-
-
-### 2024-4-19
-在使用CanvasRenderingContext2D.drawImage以canvas为参数时，关于图像的放大问题，会陷入使用图像的逻辑中，先以中心点放大，再截图。
-在使用canvas实现这个逻辑时，小程序上的实现让我很郁闷。表现出了不是预期的情况。
-最后就是简单的绘制一部分到另外一个canvas上，就产生了预期的结果。实在令人困扰。
-这个可能与微信中canvas实现机制有关，那就好奇实现原理了。
-
-### 2020-8-9
-图形学，在一些理论基础上，算是固定的，或是教科书上能列出来的东西，都是算是知识点，可是除了这些，还有一些特效，是在当前技术不能实现或达到要求的，通过迂回的方法来获得类似的结果，至少大部分人区分不了这些之间的差别。
-最近在分析别人的实现，隐适美的3D场景的显示，与实现的计算方案时，选择一个引擎，就发现其中的各种限制，比如关于orthographic camera的实现，目前还没有查到是与浏览器的实现，或本事就是存在的一种差异，比如对于阴影的实现，threejs是利用perspective camera来生成了一个结果来应用到结果上，如果全是orthographic camera的话，会产生什么样的结果呢？
-每次看到别人把多个引擎，多个三维软件的结果做对比，可见我还只是停留在知识点上。系统的分析其内容是需要深厚的知识储备的。
+- [MediaSource录屏canvas的封装库](https://github.com/ValeeraJS/WebRTCRecorder)

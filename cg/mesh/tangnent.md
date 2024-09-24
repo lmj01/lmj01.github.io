@@ -129,3 +129,11 @@ MikkTSpace生成tangent space即使改变了点索引，面的顺序，删除pri
 
 - wrinkled surface皱折面
 - normal mapping is almost as common as texture mapping and directly supported in a wide range of graphics tools. However, normal mapping is hard to get right without following a strict set of rules. 正确的显示一定是约束在一些规则内才可以 A wrong implementation can lead to discontinuities in the shading.
+
+### 2.2 Normal Mapping
+由低分辨率的像素替换高分辨率像素，在vertex上的uv按照ray与normal映射到一个新的uv，
+- Normal mapping can also be used to achieve bump mapping. ... Note that normal maps are three–channel textures as opposed to bump maps which consist of a single channel only法线Mapping也是达到bump mapping效果的，只是需要三通道的vu，而后者只需要单通道即可。
+
+### 参考
+
+- [A Practical and Robust Bump-mapping Technique for Today’s GPUs](https://my.eng.utah.edu/~cs5610/handouts/bumpmap.pdf)

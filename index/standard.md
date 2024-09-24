@@ -55,6 +55,13 @@
 - [DCMTK](https://dcmtk.org/)
 - [DCMTK on github](https://github.com/DCMTK/dcmtk)
 
+## [IETF](https://www.ietf.org/)
+
+### RFC
+
+- [RFC editor](https://www.rfc-editor.org/)
+- [The Syslog Protocol](https://datatracker.ietf.org/doc/html/rfc5424)
+
 ## [ Object Management Group (OMG)](https://www.omg.org/)
 
 The Object Management Group® Standards Development Organization (OMG® SDO) is a global, open membership, non-profit consortium. 
