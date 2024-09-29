@@ -38,7 +38,39 @@ top = right / aspect = tan(theta/2) * near / aspect;
 // https://community.khronos.org/t/fovy-or-zoom-value/24950/2
 sx = (2n * v.x)(f - n) / ((right - left)(-2fn)v.z);
 sy = (2n * v.y)(f - n) / ((top - bottom)(-2fn)v.z);
+// perspective equal <==> orthographi camera
+// persp to ortho
+const distance = persp.position.distanceTo(control.target);
+const halfHeight = tan * distance;
+const halfWidth = halfHeight * persp.aspect;
+ortho.top = halfHeight;
+ortho.bottom = -halfHeight;
+ortho.left = -halfWidth;
+ortho.right = halfWidth;
+ortho.updateProjectionMatrix();
+// ortho to persp
+const frustumHeight = (orhto.top - ortho.bottom) / ortho.zoom;
+const halfHeight = frustumHeight / 2;
+const distance = halfHeight / tan;
+persp.position.copy(orhto.position).normalize().multiplyScalar(distance);
+persp.updateProjectionMatrix();
+// to orhto projection get current viewport width
+
 ```
+
+求当前正交投影下的视图宽度参考three.js src\math\Matrix4.js makeOrthographic
+
+$$
+\begin{cases}
+e_{0} = 2 \times w = 2 \times \frac{1}{right - left} \newline
+e_{12} = - \frac{right + left}{w} 
+\end{cases} \to 
+\begin{cases}
+right - left = \frac{2}{e_{0}} \newline
+e_{12} = - \frac{right + left}{right - left} \to left = right \times \frac{e_{12} + 1}{e_{12} - 1}
+\end{cases} \to right(1 - \frac{e_{12} + 1}{e_{12} - 1}) = \frac{2}{e_{0}} \to right = \frac{-2}{2_{0}} \times \frac{e_{12} - 1}{-2}
+= \frac{1 - e_{12}}{e_{0}} \to left = -\frac{1 + e_{12}}{e_{0}}
+$$
 
 [CombinedCamera的实现](https://github.com/mrdoob/three.js/blob/7f43f4e6ef087cec168fea25bb53591052d5ff12/examples/js/cameras/CombinedCamera.js)
 

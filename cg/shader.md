@@ -138,12 +138,17 @@ mat3(
 - [Layout Qualifier (GLSL)](https://www.khronos.org/opengl/wiki/Layout_Qualifier_(GLSL))
 - [Data Type (GLSL)](https://www.khronos.org/opengl/wiki/Data_Type_(GLSL))
 
+- [shadertop着色器](https://www.shadertoy.com/)
 ### WebGPU
 
 - [gpuweb](https://www.w3.org/community/gpu/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/)
 - [WebGPU深入探索](http://www.bimant.com/blog/webgpu-deep-dive/)
+
+- [webGPU版compute.toys is an experimental editor for WebGPU compute shaders](https://compute.toys/)
+  - [github](https://github.com/compute-toys/compute.toys)
+  - [Cross-platform compute shader engine](https://github.com/compute-toys/wgpu-compute-toy)
 
 ### [RenderDoc](https://renderdoc.org/)
 

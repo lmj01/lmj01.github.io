@@ -23,6 +23,21 @@
 - [Charles Chapman Pugh《Real Mathematical Analysis》(实数学分析)](https://book.douban.com/subject/26588474/)
     - 很好的解释了概念或证明的本质，帮助建立直觉
 
+### [Steven H. Strogatz《Nonlinear dynamics and chaos: with applications to physics, biology, chemistry, and engineering》(非线性动力学与混沌)](https://book.douban.com/subject/27049323/)
+
+$$
+\text{如何解微分方程} x^{''} + \frac{1}{2}x^{'} + 5sin(x) = 0 \text{因为非线性，线性方法在这里不起作用，但可以将其分解为一阶方程组}, \newline
+\text{定义新的变量} v= x^{'}, \text{则有}
+\begin{cases}
+x^{'} = v \newline
+v^{'} = -\frac{1}{2}v - 5sinx(x)
+\end{cases}
+$$
+
+然后可以选择一个合适的数值方法来求解这个一阶方程组。如在相空间中绘制轨迹，并了解系统的行为方式，在每个点上，水平方向上存在一个微分，在垂直方向上也存在一个微分，从而在相交处得到了相空间中的积分。在实际应用中，还需要考虑初始值和边界值。
+
+机械练习中是找到解，带入数值验证，其实方程组不仅仅练习题，而是描述变化，运动，时间等的语言，要去理解语言背后的场景。数学的真正美妙处就是学会从全新的角度去看待问题
+
 ## 概率论
 
 - [Ross《a First Course in Probability》]()

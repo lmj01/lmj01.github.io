@@ -31,6 +31,12 @@ rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏�
 ### Skyline
 新增的一个Skyline渲染引擎
 
+### 扫码关注
+- 先获取一个tick数据，是str
+- 轮询去检查这个str对应的图像被扫码不
+    - 扫码，返回openid，属于关注成功
+    - 为得到openid，重复轮询check
+
 ## 支付宝小程序
 
 ## 文档参考

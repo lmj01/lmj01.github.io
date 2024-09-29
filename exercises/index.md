@@ -32,6 +32,7 @@
 - [图形计算器，用meijie.lmj@outlook.com登录的](https://www.desmos.com/calculator?lang=zh-CN)
 - [math is fun](https://www.mathsisfun.com/)
     - [数学乐-中文版](https://www.shuxuele.com/index.html)
+- [前端数学库](http://algebrite.org/)
 
 <details>
 <summary>Geogebra开源在线工具</summary>
