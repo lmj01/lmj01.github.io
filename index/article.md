@@ -41,7 +41,6 @@
 - [2024](/articles/2024/app.md)
 - [2024经验](/articles/2024/experience.md)
 - [2024趋势](/articles/2024/trend.md)
-- [umi企业级框架](/articles/2024/umi.md)
 - [nocobase开源项目](/articles/2024/nocobase.md)
 - [GeoGebra开源项目](/articles/2024/geogebra.md)
 - [vfs虚拟文件系统](/articles/2024/vfs.md)

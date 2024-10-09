@@ -10,6 +10,8 @@
 
 ## 概念
 
+- [解剖学和放射学医学图谱数字资源](https://www.imaios.com/cn)
+
 ### Longitudinalis长轴
 
 Longitudinal planes refer to the vertically-oriented planes which are aligned along the long axis of the body. These could be sagittal or coronal.
@@ -67,7 +69,12 @@ I轴向右增大，J轴向右增大，K轴向后增大。除了每个体素的�
 
 ### 牙齿编号
 
-现在通常两种牙号，内部使用FDI，界面可能是universal牙号（针对美国的）
+- 部分记录法
+    - 分ABCD四个区
+    - 恒牙使用数字，乳牙使用罗马数字
+- palmar，与部位法类似，乳牙使用A到E的数字表示
+- 通用牙号universal，主要美国在使用
+- 牙科联盟FDI
 
 ## 参考
 

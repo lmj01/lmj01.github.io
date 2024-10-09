@@ -37,8 +37,6 @@ It would require some changes to use this with the THREE.EffectComposer, sorry. 
 
 对象renderer.info.programs中缓存了WebGLProgram，WebGLProgram.cacheKey作为了一个shader对象的unique值，它是由src\renderers\webgl\WebGLPrograms.js文件中getProgramCacheKey决定的一个string值。
 
-
-
 ### BumpMap
 
 先看文档中bumpMap的描述
@@ -126,3 +124,5 @@ export default /* glsl */`
 #endif
 `;
 ```
+
+## Node

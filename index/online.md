@@ -12,8 +12,6 @@
     - [ Source repo for the book gameprogrammingpatterns.com ](https://github.com/munificent/game-programming-patterns)
     - [online-free](http://gameprogrammingpatterns.com/contents.html)
 
-- [WebGL Report](https://webglreport.com/)
-- [WebGPU Report](https://webgpureport.org/)
 - [Tunnelmole 是一个简单易用的隧道工具，不需要配置，只要一行命令，就让公网可以访问内网服务](https://tunnelmole.com/)
     - npm或其他按照方式，执行tmole portNumber就可以生成一个链接拉
 
@@ -43,8 +41,11 @@
 - [Agner Fog Research, 涉及很多编程知识，很好的文档几何，作者自己更新自己的理解与文档](https://www.agner.org/?e=0#0)
 - [Bjarne StroustrupC++之父的网站](https://www.stroustrup.com/)
 - [ ISO C++ 标准委员会主席, 已经订阅其博客working at the intersection of programming language design/UX, people, and high performance code.](https://herbsutter.com/)
+
+### 图形学
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)
 - [WEBGPU贡献值之一Web Platform Advocate](https://surma.dev/)
+- [Hackery Math & Design Steven Witterns](https://acko.net/)
 
 ## 游戏
 
@@ -54,6 +55,9 @@
 
 ## 工具
 
+- [WebGL Report](https://webglreport.com/)
+- [WebGPU Report](https://webgpureport.org/)
+- [WebGPU report](https://webgpu.evanmartin.fr/)
 - [Javascript Playground--邮箱meijie.lmj@outlook.com](https://playcode.io/)
 - [用 HTML 的方式展示乐谱Scribe renders music notation in HTML.](https://github.com/stephband/scribe)
 

@@ -16,6 +16,7 @@
 
 ## 分析
 
+- [An Infinite Descent into Pure Mathematics开源的书籍](https://infinitedescent.xyz/)
 - [Walter Rudin《Principles of Mathematical Analysis》(数学分析原理)](https://book.douban.com/subject/1230095/)
     - 学习数学的学生的必读之作
     - 在谈论实数和复数集时，使用几何语言通常很方便，然而应该清楚理解的是，证明不能基于几何直觉，尽管几何解释可能非常有助于暗示证明可能进行的步骤
