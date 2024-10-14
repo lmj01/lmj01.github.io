@@ -4,6 +4,9 @@
     - [pdf](https://journal.cricaas.com.cn/attached/file/20210517/20210517161953_566.pdf)
 - [在线英语语法书籍--旋元佑](https://llwslc.github.io/grammar-club/)
 
+- [数学家记录史MacTutor is a free online resource containing biographies of more than 3000 mathematicians and over 2000 pages of essays and supporting materials. ](https://mathshistory.st-andrews.ac.uk/)
+
+
 ## 数论
 
 - [[日]远山启《数学女王的邀请--初等数论入门》](https://book.douban.com/subject/35097523/)

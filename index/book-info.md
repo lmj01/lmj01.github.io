@@ -13,6 +13,7 @@
 - [国学导航](http://www.guoxue123.com/)
 - [漢川草廬--一個文史哲愛好者所建立的正體中文古籍網站--繁体-台湾](http://www.漢川草廬.tw/index.php)
 - [中國哲學書電子化計劃](https://ctext.org/zh)
+- [北京大学《儒藏》编纂与研究中心](https://ruzang.pku.edu.cn/)
 
 
 

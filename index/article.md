@@ -45,6 +45,7 @@
 - [GeoGebra开源项目](/articles/2024/geogebra.md)
 - [vfs虚拟文件系统](/articles/2024/vfs.md)
 - [三维网格](/articles/notes/mesh.md)
+- [量化股市](/articles/notes/quantification.md)
 
 ## 2023
 

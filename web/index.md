@@ -24,13 +24,13 @@
 - [适配屏幕](/web/adapt.screen.md)
 - [http](/web/http.md)
 - [javascript](/cpl/web/ECMAScript.md)
+- [代码混淆](/web/confuse.md)
 
 
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
 
 - [CanIUse网站查看接口的普及率](https://caniuse.com/)
-
 
 ## [MDN Web Api](https://developer.mozilla.org/en-US/docs/Web/API)
 
@@ -63,70 +63,6 @@ document.execCommand('copy'); // 旧的方法调用系统接口
 对一些工具起作用的 使用[Can I Use data](https://caniuse.com/)数据来判断
 - [A smaller version of caniuse-db, with only the essentials! ](https://github.com/browserslist/caniuse-lite)
 
-### 多语言
-> i18n是国际化的英文为 internationalization，为了方便，通常会简写为 i18n（开头的 i、中间的 18 个字符、末尾的 n）
-
-分三类信息，
-- message，文本的替换
-- date time format，时间日期的格式
-- number，数字格式，货币形式等
-
-但难点还是很多的：
-- 多语言的没有标准，使用起来就存在各种兼容的问题，如中文有zh,zh_CN等来区分中文， 可参考BCP 47，全称为Best Current Practice for Tags for the Identification of Languages，是一个基于RFC 5646标准的语言标签格式的建议标准。
-- 多语言还是影响视觉设计，开发时就需要考虑这些问题，不同语言的表述会导致字符的长度差异较大
-- 语言的字段是复用还是语义化，都是一个难点，随着需求的变化可能会有很大的影响
-- 符合用户习惯与不同文化的需求
-
-
-#### **vue**
-
-把i18n实列对象放入Vue的实例中，通过this.$i18n.locale='zh'来设置对应的语言
-
-也可以存储在store或cookie中，
-
-但对惰性组件，如echarts这类需要重新渲染的，就需要手动处理了，方法有：
-- 利用watch监听locale字段是否发现变化，主动调用重新渲染
-- locale变化时直接this.reload强制刷新页面
-
-```js 
-new Vuei81n({
-    locale:'',
-    messages: {}, // $t(path)
-    numberFormats: {}, // $n()
-    dateTimeFormats: {}, // $d()
-})
-```
-
-### 引导库
-
-- [driver.js官网](https://driverjs.com/)
-    - [Driver.js，Powerful, highly customizable vanilla JavaScript engine to drive the user's focus across the page,MIT开源协议](https://github.com/kamranahmedse/driver.js)
-    
-- [Intro.js is a lightweight JavaScript library for creating step-by-step and powerful customer onboarding tours商用授权](https://introjs.com/)
-    - [github](https://github.com/usablica/intro.js)
-- [Bootstrap Tour](https://bootstraptour.com/)
-    - [github](https://github.com/sorich87/bootstrap-tour)
-
-### 富文本编辑器
-
-- [企业版的开源富文本编辑器The rich text editor behind great content creation experiences](https://github.com/tinymce/)
-    - [TinyMCE](https://github.com/tinymce/tinymce)
-
-- [过时的YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. ](https://clarle.github.io/yui3/)
-    - [github yui3 ](https://github.com/yui/yui3)
-
-- [The WYSIWYG Editor of tomorrow available today](https://ckeditor.com/)
-    - [CKEditor 5 is an ultra-modern JavaScript rich-text editor with MVC architecture, a custom data model, and virtual DOM](https://github.com/ckeditor/ckeditor5)
-
-- [Quill -- Your powerful rich text editor.](https://quilljs.com/)
-    - [github](https://github.com/quilljs/quill)
-
-### PDF
-
-- [PDF-LIB可写可修改](https://pdf-lib.js.org/) 字体必须内嵌，这样文件非常大，拷贝合并pdf时，内嵌字体还没法删除
-    - [github](https://github.com/Hopding/pdf-lib)
-
-- [jspdf只能写 github](https://github.com/parallax/jsPDF)
 
 ### 数学
 - [regression-js是JS库，包含了linear least-squares filting methods对的数据分析方法，支持linear、exponential、logarithmic、power、polynomial几种常见的](https://github.com/Tom-Alexander/regression-js)

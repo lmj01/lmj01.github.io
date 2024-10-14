@@ -1,6 +1,9 @@
-# 线上文章
+# 在线
 
-- [数学家记录史MacTutor is a free online resource containing biographies of more than 3000 mathematicians and over 2000 pages of essays and supporting materials. ](https://mathshistory.st-andrews.ac.uk/)
+- [AI - AMiner由清华大学计算机科学与技术系建立，论文检索, 手机号](https://www.aminer.cn/)
+- [kimi](https://kimi.moonshot.cn)
+- [文言一心](https://yiyan.baidu.com)
+
 
 - [Visual Information Theory可视化信息理论](https://colah.github.io/posts/2015-09-Visual-Information/)
 
@@ -75,6 +78,7 @@
 - [在线编译文件](https://wandbox.org/)
 - [在线编译--可查看汇编](https://godbolt.org/)
 - [在线编译--可查看预处理-方便调试宏](https://www.build-bench.com/)
+- [SVG在线编辑即预览](https://www.svgviewer.dev/)
 - [draw.io diagramming applications are the leading solutions for web based sketching and diagramming functionality](https://www.drawio.com/)
 - [嘉立创EDA](https://lceda.cn/editor)
 - [This is a online vector graphics editor.](https://skeditor.github.io/)

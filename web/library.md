@@ -3,8 +3,21 @@
 相关库，工作中使用过，分析并学习的库
 
 ## 富文本
+
+- [企业版的开源富文本编辑器The rich text editor behind great content creation experiences](https://github.com/tinymce/)
+    - [TinyMCE](https://github.com/tinymce/tinymce)
+
+- [过时的YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. ](https://clarle.github.io/yui3/)
+    - [github yui3 ](https://github.com/yui/yui3)
+
+- [The WYSIWYG Editor of tomorrow available today](https://ckeditor.com/)
+    - [CKEditor 5 is an ultra-modern JavaScript rich-text editor with MVC architecture, a custom data model, and virtual DOM](https://github.com/ckeditor/ckeditor5)
+
+
 ### Quill
-> quill富文本编辑器
+
+- [Quill -- Your powerful rich text editor.](https://quilljs.com/)
+    - [github](https://github.com/quilljs/quill)
 
 #### dev
 
@@ -89,7 +102,12 @@ With PartyKit, you can focus on building multiplayer apps or adding real-time ex
 
 ## 展示类
 
+
 ### [jsPDF](https://github.com/lmj01/jsPDF/tree/master)
+
+- [PDF-LIB可写可修改](https://pdf-lib.js.org/) 字体必须内嵌，这样文件非常大，拷贝合并pdf时，内嵌字体还没法删除
+    - [github](https://github.com/Hopding/pdf-lib)
+- [jspdf只能写 github](https://github.com/parallax/jsPDF)
 
 Client-side JavaScript PDF generation for everyone. 
 
@@ -141,7 +159,29 @@ reveal.js is an open source HTML presentation framework.
 轻量级生成式的粒子显示
 [demo and doc](https://marcbruederlin.github.io/particles.js/)
 
-# 其他库
+### 引导库
+
+- [driver.js官网](https://driverjs.com/)
+    - [Driver.js，Powerful, highly customizable vanilla JavaScript engine to drive the user's focus across the page,MIT开源协议](https://github.com/kamranahmedse/driver.js)
+    
+- [Intro.js is a lightweight JavaScript library for creating step-by-step and powerful customer onboarding tours商用授权](https://introjs.com/)
+    - [github](https://github.com/usablica/intro.js)
+- [Bootstrap Tour](https://bootstraptour.com/)
+    - [github](https://github.com/sorich87/bootstrap-tour)
+
+
+## 其他库
 
 - [Compact GUI for fine-tuning parameters and monitoring value changes 比dat.GUI更舒服的库](https://github.com/cocopon/tweakpane)
 - [excel](/articles/notes/excel.md)
+
+### signal
+
+信号是一个非常好的方案用来沟通数据和状态
+
+- [A proposal to add signals to JavaScript.标准提案中的signal](https://github.com/tc39/proposal-signals)
+
+- [Custom Event/Messaging system for JavaScript inspired by AS3-Signals 很老的了](http://millermedeiros.github.io/js-signals/)
+    - [github](https://github.com/millermedeiros/js-signals)
+- [small, simple, fast event system with no dependencies ](https://github.com/JosephClay/signal-js)
+- [Manage state with style in every framework ](https://github.com/preactjs/signals)

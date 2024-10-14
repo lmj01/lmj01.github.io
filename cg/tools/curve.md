@@ -38,6 +38,7 @@ Catmull-Rom广泛使用于建模或动画，它有三个属性
 Catmull-Rom样条线是由四个控制点p0,p1,p2,p3定义的插值样条曲线，曲线只绘制从p1到p2的部分，就是去除掉首尾两个点。即如果要绘制一条通过K个点的曲线，需要K+2个控制点，首尾两个点可以任意选择，但是会影响曲线形状。
 
 [On the Parameterization of Catmull-Rom Curves](http://www.cemyuksel.com/research/catmullrom_param/catmullrom.pdf)
+
 [Parameterization and Applications of Catmull-Rom Curves](http://www.cemyuksel.com/research/catmullrom_param/catmullrom_cad.pdf)
 
 [Smooth Paths Using Catmull-Rom Splines](https://qroph.github.io/2018/07/30/smooth-paths-using-catmull-rom-splines.html)

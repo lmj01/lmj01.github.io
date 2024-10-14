@@ -10,9 +10,7 @@
 
 几何法线Geometric Normal通常指的是在几何建模阶段为每个顶点计算的法线向量，它代表了在该顶点处表面的平滑近似。
 
-- 顶点法线，计算每个顶点相连的的所有三角形的面法线的平均值来得到顶点法线。
-    - 
-
+- 顶点法线，计算每个顶点相连的的所有三角形的面法线的平均值来得到顶点法线。    
 
 - Normals in geometry a normal is a vector or a line that is perpendicular to a given object (e.g. plane normal, vertex normal ). 
 - Normals in graphics are usually used for light calculations, such as calculating Diffuse reflection across a surface by taking the dot product between the light direction and surface normals. Normals are usually calculated based on the geometrical properties of the mesh (Faces/Vertices), by taking the cross product of any two non-parallel edges that lies on the same plane.
@@ -33,6 +31,17 @@
 - [A C++ library that implements much of this math is available under the MIT license on GitHub](https://github.com/EricLengyel/Terathon-Math-Library)
 
 - [等几何技术](/cg/mesh/isogeometric.md)
+
+## 距离
+
+- [GJK collision detection lib in raw js ](https://github.com/guilledk/gjk-js)
+- [An Efficient Parametric Algorithm for Octree Traversal Jorge Revelles,Carlos Ureña,Miguel Lastra](https://static.aminer.org/pdf/PDF/000/672/942/an_efficient_parametric_algorithm_for_octree_traversal.pdf)
+
+### bvh
+
+- [A BVH implementation to speed up raycasting and enable spatial queries against three.js meshes. ](https://github.com/gkjohnson/three-mesh-bvh)
+- [A modern C++ BVH construction and traversal library ](https://github.com/madmann91/bvh)
+
 
 ## 参考
 
