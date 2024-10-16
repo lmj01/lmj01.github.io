@@ -2,6 +2,7 @@
 
 - [Polygon Mesh Processing书籍](/cg/mesh/PolygonMeshProcessing.md)
 - [Isogeometric Anylasis](/cg/mesh/IsogeometricAnylasis.md)
+- [Cut Geometry](/cg/mesh/cut.geometry.md)
 
 
 ## Normal

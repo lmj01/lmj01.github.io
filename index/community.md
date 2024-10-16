@@ -89,3 +89,8 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 
 - [Khronos Standards community discussions github-account](https://community.khronos.org/)
 - [The three.js community discourse. github-account](https://discourse.threejs.org/)
+
+## 开源游戏
+
+- [Pokemon Auto Chess Game. Made by fans for fans. Open source, non profit. All rights to the Pokemon Company. ](https://github.com/keldaanCommunity/pokemonAutoChess)
+    - [online](https://pokemon-auto-chess.com/)

@@ -34,6 +34,12 @@
     - [数学乐-中文版](https://www.shuxuele.com/index.html)
 - [前端数学库](http://algebrite.org/)
 
+### [Animated math](https://www.3blue1brown.com/)
+
+- [社区版](https://www.manim.community/)
+    - [github A community-maintained Python framework for creating mathematical animations. ](https://github.com/ManimCommunity/manim)
+
+
 <details>
 <summary>Geogebra开源在线工具</summary>
 

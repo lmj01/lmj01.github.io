@@ -49,6 +49,12 @@ $$
 - [Rick Durrett《Probability: Theory and Examples》]()
     - 概率论有左手和右手。左手是使用测度论工具进行的严谨的基础工作。右手‘以概率方式思考’，将问题简化为赌博情况、抛硬币和物理粒子的运动。
 
+## 几何
+
+### 几何原本
+
+- [在线彩图符合](https://www.c82.net/euclid/)
+
 ## 其他
 
 - [德国赫尔曼·外尔《对称》](https://book.douban.com/subject/30308531/)
