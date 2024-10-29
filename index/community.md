@@ -50,6 +50,8 @@
 ### [mqtt](https://mqtt.org/)
 MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议），是一种基于发布/订阅（publish/subscribe）模式的“轻量级”通讯协议，该协议构建于TCP/IP协议上，由IBM在1999年发布。
 
+- []()
+
 ### Fair-code
 
 - [Fair-code, is not a software license, it describes a software model where software:一种旨在使开发人员获得报酬的开源替代方案](https://faircode.io/)
@@ -94,3 +96,7 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 
 - [Pokemon Auto Chess Game. Made by fans for fans. Open source, non profit. All rights to the Pokemon Company. ](https://github.com/keldaanCommunity/pokemonAutoChess)
     - [online](https://pokemon-auto-chess.com/)
+
+- [supertux]()
+
+- [A free and open-source Touhou Project fangame 开发语言是C](https://github.com/taisei-project/taisei)

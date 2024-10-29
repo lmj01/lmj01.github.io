@@ -38,6 +38,13 @@
 - [GJK collision detection lib in raw js ](https://github.com/guilledk/gjk-js)
 - [An Efficient Parametric Algorithm for Octree Traversal Jorge Revelles,Carlos Ureña,Miguel Lastra](https://static.aminer.org/pdf/PDF/000/672/942/an_efficient_parametric_algorithm_for_octree_traversal.pdf)
 
+
+### convex hull
+凸包
+- [Qhull computes the convex hull, Delaunay triangulation, Voronoi diagram, halfspace intersection about a point, furthest-site Delaunay triangulation, and furthest-site Voronoi diagram. ](http://www.qhull.org/)
+    - [github](https://github.com/qhull/qhull)
+- [Hull.js is a JavaScript library that builds concave hull by a set of points](https://github.com/AndriiHeonia/hull)
+
 ### bvh
 
 - [A BVH implementation to speed up raycasting and enable spatial queries against three.js meshes. ](https://github.com/gkjohnson/three-mesh-bvh)

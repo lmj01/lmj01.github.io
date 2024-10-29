@@ -118,6 +118,7 @@ jszip.loadAsync(new Blob([buffer])).then(zip=>{
     - [CADit.app](https://cadit.app/)
     - [A jscad UI playground developed here and meant to be later contributed into jscad](https://github.com/hrgdavor/jscadui)
 
+- [极简的图标搜索网站,可打包字体或下载svg格式](github.com/antfu-collective/icones)
 
 ## [组件开发]()
 

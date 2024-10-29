@@ -26,12 +26,19 @@ In CMake, BUILD_INTERFACE is a generator expression that can be used with target
 ### cmake_parse_arguments
 在[库glad](https://github.com/Dav1dde/glad)中使用了这个来解析glad_add_library函数
 
-## cmd-tool
+
+### [cmake-presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html)
+
+共享或CI配置时,需要一份别人也配置的文件
+
+## 命令
+
+### cmd-tool
 
 cmake 
 
 
-## VS-cmake 
+### VS-cmake 
 
 MSBuild命令行， 每个开关都有两种形式：-switch 和 /switch
 

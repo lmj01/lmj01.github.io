@@ -103,10 +103,12 @@
 - [清华邓俊辉两门课，数据结构和计算几何](https://dsa.cs.tsinghua.edu.cn/~deng/index.htm)
 
 
-### github resource
+### github open book
 
 - [A collection of academic papers, articles, and other resources that I plan to read or have read. ](https://github.com/jeffrey-xiao/papers/tree/master)
 - [Modern Robotics: Mechanics, Planning, and Control现代机器人学：机构、规划与控制](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)
+
+- [Understanding Deep Learning - Simon J.D. Prince](https://github.com/udlbook/udlbook)
 
 ### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
 > 该系列现在有6本了，属于编程语言理论比较高深的, 程序的自动证明甚至程序的自动生成都是未来可能成熟的技术，形式化
