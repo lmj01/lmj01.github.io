@@ -13,3 +13,12 @@ HAR（HTTP 归档）是多种 HTTP 会话工具用来导出所记录数据的 �
 
 ### stack
 这里可以看到调用的堆栈前后的位置
+
+当然可以截断，比如console对象，对他的函数包装一下，就看不到具体的stack关系了
+```js
+const log = console.log;
+console.log = function() {
+    log(...arguments);
+    // other logic, like post log to server
+}
+```

@@ -2,6 +2,8 @@
 
 相关库，工作中使用过，分析并学习的库
 
+- [rxjs](/web/libs/rxjs.md)
+
 ## 富文本
 
 - [企业版的开源富文本编辑器The rich text editor behind great content creation experiences](https://github.com/tinymce/)
@@ -12,7 +14,6 @@
 
 - [The WYSIWYG Editor of tomorrow available today](https://ckeditor.com/)
     - [CKEditor 5 is an ultra-modern JavaScript rich-text editor with MVC architecture, a custom data model, and virtual DOM](https://github.com/ckeditor/ckeditor5)
-
 
 ### Quill
 
