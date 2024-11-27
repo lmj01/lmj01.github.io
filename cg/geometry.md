@@ -37,6 +37,7 @@
 
 - [GJK collision detection lib in raw js ](https://github.com/guilledk/gjk-js)
 - [An Efficient Parametric Algorithm for Octree Traversal Jorge Revelles,Carlos Ureña,Miguel Lastra](https://static.aminer.org/pdf/PDF/000/672/942/an_efficient_parametric_algorithm_for_octree_traversal.pdf)
+- [Shape Decomposition for Multi-channel Distance Field Bc. Viktor Chlumsky 2015-5-15](https://github.com/Chlumsky/msdfgen/files/3050967/thesis.pdf)
 
 
 ### convex hull
