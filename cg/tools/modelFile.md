@@ -63,3 +63,7 @@ In 2018, Working Group 17 for the Digital Imaging and Communications in Medicine
 ## [glTF](https://github.com/KhronosGroup/glTF)
 
 [Header only C++ tiny glTF library(loader/saver)](https://github.com/syoyo/tinygltf)
+
+## 资源与参考
+
+- [The Stanford 3D Scanning Repository斯坦福的3D扫描库](https://graphics.stanford.edu/data/3Dscanrep/)

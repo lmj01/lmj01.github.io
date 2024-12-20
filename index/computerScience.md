@@ -67,6 +67,10 @@
 - [threejs 笔记](/cg/threejs/index.md)
 - [Galacean](/cg/galacean/index.md)
 
+#### 模拟器
+- [CARLA Open-source simulator for autonomous driving research自动驾驶](http://carla.org/)
+    - [github](https://github.com/carla-simulator/carla)
+
 ### 动画
 
 - [快速生成3D动画模型 Magical 3D motion studio with AI Generate production-ready animations in a minute, offering endless possibilities](https://mootion.com/landing)

@@ -94,6 +94,14 @@ JavaScript parser / mangler / compressor / beautifier toolkit
 ### [redux - A JS library for predictable and maintainable global state management](https://redux.js.org/)
 Redux 是一个用于 JavaScript 应用程序的状态容器，它提供了一种可预测化的状态管理方式
 
+### templates模板编译器
+
+- []()
+
+### lru
+
+- [A fast cache that automatically deletes the least recently used items](https://github.com/isaacs/node-lru-cache)
+
 ## 分布式
 ### [PartyKit simplifies developing multiplayer applications.](https://github.com/partykit/partykit)
 With PartyKit, you can focus on building multiplayer apps or adding real-time experiences to your existing projects with as little as one line of code. Meanwhile, PartyKit will handle operational complexity and real-time infrastructure scaling.
@@ -103,6 +111,14 @@ With PartyKit, you can focus on building multiplayer apps or adding real-time ex
 
 ## 展示类
 
+- [Compact GUI for fine-tuning parameters and monitoring value changes 比dat.GUI更舒服的库](https://github.com/cocopon/tweakpane)
+- [excel](/articles/notes/excel.md)
+
+### 图示
+
+- [d2](https://d2lang.com/)
+    - [D2 is a modern diagram scripting language that turns text to diagrams](https://github.com/terrastruct/d2)
+- []()
 
 ### [jsPDF](https://github.com/lmj01/jsPDF/tree/master)
 
@@ -169,12 +185,6 @@ reveal.js is an open source HTML presentation framework.
     - [github](https://github.com/usablica/intro.js)
 - [Bootstrap Tour](https://bootstraptour.com/)
     - [github](https://github.com/sorich87/bootstrap-tour)
-
-
-## 其他库
-
-- [Compact GUI for fine-tuning parameters and monitoring value changes 比dat.GUI更舒服的库](https://github.com/cocopon/tweakpane)
-- [excel](/articles/notes/excel.md)
 
 ### signal
 

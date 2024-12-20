@@ -137,3 +137,6 @@ MikkTSpace生成tangent space即使改变了点索引，面的顺序，删除pri
 ### 参考
 
 - [A Practical and Robust Bump-mapping Technique for Today’s GPUs](https://my.eng.utah.edu/~cs5610/handouts/bumpmap.pdf)
+
+### 感受
+- 看了里面的图片，才能具象化normal是面片的，不是一个曲面的，很多细节扩展在脑海中，以前很多不清晰的地方就是没有理解到位之处。

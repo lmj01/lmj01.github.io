@@ -109,10 +109,11 @@
 - [Modern Robotics: Mechanics, Planning, and Control现代机器人学：机构、规划与控制](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)
 
 - [Understanding Deep Learning - Simon J.D. Prince](https://github.com/udlbook/udlbook)
+- [The Copenhagen Book 在线网页认证Auth相关](https://thecopenhagenbook.com/)
+    - [github 源码](https://github.com/pilcrowonpaper/copenhagen)
 
 ### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
 > 该系列现在有6本了，属于编程语言理论比较高深的, 程序的自动证明甚至程序的自动生成都是未来可能成熟的技术，形式化
-
 
 ## 网上资源
 - [世界数字图书馆](https://www.wdl.org/zh/)

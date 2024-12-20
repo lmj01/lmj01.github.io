@@ -43,10 +43,14 @@ const re5b = /\$\${2,}/g; // 匹配一次
 //     console.log('4a2', RegExp.$1, RegExp.$2, RegExp.$3);
 // }
 
-let str5 = '$a=b+c$', str5a = `$$
-a = b + c;
-$$`;
-console.log(5, re5.test(str5), re5a.test(str5), re5b.test(str5));
-console.log('5a', re5.test(str5a), re5a.test(str5a), re5b.test(str5a));
-console.log('5b', str5.match(re5), str5.match(re5a), str5.match(re5b));
-console.log('5b1', str5a.match(re5), str5a.match(re5a), str5a.match(re5b));
+// katex中md的latex格式转HTML时匹配特定的公式
+// let str5 = '$a=b+c$', str5a = `$$
+// a = b + c;
+// $$`;
+// console.log(5, re5.test(str5), re5a.test(str5), re5b.test(str5));
+// console.log('5a', re5.test(str5a), re5a.test(str5a), re5b.test(str5a));
+// console.log('5b', str5.match(re5), str5.match(re5a), str5.match(re5b));
+// console.log('5b1', str5a.match(re5), str5a.match(re5a), str5a.match(re5b));
+
+// 匹配FDI牙号
+// 

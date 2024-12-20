@@ -24,6 +24,9 @@ xcopy src dst /W /u /s /y
 Get-Process -Name sb* # 获取进程名
 Get-Process -Name sb* | Stop-Process
 Stop-Process -Name t*,e* -Confirm
+
+# 语言
+chcp 65001 #更改gbk为utf-8语言
 ```
 ## powershell
 拷贝目录到另一个目录
