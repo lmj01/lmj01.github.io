@@ -1,6 +1,7 @@
 # coding = utf-8 
 # https://pypi.org/project/DracoPy/
 # https://github.com/seung-lab/DracoPy
+# https://graphics.stanford.edu/data/3Dscanrep/
 import os
 import sys
 import DracoPy

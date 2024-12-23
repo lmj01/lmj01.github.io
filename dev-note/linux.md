@@ -27,6 +27,7 @@ apt-get remove package --purge 删除包，包括配置文件等
 apt-get clean & apt-get autoclean 清理无用的包
 apt-cache search package 
 apt-cache show package 获取包相关信息，如说明，大小，版本等
+ls /etc/apt/sources.list.d 查看当前的非官方的地址源
 
 apt search '^g\+\+-[0-9]+$' 获取可安装的版本
 
@@ -165,9 +166,19 @@ sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
 ## WSL
 
+```shell
 wslconfig /list
-wsl --list
+wsl --list -o # 查看支持的系统
 wsl --shutdown
+# 升级
+vi /etc/update-manager/release-upgrades # 确保Prompt为LTS
+sudo apt-get update
+sudo apt-get upgrade
+sudo do-release-upgrade -d # 出错可强制更新 sudo apt-get dist-upgrade
+exit
+wsl --terminate Ubuntu
+cat /etc/os-release
+```
 
 ### bat
 - echo %XXX-path% 打印环境变量

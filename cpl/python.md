@@ -49,7 +49,7 @@ pip install pyopengl
 - pip install matplotlib // matplotlib是一个python 2D绘图库，利用它可以画出许多高质量的图像
 - pip install openmesh // openmesh https://www.graphics.rwth-aachen.de/media/openmesh_static/Documentations/OpenMesh-6.2-Documentation/a00036.html
 
-## python anaconda
+### python anaconda
 
 这是一个比较独立的环境，连安装包都是独立的
 
@@ -66,3 +66,9 @@ Scripts\activate conda2 // 进入当前环境
 
 - PEP python的增强建议书
 - print(dir(moduleLib)) 查看当前模块库的接口
+
+### [scikkit-build](https://pypi.org/project/scikit-build/)
+
+scikit-build is a Python build system for CPython C/C++/Fortran/Cython extensions using CMake.
+
+通过这个工具很容易把C++库迁移到python封装接口上，如[draco](https://github.com/seung-lab/DracoPy)

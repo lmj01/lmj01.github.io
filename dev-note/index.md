@@ -1,16 +1,14 @@
 # dev-note 
 
 - [nodejs包管理](/web/pkg.md)
-- [cmake](/dev-note/cmake.md)
 - [linux](/dev-note/linux.md)
 - [powershell](/dev-note/powershell.md)
 - [wsl](/dev-note/wsl.md)
 - [vscode](/dev-note/vscode.md)
-- [cmd](/dev-note/cmd.md)
+- [window](/dev-note/window.md)
 - [bazel](/dev-note/bazel.md)
-- [build System](/dev-note/buildSystem.md)
+- [build System cmake,ninja](/dev-note/buildSystem.md)
 - [debug](/dev-note/debug.md)
-- [powershell](/dev-note/powershell.md)
 - [包管理 -- vcPkg, vfox](/dev-note/pkg.md)
 - [maven](/dev-note/maven.md)
 
