@@ -1,5 +1,6 @@
 # ModelFile
 
+- [draco](/cg/library/draco.md)
 - [file format documentation](https://docs.fileformat.com/)
 media-types.xhtml)
 模型文件格式
@@ -62,7 +63,14 @@ In 2018, Working Group 17 for the Digital Imaging and Communications in Medicine
 
 ## [glTF](https://github.com/KhronosGroup/glTF)
 
-[Header only C++ tiny glTF library(loader/saver)](https://github.com/syoyo/tinygltf)
+- .gltf 还有额外的texture，material，animation等就需要使用gltf和Draco是最好的选择
+- .glb 所有数据都以二进制存储
+- draco 只对geometry感兴趣的就可以独立使用
+
+
+- [Header only C++ tiny glTF library(loader/saver)](https://github.com/syoyo/tinygltf)
+
+
 
 ## 资源与参考
 
