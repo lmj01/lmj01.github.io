@@ -2,7 +2,7 @@
 
 - [Polygon Mesh Processing书籍](/cg/mesh/PolygonMeshProcessing.md)
 - [Isogeometric Anylasis](/cg/mesh/IsogeometricAnylasis.md)
-- [Cut Geometry](/cg/mesh/cut.geometry.md)
+- [surface](/cg/mesh/surface.md)
 
 
 ## Normal
@@ -39,6 +39,7 @@
 - [An Efficient Parametric Algorithm for Octree Traversal Jorge Revelles,Carlos Ureña,Miguel Lastra](https://static.aminer.org/pdf/PDF/000/672/942/an_efficient_parametric_algorithm_for_octree_traversal.pdf)
 - [Shape Decomposition for Multi-channel Distance Field Bc. Viktor Chlumsky 2015-5-15](https://github.com/Chlumsky/msdfgen/files/3050967/thesis.pdf)
 - [碰撞](/cg/library/collision.md)
+
 
 ### convex hull
 凸包
