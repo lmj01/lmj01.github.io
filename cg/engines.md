@@ -24,7 +24,6 @@
     - [WebXR immersive console emulator w/ Retroach, Javascript, and WASM ](https://github.com/exokitxr/emukit)
 
 ## Render
-> 渲染器
 
 - [Soft Rendering](https://github.com/huanzai/SoftRendering)
 - [Tiny renderer for how opengl works](https://github.com/ssloy/tinyrenderer)

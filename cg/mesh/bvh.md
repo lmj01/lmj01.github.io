@@ -3,6 +3,7 @@
 - [Real-Time SAH BVH Construction for Ray Tracing Dynamic Scenes](https://www.graphicon.ru/html/2011/conference/gc2011Sopin.pdf)
 - [A modern C++ BVH construction and traversal library ](https://github.com/madmann91/bvh)
 - [Shape Decomposition for Multi-channel Distance Fields Bc. Viktor Chlumsk´y](https://github.com/Chlumsky/msdfgen/files/3050967/thesis.pdf)
+- [Dynamic Bounding Volume Hierarchies Erin Catto, Blizzard Entertainment](https://box2d.org/files/ErinCatto_DynamicBVH_Full.pdf)
 
 ## [three-mesh-bvh](https://github.com/gkjohnson/three-mesh-bvh)
 

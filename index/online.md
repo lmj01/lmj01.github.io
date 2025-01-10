@@ -5,6 +5,7 @@
 - [文言一心](https://yiyan.baidu.com)
 
 
+- [ Computer Vision Foundation open access ](https://openaccess.thecvf.com/menu)
 - [Visual Information Theory可视化信息理论](https://colah.github.io/posts/2015-09-Visual-Information/)
 
 - [Let's remove Quaternions from every 3D Engine](https://marctenbosch.com/quaternions/)
