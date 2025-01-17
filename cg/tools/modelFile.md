@@ -57,6 +57,13 @@ The orientation rule says that the orientation of the facet (i.e. which way is �
 
 ![](../images/cg/stl-orientation-%20of-the-facet.png)
 
+
+## [3MF](https://3mf.io/)
+
+工业联盟的格式，设计支持manifold与topology很好得支持[manifold库得知这种格式](https://github.com/elalish/manifold)
+
+- [spec规范](https://3mf.io/spec/)
+
 ## [DICOM](https://dicom.nema.org/medical/dicom/final/sup205_ft_DICOM_Encapsulation_of_STL_Models_for_3D_Manufacturing.pdf)
 
 In 2018, Working Group 17 for the Digital Imaging and Communications in Medicine (DICOM) standard published Supplement 205, DICOM Encapsulation of STL Models for 3D Manufacturing, which allows for the wrapping of a binary STL file in the standard DICOM container used for the communication and management of medical imaging information and related data. The supplement states, "The goal of encapsulating a Stereolithography (STL) 3D manufacturing model file inside a DICOM instance rather than transforming the data into a different representation is to facilitate preservation of the STL file in the exact form that it is used with extant manufacturing devices, while at the same time unambiguously associating it with the patient for whose care the model was created and the images from which the model was derived."

@@ -33,3 +33,8 @@ Delaunay三角剖分算法的核心性质是任何一个三角形外接圆不包
 ## Cut Geometry
 
 - [Design of cut unit geometry in hierarchical kirigami-based auxetic metamaterials for high stretchability and compressibility](https://www.sciencedirect.com/science/article/pii/S235243161630058X)
+
+
+## Virtually Geometric
+
+- [threejs formu](https://discourse.threejs.org/t/virtually-geometric/28420)

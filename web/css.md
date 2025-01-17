@@ -190,6 +190,9 @@ div {
     - [clip-path](https://juejin.cn/post/7171609307253833764)
 
 ### variable
+
+- 优先级， :root第一，dark or light mode第二，容易出现白屏就是因为:root有默认值是light模式
+
 ```css
 :root {
     --main-color: pink;
@@ -197,7 +200,12 @@ div {
 div {
     background-color: var(--main-color, red);
 }
+@media (prefers-color-scheme: dark) {
+}
+@media (prefers-color-scheme: light) {
+}
 ```
+
 
 ### Color颜色
 
