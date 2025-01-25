@@ -38,3 +38,6 @@ Delaunay三角剖分算法的核心性质是任何一个三角形外接圆不包
 ## Virtually Geometric
 
 - [threejs formu](https://discourse.threejs.org/t/virtually-geometric/28420)
+- [THREE-Nanite实现unreal nanite的js版](https://github.com/AIFanatic/three-nanite)
+
+## [GMesh](https://github.com/weihuayi/gmsh)

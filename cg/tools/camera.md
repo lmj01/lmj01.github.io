@@ -21,7 +21,9 @@ Dolly-Zoom一般分为两种类型：
 
 实现Dolly-Zoom效果，需要保存开始缩放时物体位置处的frustum高度，然后随着相机的移动，找到新的距离，并调整FOV以保持物体在物体位置处的相同高度，这样就可以实现Dolly-Zoom效果
 
-## [three.js](https://github.com/mrdoob/three.js/blob/dev/src/math/Matrix4.js)
+## 案例
+
+### [three.js](https://github.com/mrdoob/three.js/blob/dev/src/math/Matrix4.js)
 
 函数makePerspective实现的就是[OpenGL的投影矩阵OpenGL Projection Matrix](https://songho.ca/opengl/gl_projectionmatrix.html)
 
@@ -73,6 +75,38 @@ e_{12} = - \frac{right + left}{right - left} \to left = right \times \frac{e_{12
 $$
 
 [CombinedCamera的实现](https://github.com/mrdoob/three.js/blob/7f43f4e6ef087cec168fea25bb53591052d5ff12/examples/js/cameras/CombinedCamera.js)
+
+设置相机的姿态只需要满足如下设置
+```js
+const camera = new PerspectiveCamera(...);
+camera.up.set(0, 0, -1);
+camera.position.set(0, 200, 0);
+camera.rotation.set(MathUtils.degToRad(-90), 0, 0);
+camera.updateProjectionMatrix();
+```
+
+### [vtk](https://gitlab.kitware.com/vtk/vtk/-/blob/master/Rendering/Core/vtkCamera.cxx)
+
+```C++
+// Rendering\Core\vtkCamera.h
+vtkRenderer *renderer = renderWindow->GetRenderers()->GetFirstRenderer();
+vtkCamera *camera = renderer->GetActiveCamera();
+// 设置前视角
+camera->SetPosition(0, 0, 1);  // 相机位于 Z 轴正方向
+camera->SetFocalPoint(0, 0, 0);  // 焦点位于原点
+camera->SetViewUp(0, 1, 0);  // 朝上方向为 Y 轴正方向
+// SetViewUp会重新计算当前的位置
+
+// 设置后视角
+camera->SetPosition(0, 0, -1);  // 相机位于 Z 轴负方向
+camera->SetFocalPoint(0, 0, 0);  // 焦点位于原点
+camera->SetViewUp(0, 1, 0);  // 朝上方向为 Y 轴正方向
+
+renderer->ResetCamera();  // 重置相机以适应场景
+renderWindow->Render();  // 重新渲染窗口
+```
+
+
 
 ## 参考
 
