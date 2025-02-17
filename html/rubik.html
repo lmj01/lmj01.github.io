@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>魔方</title>
+<script src="./html.config.js" defer></script>
+</script>
+<style>
+    /* css */
+    .py-chinese-item {
+        position: relative;
+        /* color: blue; */
+    }
+    .py-pinyin-item {
+        color: #d08080;
+    }
+    #idDst {
+        font-size: xx-large;
+    }
+</style>
+</head>
+<body>
+    <div class="container-xl d-flex flex-column">
+        <h1>Rubik's Cube魔方</h1>
+        <h6><a class="mx-3" href="http://mf100.org/">魔方乐园</a></h6>
+        <div class="w-100 d-flex flex-column">
+            <h4 id="section1">基本步骤CFOP法</h4>            
+            <div class="w-100 d-flex my-3 flex-column justify-content-evenly">
+                <textarea id="idSrc" class="w-100" rows="4">
+                    第一步，底层十字cross：
+以黄色为中心，找边块的白色，右手旋转最多三次，没有白色边块就逆时针旋转下面两层。
+得到黄色中心块，白色边块。把边块与中心块颜色对齐的旋转到白色底去。
+第二步，底层角块first layer corners：
+把白色放在底部，寻找含有白色的角块，找到除白色的两种中心块颜色都有的，执行公式1，次数为1，3，5次都有可能。第一层角块颜色不对，也是这个公式调换位置。
+公式1：上左下右。
+第三步，中间层边缘块second layer edges
+在第三层找不含黄色的边缘块，对齐一面的中心块颜色，第三层边块的另一个颜色与其中心块颜色分左或右，执行公式2。出现白色块时，白色边块面向前面，重复上一次操作。
+如果都含有黄色，第二层应该有需要调整位置的边块，也是执行公式2。
+公式2：勾上回下。
+第四步，顶层十字top cross：
+开关宝箱，前方顺时针为开，逆时针为关。在开宝箱后执行公式1一次或两次后关宝箱。
+a小炸弹，任意方向执行公式1一次。
+b小弯刀，按照九点钟放置
+执行公式1两次。
+c激光剑，横着放执行公式1一次。
+得到黄色十字线。
+第五步，顶层角块归位top layer corners
+十字线的类型有：
+a小鱼
+b双头鱼
+c十字线
+d小坦克
+不是小鱼需要做手术，找手术灯，第三层左后角块为黄色，执行小鱼公式：
+小鱼模式重复执行小鱼公式就可以得到所有的黄色。
+公式3：小鱼公式：
+下右上右下右右上。
+
+第六步，顶层边缘块归位top layer edges。
+第三层侧边块有三种情况
+a有一对眼睛
+b有一对观众
+c不是a和b
+
+把黄色面向前面，a要把眼睛放在右边，b把观众放在右边，c任意方向，执行公式4如下：
+上上，底层逆时针两次，下右上，底层逆时针两次，下左下。
+最终得到第三层边角块归位。
+归位后只有两种情况
+a一个观众，三个眼睛
+b四个眼睛。
+对a的位置把观众放在后面，黄色面在顶，执行公式5如下：
+上右上左上左上右下右下下。
+重复执行上面的公式直到复原。
+                </textarea disabled>
+                <div id="idDst" class="w-100 d-flex flex-wrap my-3"></div>
+            </div>
+        </div>
+        <div></div>
+        <script type="module">
+            const { pinyin, html } = pinyinPro;            
+            const elTextareaSrc = document.getElementById('idSrc');
+            const elDivDst = document.getElementById('idDst');
+            elTextareaSrc.addEventListener('change', (event)=>{
+                elDivDst.innerHTML = html(elTextareaSrc.value);
+            })
+        </script>
+    </div>
+</body>
+</html>
