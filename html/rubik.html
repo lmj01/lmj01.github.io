@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>魔方</title>
-<script src="./html.config.js" defer></script>
-</script>
-<style>
-    /* css */
-    .py-chinese-item {
-        position: relative;
-        /* color: blue; */
-    }
-    .py-pinyin-item {
-        color: #d08080;
-    }
-    #idDst {
-        font-size: xx-large;
-    }
-</style>
+    <title>魔方</title>
+    <script src="./html.config.js" defer></script>
+    </script>
+    <style>
+        /* css */
+        .py-chinese-item {
+            position: relative;
+            /* color: blue; */
+        }
+
+        .py-pinyin-item {
+            color: #d08080;
+        }
+
+        #idDst {
+            font-size: xx-large;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container-xl d-flex flex-column">
         <h1>Rubik's Cube魔方</h1>
         <h6><a class="mx-3" href="http://mf100.org/">魔方乐园</a></h6>
         <div class="w-100 d-flex flex-column">
-            <h4 id="section1">基本步骤CFOP法</h4>            
+            <h4 id="section1">基本步骤CFOP法</h4>
             <div class="w-100 d-flex my-3 flex-column justify-content-evenly">
-                <textarea id="idSrc" class="w-100" rows="20">
+                <textarea id="idSrc" class="w-100" rows="20" style="width: 100%;">
                     第一步，底层十字cross：
 以黄色为中心，找边块的白色，右手旋转最多三次，没有白色边块就逆时针旋转下面两层。
 得到黄色中心块，白色边块。把边块与中心块颜色对齐的旋转到白色底去。
@@ -75,12 +78,11 @@ b四个眼睛。
         </div>
         <div></div>
         <script type="module">
-            const { pinyin, html } = pinyinPro;            
-            const elTextareaSrc = document.getElementById('idSrc');
-            const elDivDst = document.getElementById('idDst');
-            elTextareaSrc.addEventListener('change', (event)=>{
-                elDivDst.innerHTML = html(elTextareaSrc.value);
-            })
+            // const elTextareaSrc = document.getElementById('idSrc');
+            // const elDivDst = document.getElementById('idDst');
+            // elTextareaSrc.addEventListener('change', (event)=>{
+            //     elDivDst.innerHTML = html(elTextareaSrc.value);
+            // })
         </script>
     </div>
 </body>
