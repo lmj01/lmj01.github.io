@@ -71,6 +71,10 @@
 - [CARLA Open-source simulator for autonomous driving research自动驾驶](http://carla.org/)
     - [github](https://github.com/carla-simulator/carla)
 
+#### noise
+
+- [Tiling simplex flow noise in 2-D and 3-D compatible with GLSL 1.20 (WebGL 1.0) and above. ](https://github.com/stegu/psrdnoise)
+
 ### 动画
 
 - [快速生成3D动画模型 Magical 3D motion studio with AI Generate production-ready animations in a minute, offering endless possibilities](https://mootion.com/landing)

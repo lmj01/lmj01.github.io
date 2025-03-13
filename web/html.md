@@ -8,6 +8,10 @@
 
 ## tags
 
+### meta
+
+- [本文介绍如何在网页中插入元信息（比如作者、关键词、内容描述等等），便于计算机检索](https://www.thisdaysportion.com/posts/dublin-core-what-is-it-good-for/)
+
 ### img
 
 [Intrinsic Sizes](https://www.w3.org/TR/css-sizing-3/#intrinsic-sizes)

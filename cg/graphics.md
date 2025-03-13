@@ -98,6 +98,7 @@ Exocad是一款跨平台的应用程序，免费使用。
 - [Yet another modeling kernel? Hell, no.关于是否要从0开发一个新的几何内核](https://quaoar.su/blog/page/modeling-kernel-no-thanks)
 - [A 3D CAD application on your browser](https://chili3d.com/)
     - [github](https://github.com/xiangechen/chili3d)
+- [一本介绍 CAD 历史的在线系列文章](https://www.shapr3d.com/blog/history-of-cad)
 
 ## 开源图像
 

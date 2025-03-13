@@ -101,6 +101,7 @@
     - [github](https://github.com/algorithmica-org/algorithmica)
 - [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.可在线可下载，适合博士或研究资料](https://softwarefoundations.cis.upenn.edu/)
 - [清华邓俊辉两门课，数据结构和计算几何](https://dsa.cs.tsinghua.edu.cn/~deng/index.htm)
+- [Linear Algebra Done Right fourth edition中文版](https://linear.axler.net/LADR4eChinese.pdf)
 
 
 ### github open book
