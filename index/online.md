@@ -4,6 +4,7 @@
 - [kimi](https://kimi.moonshot.cn)
 - [文言一心](https://yiyan.baidu.com)
 
+- [OpenAPK开源的apk程序的下载集合，这样不受限平台啦](https://www.openapk.net/)
 
 - [ Computer Vision Foundation open access ](https://openaccess.thecvf.com/menu)
 - [Visual Information Theory可视化信息理论](https://colah.github.io/posts/2015-09-Visual-Information/)

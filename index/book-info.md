@@ -112,6 +112,7 @@
 - [Understanding Deep Learning - Simon J.D. Prince](https://github.com/udlbook/udlbook)
 - [The Copenhagen Book 在线网页认证Auth相关](https://thecopenhagenbook.com/)
     - [github 源码](https://github.com/pilcrowonpaper/copenhagen)
+- [Programming Language Principles and Paradigms](https://eecs390.github.io/notes/index.html)
 
 ### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
 > 该系列现在有6本了，属于编程语言理论比较高深的, 程序的自动证明甚至程序的自动生成都是未来可能成熟的技术，形式化
