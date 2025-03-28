@@ -1,4 +1,6 @@
-# Math
+# Matrix
+
+- [Building an Orthonormal Basis from a 3D Unit Vector Without Normalization](https://backend.orbit.dtu.dk/ws/portalfiles/portal/126824972/onb_frisvad_jgt2012_v2.pdf)
 
 ## 矩阵
 
@@ -48,3 +50,25 @@ const mat = new Matrix4().fromArray(elementsArray).transpose()
 
 $M_{l}M_{w}=$
 
+### Matrix
+
+```js
+mat3 theMatrix;
+theMatrix[1] = vec3(3.0, 3.0, 3.0); // Sets the second column to all 3.0s
+theMatrix[2][0] = 16.0; // Sets the first entry of the third column to 16.0.
+// 多值的矩阵的构造函数 matrices are filled in in column-major order.
+mat2(
+  float, float,   // first column
+  float, float);  // second column
+
+mat4(
+  vec4,           // first column
+  vec4,           // second column
+  vec4,           // third column
+  vec4);          // fourth column
+
+mat3(
+  vec2, float,    // first column
+  vec2, float,    // second column
+  vec2, float);   // third column
+```

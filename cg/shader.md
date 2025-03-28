@@ -104,32 +104,14 @@ Render Pass定义为一个渲染步骤。如有一个很多不同材质的球体
 
 每个pass通常对应的渲染流程中不同阶段【相同阶段通常会使用MRT，或硬件不支持，需要多个Pass；或渲染目标size不一样，也需要多个pass来渲染】。实际意义是对一个Mesh渲染多遍，是对材质抽象的一种解释，一个Technique里会包含一个或多个Pass，如DeferredLighting流程里面一个物体就需要2个Pass，一个用来计算Z，一个用来lighting；如果有阴影，又需要一个Pass；如果需要精细反射图，需要一个反射的Pass。引擎一般会把状态类似的不同Mesh的Pass一起渲染， 用Pass对材质进行排序。
 
-
-### Matrix
-
-```js
-mat3 theMatrix;
-theMatrix[1] = vec3(3.0, 3.0, 3.0); // Sets the second column to all 3.0s
-theMatrix[2][0] = 16.0; // Sets the first entry of the third column to 16.0.
-// 多值的矩阵的构造函数 matrices are filled in in column-major order.
-mat2(
-  float, float,   // first column
-  float, float);  // second column
-
-mat4(
-  vec4,           // first column
-  vec4,           // second column
-  vec4,           // third column
-  vec4);          // fourth column
-
-mat3(
-  vec2, float,    // first column
-  vec2, float,    // second column
-  vec2, float);   // third column
-```
-
 ### [Interface Block (GLSL)](https://www.khronos.org/opengl/wiki/Interface_Block_(GLSL))
 一块块的声明变量。
+
+## 工程实现
+
+Blender、Unreal 引擎采用 #include 语法，灵活性更高，需要在编译 shader 前预处理替换文本， three.js也是使用这个方法来处理。这样可以最大化共用部分shader的代码和逻辑。
+
+- [Sharing code between multiple GLSL shaders](https://computergraphics.stackexchange.com/questions/100/sharing-code-between-multiple-glsl-shaders)
 
 ## Reference
 关键字在github全局搜索

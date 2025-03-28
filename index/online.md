@@ -22,6 +22,7 @@
 
 ## Blogs
 
+
 - [Long Luo, 一个严肃的程序员](http://www.longluo.me/)
 - [Steve's Computer Graphics Index](http://steve.hollasch.net/cgindex/)
 - [Aras Pranckevičius](https://aras-p.info/blog/)
@@ -29,20 +30,15 @@
 - [全栈开发者CJ](https://cjting.me/)
 - [3D Game Engine Programming](https://www.3dgep.com/)
 - [早期Linux源码阅读](http://www.oldlinux.org/)
-- [Shader Bits -- HLSL and UE4 Development Blog](https://shaderbits.com/blog)
-- [Red Blob Games --  from Amit Patel  make interactive visual explanations of math and algorithms, using motivating examples from computer games](https://www.redblobgames.com/)
 - [Daniel Holden](https://theorangeduck.com/page/all)
 - [BimAnt](http://www.bimant.com/blog/)
 - [云风的BLOG](https://blog.codingnow.com/)
 - [cppmore](https://www.cppmore.com/)
 - [李逸-数学教授-基本分析讲义](https://math.seu.edu.cn/ly/list.htm)
 - [A Graphics Guy's Note](https://agraphicsguynotes.com/posts/)
-- [figma的博客,有关figma实现的一些思路和总结,值得借鉴](https://www.figma.com/blog/)
 - [奇安信X实验室--网格安全博客](https://blog.xlab.qianxin.com/)
 - [JavaScript和WASM专家software engineer and/or computer scientist and/or generalist nerd](https://cfallin.org/)
-
 - [Denis Bakhvalov, 关于性能优化的一个博客](https://easyperf.net/)
-- [SaschaWillems,业余贡献实时3D以Khronos标准软件开发者](https://www.saschawillems.de/)
 - [Agner Fog Research, 涉及很多编程知识，很好的文档几何，作者自己更新自己的理解与文档](https://www.agner.org/?e=0#0)
 - [Bjarne StroustrupC++之父的网站](https://www.stroustrup.com/)
 - [ ISO C++ 标准委员会主席, 已经订阅其博客working at the intersection of programming language design/UX, people, and high performance code.](https://herbsutter.com/)
@@ -51,6 +47,12 @@
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)
 - [WEBGPU贡献值之一Web Platform Advocate](https://surma.dev/)
 - [Hackery Math & Design Steven Witterns](https://acko.net/)
+- [Jeppe Revall Frisvad Associate Professor in Computer Graphics, M.Sc.(Eng.), Ph.D.](https://people.compute.dtu.dk/jerf/)
+- [SaschaWillems,业余贡献实时3D以Khronos标准软件开发者](https://www.saschawillems.de/)
+- [figma的博客,有关figma实现的一些思路和总结,值得借鉴](https://www.figma.com/blog/)
+- [Shader Bits -- HLSL and UE4 Development Blog](https://shaderbits.com/blog)
+- [Red Blob Games --  from Amit Patel  make interactive visual explanations of math and algorithms, using motivating examples from computer games](https://www.redblobgames.com/)
+- [Aras Pranckevičius 很多细节上的文章](https://aras-p.info/)
 
 ## 游戏
 
