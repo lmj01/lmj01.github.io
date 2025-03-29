@@ -95,3 +95,21 @@
 - 3,5 s/^#//g反注释3~5行
 - 1,$ s/^/#/g注释所有
 - :%s/^/#/g注释所有
+
+## 配置
+```shell
+# 依赖tags
+# universal-ctags ctags
+# global gtags
+# ripgrep LeaderF plugin text search 
+sudo apt install universal-ctags global ripgrep
+# https://www.zhihu.com/question/665593666/answer/3610323522
+git clone git@github.com:junegunn/vim-plug.git
+mkdir .vim
+mkdir .vim/autoload
+cp vim-plug.git/plug.vim .vim/autoload
+vim 
+:PlugInstall
+:LeaderfInstallCExtension
+# 安装coc.nvim补全插件
+```

@@ -3,7 +3,6 @@
 
 
 ## [CMake](https://cmake.org/)
-> CMake is the de-facto standard for building C++ code, with over 2 million downloads a month. It’s a powerful, comprehensive solution for managing the software build process. Get everything you need to successfully leverage CMake by visiting our resources section.
 
 - [CMake FAQ](https://gitlab.kitware.com/cmake/community/-/wikis/FAQ)
 
@@ -36,10 +35,6 @@ In CMake, BUILD_INTERFACE is a generator expression that can be used with target
 
 共享或CI配置时,需要一份别人也配置的文件
 
-### 命令
-
-cmake 
-
 #### VS-cmake 
 
 MSBuild命令行， 每个开关都有两种形式：-switch 和 /switch
@@ -59,6 +54,10 @@ MSBuild.exe VTK.sln /t:Rebuild /p:Configuration=release
 MSBuild.exe INSTALL.vcxproj /p:Configuration=release
 
 ```
+
+### 指导 
+
+最简单的思路就是把所有的源文件和头文件目录分别存入glob变量中，这是最简便的方法。 
 
 ### 参考
 - [官网文档](https://cmake.org/cmake/help/latest/index.html)
