@@ -41,9 +41,17 @@ HSL/HSV解释：L是指从最暗的黑色到色相纯色再到白色，L最大�
 
 ![](../images/cg/hsl_hsv.png)
 
-### [DCI-p3](https://www.color.org/chardata/rgb/DCIP3.xalter)
+#### [DCI-p3](https://www.color.org/chardata/rgb/DCIP3.xalter)
 
 js中canvas的颜色getImageData中setting有这个参数
+
+#### [Device-indenpendent Colros: CIE Lab and LCH Oklab and Oklch](https://www.w3.org/TR/css-color-4/#lab-colors)
+
+- [A perceptual color space for image processing ](https://bottosson.github.io/posts/oklab/)
+
+- [Device-Independent HDR Colors](https://drafts.csswg.org/css-color-hdr/#DI-HDR)
+    - [JzCzhz](https://drafts.csswg.org/css-color-hdr/#JzCzhz)
+
 
 ### Gamma Correction
 

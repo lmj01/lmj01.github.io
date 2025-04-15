@@ -12,6 +12,8 @@
 
 ## 常用命令
 
+- git log --graph --oneline --decorate --all // graph是ASCII图，oneline一行显示 decorate显示分支和标签名 all显示所有分支，包含远程的
+
 ### 创建
 - git init 对当前目录进行git初始化
 - git remote add repo-name repo-url 添加远程仓库地址

@@ -39,6 +39,10 @@
 # /q 不显示
 xcopy src dst /W /u /s /y 
 
+# 搜索
+Selet-String -Path "F:\ss" -Pattern "error" -CaseSensitive:$false -Recurse
+# /s 递归子目录 /i 不区分大小写
+findstr /s /i "include" *.cpp
 
 # 进程
 Get-Process -Name sb* # 获取进程名

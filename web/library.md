@@ -3,6 +3,7 @@
 相关库，工作中使用过，分析并学习的库
 
 - [rxjs](/web/libs/rxjs.md)
+- [d3](/web/libs/d3.md)
 
 ## 富文本
 

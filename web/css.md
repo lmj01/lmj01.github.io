@@ -224,6 +224,7 @@ progress {
 - [Accent强调](https://developer.mozilla.org/en-US/docs/Glossary/Accent)强调属性，固有的值也可以修改
     - [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)可以更改input和progress的默认颜色
 
+
 ### Sprite
 
 也称雪碧图，是一种图像合成技术，使用时截取一部分。这种技术减少了请求资源与避免
