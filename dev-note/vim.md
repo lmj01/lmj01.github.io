@@ -134,6 +134,7 @@ cp vim-plug/.vimrc ~/.vimrc
 cp vim-plug/plug.vim .vim/autoload
 # window 目录不同，查看gvim中的gvimrc_example.vim
 # 在vim中通过echo $VIM来查看安装的目录
+# echo $HOME/vimfiles/autoload/plug.vim
 vim
 :PlugInstall
 :LeaderfInstallCExtension
