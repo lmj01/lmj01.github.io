@@ -1,5 +1,7 @@
 # 计算机科学
 
+- [the Journal of Computer Graphics Techniques](https://www.jcgt.org/read.html)
+
 ## Programing Language
 
 - [编程语言](/cpl/language.md)

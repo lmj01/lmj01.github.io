@@ -107,6 +107,10 @@ std::cout << 1; // 等价于
 operator<< (std::cout, 1) // 当初函数调用，传入参数
 ```
 [CPO](https://www.zhihu.com/question/518132411)
+- [How hana::type<T> disables ADL](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/)
+- [另一种阻止 ADL 的巧妙手法](https://www.cppmore.com/2025/04/23/another-way-to-disable-adl/)
+
+
 
 ### [Copy elision](https://en.cppreference.com/w/cpp/language/copy_elision)
 

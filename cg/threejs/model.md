@@ -44,3 +44,13 @@ LoadingManager是一个独立封装的，类似一个函数，全部在construct
     window.URL.revokeObjectURL(url);
 })();
 ```
+
+## Group
+在BufferGeometry中有一个group，用来对顶点分类别的，
+```ts
+type tGroup = {
+    start: number;
+    count: number;
+    materialIndex: number;
+}
+```

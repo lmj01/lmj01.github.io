@@ -159,6 +159,7 @@ python -c "import sys; print(sys.executable)"
 
 - [ctags](https://github.com/universal-ctags/ctags-win32/releases)
     - ctags -R . 
+    - ctags -R --exclude=node_modules --exclude=build --exclude=dist .
     - ctags -R --languages=javascript,typescript .
     - ctags -R --languages=javascript --javascript-kinds=cfmv --extras=+f .
         - c class
@@ -173,6 +174,21 @@ python -c "import sys; print(sys.executable)"
 ### [coc.vim](https://github.com/neoclide/coc.nvim)
 
 - [llvm clang](https://github.com/llvm/llvm-project/releases/tag/llvmorg-18.1.8)
+```shell
+CocInstall coc-clangd coc-clang-format-style-options
+CocConfig
+```
+
+### [NERDTree](https://github.com/preservim/nerdtree)
+- :NERDTreeRefresh or R
+- i // 切换隐藏文件 // vimrc中默认配置打开，不需要切换
+- m 打开菜单
+- o 打开文件或目录
+- t 在新标签中打开文件
+- T 在新标签中打开目录
+- p 切换到父目录
+- P 切换到根目录
+- q 关闭
 
 ### plugs
 
