@@ -12,6 +12,8 @@
 
 - [cgal](https://github.com/cgal/cgal)
 
+- [f5.js class 4 Advanced Collisions and Physics. GJK algorithm](https://cs.brown.edu/courses/cs195u/lectures/04_advancedCollisionsAndPhysics.pdf)
+
 ## [2006 Circle-Triangle Intersection Method by The_Grey_Beast (Gabriel Ivăncescu)](https://www.phatcode.net/articles.php?id=459)
 作者提到他是在没有阅读任何相关的circle triangle算法的基础上有的想法，但是是common，不保证是最先发明的，作者用他自己的思路描述出来。
 - 不需要开方预计算

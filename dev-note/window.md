@@ -62,3 +62,13 @@ window上可以直接sshLinux下，在家里的局域网测试成功
 ```shell
 ssh name@ip // 登录后会让你输入密码
 ```
+
+## [scoop](https://scoop.sh/)
+
+```shell
+$env:SCOOP='d:\scoop'
+[Environment]::SetEnvironmentVariable('USERSCOOP', $env:SCOOP, 'User')
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+

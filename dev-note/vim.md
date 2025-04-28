@@ -196,3 +196,19 @@ CocConfig
 - [注释](https://github.com/tpope/vim-commentary)
     - gcc gcc 注释当前行
     - <number>gcc 注释当前一下<number>行
+
+## neovim
+
+- [lazy.nvim](https://lazy.folke.io/)
+
+``` shell
+配置路径
+# 查看路径
+:echo stdpath('config')
+# ~/.config/nvim/lua/plugins.lua
+# C:\Users\<用户名>\AppData\Local\nvim\lua\plugins.vim
+# C:\Users\<用户名>\AppData\Local\nvim\init.vim
+:lua print(vim.inspect(package.loaded['packer']))
+# 检查路径是否配置正确
+:checkhealth
+```

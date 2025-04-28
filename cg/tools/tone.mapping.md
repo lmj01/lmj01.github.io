@@ -24,3 +24,7 @@ Don't confuse luminance with luma - luma is the equivalent of the luminance comp
 ## [Tone Mappers]()
 
 - [github A collection of tone mappers for the display of 3D graphics ](https://github.com/KhronosGroup/ToneMapping)
+
+## 参考
+
+- [GM Shaders Mini: Tonemaps](https://mini.gmshaders.com/p/tonemaps)
