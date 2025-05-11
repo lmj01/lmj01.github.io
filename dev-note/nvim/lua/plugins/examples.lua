@@ -80,10 +80,25 @@ return {
   -- { dir = "~/projects/secret.nvim" },
 
   -- you can use a custom url to fetch a plugin
-  -- { url = "git@github.com:folke/noice.nvim.git" },
+  { url = "git@github.com:folke/noice.nvim.git" },
 
   -- local plugins can also be configured with the dev option.
   -- This will use {config.dev.path}/noice.nvim/ instead of fetching it from GitHub
   -- With the dev option, you can easily switch between the local and installed version of a plugin
-  { "folke/noice.nvim", dev = true },
+  { 
+        "folke/noice.nvim", 
+        dev = true,
+        event = "VeryLazy",
+        opts = {
+             -- add any options here
+        },
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper 'module="..."' entries
+            "MunifTanjim/nui.nvim",
+            -- optional
+            -- 'nvim-notify' is only needed, if you want to use the nofitication view
+            -- if not available, we use 'mini' as the fallback
+            "rcarriga/nvim-notify",
+        },
+  },
 }

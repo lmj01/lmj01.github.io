@@ -1,5 +1,10 @@
 # vim 
 
+vim编辑器核心就是text object motion
+- 对什么内容操作
+- 操作的范围
+- 操作什么内容
+
 ## 快捷键
 ### 文件命令
 - :put =readfile('/path/file')[start:stop] 把file的指定行数读取到当前buffer中
@@ -10,12 +15,17 @@
 - :e ftp://192.168.0.5/abc.txt or :e \\qadrive\test.txt 打开远程文件
 
 ### 光标
-- i 在当前位置前插入
+- i(nsert) 在当前位置前插入
 - I 在当前行首插入
-- a 在当前位置后插入
+- a(ppend) 在当前位置后插入
 - A 在当前行尾插入
-- o 在当前行之后插入一行
+- o(pen new line) 在当前行之后插入一行
 - O 在当前行之前插入一行
+- c(hange)
+    - ciw(change word inner)
+- d(elete)
+    - da*(delete content around)
+- y(ank)
 
 - gg :1 将光标移动到文件首行
 - G :$ 将光标移动到文件末行
