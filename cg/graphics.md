@@ -2,6 +2,7 @@
 
 - [Khronos社区](https://community.khronos.org/)
 - [threejs社区](https://discourse.threejs.org/)
+- [JCGT](https://jcgt.org/)
 
 - [光照模型](/cg/lighting/illumination.model.md)
     - [BumpMapping](/cg/lighting/bump.mapping.md)

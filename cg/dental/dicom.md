@@ -1,14 +1,25 @@
-# Computed Tomography
-> CT(Computed Tomography), 计算机断层成像
+# DICOM
 
-- [vtk-js doc](https://kitware.github.io/vtk-js/docs/)
 - [DICOM Standard Browser](https://dicom.innolitics.com/ciods)
 
-## 解剖名词
-![解剖图示](../images/axial_sagittal.webp)
-- 冠状面coronal plane，前后，纵切，把人体分成前、后两部分
-- 矢状面sagittal plane，sagittal来自拉丁文sagitta箭，对应中文就是矢，左右，侧切，把人体分成左、右两部分
-- 水平面transverse plane，横切，把人体分成上、下两部分
+## 概念
+
+### 名称
+
+- [Modality](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.1.4.1)表示医学影像的成像技术类型,由标签(0008,0060)Modality定义
+    - CT 
+- VOI(value of interest)感兴趣区域，通过[VOILut](https://dicom.nema.org/medical/Dicom/current/output/chtml/part03/sect_C.11.html)或窗位与窗宽调整来显示感兴趣的范围区域。
+
+### 窗位和窗宽
+- windowwidth窗宽通常指显示时所覆盖的像素值范围，[windowcenter - windowwidth/2, windowcenter + windowwidth/2], 超出范围被截断
+- windowcenter窗位是这个范围的中心，决定那个像素值会显示为中间灰度。调整窗位改变亮度，调整窗宽影响对比度。
+
+CT图像的像素值通常以HU(Hounsfield Units)为单位，原始数据可能存储为12位、16位等。可能有不同的像素编码，可能有rescaling斜率(Rescale slope)和截距(Rescale Intercept),
+
+HU = PixelValue * RescaleSlope + RescaleIntercept.
+在应用窗位窗宽前需要确定值得有效性。
+
+PV，WC，WW，lower = WC - WW/2, upper = WC + WW/2, mapping to [0,255] = Math.floor((PV - lower)/(upper - lower) * 255).
 
 
 ## [DICOM--Digital Imaging and Communications in Medicine](https://www.dicomlibrary.com/)
@@ -74,20 +85,10 @@ WADO:Web Access to DICOM Objects
     - [Conversion of non-standard DICOM files to DICOM P10 compliant files:](https://discourse.orthanc-server.org/t/conversion-of-non-standard-dicom-files-to-dicom-p10-compliant-files/365)
 
 
-## [NII](https://nifti.nimh.nih.gov/pub/dist/doc/ANALYZE75.pdf)
+- [The DICOM Standard is managed by the Medical Imaging & Technology Alliance - a division of the National Electrical Manufacturers Association. DICOM® Publications and DICOMWeb™ Publications are published by and copyright owned by the National Electrical Manufacturers Association. ](https://www.dicomstandard.org/current/)
+- [DICOM PS3.6 2025b - Data Dictionary](https://dicom.nema.org/medical/dicom/current/output/html/part06.html)
 
-[NIFTI(神经影像学信息计划Neuroimaging Informatics Technology Initiative)](https://nifti.nimh.nih.gov/)是一种标准
 
-一种更简单的数据格式，一个NIFTI格式包含三部分
-- hdr
-- ext
-- img
+## 工具
 
-## 术语
-
-- CT(Computed Tomography), 计算机断层成像，观察形态和密度
-- MRI(Magnetic Resonance Imaging), 核磁共振成像，可多参数、多序列、多方位成像，在软组织对比度方面具有较高优势
-- PET(Positron Emission Tomography), 正电子发射断层成像，PET 对疾病诊断的灵敏度高，但分辨率低
-- Ultrasound, 超声，可以清晰显示脏器及周围器官的各种断面像，接近解剖真实结构，因其价廉、简便、迅速、无创、无辐射性、准确、可连续动态及重复扫描等优势应用甚广
-- VOI(volumes of interest), 感兴趣区域
-- Slab Thickness(), 三维图像数据中的一个切片或体检元素Voxel
+- [dcm2niix](https://github.com/rordenlab/dcm2niix/releases)

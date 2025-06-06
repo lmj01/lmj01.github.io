@@ -122,3 +122,4 @@
 - [英文文学在线书库](http://www.online-literature.com/)
 - [叻报是战前新加坡出版和行销最久的中文日报](http://www.lib.nus.edu.sg/lebao/index.htm)
 - [在线收集的电子读物](http://www.labbookpages.co.uk/index.html)
+- [DK百科全书(560本)英文版高清无水印](https://pan.quark.cn/s/2ac6971d868c#/list/share)

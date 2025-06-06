@@ -47,7 +47,7 @@ $A=PDP^{-1}=PDP^{T}$
 ### 矩阵分解技术
 
 <details>
-<summary>特征值与特征向量</summary>
+<summary>求解线性方程组是科学计算和工程领域的核心问题，分解是将复杂问题简单化后的求解</summary>
 
 #### [奇异值分解SVD]()
 
@@ -81,4 +81,16 @@ $$
 
 任何秩k小于r的截断分解都能以最佳方式近似A，这是Eckhart-Young 定理的内容：当B等于A的截断SVD 时，Frobenius 范数（衡量原始矩阵A与任何低秩矩阵B之间的差异）将最小化
 
+#### 共轭梯度法Conjugate Gradient Method
+作为迭代法的代表，凭借其高效性、低存储需求和快速收敛的特征，成为求解大规模对称正定SPD(Symmetric Positive Definite)线性方程组的首选。
+
+本质是通过共轭方向的迭代搜索快速找到线性方程组的解。
+- [数值计算边学边练：共轭梯度法 ](https://mp.weixin.qq.com/s/damJOAtE_95Rq3M01ZPjTg)
+
 </details>
+
+## 空间
+
+无限维与有限维空间的根本区别在于几何结构的复杂性。在有限维空间中，任何向量都可以表示为有限个基向量的线性组合，但在无限维空间中，基是无限的，如傅里叶级数中的正弦函数基。
+![函数空间](./images/linear.algebra.space.webp)
+

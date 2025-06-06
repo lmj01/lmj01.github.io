@@ -63,6 +63,14 @@
 - [RFC editor](https://www.rfc-editor.org/)
 - [The Syslog Protocol](https://datatracker.ietf.org/doc/html/rfc5424)
 
+### Serialize Structured Data
+
+- [protocol Buffers](https://protobuf.dev/)
+- [MessagePack it's like JSON, but fast and small](https://msgpack.org/)
+- [Cap'n Proto, is an insanely fast data interchange format and capability-based RPS System](https://capnproto.org/)
+- [Kaitai Struct](https://doc.kaitai.io/)
+
+
 ## [ Object Management Group (OMG)](https://www.omg.org/)
 
 The Object Management Group® Standards Development Organization (OMG® SDO) is a global, open membership, non-profit consortium. 

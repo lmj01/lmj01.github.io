@@ -1,6 +1,8 @@
 # Shader
 其定义是没有明确，都是不同工程项目中不同的指称。
 
+- [noise噪音](/cg/rendering/noise.md)
+
 ## 定义
 
 shader本身是一个泛概念
@@ -155,3 +157,6 @@ Blender、Unreal 引擎采用 #include 语法，灵活性更高，需要在编�
   - The Circle shader extension aims to bring the entire capability of the OpenGL Shading Language (GLSL) into C++ as a first-class language feature. Write graphics code using Standard C++ and mark interface variables and shader functions with C++ attributes to indicate their role in the graphics pipeline. When the program is compiled, all shader declarations are lowered to the SPIR-V binary intermediate representation, which is the portable shader storage format Vulkan and OpenGL programs. 使用C++昨晚shader的超集语言，统一编译成SPIR-V二进制格式，因为这个是portable的
 
   -  [Fur Effects - Teddies, Cats, Hair ....毛发渲染](https://xbdev.net/directx3dx/specialX/Fur/)
+
+- [Computer Shader 简析 ](https://mp.weixin.qq.com/s/-lmItC4FbzEx_S6BARJl3w)
+

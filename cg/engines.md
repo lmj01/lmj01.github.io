@@ -44,7 +44,7 @@
 - [Hazel is primarily an early-stage interactive application and rendering engine for Windows.](https://github.com/TheCherno/Hazel)
 
 - [Blend2D -- 2D Vector Graphics Powered by a JIT Compiler.](https://github.com/blend2d/blend2d)
-
+- [noise噪音](/cg/rendering/noise.md)
 
 ### phong
 

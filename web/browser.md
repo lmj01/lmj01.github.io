@@ -92,11 +92,16 @@ Chromium Embedded Framework(CEF)是一个框架，用于在其他应用程序中
 
 - [CEF开发总结](https://www.pressc.cn/1042.html)
 
-# 参考
+## 插件
+
+- [ Next-gen framework for developing web extensions. ](https://github.com/wxt-dev/wxt)
+    - [Read Frog - Open Source Immersive Translate | 🐸 陪读蛙 - 开源沉浸式翻译 ](https://github.com/mengxi-ream/read-frog)
+
+## 参考
 
 - [CAS实现SSO](http://www.coin163.com/java/cas/cas.html)
 
-## 搜索
+### 搜索
 指定站点
 xx site:http://jianshu.com
 指定文件

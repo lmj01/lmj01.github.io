@@ -79,6 +79,7 @@
 
 - git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
 - git diff branch1 branch2 --stat
+- git diff --staged/--cached 查看暂存区与上一次的提交之间的差异
 
 ## 分支
 

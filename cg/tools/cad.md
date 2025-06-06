@@ -23,6 +23,12 @@
 
 Exocad是一款跨平台的应用程序，免费使用。
 
+## B-rep
+Boundary Representation Format边界表示法格式，是一种用于定义和描述三维实体的数学模型表示方法。
+
+- 精确的集合定义，B - rep能够以精确的数学方式定义复杂的几何形状
+- 数据结构清晰，易于存储和交换，B - rep格式采用一种结构化的数据组织方式。它将物体的几何信息（顶点坐标、边的定义、面的定义等）和拓扑信息（如边与顶点的连接关系、面与边的围合关系）分开存储，但又紧密关联。这种数据结构使得CAD系统能够高效地存储和管理复杂的三维模型数据。
+
 ## 参考
 
 - [FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size](https://github.com/FreeCAD/FreeCAD)

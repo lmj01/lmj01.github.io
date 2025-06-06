@@ -75,17 +75,13 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 - IODs Information Object Definitions信息对象定义
 - SOPs Service-Object Pairs服务对象配对，
 
-### DICOM
-
-- IODs Information Object Definitions信息对象定义
-- SOPs Service-Object Pairs服务对象配对，
-
-
 ## 开源Tools
 
 - [这是一款开源、多语言、自托管的项目管理工具，兼容了 Trello 和 Notion 的特点](https://www.focalboard.com/)
     - [github](https://github.com/mattermost/focalboard)
 - [款开源、安全、跨平台的密码管理器。该项目是采用 C++ 开发的免费、离线、无广告的密码管理工具](https://github.com/keepassxreboot/keepassxc)
+- [同步程序Syncthing is a continuous file synchronization program.](https://syncthing.net/)
+    - [github](https://github.com/syncthing/syncthing)
 
 ## 社区
 
@@ -100,3 +96,7 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 - [supertux]()
 
 - [A free and open-source Touhou Project fangame 开发语言是C](https://github.com/taisei-project/taisei)
+
+### [ js13kGames Coding competition for web game developers, with a 13KB size limit.](https://github.com/js13kGames)
+- [13th Floor - a js13kGames 2024 competition entry by @roblouie. ](https://github.com/js13kGames/13th-floor)
+- [Coup Ahoo（阿胡起义）](https://github.com/js13kGames/coup-ahoo)

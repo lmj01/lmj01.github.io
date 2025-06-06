@@ -49,6 +49,8 @@
 - [Geogebra经典版](https://www.geogebra.org/classic?lang=zh_CN)
 - [github](https://github.com/lmj01/geogebra)
 
+- [使用说明](/exercises/tools/geogebra.md)
+
 </details>
 
 ### 感受

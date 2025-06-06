@@ -5,6 +5,11 @@ vim编辑器核心就是text object motion
 - 操作的范围
 - 操作什么内容
 
+模式有三种
+- v 可视模式，可以拷贝一行中连续字符串
+- i 编辑模式，编辑文件
+- 默认模式
+
 ## 快捷键
 ### 文件命令
 - :put =readfile('/path/file')[start:stop] 把file的指定行数读取到当前buffer中

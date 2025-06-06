@@ -22,16 +22,72 @@ function Search-Files {
     return $files
 }
 
-$path1 = "G:\lib\cornerstone3D-beta"
-$path1a = Join-Path $path1 "packages\nifti-volume-loader"
-echo $path1a
-# all
-# Get-ChildItem -Path $path1 -Recurse | Select-String -Pattern "imagePlaneModule" -SimpleMatch -CaseSensitive | Select Path,Line
-Search-Files -Path $path1 -ExcludeDirs @(".static-examples", "node_modules", "dist") | Select-String -Pattern "Using spacingBetweenSlices" -SimpleMatch -CaseSensitive | Select Path,Line
-# nifti
-# Get-ChildItem -Path $path1a -Recurse | Select-String -Pattern "WritableStreamDefaultWriter" -SimpleMatch -CaseSensitive | Select Path,Line
-# Get-ChildItem -Path $path1a -Recurse | Select-String "WritableStreamDefaultWriter" | Select Path,Line
-
+function Find-Str {
+    param(
+        [string]$Path,
+        [string]$Filter,
+        [string[]]$ExcludeDirs,
+        [string]$SearchString
+    )
+    $files = Get-ChildItem -Path $Path -Filter $Filter -Recurse | Where-Object {
+        $exclude = $false
+        foreach ($dir in $ExcludeDirs) {
+            if ($_.FullName -like "*$dir*") {
+                $exclude = $true
+                break
+            }
+        }
+        -not $exclude
+    } | Select-String -Pattern $SearchString -SimpleMatch -CaseSensitive | Select Path,Line,LineNumber
+    return $files
+}
 # 搜索关键字
 # Get-ChildItem -Path $targetPath -Filter *.js -Recurse | Select-String -Pattern "canvasToWorld" -SimpleMatch -CaseSensitive
 # Get-ChildItem -Path $singleModulePath -Filter *.js -Recurse | Select-String -Pattern "subscriptions" -SimpleMatch -CaseSensitive
+
+
+$path1 = "G:\lib\cornerstone3D-beta"
+echo "cornerstone3D-beta"
+$path1a = Join-Path $path1 "packages\nifti-volume-loader"
+$path1b = Join-Path $path1 "packages\core"
+# all
+# Find-Str -Path $path1 -ExcludeDirs @(".static-examples", "node_modules", "dist") -SearchString "setRenderOptions"
+# nifti
+# echo "nifti..."
+# Search-Files -Path $path1a -ExcludeDirs @("test", "node_modules", "dist") | Select-String -Pattern "addProvider" -SimpleMatch -CaseSensitive | Select Path,Line
+# core
+# echo "core..."
+# Find-Str -Path $path1b -ExcludeDirs @("node_modules", "dist", "test") -SearchString "createVolumeActor"
+
+$path2 = "F:\platform\sfebackend"
+# Find-Str -Path $path2 -ExcludeDirs @("node_modules", "dist") -SearchString "VITE_DOCTOR_CASE_FORM"
+
+$path3 = "F:\meijie\component-b5\rival1\packages\"
+$path3a = "F:\meijie\component-b5\rival1\20241009\"
+echo "rival"
+Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0") -SearchString "queries.addEntity"
+# Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data") -SearchString "RebuildGingivaComponent"
+
+$path4 = "F:\platform\sfebackend"
+echo "sfebackend"
+# Find-Str -Path $path4 -ExcludeDirs @("node_modules", "dist") -SearchString "crmPrinterdatStatisticsUsageListPost"
+
+$path5 = "F:\java\matchyun-orthodontic\src\main\webapp\static\js\"
+echo "java-jsp"
+# Find-Str -Path $path5 -ExcludeDirs @("node_modules", "dist") -SearchString "sale-dl-agent"
+
+$path6 = "F:\masteralign\products\"
+echo "products"
+# Find-Str -Path $path6 -ExcludeDirs @("node_modules", "dist") -SearchString "infoDescribe"
+
+$path7 = "G:\lib\cornerstone3D-beta\"
+echo "cornerstone3D"
+# Find-Str -Path $path7 -ExcludeDirs @("node_modules", "dist") -SearchString "programatic"
+
+$path8 = "F:\platform\platform-editor\"
+echo "implant"
+# Find-Str -Path $path8 -ExcludeDirs @("css", "dist", "internal", "libs") -SearchString "showStep"
+
+$path9 = "G:\lib\vtk-js\"
+echo "vtk-js"
+# Find-Str -Path $path9 -ExcludeDirs @("node_modules", "dist") -SearchString "vtkTubeFilter"
