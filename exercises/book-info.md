@@ -59,3 +59,8 @@ $$
 
 - [德国赫尔曼·外尔《对称》](https://book.douban.com/subject/30308531/)
     - 相似性与自同构，用几何描述代数词，这样理解起来很容易，也很轻松，不需要很多抽象的感悟，由直观到具体化
+
+### [离散微分几何DDG](https://brickisland.net/ddg-web/)
+discrete differential geometry
+
+- [Discrete Differential Geometry: An applied introduction](https://www.cs.cmu.edu/~kmcrane/Projects/DDG/paper.pdf)

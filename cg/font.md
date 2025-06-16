@@ -77,6 +77,9 @@ freetype可以根据ttf等格式的font文件 提取到文字轮廓 然后根据
 
 - [github](https://github.com/opentypejs/opentype.js/)
 
+### [Rendering Crispy Text On The GPU](https://osor.io/text)
+  - [GPU font rendering from vector outlines demonstration ](https://github.com/GreenLightning/gpu-font-rendering)
+
 ## 参考
 [Web 字体 font-family 该如何设置？](https://zhuanlan.zhihu.com/p/313284552)
 [cmap — Character to Glyph Index Mapping Table](https://learn.microsoft.com/en-us/typography/opentype/spec/cmap#encoding-records-and-encodings)

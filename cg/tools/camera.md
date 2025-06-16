@@ -1,5 +1,10 @@
 # Camera
 
+## 概念
+
+- 当视口值很小时，就相当于很近的看物体，这时空间中很小的坐标基本看不到，需要size非常大才能看到，在牙龈渲染中遇到过
+- 
+
 ## 插值
 
 要实现缩放动画并应用插值，修改camera的以下属性值，并逐步更新这些值就形成了动画的缩放
@@ -8,7 +13,7 @@
 
 - Zooming and changing the FOV is the same thing, but they are very different to getting near/far. 
 
-## dolly zoom
+### dolly zoom
 What is the dolly zoom? Also known as the contra zoom or Vertigo shot (as it was first used to magnificent effect by Alfred Hitchcock in his 1958 thriller film Vertigo), the dolly zoom is a camera movement that's quick yet effective at disorienting viewers.
 
 Dolly-Zoom，也被称为“Vertigo effect”或“zolly”，是一种电影拍摄技巧，通过同时进行推拉镜头和改变镜头焦距来保持画面中主体的尺寸不变，从而在背景上产生一种扭曲的视觉效果，这种效果可以创造出一种令人迷惑的感觉。这种技术经常被用来在视觉上表现角色的心理状态，比如突然的领悟、震惊或恐惧感
@@ -106,9 +111,8 @@ renderer->ResetCamera();  // 重置相机以适应场景
 renderWindow->Render();  // 重新渲染窗口
 ```
 
-
-
 ## 参考
 
 - [The Dolly Zoom Effect, Explained (And 7 Examples in Movies)](https://whatnerd.com/contra-zoom-film-technique-explained-examples/)
 - [Field of View - Rectilinear and Fishye Lenses ](https://bobatkins.com/photography/technical/field_of_view.html)
+
