@@ -1,5 +1,7 @@
 # Community
 
+- [the Journal of Computer Graphics Techniques, peer-reviewed,open access,and free to all](https://jcgt.org/)
+
 ## Architecture
 
 - IaaS, Infrastructure as a service
