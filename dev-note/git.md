@@ -226,11 +226,15 @@ cherry-pick对子目录不太友好，会改变目录结构，迁移时更多选
 ## ssh
 ```shell
 sudo apt install ssh
-ssh-kengen -t rsa -C "your@eamil.com" # 生成密码，需要两次输入密钥，及密码，把生产的公钥拷贝到github上
-ssh -T git@github.com # 测试生成的是否连同
+ssh-keygen -t ed25519 -C "your@eamil.com" -f ~/.ssh/git_key # 生成密码，需要两次输入密钥，及密码，把生产的公钥拷贝到github上
+ssh -T -v git@github.com # 测试生成的是否连同
 mkdir repo-foloder && cd repo-folder
 git init
 git remote add origin git@github.com:Username/Repositories_Name.git # 现在这样仓库就处理好了。
+
+# 不能使用相同的密码，比如已经有默认为空的密码，其他类型的不能有相同的
+-- work.u24.04 123 # 123是ssh的密码
+-- work.u22.04 qwert12345 # 
 ```
 
 ## [hook](https://git-scm.com/docs/githooks)

@@ -16,8 +16,6 @@ Blob-binary large object
 
 globalThis对象可以访问全局的, 比如一个通用的库编译成es，umd等format时，umd的方法可以在古老的地方使用，如jsp中
 
-### 不常用特性与新语法
-
 ### double exclamatioin mark
 
 ```javascript
@@ -223,6 +221,48 @@ Error， DOMException
 
 try...catch...不能捕获异步操作
 
+### 迭代
+
+迭代器具有迭代的能力， 可以扩展接口
+使用场景
+```js
+// 1, 解构赋值 
+const [first, second] = range;
+// 2, 扩展运算符
+const arr = [...range];
+// 3, 集合操作
+const sume = Array.from(range).reduce((acc,num)=>acc+num,0);
+// 实现方法
+// 1，为对象添加Symbol.iterator方法来获取迭代器对象
+const arr1 = [1,2];
+const iterator = arr1[Symbol.iterator]();
+console.log(iterator.next()); // {value:1,done:false}
+console.log(iterator.next()); // {value:2,done:false}
+console.log(iterator.next()); // {value:undefined,done:true}
+// 
+const range = {
+    from: 1,
+    to: 5,
+    // 
+    [Symbol.iterator]() {
+        let cur = this.from, last = this.to;
+        return {
+            next() {
+                if (cur < last) return {value:cur++, done:false};
+                else return {done:true}
+            }
+        }
+    }
+    // 
+    *[Symbol.iterator]() {
+        for (let i = this.from; i<=this.to;i++) {
+            yield i;
+        }
+    }
+}
+```
+
+- 
 
 ## typescript
 > javascript的超集，更加面向对象的编程语言，可以便宜为纯Javascript

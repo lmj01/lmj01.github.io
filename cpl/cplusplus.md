@@ -163,6 +163,7 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - 
 - [offsetof](/cpl/cpp/offsetof.cpp)
 - [reference](/cpl/cpp/reference.cpp)
+- [基准测试std::visit的例子](https://quick-bench.com/q/SgNTOjdNLDBSARWDfbaMpLMZRGo)
 
 [1]: <http://www.gotw.ca/publications/mill02.htm> (What's In A Class?)
 

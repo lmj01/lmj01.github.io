@@ -11,3 +11,10 @@ DLSS 原本是指 Deep Learning Super Sampling 深度学习超级采样，但 Nv
 ## [Virtual Sound Source Positioning Using Vector Base Amplitude Panning*, VlLLE PULKKI, AES Member](https://www.audiolabs-erlangen.de/media/pages/resources/aps-w23/papers/935eb793db-1663358804/sap_Pulkki1997.pdf)
 
 - [COMPENSATING DISPLACEMENT OF AMPLITUDE-PANNED VIRTUAL SOURCES](http://legacy.spa.aalto.fi/research/cat/vbap/papers/pulkkiaes22.pdf)
+
+## 三角网格化
+
+Deaunay
+
+- [Constrained Delaunay Tetrahedrization: A Robust and Practical Approach](https://arxiv.org/abs/2309.09805)
+    - [github LGPL](https://github.com/MarcoAttene/CDT/)
