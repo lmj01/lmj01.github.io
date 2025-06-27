@@ -20,6 +20,16 @@ yarn run serve-static-examples
 
 - volume,是三个
 
+### viewport
+在packages\core\src\RenderingEngine\index.ts可以看到目前支持的viewport类型有
+- StackViewport 2D栈视图, 呈现一堆图像
+- VolumeViewport 体视图, 实现多平面重组或重建MPR，体积可视化;可用于两个series之间的图像融合
+- VolumeViewport3D 3D视图, 实际的三体立体数据渲染, 如骨、软组织、肺等
+
+### 同步器
+CrosshairsTool需要同步器，
+
+
 ### transferFunction
 
 ### Annotation

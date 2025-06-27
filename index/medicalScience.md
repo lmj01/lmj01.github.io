@@ -10,6 +10,7 @@
 - [一款很新异的临床图片编辑](https://photoalign.com/)
 
 - [口腔](/articles/notes/oral.cavity.md)
+- [dental](/dental/index.md)
 
 ## 参考
 

@@ -234,7 +234,8 @@ git remote add origin git@github.com:Username/Repositories_Name.git # 现在这�
 
 # 不能使用相同的密码，比如已经有默认为空的密码，其他类型的不能有相同的
 -- work.u24.04 123 # 123是ssh的密码
--- work.u22.04 qwert12345 # 
+-- work.u22.04 123 #
+ssh-keygen -p -f ~/.ssh/id_ed25519 修改密码 可设置为空
 ```
 
 ## [hook](https://git-scm.com/docs/githooks)
