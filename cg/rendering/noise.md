@@ -37,3 +37,5 @@ float better_fwidth(float value) {
 - [psrdnoise Tiling simplex flow noise in 2-D and 3-D compatible with GLSL 1.20 and above](https://github.com/stegu/psrdnoise/)
 - [Texturing and Modeling: A Procedural Approach, Third Edition](https://book.douban.com/subject/2691012/)
 - [噪声至美Noise is Beautiful](https://github.com/stegu/noiseisbeautiful/)
+- [A cellular texture basis function 斯蒂芬·沃利（Stephen Worley）1996](https://dl.acm.org/doi/pdf/10.1145/237170.237267)
+- [2025)Learning 3D Volume Cloud from Single ImageProceedings of the 2025 International Conference on Multimedia Retrieval](https://dl.acm.org/doi/pdf/10.1145/3731715.3733371)

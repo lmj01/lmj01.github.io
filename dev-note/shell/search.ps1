@@ -59,14 +59,15 @@ $path1b = Join-Path $path1 "packages\core"
 # echo "core..."
 # Find-Str -Path $path1b -ExcludeDirs @("node_modules", "dist", "test") -SearchString "createVolumeActor"
 
-$path2 = "F:\platform\sfebackend"
-# Find-Str -Path $path2 -ExcludeDirs @("node_modules", "dist") -SearchString "VITE_DOCTOR_CASE_FORM"
+$path2 = "F:\project-ep\platform-admin"
+echo "mydentalX"
+# Find-Str -Path $path2 -ExcludeDirs @("node_modules", "dist") -SearchString "canReferral"
 
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
 echo "rival"
-Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0") -SearchString ""
-# Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data") -SearchString "updateUI"
+Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0") -SearchString "m49363D"
+# Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data") -SearchString "49582"
 
 $path4 = "F:\platform\sfebackend"
 echo "sfebackend"
@@ -78,7 +79,7 @@ echo "java-jsp"
 
 $path6 = "F:\masteralign\products\"
 echo "products"
-# Find-Str -Path $path6 -ExcludeDirs @("node_modules", "dist") -SearchString "infoDescribe"
+# Find-Str -Path $path6 -ExcludeDirs @("node_modules", "dist") -SearchString "designProductModels"
 
 $path7 = "G:\lib\cornerstone3D-beta\"
 echo "cornerstone3D"

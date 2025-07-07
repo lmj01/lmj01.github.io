@@ -1,7 +1,7 @@
 # [the Math Academy Way](https://docs.google.com/document/d/1LLZK_34Oer9LwuqAv-pqxfXlR8n7V8zJ_MO323R7egI/edit?usp=sharing)
 
 - [官网，数学加速学习课程](https://www.mathacademy.com/pedagogy)
-- p41
+- p51
 ## 2025-
 
 ## chapter 2

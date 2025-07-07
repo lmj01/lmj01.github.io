@@ -22,6 +22,7 @@
 
 ## reading
 
+- [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621 Introduction to Computing with Geometry Notes.md)
 - [vulkan tutorial](https://vulkan-tutorial.com/)
 - [Performance Analysis and Tuning on Modern CPUs 2023]()
     - 3
