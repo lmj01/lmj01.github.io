@@ -2,8 +2,8 @@
 
 - [nodejs包管理](/web/pkg.md)
 - [linux](/dev-note/linux.md)
+- [vim](/dev-note/vim.md)
 - [powershell](/dev-note/powershell.md)
-- [wsl](/dev-note/wsl.md)
 - [vscode](/dev-note/vscode.md)
 - [window](/dev-note/window.md)
 - [bazel](/dev-note/bazel.md)
@@ -11,6 +11,7 @@
 - [debug](/dev-note/debug.md)
 - [包管理 -- vcPkg, vfox](/dev-note/pkg.md)
 - [maven](/dev-note/maven.md)
+- [docker](/dev-note/docker.md)
 
 - [硬件配置](/dev-note/hardware.md)
 

@@ -73,9 +73,10 @@ wsl -l -v
 wsl -d Name
 wsl --set-default Name
 # 安装好后，从C盘移除到非C中去
-wsl --export Name exportPathFile.tar
-wsl --unregister Name
-wsl --import Name installPath exportPathFile.tar
+wsl --export Name exportPathFile.tar 导出
+wsl --unregister Name 移除
+wsl --import Name installPath exportPathFile.tar 导入
+wsl --manage Name --set-default-user meijie 设置默认登录用户，特别是导入后需要设置一下
 ```
 
 ```shell
@@ -89,7 +90,7 @@ sudo apt-get upgrade
 sudo do-release-upgrade -d # 出错可强制更新 sudo apt-get dist-upgrade
 exit
 wsl --terminate Ubuntu
-cat /etc/os-release
+cat /etc/*release*
 ```
 
 ### bat

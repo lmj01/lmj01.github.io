@@ -58,7 +58,9 @@
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
 
 ### tag
-
+- git tag 列车本地所有tag
+- git ls-remote --tags origin 查看远程标签
+- git tag --sort=-creatordate 按时间顺序列出标签
 - git tag -a tagName -m "描述" 添加标签
 - git push origin tagName 推送指定的标签
 - git push origin --tags 推送所有的
@@ -109,19 +111,6 @@ git pull --depth=1 origin master
 2. *.zip 过滤所有.zip文件
 3. /mtk/do.c 过滤指定文件
 4. !/mtk/one.txt 添加指定文件
-
-### git ssh
-- 在Linux中执行ssh-keygen -t rsa -C "lmjie_good@163.com"执行后，直接回车三次
-- 第一次是要输入路径，否则默认数据
-- 第二次是passphrase
-- 第三次确认passphrase
-
-得到一个id_rsa和id_rsa.pub两个密钥，一个私钥，一个公钥
-
-- ssh -v git@gitee.com // 这句会与服务器进行连接，看看客户端是否显示内容
-- ssh-agent -s
-
-- known_hosts 在~/.ssh/known_hosts文件中存在git的public key
 
 ### [凭证缓存](https://git-scm.com/docs/git-credential-store)
 因为gitlab的密码输出错误，导致权限HTTP Basic: Access Denied错误, 执行清楚权限帮助
@@ -227,15 +216,21 @@ cherry-pick对子目录不太友好，会改变目录结构，迁移时更多选
 ```shell
 sudo apt install ssh
 ssh-keygen -t ed25519 -C "your@eamil.com" -f ~/.ssh/git_key # 生成密码，需要两次输入密钥，及密码，把生产的公钥拷贝到github上
+第一次是要输入路径，否则默认数据
+第二次是passphrase 可不设置密码
+第三次确认passphrase 得到一个id_X和id_X.pub两个密钥，一个私钥，一个公钥
 ssh -T -v git@github.com # 测试生成的是否连同
 mkdir repo-foloder && cd repo-folder
 git init
 git remote add origin git@github.com:Username/Repositories_Name.git # 现在这样仓库就处理好了。
 
-# 不能使用相同的密码，比如已经有默认为空的密码，其他类型的不能有相同的
--- work.u24.04 123 # 123是ssh的密码
--- work.u22.04 123 #
 ssh-keygen -p -f ~/.ssh/id_ed25519 修改密码 可设置为空
+
+# gitee 
+在Linux中执行ssh-keygen -t rsa -C "lmjie_good@163.com"执行后，直接回车三次
+known_hosts 在~/.ssh/known_hosts文件中存在git的public key
+ssh -v git@gitee.com // 这句会与服务器进行连接，看看客户端是否显示内容
+ssh-agent -s
 ```
 
 ## [hook](https://git-scm.com/docs/githooks)

@@ -78,3 +78,7 @@ extern "C" {
 底层使用bgfx，可以分析分析别人使用的框架逻辑
 
 - [github](https://github.com/harfang3d/harfang3d)
+
+## 参考
+
+- [What every coder should know about gamma](/articles/2025/what_every_coder_should_know_about_gamma.md)

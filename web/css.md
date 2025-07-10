@@ -278,6 +278,19 @@ div {
 ```
 - [循环测试](https://sass-lang.com/playground/#eJyFUttuwjAMfe9XeKVTKGoGZS2M9oU97wP2nEFKI/WmkKlMKP8+N70yJhHJOk58ObZj33dqcVTpB/+JIPTAX6EgrhFfG0E9QAwQQ5QN6hvELeJbI6jvEHdhDNaes0MKjgBRwJAWrhbAS01nV0foRgcwpqhxXIBfXeBJ5FUpFStUjHZtactaLsE5ZOx8ppXkibhEUNO4ed0npQSngESWOfigUll+n1JYB8iDZqRCommkxnuhe+tAPneK5TpwF/5q9XxTgHHTDWAZpg4T8S4lBrXWuZ2L4rN5taNwu6kuHtgZ++KZHRFRsSNxvXvH7WZ341gwKcuaVofO2zXUTlv0lA3TEBNEInIoM+IBOaufjJPIFNZzTd3KJDlzRSeuOZMnUdCMJ2pK1/+Y4vn4aUjej2uf86NgMMc2aDe42TVnFT1xNTdhHulbJK52xzF3mdt2TO6hs9EJ/n7yJHn75HU9uZreEQ+WeMz3cD3a82hJ2vNPNe04XX27QPE0To+XQdXTtfoF1vbwVQ==)
 
+### vue 
+当scoped设置后，会为DOM设置唯一属性如data-v-12345,这样修改就不会起作用，必须通过深度作用选择器来穿透它。
+```vue
+<style scoped>
+::v-deep .cls-name {
+
+}
+.deep(.cls-name) {
+
+}
+</style>
+```
+
 ### playground
 
 - [sass](https://sass-lang.com/playground/)

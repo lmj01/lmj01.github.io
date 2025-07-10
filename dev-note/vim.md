@@ -136,6 +136,30 @@ vim编辑器核心就是text object motion
 
 ## 配置
 ```shell
+# 源码安装vim
+git clone git@github.com:vim/vim.git
+cd vim
+./configure
+./configure \
+  --with-features=huge \
+  --enable-multibyte \
+  --enable-python3interp=yes \
+  --with-python3-command=python3 \
+  --enable-rubyinterp=yes \
+  --enable-luainterp=yes \
+  --enable-perlinterp=yes \
+  --enable-cscope \
+  --enable-gui=auto \
+  --prefix=/usr/local
+make
+sudo make install
+
+nano ~/.bashrc
+# 追加这行到文件末尾 并保存
+export PATH="/usr/local/bin:$PATH"
+# 启用
+source ~/.bashrc
+
 # 依赖tags
 # universal-ctags ctags
 # global gtags

@@ -22,7 +22,7 @@
 
 ## reading
 
-- [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621 Introduction to Computing with Geometry Notes.md)
+- [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621_Introduction_to_Computing_with_Geometry_Notes.md)
 - [vulkan tutorial](https://vulkan-tutorial.com/)
 - [Performance Analysis and Tuning on Modern CPUs 2023]()
     - 3
@@ -109,7 +109,7 @@
 - [Linear Algebra Done Right fourth edition中文版](https://linear.axler.net/LADR4eChinese.pdf)
 
 
-### github open book
+### github
 
 - [A collection of academic papers, articles, and other resources that I plan to read or have read. ](https://github.com/jeffrey-xiao/papers/tree/master)
 - [Modern Robotics: Mechanics, Planning, and Control现代机器人学：机构、规划与控制](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)
@@ -118,6 +118,9 @@
 - [The Copenhagen Book 在线网页认证Auth相关](https://thecopenhagenbook.com/)
     - [github 源码](https://github.com/pilcrowonpaper/copenhagen)
 - [Programming Language Principles and Paradigms](https://eecs390.github.io/notes/index.html)
+- [Papers we love is a repository of academic computer science papers](https://paperswelove.org/)
+    - [github](https://github.com/papers-we-love/papers-we-love)
+- [books](https://github.com/nkorange/books)
 
 ### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
 > 该系列现在有6本了，属于编程语言理论比较高深的, 程序的自动证明甚至程序的自动生成都是未来可能成熟的技术，形式化
