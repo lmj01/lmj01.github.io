@@ -39,3 +39,5 @@ float better_fwidth(float value) {
 - [噪声至美Noise is Beautiful](https://github.com/stegu/noiseisbeautiful/)
 - [A cellular texture basis function 斯蒂芬·沃利（Stephen Worley）1996](https://dl.acm.org/doi/pdf/10.1145/237170.237267)
 - [2025)Learning 3D Volume Cloud from Single ImageProceedings of the 2025 International Conference on Multimedia Retrieval](https://dl.acm.org/doi/pdf/10.1145/3731715.3733371)
+- [Simulation of wrinkled surfaces,首次提到凹凸贴图的论文](https://dl.acm.org/doi/10.1145/965139.507101)
+- [Bump Mapping Unparametrized Surfaces on the GPU 2010 May 24](https://mmikk.github.io/papers3d/mm_sfgrad_bump.pdf)
