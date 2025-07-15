@@ -21,3 +21,9 @@ Deaunay
 
 - [A Typescript library for multidimensional convex hulling and Delaunay triangulations. ](https://github.com/DerSchmale/tympanum)
     - [A lightweight JavaScript library for 3D Delaunay tetrahedralization and dual Voronoi diagrams ](https://github.com/VirtualOrganics/voronoi-3d-js)
+
+
+## 几何算法
+
+- [a programming library with geometric algorithms ](https://github.com/BrunoLevy/geogram)
+    - 衍生了一些列的应用
