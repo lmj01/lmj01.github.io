@@ -34,6 +34,13 @@ CrosshairsTool需要同步器，
 
 ### Annotation
 
+### volume
+
+geometryId概念
+- 在packages/core/src/loaders/geometryLoader.ts中
+```ts
+export function createAndCacheGeometry()
+```
 
 ## 文档
 - [一文(10图)了解Cornerstone3D核心概念(万字总结附导图) ](https://juejin.cn/post/7326432875955798027)

@@ -2,10 +2,10 @@
 
 - [医学百科--快速搜索概念](https://www.yixue.com/)
 - [口腔解剖图集](https://www.imaios.com/cn/e-anatomy/4/4)
-- [CT相关](../cg/ct.md)
-    - [cornerstonejs](../cg/library/cornerstonejs.md)
-- [微笑美学](../articles/2023/smile.md)
-- [正畸](../articles/2024/orthodontics.md)
+- [CT相关](/dental/ct.md)
+    - [cornerstonejs](/dental/cornerstonejs.md)
+- [微笑美学](/articles/2023/smile.md)
+- [正畸](/articles/2024/orthodontics.md)
 - [Open Health Imaging Foundation](https://ohif.org/)
 - [一款很新异的临床图片编辑](https://photoalign.com/)
 

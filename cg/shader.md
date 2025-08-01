@@ -160,3 +160,5 @@ Blender、Unreal 引擎采用 #include 语法，灵活性更高，需要在编�
 
 - [Computer Shader 简析 ](https://mp.weixin.qq.com/s/-lmItC4FbzEx_S6BARJl3w)
 
+- [LYGIA Shader Library 有很多shader的代码，非常丰富的独立模块，可参考代码逻辑 ](https://github.com/patriciogonzalezvivo/lygia)
+

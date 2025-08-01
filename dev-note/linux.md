@@ -62,6 +62,7 @@ sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认�
     - type
 ```shell
 find . -name "*libc*"
+nohup ./execute.sh & # & 后台运行 nohup 不受终端关闭影响
 ```
 - grep
     - **grep -rn "xxx"**递归查找字符串xxx

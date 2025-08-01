@@ -18,5 +18,7 @@ flutter config --enable-web
 # step four
 flutter create demo1
 cd demo1
-flutter run -d web-server --web-port=3000 --web-hostname=0.0.0.0 --web-renderer=canvaskit
+flutter run -d web-server --web-port 9500 --web-hostname 0.0.0.0
+# wsl2中设置
+# export CHROME_EXECUTABLE="/mnt/c/Users/meiji/AppData/Local/Google/Chrome SxS/Application/chrome.exe"
 ```
