@@ -23,6 +23,7 @@
 ## reading
 
 - [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621_Introduction_to_Computing_with_Geometry_Notes.md)
+- [Finite Element Mesh Generation-CRC Press (2014)](/articles/2025/Finite_Element_Mesh_Generation_CRC_Press_(2014).md)
 - [vulkan tutorial](https://vulkan-tutorial.com/)
 - [Performance Analysis and Tuning on Modern CPUs 2023]()
     - 3

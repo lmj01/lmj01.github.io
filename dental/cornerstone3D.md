@@ -1,6 +1,6 @@
 # [CornerstoneJS](https://www.cornerstonejs.org/)
 
-- [DICOM](/cg/dental/dicom.md)
+- [CT](/dental/ct.md)
 
 ## dev
 ```js
