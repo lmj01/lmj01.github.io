@@ -4,13 +4,6 @@
 - [vtk-js doc](https://kitware.github.io/vtk-js/docs/)
 - [DICOM](/cg/dental/dicom.md)
 
-## 解剖名词
-![解剖图示](../images/axial_sagittal.webp)
-- 冠状面coronal plane，前后，纵切，把人体分成前、后两部分
-- 矢状面sagittal plane，sagittal来自拉丁文sagitta箭，对应中文就是矢，左右，侧切，把人体分成左、右两部分
-- 水平面transverse plane，横切，把人体分成上、下两部分
-
-
 ## DICOM
 
 - [DICOM Standard Browser](https://dicom.innolitics.com/ciods)
