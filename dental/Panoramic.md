@@ -77,17 +77,22 @@ vtk-js也是有CPR的功能
 - [Rendering of multiple volumes not sorted correctly](https://github.com/Kitware/vtk-js/issues/2086)
 Also I'll probably tweak the intermixing of MIP and composite a bit. Right now it blends MIP/Average/etc on top of composite but I may try to do something more complex in the future. Depth based pixel by pixel mixing of MIP and composite looked horrible (I had it coded that way originally) as the depth of a MIP is a mess. I thought it might look cool, nope, just doesn't make sense. But the MIP on top of composite looks pretty good and works.
 
+- [How to use ImageCPRMapper to get CPR on the transverseplane](https://discourse.vtk.org/t/how-to-use-imagecprmapper-to-get-cpr-on-the-transverseplane/13234)
 
 ## 参考
 
 - [Panoramic View: Making Panoramic View and Getting Slices from the Panoramic View](https://discourse.vtk.org/t/panoramic-view-making-panoramic-view-and-getting-slices-from-the-panoramic-view/14346/3)
     - [VTK9.4rc2中支持的CPR](https://www.kitware.com/activiz-9-4-curved-planar-reformation/)
 
+- [1339](https://github.com/cornerstonejs/cornerstone3D/issues/1339)
+- [vtkKinship](https://github.com/djelouze/vtkKinship)
+
 ### Curved Planar Reformation (CPR) 
 
 - [CPR Curved Planar Reformation](https://www.cg.tuwien.ac.at/research/vis/adapt/Vis2002/AKanitsar_CPR.pdf)
     - [你真的了解曲面重建（CPR）吗？](https://www.cn-healthcare.com/articlewm/20220709/content-1397639.html)
     - 曲面重建， CPR本质上是一种曲面的多平面重建技术，MPR(multi-planar reformation/reconstruction)是常用的后处理技术，MPR涉及将在某个平面(通常是轴位)获取的成像模式中的数据转换到另一个平面的过程。**reformation与reconstruction的区别是：reformation是在原来的技术上对信息整合，不会有更多信息，reconstruction会获取更多的信息提供**
+    - [github的实现](https://github.com/PerkLab/SlicerSandbox?tab=readme-ov-file#curved-planar-reformat)
 
 
 

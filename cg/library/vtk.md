@@ -1,10 +1,11 @@
 # [vtk](https://vtk.org/)
 
 - [vtk slice](/dental/slice.md)
+- [cutter](/cg/library/vkt/cutter.md)
 
 ## 概念
 
-## [slice](/dental/slice.md)
+### [slice](/dental/slice.md)
 
 directions and planes of sections
 ```js
@@ -43,4 +44,3 @@ function vtkOpenGLTexture(publicAPI, model) {
 - publicAPI：定义组件的公共接口（方法和属性），外部代码只能通过这个接口与组件交互。
 - Model：存储组件的私有状态和内部实现，对外部不可见，避免状态被意外修改。
 这种分离使代码更易于维护和测试，符合面向对象的封装原则。
-
