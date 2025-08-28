@@ -94,13 +94,14 @@
 - [可视化3D旋转This is a tool to help convert an visualise 3D rotations](http://asliceofrendering.com/ConversionTool/)
     - [github](https://github.com/BugzTroll/ConversionTool)
 - [粒子特效A simple program to simulate artificial life using attraction/reuplsion forces between many particles ](https://github.com/hunar4321/particle-life)
+- [Experimental 3D modeler 强大的几何处理能力 ](https://github.com/BrunoLevy/GraphiteThree)
 
 ### SVG
 > SVG编辑器
 - [Powerful SVG-Editor for your browser ](https://github.com/SVG-Edit/svgedit)
     - fork的项目，更简单一些，取消了图层等功能
-        - [github Method Draw, the SVG Editor for Method of Action ](https://github.com/methodofaction/Method-Draw)
-        - [在线运行](https://editor.method.ac/)
+    - [github Method Draw, the SVG Editor for Method of Action ](https://github.com/methodofaction/Method-Draw)
+    - [在线运行](https://editor.method.ac/)
 
 ### paper
 

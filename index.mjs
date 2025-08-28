@@ -61,7 +61,7 @@ async function updateContent(text, options = {}) {
         const ext = options.ext || 'md';
         
         if (ext == 'md') {
-            await toHtmlData(elContent, text);
+            await toHtmlData(elContent, text, options);
         } else {
             const res = hljs.highlight(text, {language:mapLanguage[ext]});
             const elPre = document.createElement('pre');
@@ -76,9 +76,15 @@ async function updateContent(text, options = {}) {
     elContent.appendChild(elBtnBack);
 }
 
-async function toHtmlData(elContent, text) {
+async function toHtmlData(elContent, text, options = {}) {
     const elDiv = document.createElement('div');
+    let uniqueClass = '';
+    if (options.relativePath) {
+        uniqueClass = options.relativePath.replace(/\/index\//g,'').replace(/.md$/g, '').replaceAll('/','-').toLowerCase();
+        if (['/','-'].includes(uniqueClass[0])) uniqueClass = uniqueClass.substring(1);
+    }    
     elDiv.classList.add('w-100','h-100','d-flex','flex-column');
+    if (uniqueClass.length > 0) elDiv.classList.add(`mj-${uniqueClass}`);
     elDiv.innerHTML = md2Html(text);
     elContent.replaceChildren();
     elContent.appendChild(elDiv);
@@ -114,8 +120,8 @@ function tagLinkClickCaption(event, aLink) {
     const isSameOrigin = strHref.startsWith(rootOrigin) && ['md','js','cpp','lua'].includes(ext);
     if (isSameOrigin) {        
         // 只解析本地的markdown文件
-        const tmp = `${rootRelative}${strHref.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    
-        fetch(tmp).then(res=>res.text()).then(text=>updateContent(text, {ext: ext}));
+        const relativePath = `${rootRelative}${strHref.replace(rootOrigin,'').replace(rootRelative, '').replace('//', '/')}`;    
+        fetch(relativePath).then(res=>res.text()).then(text=>updateContent(text, {ext: ext, relativePath}));
     } else {
         /**
          * 不调整，还是留着当前页面内

@@ -1,5 +1,8 @@
 # vim 
 
+- [VIM中文](https://yianwillis.github.io/vimcdoc/doc/help.html)
+- [VIM documentation: help](https://vimdoc.sourceforge.net/htmldoc/help.html)
+
 vim编辑器核心就是text object motion
 - 对什么内容操作
 - 操作的范围
@@ -40,12 +43,9 @@ vim编辑器核心就是text object motion
 - Ctrl + b 向下滚动一屏 
 
 ### 文件命令
-- :put =readfile('/path/file')[start:stop] 把file的指定行数读取到当前buffer中
-- :open file 在vim打开一个新文件
-- :split file 新窗口中打开文件
-- :bn 切换到下一个文件
+- :e path 打开文件,支持远程文件
 - :bp 切换到上一个文件
-- :e ftp://192.168.0.5/abc.txt or :e \\qadrive\test.txt 打开远程文件
+- :bn 切换到下一个文件
 
 ### 查找命令
 - /text正向查找text，按下n键查找下一个，按下N键查找前一个

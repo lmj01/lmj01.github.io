@@ -20,6 +20,11 @@
 - [git](/dev-note/git.md)
 - [Sourcetree simplifies how you interact with your Git repositories so you can focus on coding](https://www.atlassian.com/software/sourcetree)
 
+## 开发文档
+- [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+    - [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
+- [gl-matrix](https://glmatrix.net/docs/index.html)
+
 ## 其他资源
 
 - [MDN--Documenting web technologies, including CSS, HTML, and JavaScript, since 2005.](https://developer.mozilla.org/en-US/docs/Web)

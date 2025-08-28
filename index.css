@@ -49,3 +49,19 @@ em {
 img {
     width: 100%;
 }
+
+/* markdown style------------begin */
+.mj-book-info ul,
+.mj-computerscience ul,
+.mj-dev-note-index ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mj-book-info ul li,
+.mj-computerscience ul li,
+.mj-dev-note-index ul li {
+    margin: 0 15px;
+    list-style: none;
+}
+/* markdown style------------end */
