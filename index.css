@@ -51,16 +51,19 @@ img {
 }
 
 /* markdown style------------begin */
-.mj-book-info ul,
-.mj-computerscience ul,
-.mj-dev-note-index ul {
+/* 只改变第一个子节点，不改变二级以下的，必须指定为child */
+.mj-book-info > ul,
+.mj-computerscience > ul,
+.mj-exercises-index > ul,
+.mj-dev-note-index > ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.mj-book-info ul li,
-.mj-computerscience ul li,
-.mj-dev-note-index ul li {
+.mj-book-info > ul > li,
+.mj-computerscience > ul > li,
+.mj-exercises-index > ul > li,
+.mj-dev-note-index > ul > li {
     margin: 0 15px;
     list-style: none;
 }

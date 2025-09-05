@@ -60,3 +60,6 @@ EnTT is a header-only, tiny and easy to use library for game programming and muc
 - [Building an ECS in TypeScript 文章](https://maxwellforbes.com/posts/typescript-ecs-implementation/)
 - [sim-ecs Batteries included TypeScript ECS](https://github.com/NSSTC/sim-ecs)
 - [@jakeklassen/ecs TypeScript entity component system. ](https://github.com/jakeklassen/ecs)
+
+- ['Overwatch' Gameplay Architecture and Netcode 守望先锋的游戏架构和网络代码](https://gdcvault.com/play/1024001/-Overwatch-Gameplay-Architecture-and)
+    - [A clean, simple, c++14, Entity Component System like Overwatch ECS architecture](https://github.com/OttoX/Fomalhaut)

@@ -9,6 +9,7 @@
 
 ## 认证机制
 
+
 目前可参考的方案
 
 - session与数据库配合
@@ -28,6 +29,9 @@
 ```
 // 使用*允许所有域名，或者只允许你需要的域名，只能写一个域名，不能有通配符，如有多个域名可通过脚本控制返回
 Access-Control-Allow-Origin:https://www.example.com
+
+### [An Illustrated Guide to OAuth解释OAuth为什么这样实现](https://www.ducktyped.org/p/an-illustrated-guide-to-oauth)
+- Twitter wanted a way to allow third-party apps to post twets on users's behalf.才引入这个概念
 
 
 ## SPA

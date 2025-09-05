@@ -94,6 +94,3 @@ Also I'll probably tweak the intermixing of MIP and composite a bit. Right now i
     - 曲面重建， CPR本质上是一种曲面的多平面重建技术，MPR(multi-planar reformation/reconstruction)是常用的后处理技术，MPR涉及将在某个平面(通常是轴位)获取的成像模式中的数据转换到另一个平面的过程。**reformation与reconstruction的区别是：reformation是在原来的技术上对信息整合，不会有更多信息，reconstruction会获取更多的信息提供**
     - [github的实现](https://github.com/PerkLab/SlicerSandbox?tab=readme-ov-file#curved-planar-reformat)
 
-
-
-

@@ -82,3 +82,4 @@ extern "C" {
 ## 参考
 
 - [What every coder should know about gamma](/articles/2025/what_every_coder_should_know_about_gamma.md)
+- [Radiometry: Overview辐射度量，有推导公式](https://momentsingraphics.de/RadiometryOverview.html)

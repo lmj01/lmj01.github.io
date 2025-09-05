@@ -21,7 +21,7 @@ window.MathJax = {
 (function () {
     var script = document.createElement('script');
     script.id = 'MathJax-script';
-    script.src = '../libs/mathjax.es5/tex-chtml-full.js';
+    script.src = '/libs/mathjax.es5/tex-chtml-full.js';
     script.async = true;
     document.head.appendChild(script);
 })();

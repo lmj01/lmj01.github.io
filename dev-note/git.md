@@ -1,9 +1,10 @@
 # Git
-
 - [官方文档](https://git-scm.com/docs)
 - [中文官方文档](https://git-scm.com/book/zh/v2)
 - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
     - 未读完
+- [github](https://github.com/)
+- [类似github,德国的托管](https://codeberg.org/explore/repos)
 
 ## 概念
 - 补丁，即git diff生成的内容

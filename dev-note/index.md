@@ -32,4 +32,4 @@
 - [远程终端工具Mosh is a remote terminal application that supports intermittent connectivity, allows roaming, and provides speculative local echo and line editing of user keystrokes.](https://github.com/mobile-shell/mosh)
 
 ### 工具
-
+- [在线matplotlib，可以让AI可视化写代码用它展示](https://matplotlib.online/)

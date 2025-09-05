@@ -2,8 +2,9 @@
 
 - [Building an Orthonormal Basis from a 3D Unit Vector Without Normalization](https://backend.orbit.dtu.dk/ws/portalfiles/portal/126824972/onb_frisvad_jgt2012_v2.pdf)
 
-## 矩阵
+## 术语
 
+### 存储方式
 矩阵存储有两种方式
 
 - 行存储，横向，row-major order
@@ -50,7 +51,7 @@ const mat = new Matrix4().fromArray(elementsArray).transpose()
 
 $M_{l}M_{w}=$
 
-### Matrix
+### glsl-matrix
 
 ```js
 mat3 theMatrix;
@@ -72,3 +73,10 @@ mat3(
   vec2, float,    // second column
   vec2, float);   // third column
 ```
+
+## 法向量矩阵
+- 面片的法线在应用面片的变换transform时，会发生变化，在《realtime rendering》中有很明显的图示
+- 解决方法有两种
+  - 求解逆矩阵并转置来，但是如果矩阵是奇异矩阵，逆是不存在的
+  - 求解伴随矩阵，又因为是法线向量，不用平移量，可只计算其transform的旋转部分M3x3。
+- [Real-Time_Rendering_4th-Appendices中p12上有其Adjoints伴随矩阵的计算方法](https://www.realtimerendering.com/Real-Time_Rendering_4th-Appendices.pdf)

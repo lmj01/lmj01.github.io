@@ -44,3 +44,8 @@ mkcert-v1.4.4-windows-amd64.exe -CAROOT
 mkcert-v1.4.4-windows-amd64.exe localhost 127.0.0.1 ::1 192.168.0.138 // 生成自签证书
 ```
 
+## [Media Types MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)
+
+- [common media types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types/Common_types)
+- [sniffing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types#mime_sniffing)
+- [各种文件类型及文件头标识大全（十六进制）](https://zhuanlan.zhihu.com/p/571208394)
