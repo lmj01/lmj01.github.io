@@ -5,12 +5,16 @@ import languageLua from './libs/highlight/languages/lua.min.mjs';
 import languageCpp from './libs/highlight/languages/cpp.min.mjs';
 import languageC from './libs/highlight/languages/c.min.mjs';
 import languageGlsl from './libs/highlight/languages/glsl.min.mjs';
+import { whiteListUrls } from './config.mjs';
 
 hljs.registerLanguage('javascript', languageJavascript);
 hljs.registerLanguage('lua', languageLua);
 hljs.registerLanguage('cpp', languageCpp);
 hljs.registerLanguage('c', languageC);
 hljs.registerLanguage('glsl', languageGlsl);
+
+const whiteListToNewTab = Object.keys(whiteListUrls).map(e=>whiteListUrls[e].url);
+const cInitPath = '/articles/demo.md';
 
 const mapLanguage = {
     js: 'javascript', 
@@ -98,6 +102,24 @@ async function toHtmlData(elContent, text, options = {}) {
     });
 }
 
+function initWhiteList() {
+    document.body.querySelectorAll('.navbar-nav .nav-item').forEach(elLi=>{
+        if (elLi.children.length > 0) {
+            const aLink = elLi.children[0];
+            if (!aLink.href) {
+                const mjcode = aLink.getAttribute('mjcode');
+                if (mjcode && whiteListUrls[mjcode]) {
+                    const urlItem = whiteListUrls[mjcode];
+                    if (urlItem.hasTitle) {
+                        aLink.setAttribute('title', urlItem.url);
+                    }
+                    aLink.href = urlItem.url;
+                }
+            }
+        }
+    });
+}
+
 const patternExternal = /^(https?:|mailto:|tel:)/
 function tagLinkClickCaption(event, aLink) {
     if (event) {
@@ -108,13 +130,24 @@ function tagLinkClickCaption(event, aLink) {
             const elUl = target.parentNode;
             for (let i = 0; i < elUl.children.length; i++) {
                 const elLi = elUl.children[i];
-                elLi.children[0].classList.remove('active');
+                if (elLi.children.length > 0) {
+                    elLi.children[0].classList.remove('active');
+                }
             }
             event.target.classList.add('active');
         }
-        console.log(target, event)
     }
     const strHref = aLink.href;
+    if (location.href == strHref) {
+        ud.cacheUrls.splice(0);
+        initPage(cInitPath);
+        return;
+    }
+    console.log('tagLinkClickCaption', strHref);
+    if (patternExternal.test(strHref) && whiteListToNewTab.includes(strHref)) {        
+        window.open(strHref, '_blank');
+        return;
+    }
     ud.cacheUrls.push(strHref);
     const ext = strHref.substring(strHref.lastIndexOf('.') + 1);
     const isSameOrigin = strHref.startsWith(rootOrigin) && ['md','js','cpp','lua'].includes(ext);
@@ -137,10 +170,14 @@ function tagLinkUpdateEvent(aLink) {
 function catchAllTagLink() {
     document.querySelectorAll('a').forEach(a => tagLinkUpdateEvent(a));
 }
+function initPage(path) {
+    fetch(path).then(res=>res.text()).then(async(text)=>{
+        await toHtmlData(document.getElementById('content'), text);
+        catchAllTagLink();
+    })    
+}
 // 获取所有
 ud.cacheUrls = [];
+initWhiteList();
 catchAllTagLink();
-fetch('/articles/demo.md').then(res=>res.text()).then(async(text)=>{
-    await toHtmlData(document.getElementById('content'), text);
-    catchAllTagLink();
-})
+initPage(cInitPath);
