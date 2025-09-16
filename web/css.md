@@ -304,3 +304,5 @@ Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用
 ## 参考
 
 - [css 3d transforms](https://polypane.app/css-3d-transform-examples/)
+- [css实现玻璃效果](https://kube.io/blog/liquid-glass-css-svg/)
+- [无类的css库 cssbed](https://www.cssbed.com/)

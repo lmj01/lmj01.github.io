@@ -6,4 +6,4 @@ cpl/ts/*.js
 .obsidian
 
 cpl/python/*.drc
-libs/bootstrap-icons
+libs/bootstrap-icons-origin

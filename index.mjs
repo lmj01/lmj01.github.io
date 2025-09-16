@@ -87,7 +87,7 @@ async function toHtmlData(elContent, text, options = {}) {
         uniqueClass = options.relativePath.replace(/\/index\//g,'').replace(/.md$/g, '').replaceAll('/','-').toLowerCase();
         if (['/','-'].includes(uniqueClass[0])) uniqueClass = uniqueClass.substring(1);
     }    
-    elDiv.classList.add('w-100','h-100','d-flex','flex-column');
+    elDiv.classList.add('w-100','h-100','d-flex','flex-column', 'container');
     if (uniqueClass.length > 0) elDiv.classList.add(`mj-${uniqueClass}`);
     elDiv.innerHTML = md2Html(text);
     elContent.replaceChildren();

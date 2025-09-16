@@ -96,10 +96,9 @@ WADO:Web Access to DICOM Objects
 
 [NIFTI(神经影像学信息计划Neuroimaging Informatics Technology Initiative)](https://nifti.nimh.nih.gov/)是一种标准
 
-一种更简单的数据格式，一个NIFTI格式包含三部分
-- hdr
-- ext
-- img
+- [The NIFTI file format](https://brainder.org/2012/09/23/the-nifti-file-format/)
+    - [Official definition of the nifti1 header](https://www.nitrc.org/docman/view.php/26/64/nifti1.h)
+- [The NIFTI-2 file format](https://brainder.org/2015/04/03/the-nifti-2-file-format/)
 
 ## 术语
 
@@ -108,6 +107,15 @@ WADO:Web Access to DICOM Objects
 - PET(Positron Emission Tomography), 正电子发射断层成像，PET 对疾病诊断的灵敏度高，但分辨率低
 - Ultrasound, 超声，可以清晰显示脏器及周围器官的各种断面像，接近解剖真实结构，因其价廉、简便、迅速、无创、无辐射性、准确、可连续动态及重复扫描等优势应用甚广
 - Slab Thickness(), 三维图像数据中的一个切片或体检元素Voxel
+
+### 坐标系
+
+vtk.js是右手坐标系，只要数学上满足右手定则即可。但是存储的数据格式有特定的坐标系，属于解剖学(临床)坐标系
+在ITK/Slicer软件中内部会把图像原点的朝向自动解释成LPS或RAS
+
+- Right-Anterior-Superior(RAS) 右-前-上 以患者的前面
+- Left-Posterior-Superior(LPS) 左-后-上 以患者的后面
+
 
 ## 工具
 

@@ -5,6 +5,8 @@ Apache Maven is a software project management and comprehension tool. Based on t
 maven是项目管理工具，将项目分成了三个生命周期，clean，default，site
  是打包工具，执行还是需要调用Java
 
+- [maven仓库](https://mvnrepository.com/)
+
 ## 命令
 
 配置好环境后，使用vscode开发，不使用IDE
@@ -47,28 +49,24 @@ Spring Boot 通过 Spring Boot Maven Plugin 在 Apache Maven 中提供了对 Spr
 - [FAQ](https://kb.itextpdf.com/itext/faq)
 - [stackoverflow](https://stackoverflow.com/questions/tagged/itext+itext7)
 
-- A4 width:595.0, height:842.0
-
-itext7 的字体涉及到版权问题，基本就是与adobe有关
-
 ```java
 PdfFont f2 = PdfFontFactory.createFont("STSong-Light", "UniGB-UCS2-H",true);
 PdfFont f3 = PdfFontFactory.createFont("C:/Windows/Fonts/simhei.ttf", PdfEncodings.IDENTITY_H,true);
 //Add paragraph to the document
 document.add(new Paragraph("hellos你好").setFont(f2));
 document.add(new Paragraph("hellos你好").setFont(f3));
+// - A4 width:595.0, height:842.0
+// itext7 的字体涉及到版权问题，基本就是与adobe有关
+// 坐标系原点是左下角，X轴从左到右递增，Y轴从下到上递增
 ```
 
 ### [7.1.8](https://api.itextpdf.com/iText/java/7.1.8/)
-
 - [How to fill a rectangle with color?](https://kb.itextpdf.com/itext/how-to-fill-a-rectangle-with-color)
-
 
 ## 工具
 - [mvn的仓库](https://mvnrepository.com/)
 - [ Spring Initializr在线生成工程模板](https://start.spring.io/)
 - [Spring-boot:repackage 和 Maven package](https://springdoc.cn/spring-boot-repackage-vs-mvn-package/)
-
 
 ### 开发配置
 ```shell
