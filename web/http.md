@@ -27,6 +27,9 @@ attachment会以附件方式下载
 
 要设置 Referrer Policy，您需要在服务器端配置您的网站或应用程序的
 
+### methods
+- [optiosn](https://evertpot.com/discovering-features-with-http-options/)
+
 ## HTTPS
 
 [A curated list of free courses & certifications](https://github.com/cloudcommunity/Free-Certifications)

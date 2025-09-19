@@ -40,14 +40,11 @@
 - git submodule foreach git pull拉取所有的子模块
 - git submodule sync --recursive
 - git config -f .gitmodules submodule.DbConnector.branch branchName 设置或更新某个分支
-
-删除
-
-- git submodule deinit mod_name
-- git rm --cached mod_name
+- git submodule deinit mod_name 删除子模块第一步
+- git rm --cached mod_name 删除第二步
 
 ### branch
-分支
+
 - git branch -d <branch_name> 删除本地分支
 - git push origin --delete <branch_name> 删除远程分支
 - git branch -m newName 在当前分支
@@ -57,6 +54,9 @@
 - git remote add upstream repo-url 添加上游仓库地址
 - git fetch upstream 从上游更新
 - git merge upstream/branch-name 合并上游分支到本地，如果出现**fatal: refusing to merge unrelated histories**, 是两个库的commit历史不同，放在错误的设置，加上--allow-unrelated-histories即可
+- git checkout --orphan branchName // 创建空的分支
+- git checkout -b <new-branch-name> [<existing-branch>] 基于存在的分支创建，未指定即当前分支,相当于执行git branch 和git checkout 命令组合
+- git checkout -b feature-branch origin/feature-branch 创建并切换到远程分支
 
 ### tag
 - git tag 列车本地所有tag
@@ -83,14 +83,6 @@
 - git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
 - git diff branch1 branch2 --stat
 - git diff --staged/--cached 查看暂存区与上一次的提交之间的差异
-
-## 分支
-
-### git checkout
-
-- git checkout --orphan branchName // 创建空的分支
-- git checkout -b <new-branch-name> [<existing-branch>] 基于存在的分支创建，未指定即当前分支,相当于执行git branch 和git checkout 命令组合
-- git checkout -b feature-branch origin/feature-branch 创建并切换到远程分支
 
 ## 配置
 

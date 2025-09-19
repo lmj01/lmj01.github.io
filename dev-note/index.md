@@ -38,3 +38,4 @@
 ### 工具
 - [在线matplotlib，可以让AI可视化写代码用它展示](https://matplotlib.online/)
 - [firefox官网的浏览器](https://www.firefox.com/en-US/?redirect_source=mozilla-org&utm_campaign=SET_DEFAULT_BROWSER)
+- [SpectorJS 调试webgl的工具，为Babylon开发的工具](https://spector.babylonjs.com/)
