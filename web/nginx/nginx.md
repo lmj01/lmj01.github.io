@@ -13,6 +13,11 @@ sudo service nginx stop
 nginx -s signal // stop quit reload reopen
 nginx -h
 nginx -t 测试配置
+
+sudo lsof -i :8800 # 查看占用端口
+sudo kill -9 pid
+sudo nginx -c "$PWD/example.conf" # 开启
+sudo nginx -s reload -c "$PWD/example.conf" # 重启
 ```
 
 ### 配置
