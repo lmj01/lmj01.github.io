@@ -48,3 +48,17 @@ Adrian Bowyer and John Woodwark distinguish three types of complexity in a geome
 - floating numbers are stored in the exponential form. 浮点数以指数形式存储如0.0012345存储为0.12345x10^2
 
 计算机的加减乘除与真实的计算是有着差异的，要设计好存储与表示真实的计算，是很容易出现错误的，出现错误后也很难发现问题的。
+
+## Unit2 Geometric Concepts
+
+### Coordinate Systems, Points, Lines and Planes
+
+### Simple Curves and Surfaces
+
+讲了一元二次与二元二次方程表示的曲线
+
+### Homogeneous Coordinates
+
+使用homogeneous coordinate的目的之一是capture the concept of infinity.
+
+Mathematicians have discovered that many geometric concepts and computations can be greatly simplified if the concept of infinity is used.

@@ -16,8 +16,8 @@ nginx -t 测试配置
 
 sudo lsof -i :8800 # 查看占用端口
 sudo kill -9 pid
-sudo nginx -c "$PWD/example.conf" # 开启
-sudo nginx -s reload -c "$PWD/example.conf" # 重启
+sudo nginx -c "$PWD/example.conf" # 开起一个静态文件服务
+sudo nginx -s reload -c "$PWD/example.conf" # 开起后的静态文件服务重启配置
 ```
 
 ### 配置
