@@ -92,7 +92,7 @@ echo "implant"
 
 $path9 = "G:\lib\vtk-js\"
 echo "vtk-js"
-# Find-Str -Path $path9 -ExcludeDirs @("node_modules", "dist") -SearchString "vtkTubeFilter"
+Find-Str -Path $path9 -ExcludeDirs @("node_modules", "dist") -SearchString "Set value to model directly dataDescription"
 
 $path10 = "F:\platform\3D\html-target-3d\"
 echo "3d-html"
@@ -107,9 +107,9 @@ echo "solution-Enterprise"
 # Find-Str -Path $path12 -ExcludeDirs @("node_modules", "dist", "pdf", "libs", "ceph") -SearchString "auditSubmit"
 
 $path13 = "F:\orthox\orthoceph_ai"
-echo "solution-Enterprise"
+echo "ai-ceph"
 # Find-Str -Path $path13 -ExcludeDirs @("node_modules", "dist") -SearchString "i18n"
 
 $path14 = "F:\meijie\lmj01.github.io\"
 echo "lmj01 doc"
-Find-Str -Path $path14 -ExcludeDirs @("libs", "dist") -SearchString "itext"
+# Find-Str -Path $path14 -ExcludeDirs @("libs", "dist") -SearchString "itext"

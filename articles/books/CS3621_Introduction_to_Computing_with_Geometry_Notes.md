@@ -62,3 +62,24 @@ Adrian Bowyer and John Woodwark distinguish three types of complexity in a geome
 使用homogeneous coordinate的目的之一是capture the concept of infinity.
 
 Mathematicians have discovered that many geometric concepts and computations can be greatly simplified if the concept of infinity is used.
+
+```js
+/*
+Let the given equation be a second degree polynomial Ax2 + 2Bxy + Cy2 + 2Dx + 2Ey + F = 0. After replacing x and y with x/w and y/w and multiplying the result with w2, we have Ax2 + 2Bxy + Cy2 + 2Dxw + 2Eyw + Fw2 = 0 
+
+If you look at these two polynomials carefully, you will see that the degrees of all terms are equal. In the case of a line, terms x, y and w are of degree one, while in the second degree polynomial, all terms (i.e., x2, xy, y2, xw, yw and w2) are of degree two.
+
+Given a polynomial of degree n, after introducing w, all terms are of degree n. Consequently, these polynomials are called homogeneous polynomials and the coordinates (x,y,w) the homogeneous coordinates. 
+*/
+```
+
+Converting from a homogeneous coordinates to a conventional one is unique; but, converting a conventional coordinates to a homogeneous one is not. 
+
+这里是我目前(2025-9-28)看到解释homogeneous最特别的，不那么抽象的描述，且还符合视觉上解释多项式的每项都说n阶这个很容易让人理解到多项式在某种情况下都说一致的，就像很多时候单位1的问题。
+
+按照上面的逻辑，
+
+### Geometric Transformations
+
+- the geometric objects are transformed 大部分的书籍描述的是这种
+- the coordinate system is transformed 

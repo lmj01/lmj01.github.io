@@ -143,7 +143,7 @@ function tagLinkClickCaption(event, aLink) {
         initPage(cInitPath);
         return;
     }
-    console.log('tagLinkClickCaption', strHref);
+    // console.log('tagLinkClickCaption', strHref);
     if (patternExternal.test(strHref) && whiteListToNewTab.includes(strHref)) {        
         window.open(strHref, '_blank');
         return;

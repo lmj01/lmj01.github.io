@@ -1,5 +1,12 @@
 # vtk.js
 
+- [mermaid of vtk.js](/dental/vtk.js4mermaid.md)
+
+## 体数据与世界坐标
+- index = [i,j,k], world=[x,y,z], 先平移，再旋转，后缩放
+- world = origin + directionMatrix · (spacing ∘ index)
+- index = directionMatrix⁻¹ · ( (world - origin) / spacing )
+
 ## vtkResliceCursorWidget
 
 ```js

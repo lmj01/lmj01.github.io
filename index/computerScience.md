@@ -126,6 +126,10 @@
 - [模型](/ai/model.md)
 - [参考应用模型](/ai/demo.md)
 
+## 优秀的产品
+
+- [Sweet Home 3D Online Manager 设置家居布局的，](https://www.sweethome3d.com/SweetHome3DOnlineManager.jsp)
+
 ## 其他
 
 - [计算机专业学习路线](https://hackway.org/docs/cs/intro)
