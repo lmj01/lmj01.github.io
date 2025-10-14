@@ -57,12 +57,15 @@
                 }
                 const birthYear = date.getFullYear(), birthMonth = date.getMonth() + 1, birthDay = date.getDate();
                 // 出生农历年
-                const chineseCalendar = solarToLunar(birthYear, birthMonth, birthDay);
+                let chineseCalendar = solarToLunar(birthYear, birthMonth, birthDay);
                 // 算对立的出生日期
                 let anotherBirthday = '', date2;
                 if (isChineseCalendar) {
                     anotherBirthday = `农历${toChinaMonth(chineseCalendar.lunarM, chineseCalendar.isLeap)}${toChinaDay(chineseCalendar.lunarD)}`;
                 } else {
+                    // 给出农历，不能再计算农历，否则会低于出生日期
+                    chineseCalendar.lunarM = birthMonth;
+                    chineseCalendar.lunarD = birthDay;
                     // 从农历算阳历，到差天数来算
                     const solarCalendar = lunarToSolar(birthYear, birthMonth, birthDay);
                     console.log(solarCalendar)
