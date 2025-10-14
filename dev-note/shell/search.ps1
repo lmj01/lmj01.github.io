@@ -66,7 +66,7 @@ echo "mydentalX"
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
 echo "rival"
-# Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "setCameraTransform"
+# Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "submitRenderRequest"
 # Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "mousemove"
 # Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "setCameraTransform"
 
@@ -88,11 +88,11 @@ echo "cornerstone3D"
 
 $path8 = "F:\platform\platform-editor\"
 echo "implant"
-# Find-Str -Path $path8 -ExcludeDirs @("css", "dist", "internal", "libs") -SearchString "showStep"
+# Find-Str -Path $path8 -ExcludeDirs @("css", "dist", "internal", "libs") -SearchString "THREE.TransController"
 
 $path9 = "G:\lib\vtk-js\"
 echo "vtk-js"
-Find-Str -Path $path9 -ExcludeDirs @("node_modules", "dist") -SearchString "Set value to model directly dataDescription"
+# Find-Str -Path $path9 -ExcludeDirs @("node_modules", "dist") -SearchString "setInterpolationType"
 
 $path10 = "F:\platform\3D\html-target-3d\"
 echo "3d-html"
@@ -112,4 +112,8 @@ echo "ai-ceph"
 
 $path14 = "F:\meijie\lmj01.github.io\"
 echo "lmj01 doc"
-# Find-Str -Path $path14 -ExcludeDirs @("libs", "dist") -SearchString "itext"
+Find-Str -Path $path14 -ExcludeDirs @("libs", "dist") -SearchString "gizmo"
+
+$path15 = "F:\study\three.js\"
+echo "three.js"
+# Find-Str -Path $path15 -ExcludeDirs @("node_modules", "build") -SearchString "ViewHelper"

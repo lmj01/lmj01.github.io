@@ -1,7 +1,7 @@
 # [the Math Academy Way](https://docs.google.com/document/d/1LLZK_34Oer9LwuqAv-pqxfXlR8n7V8zJ_MO323R7egI/edit?usp=sharing)
 
 - [官网，数学加速学习课程](https://www.mathacademy.com/pedagogy)
-- p75
+
 ## 2025-
 
 ## chapter 2
@@ -38,3 +38,14 @@
 
 ### 总结
 认知学习策略通过优化信息处理、记忆和应用，帮助学习者更高效地掌握知识。这些策略不仅适用于学术场景，还能在日常生活中提升学习和问题解决能力。
+
+## chapter 5 Accountability and Incentives问责与激励
+是常见的管理、经济及政策领域术语，核心翻译为 “问责与激励”，二者常结合使用，构成 “通过问责明确责任、通过激励引导行为” 的管理逻辑。
+
+### What Happens in the Absece of Accountability and Incentives
+
+#### Resistance to Objective Measurement 对客观衡量的抵触
+
+- Radical Constructivism激进构建主义
+激进建构主义是一种哲学与教育理论，核心观点是：个体并非被动接收外部世界的 “客观真理”，而是主动建构自身知识的主体。
+- p91

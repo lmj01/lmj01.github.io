@@ -17,6 +17,16 @@ function computeReslicePlaneOrigin(viewType) {
 }
 ```
 
+### ImageProperty
+
+```js
+enum InterpolationType {
+    NEAREST = 0,
+    LINEAR = 1, // 默认
+}
+```
+
+
 ## [CPR](/dental/Panoramic.md)
 
 - [office demo](https://kitware.github.io/vtk-js/examples/ImageCPRMapper.html)

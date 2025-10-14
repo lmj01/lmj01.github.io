@@ -80,9 +80,13 @@
 
 ### diff
 
-- git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
-- git diff branch1 branch2 --stat
-- git diff --staged/--cached 查看暂存区与上一次的提交之间的差异
+```shell
+git diff parentCommitId commitId src/path/file.xxx > logYYYYMMDD.log
+git diff branch1 branch2 --stat
+git diff --staged/--cached 查看暂存区与上一次的提交之间的差异
+git show <commit-hash> 类似diff
+git log -p/--patch -n 5 最近5个提交
+```
 
 ## 配置
 

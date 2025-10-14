@@ -11,10 +11,11 @@
         <div class="d-flex flex-column">
             <ol>
                 <li><a href="#section1">生日</a></li>
+                <li><a href="#section2">生理</a></li>
             </ol>
         </div>
         <div>
-            <h4 id="section1">生日</h4>
+            <h4 id="section1 my-3">生日</h4>
             <div>
                 <div id="div19960124">
                     <label>老婆生日<input id="input19960124" type="text" disabled value="1996-01-24"></label>
@@ -33,7 +34,12 @@
                 </div>
             </div>
         </div>
-        <div></div>
+        <div>
+            <h4 id="section2 my-3">生理</h4>
+            <div>
+                
+            </div>
+        </div>
         <script type="module">
             import { timeDay, timeYear, timeMonth } from "https://cdn.skypack.dev/d3-time@3";
             import { solarToLunar, toChinaMonth, toChinaDay, lunarMonthDays, leapMonth, lunarToSolar } from './calendar.mjs';
@@ -103,6 +109,7 @@
                     }
                     // 生日当月的天数
                     dayList.push(chineseCalendar.lunarD);
+                    console.log(dayList)
                     p.innerText = `下个农历生日还有${dayList.reduce((p,c)=>p+c, 0) - 1}天到来`;
                 } else {
                     const nextBirthDay = new Date(today.getFullYear()+1, birthMonth-1, birthDay);

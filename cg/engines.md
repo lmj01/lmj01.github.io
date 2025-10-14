@@ -23,6 +23,8 @@
     - [A collection of tools to edit save files and roms for games 游戏工具集](https://github.com/RyudoSynbios/game-tools-collection)
     - [WebXR immersive console emulator w/ Retroach, Javascript, and WASM ](https://github.com/exokitxr/emukit)
 
+- [mermaid engine framework](/cg/tools/engine4mermaid.md)
+
 ## Render
 
 - [Soft Rendering](https://github.com/huanzai/SoftRendering)

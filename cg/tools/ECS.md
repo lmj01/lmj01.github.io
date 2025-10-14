@@ -55,6 +55,10 @@ Gaming meets modern C++ - a fast and reliable entity component system (ECS) and 
 
 EnTT is a header-only, tiny and easy to use library for game programming and much more written in modern C++.
 
+### [Entt Dino](https://github.com/omgitsaheadcrab/entt_dino)
+
+EnTT Dino is a clone of the Dinosaur Game built using only SDL2 and the EnTT entity component system library.
+
 ## web
 
 - [Building an ECS in TypeScript 文章](https://maxwellforbes.com/posts/typescript-ecs-implementation/)

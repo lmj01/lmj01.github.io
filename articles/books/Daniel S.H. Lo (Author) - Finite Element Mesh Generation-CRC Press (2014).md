@@ -17,3 +17,8 @@ However, apart from the geometrical aspects, FE meshes are meshes to support num
 ### 2.3.10
 
 - In MG, a domain to be meshed is often defined by its boundary.
+
+### 2.4.5 Solid Angle
+
+### 2.4.9 Dividing an edge into segments
+In FE MG, it is often required to add more nodes to a line segment. The method employed to generate more nodes on an edge depends on the requried node distributions and the data available.

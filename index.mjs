@@ -181,3 +181,40 @@ ud.cacheUrls = [];
 initWhiteList();
 catchAllTagLink();
 initPage(cInitPath);
+
+
+// service worker
+const registerServiceWorker = async function() {
+    if ('serviceWorker' in navigator) {
+        try {
+            const text = await fetch('/time.txt').then(res=>res.text());
+            const lsText = localStorage.getItem('sw-time');
+            if (lsText && lsText != text) {
+                localStorage.setItem('sw-time', text);
+                await caches.delete('lmj01Doc');
+                // 强制刷新
+                // location.reload();
+            } else {
+                localStorage.setItem('sw-time', text);
+            }
+            const registration = await navigator.serviceWorker.register('/sw.mjs', {
+                scope: '/',
+                type: 'module',
+                shouldBypassCache: false,
+            });
+            registration.addEventListener('updatefound', (evt) => {
+                console.log('Service worker update found:', evt);
+            });
+            if (registration.installing) {
+                console.log('Service worker installing');
+            } else if (registration.waiting) {
+                console.log('Service worker installed & waiting');
+            } else if (registration.active) {   
+                console.log('Service worker active', registration.scope);
+            }
+        } catch(e) {    
+            console.log('ServiceWorker registration failed: ', e);  
+        }
+    }
+}
+registerServiceWorker();

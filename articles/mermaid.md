@@ -2,8 +2,6 @@
 
 - [集成社区](https://mermaid.js.org/ecosystem/integrations-community.html)
 
-- [mermaid API](https://mermaid.js.org/config/setup/modules/mermaidAPI.html)
-
 <pre class="mermaid">
     graph TD
     A[Client] --> B[Load Balancer]
