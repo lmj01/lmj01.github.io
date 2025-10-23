@@ -51,74 +51,104 @@
             const birthSelf = new Date(document.getElementById('input19870903').value);            
             const today = new Date();
             
-            function computeTimeDate(el, date, isChineseCalendar = true, doBirthInChinsesCalendar = true) {
+            /**
+             * date: 出生日期，
+             * inDateIsSolar: 输入的出生日期是阳历否 true:阳历 false:农历
+             * nextBirthShowLunar: 下个生日显示 true:农历 false:阳历
+             */
+            function computeTimeDate(el, date, inDateIsSolar = true,  nextBirthShowLunar = true) {
                 if (['divOtherInfo'].includes(el.id)) {
                     el.replaceChildren();
                 }
-                const birthYear = date.getFullYear(), birthMonth = date.getMonth() + 1, birthDay = date.getDate();
-                // 出生农历年
-                let chineseCalendar = solarToLunar(birthYear, birthMonth, birthDay);
+                const inBirthYear = date.getFullYear(), inBirthMonth = date.getMonth() + 1, inBirthDay = date.getDate();
+                // 由阳历算出农历年
+                const lunarCalendar = solarToLunar(inBirthYear, inBirthMonth, inBirthDay);
+                const solarCalendar = lunarToSolar(inBirthYear, inBirthMonth, inBirthDay);
+                const thisYearSolar = lunarToSolar(today.getFullYear(), inBirthMonth, inBirthDay);
+        
                 // 算对立的出生日期
-                let anotherBirthday = '', date2;
-                if (isChineseCalendar) {
-                    anotherBirthday = `农历${toChinaMonth(chineseCalendar.lunarM, chineseCalendar.isLeap)}${toChinaDay(chineseCalendar.lunarD)}`;
+                let anotherBirthday = '', date2, thisYearBirthdayPassed = false;
+                if (inDateIsSolar) {
+                    date2 = new Date(inBirthYear, inBirthMonth, inBirthDay);
+                    // 给出阳历，算农历
+                    anotherBirthday = `农历${toChinaMonth(lunarCalendar.lunarM, lunarCalendar.isLeap)}${toChinaDay(lunarCalendar.lunarD)}`;                    
                 } else {
-                    // 给出农历，不能再计算农历，否则会低于出生日期
-                    chineseCalendar.lunarM = birthMonth;
-                    chineseCalendar.lunarD = birthDay;
-                    // 从农历算阳历，到差天数来算
-                    const solarCalendar = lunarToSolar(birthYear, birthMonth, birthDay);
-                    console.log(solarCalendar)
-                    date2 = new Date(birthYear,solarCalendar.month, solarCalendar.day)
                     anotherBirthday = `阳历${solarCalendar.month}月${solarCalendar.day}日`;
+                    date2 = new Date(inBirthYear, solarCalendar.month, solarCalendar.day);
                 }
                 let p = document.createElement('p');
                 p.classList.add('ms-3');
+                let p2 = document.createElement('p');
+                p2.classList.add('ms-3');
                 const totalYear = timeYear.count(date, today);
-                const totalMonth = timeMonth.count(date, today);
-                // 当月过生日那天的日期与现在天数大小
-                const havingPassedDay = today.getDate() < date.getDate();
-                p.innerText = `出生于${anotherBirthday}、虚岁${totalYear}年${totalMonth - 12 * totalYear - (!havingPassedDay ? 0 : 1)}月、成长天数为${timeDay.count(isChineseCalendar?date:date2, today)}`;
+                const totalMonth = timeMonth.count(date, today);                
+                p.innerText = `出生于${anotherBirthday}、虚岁${totalYear}年${totalMonth - 12 * totalYear}月、成长天数为${timeDay.count(date2, today)}`;
                 el.appendChild(p);
                 p = p.cloneNode(true);
-                if (doBirthInChinsesCalendar) {
-                    const thisChineseCalendar = solarToLunar(today.getFullYear(), today.getMonth()+1, today.getDate());
-                    const thisYear = today.getFullYear();
-                    const thisMonth = chineseCalendar.lunarM;
-                    const thisDate = chineseCalendar.lunarD;
-                    const thisYearMonths = lunarMonthDays(thisYear);
-                    
+                if (nextBirthShowLunar) {
+                    // 下个农历生日
+                    const todayLunar = solarToLunar(today.getFullYear(), today.getMonth()+1, today.getDate());
+                    const thisYearMonths = lunarMonthDays(todayLunar.lunarY);      
                     const dayList = [];
-                    let begin = thisChineseCalendar.lunarM + 1, end = chineseCalendar.lunarM;                        
-                    // 这个月的天数
-                    dayList.push(thisYearMonths[begin] - thisChineseCalendar.lunarD);                        
-                    if (thisChineseCalendar.lunarM < chineseCalendar.lunarM) {
-                        // 今年未过生
-                        // 整月的天数
-                        for (let i=begin; i < end; i++) {
-                            dayList.push(thisYearMonths[i]);
+                    if (inDateIsSolar) {
+                        if (todayLunar.lunarM == inBirthMonth && todayLunar.lunarD == inBirthDay) {
+                            p2.innerText = `今天是您的农历生日，生日快乐！`;
                         }
                     } else {
+                        if (inBirthMonth == todayLunar.lunarM && inBirthDay == todayLunar.lunarD) {
+                            p2.innerText = `今天是您的农历生日，生日快乐！`;
+                        }
+                    }
+
+                    if (todayLunar.lunarM < lunarCalendar.lunarM || 
+                        (todayLunar.lunarM == lunarCalendar.lunarM && todayLunar.lunarD < lunarCalendar.lunarD)) {
+                        for (let m = todayLunar.lunarM - 1; m < lunarCalendar.lunarM - 1; m++) {
+                            if (m + 1 == leapMonth(todayLunar.lunarY)) {
+                                // 闰月
+                                if (todayLunar.isLeap) {
+                                    // 今年是闰月，跳过
+                                } else {
+                                    dayList.push(thisYearMonths[m]);
+                                }
+                            } else {
+                                dayList.push(thisYearMonths[m]);
+                            }
+                        }
+                        // 今年还没过生
+                    } else {
                         // 今年已经过了生日
-                        dayList.push(thisYearMonths[begin] - thisChineseCalendar.lunarD);
-                        // 下个月到年末
                         thisYearMonths.forEach((days,i)=>{
-                            if (begin < i) dayList.push(days);
-                        })
-                        // 年初至过生那个月
-                        lunarMonthDays(thisYear + 1).forEach((days,i)=>{
-                            if (begin > i) dayList.push(days);
+                            if (i == leapMonth(todayLunar.lunarY) + 1) {
+                                // 闰月
+                                if (todayLunar.isLeap) {
+                                    // 今年是闰月，跳过
+                                } else {
+                                    dayList.push(days);
+                                }
+                            } else {
+                                dayList.push(days);
+                            }
                         })
                     }
-                    // 生日当月的天数
-                    dayList.push(chineseCalendar.lunarD);
-                    console.log(dayList)
+                    console.log('还差农历的天数', dayList);
                     p.innerText = `下个农历生日还有${dayList.reduce((p,c)=>p+c, 0) - 1}天到来`;
                 } else {
-                    const nextBirthDay = new Date(today.getFullYear()+1, birthMonth-1, birthDay);
+                    const nextBirthDay = new Date(today.getFullYear() + 1, inBirthMonth - 1, inBirthDay);
+                    if (inDateIsSolar) {
+                        if (today.getMonth() + 1 == inBirthMonth && today.getDate() == inBirthDay) {
+                            p2.innerText = `今天是您的阳历生日，生日快乐！`;
+                        }
+                    } else {
+                        if (solarCalendar.lunarM == inBirthMonth && solarCalendar.lunarD == inBirthDay) {
+                            p2.innerText = `今天是您的阳历生日，生日快乐！`;
+                        }
+                    }
                     p.innerText = `下个阳历生日还有${timeDay.count(today, nextBirthDay)}天到来`;
                 }
                 el.appendChild(p);
+                if (p2.innerText) {
+                    el.appendChild(p2);
+                }
             }
             computeTimeDate(div20220828, birthSon, true, false);
             computeTimeDate(div19960124, birthDarling, true, true);

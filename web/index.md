@@ -2,7 +2,7 @@
 
 - [网页平台最好的开发集合地A place to find the best open source projects related to the web platform](https://bestofjs.org/)
     - [增长最快的排行榜](https://risingstars.js.org/2023/en)
-
+- [javascript](/cpl/ECMAScript.md)
 - [使用过的库](/web/library.md)
 - [正则表达式](/cpl/js/regularExpressions.js)
 - [webassembly](/web/webAssembly.md)
@@ -23,7 +23,6 @@
 - [CSS](/web/css.md)
 - [适配屏幕](/web/adapt.screen.md)
 - [http](/web/http.md)
-- [javascript](/cpl/web/ECMAScript.md)
 - [代码混淆](/web/confuse.md)
 
 - [d3](/web/libs/d3.md)

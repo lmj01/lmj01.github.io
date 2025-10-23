@@ -262,7 +262,6 @@ const range = {
 }
 ```
 
-- 
 
 ## typescript
 > javascript的超集，更加面向对象的编程语言，可以便宜为纯Javascript
@@ -322,15 +321,22 @@ declare var A: A_Static;
 
 写*.d.ts的流程，尽量从文档入口，不要被细节影像。
 
-### 参考
 
+### 参考
 - [typescript官网文档](https://www.typescriptlang.org/docs)
 
-## QuickJS
-> 是一个轻量，嵌入式的Javascript引擎
+## 运行库
 
-# Babel
+### Babel
 babel7舍弃了以前的 babel-*-* 的命名方式，改成了@babel/*-*
 处理流程
 
 ![](../images/babel.png)
+
+### QuickJS
+> 是一个轻量，嵌入式的Javascript引擎
+
+### [Bun](https://bun.com/)
+
+- [bun中文](https://www.bunjs.cn/)
+

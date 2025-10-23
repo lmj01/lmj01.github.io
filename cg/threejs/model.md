@@ -33,7 +33,7 @@ LoadingManager是一个独立封装的，类似一个函数，全部在construct
  * 问题本质是JSON.stringify超出JS引起或内存的限制导致的
  * 其实抓取网页的数据逻辑也是如此的操作
  */
-(function(str, type, filename){
+const saveJson = function(str, type, filename){
     const encode = new TextEncoder();
     const blob = new Blob([encode.encode(str)]);
     const url = window.URL.createObjectURL(blob, {type: type || 'application/octet-stream'});
@@ -42,7 +42,8 @@ LoadingManager是一个独立封装的，类似一个函数，全部在construct
     tagA.download = filename || 'raw.dat';
     tagA.click();
     window.URL.revokeObjectURL(url);
-})();
+};
+saveJson(JSON.stringify(mesh.toJSON(), null, 2));
 ```
 
 ## Group

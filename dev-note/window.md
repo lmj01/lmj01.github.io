@@ -122,15 +122,3 @@ sudo dpkg-reconfigure locales 配置其他字体
 - [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
 
-## [scoop](https://scoop.sh/)
-
-```shell
-$env:SCOOP='d:\scoop'
-[Environment]::SetEnvironmentVariable('USERSCOOP', $env:SCOOP, 'User')
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-```
-
-### app
-- cppcheck
-

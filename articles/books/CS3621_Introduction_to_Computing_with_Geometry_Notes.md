@@ -83,3 +83,44 @@ Converting from a homogeneous coordinates to a conventional one is unique; but, 
 
 - the geometric objects are transformed 大部分的书籍描述的是这种
 - the coordinate system is transformed 
+
+## Unit3 Solid Models
+
+### Solid Representations: An Introduction
+实体表示中
+- Domain
+- Unambiguity
+- Uniquencess
+- Accuracy，若无需任何近似处理就能精确描述实体的几何形状与拓扑结构，则该表示方法可被判断精确。
+  - 精确表示，构造实体几何CSG(所有运算基于精确数学定义)，边界表示(部分可无近似表达复杂曲面)B-rep
+  - 近似表示，体素Voxel(像素块逼近实体)，多边形网格Polygon Mesh(用面片拟合曲面，面熟越多精度越高，始终存在误差)
+- Validness 
+- Closure
+- Compactness and Efficiency
+
+In summary, designing representations for solids is a difficult job and compromises are often necessary. This course will only discuss the following representations: wireframes, boundary representations and constructive solid geometry. 
+
+### Wireframe Models
+A wireframe model consists of two tables, the vertex table and edge table. no face.
+
+edge 不是必须line segments，可能是curve segments，会变得复杂很多。
+
+wireframe use the simplest data structures, it is ambiguous摸棱两可的，存在可能旋转等差异，不存在唯一性。
+
+线框模型在很多时候还是非常有用的，速度快，便于设计中使用和预览，方便调试。
+
+### Boundary Representations
+边界表示法可以看作是wireframe的扩展，B-rep的好处是用surface来划分边界，并能区分interior和exterior。相比wireframe，可以看作增加了face面片信息。B-rep有两部分
+- topological拓扑，包含了点、线、面，边和面的朝向orientation
+- geometric几何形态，就是边和面的外部形态
+
+surface的oriented是很重要的，mobius band就是单边且non-orientable，把符合条件的称为orientable。
+
+#### Manifolds
+
+the surface of a solid must satisfy some conditions so that the resulting solid is well-behaved. called manifold condiation.
+
+A surface is a 2-manifold if and only if for each point x on the surface there exists an open ball with center x and sufficiently small radius so that the intersection of this ball and the surface can be continuously deformed to an open disk.
+
+曲面surface是2维流形2-manifold, 流形是manifold是数学中描述“局部像欧几里得空间”的几何对象，2维流形就是“局部像平面（2维欧几里得空间）”的几何对象，曲面是最典型的2流形例子。
+

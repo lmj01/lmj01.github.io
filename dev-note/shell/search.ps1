@@ -66,7 +66,7 @@ echo "mydentalX"
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
 echo "rival"
-# Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "submitRenderRequest"
+Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "filterActiveMovement"
 # Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "mousemove"
 # Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "setCameraTransform"
 
@@ -88,7 +88,7 @@ echo "cornerstone3D"
 
 $path8 = "F:\platform\platform-editor\"
 echo "implant"
-# Find-Str -Path $path8 -ExcludeDirs @("css", "dist", "internal", "libs") -SearchString "THREE.TransController"
+# Find-Str -Path $path8 -ExcludeDirs @("css", "dist", "internal", "libs") -SearchString "case/info"
 
 $path9 = "G:\lib\vtk-js\"
 echo "vtk-js"
@@ -112,7 +112,7 @@ echo "ai-ceph"
 
 $path14 = "F:\meijie\lmj01.github.io\"
 echo "lmj01 doc"
-Find-Str -Path $path14 -ExcludeDirs @("libs", "dist") -SearchString "gizmo"
+# Find-Str -Path $path14 -ExcludeDirs @("libs", "dist") -SearchString "gizmo"
 
 $path15 = "F:\study\three.js\"
 echo "three.js"

@@ -47,7 +47,8 @@ FBO(Framebuffer Object)本身不存储数据，是一个容器，管理多个附
 
         A2[Composer] -- "1" --> BA2a[submitRenderRequest]
 
-        Canvas.run[run] -- "触发" --> RC1a[RenderCycle.startRenderLoop]
+        Canvas.run[run] -- "触发" --> RC1a0[RenderCycle.init]
+        RC1a0 --> RC1a[RenderCycle.startRenderLoop]
         RC1a --> RC1b[RenderCycle.renderLoop]
         RC1b --> RC1c[RenderCycle.renderFrame]
 
@@ -93,5 +94,10 @@ FBO(Framebuffer Object)本身不存储数据，是一个容器，管理多个附
 
         class Canvas {
             +run()
+        }
+
+        class SystemGroup {
+            +update()
+            +processSystem()
         }
 </pre>
