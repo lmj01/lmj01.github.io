@@ -2,6 +2,7 @@
 其定义是没有明确，都是不同工程项目中不同的指称。
 
 - [noise噪音](/cg/rendering/noise.md)
+- [Render Pass](/cg/rendering/renderpass.md)
 
 ## 定义
 
@@ -97,14 +98,6 @@ shader的作用就是由数据生成图像
 - 引入至少两个缓冲区，屏幕缓冲区和离屏缓冲区，一个RenderBuffer渲染完后，交换两个缓冲区，这样图像显示就是完整的
 - 垂直同步，由于显示器的刷新一般是逐行进行的，从上往下刷新，为了防止交换缓冲区时屏幕的上下区域的图像属于不同的FrameBuffer，因此要在显示器两次刷新之间的时间内进行交换缓冲区，等待上一次显示器刷新的信号称为垂直同步信号
 - 等待交换缓冲区完成后再进行下一帧的Framebuffer渲染，这样帧率不能完全达到硬件的最高值，因此引入三缓冲区技术，一个屏幕缓冲区，两个离屏缓冲区，交换时与最新渲染的离屏缓冲区进行交换，这样尽量减少硬件的时间差导致帧率较低，影响屏幕的画面更流畅。
-
-### Render Pass
-
-Render Pass定义为一个渲染步骤。如有一个很多不同材质的球体的场景需要渲染，就可以声明一个render pass给所有球使用，因为对每一个球体，渲染结果都会输出到同一个FrameBuffer的Attachment上，所以流程上是一样的。
-
-如果说Buffer的数据可以供所有shader使用，那么在render pass中就是更加定制化的渲染，
-
-每个pass通常对应的渲染流程中不同阶段【相同阶段通常会使用MRT，或硬件不支持，需要多个Pass；或渲染目标size不一样，也需要多个pass来渲染】。实际意义是对一个Mesh渲染多遍，是对材质抽象的一种解释，一个Technique里会包含一个或多个Pass，如DeferredLighting流程里面一个物体就需要2个Pass，一个用来计算Z，一个用来lighting；如果有阴影，又需要一个Pass；如果需要精细反射图，需要一个反射的Pass。引擎一般会把状态类似的不同Mesh的Pass一起渲染， 用Pass对材质进行排序。
 
 ### [Interface Block (GLSL)](https://www.khronos.org/opengl/wiki/Interface_Block_(GLSL))
 一块块的声明变量。

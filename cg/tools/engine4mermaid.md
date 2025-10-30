@@ -59,25 +59,17 @@ FBO(Framebuffer Object)本身不存储数据，是一个容器，管理多个附
     title: Render Relative Graph
     ---
     classDiagram
-        A <| -- RenderCyle
-
         class WebGLRenderer {
             +submitRenderRequest()
             +submitResource()
             +submitDraw()
         }
-
-        class Composer {
-
-        }
-
         class DataProvider {
             +Map scheme
             +select()
             +update()
             +transform() 
         }
-
         class RenderCycle {
             +DataProvider dataProvider
             +Composer composer
@@ -87,17 +79,88 @@ FBO(Framebuffer Object)本身不存储数据，是一个容器，管理多个附
             +renderFrame()
             +delegate()
         }
+</pre>
 
+<pre class="mermaid">
+    ---
+    title: Render Relative Graph
+    ---
+    classDiagram
+        class Composer {
+        }
         class RenderDelegate {
-
         }
+</pre>
 
+<pre class="mermaid">
+    ---
+    title: Render Relative Graph
+    ---
+    classDiagram    
+        note for Canvas "interactorsECS传入Canvas"
         class Canvas {
-            +run()
-        }
-
-        class SystemGroup {
+            +run() // 
             +update()
-            +processSystem()
+        }
+</pre>
+
+<pre class="mermaid">
+    ---
+    title: Render Relative Graph
+    ---
+    classDiagram
+        class SceneRoot {
+            +systems ECSSystems
+            +ecs: SceneECS
+            +mainScene: GenericSceneObject
+        }
+        note for Interactors "这是交互的核心"
+        class Interactors {
+            +systems ECSSystems
+            +ecs: InteractorsECS
+        }
+        class CameraDelegate {
+            +Camera camera // 委托给RenderCycle的delegate中
+            +startRenderLoop() // 监听camera的变化
+        }
+</pre>
+
+<pre class="mermaid">
+    ---
+    title: Render Relative Graph
+    ---
+    classDiagram
+        class ECSSystems {
+            +SystemGroup systems
+            +byMask() // 调用这个返回SystemGroup
+        }
+        class SystemGroup {
+            +update() // 外部调用这个处理
+            +processSystem() // 对每个system进行处理
+            +parseSchema(scheme) // 一个递归scheme结构,更新时由state进行更新
+        }
+</pre>
+
+<pre class="mermaid">
+    ---
+    title: Render Relative Graph
+    ---
+    classDiagram
+        ECS <|-- SceneECS
+        ECS <|-- InteractorsECS
+        class ECS {            
+        }
+        class SceneECS {
+        }
+        class InteractorsECS {
+        }        
+</pre>
+
+<pre class="mermaid">
+    ---
+    title: Render Relative Graph
+    ---
+    classDiagram
+        class A {            
         }
 </pre>

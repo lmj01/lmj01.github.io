@@ -133,3 +133,4 @@
 - [在线收集的电子读物](http://www.labbookpages.co.uk/index.html)
 - [DK百科全书(560本)英文版高清无水印](https://pan.quark.cn/s/2ac6971d868c#/list/share)
 - [麻省理工学院辐射实验室系列](https://www.febo.com/pages/docs/RadLab/)
+- [ISBN可视化，全球的书籍](https://phiresky.github.io/isbn-visualization/?)

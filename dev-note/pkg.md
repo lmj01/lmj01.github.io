@@ -34,12 +34,17 @@ set(VCPKG_PLATFORM_TOOLSET v140)
 
 [文档](https://vfox.lhan.me/)
 
-- 绑定到shell中
-- vfox availabel 查看插件
-- vfox search java 查看所有版本
-- vfox list java 列出当前安装的版本
-- vfox current java 显示当前版本
-- vfox use sdkName@version 使用当前版本
-    - vfox use -g --global 全局
-    - vfox use -p --project 当前目录下
-    - vfox use -s --session 当前shell
+```shell
+# 绑定到shell中
+echo 'eval "$(vfox activate bash)"' >> ~/.bashrc
+source ~/.bashrc 如果当前终端没有起作用，执行一次，因为可能不是全局安装的
+#
+vfox availabel 查看插件
+vfox search java 查看所有版本
+vfox list java 列出当前安装的版本
+vfox current java 显示当前版本
+vfox use sdkName@version 使用当前版本
+vfox use -g --global 全局
+vfox use -p --project 当前目录下
+vfox use -s --session 当前shell
+```

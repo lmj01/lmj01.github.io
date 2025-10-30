@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Depth to View</title>
-<script src="./html.config.js" defer></script>
-</script>
+    <title>Depth to View</title>
+    <script src="./html.config.js" defer></script>
+    </script>
 </head>
+
 <body>
     <div class="container-xl">
         <h1>个人信息</h1>
@@ -12,6 +14,7 @@
             <ol>
                 <li><a href="#section1">生日</a></li>
                 <li><a href="#section2">生理</a></li>
+                <li><a href="#section3">吃药</a></li>
             </ol>
         </div>
         <div>
@@ -28,8 +31,8 @@
                 </div>
                 <div id="divOtherBirth">
                     <label>他人生日<input id="inputOtherBirth" type="text" placeholder="请输入年-月-日格式"></label>
-                    <label>输入生日是阳历否<input id="checkboxOtherBirth" type="checkbox" checked ></label>
-                    <label>下一个是否按农历<input id="checkboxOtherBirthType" type="checkbox" checked ></label>
+                    <label>输入生日是阳历否<input id="checkboxOtherBirth" type="checkbox" checked></label>
+                    <label>下一个是否按农历<input id="checkboxOtherBirthType" type="checkbox" checked></label>
                     <div id="divOtherInfo"></div>
                 </div>
             </div>
@@ -37,7 +40,17 @@
         <div>
             <h4 id="section2 my-3">生理</h4>
             <div>
-                
+
+            </div>
+        </div>
+        <div>
+            <h4 id="section3 my-3">吃药</h4>
+            <div>
+                <p>老婆吃药的记录</p>
+                <textarea class="w-100" disabled>
+                    记录于2025-10-30
+                    感冒之后一直咳嗽可以吃:苏黄止咳胶囊（怀孕不能吃）+咽立爽口含滴丸+雾化（布地奈德）；雾化作用挺好的，直接作用于咽喉处。
+                </textarea>
             </div>
         </div>
         <script type="module">
@@ -47,16 +60,16 @@
             const div20220828 = document.getElementById('div20220828');
             const div19870903 = document.getElementById('div19870903');
             const birthDarling = new Date(document.getElementById('input19960124').value);
-            const birthSon = new Date(document.getElementById('input20220828').value);            
-            const birthSelf = new Date(document.getElementById('input19870903').value);            
+            const birthSon = new Date(document.getElementById('input20220828').value);
+            const birthSelf = new Date(document.getElementById('input19870903').value);
             const today = new Date();
-            
+
             /**
              * date: 出生日期，
              * inDateIsSolar: 输入的出生日期是阳历否 true:阳历 false:农历
              * nextBirthShowLunar: 下个生日显示 true:农历 false:阳历
              */
-            function computeTimeDate(el, date, inDateIsSolar = true,  nextBirthShowLunar = true) {
+            function computeTimeDate(el, date, inDateIsSolar = true, nextBirthShowLunar = true) {
                 if (['divOtherInfo'].includes(el.id)) {
                     el.replaceChildren();
                 }
@@ -65,13 +78,13 @@
                 const lunarCalendar = solarToLunar(inBirthYear, inBirthMonth, inBirthDay);
                 const solarCalendar = lunarToSolar(inBirthYear, inBirthMonth, inBirthDay);
                 const thisYearSolar = lunarToSolar(today.getFullYear(), inBirthMonth, inBirthDay);
-        
+
                 // 算对立的出生日期
                 let anotherBirthday = '', date2, thisYearBirthdayPassed = false;
                 if (inDateIsSolar) {
                     date2 = new Date(inBirthYear, inBirthMonth, inBirthDay);
                     // 给出阳历，算农历
-                    anotherBirthday = `农历${toChinaMonth(lunarCalendar.lunarM, lunarCalendar.isLeap)}${toChinaDay(lunarCalendar.lunarD)}`;                    
+                    anotherBirthday = `农历${toChinaMonth(lunarCalendar.lunarM, lunarCalendar.isLeap)}${toChinaDay(lunarCalendar.lunarD)}`;
                 } else {
                     anotherBirthday = `阳历${solarCalendar.month}月${solarCalendar.day}日`;
                     date2 = new Date(inBirthYear, solarCalendar.month, solarCalendar.day);
@@ -81,14 +94,14 @@
                 let p2 = document.createElement('p');
                 p2.classList.add('ms-3');
                 const totalYear = timeYear.count(date, today);
-                const totalMonth = timeMonth.count(date, today);                
+                const totalMonth = timeMonth.count(date, today);
                 p.innerText = `出生于${anotherBirthday}、虚岁${totalYear}年${totalMonth - 12 * totalYear}月、成长天数为${timeDay.count(date2, today)}`;
                 el.appendChild(p);
                 p = p.cloneNode(true);
                 if (nextBirthShowLunar) {
                     // 下个农历生日
-                    const todayLunar = solarToLunar(today.getFullYear(), today.getMonth()+1, today.getDate());
-                    const thisYearMonths = lunarMonthDays(todayLunar.lunarY);      
+                    const todayLunar = solarToLunar(today.getFullYear(), today.getMonth() + 1, today.getDate());
+                    const thisYearMonths = lunarMonthDays(todayLunar.lunarY);
                     const dayList = [];
                     if (inDateIsSolar) {
                         if (todayLunar.lunarM == inBirthMonth && todayLunar.lunarD == inBirthDay) {
@@ -100,38 +113,64 @@
                         }
                     }
 
-                    if (todayLunar.lunarM < lunarCalendar.lunarM || 
-                        (todayLunar.lunarM == lunarCalendar.lunarM && todayLunar.lunarD < lunarCalendar.lunarD)) {
-                        for (let m = todayLunar.lunarM - 1; m < lunarCalendar.lunarM - 1; m++) {
-                            if (m + 1 == leapMonth(todayLunar.lunarY)) {
-                                // 闰月
-                                if (todayLunar.isLeap) {
-                                    // 今年是闰月，跳过
-                                } else {
+                    if (inDateIsSolar && (todayLunar.lunarM < lunarCalendar.lunarM || (todayLunar.lunarM == lunarCalendar.lunarM && todayLunar.lunarD < lunarCalendar.lunarD)) ||
+                        !inDateIsSolar && (todayLunar.lunarM < inBirthMonth || (todayLunar.lunarM == inBirthMonth && todayLunar.lunarD < inBirthDay))) {
+                        // 今年还没过生
+                        if (inDateIsSolar) {                            
+                            if (todayLunar.lunarM == lunarCalendar.lunarM) {
+                                // 本月过生的
+                                dayList.push(lunarCalendar.lunarD - todayLunar.lunarD);
+                            } else {
+                                // 这个月还有的天数
+                                dayList.push(thisYearMonths[todayLunar.lunarM] - todayLunar.lunarD);
+                                let m = todayLunar.lunarM + 1; // 下个月到过生的前一个月
+                                for (; m < lunarCalendar.lunarM; m++) {
                                     dayList.push(thisYearMonths[m]);
                                 }
+                                dayList.push(lunarCalendar.lunarD);
+                            }
+                        } else {
+                            if (todayLunar.lunarM == inBirthMonth) {
+                                // 本月过生的
+                                dayList.push(inBirthDay - todayLunar.lunarD);
                             } else {
-                                dayList.push(thisYearMonths[m]);
+                                // 这个月还有的天数
+                                dayList.push(thisYearMonths[todayLunar.lunarM] - todayLunar.lunarD);
+                                let m = todayLunar.lunarM + 1; // 下个月到过生的前一个月
+                                for (; m < inBirthMonth; m++) {
+                                    dayList.push(thisYearMonths[m]);
+                                }
+                                dayList.push(inBirthDay);
                             }
                         }
-                        // 今年还没过生
                     } else {
-                        // 今年已经过了生日
-                        thisYearMonths.forEach((days,i)=>{
-                            if (i == leapMonth(todayLunar.lunarY) + 1) {
-                                // 闰月
-                                if (todayLunar.isLeap) {
-                                    // 今年是闰月，跳过
-                                } else {
-                                    dayList.push(days);
-                                }
-                            } else {
-                                dayList.push(days);
+                        // 今年已过生
+                        const nextYearMonths = lunarMonthDays(todayLunar.lunarY + 1);
+                        if (inDateIsSolar) {
+                            dayList.push(thisYearMonths[todayLunar.lunarM] - todayLunar.lunarD);
+                            let m = todayLunar.lunarM + 1;
+                            for (; m < thisYearMonths.length; m++) {
+                                dayList.push(thisYearMonths[m]);
                             }
-                        })
+                            for (let n = 0; n < lunarCalendar.lunarM; n++) {
+                                dayList.push(nextYearMonths[n]);
+                            }
+                            dayList.push(lunarCalendar.lunarD);
+                        } else {
+                            dayList.push(thisYearMonths[todayLunar.lunarM] - todayLunar.lunarD);
+                            let m = todayLunar.lunarM + 1;
+                            for (; m < thisYearMonths.length; m++) {
+                                dayList.push(thisYearMonths[m]);
+                            }
+                            for (let n = 0; n < inBirthMonth; n++) {
+                                dayList.push(nextYearMonths[n]);
+                            }
+                            dayList.push(inBirthDay);
+                        }
+                        // console.log(nextYearMonths, lunarCalendar)
                     }
-                    console.log('还差农历的天数', dayList);
-                    p.innerText = `下个农历生日还有${dayList.reduce((p,c)=>p+c, 0) - 1}天到来`;
+                    // console.log('还差农历的天数', dayList);
+                    p.innerText = `下个农历生日还有${dayList.reduce((p, c) => p + c, 0) - 1}天到来`;
                 } else {
                     const nextBirthDay = new Date(today.getFullYear() + 1, inBirthMonth - 1, inBirthDay);
                     if (inDateIsSolar) {
@@ -152,26 +191,27 @@
             }
             computeTimeDate(div20220828, birthSon, true, false);
             computeTimeDate(div19960124, birthDarling, true, true);
-            computeTimeDate(div19870903, birthSelf, false, true);            
+            computeTimeDate(div19870903, birthSelf, false, true);
             let ud = {
                 otherBirth: '',
             }
-            document.getElementById('inputOtherBirth').addEventListener('change', (event)=>{
+            document.getElementById('inputOtherBirth').addEventListener('change', (event) => {
                 ud.otherBirth = event.target.value;
                 updateOtherBirth();
             })
-            document.getElementById('checkboxOtherBirth').addEventListener('change', (event)=>{
+            document.getElementById('checkboxOtherBirth').addEventListener('change', (event) => {
                 updateOtherBirth();
             });
-            document.getElementById('checkboxOtherBirthType').addEventListener('change', (event)=>{
+            document.getElementById('checkboxOtherBirthType').addEventListener('change', (event) => {
                 updateOtherBirth();
             });
             function updateOtherBirth() {
-                computeTimeDate(divOtherInfo, new Date(ud.otherBirth), 
-                    document.getElementById('checkboxOtherBirth').checked, 
+                computeTimeDate(divOtherInfo, new Date(ud.otherBirth),
+                    document.getElementById('checkboxOtherBirth').checked,
                     document.getElementById('checkboxOtherBirthType').checked);
             }
         </script>
     </div>
 </body>
+
 </html>
