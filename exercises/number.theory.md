@@ -11,6 +11,13 @@
 
 ## 模运算
 
+模运算在高斯的《算术研究Disquisitiones Arithmeticae》中有一个主题就是有限算术的想法。
+
+当你使用一个周期性循环并重新开始的计算系统时，你就会得到有限算术。
+时钟算术clock arithmetic就是一种,现在数学家称为模运算modular arithmetic。
+
+- 同余congruence
+
 $$
 \text{基本性质,如果}a \equiv b \mod m \text{且有} c \equiv d \mod m \text{,，那下面的模运算律成立： } \newline
 a + c \equiv b + d \mod m \newline
@@ -19,6 +26,8 @@ a \times c \equiv b \times d \mod m \newline
 $$
 
 对一个数进行取模，那么模了再加、减、乘都是不影响答案的，**特别注意没有除法**
+
+当模数n是质数时，对应的模算数具有使用在有理数或实数上时寻常算术的一切熟悉性质，以数学家的语言来说，即一个体field。
 
 ### 费马小定理
 
