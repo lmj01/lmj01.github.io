@@ -4,6 +4,7 @@ linux启动服务可能有两种
 - SysV init 系统，如wsl中的
 - systemd, 如ubuntu
 
+- [菜鸟网址，快速查阅命令](https://www.runoob.com/)
 
 
 ## packages
@@ -54,45 +55,45 @@ sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认�
 
 ## cli
 
-- echo $XDG_CURRENT_DESKTOP 查看当前图形GUI
-- echo $SHELL 查看shell是bash，zsh等那个
-- find
-    - name
-    - user
-    - type
 ```shell
+echo $XDG_CURRENT_DESKTOP 查看当前图形GUI
+echo $SHELL 查看shell是bash，zsh等那个
 find . -name "*libc*"
-find . -file f -exec grep -Hniw "example" {} \; # 查询当前目录下的特定单词
+find . -type f -exec grep -Hniw "example" {} \; # 查询当前目录下的特定单词
 # grep
 # **grep -rn "xxx"**递归查找字符串xxx
 # **--exclude=*.{min.js}**排除文件类型
 # **-w,-word-regexp** 精准匹配
 # grep **^xxx** 匹配以xxx开头
 # grep -rno "xxx" 精确匹配内容，不显示多余的
+grep -r --exclude-dir={node_modules,.git} "目标字符串" ./ 
+grep -rn --include="*.js" "import React" ./
+grep -rn --exclude="*.tiff" --exclude-dir="node_modules,.git" "import React" ./
+find ./ -type f -name "*.js" -print0 | xargs -0 grep -n "import React"
 nohup ./execute.sh & # & 后台运行 nohup 不受终端关闭影响
+
+# compress
+xz -d xxx.tar.xz and tar xvf xxx.tar分两步解压 
+tar xvf xxx.tar -C /path 确保指定目录/path已存在
+gunzip xxx.tar.gz and tar xvf xxx.tar
+ln -s src/bin/exe dst/bin/exe创建软连接
+
+# pacman包管理
+pacman -Sl | grep XXX 查询
+pacman -S XXX
+
+# service
+sudo service --status-all 查看服务列表
+
+# curl
+1. GET请求， curl http://127.0.0.1:8080/login?admin&passwd=12345678
+2. POST请求 curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login
+3. curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
+
+# network
+netstat -anp | grep 53
 ```
 
-- compress
-    - xz -d xxx.tar.xz and tar xvf xxx.tar分两步解压 
-    - tar xvf xxx.tar -C /path 确保指定目录/path已存在
-    - gunzip xxx.tar.gz and tar xvf xxx.tar
-- ln -s src/bin/exe dst/bin/exe创建软连接
-
-- pacman包管理
-    - pacman -Sl | grep XXX 查询
-    - pacman -S XXX
-
-- service
-    - sudo service --status-all 查看服务列表
-
-- curl
-    1. GET请求， curl http://127.0.0.1:8080/login?admin&passwd=12345678
-    2. POST请求 curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login
-    3. curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
-
-    - 
-- network
-    - netstat -anp | grep 53
 
 ## 环境搭建
 

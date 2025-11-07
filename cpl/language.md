@@ -1,5 +1,8 @@
 # 编程语言
 
+- [多态](/cpl/polymorphism.md)
+- [Interface 接口](/cpl/Interfaces.md)
+- [JavaScript](/cpl/JavaScript.md)
 - [位运算](/cpl/tools/bit.md)
 - [浮点数与定点数](/cpl/tools/number.md)
 
@@ -18,31 +21,6 @@
 *r = 0x27 
 ```
 就是一条赋值语句，在硬件层面就是给某几个引脚上电，产生高低电平，翻译成机器码01
-
-## 术语
-
-### 引用
-null reference与Maybe语义
-查尔斯·霍尔Charles A.R. Hoare,Quicksort算法提出者，1980图灵奖获得者在1965年发明了空引用。
-2015年后主流的编程语言都引入Maybe概念取代null来获得更安全的方法。
-
-### 浅拷贝和深拷贝
-是对基本数据类型primitive data type和复合数据类型的区别，内置的数据类型可以很容易copy，但是
-复合数据的不确定性，对编译期来说不明确，就需要程序员根据规则自己来提供至基本数据类型这一级别的
-逻辑。
-
-### 所有权
-rust语言的安全，就是通过所有权的确定来保证在运行期不会出现意外。
-
-### MSL(Memory-safe Language)
-内存安全语言，随着rust的普及，这种编程语言特性越来越重要了，2024-3月美国白宫周报提醒放弃使用不具备MSL的编程语言进行编程。
-- [C++ safety, in context译C++ 可靠性的背景](https://herbsutter.com/2024/03/11/safety-in-context/)
-
-### Composable
-> 可组合的，强调函数，是大型软件和云开发的一些概念基础
-
-- [A build system for development of composable software.JS版的可组合的管理开发](https://github.com/teambit/bit)
-- [Android Jetpacketpack 是一个由多个库组成的套件，可帮助开发者遵循最佳做法、减少样板代码并编写可在各种 Android 版本和设备中一致运行的代码，让开发者可将精力集中于真正重要的编码工作](https://developer.android.google.cn/jetpack?hl=zh-cn)
 
 ## 工具
 
@@ -75,3 +53,48 @@ trivial getters/setters 并没有使接口更安全，只是把对于数据的�
 
 - [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
 - [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
+- [crafting interpreters创建一个解释器](http://craftinginterpreters.com/contents.html)
+
+### 相关文章
+
+- [Rust for JavaScript Developers - Functions and Control Flow](http://www.sheshbabu.com/posts/rust-for-javascript-developers-functions-and-control-flow/)
+
+## 术语
+
+[Kyle Simpson](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch1.md/#chapter-1-why-functional-programming)
+> Declarative声明式 code is code that's more focused on describing the "what" outcome. Imperative命令式 code(the opposite) is focused on precisely instructing the computer "how" to do something.
+
+
+C++与C语言的关系还存在一个类似的，就是typescript与ECMAScript的关系，而C与ECMAScript的地位就决定C++与typescript不会失势了。
+
+### 引用
+null reference与Maybe语义
+查尔斯·霍尔Charles A.R. Hoare,Quicksort算法提出者，1980图灵奖获得者在1965年发明了空引用。
+2015年后主流的编程语言都引入Maybe概念取代null来获得更安全的方法。
+
+### 浅拷贝和深拷贝
+是对基本数据类型primitive data type和复合数据类型的区别，内置的数据类型可以很容易copy，但是
+复合数据的不确定性，对编译期来说不明确，就需要程序员根据规则自己来提供至基本数据类型这一级别的
+逻辑。
+
+### 所有权
+rust语言的安全，就是通过所有权的确定来保证在运行期不会出现意外。
+
+### MSL(Memory-safe Language)
+内存安全语言，随着rust的普及，这种编程语言特性越来越重要了，2024-3月美国白宫周报提醒放弃使用不具备MSL的编程语言进行编程。
+- [C++ safety, in context译C++ 可靠性的背景](https://herbsutter.com/2024/03/11/safety-in-context/)
+
+### Composable
+> 可组合的，强调函数，是大型软件和云开发的一些概念基础
+
+- [A build system for development of composable software.JS版的可组合的管理开发](https://github.com/teambit/bit)
+- [Android Jetpacketpack 是一个由多个库组成的套件，可帮助开发者遵循最佳做法、减少样板代码并编写可在各种 Android 版本和设备中一致运行的代码，让开发者可将精力集中于真正重要的编码工作](https://developer.android.google.cn/jetpack?hl=zh-cn)
+
+### 相关文章
+
+- [The Fatal Flaw of Ownership Semantics](https://www.gingerbill.org/article/2020/06/21/the-ownership-semantics-flaw/)
+
+- [Language Independent Validation Rules](https://livr-spec.org/)
+- [The Principles of Functional Programming](https://www.freecodecamp.org/news/the-principles-of-functional-programming/)
+- [How Computers Speak: Assembly to AST](https://unicorn-utterances.com/posts/how-computers-speak/)
+- [Abstract Machines: Interpreters for Computer](https://drs.is/post/abstract-machines/)

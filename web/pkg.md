@@ -15,6 +15,7 @@ node -p // node REPL 交互环境
 [npm-config](https://docs.npmjs.com/cli/v10/commands/npm-config)
 
 ```shell
+npm create vite@latest # 创建工程
 npm init // 初始化工程
 npm install XXX 安装但不写入package.json
 npm install XXX --save 安装且写入package.json中的dependencies

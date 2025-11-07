@@ -12,22 +12,24 @@
 <details>
 <summary>顶点切线的数学推理</summary>
 
-我们期待的tangent-space是对齐纹理坐标系的，x-axis与u和y-axis与v方向都一致
+期待的tangent-space是对齐纹理坐标系的，xAxis与u、和yAxis与v方向都一致，下面来推导一下
+
 $$
 \text{如果Q表示三角形内的一点,则有式子} \newline Q - P_{0} = (u - u_{0})T + (v - v_{0})B, \newline P_{0}\text{是三角面片的一个顶点，}(u_{0},v_{0})\text{是该点的纹理坐标，向量T(tangent)和向量B(bitangent)是对齐纹理坐标的，这就是我们需要计算的。} \newline
-\text{假设三角形的三个顶点分别是}P_{0},P_{1},P_{2},\text{纹理坐标分别是}(u_{0},v_{0}),(u_{1},v_{1}),(u_{2},v_{2}), \text{算他们的向量有} \newline
-\begin{array}{c}
+\newline \text{下面是推导过程:} \newline
+\text{假设三角形的三个顶点分别是}P_{0},P_{1},P_{2},\text{纹理坐标分别是}(u_{0},v_{0}),(u_{1},v_{1}),(u_{2},v_{2}), \text{可以有如下向量} \newline
+\begin{array}{l}
     Q_{1} = P_{1} - P_{0} \newline
     Q_{2} = P_{2} - P_{0} \newline
     (s_{1},t_{1}) = (u_{1} - u_{0}, v_{1} - v_{0}) \newline
     (s_{2},t_{2}) = (u_{2} - u_{0}, v_{2} - v_{0}) \newline
 \end{array} \newline
-\text{其需要求解的方程就是}
-\begin{array}{c}
+\text{其需要求解的方程就是} \newline
+\begin{array}{l}
     Q_{1} = s_{1}T + t_{1}B \newline
     Q_{2} = s_{2}T + t_{2}B \newline
 \end{array} \newline
-\text{其矩阵形式是}
+\text{其矩阵形式是} \newline
 \begin{bmatrix}
    (Q_{1})_{x} & (Q_{1})_{y} & (Q_{1})_{z} \newline
    (Q_{2})_{x} & (Q_{2})_{y} & (Q_{2})_{z}
@@ -62,7 +64,7 @@ $$
 \text{但是我们想要从局部空间到切线空间，计算光照时需要的光的方向light direction。} \newline
 \text{上面这个矩阵的逆不一定是其转置，因为切线向量彼此垂直或垂直于法线向量。} \newline 
 \text{此时我们可以安全地假设这三个向量至少接近正交，使用Gram-Schmidt算法去正交化它们不应该会引起任何不可接受的失真。新的切线向量如下} \newline
-\begin{array}{c}
+\begin{array}{l}
     T^{\prime} = T - (N \cdot T)N \newline
     B^{\prime} = B - (N \cdot B)N - \frac{(T^{\prime} \cdot B)T^{\prime}}{(T^{\prime})^2} \newline
 \end{array} \newline

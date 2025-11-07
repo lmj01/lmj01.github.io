@@ -3,6 +3,9 @@
 # set-executionpolicy remotesigned 设置
 # set-executionpolicy Undefine 删除
 
+# 转义符 ` 
+
+
 function Search-Files {
     param(
         [string]$Path,
@@ -66,9 +69,9 @@ echo "mydentalX"
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
 echo "rival"
-Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "e65658i"
+Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "m67617o"
 # Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "mousemove"
-# Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "occlusionMode"
+# Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "eSide"
 
 $path4 = "F:\platform\sfebackend"
 echo "sfebackend"
