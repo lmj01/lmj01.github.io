@@ -9,7 +9,6 @@
 - [shader](/cg/threejs/shader.md)
 - [material材质](/cg/threejs/material.md)
 - [灯光](/cg/lighting/light.md)
-- [数学相关](/cg/threejs/math.md)
 - [灯光](/cg/tools/camera.md)
 
 ## [three playcode playground](https://playcode.io/)

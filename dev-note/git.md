@@ -223,6 +223,22 @@ git remote add origin git@github.com:Username/Repositories_Name.git # 现在这�
 
 ssh-keygen -p -f ~/.ssh/id_ed25519 修改密码 可设置为空
 
+ssh-keygen -t ed25519 -C "your@email.com" -f ~/.ssh/id_account1
+# 通过配置文件来使用多个账号
+vim ~/.ssh/config
+--------------------------------
+Host github-account1 // 自定义别名
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_account1
+Host github-account2 // 自定义别名
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_account2
+--------------------------------
+ssh -T git@github-account1
+git remote set-url origin git@github-account1:account/repo.git
+
 # gitee 
 在Linux中执行ssh-keygen -t rsa -C "lmjie_good@163.com"执行后，直接回车三次
 known_hosts 在~/.ssh/known_hosts文件中存在git的public key

@@ -27,6 +27,7 @@ $R_{AB}=R_{B}R_{A}$ ，表示先旋转A，再旋转B
 
 $R_{BA}=R_{A}R_{B}$，表示先旋转B，再旋转A
 
+### threejs
 ```javascript
 // Vector3
 // v_p dot v_mv_i dot position
@@ -52,6 +53,11 @@ updateMatrix() { // 更新矩阵，由当前的位置，朝向，缩放重新构
 // 乘以矩阵时
 // 当外部数据elementsArray是传入的时行主序时， 需要转置，以保持内部的列存储逻辑
 const mat = new Matrix4().fromArray(elementsArray).transpose() 
+
+// 更新矩阵时，这样更新
+matrix.decompose(mesh.position, mesh.quaternion, mesh.scale);
+mesh.updateMatrix(); // matrix.compose(this.position, this.quaternion, this.scale);
+mesh.updateWorldMatrix(true);
 ```
 
 $M_{l}M_{w}=$

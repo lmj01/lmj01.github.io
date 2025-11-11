@@ -1,5 +1,4 @@
 # Browser
-> 浏览器
 
 浏览器的两大核心是
 - 渲染引擎，即内核，负责对网页语法的解释并渲染成网页内容、排版等
@@ -71,6 +70,8 @@ document.yourFormName.reset();
 
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/open)
 
+- 
+
 ### waterfall
 在console的Network中，waterfall可以直观来分析web页面加载的体验
 1. 减少资源加载时间，瀑布图的宽度越窄越快
@@ -84,6 +85,9 @@ document.yourFormName.reset();
 Online可以设置网速
 
 ![network throttling](./images/chrome-network-throttling.png)
+
+chrome自带了har保存和导入功能，这个非常有用的是可以用来分析代码，比如逆向浏览器的实现功能非常有用的。
+当然用来调试自己的代码逻辑也是非常有用的。
 
 ### CEF
 

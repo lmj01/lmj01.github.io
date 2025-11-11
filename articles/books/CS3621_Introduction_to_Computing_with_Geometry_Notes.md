@@ -124,3 +124,4 @@ A surface is a 2-manifold if and only if for each point x on the surface there e
 
 曲面surface是2维流形2-manifold, 流形是manifold是数学中描述“局部像欧几里得空间”的几何对象，2维流形就是“局部像平面（2维欧几里得空间）”的几何对象，曲面是最典型的2流形例子。
 
+#### The Winged-Edge Data Structure

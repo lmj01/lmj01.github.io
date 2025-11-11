@@ -1,6 +1,8 @@
 # [markdown](https://commonmark.org/)
 
-[中文文档](https://markdown.com.cn/)
+- [用中文读科技新闻](https://zeli.app/zh)
+- [Hacker News New](https://news.ycombinator.com/)
+- [markdown中文文档](https://markdown.com.cn/)
 
 markdown渲染成HTML的插件
 
