@@ -146,6 +146,8 @@ source /etc/profile
 ## 网络
 ```shell
 sudo apt install net-tools
+sudo service network-manager restart 
+sudo systemd-resolved --flush-cache 刷新DNS缓存
 ```
 ### 静态地址
 ```shell
