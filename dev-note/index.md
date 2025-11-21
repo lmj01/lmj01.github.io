@@ -12,6 +12,7 @@
 - [包管理 -- vcPkg, vfox](/dev-note/pkg.md)
 - [maven](/dev-note/maven.md)
 - [docker](/dev-note/docker.md)
+- [自动化部署](/dev-note/deploy.md)
 
 - [硬件配置](/dev-note/hardware.md)
 
@@ -28,9 +29,9 @@
 - [gl-matrix](https://glmatrix.net/docs/index.html)
 - [threejs](https://threejs.org/)
 - [vtk.js](https://kitware.github.io/vtk-js/)
-
 - [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-    - [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
+- [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
+- [java api](https://www.oracle.com/cn/java/technologies/java-se-api-doc.html)
 
 ## 其他资源
 
@@ -39,6 +40,7 @@
 - [远程终端工具Mosh is a remote terminal application that supports intermittent connectivity, allows roaming, and provides speculative local echo and line editing of user keystrokes.](https://github.com/mobile-shell/mosh)
 - [Ali OSS SDK](https://help.aliyun.com/zh/oss/)
 - [S3 SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/)
+- [S3 控制台](https://243898521477.signin.aws.amazon.com/console)
 
 ### 工具
 - [在线matplotlib，可以让AI可视化写代码用它展示](https://matplotlib.online/)

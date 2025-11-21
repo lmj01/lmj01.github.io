@@ -3,18 +3,9 @@
 - [用中文读科技新闻](https://zeli.app/zh)
 - [Hacker News New](https://news.ycombinator.com/)
 - [markdown中文文档](https://markdown.com.cn/)
-
-markdown渲染成HTML的插件
-
-如果不方便表示的，可以直接使用HTML5的标签来表示内容
-
-```js
-function func(a, b) {
-    return a + b
-}
-```
-
 - [mermaid](/articles/mermaid.md)
+
+markdown渲染成HTML的插件, 如果不方便表示的，可以直接使用HTML5的标签来表示内容
 
 [What's In A Class?] [1]
 
@@ -47,6 +38,9 @@ function func(a, b) {
 
 </details>
 
+<details>
+<summary>table</summary>
+
 ## table
 
 - **table one**
@@ -77,6 +71,7 @@ function func(a, b) {
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
 
+</details>
 
 <details>
 <summary>katex</summary>
@@ -253,6 +248,7 @@ $$
 - [marked github](https://github.com/markedjs/marked)
 - [demo可下载发布后的文件](https://marked.js.org/demo/)
 - [marked插件 github](https://github.com/bent10/marked-extensions)
+- [assiimath 公式更简洁些，支持firefox和Safari](https://asciimath.org/)
 
  公共引用区域, 如果:只有右边一个空格，可以隐藏，两边都有空格，显示，但是引用就不调整。
 

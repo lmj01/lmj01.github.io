@@ -43,6 +43,7 @@
 - [Bjarne StroustrupC++之父的网站](https://www.stroustrup.com/)
 - [ ISO C++ 标准委员会主席, 已经订阅其博客working at the intersection of programming language design/UX, people, and high performance code.](https://herbsutter.com/)
 - [Ramsay个人博客](https://ramsayleung.github.io/zh/)
+- [Moment in Graphics A blog by Christoph Peters](https://momentsingraphics.de/index.html)
 
 ### 图形学
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)

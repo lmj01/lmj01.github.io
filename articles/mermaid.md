@@ -24,3 +24,22 @@ A --> C[End]
   C
   end
 </pre>
+
+<pre class="mermaid">
+sequenceDiagram
+    autonumber
+    actor User
+    participant Browser
+    participant VueApp as Vue App (Wrapper)
+    participant BApp as BApp (Root)
+    participant App as App (Content)
+
+    User->>Browser: Load page
+    Browser->>VueApp: Create and mount Wrapper
+    VueApp->>BApp: Render BApp as root
+    BApp->>App: Render App in default slot
+    App-->>BApp: Provide content (BContainer/BRow/BCol)
+    BApp-->>VueApp: Composed root hierarchy ready
+    VueApp-->>Browser: Mounted application
+</pre>
+

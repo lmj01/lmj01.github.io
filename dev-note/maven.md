@@ -1,4 +1,4 @@
-# [Maven](https://maven.apache.org/)
+# [Maven](https://maven.apache.org/index.html)
 
 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information. 
 
@@ -33,6 +33,38 @@ Spring Boot 通过 Spring Boot Maven Plugin 在 Apache Maven 中提供了对 Spr
 
 - java -jar target/spring-boot-artifacts-2.jar 
 - java -jar target/orth.war
+
+### archetype:generate
+
+```shell
+# 创建工程
+# groupId: com.meijie
+# artifactId: meijie-tool
+# package: com.meijie.tool
+# mvn archetype:generate
+```
+maven 创建的工程，需要设置mainClass，否则会报错：target/meijie-tool-1.0-SNAPSHOT.jar中没有主清单属性
+是因为 META-INF/MANIFEST.MF中缺少这句话 Main-Class: com.meijie.tool.App
+在pom.xml中设置
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.3.0</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.meijie.MainApplication</mainClass> 
+                        <!-- 替换为你的主类全限定名 -->
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
 
 ## 配置
 

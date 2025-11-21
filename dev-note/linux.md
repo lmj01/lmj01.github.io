@@ -1,8 +1,11 @@
 # Linux
 
 linux启动服务可能有两种
-- SysV init 系统，如wsl中的
-- systemd, 如ubuntu
+
+| 对比| SysV init          | systemd   |
+|--|--------------|---------|
+| 服务 | service nginx start | systemctl start nginx  systemctl enable nginx |
+| 状态 | CentOS6及更早| CentOS7+ Ubuntu16.04+  |
 
 - [菜鸟网址，快速查阅命令](https://www.runoob.com/)
 
@@ -51,6 +54,11 @@ sudo apt --purge autoremove
 sudo apt install update-manager-core
 sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认相关操作了
 ```
+
+### 更新问题
+
+#### ssh
+更新后无法使用
 
 
 ## cli

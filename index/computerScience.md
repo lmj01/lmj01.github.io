@@ -34,6 +34,7 @@
 - [hash](/cpl/data.structure/hash.md)
 - [LRU](/cpl/data.structure/LRU.md)
 - [树形结构](/cpl/data.structure/Tree.md)
+- [Dijkstra 算法](https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/README.zh-CN.md)
 
 ## ComputerGraphics
 

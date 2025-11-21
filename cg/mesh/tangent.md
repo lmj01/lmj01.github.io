@@ -138,6 +138,7 @@ MikkTSpace生成tangent space即使改变了点索引，面的顺序，删除pri
 
 ### 参考
 
+- [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
 - [A Practical and Robust Bump-mapping Technique for Today’s GPUs](https://my.eng.utah.edu/~cs5610/handouts/bumpmap.pdf)
 
 ### 感受

@@ -84,3 +84,8 @@ extern "C" {
 
 - [What every coder should know about gamma](/articles/2025/what_every_coder_should_know_about_gamma.md)
 - [Radiometry: Overview辐射度量，有推导公式](https://momentsingraphics.de/RadiometryOverview.html)
+
+### 文章
+
+- [Coding "This is Us"](https://gboisse.github.io/posts/this-is-us/#)
+- [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
