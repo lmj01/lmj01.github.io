@@ -229,6 +229,7 @@ vim ~/.ssh/config
 --------------------------------
 Host github-account1 // 自定义别名
     HostName github.com
+    Port 443  // 有时候22会被屏蔽掉，需要设置端口443 git@ssh.github.com
     User git
     IdentityFile ~/.ssh/id_account1
 Host github-account2 // 自定义别名

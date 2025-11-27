@@ -18,7 +18,7 @@
 - [meshlab](/cg/tools/meshlab.md)
 - [eigen](/cg/library/eigen.md)
 - [Gizmo](/cg/tools/gizmo.md)
-- [threejs使用记录](/cg/threejs/use.md)
+- [threejs](/cg/threejs/index.md)
 
 ## 工作中遇到的
 - [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)

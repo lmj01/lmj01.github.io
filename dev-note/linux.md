@@ -55,12 +55,6 @@ sudo apt install update-manager-core
 sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认相关操作了
 ```
 
-### 更新问题
-
-#### ssh
-更新后无法使用
-
-
 ## cli
 
 ```shell
@@ -104,6 +98,10 @@ netstat -anp | grep 53
 
 
 ## 环境搭建
+
+- password: lmjpassword 所有账户都是一个密码
+- 密码: meijie/root 所有root都是meijie， // 可能默认一个user作为root时就是meijie，入Ubuntu
+- user: mj/User 所有的用户都是mj // debain需要设置第二个用户，第一个用户不能直接使用
 
 env 或 printenv
 

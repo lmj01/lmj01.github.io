@@ -1,6 +1,7 @@
 # Threejs
 
 - [问题集](/cg/threejs/use.md)
+- [数学](/cg/threejs/math.md)
 - [乱记](/cg/threejs/threejs.md)
 - [RayCaster](/cg/threejs/raycaster.md)
 - [Shader-TLS](/cg/threejs/shader.md)
@@ -9,7 +10,7 @@
 - [shader](/cg/threejs/shader.md)
 - [material材质](/cg/threejs/material.md)
 - [灯光](/cg/lighting/light.md)
-- [灯光](/cg/tools/camera.md)
+- [相机](/cg/tools/camera.md)
 
 ## [three playcode playground](https://playcode.io/)
 邮箱meijie.lmj@outlook.com登录

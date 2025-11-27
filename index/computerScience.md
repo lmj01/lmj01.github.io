@@ -16,10 +16,11 @@
 - [Julia](https://julialang.org/)
 - [Elixir](https://elixir-lang.org/)
 - [Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.](https://ziglang.org/)
-
 - [core analyzer -- A power tool to understand memory layout](https://core-analyzer.sourceforge.net/index_files/Page525.html)
 - [Numerical Computation Guide](https://docs.oracle.com/cd/E19957-01/806-3568/ncgTOC.html)
-    - [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
+- [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
+- [Memory Management Reference内存管理的参考，很详细的文章](https://www.memorymanagement.org/index.html)
+- [Fifty Shades of OOP， 面向对象编程的五十重境界， 作者借用《五十度灰Fifty Shades of Grey》来说事](https://lesleylai.info/en/fifty_shades_of_oop/)
 
 ### Database
 
@@ -48,10 +49,10 @@
 - [Ambient Occlusion](../cg/lighting/ambient-occlusion.md)
 - [smallpt: Global Illumination in 99 lines of C++](http://www.kevinbeason.com/smallpt/)
 - [manifold,Manifold is a geometry library dedicated to creating and operating on manifold triangle meshes. A manifold mesh is a mesh that represents a solid object, and so is very important in manufacturing, CAD, structural analysis, etc. Further information can be found on the wiki.](https://github.com/elalish/manifold)
-    - [manifold-3d npm](https://www.npmjs.com/package/manifold-3d)
+- [manifold-3d npm](https://www.npmjs.com/package/manifold-3d)
 - [3D打印模型文件](https://www.thingiverse.com/)
 - [bezierjs ](https://pomax.github.io/bezierjs/)
-    - [github](https://github.com/Pomax/bezierjs)
+- [github](https://github.com/Pomax/bezierjs)
 
 ### 网格
 - [HalfEdge半边结构](/cg/tools/half-edge.md)
@@ -91,24 +92,24 @@
 - [3d model file](/cg/tools/modelFile.md)
 - [Effekseer特效编辑器](https://github.com/effekseer/Effekseer)
 - [Mitsuba渲染器](http://www.mitsuba-renderer.org/)
-    - [github](https://github.com/mitsuba-renderer/mitsuba3)
+- [github](https://github.com/mitsuba-renderer/mitsuba3)
 - [可视化3D旋转This is a tool to help convert an visualise 3D rotations](http://asliceofrendering.com/ConversionTool/)
-    - [github](https://github.com/BugzTroll/ConversionTool)
+- [github](https://github.com/BugzTroll/ConversionTool)
 - [粒子特效A simple program to simulate artificial life using attraction/reuplsion forces between many particles ](https://github.com/hunar4321/particle-life)
 - [Experimental 3D modeler 强大的几何处理能力 ](https://github.com/BrunoLevy/GraphiteThree)
 
 ### SVG
 > SVG编辑器
 - [Powerful SVG-Editor for your browser ](https://github.com/SVG-Edit/svgedit)
-    - fork的项目，更简单一些，取消了图层等功能
-    - [github Method Draw, the SVG Editor for Method of Action ](https://github.com/methodofaction/Method-Draw)
-    - [在线运行](https://editor.method.ac/)
+- fork的项目，更简单一些，取消了图层等功能
+- [github Method Draw, the SVG Editor for Method of Action ](https://github.com/methodofaction/Method-Draw)
+- [在线运行](https://editor.method.ac/)
 
 ### paper
 
 - [Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines](https://www.jcgt.org/published/0011/01/01/)
-    - [github](https://github.com/Paul180297/BezierLightLTC)
-    - [Real-Time Polygonal-Light Shading with Linearly Transformed Cosines](https://eheitzresearch.wordpress.com/415-2/)
+- [github](https://github.com/Paul180297/BezierLightLTC)
+- [Real-Time Polygonal-Light Shading with Linearly Transformed Cosines](https://eheitzresearch.wordpress.com/415-2/)
 
 
 ## 网络

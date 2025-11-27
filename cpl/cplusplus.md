@@ -1,8 +1,8 @@
 # Cplusplus
 
 - [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
-    - [The C++ Core Guidelines are a collaborative effort led by Bjarne Stroustrup, much like the C++ language itself. They are the result of many person-years of discussion and design across a number of organizations.](https://github.com/isocpp/CppCoreGuidelines)
-    - [The Guidelines Support Library (GSL) contains functions and types that are suggested for use by the C++ Core Guidelines maintained by the Standard C++ Foundation. This repo contains Microsoft's implementation of GSL.](https://github.com/Microsoft/GSL)
+- [The C++ Core Guidelines are a collaborative effort led by Bjarne Stroustrup, much like the C++ language itself. They are the result of many person-years of discussion and design across a number of organizations.](https://github.com/isocpp/CppCoreGuidelines)
+- [The Guidelines Support Library (GSL) contains functions and types that are suggested for use by the C++ Core Guidelines maintained by the Standard C++ Foundation. This repo contains Microsoft's implementation of GSL.](https://github.com/Microsoft/GSL)
 
 - [TMP -- Template Meta Programming](/cpl/cpp/tmp.md)
 - [CRTP -- Curiously Recurring Template Pattern](/cpl/cpp/crtp.md)
