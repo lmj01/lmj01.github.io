@@ -94,6 +94,7 @@ git log -p/--patch -n 5 最近5个提交
 ```shell
 git config --global user.name "lmj01"
 git config --global user.email "lmjie_good@163.com"
+git config --global core.editor "vim"
 git config --global color.ui auto 增强命令输出的可读性
 git config --global init.defaultBranch main // 更改默认分支git2.28支持
 git config --local user.name 
