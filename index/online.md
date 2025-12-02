@@ -17,8 +17,7 @@
     - [ Source repo for the book gameprogrammingpatterns.com ](https://github.com/munificent/game-programming-patterns)
     - [online-free](http://gameprogrammingpatterns.com/contents.html)
 
-- [Tunnelmole 是一个简单易用的隧道工具，不需要配置，只要一行命令，就让公网可以访问内网服务](https://tunnelmole.com/)
-    - npm或其他按照方式，执行tmole portNumber就可以生成一个链接拉
+- [Tunnelmole 是一个简单易用的隧道工具，不需要配置，只要一行命令，就让公网可以访问内网服务](https://tunnelmole.com/)拉
 
 ## Blogs
 
@@ -44,6 +43,11 @@
 - [ ISO C++ 标准委员会主席, 已经订阅其博客working at the intersection of programming language design/UX, people, and high performance code.](https://herbsutter.com/)
 - [Ramsay个人博客](https://ramsayleung.github.io/zh/)
 - [Moment in Graphics A blog by Christoph Peters](https://momentsingraphics.de/index.html)
+
+### 在线刊物
+- [月刊-HelloGithub](https://hellogithub.com/periodical)
+- [日刊-zeli App](https://zeli.app/zh)
+- [周刊-阮一峰日志](https://www.ruanyifeng.com/blog/)
 
 ### 图形学
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)
@@ -97,15 +101,3 @@
 - [Design Editor JS SDK Polotno for canvas | Polotno](https://polotno.com/)
     - [github](https://github.com/polotno-project)
 - [基于连续费马螺旋线的数控加工刀路规划](http://www.ncmis.cas.cn/kyjz/kycg/201912/t20191218_533668.html)
-
-#### [Win11Debloat](https://github.com/Raphire/Win11Debloat)
-
-A simple, easy to use powershell script to remove bloatware apps from windows, disable telemetry, bing in windows search aswell as perform various other changes to declutter and improve your windows experience. This script works for both windows 10 and windows 11. 
-
-```shell
-# powershell设置
-Set-ExecutionPolicy Unrestricted -Scope Process #
-cd folder
-.\Win11Debloat.ps1 # 执行
-.\Win11Debloat.ps1 -RemoveApps -DisableBing -Silent
-```
