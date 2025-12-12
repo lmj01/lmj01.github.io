@@ -307,3 +307,6 @@ Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用
 - [css实现玻璃效果](https://kube.io/blog/liquid-glass-css-svg/)
 - [无类的css库 cssbed](https://www.cssbed.com/)
 - [css中的cos和sin，已经style中传入参数，可以制作很好的菜单](https://css-tricks.com/the-most-hated-css-feature-cos-and-sin/#top-of-site)
+- [css就是全部 Vanilla CSS is all you need](https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
+- [Modern CSS patterns in Campfire](https://dev.37signals.com/modern-css-patterns-and-techniques-in-campfire/)
+- [css wrapped 2025](https://chrome.dev/css-wrapped-2025/)

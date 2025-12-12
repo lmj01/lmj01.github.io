@@ -14,10 +14,8 @@
 
 - [Front-End-Basics，这是一个从前端基础慢慢汇总成体系，再扩展到全栈的技术文档同时也是一个普通人想成长为更好的自己的探索文档](https://docs.chenfangxu.com/)
 - [Game Programming Pattern游戏编程模式，笔记全面得资料](http://gameprogrammingpatterns.com/)
-    - [ Source repo for the book gameprogrammingpatterns.com ](https://github.com/munificent/game-programming-patterns)
-    - [online-free](http://gameprogrammingpatterns.com/contents.html)
-
-- [Tunnelmole 是一个简单易用的隧道工具，不需要配置，只要一行命令，就让公网可以访问内网服务](https://tunnelmole.com/)拉
+- [ Source repo for the book gameprogrammingpatterns.com ](https://github.com/munificent/game-programming-patterns)
+- [online-free](http://gameprogrammingpatterns.com/contents.html)
 
 ## Blogs
 
@@ -59,6 +57,7 @@
 - [Shader Bits -- HLSL and UE4 Development Blog](https://shaderbits.com/blog)
 - [Red Blob Games --  from Amit Patel  make interactive visual explanations of math and algorithms, using motivating examples from computer games](https://www.redblobgames.com/)
 - [Aras Pranckevičius 很多细节上的文章](https://aras-p.info/)
+- [phk.me 他的文章很详细，有很多公式](https://blog.pkh.me/index.html)
 
 ## 游戏
 
@@ -73,6 +72,8 @@
 - [WebGPU report](https://webgpu.evanmartin.fr/)
 - [Javascript Playground--邮箱meijie.lmj@outlook.com](https://playcode.io/)
 - [用 HTML 的方式展示乐谱Scribe renders music notation in HTML.](https://github.com/stephband/scribe)
+- [tunnl 一个免费服务，只要你的主机通过 SSH 连接到它的服务器，它就分配一个子域名，让你的主机暴露到互联网。](https://tunnl.gg/)
+- [Tunnelmole 是一个简单易用的隧道工具，不需要配置，只要一行命令，就让公网可以访问内网服务](https://tunnelmole.com/)
 
 ### 流程图
 

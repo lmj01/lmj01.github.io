@@ -1,10 +1,10 @@
 # Git
 - [官方文档](https://git-scm.com/docs)
 - [中文官方文档](https://git-scm.com/book/zh/v2)
-- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
-    - 未读完
+- [A successful Git branching model 未读完](https://nvie.com/posts/a-successful-git-branching-model/)
 - [github](https://github.com/)
 - [类似github,德国的托管](https://codeberg.org/explore/repos)
+- [gitmal 对仓库产生静态页面，方便阅读](https://github.com/antonmedv/gitmal)
 
 ## 概念
 - 补丁，即git diff生成的内容
@@ -284,3 +284,13 @@ ssh-agent -s
 - docs 文档/注释
 - chore 依赖更新或脚手架配置修改
 - ci 持续集成或自动部署
+
+### 分支命名
+[约定式分支](https://conventional-branch.github.io/zh/)
+
+- main, master, develop 主分支
+- feature/(feat/), 新功能 feature/add-login
+- bugfix/(fix/), 错误修复 bugfix/fix-header
+- hotfix/(hot/), 紧急修复 hotfix/security
+- release/, 发布分支 release/v1.1.0
+- chore/, 非代码分支 chore/update-dependencies

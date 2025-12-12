@@ -6,6 +6,8 @@
 
 cache mode的状态决定了浏览器的操作行为，这是httpRequest的参数决定了是否进行操作的逻辑
 
+- [mocker hook前端的请求，可以模拟本地数据替换线上数据](https://github.com/tianchangNorth/pocket-mocker)
+
 ## header
 
 ### [Content-Disposition]()

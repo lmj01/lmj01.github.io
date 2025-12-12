@@ -33,3 +33,6 @@ linux内核中使用的C语言的面向对象的设计思考参考
 ## 工具
 
 - [build-once run-anywhere c library可移植portable的C库编译工具](https://github.com/jart/cosmopolitan)
+## 参考
+- [dependable C 关于C的编程](https://dependablec.org/)
+- [The Cost Of a Closure in C 2025-12-10](https://thephd.dev/the-cost-of-a-closure-in-c-c2y)

@@ -137,22 +137,15 @@ Blender、Unreal 引擎采用 #include 语法，灵活性更高，需要在编�
 - [Task/Mesh Pipeline](https://developer.nvidia.com/blog/introduction-turing-mesh-shaders/)
 - [the books of shader详细解说shader的开源书籍](https://thebookofshaders.com/)
 - [GPU Pro 360 Guide to Geometry Manipulation书籍]()
-
 - [A node.js-style module system for GLSL! ](https://github.com/glslify/glslify)
-  - [A reusable GLSL directional light function ](https://github.com/hughsk/glsl-directional-light)
-
+- [A reusable GLSL directional light function ](https://github.com/hughsk/glsl-directional-light)
 - [The Book of Shaders by Patricio Gonzalez Vivo & Jen Lowe ](https://thebookofshaders.com/00/)
-  - Introduction
 - [OpenGL 图元处理，一些关于OpenGL的概念](https://www.jianshu.com/p/3d974e69f842)
-  - [Learning practice demo for examples in OpenGL Super Bible 6th ](https://github.com/StarryThrone/OpenGL-SBible-example-code)
-
-- [Circle C++ shaders ](https://github.com/seanbaxter/shaders)
-  - The Circle shader extension aims to bring the entire capability of the OpenGL Shading Language (GLSL) into C++ as a first-class language feature. Write graphics code using Standard C++ and mark interface variables and shader functions with C++ attributes to indicate their role in the graphics pipeline. When the program is compiled, all shader declarations are lowered to the SPIR-V binary intermediate representation, which is the portable shader storage format Vulkan and OpenGL programs. 使用C++昨晚shader的超集语言，统一编译成SPIR-V二进制格式，因为这个是portable的
-
-  -  [Fur Effects - Teddies, Cats, Hair ....毛发渲染](https://xbdev.net/directx3dx/specialX/Fur/)
-
+- [Learning practice demo for examples in OpenGL Super Bible 6th ](https://github.com/StarryThrone/OpenGL-SBible-example-code)
+- [Circle C++ shaders The Circle shader extension aims to bring the entire capability of the OpenGL Shading Language (GLSL) into C++ as a first-class language feature. Write graphics code using Standard C++ and mark interface variables and shader functions with C++ attributes to indicate their role in the graphics pipeline. When the program is compiled, all shader declarations are lowered to the SPIR-V binary intermediate representation, which is the portable shader storage format Vulkan and OpenGL programs. 使用C++昨晚shader的超集语言，统一编译成SPIR-V二进制格式，因为这个是portable的 ](https://github.com/seanbaxter/shaders)
+-  [Fur Effects - Teddies, Cats, Hair ....毛发渲染](https://xbdev.net/directx3dx/specialX/Fur/)
 - [Computer Shader 简析 ](https://mp.weixin.qq.com/s/-lmItC4FbzEx_S6BARJl3w)
-
 - [LYGIA Shader Library 有很多shader的代码，非常丰富的独立模块，可参考代码逻辑 ](https://github.com/patriciogonzalezvivo/lygia)
 - [2004 Simulating Ocean Water Jerry Tessendorf 波纹效果参考最多的文章](https://people.computing.clemson.edu/~jtessen/reports/papers_files/coursenotes2004.pdf)
+- [A series of tricks and techniques I learned doing tiny GLSL demos](https://blog.pkh.me/p/48-a-series-of-tricks-and-techniques-i-learned-doing-tiny-glsl-demos.html)
 
