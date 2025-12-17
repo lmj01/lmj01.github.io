@@ -9,20 +9,16 @@
 - [bazel](/dev-note/bazel.md)
 - [build System cmake,ninja](/dev-note/buildSystem.md)
 - [debug](/dev-note/debug.md)
-- [包管理 -- vcPkg, vfox](/dev-note/pkg.md)
+- [包管理(vcPkg, vfox)](/dev-note/pkg.md)
 - [maven](/dev-note/maven.md)
 - [docker](/dev-note/docker.md)
 - [自动化部署](/dev-note/deploy.md)
-
 - [硬件配置](/dev-note/hardware.md)
 
 ## 版本控制
 
 - [git](/dev-note/git.md)
 - [Sourcetree simplifies how you interact with your Git repositories so you can focus on coding](https://www.atlassian.com/software/sourcetree)
-
-### github520
-
 
 ## 开发文档
 - [Node.js Api](https://nodejs.org/docs/latest/api/)
@@ -46,3 +42,5 @@
 - [在线matplotlib，可以让AI可视化写代码用它展示](https://matplotlib.online/)
 - [firefox官网的浏览器](https://www.firefox.com/en-US/?redirect_source=mozilla-org&utm_campaign=SET_DEFAULT_BROWSER)
 - [SpectorJS 调试webgl的工具，为Babylon开发的工具](https://spector.babylonjs.com/)
+- [apiPost](https://workspace.apipost.net/guest/apis)
+- [微信服务号的测试公主号，通过它来测试开发](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
