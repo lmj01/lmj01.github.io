@@ -84,6 +84,7 @@
 ### 音乐
 
 - [国家大剧院-古典音乐频道](https://www.ncpa-classic.com/index.shtml)
+- [背景音乐网站](https://asoftmurmur.com/)
 
 ### api
 - [apipost - lmjie_good@163.com](https://console.apipost.cn/login)

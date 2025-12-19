@@ -1,8 +1,18 @@
 # window
 
+## 常用命令
+```shell
+# 清除DNS缓存
+ipconfig /flushdns
+# 重置网络栈
+netsh winsock reset  
+netsh int ip reset 
+```
+
 ## bat
 - copy
 - echo %path%
+
 ### 环境变量
 环境变量设置，这样只能在CMD窗口有效，永久有效的有两种方法：一是注册表，二是系统变量
 - set                              // 查看所有
@@ -120,5 +130,4 @@ sudo dpkg-reconfigure locales 配置其他字体
 ### 参考
 
 - [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
-
 

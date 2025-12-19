@@ -1,5 +1,10 @@
 # articles
 
+## 工具
+- [现代跨平台的RSS阅读器 go + wails](https://github.com/WCY-dt/MrRSS)
+
+## [图形学](/cg/graphics.md)
+
 - [资源与工具](/articles/resource.md)
 - [3D引擎](/cg/engines.md)
 - [Markdown](/articles/others/markdown.md)
@@ -9,7 +14,6 @@
 - [软硬件一体的项目](/articles/others/robot.md)
 - [Blender](/cg/blender/index.md)
 
-### [图形学](/cg/graphics.md)
 - [几何](/cg/geometry.md)
 - [相机](/cg/tools/camera.md)
 - [裁剪](/cg/tools/culling.md)
