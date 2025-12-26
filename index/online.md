@@ -56,6 +56,7 @@
 - [Red Blob Games --  from Amit Patel  make interactive visual explanations of math and algorithms, using motivating examples from computer games](https://www.redblobgames.com/)
 - [Aras Pranckevičius 很多细节上的文章](https://aras-p.info/)
 - [phk.me 他的文章很详细，有很多公式](https://blog.pkh.me/index.html)
+- [Sebastian Aaltonen](https://www.sebastianaaltonen.com/blog)
 
 ## 游戏
 

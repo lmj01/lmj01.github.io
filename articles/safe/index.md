@@ -15,3 +15,8 @@
 
 - [tcpdump, a powerful command-line packet analyzer](https://www.tcpdump.org/)
     - [github](https://github.com/the-tcpdump-group/tcpdump)
+
+## 炸弹
+软件炸弹
+
+- [A better zip bomb 小小的zip炸弹](https://www.bamsoftware.com/hacks/zipbomb/)
