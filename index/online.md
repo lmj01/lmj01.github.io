@@ -3,6 +3,7 @@
 - [AI - AMiner由清华大学计算机科学与技术系建立，论文检索, 手机号](https://www.aminer.cn/)
 - [kimi](https://kimi.moonshot.cn)
 - [文言一心](https://yiyan.baidu.com)
+- [wiki免费的电影，无版权限制的](https://commons.wikimedia.org/wiki/User:Spinster/WikiFlix)
 
 - [OpenAPK开源的apk程序的下载集合，这样不受限平台啦](https://www.openapk.net/)
 
