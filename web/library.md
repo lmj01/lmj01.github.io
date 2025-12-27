@@ -121,7 +121,8 @@ With PartyKit, you can focus on building multiplayer apps or adding real-time ex
     - [D2 is a modern diagram scripting language that turns text to diagrams](https://github.com/terrastruct/d2)
 - []()
 
-### [jsPDF](https://github.com/lmj01/jsPDF/tree/master)
+### pdf
+#### [jsPDF](https://github.com/lmj01/jsPDF/tree/master)
 
 - [PDF-LIB可写可修改](https://pdf-lib.js.org/) 字体必须内嵌，这样文件非常大，拷贝合并pdf时，内嵌字体还没法删除
     - [github](https://github.com/Hopding/pdf-lib)
@@ -130,6 +131,10 @@ With PartyKit, you can focus on building multiplayer apps or adding real-time ex
 Client-side JavaScript PDF generation for everyone. 
 
 - [paper size打印纸张大小](https://www.papersizes.org/a-paper-sizes.htm)
+
+#### [tinypdf](https://github.com/Lulzx/tinypdf)
+极简零依赖 PDF 生成库。
+这是一个用 TypeScript 开发的 PDF 生成库，压缩后体积仅 3.3KB，核心代码不到 400 行。它删除了自定义字体、图片、压缩等非必要功能，适用于生成发票、收据、证书等简单文档。
 
 ### jszip
 

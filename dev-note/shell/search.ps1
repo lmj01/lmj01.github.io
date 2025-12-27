@@ -69,7 +69,7 @@ echo "mydentalX"
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
 echo "rival"
-Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "e50266sf"
+Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "3280"
 # Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "mousemove"
 # Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "eSide"
 
