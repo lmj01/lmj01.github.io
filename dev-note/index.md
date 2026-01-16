@@ -46,3 +46,4 @@
 - [SpectorJS 调试webgl的工具，为Babylon开发的工具](https://spector.babylonjs.com/)
 - [apiPost](https://workspace.apipost.net/guest/apis)
 - [微信服务号的测试公主号，通过它来测试开发](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
+- [chrome支撑win7的最后版本](https://www.google.com/dl/release2/chrome/ggsdppo5kshsyqe3fej7lv4tau_109.0.5414.165/109.0.5414.165_chrome_installer.exe)

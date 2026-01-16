@@ -61,6 +61,7 @@
 
 ## 游戏
 
+- [模拟器跑经典游戏 在线运行的](https://emulatorgamer.com/)
 ### [space-station-14](https://spacestation14.com/)
 该项目是经典游戏《Space Station 13》的开源重制版。在这款回合制多人角色扮演的游戏中，玩家可以选择各种角色，如工程师、船长和叛徒，并与其他玩家合作或竞争，在资源有限的环境中生存。
 - [github](https://github.com/space-wizards/space-station-14)
