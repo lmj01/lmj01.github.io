@@ -41,10 +41,6 @@
 - [Ramsay个人博客](https://ramsayleung.github.io/zh/)
 - [Moment in Graphics A blog by Christoph Peters](https://momentsingraphics.de/index.html)
 
-### 在线刊物
-- [月刊-HelloGithub](https://hellogithub.com/periodical)
-- [日刊-zeli App](https://zeli.app/zh)
-- [周刊-阮一峰日志](https://www.ruanyifeng.com/blog/)
 
 ### 图形学
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)

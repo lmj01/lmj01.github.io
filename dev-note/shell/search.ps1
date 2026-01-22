@@ -63,13 +63,13 @@ $path1b = Join-Path $path1 "packages\core"
 # Find-Str -Path $path1b -ExcludeDirs @("node_modules", "dist", "test") -SearchString "createVolumeActor"
 
 $path2 = "F:\project-ep\platform-admin"
-echo "mydentalX"
+echo "mydentalX-admin"
 # Find-Str -Path $path2 -ExcludeDirs @("node_modules", "dist") -SearchString "canReferral"
 
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
 echo "rival"
-Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "RenderRequestState"
+Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "t7197Request"
 # Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "mousemove"
 # Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "eSide"
 
@@ -126,3 +126,7 @@ echo "three.js"
 $path16 = "F:\platform\platform-frontend\"
 echo "model-analyse"
 # Find-Str -Path $path16 -ExcludeDirs @("node_modules", "dist") -SearchString "model-editor"
+
+$path17 = "F:\platform\3D\matchyun-orthodontics-html"
+echo "mydentalX-plan"
+# Find-Str -Path $path17 -ExcludeDirs @("node_modules", "dist") -SearchString "occlusionNormal"
