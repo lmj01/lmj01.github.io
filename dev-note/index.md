@@ -28,6 +28,7 @@
 - [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
 - [java api](https://www.oracle.com/cn/java/technologies/java-se-api-doc.html)
+- [vite](https://vite.dev/) 
 - [vue](https://cn.vuejs.org/) 
 - [vuex store](https://vuex.vuejs.org/zh/)
 
