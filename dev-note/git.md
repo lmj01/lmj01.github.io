@@ -94,6 +94,8 @@ git log -p/--patch -n 5 最近5个提交
 ```shell
 git log --graph --oneline --decorate --all // graph是ASCII图，oneline一行显示 decorate显示分支和标签名 all显示所有分支，包含远程的
 git log dev --since="2024-01-01" --until="2025-12-31" --oneline > 2025.txt
+git reflog show --date=iso <branchName> // 查看分支创建情况，会过期，默认90天后要清理
+git for-each-ref --format='%(refname:short) %(creatordate:iso)' 创建情况
 ```
 
 ## 配置

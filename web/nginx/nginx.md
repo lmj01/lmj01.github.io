@@ -46,3 +46,6 @@ location = > location full-path > location ^~ path > location ~,~* > location pa
 
 [在线配置nginx](https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN)
 [正确的Nginx跨域配置（后端Nginx CORS跨域配置、CORS设置，后端允许跨域请求）](https://www.cnblogs.com/zhoading/p/15987927.html)
+
+## 参考
+- [本文介绍如何设置 nginx，禁止 HTTP/1.0 和 HTTP/1.1 协议，只有白名单里面的客户端可以通过，这杜绝了绝大部分的攻击和爬虫](https://www.ruanyifeng.com/blog/2026/01/weekly-issue-383.html)
