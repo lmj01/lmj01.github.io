@@ -160,3 +160,6 @@ Pug is a high performance template engine heavily influenced by Haml and impleme
 [pug doc 中文](https://pugjs.org/zh-cn/api/getting-started.html)
 
 [参考使用方法](https://github.com/lmj01/startbootstrap-grayscale)
+
+## 参考
+- [介绍 HTML 的一些新属性和新功能2025](https://frontendmasters.com/blog/bone-up-html-2025/)

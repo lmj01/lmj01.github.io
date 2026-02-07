@@ -41,10 +41,6 @@
 - [Ramsay个人博客](https://ramsayleung.github.io/zh/)
 - [Moment in Graphics A blog by Christoph Peters](https://momentsingraphics.de/index.html)
 
-### 在线刊物
-- [月刊-HelloGithub](https://hellogithub.com/periodical)
-- [日刊-zeli App](https://zeli.app/zh)
-- [周刊-阮一峰日志](https://www.ruanyifeng.com/blog/)
 
 ### 图形学
 - [关于图形编程的一个资源网站Graphics Programming is an online community of graphics programmers of all backgrounds and experience levels.](http://graphics-programming.org/)
@@ -61,6 +57,7 @@
 
 ## 游戏
 
+- [模拟器跑经典游戏 在线运行的](https://emulatorgamer.com/)
 ### [space-station-14](https://spacestation14.com/)
 该项目是经典游戏《Space Station 13》的开源重制版。在这款回合制多人角色扮演的游戏中，玩家可以选择各种角色，如工程师、船长和叛徒，并与其他玩家合作或竞争，在资源有限的环境中生存。
 - [github](https://github.com/space-wizards/space-station-14)

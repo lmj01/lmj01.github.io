@@ -44,6 +44,14 @@ const saveJson = function(str, type, filename){
     window.URL.revokeObjectURL(url);
 };
 saveJson(JSON.stringify(mesh.toJSON(), null, 2));
+/**
+ * 
+ */
+file = raw.dat;
+file.arrayBuffer().then(raw=>{
+    const loader = new THREE.ObjectLoader();
+    const mesh = loader.parse(JSON.parse(new TextDecode().decode(raw)));
+})
 ```
 
 ## Group

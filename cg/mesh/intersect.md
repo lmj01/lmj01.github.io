@@ -21,3 +21,25 @@
 ## [ Fast Triangle-Triangle Intersection Test Tomas Moller](https://cis.temple.edu/~lakaemper/courses/cis350_2004/etc/moeller_triangle.pdf)
 
 - [Fast and Robust Triangle-Triangle Overlap Test using Orientation Predicates](https://github.com/erich666/jgt-code/blob/master/Volume_08/Number_1/Guigue2003/tri_tri_intersect.c)
+
+## triange
+
+- [Point in triangle test,three.js中的三角形参考实现](https://blackpawn.com/texts/pointinpoly/default.html)
+
+点p在三角形ABC中，先判断一条边，对每条边都进行判断。最好的实现，没有开方等计算量
+```js
+function SameSide(p1,p2, a,b)
+    cp1 = CrossProduct(b-a, p1-a)
+    cp2 = CrossProduct(b-a, p2-a)
+    if DotProduct(cp1, cp2) >= 0 then return true
+    else return false
+
+function PointInTriangle(p, a,b,c)
+    if SameSide(p,a, b,c) and SameSide(p,b, a,c)
+        and SameSide(p,c, a,b) then return true
+    else return false
+```
+
+## 参考
+- [geometry tools](https://www.geometrictools.com/)
+- [Real-Time Collision Detection](https://realtimecollisiondetection.net/)

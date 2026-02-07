@@ -16,6 +16,8 @@
 
 - [Serge Lang《linear algebra》](https://book.douban.com/subject/2314300/)
 - [Sheldon Axler《Linear Algebra Done Right》4th 作者官网提供了中英文两个版本可下载](https://linear.axler.net/)
+- [Anthony W. Knapp纽约州立大学石溪分校的安东尼·纳普分享的书籍](https://www.math.stonybrook.edu/~aknapp/download/)
+- [Anthony W. Knapp主页](https://www.math.stonybrook.edu/~aknapp/)
 
 ## 分析
 

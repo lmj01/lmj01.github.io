@@ -28,6 +28,7 @@
 - [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
 - [java api](https://www.oracle.com/cn/java/technologies/java-se-api-doc.html)
+- [vite](https://vite.dev/) 
 - [vue](https://cn.vuejs.org/) 
 - [vuex store](https://vuex.vuejs.org/zh/)
 
@@ -46,3 +47,4 @@
 - [SpectorJS 调试webgl的工具，为Babylon开发的工具](https://spector.babylonjs.com/)
 - [apiPost](https://workspace.apipost.net/guest/apis)
 - [微信服务号的测试公主号，通过它来测试开发](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
+- [chrome支撑win7的最后版本](https://www.google.com/dl/release2/chrome/ggsdppo5kshsyqe3fej7lv4tau_109.0.5414.165/109.0.5414.165_chrome_installer.exe)

@@ -1,5 +1,7 @@
 # Http
 
+- [HTTP caching, a refresher](https://danburzo.ro/http-caching-refresher/)
+
 ## fetch
 
 [HTTP-network-or-cache fetch](https://fetch.spec.whatwg.org/#http-network-or-cache-fetch)

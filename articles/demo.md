@@ -1,6 +1,9 @@
 # [markdown](https://commonmark.org/)
 
-- [用中文读科技新闻](https://zeli.app/zh)
+- [日刊-zeli App用中文读科技新闻](https://zeli.app/zh)
+- [抓取AI论文并用视频解读](https://huggingface.co/spaces/brianxiadong0627/paper-digest)
+- [周刊-阮一峰日志](https://www.ruanyifeng.com/blog/)
+- [月刊-HelloGithub](https://hellogithub.com/periodical)
 - [Hacker News New](https://news.ycombinator.com/)
 - [markdown中文文档](https://markdown.com.cn/)
 - [mermaid](/articles/mermaid.md)
@@ -8,6 +11,8 @@
 markdown渲染成HTML的插件, 如果不方便表示的，可以直接使用HTML5的标签来表示内容
 
 [What's In A Class?] [1]
+
+## markdown 
 
 <details>
 <summary>alert</summary>

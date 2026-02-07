@@ -8,27 +8,23 @@
 ## 公版
 
 - [科学直通车Explore scientific, technical, and medical research on ScienceDirect](https://www.sciencedirect.com/)
-
 - [古登堡计划Project Gutenberg is a library of over 70,000 free eBooks](https://www.gutenberg.org/)
 - [国学导航](http://www.guoxue123.com/)
 - [漢川草廬--一個文史哲愛好者所建立的正體中文古籍網站--繁体-台湾](http://www.漢川草廬.tw/index.php)
 - [中國哲學書電子化計劃](https://ctext.org/zh)
 - [北京大学《儒藏》编纂与研究中心](https://ruzang.pku.edu.cn/)
 - [Nicholas Rougeux 彩绘在线图书--包含几何原本、鸟类](https://www.c82.net/)
-
 - [国家中小学智慧教育平台](https://auth.smartedu.cn/uias/login)
-    - [国家中小学智慧教育平台 电子课本下载工具](https://github.com/happycola233/tchMaterial-parser)
-    - [所有小初高、大学PDF教材。 下载好的文档](https://github.com/TapXWorld/ChinaTextbook)
+- [国家中小学智慧教育平台 电子课本下载工具](https://github.com/happycola233/tchMaterial-parser)
+- [所有小初高、大学PDF教材。 下载好的文档](https://github.com/TapXWorld/ChinaTextbook)
 
 ## reading
 
 - [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621_Introduction_to_Computing_with_Geometry_Notes.md)
 - [Finite Element Mesh Generation-CRC Press (2014)](/articles/2025/Finite_Element_Mesh_Generation_CRC_Press_(2014).md)
 - [vulkan tutorial](https://vulkan-tutorial.com/)
-- [Performance Analysis and Tuning on Modern CPUs 2023]()
-    - 3
-- [Effective Debugging中文翻译](https://celthi.github.io/effective-debugging-zh/)
-    - 引言
+- [Performance Analysis and Tuning on Modern CPUs 2023 --- page3]()
+- [Effective Debugging中文翻译 -- page引言](https://celthi.github.io/effective-debugging-zh/)
 - 毛选，在读
 - 符号学：原理与推演，南京大学出版社，ISBN:9787305160516, 在读
 
@@ -134,3 +130,6 @@
 - [DK百科全书(560本)英文版高清无水印](https://pan.quark.cn/s/2ac6971d868c#/list/share)
 - [麻省理工学院辐射实验室系列](https://www.febo.com/pages/docs/RadLab/)
 - [ISBN可视化，全球的书籍](https://phiresky.github.io/isbn-visualization/?)
+- [Standard Ebooks is a volunteer-driven project that produces new editions of public domain ebooks that are lovingly formatted, open source, free of U.S. copyright restrictions, and free of cost.](https://standardebooks.org/)
+- [Project Gutenberg is a library of over 75,000 free eBooks](https://www.gutenberg.org/)
+- [公开的书籍](https://publicdomainreview.org/blog/)
