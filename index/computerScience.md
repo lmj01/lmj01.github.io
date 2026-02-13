@@ -123,10 +123,7 @@
 - [Building a collaborative text editor in Go协同开发文本编辑器的go实现思考](https://www.aadhav.me/posts/collaborative-editor)
 - [CRDT相关的资料集A Conflict-free Replicated Data Type (CRDT) is a data structure that simplifies distributed data storage systems and multi-user applications.](https://crdt.tech/)
 
-## AI 
-- [神经网络](/ai/neural.network.md)
-- [模型](/ai/model.md)
-- [参考应用模型](/ai/demo.md)
+##  [AI](/ai/index.md)
 
 ## 优秀的产品
 

@@ -29,6 +29,7 @@ function Find-Str {
     param(
         [string]$Path,
         [string]$Filter,
+        [int]$Truncation=10,
         [string[]]$ExcludeDirs,
         [string]$SearchString
     )
@@ -41,7 +42,7 @@ function Find-Str {
             }
         }
         -not $exclude
-    } | Select-String -Pattern $SearchString -SimpleMatch -CaseSensitive | Select Path,Line,LineNumber
+    } | Select-String -Pattern $SearchString -SimpleMatch -CaseSensitive | Select {$_.Path.Substring($Truncation).TrimStart('\','/')},Line,LineNumber
     return $files
 }
 # 搜索关键字
@@ -68,10 +69,12 @@ echo "mydentalX-admin"
 
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
+$path3b = "F:\meijie\component-b5\rival1\packages\one1"
 echo "rival"
-Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "49582"
-# Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "blendSrcAlpha"
-# Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "blendSrcAlpha"
+# Find-Str -Path $path3 -Truncation 44 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "stub.image"
+# Find-Str -Path $path3 -Truncation 44 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "blendSrcAlpha"
+# Find-Str -Path $path3a -Truncation 44 -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "blendSrcAlpha"
+Find-Str -Path $path3b -Truncation 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString "t52695Vertex"
 
 $path4 = "F:\platform\sfebackend"
 echo "sfebackend"
@@ -79,7 +82,7 @@ echo "sfebackend"
 
 $path5 = "F:\java\matchyun-orthodontic\src\main\webapp\static\js\"
 echo "java-jsp"
-# Find-Str -Path $path5 -ExcludeDirs @("node_modules", "dist") -SearchString "sale-dl-agent"
+# Find-Str -Path $path5 -ExcludeDirs @("node_modules", "dist") -SearchString "animateRootBoneManager"
 
 $path6 = "F:\masteralign\products\"
 echo "products"

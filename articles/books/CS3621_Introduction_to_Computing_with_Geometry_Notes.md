@@ -125,3 +125,16 @@ A surface is a 2-manifold if and only if for each point x on the surface there e
 曲面surface是2维流形2-manifold, 流形是manifold是数学中描述“局部像欧几里得空间”的几何对象，2维流形就是“局部像平面（2维欧几里得空间）”的几何对象，曲面是最典型的2流形例子。
 
 #### The Winged-Edge Data Structure
+#### The Euler-Pointcare Formula
+欧拉-庞加莱公式在实体solid modeling的标准形式，用于验证边界表示boundary representation B-rep模型的拓扑有效性。
+- V: the number of vertices顶点数
+- E: the number of edges边数
+- F: the number of faces面数
+- G: the number of holes that penetrate the solid, ususlly referred to as genus in topology亏格，穿透实体的孔洞数量，孔数Genus
+- S: the number of shells壳数. A shell is an itnernal void of a solid. A shell is bounded by a 2-manifold surface, which can have its own genus value. Note that the solid iteself is counted as a shell. Therefore, the value for S is at least 1.
+- L: the number of loops环数, all outer and inner loops of faces are counted.
+V - E + F - (L - F) - 2(S - G) = 0
+
+- 单壳无孔的简单多面体S=1,G=0,L=F有：V - E + F - (F - F) - 2(1 - 0) = V - E + F - 2 = 0，即经典欧拉公式 V - E + F = 2
+- 
+

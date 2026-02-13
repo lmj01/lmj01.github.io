@@ -340,3 +340,6 @@ babel7舍弃了以前的 babel-*-* 的命名方式，改成了@babel/*-*
 
 - [bun中文](https://www.bunjs.cn/)
 
+## 工程技巧
+- debugger，调试加入debugger，让浏览器虚拟机字段暂停在那里。如果在逗号运算中间加入，需要有void关键字，表示这是一个有效表达式。
+

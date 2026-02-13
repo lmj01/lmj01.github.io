@@ -37,19 +37,6 @@
 
 现代浏览器技术开发API有大量的接口，需要去了解
 
-### [http](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-
-- [http](/web/http.md)
-- [nginx](/web/nginx/nginx.md)
-
-### [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
-
-- [Mock Service Worker Industry standard API mocking for JavaScript](https://mswjs.io/)
-- [broswer集成时需要设置worker](https://mswjs.io/docs/integrations/browser)
-```shell
-
-```
-
 
 ### [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API)
 新版的剪切接口，是新标准
