@@ -44,6 +44,11 @@
 [Divio Documentation system](https://documentation.divio.com/)
 [中文翻译](https://tinggengyan.github.io/2021/10/03/the-documentation-system_how_to_write_good_document/)
 
+### [Spec-Driven Development](https://github.com/github/spec-kit)
+
+- [Specification-Driven Development (SDD)](https://github.com/github/spec-kit/blob/main/spec-driven.md)
+- [Specification-Driven Development (SDD) - 规范驱动开发](https://hobbytp.github.io/zh/projects/code_assistant/spec-driven-dev/)
+
 ## 协议
 
 ### License

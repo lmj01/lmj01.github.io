@@ -134,4 +134,5 @@
 - [计算机专业学习路线](https://hackway.org/docs/cs/intro)
 - [安全](/articles/safe/index.md)
 - [The original sources of MS-DOS 1.25, 2.0, and 4.0 for reference purposes ](https://github.com/microsoft/MS-DOS)
+- [在线模拟电子元件](https://www.withdiode.com/)
 

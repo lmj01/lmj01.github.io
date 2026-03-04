@@ -67,3 +67,11 @@ mkcert-v1.4.4-windows-amd64.exe localhost 127.0.0.1 ::1 192.168.0.138 // 生成�
 ```shell
 npx msw init . --save
 ```
+
+### 代码
+
+```shell
+# 测试后端 CORS 头是否返回
+curl -I -X OPTIONS -H "Origin: http://localhost:3000" -H "Access-Control-Request-Method: GET" http://api-dev.sprintray.com.cn/doctor/sse/connect
+# 期望看到: Access-Control-Allow-Origin: *
+```

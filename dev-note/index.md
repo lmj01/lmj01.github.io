@@ -31,6 +31,7 @@
 - [vite](https://vite.dev/) 
 - [vue](https://cn.vuejs.org/) 
 - [vuex store](https://vuex.vuejs.org/zh/)
+- [Lodash](https://lodash.com/)
 
 ## 其他资源
 

@@ -177,3 +177,6 @@ three-mesh-bvh是作为一个通用的BVH，不应限制任意mesh对象，带si
     - [ ClosestPointToPoint: Signed Distance #704 ](https://github.com/gkjohnson/three-mesh-bvh/issues/704)
 
 - [Spherical winding number shadertoy.com](https://www.shadertoy.com/view/4cKyDt)
+
+## 参考
+- [How to build a BVH – Part 1: Basics， 是tiny bvh的系列文章](https://jacco.ompf2.com/2022/04/13/how-to-build-a-bvh-part-1-basics/)

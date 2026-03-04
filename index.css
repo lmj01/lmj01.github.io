@@ -1,5 +1,6 @@
 :root {
     --sideMenu: 200px;
+    --mj-padding-size: 8px;
 }
 body {
     width: 100vw;
@@ -71,4 +72,11 @@ img {
     margin: 0 15px;
     list-style: none;
 }
+/* table {
+    width: 100%;
+    border-collapse: inherit;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: var(--mj-padding-size);
+} */
 /* markdown style------------end */

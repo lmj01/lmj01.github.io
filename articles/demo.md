@@ -1,5 +1,6 @@
 # [markdown](https://commonmark.org/)
 
+- [日刊-AI抓取新闻摘要](https://thysrael.github.io/Horizon/)
 - [日刊-zeli App用中文读科技新闻](https://zeli.app/zh)
 - [抓取AI论文并用视频解读](https://huggingface.co/spaces/brianxiadong0627/paper-digest)
 - [周刊-阮一峰日志](https://www.ruanyifeng.com/blog/)

@@ -73,6 +73,7 @@
 ### [金字塔原理丛书](https://book.douban.com/subject/25935981/)
 - MECE（发音：me see）分析法是 Mutually Exclusive Collectively Exhaustive的首字母缩写词，中文意思是"相互独立、完全穷尽"，即所谓的 "无重复、无遗漏"。
 
+### [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621_Introduction_to_Computing_with_Geometry_Notes.md)
 
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读
