@@ -28,6 +28,15 @@
 - 毛选，在读
 - 符号学：原理与推演，南京大学出版社，ISBN:9787305160516, 在读
 
+- [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621_Introduction_to_Computing_with_Geometry_Notes.md)
+- [Handbook of Discrete and Computational Geometry, Third Edition](/articles/books/Handbook_of_Discrete_and_Computational_Geometry_Third_Edition)
+- [Discrete and Computational Geometry, 1nd Edition](/articles/books/Discrete_and_Computational_Geometry_First_Edition.md)
+- [Discrete and Computational Geometry, 2nd Edition](/articles/books/Discrete_and_Computational_Geometry_Second_Edition.md)
+- [Polygon Mesh Processing](/cg/mesh/PolygonMeshProcessing.md)
+- [The Nurbs Book](/cg/mesh/NURBS)
+
+
+
 ### [Design Patterns in Modern C++](https://book.douban.com/subject/30200080/)
 
 - crtp
@@ -47,10 +56,6 @@
 
 - 2024-5-23 关于欧几里得是我认为讲得最清晰最明白的一本书了
 
-### [Learn OpenGL](../books/Learn%20OpenGL.md)
-
-模板测试，Object outlining的流程处理给出了一个方案
-
 ### [Software Engineering at Google]()
 编程与软件工程的重要因素
 - 时间
@@ -64,16 +69,8 @@
 ### [Fundamentals of Computer Graphhics fifth edition](https://book.douban.com/subject/35755152/)
 > 看过第四版了，现在当工具书使用
 
-### [Polygon Mesh Processing](https://book.douban.com/subject/5463738/)
-[记录](/cg/mesh/PolygonMeshProcessing.md)
-
-### [The Nurbs Book](https://book.douban.com/subject/3989660/)
-[记录](/cg/mesh/NURBS)
-
 ### [金字塔原理丛书](https://book.douban.com/subject/25935981/)
 - MECE（发音：me see）分析法是 Mutually Exclusive Collectively Exhaustive的首字母缩写词，中文意思是"相互独立、完全穷尽"，即所谓的 "无重复、无遗漏"。
-
-### [CS3621 Introduction to Computing with Geometry Notes](/articles/books/CS3621_Introduction_to_Computing_with_Geometry_Notes.md)
 
 ## readed
 - 计算机图形图像设计，2016，中国传媒大学出版社，已读

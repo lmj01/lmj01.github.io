@@ -163,3 +163,53 @@ V - E + F - (L - F) - 2(S - G) = 0
 |KEKL           |Kill an edge and kill a loop     |   |  -1|   |+1 |    |   |
 
 ### 3.4 Constructive Solid Geometry
+
+CSG Primitives, 
+
+| 类别          | 基元                             |
+|---------------|---------------------------------|
+| 标准            |block(i.e. cube)块, sphere球体, cylinder圆柱体, cone圆锥体, torus圆环体        |
+|扩展多面体            |Wedge/Right Angular Wedge楔形体，Triangular Prism三棱柱，Pyramid棱锥, Tetrahedron四面体          |
+|二次曲面            |Ellipsoid椭球体, Eccentric Cone偏心圆锥          |
+|扫描体            |Solid of Revolution旋转体, Solid of Linear Extrusion/Extruded Area Solid线性拉伸体          |
+|半空间            |Plane/Half-space平面半空间, Algebraic Halfspace代数半空间          |
+|自由形状            |Closed Spline Surface闭样条曲面, Faceted Primitive多面体基元          |
+
+- [Goodman J.E., O'Rourke J. (eds.) Handbook of discrete and computational geometry (2ed., CRC, 2004)(ISBN 1584883014)(O)(1558s)](https://nzdr.ru/data/media/biblio/kolxoz/M/MRef/Goodman%20J.E.,%20O'Rourke%20J.%20(eds.)%20Handbook%20of%20discrete%20and%20computational%20geometry%20(2ed.,%20CRC,%202004)(ISBN%201584883014)(O)(1558s)_MRef_.pdf)
+
+#### Interior, Exterior and Closure
+
+是点集拓扑学的核心概念，用于严格定义实体Solid和布尔运算。
+
+- Interior内部：所有点在内部
+- Boundary边上：所有点在边上，
+- Exterior外部：所有点在外部，
+- Closure闭包：interior和boundary的并，或不属于exterior的
+
+- [标准集合运算（并、交、差）可能产生低维悬挂元素（dangling elements）](https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=ucin1236966950&disposition=inline)
+- [Solid Modeling Christoph M. Hoffmann](https://www.cs.purdue.edu/cgvlab/www/resources/papers/Hoffmann-CRC-1997-Solid_Modeling.pdf)
+
+#### Regularized Boolean Operators 
+
+对两个solid实体执行union并，intersection交，difference差，不一定会得到一个solid。
+```js
+A + B = closure(int(union(A and B)))
+A ^ B = closure(int(intersection(A and B)))
+A - B = closure(int(difference(A and B)))
+```
+
+- [布尔计算，应该参考的是《图学计算基础》何援军2018 机械工业出版社](https://mp.weixin.qq.com/s/Bltz5sXmMi5-6CqXHyQooA)
+
+点积与叉积的作用
+
+| 特征 | 点积 Dot Product cosa                         | cross product/Determinant sina |
+|---------------|---------------------------------|--------------|
+|公式            | A dot B        | A X B |
+|主要意义           |方向相似性，夹角大小          | 旋转方向，夹角方向 |
+|D > 0       |夹角为锐角，方向相近| 向量(a1,b1)逆时针最近旋转到(a2,b2) |
+|D < 0          |夹角为钝角，方向相反          | 向量(a1,a2)顺时针最近旋转到(a2,b2)|
+|D = 0          |夹角为直角，互相垂直     | 两向量平行/共线|
+
+## 4. Parametric Curves
+
+### 4.1 Parametric Curves: A Review

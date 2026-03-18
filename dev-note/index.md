@@ -32,6 +32,8 @@
 - [vue](https://cn.vuejs.org/) 
 - [vuex store](https://vuex.vuejs.org/zh/)
 - [Lodash](https://lodash.com/)
+- [Rxjs](https://rxjs.dev/)
+- [Redux](https://redux.js.org/)
 
 ## 其他资源
 
