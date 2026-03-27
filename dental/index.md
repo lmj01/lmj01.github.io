@@ -5,7 +5,7 @@
 - [slice切片](/dental/slice.md)
 - [vtk](/dental/vtk.md)
 
-- [口腔](/articles/notes/oral.cavity.md)
+- [口腔](/dental/oral.cavity.md)
 
 ## 参考
 

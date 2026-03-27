@@ -213,3 +213,7 @@ A - B = closure(int(difference(A and B)))
 ## 4. Parametric Curves
 
 ### 4.1 Parametric Curves: A Review
+
+### 4.2 Tangent Vector and Tangent Line
+
+### 4.3 Normal Vector and Curvature 

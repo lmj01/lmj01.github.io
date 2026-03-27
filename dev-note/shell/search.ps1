@@ -75,7 +75,7 @@ echo "rival"
 # Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "m57337z"
 # Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "blendSrcAlpha"
 # Find-Str -Path $path3a -Trim 44 -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "blendSrcAlpha"
-Find-Str -Path $path3b -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString "RenderOpaqueComponent"
+Find-Str -Path $path3b -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString "m90570gs"
 
 $path4 = "F:\platform\sfebackend"
 echo "sfebackend"
