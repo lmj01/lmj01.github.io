@@ -10,3 +10,7 @@ The fundamental “Jordan curve theorem,” formulated and proved by Camille Jor
 
 - 简单闭曲线：指一条连续的、不自交的环路。在数学上，它是从单位圆 $$ S^1 $$ 到平面 $$ R^2 $$ 的一个连续单射（或同胚）的像。
 - 连通分支：指的是两个区域各自是连通的（内部任意两点可以用一条不穿过曲线的路径相连），但两个区域之间不连通（无法在不穿过曲线的情况下从内部走到外部）。
+
+- [Every simple polygon with more than three vertices has at least two ears. ](https://www.cut-the-knot.org/pigeonhole/PolygonalEars.shtml#proof)
+- [The Two-Ears Theorem](https://cgm.cs.mcgill.ca/~godfried/teaching/cg-projects/97/Ian/twoears.html)
+- [Ear Cutting for Simple Polygons 有图示 ](https://cgm.cs.mcgill.ca/~godfried/teaching/cg-projects/97/Ian/cutting_ears.html)

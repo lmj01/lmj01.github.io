@@ -17,3 +17,6 @@
  * 通过requestAnimationFrame来调度任务的执行，保证在浏览器空闲时执行任务，避免阻塞主线程
 
 就像React中的scheduler与fiber是其支撑其并发渲染（Concurrent Rendering）能力的两大基石。
+
+一个Scheduler是全局的调度器。每个入口通过配置相关的调度器参数来调用任何的内容。
+在entryComponent中执行程序的开始，这里才是真正执行的地方
