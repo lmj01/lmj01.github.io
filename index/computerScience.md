@@ -59,6 +59,7 @@
 - [网格划分](/cg/mesh/mesh-generation.md)
 - [切线](/cg/mesh/tangent.md)
 - [NURBS](/cg/mesh/NURBS.md)
+- [icp](/cg/mesh/icp.md)
 - [曲线](/cg/tools/curve.md)
 - [几何](/cg/geometry.md)
 
@@ -94,9 +95,10 @@
 - [Mitsuba渲染器](http://www.mitsuba-renderer.org/)
 - [github](https://github.com/mitsuba-renderer/mitsuba3)
 - [可视化3D旋转This is a tool to help convert an visualise 3D rotations](http://asliceofrendering.com/ConversionTool/)
-- [github](https://github.com/BugzTroll/ConversionTool)
+- [可视化3D旋转github](https://github.com/BugzTroll/ConversionTool)
 - [粒子特效A simple program to simulate artificial life using attraction/reuplsion forces between many particles ](https://github.com/hunar4321/particle-life)
 - [Experimental 3D modeler 强大的几何处理能力 ](https://github.com/BrunoLevy/GraphiteThree)
+- [杰魔软件，Geomeagic公司的自动化逆向工程软件，可将三维扫描点云数据转换为多边形网格、NURBS曲面及参数化CAD模型， 将三维扫描数据转化为高精度的数字模型，用于模型对比，Geomagic Studio 已经作为维护项目，演进为Geomagic Desing X](https://hexagon.com/company/divisions/manufacturing-intelligence/geomagic)
 
 ### SVG
 > SVG编辑器

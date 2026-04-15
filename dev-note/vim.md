@@ -58,12 +58,14 @@ vim编辑器核心就是text object motion
 - :set ff=unix格式重置，针对shell-bash文件，需要unix模式
 
 ### 替换命令
-- ra将光标所在字符替换为a
-- s/old/new/用old替换new，替换当前行的第一个匹配
-- s/old/new/g用old替换new，替换当前行的所有匹配
-- %s/old/new/用old替换new，替换所有行的第一个匹配
-- %s/old/new/g用old替换new，替换整个文件的匹配
-- :10,20 s/^//g在第10行至20行每行前面加四个空格，用于缩进
+```shell
+ra将光标所在字符替换为a
+s/old/new/用old替换new，替换当前行的第一个匹配
+s/old/new/g用old替换new，替换当前行的所有匹配
+%s/old/new/用old替换new，替换所有行的第一个匹配
+%s/old/new/g # 如 %s/value/\"value\"/g 在json编辑中替换value为"value"
+:10,20 s/^//g 在第10行至20行每行前面加四个空格，用于缩进
+```
 
 ### 撤销和重做
 - u undo

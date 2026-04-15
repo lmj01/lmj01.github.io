@@ -34,6 +34,9 @@
 - [Rxjs](https://rxjs.dev/)
 - [Redux](https://redux.js.org/)
 - [Eigen](https://libeigen.gitlab.io/eigen/docs-nightly/)
+- [open3d](https://www.open3d.org/docs/release/cpp_api/index.html)
+- [assimp](https://assimp.org/)
+- [cpp reference](https://en.cppreference.com/index.html)
 
 ## 其他资源
 

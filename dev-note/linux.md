@@ -12,6 +12,8 @@ linux启动服务可能有两种
 ```shell
 cat /etc/os-release # 查看当前
 uname -r # 查看内核版本 -a 查看完整系统信息
+kill -9 #强制、立即终止一个进程 9代表信号SIGKILL，Linux内核发出的信号编码为9
+ps aux | grep 'processName' # 查看进程名
 ```
 
 ## packages
@@ -110,15 +112,22 @@ unzip -o file.zip -d ./output/ # q 安静模式 o 覆盖模式
 ### curl
 
 ```shell
+# 参数
+-o <file> 制定输出文件名和路径
+-O 保留远程文件名
+-L 跟随重定向
+-C - 断点续传
+-# --progress-bar 显示进度条
+-s 静默模式 不显示精度
+-k 忽略SSL验证
 # 请求
 curl http://127.0.0.1:8080/login?admin&passwd=12345678 GET
 curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login POST
 curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
-# 下载文件 小o是自定义文件名，大O是原文件名
-curl -O https://example.com/file.txt
 curl -# -O https://example.com/file.iso # 带进度条
 curl -C - -O https://example.com/largefile.zip # 带续传
 curl -L -o https://github.com/xxx # 下载github的release文件，必须处理重定向，必须L，否则下载不了
+curl -O http://192.168.0.162:7710/files/meta/tag_data0324_5544.json
 ```
 
 ## 环境搭建

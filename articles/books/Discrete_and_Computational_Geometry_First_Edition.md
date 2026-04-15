@@ -14,3 +14,6 @@ The fundamental “Jordan curve theorem,” formulated and proved by Camille Jor
 - [Every simple polygon with more than three vertices has at least two ears. ](https://www.cut-the-knot.org/pigeonhole/PolygonalEars.shtml#proof)
 - [The Two-Ears Theorem](https://cgm.cs.mcgill.ca/~godfried/teaching/cg-projects/97/Ian/twoears.html)
 - [Ear Cutting for Simple Polygons 有图示 ](https://cgm.cs.mcgill.ca/~godfried/teaching/cg-projects/97/Ian/cutting_ears.html)
+
+### 1.3 The Art Gallery Theorem
+美术馆定理，对于一个有n个顶点的简单多边形（即没有洞、边不相交的封闭形状），最少需要多少个固定位置的“警卫”(点)，才能保证多边形内部的每一点都被至少一个警卫看到？

@@ -54,6 +54,8 @@ $$
 ## 几何
 
 
+- [The Rising Sea: Foundations of Algebraic Geometry海水渗透：代数几何基础]()
+
 ### 几何原本
 
 - [在线彩图符合](https://www.c82.net/euclid/)
