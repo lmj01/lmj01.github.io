@@ -54,6 +54,7 @@
 - [22](https://github.com/brunosimon/folio-2019)
 - [THREE.js rendering order渲染顺序](https://segmentfault.com/a/1190000041221932/en)
 - [A camera control for three.js, similar to THREE.OrbitControls yet supports smooth transitions and more features. ](https://github.com/lmj01/camera-controls)
+- [一个博客，已3D场景来实现](https://github.com/brunosimon/folio-2025)
 
 ### 成熟的框架
 

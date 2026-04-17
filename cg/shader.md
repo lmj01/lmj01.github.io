@@ -100,7 +100,24 @@ shader的作用就是由数据生成图像
 - 等待交换缓冲区完成后再进行下一帧的Framebuffer渲染，这样帧率不能完全达到硬件的最高值，因此引入三缓冲区技术，一个屏幕缓冲区，两个离屏缓冲区，交换时与最新渲染的离屏缓冲区进行交换，这样尽量减少硬件的时间差导致帧率较低，影响屏幕的画面更流畅。
 
 ### [Interface Block (GLSL)](https://www.khronos.org/opengl/wiki/Interface_Block_(GLSL))
-一块块的声明变量。
+一块块的声明变量，有std140, std430来处理紧凑数据格式buffer模式
+
+### [Sampler与Texture](https://wikis.khronos.org/opengl/Texture)
+
+- [Sampler Object](https://wikis.khronos.org/opengl/Sampler_Object)
+
+在早期的OpenGL中，sampler和texture是自动绑定的，在现代OpenGL/vulkan中已经分开声明，组合调用的形式了。
+- texture是数据，存储的纹理数据
+- sampler是采样器，是声明如何对这些数据进行采样的，这样分开声明可以更自由更灵活的使用，可以把性能压缩到极致去
+
+| 维度 | texture | sampler |
+|----| ---| --- |
+| 存储内容 | 像素数据 | 配置参数 |
+| 内存大小 | 通常较大，如4k，8k | 几个int或float |
+| GPU资源 | 占用现存宽带 | 内存或寄存器 |
+| 属性 | 宽度、高度、格式、像素数据 | 过滤、寻址、各向异性、比较模式 |
+| 生命周期 | 加载图片到显存 | 由图学API创建并设置 |
+
 
 ## 工程实现
 

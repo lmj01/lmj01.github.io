@@ -1,6 +1,7 @@
-# Http
+# [http](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 
 - [HTTP caching, a refresher](https://danburzo.ro/http-caching-refresher/)
+- [nginx](/web/nginx/nginx.md)
 
 ## fetch
 
@@ -56,3 +57,21 @@ mkcert-v1.4.4-windows-amd64.exe localhost 127.0.0.1 ::1 192.168.0.138 // 生成�
 - [common media types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types/Common_types)
 - [sniffing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types#mime_sniffing)
 - [各种文件类型及文件头标识大全（十六进制）](https://zhuanlan.zhihu.com/p/571208394)
+
+## 其他
+
+### [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+
+- [Mock Service Worker Industry standard API mocking for JavaScript](https://mswjs.io/)
+- [broswer集成时需要设置worker](https://mswjs.io/docs/integrations/browser)
+```shell
+npx msw init . --save
+```
+
+### 代码
+
+```shell
+# 测试后端 CORS 头是否返回
+curl -I -X OPTIONS -H "Origin: http://localhost:3000" -H "Access-Control-Request-Method: GET" http://api-dev.sprintray.com.cn/doctor/sse/connect
+# 期望看到: Access-Control-Allow-Origin: *
+```

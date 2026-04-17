@@ -12,3 +12,8 @@
 $$
 \text{假设有两个事件A和B},P(A),p(A \cap B),p(A|B)
 $$
+
+
+## 参考
+
+- [泊松分布背后的原理Derivation and Intuition behind Poisson distribution 泊松分布是独立小概率事件的概率分布，本文通俗介绍它的原理](https://antaripasaha.notion.site/Derivation-and-Intuition-behind-Poisson-distribution-1255314a56398062bf9dd9049fb1c396)

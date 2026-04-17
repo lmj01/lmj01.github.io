@@ -30,15 +30,16 @@ set(VCPKG_LIBRARY_LINKAGE dynamic)
 set(VCPKG_PLATFORM_TOOLSET v140)
 ``` 
 
-# [vfox](https://github.com/version-fox/vfox)
+# [vfox](https://vfox.dev/)
 
-[文档](https://vfox.lhan.me/)
+[github](https://github.com/version-fox/vfox)
 
 ```shell
 # 绑定到shell中
 echo 'eval "$(vfox activate bash)"' >> ~/.bashrc
 source ~/.bashrc 如果当前终端没有起作用，执行一次，因为可能不是全局安装的
-#
+# 
+vfox upgrade # 更新
 vfox availabel 查看插件
 vfox search java 查看所有版本
 vfox list java 列出当前安装的版本
@@ -47,4 +48,7 @@ vfox use sdkName@version 使用当前版本
 vfox use -g --global 全局
 vfox use -p --project 当前目录下
 vfox use -s --session 当前shell
+vfox unuse [options] sdkName # 不使用
+vfox uninstall sdkName@version # 删除
+vfox un sdkName@version # 删除
 ```

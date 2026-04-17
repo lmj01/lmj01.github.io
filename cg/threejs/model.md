@@ -18,6 +18,7 @@ XXXLoader extends Loader {
 ```
 LoadingManager是一个独立封装的，类似一个函数，全部在constructor中实现，至少用了class的语法
 
+
 ## 导出
 
 ### string
@@ -52,6 +53,8 @@ file.arrayBuffer().then(raw=>{
     const loader = new THREE.ObjectLoader();
     const mesh = loader.parse(JSON.parse(new TextDecode().decode(raw)));
 })
+/**遍历显示的模型 */
+app3.getScene().traverse(e=>{if(e.visible)console.log(e)})
 ```
 
 ## Group

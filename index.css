@@ -1,5 +1,6 @@
 :root {
     --sideMenu: 200px;
+    --mj-padding-size: 8px;
 }
 body {
     width: 100vw;
@@ -53,6 +54,8 @@ img {
 /* markdown style------------begin */
 /* 只改变第一个子节点，不改变二级以下的，必须指定为child */
 .mj-book-info > ul,
+.mj-web-index > ul,
+.mj-web-http > ul,
 .mj-computerscience > ul,
 .mj-exercises-index > ul,
 .mj-dev-note-index > ul {
@@ -61,10 +64,19 @@ img {
     flex-wrap: wrap;
 }
 .mj-book-info > ul > li,
+.mj-web-index > ul > li,
+.mj-web-http > ul > li,
 .mj-computerscience > ul > li,
 .mj-exercises-index > ul > li,
 .mj-dev-note-index > ul > li {
     margin: 0 15px;
     list-style: none;
 }
+/* table {
+    width: 100%;
+    border-collapse: inherit;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: var(--mj-padding-size);
+} */
 /* markdown style------------end */

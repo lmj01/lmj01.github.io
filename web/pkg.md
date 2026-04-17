@@ -157,3 +157,10 @@ pnpm test-build
 # 正常退出
 exit 0
 ```
+
+### PM2
+```shell
+npm install pm2 -g
+pm2 logs
+pm2 start app.js
+```

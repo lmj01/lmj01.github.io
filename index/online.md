@@ -17,6 +17,7 @@
 - [Game Programming Pattern游戏编程模式，笔记全面得资料](http://gameprogrammingpatterns.com/)
 - [ Source repo for the book gameprogrammingpatterns.com ](https://github.com/munificent/game-programming-patterns)
 - [online-free](http://gameprogrammingpatterns.com/contents.html)
+- [开放的数学讨论课题](https://www.ktrt-seminars.com/)
 
 ## Blogs
 - [Long Luo, 一个严肃的程序员](http://www.longluo.me/)

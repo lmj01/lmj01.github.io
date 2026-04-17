@@ -3,7 +3,6 @@
 - [nodejs包管理](/web/pkg.md)
 - [linux](/dev-note/linux.md)
 - [vim](/dev-note/vim.md)
-- [powershell](/dev-note/powershell.md)
 - [vscode](/dev-note/vscode.md)
 - [window](/dev-note/window.md)
 - [bazel](/dev-note/bazel.md)
@@ -31,6 +30,15 @@
 - [vite](https://vite.dev/) 
 - [vue](https://cn.vuejs.org/) 
 - [vuex store](https://vuex.vuejs.org/zh/)
+- [Lodash](https://lodash.com/)
+- [Rxjs](https://rxjs.dev/)
+- [Redux](https://redux.js.org/)
+- [Eigen](https://libeigen.gitlab.io/eigen/docs-nightly/)
+- [open3d](https://www.open3d.org/docs/release/cpp_api/index.html)
+- [assimp](https://assimp.org/)
+- [cpp reference](https://en.cppreference.com/index.html)
+- [element-plus](https://element-plus.org/)
+- [SQLite](https://sqlite.org/index.html)
 
 ## 其他资源
 
@@ -48,3 +56,4 @@
 - [apiPost](https://workspace.apipost.net/guest/apis)
 - [微信服务号的测试公主号，通过它来测试开发](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
 - [chrome支撑win7的最后版本](https://www.google.com/dl/release2/chrome/ggsdppo5kshsyqe3fej7lv4tau_109.0.5414.165/109.0.5414.165_chrome_installer.exe)
+- [ssh终端，开源的mit协议的](https://tabby.sh/)

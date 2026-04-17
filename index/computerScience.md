@@ -59,6 +59,7 @@
 - [网格划分](/cg/mesh/mesh-generation.md)
 - [切线](/cg/mesh/tangent.md)
 - [NURBS](/cg/mesh/NURBS.md)
+- [icp](/cg/mesh/icp.md)
 - [曲线](/cg/tools/curve.md)
 - [几何](/cg/geometry.md)
 
@@ -94,9 +95,10 @@
 - [Mitsuba渲染器](http://www.mitsuba-renderer.org/)
 - [github](https://github.com/mitsuba-renderer/mitsuba3)
 - [可视化3D旋转This is a tool to help convert an visualise 3D rotations](http://asliceofrendering.com/ConversionTool/)
-- [github](https://github.com/BugzTroll/ConversionTool)
+- [可视化3D旋转github](https://github.com/BugzTroll/ConversionTool)
 - [粒子特效A simple program to simulate artificial life using attraction/reuplsion forces between many particles ](https://github.com/hunar4321/particle-life)
 - [Experimental 3D modeler 强大的几何处理能力 ](https://github.com/BrunoLevy/GraphiteThree)
+- [杰魔软件，Geomeagic公司的自动化逆向工程软件，可将三维扫描点云数据转换为多边形网格、NURBS曲面及参数化CAD模型， 将三维扫描数据转化为高精度的数字模型，用于模型对比，Geomagic Studio 已经作为维护项目，演进为Geomagic Desing X](https://hexagon.com/company/divisions/manufacturing-intelligence/geomagic)
 
 ### SVG
 > SVG编辑器
@@ -123,10 +125,7 @@
 - [Building a collaborative text editor in Go协同开发文本编辑器的go实现思考](https://www.aadhav.me/posts/collaborative-editor)
 - [CRDT相关的资料集A Conflict-free Replicated Data Type (CRDT) is a data structure that simplifies distributed data storage systems and multi-user applications.](https://crdt.tech/)
 
-## AI 
-- [神经网络](/ai/neural.network.md)
-- [模型](/ai/model.md)
-- [参考应用模型](/ai/demo.md)
+##  [AI](/ai/index.md)
 
 ## 优秀的产品
 
@@ -137,4 +136,5 @@
 - [计算机专业学习路线](https://hackway.org/docs/cs/intro)
 - [安全](/articles/safe/index.md)
 - [The original sources of MS-DOS 1.25, 2.0, and 4.0 for reference purposes ](https://github.com/microsoft/MS-DOS)
+- [在线模拟电子元件](https://www.withdiode.com/)
 

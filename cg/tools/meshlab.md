@@ -10,3 +10,11 @@ ASCII (.asc) point cloud import
 ASC File Format for 3D Points
 
 可用来协助查看点的数据与坐标
+
+## filter
+
+### Remeshing Simplifiction Reconstructioning
+
+Global Align Meshes
+
+[ICP Between Meshes](/cg/mesh/icp.md)

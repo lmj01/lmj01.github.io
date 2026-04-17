@@ -169,6 +169,7 @@ function tagLinkUpdateEvent(aLink) {
 }
 function catchAllTagLink() {
     document.querySelectorAll('a').forEach(a => tagLinkUpdateEvent(a));
+    document.querySelectorAll('table').forEach(a => a.classList.add('table', 'table-bordered', 'table-striped', 'text-center', 'm-0', 'rounded-1'));
 }
 function initPage(path) {
     fetch(path).then(res=>res.text()).then(async(text)=>{

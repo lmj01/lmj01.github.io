@@ -29,6 +29,7 @@ function Find-Str {
     param(
         [string]$Path,
         [string]$Filter,
+        [int]$Trim=10,
         [string[]]$ExcludeDirs,
         [string]$SearchString
     )
@@ -41,7 +42,8 @@ function Find-Str {
             }
         }
         -not $exclude
-    } | Select-String -Pattern $SearchString -SimpleMatch -CaseSensitive | Select Path,Line,LineNumber
+    } | Select-String -Pattern $SearchString -SimpleMatch -CaseSensitive | Select {$_.Path.Substring($Trim)},Line,LineNumber
+    # Select {$_.Path.Substring($Trim).TrimStart('\','/')},Line,LineNumber 减少占位符长度 
     return $files
 }
 # 搜索关键字
@@ -68,10 +70,12 @@ echo "mydentalX-admin"
 
 $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
+$path3b = "F:\meijie\component-b5\rival1\packages\one1"
 echo "rival"
-Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "49582"
-# Find-Str -Path $path3 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "blendSrcAlpha"
-# Find-Str -Path $path3a -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "blendSrcAlpha"
+# Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "m57337z"
+# Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "blendSrcAlpha"
+# Find-Str -Path $path3a -Trim 44 -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "blendSrcAlpha"
+# Find-Str -Path $path3b -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString "./renderCycle"
 
 $path4 = "F:\platform\sfebackend"
 echo "sfebackend"
@@ -79,7 +83,7 @@ echo "sfebackend"
 
 $path5 = "F:\java\matchyun-orthodontic\src\main\webapp\static\js\"
 echo "java-jsp"
-# Find-Str -Path $path5 -ExcludeDirs @("node_modules", "dist") -SearchString "sale-dl-agent"
+# Find-Str -Path $path5 -ExcludeDirs @("node_modules", "dist") -SearchString "animateRootBoneManager"
 
 $path6 = "F:\masteralign\products\"
 echo "products"
@@ -130,3 +134,7 @@ echo "model-analyse"
 $path17 = "F:\platform\3D\matchyun-orthodontics-html"
 echo "mydentalX-plan"
 # Find-Str -Path $path17 -ExcludeDirs @("node_modules", "dist") -SearchString "occlusionNormal"
+
+$path18 = "F:\platform\sprint-studio"
+echo "sprint-studio"
+Find-Str -Path $path18 -Trim 26 -ExcludeDirs @("node_modules", "dist", "__tests__") -SearchString "mesh_trans_matrix"

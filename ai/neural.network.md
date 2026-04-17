@@ -75,3 +75,6 @@ Transformer因并行和长期依赖建模优势，在自然语言领域表现出
 - [3D 可视化 GPT 大语言模型](https://bbycroft.net/llm)
 - [神经网络算法 —— 一文搞懂Transformer ](https://developer.aliyun.com/article/1462200?utm_content=g_1000391552&accounttraceid=5b0de7cbee3d4e04b732246795313dcegdxe)
 
+## 参考
+
+- [神经网络的视觉解释](https://visualrambling.space/neural-network/)

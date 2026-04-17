@@ -9,6 +9,12 @@ linux启动服务可能有两种
 
 - [菜鸟网址，快速查阅命令](https://www.runoob.com/)
 
+```shell
+cat /etc/os-release # 查看当前
+uname -r # 查看内核版本 -a 查看完整系统信息
+kill -9 #强制、立即终止一个进程 9代表信号SIGKILL，Linux内核发出的信号编码为9
+ps aux | grep 'processName' # 查看进程名
+```
 
 ## packages
 > 包管理，是unix-like的系统的常用工具
@@ -55,6 +61,14 @@ sudo apt install update-manager-core
 sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认相关操作了
 ```
 
+### elf
+
+```shell
+ldd --version #查看当前GLIBC版本
+ldd executable # 查看当前文件的依赖，路径
+readelf -d executable # 查看动态依赖
+```
+
 ## cli
 
 ```shell
@@ -74,12 +88,6 @@ grep -rn --exclude="*.tiff" --exclude-dir="node_modules,.git" "import React" ./
 find ./ -type f -name "*.js" -print0 | xargs -0 grep -n "import React"
 nohup ./execute.sh & # & 后台运行 nohup 不受终端关闭影响
 
-# compress
-xz -d xxx.tar.xz and tar xvf xxx.tar分两步解压 
-tar xvf xxx.tar -C /path 确保指定目录/path已存在
-gunzip xxx.tar.gz and tar xvf xxx.tar
-ln -s src/bin/exe dst/bin/exe创建软连接
-
 # pacman包管理
 pacman -Sl | grep XXX 查询
 pacman -S XXX
@@ -87,15 +95,40 @@ pacman -S XXX
 # service
 sudo service --status-all 查看服务列表
 
-# curl
-1. GET请求， curl http://127.0.0.1:8080/login?admin&passwd=12345678
-2. POST请求 curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login
-3. curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
-
 # network
 netstat -anp | grep 53
 ```
 
+### zip or tar
+```shell
+# compress
+xz -d xxx.tar.xz and tar xvf xxx.tar分两步解压 
+tar xvf xxx.tar -C /path 确保指定目录/path已存在
+gunzip xxx.tar.gz and tar xvf xxx.tar
+ln -s src/bin/exe dst/bin/exe创建软连接
+unzip -o file.zip -d ./output/ # q 安静模式 o 覆盖模式
+```
+
+### curl
+
+```shell
+# 参数
+-o <file> 制定输出文件名和路径
+-O 保留远程文件名
+-L 跟随重定向
+-C - 断点续传
+-# --progress-bar 显示进度条
+-s 静默模式 不显示精度
+-k 忽略SSL验证
+# 请求
+curl http://127.0.0.1:8080/login?admin&passwd=12345678 GET
+curl -d "user=admin&passwd=12345678" http://127.0.0.1:8080/login POST
+curl -H "Content-Type:application/json" -X POST -d '{"user": "admin", "passwd":"12345678"}' http://127.0.0.1:8000/login
+curl -# -O https://example.com/file.iso # 带进度条
+curl -C - -O https://example.com/largefile.zip # 带续传
+curl -L -o https://github.com/xxx # 下载github的release文件，必须处理重定向，必须L，否则下载不了
+curl -O http://192.168.0.162:7710/files/meta/tag_data0324_5544.json
+```
 
 ## 环境搭建
 

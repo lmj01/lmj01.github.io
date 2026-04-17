@@ -1,7 +1,7 @@
 # Book-Info
 
 - [物理科学和技术中使用的数学符号](https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D812E4D3A7E05397BE0A0AB82A)
-    - [pdf](https://journal.cricaas.com.cn/attached/file/20210517/20210517161953_566.pdf)
+- [pdf](https://journal.cricaas.com.cn/attached/file/20210517/20210517161953_566.pdf)
 - [在线英语语法书籍--旋元佑](https://llwslc.github.io/grammar-club/)
 
 - [数学家记录史MacTutor is a free online resource containing biographies of more than 3000 mathematicians and over 2000 pages of essays and supporting materials. ](https://mathshistory.st-andrews.ac.uk/)
@@ -53,16 +53,22 @@ $$
 
 ## 几何
 
+
+- [The Rising Sea: Foundations of Algebraic Geometry海水渗透：代数几何基础]()
+
 ### 几何原本
 
 - [在线彩图符合](https://www.c82.net/euclid/)
-
-## 其他
-
-- [德国赫尔曼·外尔《对称》](https://book.douban.com/subject/30308531/)
-    - 相似性与自同构，用几何描述代数词，这样理解起来很容易，也很轻松，不需要很多抽象的感悟，由直观到具体化
 
 ### [离散微分几何DDG](https://brickisland.net/ddg-web/)
 discrete differential geometry
 
 - [Discrete Differential Geometry: An applied introduction](https://www.cs.cmu.edu/~kmcrane/Projects/DDG/paper.pdf)
+## 拓扑
+
+- [Stefan Friedl，德国人 写了一本4000多页的拓扑数，可免费下载](https://friedl.app.uni-regensburg.de/)
+
+## 其他
+
+- [德国赫尔曼·外尔《对称》, 相似性与自同构，用几何描述代数词，这样理解起来很容易，也很轻松，不需要很多抽象的感悟，由直观到具体化](https://book.douban.com/subject/30308531/)
+- [David H. Silver Beyond Popular Science This book contains 50 standalone chapters, each exploring a curious phenomenon at the boundary of physics, mathematics, cosmology, biology, computer science, history, and linguistics. 开源免费的](https://github.com/silverdavi/beyond_popular_science)

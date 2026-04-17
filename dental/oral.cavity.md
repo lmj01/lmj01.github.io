@@ -60,11 +60,61 @@ xyz是世界坐标系
 图像坐标系描述了如何获取相对于解剖结构的图像。医疗扫描仪创建从左上角开始的点和细胞的常规矩形阵列。
 I轴向右增大，J轴向右增大，K轴向后增大。除了每个体素的强度值IJK之外，还存储解剖坐标的原点和间距。使用原点和间距可以计算出每个图像坐标体素在解剖坐标系中的相应位置。
 
-### 牙齿编号
+## 牙齿编号
 
-- 部分记录法
-    - 分ABCD四个区
-    - 恒牙使用数字，乳牙使用罗马数字
+### FDI
+
+FDI，世界牙科联盟World Dental Federation, 来自法文Federation Dentaire Internationale.
+分ABCD四个区，恒牙1X，2X，3X，4X， 乳牙5X,6X,7X,8X编号法
+
+### Universal Number System
+恒牙1-32号，乳牙A-T号，美国系统，北美使用
+
+### Palmar Notation
+象限 + 数字 / 字母，用 “┘└┐┌” 符号分区，多见于英联邦国家、部分教科书
+
 - palmar，与部位法类似，乳牙使用A到E的数字表示
-- 通用牙号universal，主要美国在使用
-- 牙科联盟FDI
+
+
+## 颌平面
+
+颌平面是指，从双侧上颌中切牙近中邻接点至双侧第一磨牙的近中颊尖顶所构成的假象平面。
+
+![occlusal plane](./images/occlusal_plane.png)
+
+颌平面是在牙尖交错位时代表上下颌牙齿颌面的一条抽象线，颌平面有两个特性：
+
+- 水平高度
+- 斜度
+
+如图所示。
+
+## 牙列期
+
+dentition
+
+## 适应症
+
+轻度间隙slight gap
+轻度拥挤slight crowding
+轻中度开颌mild moderate openbite
+中度间隙moderate gap
+中度拥挤moderate crowding
+轻中度深覆合mild moderate deep-overbite   
+轻度反颌slight crossbite
+轻中度龅牙mild moderate buckteeth
+复发palindromia
+
+## 其他
+邻面去釉interproximal stripping
+gingiva牙龈，齿龈
+
+### TMD
+颞下颌关节紊乱病， 咬合干扰是TMD的重要诱因之一，可能导致关节弹响、疼痛、张口受限以及咀嚼肌群的疲劳、酸痛。
+
+- 紊wen
+
+## 参考
+
+- [Dental Anatomy牙科解剖学，Physiology生理学，Occlusion颌平面](http://what-when-how.com/category/dental-anatomy-physiology-and-occlusion/)
+- []()
