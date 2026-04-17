@@ -89,3 +89,4 @@ extern "C" {
 
 - [Coding "This is Us"](https://gboisse.github.io/posts/this-is-us/#)
 - [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
+- [OFrameGraph: Extensible Rendering Architecture in Frostbite](https://www.gdcvault.com/play/1024045/FrameGraph-Extensible-Rendering-Architecture-in)
