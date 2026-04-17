@@ -321,7 +321,6 @@ declare var A: A_Static;
 
 写*.d.ts的流程，尽量从文档入口，不要被细节影像。
 
-
 ### 参考
 - [typescript官网文档](https://www.typescriptlang.org/docs)
 
@@ -342,4 +341,8 @@ babel7舍弃了以前的 babel-*-* 的命名方式，改成了@babel/*-*
 
 ## 工程技巧
 - debugger，调试加入debugger，让浏览器虚拟机字段暂停在那里。如果在逗号运算中间加入，需要有void关键字，表示这是一个有效表达式。
+
+### 逆向
+#### 私有成员
+对类class中的私有成员，打包后是一个WeakMap的全局变量，分析被人的前端打包的库时，很有用的，避免当前特定函数来使用
 
