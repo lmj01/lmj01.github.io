@@ -16,6 +16,7 @@ bootstrap-vcpkg.bat
 .\vcpkg.exe integrate install // 集成到全局
 .\vcpkg.exe integrate remove 
 .\vcpkg.exe integrate project // 集成到工程， 会生成nuget配置文件，导入vs中的NuGet Package Manager中，新建工程方案时通过它来决定是否添加到当前工程
+cmake ../ -DCMAKE_TOOLCHAIN_FILE=/home/mj/vcpkg/scripts/buildsystems/vcpkg.cmake
 ```
 
 ## 变量设置
