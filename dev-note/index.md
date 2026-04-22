@@ -20,25 +20,28 @@
 - [Sourcetree simplifies how you interact with your Git repositories so you can focus on coding](https://www.atlassian.com/software/sourcetree)
 
 ## 开发文档
-- [Node.js Api](https://nodejs.org/docs/latest/api/)
 - [gl-matrix](https://glmatrix.net/docs/index.html)
+- [java api](https://www.oracle.com/cn/java/technologies/java-se-api-doc.html)
+- [Eigen](https://libeigen.gitlab.io/eigen/docs-nightly/)
+- [open3d](https://www.open3d.org/docs/release/cpp_api/index.html)
+- [assimp](https://assimp.org/)
+- [cpp reference](https://en.cppreference.com/index.html)
+- [SQLite](https://sqlite.org/index.html)
+
+### JS/TS
+- [Node.js Api](https://nodejs.org/docs/latest/api/)
 - [threejs](https://threejs.org/)
 - [vtk.js](https://kitware.github.io/vtk-js/)
 - [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
-- [java api](https://www.oracle.com/cn/java/technologies/java-se-api-doc.html)
 - [vite](https://vite.dev/) 
 - [vue](https://cn.vuejs.org/) 
 - [vuex store](https://vuex.vuejs.org/zh/)
 - [Lodash](https://lodash.com/)
 - [Rxjs](https://rxjs.dev/)
 - [Redux](https://redux.js.org/)
-- [Eigen](https://libeigen.gitlab.io/eigen/docs-nightly/)
-- [open3d](https://www.open3d.org/docs/release/cpp_api/index.html)
-- [assimp](https://assimp.org/)
-- [cpp reference](https://en.cppreference.com/index.html)
+- [axios](https://axios-http.com/docs/intro)
 - [element-plus](https://element-plus.org/)
-- [SQLite](https://sqlite.org/index.html)
 
 ## 其他资源
 

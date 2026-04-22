@@ -1,6 +1,7 @@
 # Community
 
 - [the Journal of Computer Graphics Techniques, peer-reviewed,open access,and free to all](https://jcgt.org/)
+- [软件工程定律](https://lawsofsoftwareengineering.com/)
 
 ## Architecture
 

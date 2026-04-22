@@ -84,9 +84,14 @@ extern "C" {
 
 - [What every coder should know about gamma](/articles/2025/what_every_coder_should_know_about_gamma.md)
 - [Radiometry: Overview辐射度量，有推导公式](https://momentsingraphics.de/RadiometryOverview.html)
+- [Tiling simplex flow noise in 2-D and 3-D compatible with GLSL 1.20 (WebGL 1.0) and above. ](https://github.com/stegu/psrdnoise)
+
+### 模拟器
+- [CARLA Open-source simulator for autonomous driving research自动驾驶](http://carla.org/)
+- [github](https://github.com/carla-simulator/carla)
+
 
 ### 文章
 
 - [Coding "This is Us"](https://gboisse.github.io/posts/this-is-us/#)
 - [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
-- [OFrameGraph: Extensible Rendering Architecture in Frostbite](https://www.gdcvault.com/play/1024045/FrameGraph-Extensible-Rendering-Architecture-in)

@@ -12,6 +12,7 @@
 - [灯光](/cg/lighting/light.md)
 - [相机](/cg/tools/camera.md)
 
+
 ## [three playcode playground](https://playcode.io/)
 邮箱meijie.lmj@outlook.com登录
 
@@ -55,6 +56,7 @@
 - [THREE.js rendering order渲染顺序](https://segmentfault.com/a/1190000041221932/en)
 - [A camera control for three.js, similar to THREE.OrbitControls yet supports smooth transitions and more features. ](https://github.com/lmj01/camera-controls)
 - [一个博客，已3D场景来实现](https://github.com/brunosimon/folio-2025)
+- [Path Tracing Renderer](https://github.com/erichlof/THREE.js-PathTracing-Renderer)
 
 ### 成熟的框架
 

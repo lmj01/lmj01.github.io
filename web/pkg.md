@@ -158,9 +158,12 @@ pnpm test-build
 exit 0
 ```
 
-### PM2
+### [PM2](https://pm2.io/)
+- [单个服务](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/)
 ```shell
 npm install pm2 -g
 pm2 logs
 pm2 start app.js
+pm2 monit #查看所有状态
+pm2 ecosystem # 创建配置文件
 ```

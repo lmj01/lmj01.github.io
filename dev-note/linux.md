@@ -99,9 +99,13 @@ sudo service --status-all 查看服务列表
 netstat -anp | grep 53
 ```
 
-### zip or tar
+### 归档与压缩
+1979年出现的tar不是压缩，而是Tape ARchive，磁带归档字面意思。就是把文件目录规定在一个stream中
+1992年gzip是使用deflate的算法，规避了LZW的算法专利，它只接受stream进行压缩。
+在Unix系统中使用管道就合并成了tar cf - mydir | gzip > mydir.tar.gz。tar中的-z参数就是调用gzip的工作
+zip是1989在DOS中的PKZIP，就是.zip格式，具备是tar和gzip的功能
+1993年的RAR，1996年的bzip2，1999年的.7z, 2009年的xz。
 ```shell
-# compress
 xz -d xxx.tar.xz and tar xvf xxx.tar分两步解压 
 tar xvf xxx.tar -C /path 确保指定目录/path已存在
 gunzip xxx.tar.gz and tar xvf xxx.tar

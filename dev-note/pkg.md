@@ -1,13 +1,13 @@
-# [vcpkg](https://vcpkg.io/)
+# [vcpkg](https://vcpkg.io/en/)
 
-vcpkg是window为C++提供的一个库管理器，很方便安装第三方库。
+vcpkg是C++的一个跨平台库管理器
 
 ## 常用命令
 
 ```shell
-git clone https://github.com/microsoft/vcpkg
+git clone git@github.com:microsoft/vcpkg.git
 cd vcpkg
-git pull --rebase
+git pull
 bootstrap-vcpkg.bat
 .\vcpkg.exe search
 .\vcpkg.exe install xxx  // xxx:x86-windows or xxx:x64-windows 

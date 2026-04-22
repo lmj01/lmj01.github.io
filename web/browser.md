@@ -66,6 +66,11 @@ document.yourFormName.reset();
 - [HTTP/2 push is tougher than I thought](https://jakearchibald.com/2017/h2-push-tougher-than-i-thought/)
 
 
+## firefox
+
+打开页面的服务
+about:serviceworkers
+
 ## Chrome
 
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/open)

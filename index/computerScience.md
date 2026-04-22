@@ -21,6 +21,11 @@
 - [What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
 - [Memory Management Reference内存管理的参考，很详细的文章](https://www.memorymanagement.org/index.html)
 - [Fifty Shades of OOP， 面向对象编程的五十重境界， 作者借用《五十度灰Fifty Shades of Grey》来说事](https://lesleylai.info/en/fifty_shades_of_oop/)
+- [hash](/cpl/data.structure/hash.md)
+- [LRU](/cpl/data.structure/LRU.md)
+- [树形结构](/cpl/data.structure/Tree.md)
+- [Dijkstra 算法](https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/README.zh-CN.md)
+
 
 ### Database
 
@@ -29,13 +34,6 @@
 - [MySql](/database/mysql.md)
 - [sql](/database/sql.md)
 - [sqlite](/database/sqlite.md)
-
-### 数据结构
-
-- [hash](/cpl/data.structure/hash.md)
-- [LRU](/cpl/data.structure/LRU.md)
-- [树形结构](/cpl/data.structure/Tree.md)
-- [Dijkstra 算法](https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/README.zh-CN.md)
 
 ## ComputerGraphics
 
@@ -53,6 +51,7 @@
 - [3D打印模型文件](https://www.thingiverse.com/)
 - [bezierjs ](https://pomax.github.io/bezierjs/)
 - [github](https://github.com/Pomax/bezierjs)
+- [引擎技术](/cg/engines.md)
 
 ### 网格
 - [HalfEdge半边结构](/cg/tools/half-edge.md)
@@ -63,22 +62,6 @@
 - [曲线](/cg/tools/curve.md)
 - [几何](/cg/geometry.md)
 
-### Engine
-
-- [引擎技术](/cg/engines.md)
-- [PBR基于物理的渲染](/cg/lighting/pbr.md)
-- [Bgfx](/cg/bgfx.md)
-- [UI](/cg/ui.md)
-- [threejs 笔记](/cg/threejs/index.md)
-- [Galacean](/cg/galacean/index.md)
-
-#### 模拟器
-- [CARLA Open-source simulator for autonomous driving research自动驾驶](http://carla.org/)
-    - [github](https://github.com/carla-simulator/carla)
-
-#### noise
-
-- [Tiling simplex flow noise in 2-D and 3-D compatible with GLSL 1.20 (WebGL 1.0) and above. ](https://github.com/stegu/psrdnoise)
 
 ### 动画
 
@@ -99,6 +82,16 @@
 - [粒子特效A simple program to simulate artificial life using attraction/reuplsion forces between many particles ](https://github.com/hunar4321/particle-life)
 - [Experimental 3D modeler 强大的几何处理能力 ](https://github.com/BrunoLevy/GraphiteThree)
 - [杰魔软件，Geomeagic公司的自动化逆向工程软件，可将三维扫描点云数据转换为多边形网格、NURBS曲面及参数化CAD模型， 将三维扫描数据转化为高精度的数字模型，用于模型对比，Geomagic Studio 已经作为维护项目，演进为Geomagic Desing X](https://hexagon.com/company/divisions/manufacturing-intelligence/geomagic)
+
+### [ffmpeg](https://www.ffmpeg.org/)
+- [git repo](https://git.ffmpeg.org/gitweb)
+
+#### [ffmpeg.wasm](https://ffmpegwasm.netlify.app/)
+```js
+// 可以偏移给前端使用
+ffmpeg.setLogger(console.log);
+```
+
 
 ### SVG
 > SVG编辑器
