@@ -114,6 +114,20 @@ gingiva牙龈，齿龈
 
 - 紊wen
 
+### 附件
+附件是粘接在牙齿表面的树脂突起，用于增强矫治器对牙齿的控制力
+附件有不同的形状
+
+| 枚举值                             | 含义                                    |
+| ------------------------------- | ------------------------------------- |
+| **Rectangular（矩形）**             | 传统矩形附件，分为水平放置和垂直放置，用于控制伸长、压低、旋转等      |
+| **Ellipsoidal（椭圆形/椭球形）**        | 椭圆或半椭球形附件，常用于转矩控制                     |
+| **Optimized Extrusion（优化伸长附件）** | Invisalign 等系统的优化设计附件，专为牙齿伸长移动定制形状和位置 |
+| **Optimized Rotation（优化旋转附件）**  | 专为牙齿旋转移动优化的附件设计，如用于尖牙、侧切牙等            |
+| **Power Arm（力臂/Power Ridge）**   | 设置在矫治器上的功能结构，类似水平椭圆附件，用于产生力偶控制转矩      |
+| **Other（其他）**                   | 其他类型附件                                |
+
+
 ## 参考
 
 - [Dental Anatomy牙科解剖学，Physiology生理学，Occlusion颌平面](http://what-when-how.com/category/dental-anatomy-physiology-and-occlusion/)

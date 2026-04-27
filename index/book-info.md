@@ -33,6 +33,7 @@
 - [Handbook of Discrete and Computational Geometry, Third Edition](/articles/books/Handbook_of_Discrete_and_Computational_Geometry_Third_Edition)
 - [Discrete and Computational Geometry, 1nd Edition](/articles/books/Discrete_and_Computational_Geometry_First_Edition.md)
 - [Discrete and Computational Geometry, 2nd Edition](/articles/books/Discrete_and_Computational_Geometry_Second_Edition.md)
+- [Linear Algebra Done Right](/articles/books/LinearAlgebraDoneRight.md)
 - [Polygon Mesh Processing](/cg/mesh/PolygonMeshProcessing.md)
 - [The Nurbs Book](/cg/mesh/NURBS)
 

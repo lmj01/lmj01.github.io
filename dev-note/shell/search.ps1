@@ -72,10 +72,12 @@ $path3 = "F:\meijie\component-b5\rival1\packages\"
 $path3a = "F:\meijie\component-b5\rival1\20241009\"
 $path3b = "F:\meijie\component-b5\rival1\packages\one1"
 echo "rival"
-# Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString "m57337z"
-# Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString "pickClearStateAndValueFromSubpass"
-# Find-Str -Path $path3a -Trim 44 -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString "blendSrcAlpha"
-Find-Str -Path $path3b -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString "PassSequenceFactory"
+# $rivalStr = "`.byMask`(`{"
+$rivalStr = "e50266sf"
+# Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString $rivalStr
+# Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString $rivalStr
+# Find-Str -Path $path3a -Trim 44 -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString $rivalStr
+Find-Str -Path $path3b -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString $rivalStr
 
 $path4 = "F:\platform\sfebackend"
 echo "sfebackend"

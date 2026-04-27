@@ -14,7 +14,7 @@
 ### Actor
 
 - [CAF is an open source implementation of the actor model for C++ featuring lightweight & fast actor implementations, pattern matching for messages, network transparent messaging, and more.](https://www.actor-framework.org/)
-    - [document](https://actor-framework.readthedocs.io/en/stable/Introduction.html)
+- [document](https://actor-framework.readthedocs.io/en/stable/Introduction.html)
 
 ### Paradigm
 

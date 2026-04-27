@@ -9,10 +9,11 @@
 - [markdown中文文档](https://markdown.com.cn/)
 - [mermaid](/articles/mermaid.md)
 - [markdown](/articles/markdown.md)
-- [github project](/articles/github_projects.md)
+- [github上有趣的项目](/articles/github_projects.md)
+- [常用数学公式排版KaTex语法总结 应用广泛，且可嵌入Markdown中结合使用](https://kissingfire123.github.io/2022/02/18_%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8Fkatex%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/)
 
 ## 小工具
-
+- [图片解释器--通过AI解释图片内容并延申其含义](https://flipbook.page/)
 ### 微信登录
 - [有道词典](https://dict.youdao.com/)
 - [金山词霸](https://www.iciba.com/word?w=circumstances)

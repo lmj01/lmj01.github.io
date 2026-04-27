@@ -47,5 +47,10 @@ location = > location full-path > location ^~ path > location ~,~* > location pa
 [在线配置nginx](https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN)
 [正确的Nginx跨域配置（后端Nginx CORS跨域配置、CORS设置，后端允许跨域请求）](https://www.cnblogs.com/zhoading/p/15987927.html)
 
+### [webdav](https://nginx.org/en/docs/http/ngx_http_dav_module.html)
+- [基于nginxinc/nginx-unprivileged WebDAV 方案的深度优化指南，包含性能调优、安全加固和高级功能配置 ](https://github.com/aspnmy/nginx_webdav_dev/tree/main)
+- [WebDAV client written in Typescript for NodeJS and the browser ](https://github.com/perry-mitchell/webdav-client)
+
+
 ## 参考
 - [本文介绍如何设置 nginx，禁止 HTTP/1.0 和 HTTP/1.1 协议，只有白名单里面的客户端可以通过，这杜绝了绝大部分的攻击和爬虫](https://www.ruanyifeng.com/blog/2026/01/weekly-issue-383.html)
