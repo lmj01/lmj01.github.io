@@ -72,6 +72,18 @@ img {
     margin: 0 15px;
     list-style: none;
 }
+strong {
+    color: var(--bs-warning);
+}
+.mj-articles-books-2026 {
+    h3 {
+        font-weight: 900;
+    }
+    h4 {
+        font-weight: 600;
+    }
+
+}
 /* table {
     width: 100%;
     border-collapse: inherit;

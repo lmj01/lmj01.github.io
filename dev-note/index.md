@@ -13,6 +13,7 @@
 - [docker](/dev-note/docker.md)
 - [自动化部署](/dev-note/deploy.md)
 - [硬件配置](/dev-note/hardware.md)
+- [AI](/dev-note/ai.md)
 
 ## 版本控制
 
@@ -59,5 +60,7 @@
 - [apiPost](https://workspace.apipost.net/guest/apis)
 - [微信服务号的测试公主号，通过它来测试开发](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
 - [chrome支撑win7的最后版本](https://www.google.com/dl/release2/chrome/ggsdppo5kshsyqe3fej7lv4tau_109.0.5414.165/109.0.5414.165_chrome_installer.exe)
-- [ssh终端，开源的mit协议的](https://tabby.sh/)
+- [tabby终端](https://tabby.sh/)
+- [Warp终端](https://docs.warp.dev/)
 - [著名的网络通信监控软件 Little Snitch，终于推出了 Linux 版](https://obdev.at/products/littlesnitch-linux/index.html)
+- [](https://mswjs.io/docs)

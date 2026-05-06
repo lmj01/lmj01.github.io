@@ -71,6 +71,9 @@ document.yourFormName.reset();
 打开页面的服务
 about:serviceworkers
 
+### 清除
+firefox在url那栏最左边有一个图标可以点击清空当前网站的缓存。特别是MSW
+
 ## Chrome
 
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/open)
@@ -100,6 +103,9 @@ Chromium Embedded Framework(CEF)是一个框架，用于在其他应用程序中
 嵌入式Chromium框架(简称CEF)，是一个基于Google Chromium的Webbrowser控件，支持用户插件，协议，JavaScript对象以及JavaScript扩展
 
 - [CEF开发总结](https://www.pressc.cn/1042.html)
+
+### 清除
+
 
 ## 插件
 

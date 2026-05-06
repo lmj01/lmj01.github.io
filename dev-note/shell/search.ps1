@@ -73,7 +73,8 @@ $path3a = "F:\meijie\component-b5\rival1\20241009\"
 $path3b = "F:\meijie\component-b5\rival1\packages\one1"
 echo "rival"
 # $rivalStr = "`.byMask`(`{"
-$rivalStr = "e50266sf"
+# $rivalStr = "node`/gingiva"
+$rivalStr = "fetchGeometryDataById"
 # Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString $rivalStr
 # Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString $rivalStr
 # Find-Str -Path $path3a -Trim 44 -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString $rivalStr

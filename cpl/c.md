@@ -36,3 +36,4 @@ linux内核中使用的C语言的面向对象的设计思考参考
 ## 参考
 - [dependable C 关于C的编程](https://dependablec.org/)
 - [The Cost Of a Closure in C 2025-12-10](https://thephd.dev/the-cost-of-a-closure-in-c-c2y)
+- [CJIT, C, Just in Time, A tiny, portable C compiler and interpreter](https://dyne.org/cjit/)

@@ -32,6 +32,7 @@
 - [math is fun](https://www.mathsisfun.com/)
     - [数学乐-中文版](https://www.shuxuele.com/index.html)
 - [前端数学库](http://algebrite.org/)
+- [mathematical curves 939种二维曲线集合](https://www.2dcurves.com/index.html)
 
 ### [Animated math](https://www.3blue1brown.com/)
 

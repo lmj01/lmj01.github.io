@@ -8,6 +8,7 @@
 ## Normal
 
 - [Tangent正切线](/cg/mesh/tangnent.md)
+- [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
 
 几何法线Geometric Normal通常指的是在几何建模阶段为每个顶点计算的法线向量，它代表了在该顶点处表面的平滑近似。
 

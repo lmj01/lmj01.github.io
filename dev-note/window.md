@@ -28,6 +28,13 @@ netsh int ip reset
 - wmic process where ProcessId=1024 get ParentProcessId 获取父进程ID
 - wmic process where name="xxx.exe" call terminate
 
+### [7z](https://www.7-zip.org/)
+- [doc command line](https://documentation.help/7-Zip/index4.htm)
+```shell
+7z.exe a -tzip auth.zip auth.json # 压缩
+7z.exe e auth.zip # 解压 默认当前目录
+```
+
 ## PowerShell
 
 - [什么是 PowerShell？](https://learn.microsoft.com/zh-cn/powershell/scripting/overview?view=powershell-7.4)
@@ -131,3 +138,13 @@ sudo dpkg-reconfigure locales 配置其他字体
 
 - [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
+
+## [tabby](https://tabby.sh/)
+```shell
+# CTRL + N 下一个tab
+# CTRL + P 上一个tab
+# ctrl + right 向右split
+# ctrl + down 向下split
+# CTRL + up 切换前一个
+# CTRL + left 切换下一个
+```
