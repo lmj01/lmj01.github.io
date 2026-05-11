@@ -96,3 +96,4 @@ SLERP代表**S**pherical **L**inear Int**erp**olation, 可以在2个朝向之间
 - Quaternions for Computer Graphics, 2011
 - [Quaterions, Interpolation and Animation](http://web.mit.edu/2.998/www/QuaternionReport1.pdf)
 - [Linear Combination of Transformations](http://mesh.brown.edu/DGP/pdfs/Alexa-sg2002.pdf)
+- [Maths - Quaternion Notations - As a quantity similar to axis-angle](https://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/geometric/axisAngle/index.htm)

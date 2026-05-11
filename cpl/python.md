@@ -1,5 +1,12 @@
 # [Python](https://www.python.org/)
 
+## snippet
+
+```shell
+cat file.json | python3 -m json.tool > formatted.json # 格式化
+cat file.json | python3 -c "import json,sys;json.dump(json.load(sys.stdin),sys.stdout,ensure_ascii=False,indent=2)" > formatted.json # 格式化
+```
+
 ## Python环境搭建
 
 从官网下载web安装包，定制化安装
@@ -72,3 +79,4 @@ Scripts\activate conda2 // 进入当前环境
 scikit-build is a Python build system for CPython C/C++/Fortran/Cython extensions using CMake.
 
 通过这个工具很容易把C++库迁移到python封装接口上，如[draco](https://github.com/seung-lab/DracoPy)
+

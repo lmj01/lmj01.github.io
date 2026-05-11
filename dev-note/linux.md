@@ -69,6 +69,14 @@ ldd executable # 查看当前文件的依赖，路径
 readelf -d executable # 查看动态依赖
 ```
 
+### cp
+```shell
+cp -r folderA/* folderB/ #拷贝目录A中内容到目录B中，不包含folderA
+cp -r folderA/ folderB/ # 拷贝目录，
+cp -rvi folderA/ folderB/ # 显示进度，覆盖询问
+```
+
+
 ## cli
 
 ```shell

@@ -1,5 +1,9 @@
 # open project
 
+## svg
+
+- [弧线箭头生成，Curve Arrow](https://github.com/YYsuni/curve-arrow)
+
 ## AI
 
 ### 提示词库
@@ -10,3 +14,4 @@
 记录一些有意思得项目
 
 - [Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere. ](https://github.com/Crosstalk-Solutions/project-nomad)
+- [基于RSS的资讯聚合工作台 ](https://github.com/shawnxie94/infinitum)

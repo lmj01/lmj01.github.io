@@ -14,6 +14,7 @@
 - [自动化部署](/dev-note/deploy.md)
 - [硬件配置](/dev-note/hardware.md)
 - [AI](/dev-note/ai.md)
+- [python](/cpl/python.md)
 
 ## 版本控制
 
@@ -43,6 +44,7 @@
 - [Redux](https://redux.js.org/)
 - [axios](https://axios-http.com/docs/intro)
 - [element-plus](https://element-plus.org/)
+- [d3](https://d3js.org/api)
 
 ## 其他资源
 

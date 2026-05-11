@@ -15,15 +15,15 @@
 ## 小工具
 - [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader)
 - [图片解释器--通过AI解释图片内容并延申其含义](https://flipbook.page/)
+- [清理工具，支持window和Linux系统BleachBit is the powerful, open-source tool trusted by millions to obliterate junk files, shred sensitive data, and keep your system running clean. No bloatware. No subscriptions. Just results. ](https://www.bleachbit.org/)
 ### 微信登录
 - [有道词典](https://dict.youdao.com/)
 - [金山词霸](https://www.iciba.com/word?w=circumstances)
 
-- [在线DWG文件查看，这个基于 GroupDocs.Viewer API 的免费在线应用程序可在您的设备上显示 DWG 文件。](https://products.groupdocs.app/zh/viewer/dwg)
-
 ### 其他
 - [在线随机密码生成器](https://www.lddgo.net/string/randompassword)
 - [国家企业信用信息公示系统](https://www.gsxt.gov.cn/index.htm)
-
+- [学信网](https://my.chsi.com.cn/archive/index.jsp)
+- [教育部学历查询网站](https://www.chsi.com.cn/)
 
 

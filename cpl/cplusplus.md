@@ -153,6 +153,7 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [Google 开源了其内部多年使用的 C++ 代码库](https://github.com/abseil/abseil-cpp)
 - [folly库 An open-source C++ library developed and used at Facebook. ](https://github.com/facebook/folly)
 - [What's In a Class? - The Interface Principle, This article appeared in C++ Report, 10(3), March 1998.](http://www.gotw.ca/publications/mill02.htm)
+- [Modern C++ Programming Course (C++03/11/14/17/20/23/26) ](https://github.com/federico-busato/Modern-CPP-Programming)
 
 ### 工具
 

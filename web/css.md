@@ -22,12 +22,12 @@ bootstrap-vue上看到的，让网页宽度自动适应手机屏幕
 
 这样可以实现dropdown的样式,
 
-### Visual formatting model
+#### Visual formatting model
 it is an algorithm that processes a document and display it on visual media.
 it transforms each element of the document and generates zero, one, or several boxes that conform to the **box model**
 
 
-### flex
+#### flex
 
 轴
 - 主轴main axis
@@ -185,9 +185,8 @@ div {
 }
 ```
 - [css实现不规则](https://juejin.cn/post/7081595150661025829)
-
-- [CSS Painting API]
-    - [clip-path](https://juejin.cn/post/7171609307253833764)
+- [CSS Painting API clip-path](https://juejin.cn/post/7171609307253833764)
+- [Exploring the majestic new animation-timeline API](https://www.joshwcomeau.com/animation/scroll-driven-animations/)
 
 ### variable
 
