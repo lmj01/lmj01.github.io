@@ -81,6 +81,9 @@ for SSAO, like the order:
 - [OpenGL Renderer w/ FrameGraph， This is a renderer agnostic implementation of FrameGraph, inspired by the GDC presentation: FrameGraph: Extensible Rendering Architecture in Frostbite by Yuriy O'Donnell](https://github.com/skaarj1989/FrameGraph-Example#)
 - [OFrameGraph: Extensible Rendering Architecture in Frostbite](https://www.gdcvault.com/play/1024045/FrameGraph-Extensible-Rendering-Architecture-in)
 
+### [VGLX Cross-platform scene-oriented 3D rendering engine for modern C++ ](https://github.com/shlomnissan/vglx)
+
+- [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
 
 ## 相关文章
 

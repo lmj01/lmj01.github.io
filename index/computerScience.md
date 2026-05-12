@@ -60,6 +60,7 @@
 - [NURBS](/cg/mesh/NURBS.md)
 - [icp](/cg/mesh/icp.md)
 - [曲线](/cg/tools/curve.md)
+- [图形学中的矩阵Matrix](/cg/tools/matrix.md)
 - [几何](/cg/geometry.md)
 
 

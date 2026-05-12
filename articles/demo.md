@@ -16,6 +16,7 @@
 - [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader)
 - [图片解释器--通过AI解释图片内容并延申其含义](https://flipbook.page/)
 - [清理工具，支持window和Linux系统BleachBit is the powerful, open-source tool trusted by millions to obliterate junk files, shred sensitive data, and keep your system running clean. No bloatware. No subscriptions. Just results. ](https://www.bleachbit.org/)
+- [在线MD5加解密](https://www.sojson.com/encrypt_md5.html)
 ### 微信登录
 - [有道词典](https://dict.youdao.com/)
 - [金山词霸](https://www.iciba.com/word?w=circumstances)

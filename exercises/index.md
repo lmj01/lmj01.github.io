@@ -24,9 +24,10 @@
 
 - [物理学](/exercises/physics.md)
 
-## 工具
+## 其他
 
-- [Wolfram MathWorld](https://mathworld.wolfram.com/)
+### 工具
+
 - [提供各种数学问题的交互式解法和动画](https://www.cut-the-knot.org/)
 - [图形计算器，用meijie.lmj@outlook.com登录的](https://www.desmos.com/calculator?lang=zh-CN)
 - [math is fun](https://www.mathsisfun.com/)
@@ -37,8 +38,11 @@
 ### [Animated math](https://www.3blue1brown.com/)
 
 - [社区版](https://www.manim.community/)
-    - [github A community-maintained Python framework for creating mathematical animations. ](https://github.com/ManimCommunity/manim)
+- [github A community-maintained Python framework for creating mathematical animations. ](https://github.com/ManimCommunity/manim)
 
+### 数学网站
+- [Wolfram MathWorld](https://mathworld.wolfram.com/)
+- [数学文化](https://www.global-sci.com/mc)
 
 <details>
 <summary>Geogebra开源在线工具</summary>
