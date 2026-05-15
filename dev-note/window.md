@@ -138,6 +138,25 @@ sudo dpkg-reconfigure locales 配置其他字体
 
 - [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
+## 其他设置
+
+### 把虚拟内存pagefile.sys从C盘移动到其他磁盘
+
+- win+R 输入 systempropertiesadvanced
+- 选择 性能=》设置
+- 选择 高级=》虚拟内存 =》更改
+- 取消自动管理所有驱动器，必须取消，否则更改不了
+- 选中C盘，选无分页文件，点击设置按钮 必须点击
+- 选中D盘，选中系统管理大小，点击设置按钮 必须的
+- 一路确定保存后，就重启电脑。
+
+### 休眠
+hierfil.sys 占用
+```cmd
+powercfg /h off 关闭休眠
+powercfg /h on 启用休眠和快速启动
+powercfg /h /type reduced 缩小体积
+```
 
 ## [tabby](https://tabby.sh/)
 ```shell

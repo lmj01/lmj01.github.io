@@ -41,7 +41,7 @@
 - [字体](/cg/font.md)
 - [webgl](/cg/canvas.md)
 - [Shader](/cg/shader.md)
-- [vulkan](/cg/api.modern.md)
+- [下一代图像API](/cg/api.modern.md)
 - [图形学概述](/cg/graphics.md)
 - [Real-Time Rendering Resources](https://www.realtimerendering.com/)
 - [Ambient Occlusion](../cg/lighting/ambient-occlusion.md)

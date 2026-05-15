@@ -70,11 +70,15 @@ document.yourFormName.reset();
 
 打开页面的服务
 about:serviceworkers
+about:config
 
 ### 清除
 firefox在url那栏最左边有一个图标可以点击清空当前网站的缓存。特别是MSW
 
 ## Chrome
+
+chrome://apps
+chrome://flags
 
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/open)
 

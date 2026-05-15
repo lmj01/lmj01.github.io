@@ -53,6 +53,7 @@ img {
 
 /* markdown style------------begin */
 /* 只改变第一个子节点，不改变二级以下的，必须指定为child */
+.mj-index-demo > ul,
 .mj-book-info > ul,
 .mj-web-index > ul,
 .mj-web-http > ul,
@@ -63,6 +64,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.mj-index-demo > ul > li,
 .mj-book-info > ul > li,
 .mj-web-index > ul > li,
 .mj-web-http > ul > li,

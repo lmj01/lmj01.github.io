@@ -86,6 +86,9 @@ async function toHtmlData(elContent, text, options = {}) {
     if (options.relativePath) {
         uniqueClass = options.relativePath.replace(/\/index\//g,'').replace(/.md$/g, '').replaceAll('/','-').toLowerCase();
         if (['/','-'].includes(uniqueClass[0])) uniqueClass = uniqueClass.substring(1);
+    }
+    if (options.defaultPath) {
+        uniqueClass = options.defaultPath;
     }    
     elDiv.classList.add('w-100','h-100','d-flex','flex-column', 'container');
     if (uniqueClass.length > 0) elDiv.classList.add(`mj-${uniqueClass}`);
@@ -173,7 +176,7 @@ function catchAllTagLink() {
 }
 function initPage(path) {
     fetch(path).then(res=>res.text()).then(async(text)=>{
-        await toHtmlData(document.getElementById('content'), text);
+        await toHtmlData(document.getElementById('content'), text, {defaultPath:'index-demo'});
         catchAllTagLink();
     })    
 }
