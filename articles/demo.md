@@ -29,5 +29,6 @@
 - [学信网](https://my.chsi.com.cn/archive/index.jsp)
 - [教育部学历查询网站](https://www.chsi.com.cn/)
 - [Archive归档记录](https://archive.org/)
+- [DOS Games Online](https://dos.zone/)
 
 

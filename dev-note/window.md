@@ -138,6 +138,17 @@ sudo dpkg-reconfigure locales 配置其他字体
 
 - [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
+## Dev-tools
+winget这个工具来按照
+```shell
+winget source list # 查看当前的source
+winget search WindowsSDK
+winget install Microsoft.WindowsSDK.10.0.28000
+winget search BuildTools
+winget install Microsoft.VisualStudio.2022.BuildTools # 安装时注意网络，不能开启系统VPN
+winget install Microsoft.VisualStudio.2022.BuildTools --source winget # 
+```
+
 ## 其他设置
 
 ### 把虚拟内存pagefile.sys从C盘移动到其他磁盘

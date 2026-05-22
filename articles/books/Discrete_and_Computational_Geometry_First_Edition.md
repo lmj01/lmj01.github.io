@@ -58,3 +58,5 @@ is a lower bound on the number of comparisons made by a sorting algorithm.
 
 ### 2.6 divide and conquer
 递归recursion，a powerful algorithm paradigm。 1977 Franco Preparata and SeJune Hong were the first to apply this technical to the convex hull problem。
+
+### 2.7 Convex hull in 3D

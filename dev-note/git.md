@@ -306,3 +306,6 @@ hotfix/(hot/), 紧急修复 hotfix/security
 release/, 发布分支 release/v1.1.0
 chore/, 非代码分支 chore/update-dependencies
 ```
+
+## 其他
+- [Forge great software可自建的git服务](https://forgejo.org/)
