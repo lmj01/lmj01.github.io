@@ -89,6 +89,14 @@ extern "C" {
 - [CARLA Open-source simulator for autonomous driving research自动驾驶](http://carla.org/)
 - [github](https://github.com/carla-simulator/carla)
 
+### tier
+tier梯队/层级是GPU消费级别的分类，普遍按照分类级别的
+- tier1 旗舰/超高
+- tier2 高端/企业级
+- tier3 入门/推理级
+- [@pmndrs/detect-gpu](https://github.com/pmndrs/detect-gpu)
+- [](https://github.com/grepp/detect-gpu)
+
 
 ### 文章
 

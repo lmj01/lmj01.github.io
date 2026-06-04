@@ -78,7 +78,7 @@ $rivalStr = "fetchGeometryDataById"
 # Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one0", "subs") -SearchString $rivalStr
 # Find-Str -Path $path3 -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "one1", "subs") -SearchString $rivalStr
 # Find-Str -Path $path3a -Trim 44 -ExcludeDirs @("third", "src", "data", "neo-subs") -SearchString $rivalStr
-Find-Str -Path $path3b -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString $rivalStr
+# Find-Str -Path $path3b -Trim 44 -ExcludeDirs @("third", "node_modules", "data", "subs") -SearchString $rivalStr
 
 $path4 = "F:\platform\sfebackend"
 echo "sfebackend"
@@ -86,7 +86,7 @@ echo "sfebackend"
 
 $path5 = "F:\java\matchyun-orthodontic\src\main\webapp\static\js\"
 echo "java-jsp"
-# Find-Str -Path $path5 -ExcludeDirs @("node_modules", "dist") -SearchString "animateRootBoneManager"
+Find-Str -Path $path5 -ExcludeDirs @("node_modules", "dist") -SearchString "sysinfo"
 
 $path6 = "F:\masteralign\products\"
 echo "products"

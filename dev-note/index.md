@@ -67,4 +67,5 @@
 - [tabby终端](https://tabby.sh/)
 - [Warp终端](https://docs.warp.dev/)
 - [网络通信监控软件 Little Snitch](https://obdev.at/products/littlesnitch-linux/index.html)
-- [](https://mswjs.io/docs)
+- [mswjs](https://mswjs.io/docs)
+

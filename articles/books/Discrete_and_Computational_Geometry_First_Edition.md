@@ -22,7 +22,7 @@ The fundamental “Jordan curve theorem,” formulated and proved by Camille Jor
 ### 1.3 The Art Gallery Theorem
 美术馆定理，对于一个有n个顶点的简单多边形（即没有洞、边不相交的封闭形状），最少需要多少个固定位置的“警卫”(点)，才能保证多边形内部的每一点都被至少一个警卫看到？
 
-## Convex Hulls 凸包
+## 2 Convex Hulls 凸包
 
 Now we extend the idea to convex regions: a region is convex if any two points of the region are visible to one another within the region.
 
@@ -60,3 +60,12 @@ is a lower bound on the number of comparisons made by a sorting algorithm.
 递归recursion，a powerful algorithm paradigm。 1977 Franco Preparata and SeJune Hong were the first to apply this technical to the convex hull problem。
 
 ### 2.7 Convex hull in 3D
+
+### suggested readings
+Alexander Barvinok. A Course in Convexity. American Mathematical
+Society, 2002.
+This well-written textbook covers the applications of convexity to numerous areas
+of mathematics and computer science, such as sphere packing, graph theory, linear
+programming, and polyhedra. It is aimed at an advanced undergraduate level.
+
+## 3 Triangulations

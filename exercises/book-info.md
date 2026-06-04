@@ -22,12 +22,17 @@
 ## 分析
 
 - [An Infinite Descent into Pure Mathematics开源的书籍](https://infinitedescent.xyz/)
-- [Walter Rudin《Principles of Mathematical Analysis》(数学分析原理)](https://book.douban.com/subject/1230095/)
+
+### [Walter Rudin《Principles of Mathematical Analysis》(数学分析原理)](https://book.douban.com/subject/1230095/)
     - 学习数学的学生的必读之作
     - 在谈论实数和复数集时，使用几何语言通常很方便，然而应该清楚理解的是，证明不能基于几何直觉，尽管几何解释可能非常有助于暗示证明可能进行的步骤
     - 大部分文本以定义、示例、定理、证明、推论为顺序，组织非常高效，同时给初学者困惑和迷茫的
-- [Charles Chapman Pugh《Real Mathematical Analysis》(实数学分析)](https://book.douban.com/subject/26588474/)
+### [Charles Chapman Pugh《Real Mathematical Analysis》(实数学分析)](https://book.douban.com/subject/26588474/)
     - 很好的解释了概念或证明的本质，帮助建立直觉
+
+### [Calculus Made Easy By Silvanus P. Thompson](https://calculusmadeeasy.org/)
+微积分很简单，有一系列书籍，这本免费
+[下载地址](https://www.gutenberg.org/ebooks/33283)
 
 ### [Steven H. Strogatz《Nonlinear dynamics and chaos: with applications to physics, biology, chemistry, and engineering》(非线性动力学与混沌)](https://book.douban.com/subject/27049323/)
 

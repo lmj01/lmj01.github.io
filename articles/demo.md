@@ -22,6 +22,7 @@
 ### 微信登录
 - [有道词典](https://dict.youdao.com/)
 - [金山词霸](https://www.iciba.com/word?w=circumstances)
+- [古典音乐-国家大剧院](https://www.ncpa-classic.com)
 
 ### 其他
 - [在线随机密码生成器](https://www.lddgo.net/string/randompassword)
@@ -30,5 +31,8 @@
 - [教育部学历查询网站](https://www.chsi.com.cn/)
 - [Archive归档记录](https://archive.org/)
 - [DOS Games Online](https://dos.zone/)
+- [动态IP服务，个人免费](https://dynip.dev/)
 
+### 电台
+- [云听](https://www.radio.cn/pc-portal/erji/radioStation.html)
 
