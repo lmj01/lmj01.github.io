@@ -68,7 +68,11 @@
 
 - [快速生成3D动画模型 Magical 3D motion studio with AI Generate production-ready animations in a minute, offering endless possibilities](https://mootion.com/landing)
 - [Tracking Everything Everywhere All at Once](https://omnimotion.github.io/)
-    - [PyTorch Implementation for paper Tracking Everything Everywhere All at Once, ICCV 2023.](https://github.com/qianqianwang68/omnimotion)
+- [PyTorch Implementation for paper Tracking Everything Everywhere All at Once, ICCV 2023.](https://github.com/qianqianwang68/omnimotion)
+
+### 开源游戏
+
+- [SuperTux](/cg/games/supertux.md)
 
 ### Tool
 
