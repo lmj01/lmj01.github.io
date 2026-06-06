@@ -73,6 +73,7 @@
 ### 开源游戏
 
 - [SuperTux](/cg/games/supertux.md)
+- [gcompris, High-quality educational software suite for children aged 2 to 10 ](/cg/games/gcompris.md)
 
 ### Tool
 
