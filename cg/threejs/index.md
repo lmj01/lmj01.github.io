@@ -2,7 +2,7 @@
 
 - [问题集](/cg/threejs/use.md)
 - [数学](/cg/threejs/math.md)
-- [乱记](/cg/threejs/threejs.md)
+- [结构解读](/cg/threejs/framework.md)
 - [RayCaster](/cg/threejs/raycaster.md)
 - [Shader-TLS](/cg/threejs/shader.md)
 - [模型-导入-导出](/cg/threejs/model.md)
@@ -12,6 +12,13 @@
 - [灯光](/cg/lighting/light.md)
 - [相机](/cg/tools/camera.md)
 
+## dev
+```shell
+git clone --depth=1 https://github.com/mrdoob/three.js.git
+cd three.js
+npm install
+npm run start
+```
 
 ## [three playcode playground](https://playcode.io/)
 邮箱meijie.lmj@outlook.com登录
@@ -51,7 +58,7 @@
 - [Beispiele webGL mit three.js ](https://hofk.de/main/threejs/)
 - [3D Grafik - WebGL mit three.js](https://xprofan.net/intl/de/php,html,js/3d-grafik-webgl-mit-three-js/)
 - [use your mouse to control the camera and build an andorid](https://hofk.de/main/threejs/raycaster/raycaster.html)
-- [webgl examples](https://alteredqualia.com/)
+- [webgl examples一些webGL的高级demo](https://alteredqualia.com/)
 - [22](https://github.com/brunosimon/folio-2019)
 - [THREE.js rendering order渲染顺序](https://segmentfault.com/a/1190000041221932/en)
 - [A camera control for three.js, similar to THREE.OrbitControls yet supports smooth transitions and more features. ](https://github.com/lmj01/camera-controls)

@@ -76,14 +76,6 @@ cp -r folderA/ folderB/ # 拷贝目录，
 cp -rvi folderA/ folderB/ # 显示进度，覆盖询问
 ```
 
-### sshlf
-```shell
-cp -r folderA/* folderB/ #拷贝目录A中内容到目录B中，不包含folderA
-cp -r folderA/ folderB/ # 拷贝目录，
-cp -rvi folderA/ folderB/ # 显示进度，覆盖询问
-```
-
-
 ## cli
 
 ```shell
@@ -178,7 +170,6 @@ unset DOWNLOAD
 ```
 
 ### ssh(Secure Shell Protocol)
-
 ```shell
 sudo apt-get update
 sudo apt-get install openssh-server
@@ -187,19 +178,20 @@ sudo ufw allow ssh 防火墙 -- ubuntu
 sudo systemctl disable --now ssh 禁用ssh
 sudo systemctl enable --now ssh 启用
 ssh lmj01@github.com 登录
-```
-永久设置环境变量，可直接更改系统启动文件或当前用户的启动文件
-
+# 永久设置环境变量，可直接更改系统启动文件或当前用户的启动文件
 - /etc/profile
 - /etc/environment
 - ~/.profile
 - ~/.bashrc
-
-修改了永久的，要起作用就需要
-```shell
-# 重启电脑或执行才能起效
+# 修改了永久的，要起作用就需要
 source /etc/profile
 ```
+#### sshlf
+```shell
+usermount -uz /opt/studio/data260528b # 卸载，第二次执行sshfs时必须执行
+sshfs yyang@192.168.0.124:/media/yyang//Data/0526_data/processed /opt/studio/data260528 # 映射文件
+```
+
 
 ## 网络
 ```shell

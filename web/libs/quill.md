@@ -50,3 +50,9 @@ Parchment is Quill's document model. It is a parallel tree structure to the DOM 
 
 通过Parchment你可以自定义出Quill能够识别的内容和格式，或者添加全新的内容和格式。
 [一个例子](https://kang-bing-kui.gitbook.io/quill/zhi-nan-guides/clonewithparchment)
+
+
+## 插件
+
+### [Quill Resize Module](https://github.com/mudoo/quill-resize-module)
+支持最新版本的2.x的quill，使用typescript重写了

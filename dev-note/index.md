@@ -34,6 +34,7 @@
 ### JS/TS
 - [Node.js Api](https://nodejs.org/docs/latest/api/)
 - [threejs](https://threejs.org/)
+- [Tweakpane](https://tweakpane.github.io/docs/v3/)
 - [vtk.js](https://kitware.github.io/vtk-js/)
 - [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)

@@ -55,3 +55,23 @@ flowchart TD
     
     E -- 已达标 --> G
 </pre>
+
+## 参考
+
+- [Open3D库可调用](http://www.open3d.org/)
+
+### [Aligning 3D Scans Ricky Reusser July 28, 2018](https://rreusser.github.io/notebooks/aligning-3d-scans/)
+
+Principal Component Analysis (PCA)主成分分析
+
+#### Choosing an axis
+
+select an alignment axis as perpendicular as possible to the surface normals. 
+
+As an educated guess, we instead aim to find an alignment axis as perpendicular as possible to the surface normal vectors.
+
+#### As perpendicular as possible
+
+#### Conclusions
+
+对一个特定模型选定轴向时，如果使用PCA会导致在物理层面上的立即，比如一个脚的模型，只能是从脚跟到大腿的方向，不能是垂直它的左右和前后两个方向作为主轴，这会让可视化的结果理解起来很麻烦。

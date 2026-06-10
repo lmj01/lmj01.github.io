@@ -3,6 +3,7 @@
 - [Polygon Mesh Processing书籍](/cg/mesh/PolygonMeshProcessing.md)
 - [Isogeometric Anylasis](/cg/mesh/IsogeometricAnylasis.md)
 - [surface](/cg/mesh/surface.md)
+- [ICP算法](/cg/mesh/icp.md)
 
 
 ## Normal

@@ -26,9 +26,7 @@ Dolly-Zoom一般分为两种类型：
 
 实现Dolly-Zoom效果，需要保存开始缩放时物体位置处的frustum高度，然后随着相机的移动，找到新的距离，并调整FOV以保持物体在物体位置处的相同高度，这样就可以实现Dolly-Zoom效果
 
-## 案例
-
-### [three.js](https://github.com/mrdoob/three.js/blob/dev/src/math/Matrix4.js)
+## [three.js](https://github.com/mrdoob/three.js/blob/dev/src/math/Matrix4.js)
 
 函数makePerspective实现的就是[OpenGL的投影矩阵OpenGL Projection Matrix](https://songho.ca/opengl/gl_projectionmatrix.html)
 
@@ -90,7 +88,21 @@ camera.rotation.set(MathUtils.degToRad(-90), 0, 0);
 camera.updateProjectionMatrix();
 ```
 
-### [vtk](https://gitlab.kitware.com/vtk/vtk/-/blob/master/Rendering/Core/vtkCamera.cxx)
+### 缩放因子
+[CombinedTransformControls](https://github.com/mmiscool/BREP.io/blob/master/src/UI/controls/CombinedTransformControls.js)中这样处理这个scale的
+```js
+// orthographi camera时，直接使用
+scale =  1 / zoom;
+// perspective camera时，需要使用 
+const theta = camera.fov || 50;
+const halfDegree = Math.PI / 360; // 半角弧度转换
+const factor = Math.tan(theta * halfDegree) * 2.0; //tan(theta / 2) * 2
+const distance = pos.distanceTo(cameraPos);
+scale = (distance * factor) / 10; // heuristic constant
+```
+
+
+## [vtk](https://gitlab.kitware.com/vtk/vtk/-/blob/master/Rendering/Core/vtkCamera.cxx)
 
 ```C++
 // Rendering\Core\vtkCamera.h
