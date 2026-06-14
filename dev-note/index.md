@@ -69,4 +69,5 @@
 - [Warp终端](https://docs.warp.dev/)
 - [网络通信监控软件 Little Snitch](https://obdev.at/products/littlesnitch-linux/index.html)
 - [mswjs](https://mswjs.io/docs)
-
+- [vscodium](https://github.com/VSCodium/vscodium)
+- [zed,可以使用scoop install zed](https://zed.dev/)
