@@ -72,6 +72,28 @@ As an educated guess, we instead aim to find an alignment axis as perpendicular 
 
 #### As perpendicular as possible
 
+可以计算一个表面法向量，但是需要聚合所有表面的法向量，这个作者定义了一个函数来实现，单个surface的normal vector是mesh face的ith法向量，且作为一个备选对齐轴。
+
+现在点乘法向量和备选对齐轴，再平方它们的结果，在对所有的face求和。最好的对齐就是求和值为最小时。
+
+以cylinder圆柱体来计算上面的公式，是满足的要求的。
+why the square? On a strictly mathematical basis, the dot product may be either positive or negative which would cause the minimization to diverge to -infinity。
+
+如果网格的face不是均匀分布，也不是uniform的scale，其总和将偏向于顶点和其法线。
+
+相比较法线，area-weighted sum更重要。面积比重就涉及到面积的计算了，对齐轴作为一个非零相邻，假设为单位向量是更好的。[Computing the Area of a Convex Polygon](https://erkaman.github.io/posts/area_convex_polygon.html)，最后作者意识到拟合一个椭圆是最终的结果，剩下文章都是关于椭圆的寻找。
+
+#### Computing it
+上面讨论的其实是constrained optimization problem约束优化问题。作者了解到the method of Lagrange multipliers 拉格朗日乘数法存在转换约束问题到非约束问题。
+
+通过公式最终找到stationary point静止点/平衡点/稳定点，wikipedia上关于[Lagrange multiplier](https://en.wikipedia.org/wiki/Lagrange_multiplier)讲得更透彻一些，最后得到一个标准得eigenvalue problem。Upon solving, we get three eigenvalues and corresponding unit eigenvectors which are identically the model axes and associated inverse strengths along the respective eigenvectors.
+
+the eigenvalues of a symmetric positive-definite matrix area real and orthogonal. i.e. mutually perpendicular.最后得到一个旋转矩阵并直接运用到模型上。
+
+#### Does it work?
+
 #### Conclusions
 
 对一个特定模型选定轴向时，如果使用PCA会导致在物理层面上的立即，比如一个脚的模型，只能是从脚跟到大腿的方向，不能是垂直它的左右和前后两个方向作为主轴，这会让可视化的结果理解起来很麻烦。
+
+**这篇文章很好的地方就是作者把整个思路都以数学公式推理为思路来推进的，很值得借鉴和学习的**

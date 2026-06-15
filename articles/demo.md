@@ -34,7 +34,6 @@
 - [教育部学历查询网站](https://www.chsi.com.cn/)
 - [Archive归档记录](https://archive.org/)
 - [DOS Games Online](https://dos.zone/)
-- [动态IP服务，个人免费](https://dynip.dev/)
 ### 图书馆
 - [重庆图书馆](https://www.cqlib.cn/)
 - [重庆图书馆-书目检索系统](http://222.177.237.197:8080/InDigLib/frontCloud/Index!myLib.action)
@@ -42,5 +41,8 @@
 - [重庆市少年儿童图书馆-书目检索系统](http://113.207.111.42:9001/InDigLib/OpacMarcSearchSolr!opacSearch.action)
 ### 电台
 - [云听](https://www.radio.cn/pc-portal/erji/radioStation.html)
+### 线上小工具 
+- [动态IP服务，个人免费](https://dynip.dev/)
+- [IPv4查询](https://worldip.io/)
 
 
