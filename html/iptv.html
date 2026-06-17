@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IPTv</title>
+<script src="./html.config.js" defer></script>
+<script src="../libs/hls/hls.min.js" defer></script>
+</script>
+<style>
+    /* css */
+    .py-chinese-item {
+        position: relative;
+        /* color: blue; */
+    }
+    .py-pinyin-item {
+        color: #d08080;
+    }
+    #idDst {
+        font-size: xx-large;
+    }
+</style>
+</head>
+<body>
+    <div class="container-xl d-flex flex-column">
+        <video id="video" controls></video>
+        <script type="module">
+            const video = document.getElementById('video');
+            var hls = new Hls();
+            hls.loadSource('https://xykt-fix.github.io/Y77.m3u8');
+            hls.attachMedia(video);
+        </script>
+    </div>
+</body>
+</html>

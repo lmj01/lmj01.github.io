@@ -230,6 +230,8 @@ ps aux | grep -i jaw20260616 # 查看进程是否存活
 sudo apt install net-tools
 sudo service network-manager restart 
 sudo systemd-resolved --flush-cache 刷新DNS缓存
+ip addr # 查看网卡名
+watch -n 1 cat /proc/net/dev # 实时计算网速
 ```
 
 ### 静态地址
