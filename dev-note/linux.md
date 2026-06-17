@@ -183,6 +183,18 @@ curl -O http://192.168.0.162:7710/files/meta/tag_data0324_5544.json
 </details>
 
 <details>
+<summary>目录</summary>
+
+```shell
+ls -l | grep "^d" | wc -l # 统计当前目录下的子目录数量（不包括当前目录 .）
+find . -maxdepth 1 -type d | wc -l # 统计当前目录及所有子目录中的目录总数
+find . -maxdepth 1 -type d | tail -n +2 | wc -l # 更精确：排除当前目录本身
+du -sh */          # 仅显示子目录大小
+du -sh * | sort -h # 所有文件和目录按大小排序
+```
+</details>
+
+<details>
 <summary>ssh</summary>
 
 ssh(Secure Shell Protocol)
@@ -206,6 +218,7 @@ source /etc/profile
 ```shell
 usermount -uz /opt/studio/data260528b # 卸载，第二次执行sshfs时必须执行
 sshfs yyang@192.168.0.124:/media/yyang//Data/0526_data/processed /opt/studio/data260528 # 映射文件
+ps aux | grep -i jaw20260616 # 查看进程是否存活
 ```
 
 </details>

@@ -27,6 +27,12 @@ Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern gra
 ### FFmpeg
 - [Create and render complex ffmpeg filtergraphs in the browser](https://github.com/antiboredom/ffmpeg-explorer/)
 
+### [IPTV](https://iptv-org.github.io/)
+[Collection of publicly available IPTV channels from all over the world ](https://github.com/iptv-org/iptv)全世界的可播放地址，可以自己作免费电视。
+[HLS.js is a JavaScript library that plays HLS in browsers with support for MSE](https://github.com/video-dev/hls.js)
+[Video.js - open source HTML5 video player ](https://github.com/videojs/video.js)
+利用开源的播放器加上免费的链接，就可以免费看无广告的视频了
+
 ## 文档
 
 ### [DocX Editor](https://www.docx-editor.dev/)

@@ -1,6 +1,7 @@
 :root {
     --sideMenu: 200px;
     --mj-padding-size: 8px;
+    --top-menu-height: 64px;
 }
 body {
     width: 100vw;
@@ -10,6 +11,7 @@ body {
 }
 .main-content {
     width: 100%;
+    height: calc(100% - var(--top-menu-height));
 }
 #content {
     width: 100%;
