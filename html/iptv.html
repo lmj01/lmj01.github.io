@@ -22,11 +22,73 @@
 <body>
     <div class="container-xl d-flex flex-column">
         <video id="video" controls></video>
+        <div class="mt-2 d-flex flex-wrap">
+            <select id="country" class="form-control" style="width:140px;"><option>choose country</option></select>
+            <select id="channel" class="form-control" style="width:140px;"><option>choose channel</option></select>
+        </div>
         <script type="module">
+            const ud = {};
+            const selectCountry = document.getElementById('country');
+            const selectChannel = document.getElementById('channel');
+            async function getData() {
+                const country = await fetch('./country.json').then(res=>res.json());
+                const json = await fetch('./iptv.json').then(res=>res.json());
+                ud.tree = json.tree.filter(e=>e.data.length);
+                ud.tree.forEach(o=>{
+                    o.label = country[o.id];
+                    const elOption = document.createElement('option');
+                    elOption.value = o.id;
+                    elOption.textContent = o.label;
+                    selectCountry.appendChild(elOption);
+                })
+                console.log(ud.tree);
+            }
+            selectCountry.addEventListener('change', (e)=>{
+                const vCountry = e.target.value;
+                const d1 = ud.tree.filter(e=>e.id==vCountry)[0];
+                selectChannel.replaceChildren();
+                if (Array.isArray(d1.data) && d1.data.length) {
+                    d1.data.forEach(d=>{
+                        const elOption = document.createElement('option');
+                        elOption.value = d.path;
+                        elOption.textContent = d.label + (d.tip || '');
+                        selectChannel.appendChild(elOption);
+                    })
+                }
+            })
+            selectChannel.addEventListener('change', (e)=>{
+                // video.pause();
+                const vPath = e.target.value;
+                const dCountry = ud.tree.filter(e=>e.id===selectCountry.value)[0];
+                if (dCountry) {
+                    const dChannel = dCountry.data.filter(e=>e.path === vPath)[0];
+                    if (dChannel) {
+                        localStorage.setItem('iptvChannel', JSON.stringify(dChannel));
+                    }
+                }
+                // console.log(vPath);
+                // hls.detachMedia();
+                // hls.loadSource(vPath);
+                // hls.attachMedia(video);
+                location.reload();
+            })
             const video = document.getElementById('video');
-            var hls = new Hls();
-            hls.loadSource('https://xykt-fix.github.io/Y77.m3u8');
+            const hls = new Hls();
+            window.hls = hls;
+            window.Hls = Hls;
+            let channel = {};
+            const dChannel = localStorage.getItem('iptvChannel');
+            if (dChannel) {
+                channel = JSON.parse(dChannel);
+                selectCountry.value = channel.id;
+                selectChannel.path = channel.path;
+            }
+            hls.loadSource(channel?.path || 'https://xykt-fix.github.io/Y77.m3u8');
             hls.attachMedia(video);
+            // hls.on(hls.Events.MANIFEST_PARSED, ()=>{
+            //     video.play();
+            // })
+            getData();
         </script>
     </div>
 </body>
