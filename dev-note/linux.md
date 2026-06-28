@@ -221,10 +221,23 @@ sshfs yyang@192.168.0.124:/media/yyang//Data/0526_data/processed /opt/studio/dat
 ps aux | grep -i jaw20260616 # 查看进程是否存活
 ```
 
+### 云服务
+云服务上链接github很慢，安装其他软件的网络也麻烦
+```shell
+curl -O nodejs.org/dist/v24.17.0/node-v24.17.0-linux-x64.tar.xz # 下载到本地
+sftp user@ip # 登录云服务
+sftp> put /local/path /remote/path
+export PATH="/mnt/dataset/node-v24.17.0-linux-x64/bin:$PATH" # 解压后把文件路径放在.bashrc中并执行source ~/.bashrc
+npm config set registry https://registry.npmmirror.com # 切换源
+npm config set registry https://registry.npmjs.org # 切回官方源
+npm install 包名 --registry=https://registry.npmmirror.com # 临时使用
+```
+
+
 </details>
 
 <details>
-<summary>网络</summary>
+<summary>网络与磁盘</summary>
 
 ```shell
 sudo apt install net-tools
@@ -232,6 +245,8 @@ sudo service network-manager restart
 sudo systemd-resolved --flush-cache 刷新DNS缓存
 ip addr # 查看网卡名
 watch -n 1 cat /proc/net/dev # 实时计算网速
+iostat -h # 查看io繁忙
+iotop # 
 ```
 
 ### 静态地址
