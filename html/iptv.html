@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>IPTv</title>
-<script src="./html.config.js" defer></script>
-<script src="../libs/hls/hls.min.js" defer></script>
-</script>
-<style>
-    /* css */
-    .py-chinese-item {
-        position: relative;
-        /* color: blue; */
-    }
-    .py-pinyin-item {
-        color: #d08080;
-    }
-    #idDst {
-        font-size: xx-large;
-    }
-</style>
+    <title>IPTv</title>
+    <script src="./html.config.js" defer></script>
+    <script src="../libs/hls/hls.min.js" defer></script>
+    </script>
+    <style>
+        /* css */
+        .py-chinese-item {
+            position: relative;
+            /* color: blue; */
+        }
+
+        .py-pinyin-item {
+            color: #d08080;
+        }
+
+        #idDst {
+            font-size: xx-large;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container-xl d-flex flex-column">
         <video id="video" controls></video>
         <div class="mt-2 d-flex flex-wrap">
-            <select id="country" class="form-control" style="width:140px;"><option>choose country</option></select>
-            <select id="channel" class="form-control" style="width:140px;"><option>choose channel</option></select>
+            <select id="country" class="form-control" style="width:140px;">
+                <option>choose country</option>
+            </select>
+            <select id="channel" class="form-control" style="width:140px;">
+                <option>choose channel</option>
+            </select>
+            <!-- <div id="country-list" class="choose-country"></div> -->
         </div>
         <script type="module">
             const ud = {};
             const selectCountry = document.getElementById('country');
             const selectChannel = document.getElementById('channel');
+            const divCountryList = document.getElementById('country-list');
+            window.ud = ud;
             async function getData() {
-                const country = await fetch('./country.json').then(res=>res.json());
-                const json = await fetch('./iptv.json').then(res=>res.json());
-                ud.tree = json.tree.filter(e=>e.data.length);
-                ud.tree.forEach(o=>{
+                const country = await fetch('./country.json').then(res => res.json());
+                const json = await fetch('./iptv.json').then(res => res.json());
+                const hasDataCountry = json.tree.filter(e => e.data.length);
+                hasDataCountry.forEach(d => {
+                    d.data = d.data.filter(e => {
+                        if (e.label) {
+                            return !['720p','360p','576p','396p'].some(s=>e.label.includes(s));
+                        }
+                        return true;
+                    });
+                })
+                // const allCountry = hasDataCountry.map(e => e.id);
+                // console.log(allCountry);
+                ud.tree = hasDataCountry.filter(e => ['cn', 'uk', 'us'].includes(e.id));
+                ud.tree.forEach(o => {
                     o.label = country[o.id];
                     const elOption = document.createElement('option');
                     elOption.value = o.id;
@@ -42,27 +64,36 @@
                     selectCountry.appendChild(elOption);
                 })
                 console.log(ud.tree);
+                if (cacheChannel.country) {
+                    selectCountry.value = cacheChannel.country;
+                    chooseSelectCountry(selectCountry.value);
+                    selectChannel.value = cacheChannel.path;
+                }
             }
-            selectCountry.addEventListener('change', (e)=>{
-                const vCountry = e.target.value;
-                const d1 = ud.tree.filter(e=>e.id==vCountry)[0];
+            function chooseSelectCountry(country) {
+                const d1 = ud.tree.filter(e => e.id == country)[0];
                 selectChannel.replaceChildren();
                 if (Array.isArray(d1.data) && d1.data.length) {
-                    d1.data.forEach(d=>{
+                    d1.data.forEach(d => {
                         const elOption = document.createElement('option');
                         elOption.value = d.path;
                         elOption.textContent = d.label + (d.tip || '');
                         selectChannel.appendChild(elOption);
                     })
                 }
+            }
+            selectCountry.addEventListener('change', (e) => {
+                const vCountry = e.target.value;
+                chooseSelectCountry(vCountry);
             })
-            selectChannel.addEventListener('change', (e)=>{
+            selectChannel.addEventListener('change', (e) => {
                 // video.pause();
                 const vPath = e.target.value;
-                const dCountry = ud.tree.filter(e=>e.id===selectCountry.value)[0];
+                const dCountry = ud.tree.filter(e => e.id === selectCountry.value)[0];
                 if (dCountry) {
-                    const dChannel = dCountry.data.filter(e=>e.path === vPath)[0];
+                    const dChannel = dCountry.data.filter(e => e.path === vPath)[0];
                     if (dChannel) {
+                        dChannel.country = selectCountry.value;
                         localStorage.setItem('iptvChannel', JSON.stringify(dChannel));
                     }
                 }
@@ -76,12 +107,12 @@
             const hls = new Hls();
             window.hls = hls;
             window.Hls = Hls;
-            let channel = {};
+            let cacheChannel = {};
             const dChannel = localStorage.getItem('iptvChannel');
             if (dChannel) {
-                channel = JSON.parse(dChannel);
-                selectCountry.value = channel.id;
-                selectChannel.path = channel.path;
+                cacheChannel = JSON.parse(dChannel);
+                selectCountry.value = cacheChannel.country;
+                selectChannel.path = cacheChannel.path;
             }
             hls.loadSource(channel?.path || 'https://xykt-fix.github.io/Y77.m3u8');
             hls.attachMedia(video);
@@ -92,4 +123,5 @@
         </script>
     </div>
 </body>
+
 </html>
