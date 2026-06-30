@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 // 配置
 const PORT = process.env.PORT || 9000;
-const HOST = process.env.HOST || '127.0.0.1';
+const HOST = process.env.HOST || '0.0.0.0';
 const STATIC_DIR = process.env.STATIC_DIR || './';
 
 // MIME 类型映射
