@@ -44,11 +44,12 @@
             async function getData() {
                 const country = await fetch('./country.json').then(res => res.json());
                 const json = await fetch('./iptv.json').then(res => res.json());
+                ud.okList = await fetch('./iptv.ok.json').then(res => res.json());
                 const hasDataCountry = json.tree.filter(e => e.data.length);
                 hasDataCountry.forEach(d => {
                     d.data = d.data.filter(e => {
                         if (e.label) {
-                            return !['720p','360p','576p','396p'].some(s=>e.label.includes(s));
+                            return !['720p','360p','576p','396p','480p'].some(s=>e.label.includes(s));
                         }
                         return true;
                     });
@@ -77,7 +78,12 @@
                     d1.data.forEach(d => {
                         const elOption = document.createElement('option');
                         elOption.value = d.path;
-                        elOption.textContent = d.label + (d.tip || '');
+                        elOption.textContent = d.label;
+                        if (ud.okList.success.includes(d.id)) {
+                            elOption.classList.add('text-danger');
+                        } else {
+                            elOption.classList.add('text-secondary');
+                        }
                         selectChannel.appendChild(elOption);
                     })
                 }
