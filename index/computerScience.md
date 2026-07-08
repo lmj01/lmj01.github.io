@@ -10,6 +10,7 @@
 - [C](/cpl/c.md)
 - [Cplusplus](/cpl/cplusplus.md)
 - [ECMAScript](/cpl/ECMAScript.md)
+- [babel](/cpl/babel.md)
 - [lua](/cpl/lua.md)
 - [Java](/cpl/Java.md)
 - [Go](/cpl/go.md)

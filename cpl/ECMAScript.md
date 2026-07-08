@@ -2,7 +2,7 @@
 
 - [Standard ECMA-262 6th Edition / June 2015 ECMAScript® 2015 Language  Specification ](https://262.ecma-international.org/6.0/)
 - [RxMarbles](https://rxmarbles.com/)
-    - [github](https://github.com/staltz/rxmarbles)
+- [github](https://github.com/staltz/rxmarbles)
 
 ## JavaScript
 
