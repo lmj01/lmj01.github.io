@@ -32,7 +32,8 @@ const ud = {
 // 测试
 document.getElementById('content').innerHTML = md2Html('# Marked in the browser\n\nRendered by **marked**.');
 const elBtnBack = document.createElement('button');
-elBtnBack.classList.add('btn', 'btn-primary', 'position-absolute', 'top-0', 'end-0', 'mt-3', 'me-3');
+elBtnBack.classList.add('btn', 'btn-primary', 'position-fixed');
+elBtnBack.style.cssText = 'top: 20%; right: 10px;';
 elBtnBack.textContent = 'Back';
 elBtnBack.addEventListener('click', ()=>{
     ud.cacheUrls.pop();

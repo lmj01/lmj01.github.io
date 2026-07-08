@@ -56,6 +56,7 @@
 - [Ali OSS SDK](https://help.aliyun.com/zh/oss/)
 - [S3 SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/)
 - [S3 控制台](https://243898521477.signin.aws.amazon.com/console)
+- [vercel二级域名免费](https://vercel.com/meijieli/~/stores)
 
 ### 工具
 - [在线matplotlib](https://matplotlib.online/)

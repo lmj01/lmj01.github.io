@@ -33,10 +33,19 @@ Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern gra
 [Video.js - open source HTML5 video player ](https://github.com/videojs/video.js)
 利用开源的播放器加上免费的链接，就可以免费看无广告的视频了
 
+### [遨游太空动画](https://sw.icodestar.net/)
+[github](https://github.com/hyqzz/Solar-Wanderer)
+[一个网页的星空模拟器，在浏览器里探索宇宙星空](https://killedbyapixel.github.io/Cosmodial/)
+
+### [web鱼缸](https://github.com/SeanWong17/RippleAquarium)
+
 ## 文档
 
 ### [DocX Editor](https://www.docx-editor.dev/)
 [github](https://github.com/eigenpal/docx-editor) 可在线编辑docx文档，前端的多端支持，Open-source WYSIWYG .docx editor library with canonical OOXML, tracked changes, and real-time collaboration. 
+
+### [web浏览文档文件](https://file-viewer.app/)
+[github](https://github.com/flyfish-dev/file-viewer) 把 Office、PDF、OFD、Typst、XMind、CAD、EDA、压缩包、邮件、电子书、Mermaid、PlantUML、Git patch/bundle、PSD 图层、代码、媒体、3D 与数据资产带进浏览器。XMind 与绘图类格式支持拖拽平移和缩放，标准 GDSII 支持 SVG 版图预览；
 
 ## 开发工具
 

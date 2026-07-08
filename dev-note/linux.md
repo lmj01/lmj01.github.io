@@ -237,7 +237,7 @@ npm install 包名 --registry=https://registry.npmmirror.com # 临时使用
 </details>
 
 <details>
-<summary>网络与磁盘</summary>
+<summary>网络与磁盘、监控系统</summary>
 
 ```shell
 sudo apt install net-tools
@@ -247,6 +247,12 @@ ip addr # 查看网卡名
 watch -n 1 cat /proc/net/dev # 实时计算网速
 iostat -h # 查看io繁忙
 iotop # 
+```
+
+### htop
+[htop htop explained Explanation of everything you can see in htop/top on Linux](https://peteris.rocks/blog/htop/)
+```shell
+# htop
 ```
 
 ### 静态地址
