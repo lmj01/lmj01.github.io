@@ -11,13 +11,13 @@ async function parseM3uFiles(path, one) {
         const data = { code: 0 };
         const s1 = strList[i];
         if (s1?.startsWith('#EXTINF')) {
-            const s11 = s1.substring(11)?.replaceAll('\r','').split(',');
-            if (s11[0]) data.id = s11[0].replaceAll('"','').split('=')[1];
-            if (s11[1]) data.label = s11[1].replaceAll('"','')
+            const s11 = s1.substring(11)?.replaceAll('\r', '').split(',');
+            if (s11[0]) data.id = s11[0].replaceAll('"', '').split('=')[1];
+            if (s11[1]) data.label = s11[1].replaceAll('"', '')
         }
         const s2 = strList[i + 1];
         if (s2?.startsWith('http')) {
-            if (s2.substring(0,5)==='https') {
+            if (s2.substring(0, 5) === 'https') {
                 data.code = 1;
             } else {
                 data.tip = 'no https, may not worked';
@@ -38,7 +38,7 @@ async function parseM3uFiles(path, one) {
             }
             i += 3;
         }
-        if (data.path) data.path = data.path.replaceAll('\r','');
+        if (data.path) data.path = data.path.replaceAll('\r', '');
         if (data.code !== 0 && data.path) one.data.push(data);
     }
     console.log(path);
@@ -88,7 +88,7 @@ async function traverseDirectoryJson(json, dir, rootDir = dir, level = 1) {
                 const ext = extGet(normalizedPath);
                 const name = extRemove(normalizedPath);
                 const subName = name.split('_');
-                const tmp = json.tree.filter(e=>e.id === subName[0])[0]; 
+                const tmp = json.tree.filter(e => e.id === subName[0])[0];
                 const one = { id: subName[0], data: [], children: [] };
                 if (tmp === undefined) {
                     json.tree.push(one);
@@ -119,10 +119,100 @@ async function getStreamsInfo() {
         await writeJsonFile(tree, './iptv.json');
     }
 }
-async function run () {
-    await getStreamsInfo();
+// 在加载播放器之前，先发送 HEAD/GET 请求验证 URL 可访问
+async function validateHLSUrl(url) {
+    try {
+        const response = await fetch(url, { method: 'HEAD', mode: 'cors' });
+
+        // 1. 检查 HTTP 状态码
+        if (!response.ok) {
+            return { valid: false, reason: `HTTP ${response.status} - ${response.statusText}` };
+        }
+
+        // 2. 检查 Content-Type
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('mpegurl')) {
+            return { valid: false, reason: `错误的 MIME 类型: ${contentType}` };
+        }
+
+        // 3. 检查内容是否为空
+        const contentLength = response.headers.get('content-length');
+        if (contentLength === '0') {
+            return { valid: false, reason: 'M3U8 文件内容为空' };
+        }
+
+        return { valid: true };
+    } catch (error) {
+        return { valid: false, reason: `网络错误: ${error.message}` };
+    }
 }
-run().catch(err=>{
+// 即使 HTTP 200，M3U8 文件本身可能无效。需要解析内容
+async function parseM3U8Content(url) {
+    const response = await fetch(url);
+    const text = await response.text();
+
+    // 1. 检查是否以 #EXTM3U 开头
+    if (!text.trim().startsWith('#EXTM3U')) {
+        return { valid: false, reason: '不是有效的 M3U8 文件（缺少 #EXTM3U 标记）' };
+    }
+
+    // 2. 检查是否包含媒体分片或子播放列表
+    const hasSegments = text.includes('#EXTINF') || text.includes('#EXT-X-STREAM-INF');
+    if (!hasSegments) {
+        return { valid: false, reason: 'M3U8 文件中未找到有效的媒体分片或码率信息' };
+    }
+
+    // 3. 检查是否是 Master Playlist（多码率）
+    const isMaster = text.includes('#EXT-X-STREAM-INF');
+
+    // 4. 检查是否是空直播流（没有 #EXT-X-ENDLIST 且没有分片）
+    if (!text.includes('#EXT-X-ENDLIST') && !isMaster) {
+        const segmentCount = (text.match(/#EXTINF/g) || []).length;
+        if (segmentCount === 0) {
+            return { valid: false, reason: '直播流暂无可用分片' };
+        }
+    }
+
+    return { valid: true, isMaster, content: text };
+}
+async function addInfo() {
+    const json = await readJsonFile('./iptv.json');
+    const validIds = [];
+    for (let i = 0; i < json.tree.length; i++) {
+        const d0 = json.tree[i];
+        // if ([
+        //     'cn',
+        //     'uk', 'us',
+        // ].includes(d0.id)) {
+            for (let j = 0; j < d0.data.length; j++) {
+                const one = d0.data[j];
+                try {
+                    const ret1 = await validateHLSUrl(one.path);
+                    if (ret1.valid) {
+                        const ret2 = await parseM3U8Content(one.path);
+                        if (ret2.valid) {
+                            one.valid = ret2.valid;
+                            validIds.push(one.id);
+                        } else {
+                            console.log('m3u8', d0.id, ret2.reason);
+                        }
+                    } else {
+                        console.log('url check ', d0.id, ret1.reason);
+                    }
+                } catch (err) {
+                    console.log('error',d0.id, err.message);
+                }
+            }
+        // }
+    }
+    await writeJsonFile(json, './iptv.json');
+    console.log(validIds);
+}
+async function run() {
+    // await getStreamsInfo();  
+    addInfo();
+}
+run().catch(err => {
     console.error(err);
 })
 

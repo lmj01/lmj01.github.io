@@ -166,6 +166,7 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - [reference](/cpl/cpp/reference.cpp)
 - [基准测试std::visit的例子](https://quick-bench.com/q/SgNTOjdNLDBSARWDfbaMpLMZRGo)
 - [cpp quiz 问题库](https://cppquiz.org/quiz/question/347)
+- [中国最纯粹的C++社区](https://purecpp.cn/index.html)
 
 [1]: <http://www.gotw.ca/publications/mill02.htm> (What's In A Class?)
 

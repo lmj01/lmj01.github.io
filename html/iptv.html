@@ -49,14 +49,17 @@
                 hasDataCountry.forEach(d => {
                     d.data = d.data.filter(e => {
                         if (e.label) {
-                            return !['720p','360p','576p','396p','480p'].some(s=>e.label.includes(s));
+                            return !['720p', '360p', '576p', '396p', '480p'].some(s => e.label.includes(s));
                         }
                         return true;
-                    });
+                    }).filter(e => e.valid);
                 })
                 // const allCountry = hasDataCountry.map(e => e.id);
                 // console.log(allCountry);
-                ud.tree = hasDataCountry.filter(e => ['cn', 'uk', 'us'].includes(e.id));
+                ud.tree = hasDataCountry
+                    .filter(e => ['cn', 'uk', 'us'].includes(e.id))
+                    .filter(e => e.data.length);
+                console.log('all valid path', ud.tree)
                 ud.tree.forEach(o => {
                     o.label = country[o.id];
                     const elOption = document.createElement('option');
@@ -79,7 +82,7 @@
                         const elOption = document.createElement('option');
                         elOption.value = d.path;
                         elOption.textContent = d.label;
-                        if (ud.okList.success.includes(d.id)) {
+                        if (ud.okList.success.includes(d.id) || d.valid === true) {
                             elOption.classList.add('text-danger');
                         } else {
                             elOption.classList.add('text-secondary');
