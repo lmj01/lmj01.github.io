@@ -47,6 +47,12 @@ Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern gra
 ### [web浏览文档文件](https://file-viewer.app/)
 [github](https://github.com/flyfish-dev/file-viewer) 把 Office、PDF、OFD、Typst、XMind、CAD、EDA、压缩包、邮件、电子书、Mermaid、PlantUML、Git patch/bundle、PSD 图层、代码、媒体、3D 与数据资产带进浏览器。XMind 与绘图类格式支持拖拽平移和缩放，标准 GDSII 支持 SVG 版图预览；
 
+## 库
+
+### CRDT
+- [Loro is a high‑performance CRDT library for local‑first, real‑time collaboration.](https://www.loro.dev/)
+- [Loro is a CRDTs(Conflict-free Replicated Data Types) library](https://github.com/loro-dev/loro)
+
 ## 开发工具
 
 ### [NyaTerm](https://nyaterm.app/)

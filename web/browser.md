@@ -84,8 +84,6 @@ chrome://password-manager/settings
 
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/open)
 
-- 
-
 ### waterfall
 在console的Network中，waterfall可以直观来分析web页面加载的体验
 1. 减少资源加载时间，瀑布图的宽度越窄越快
@@ -112,6 +110,8 @@ Chromium Embedded Framework(CEF)是一个框架，用于在其他应用程序中
 
 ### 清除
 
+### CDP
+[Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
 
 ## 插件
 

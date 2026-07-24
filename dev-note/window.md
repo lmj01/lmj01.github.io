@@ -1,6 +1,8 @@
 # window
 
-## 常用命令
+<details>
+<summary>网络命令</summary>
+
 ```shell
 # 清除DNS缓存
 ipconfig /flushdns
@@ -8,8 +10,11 @@ ipconfig /flushdns
 netsh winsock reset  
 netsh int ip reset 
 ```
+</details>
 
-## bat
+<details>
+<summary>bat</summary>
+
 - copy
 - echo %path%
 
@@ -34,8 +39,11 @@ netsh int ip reset
 7z.exe a -tzip auth.zip auth.json # 压缩
 7z.exe e auth.zip # 解压 默认当前目录
 ```
+</details>
 
-## PowerShell
+
+<details>
+<summary>PowerShell</summary>
 
 - [什么是 PowerShell？](https://learn.microsoft.com/zh-cn/powershell/scripting/overview?view=powershell-7.4)
 - [PowerShell 文档](https://learn.microsoft.com/zh-cn/powershell/)
@@ -79,8 +87,12 @@ window上可以直接sshLinux下，在家里的局域网测试成功
 ```shell
 ssh name@ip // 登录后会让你输入密码
 ```
+</details>
 
-## [wsl]()
+
+<details>
+<summary>wsl</summary>
+
 
 安装
 ```shell
@@ -149,7 +161,11 @@ winget install Microsoft.VisualStudio.2022.BuildTools # 安装时注意网络，
 winget install Microsoft.VisualStudio.2022.BuildTools --source winget # 
 ```
 
-## 其他设置
+</details>
+
+
+<details>
+<summary>其他设置</summary>
 
 ### 把虚拟内存pagefile.sys从C盘移动到其他磁盘
 
@@ -169,12 +185,4 @@ powercfg /h on 启用休眠和快速启动
 powercfg /h /type reduced 缩小体积
 ```
 
-## [tabby](https://tabby.sh/)
-```shell
-# CTRL + N 下一个tab
-# CTRL + P 上一个tab
-# ctrl + right 向右split
-# ctrl + down 向下split
-# CTRL + up 切换前一个
-# CTRL + left 切换下一个
-```
+</details>

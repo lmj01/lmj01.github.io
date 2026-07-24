@@ -16,6 +16,7 @@
 - [scoop](/dev-note/scoop.md)
 - [AI](/dev-note/ai.md)
 - [python](/cpl/python.md)
+- [ui](/dev-note/ui.md)
 
 ## 版本控制
 
@@ -58,18 +59,33 @@
 - [S3 控制台](https://243898521477.signin.aws.amazon.com/console)
 - [vercel二级域名免费](https://vercel.com/meijieli/~/stores)
 
+### 文档工具
+- [apiPost](https://workspace.apipost.net/guest/apis)
+- [飞书](https://www.feishu.cn/?from_site=lark)
+- [Teambition钉钉](https://www.teambition.com/organization/5f9a6c251081a50d75dea6d3/my)
+
 ### 工具
 - [在线matplotlib](https://matplotlib.online/)
 - [firefox官网的浏览器](https://www.firefox.com/en-US/?redirect_source=mozilla-org&utm_campaign=SET_DEFAULT_BROWSER)
 - [SpectorJS 调试webgl的工具](https://spector.babylonjs.com/)
-- [apiPost](https://workspace.apipost.net/guest/apis)
 - [微信服务号的测试公主号](https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login)
 - [chrome支撑win7的最后版本](https://www.google.com/dl/release2/chrome/ggsdppo5kshsyqe3fej7lv4tau_109.0.5414.165/109.0.5414.165_chrome_installer.exe)
 - [远程终端工具Mosh](https://github.com/mobile-shell/mosh)
-- [tabby终端](https://tabby.sh/)
 - [Warp终端](https://docs.warp.dev/)
 - [网络通信监控软件 Little Snitch](https://obdev.at/products/littlesnitch-linux/index.html)
 - [mswjs](https://mswjs.io/docs)
 - [vscodium](https://github.com/VSCodium/vscodium)
 - [zed,可以使用scoop install zed](https://zed.dev/)
 - [altassian项目管理工具-lmjie01@gmail.com](https://home.atlassian.com/?utm_source=identity)
+
+### 终端
+常用快捷键的配置
+```shell
+# CTRL + N 下一个tab
+# CTRL + P 上一个tab
+# ctrl + right 向右split
+# ctrl + down 向下split
+# CTRL + up 切换前一个
+# CTRL + left 切换下一个
+```
+- [tabby终端](https://tabby.sh/)

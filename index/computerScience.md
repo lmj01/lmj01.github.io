@@ -24,9 +24,11 @@
 - [Fifty Shades of OOP， 面向对象编程的五十重境界， 作者借用《五十度灰Fifty Shades of Grey》来说事](https://lesleylai.info/en/fifty_shades_of_oop/)
 - [hash](/cpl/data.structure/hash.md)
 - [LRU](/cpl/data.structure/LRU.md)
+
+### 算法
 - [树形结构](/cpl/data.structure/Tree.md)
 - [Dijkstra 算法](https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/README.zh-CN.md)
-
+- [Maze Algorithms迷宫算法](https://www.jamisbuck.org/mazes/)
 
 ### Database
 

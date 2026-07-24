@@ -56,9 +56,11 @@
 - [多边形网格算法](http://paulbourke.net/geometry/polygonmesh/)
 - [点至三角形的最近点](https://zhuanlan.zhihu.com/p/458837573)
 - [Brillouin zone visualisation tool，维诺图Voronoi Diagram，Lattice格](https://github.com/tobycrisford/bravais-lattice-fermi-surfaces)
-    - [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
-    - [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
+- [计算几何第四周：维诺图](https://zhuanlan.zhihu.com/p/33896575)
+- [Lattice学习笔记01：格的简介](https://zhuanlan.zhihu.com/p/161411204)
 - [How to make an infinite grid无限网格](http://asliceofrendering.com/scene%20helper/2020/01/05/InfiniteGrid/)
 - [Geometric Deep Learning for Computer-Aided Design: A Survey探讨了大数据模型下的CAD](https://arxiv.org/abs/2402.17695)
 
 - [Macad|3D is a free and open-source 3D construction program which implements easy-to-handle workflows specific to the model making hobbyist. Macad|3D is mainly based on the technologies .Net, C#, C++/CLI and OpenCASCADE Technology (OCCT). ](https://github.com/Macad3D/Macad3D)
+### subdivision
+- [Adaptive Catmull-Clark Subdivision with Compute Tessellation](https://filmicworlds.com/blog/adaptive-catmull-clark-subdivision-with-compute-tessellation/)

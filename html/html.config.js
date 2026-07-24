@@ -21,4 +21,9 @@
     script1.src = '/libs/bootstrap/bootstrap.min.js';
     script1.async = true;
     document.head.appendChild(script1);
+    const script2 = document.createElement('script');
+    script2.id = 'jelly-script';
+    script2.src = '/libs/jelly.js';
+    script2.async = true;
+    document.head.appendChild(script2);
 })();

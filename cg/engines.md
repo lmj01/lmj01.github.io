@@ -40,6 +40,13 @@
 - [Blend2D -- 2D Vector Graphics Powered by a JIT Compiler.](https://github.com/blend2d/blend2d)
 - [noise噪音](/cg/rendering/noise.md)
 
+### [TinyRenderer: Software rendering in 500 lines of bare C++](https://haqr.eu/)
+- [github](https://github.com/ssloy/tinyrenderer)
+
+### webgpu
+
+- [WebGPU C++ guide](https://eliemichel.github.io/LearnWebGPU/)
+
 ### phong
 
 ### parallax mapping

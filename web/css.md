@@ -310,3 +310,4 @@ Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用
 - [Modern CSS patterns in Campfire](https://dev.37signals.com/modern-css-patterns-and-techniques-in-campfire/)
 - [css wrapped 2025](https://chrome.dev/css-wrapped-2025/)
 - [CSS实现动画计算器](https://css-tricks.com/animating-number-counters/)
+- [纯CSS效果，实现一些UI界面](https://jdan.github.io/98.css/#tabs)

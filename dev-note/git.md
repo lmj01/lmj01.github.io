@@ -20,6 +20,8 @@ git remote rm repo-name 删除远程仓库关联
 git push origin branch-name 把当前分支推送到origin
 git clone <repository> 
 git clone --recurse-submodules repo-url 自动初始化并更新每个子模块，包括嵌套的子模块
+git clone --depth 1 repo-url
+git fetch --unshallow 拉取缺失的历史
 ```
 
 ### 推送

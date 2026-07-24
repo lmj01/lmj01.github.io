@@ -4,7 +4,7 @@
 - [日刊-zeli App用中文读科技新闻](https://zeli.app/zh)
 - [抓取AI论文并用视频解读](https://huggingface.co/spaces/brianxiadong0627/paper-digest)
 - [周刊-阮一峰日志](https://www.ruanyifeng.com/blog/)
-- [周刊-图形渲染](https://www.jendrikillner.com/tags/weekly/)
+- [周刊-图形渲染-443](https://www.jendrikillner.com/tags/weekly/)
 - [月刊-HelloGithub](https://hellogithub.com/periodical)
 - [Hacker News New](https://news.ycombinator.com/)
 - [markdown中文文档](https://markdown.com.cn/)

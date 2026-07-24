@@ -77,3 +77,5 @@ discrete differential geometry
 
 - [德国赫尔曼·外尔《对称》, 相似性与自同构，用几何描述代数词，这样理解起来很容易，也很轻松，不需要很多抽象的感悟，由直观到具体化](https://book.douban.com/subject/30308531/)
 - [David H. Silver Beyond Popular Science This book contains 50 standalone chapters, each exploring a curious phenomenon at the boundary of physics, mathematics, cosmology, biology, computer science, history, and linguistics. 开源免费的](https://github.com/silverdavi/beyond_popular_science)
+- [So You Want to Study Mathematics…包含数学、物理、生物](https://www.susanrigetti.com/math)
+- [Mathematics of Data Science书籍，大数据的免费书籍](https://arxiv.org/pdf/2607.11938)
