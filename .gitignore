@@ -7,3 +7,5 @@ cpl/ts/*.js
 
 cpl/python/*.drc
 libs/bootstrap-icons-origin
+html/iptv.json
+html/iptv.ok.json
