@@ -47,6 +47,12 @@ Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern gra
 ### [web浏览文档文件](https://file-viewer.app/)
 [github](https://github.com/flyfish-dev/file-viewer) 把 Office、PDF、OFD、Typst、XMind、CAD、EDA、压缩包、邮件、电子书、Mermaid、PlantUML、Git patch/bundle、PSD 图层、代码、媒体、3D 与数据资产带进浏览器。XMind 与绘图类格式支持拖拽平移和缩放，标准 GDSII 支持 SVG 版图预览；
 
+### [KOReader](https://koreader.rocks/)
+KOReader is a document viewer for E Ink devices. Supported fileformats include EPUB, PDF, DjVu, XPS, CBT, CBZ, FB2, PDB, TXT, HTML, RTF, CHM, DOC, MOBI and ZIP files. It’s available for Kindle, Kobo, PocketBook, Android and desktop Linux.
+### 离线浏览
+- [kage (影, "shadow") clones a website into a folder you can browse offline, with every script stripped out. ](https://github.com/tamnd/kage)
+
+
 ## 库
 
 ### CRDT

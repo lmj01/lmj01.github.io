@@ -11,35 +11,26 @@ linux启动服务可能有两种
 
 <details>
 <summary>常用</summary>
-
-```shell
-cat /etc/os-release # 查看当前
-uname -r # 查看内核版本 -a 查看完整系统信息
-kill -9 #强制、立即终止一个进程 9代表信号SIGKILL，Linux内核发出的信号编码为9
-ps aux | grep 'processName' # 查看进程名
-```
-
-```shell
-echo $XDG_CURRENT_DESKTOP 查看当前图形GUI
-echo $SHELL 查看shell是bash，zsh等那个
-nohup ./execute.sh & # & 后台运行 nohup 不受终端关闭影响
-
-# pacman包管理
-pacman -Sl | grep XXX 查询
-pacman -S XXX
-
-# service
-sudo service --status-all 查看服务列表
-
-# network
-netstat -anp | grep 53
-```
-## 环境搭建
-
 - password: lmjpassword 所有账户都是一个密码
 - 密码: meijie/root 所有root都是meijie， // 可能默认一个user作为root时就是meijie，入Ubuntu
 - user: mj/User 所有的用户都是mj // debain需要设置第二个用户，第一个用户不能直接使用
 
+```shell
+echo $XDG_CURRENT_DESKTOP 查看当前图形GUI
+echo $SHELL 查看shell是bash，zsh等那个
+cat /etc/os-release # 查看当前系统
+uname -r # 查看内核版本 -a 查看完整系统信息
+kill -9 #强制、立即终止一个进程 9代表信号SIGKILL，Linux内核发出的信号编码为9
+ps aux | grep 'processName' # 查看进程名
+ps -p 1 -o comm= # 输出不是systemd,说明不是systemd环境，不能使用sudo systemctl status XXX 
+nohup ./execute.sh & # & 后台运行 nohup 不受终端关闭影响
+Ctrl+Z # 进程暂停后回到shell提示符，使用fg或bg恢复
+```
+</details>
+
+<details>
+<summary>python</summary>
+## 环境搭建
 env 或 printenv
 
 在终端中设置
@@ -63,10 +54,10 @@ unset DOWNLOAD
 ```
 </details>
 
-
 <details>
-<summary>apt</summary>
+<summary>包管理</summary>
 
+## apt
 [apt](https://www.debian.org/doc/manuals/apt-guide/index.en.html) 包管理，是unix-like的系统的常用工具
 
 ```shell
@@ -108,6 +99,14 @@ sudo apt --purge autoremove
 sudo apt install update-manager-core
 sudo do-release-upgrade // 这步之后就按y(yes)N(no)或d(detail) 来确认相关操作了
 ```
+
+## pacman
+
+```shell
+pacman -Sl | grep XXX 查询
+pacman -S XXX
+```
+
 </details>
 
 <details>
@@ -214,6 +213,7 @@ ssh lmj01@github.com 登录
 - ~/.bashrc
 # 修改了永久的，要起作用就需要
 source /etc/profile
+scop /local/path user@ip:/remote/path # ssh copy file 到远程服务器
 ```
 #### sshlf
 ```shell
@@ -238,12 +238,18 @@ npm install 包名 --registry=https://registry.npmmirror.com # 临时使用
 </details>
 
 <details>
-<summary>网络与磁盘、监控系统</summary>
+<summary>服务、网络、磁盘</summary>
+
+## 网络与服务
 
 ```shell
 sudo apt install net-tools
+# service
+sudo service --status-all 查看服务列表
 sudo service network-manager restart 
 sudo systemd-resolved --flush-cache 刷新DNS缓存
+# network
+netstat -anp | grep 53
 ip addr # 查看网卡名
 watch -n 1 cat /proc/net/dev # 实时计算网速
 iostat -h # 查看io繁忙
@@ -251,6 +257,7 @@ iotop #
 ```
 
 ### htop
+
 [htop htop explained Explanation of everything you can see in htop/top on Linux](https://peteris.rocks/blog/htop/)
 ```shell
 # htop
