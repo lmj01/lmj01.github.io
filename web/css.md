@@ -309,5 +309,8 @@ Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用
 - [css就是全部 Vanilla CSS is all you need](https://www.zolkos.com/2025/12/03/vanilla-css-is-all-you-need)
 - [Modern CSS patterns in Campfire](https://dev.37signals.com/modern-css-patterns-and-techniques-in-campfire/)
 - [css wrapped 2025](https://chrome.dev/css-wrapped-2025/)
-- [CSS实现动画计算器](https://css-tricks.com/animating-number-counters/)
 - [纯CSS效果，实现一些UI界面](https://jdan.github.io/98.css/#tabs)
+
+### 动画
+- [CSS实现动画计算器](https://css-tricks.com/animating-number-counters/)
+- [网页滚动的动画效果，使用 Web Animations API (WAAPI) 和 CSS Animations API 实现](https://scroll-driven-animations.style/)

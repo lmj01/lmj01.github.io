@@ -32,6 +32,10 @@
 
 [家庭组网踩坑：用两台路由器实现 iPhone 无缝漫游](https://popring.cn/blog/home-network-issues)
 
+### 交换机
+希力威视的SR-S25G1206F-N交换机，
+家里已经有运营商提供的光猫，交换机只是用来扩展内网，买一对和光纤类型匹配（比如多模）的万兆SFP+光模块
+
 ## 工具
 
 - [Create bootable USB drives the easy way](https://rufus.ie/en/)

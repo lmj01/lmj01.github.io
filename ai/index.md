@@ -1,5 +1,6 @@
 # AI
 
+- [MCP](/ai/mcp.md)
 - [学习案例](/ai/demo.md)
 - [模型](/ai/model.md)
 - [神经网络](/ai/neural.network.md)

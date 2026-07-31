@@ -20,6 +20,7 @@
 - [开放的数学讨论课题](https://www.ktrt-seminars.com/)
 
 ## Blogs
+- [法布里斯·贝拉尔（Fabrice Bellard）最低调、最牛逼程序员](https://bellard.org/)
 - [Long Luo, 一个严肃的程序员](http://www.longluo.me/)
 - [Steve's Computer Graphics Index](http://steve.hollasch.net/cgindex/)
 - [Aras Pranckevičius](https://aras-p.info/blog/)
