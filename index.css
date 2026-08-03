@@ -59,6 +59,7 @@ img {
 .mj-book-info > ul,
 .mj-web-index > ul,
 .mj-web-http > ul,
+.mj-online > ul,
 .mj-computerscience > ul,
 .mj-exercises-index > ul,
 .mj-dev-note-index > ul {
@@ -70,6 +71,7 @@ img {
 .mj-book-info > ul > li,
 .mj-web-index > ul > li,
 .mj-web-http > ul > li,
+.mj-online > ul > li,
 .mj-computerscience > ul > li,
 .mj-exercises-index > ul > li,
 .mj-dev-note-index > ul > li {

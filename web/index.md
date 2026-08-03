@@ -109,10 +109,14 @@ jszip.loadAsync(new Blob([buffer])).then(zip=>{
 
 - [极简的图标搜索网站,可打包字体或下载svg格式](github.com/antfu-collective/icones)
 
-## [组件开发]()
+## 组件开发Web Component
 
 - [表情拾取组件A lightweight emoji picker, distributed as a web component.](https://github.com/nolanlawson/emoji-picker-element)
 - [一个纯JS实现的框架](https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/)
+### [Elena is a simple, tiny library for building Progressive Web Components](https://elenajs.com/)
+Elena 是由 @arielle 打造的一款极简库，专为构建 Progressive Web Components 而生。它打破了传统 Web 组件对 JavaScript 的过度依赖，坚持先加载 HTML 和 CSS，再逐步注入交互逻辑。这一设计有效解决了可访问性缺陷、服务端渲染瓶颈、布局偏移及内容闪烁等长期痛点。Elena 仅 2.9kB，零依赖，完全基于原生标准构建，能无缝适配 React、Vue、Angular 等主流框架，甚至无需框架也能运行。对于致力于构建跨框架组件库和设计系统的团队而言，Elena 提供了从 HTML 到 JavaScript 的平滑过渡方案，让开发回归 Web 平台原生能力。
+
+"Elena 不会强迫你为所有功能都使用 JavaScript，你可以先加载 HTML 和 CSS，然后用 JavaScript 逐步添加交互性。"
 
 ## Test
 

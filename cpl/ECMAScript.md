@@ -324,6 +324,14 @@ declare var A: A_Static;
 ### 参考
 - [typescript官网文档](https://www.typescriptlang.org/docs)
 
+## 二进制
+
+### [Porffor](https://porffor.dev/)
+Porffor is a research project that compiles JavaScript ahead-of-time to WebAssembly and native binaries.
+
+很前言的项目，可以推进JavaScript的二进制编译，避免源码的泄漏。
+
+
 ## 运行库
 
 ### Babel

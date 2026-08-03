@@ -4,6 +4,8 @@
 
 ## 数学
 
+数学的两个传统分支是算数和几何，运用数字和形状的数值进行计算。
+
 - [相关推荐的书籍](/exercises/book-info.md)
 - [数学](/exercises/math.md)
 - [小学数学](/exercises/math.primary.md)

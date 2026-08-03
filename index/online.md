@@ -87,8 +87,9 @@
 - [国家大剧院-古典音乐频道](https://www.ncpa-classic.com/index.shtml)
 - [背景音乐网站](https://asoftmurmur.com/)
 
-### api
-- [apipost - lmjie_good@163.com](https://console.apipost.cn/login)
+### 下载器
+#### [VidBee — Automatically Archive Video, Audio & Transcripts](https://vidbee.org/)
+[github](https://github.com/nexmoe/VidBee) Download videos from almost any website worldwide
 ### 其他
 - [在线计算器及工具](https://www.rapidtables.org/zh-CN/)
 - [图形计算器GeoGebra--在线绘制图形](https://www.geogebra.org/graphing?lang=zh_CN)
