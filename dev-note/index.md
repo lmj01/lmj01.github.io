@@ -76,6 +76,7 @@
 - [mswjs](https://mswjs.io/docs)
 - [vscodium](https://github.com/VSCodium/vscodium)
 - [zed,可以使用scoop install zed](https://zed.dev/)
+- [lapce for linux](https://lap.dev/lapce/)
 - [altassian项目管理工具-lmjie01@gmail.com](https://home.atlassian.com/?utm_source=identity)
 
 ### 终端
