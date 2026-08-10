@@ -4,6 +4,7 @@
 - [zlibrary网站状态](https://www.tboxn.com/sites/320.html)
 - [Library Genesis 图书馆创世纪 – 中文 (中国)](https://librarygenesis.net/zh/)
 - [程序员开发的书籍By Developers, For Developers](https://pragprog.com/)
+- [2025及之前的年阅读记录](/articles/books/2025.md)
 - [2026年阅读记录](/articles/books/2026.md)
 - [写作技巧](/articles/books/write.md)
 
@@ -37,59 +38,11 @@
 - 毛选，在读
 - 符号学：原理与推演，南京大学出版社，ISBN:9787305160516, 在读
 
-### [Design Patterns in Modern C++](https://book.douban.com/subject/30200080/)
-
-- crtp
-
-### [OpenGL SuperBible](https://github.com/openglsuperbible)
-
-[github code](https://github.com/openglsuperbible)
-
-#### 第六版
-#### 第七版
-
-### [Computer Graphics  Theory and Practice (Gomes, Jonas Velho, Luiz Costa Sousa, Mario 1st Edition) (Z-Library)2012](https://www.amazon.com/Computer-Graphics-Practice-Jonas-Gomes/dp/1568815808)
-豆瓣上都没有找到，在Amazon找到的
-
-### [上帝创造整数](https://book.douban.com/subject/30376433/)
-
-- 2024-5-23 关于欧几里得是我认为讲得最清晰最明白的一本书了
-
-### [Software Engineering at Google]()
-编程与软件工程的重要因素
-- 时间
-- 规模
-- 权衡取舍
-
-### [数学与泛型编程](https://book.douban.com/subject/27116151/)
-
-### [Effective Debugging中文翻译开源版](https://celthi.github.io/effective-debugging-zh/)
-
-### [Fundamentals of Computer Graphhics fifth edition](https://book.douban.com/subject/35755152/)
-> 看过第四版了，现在当工具书使用
-
-### [金字塔原理丛书](https://book.douban.com/subject/25935981/)
-- MECE（发音：me see）分析法是 Mutually Exclusive Collectively Exhaustive的首字母缩写词，中文意思是"相互独立、完全穷尽"，即所谓的 "无重复、无遗漏"。
-
-## readed
-- 计算机图形图像设计，2016，中国传媒大学出版社，已读
-- 囚徒的困境-冯·诺依曼、博弈论和原子弹之谜，已读
-- 深度探索 C++对象模型，2001, 侯捷，已读
-- 阿城《棋王·树王·孩子王》,讲文革时代，抛弃20世纪80年代的语言逻辑回归宋明小说的语境之中，文字朴实。
-### [软件设计-从专业到卓越](https://book.douban.com/subject/35966115/)
-> 豆瓣某编辑送阅的
-
-- 优质代码的外部特征
-    - 1.3.1 为什么代码难以理解，业务概念共识是一个很重要的因素，很多问题可能都是因为没有共识，产生了认识与理解上的差异。以一种范式理解另一种范式是很容易产生的，这样的问题也会非常多。
-    - 1.5.2 提升复用能力的手段， ==选择合适的复用粒度==， 业务模块的复用，也有比较成熟的经验了，就是以领域为中心的设计。通过恰当的确定问题的领域边界，保持各个子域边界之间的抽象和隔离，就是典型的例子。如短信发送、地图服务、聊天消息等模块。
-### [图解儿童逆反心理](https://book.douban.com/subject/20373323/)
-> 了解孩子的过程，就像有些道理知道，但是去做就是另一回事儿，阅读至少加深在做这个字眼上的付出
 
 ## online
 
 - [关于WebGL的shader的免费书籍The Book of Shaders -- by Patricio Gonzalez Vivo and Jen Lowe](https://thebookofshaders.com/)
     - 
-- [Physically Based Rendering](https://www.pbr-book.org/3ed-2018/contents)
 - [设计数据密集型应用 - 中文翻译](http://ddia.vonng.com/#/)
     - [github](https://github.com/Vonng/ddia)
 - [Introduction to Compilers and Language Design A free online textbook by Douglas Thain 编译器设计入门2021](https://www3.nd.edu/~dthain/compilerbook/)
@@ -99,9 +52,6 @@
 - [Algorithmica is an open-access web book dedicated to the art and science of computing.](https://en.algorithmica.org/)
     - [github](https://github.com/algorithmica-org/algorithmica)
 - [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.可在线可下载，适合博士或研究资料](https://softwarefoundations.cis.upenn.edu/)
-- [清华邓俊辉两门课，数据结构和计算几何](https://dsa.cs.tsinghua.edu.cn/~deng/index.htm)
-- [Linear Algebra Done Right fourth edition中文版](https://linear.axler.net/LADR4eChinese.pdf)
-
 
 ### github
 
@@ -130,3 +80,46 @@
 - [Standard Ebooks is a volunteer-driven project that produces new editions of public domain ebooks that are lovingly formatted, open source, free of U.S. copyright restrictions, and free of cost.](https://standardebooks.org/)
 - [Project Gutenberg is a library of over 75,000 free eBooks](https://www.gutenberg.org/)
 - [公开的书籍](https://publicdomainreview.org/blog/)
+
+
+<details>
+<summary>Linear Algebra Done Right线性代数应该这样学</summary>
+
+[官网有下载的中英文pdf](https://linear.axler.net/)
+## 第三章线性映射
+矩阵乘法中的的元素可以看成是1xn和nx1的两个矩阵相乘，可以把常数看成一个1x1的矩阵结果。
+这样就都是统一的语言下啦！而不仅仅是数字与非数字的操作了，有了这层理解后面的更多运算与程序执行的过程有了语言层面上的一致性。
+
+</details>
+
+<details>
+<summary>Physically Based Rendering: From Theory To Implementation</summary>
+
+2016的3ed，2023年的4ed,还是没有在工作这使用PBR的渲染器。
+
+[Physically Based Rendering](https://www.pbr-book.org/)
+
+</details>
+
+<details>
+<summary>OpenGL</summary>
+
+# [OpenGL SuperBible](https://github.com/openglsuperbible)
+
+[github code](https://github.com/openglsuperbible)
+
+## 第六版
+## 第七版
+</details>
+
+<details>
+<summary>清华邓俊辉两门课</summary>
+
+[清华邓俊辉两门课，数据结构和计算几何](https://dsa.cs.tsinghua.edu.cn/~deng/index.htm)
+
+## [Computational Geometry and Graph Drawing](https://cs.brown.edu/courses/cs252/)
+
+### [Computational Geometry: Algorithms and Applications]()
+
+
+</details>
