@@ -58,7 +58,16 @@ mkcert-v1.4.4-windows-amd64.exe localhost 127.0.0.1 ::1 192.168.0.138 // 生成�
 - [sniffing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types#mime_sniffing)
 - [各种文件类型及文件头标识大全（十六进制）](https://zhuanlan.zhihu.com/p/571208394)
 
-## 其他
+<details>
+<summary>http status</summary>
+
+## 204 
+204 No Content（成功，但没有返回内容）服务端没有任何响应体（Response Body）
+在使用tus协议时发现服务端的状态不必返回body给前端看，只需要指定这个进度就可以了
+
+</details>
+<details>
+<summary>其他</summary>
 
 ### [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 
@@ -75,3 +84,4 @@ npx msw init . --save
 curl -I -X OPTIONS -H "Origin: http://localhost:3000" -H "Access-Control-Request-Method: GET" http://api-dev.sprintray.com.cn/doctor/sse/connect
 # 期望看到: Access-Control-Allow-Origin: *
 ```
+</details>

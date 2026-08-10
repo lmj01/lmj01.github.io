@@ -25,7 +25,22 @@ ps aux | grep 'processName' # 查看进程名
 ps -p 1 -o comm= # 输出不是systemd,说明不是systemd环境，不能使用sudo systemctl status XXX 
 nohup ./execute.sh & # & 后台运行 nohup 不受终端关闭影响
 Ctrl+Z # 进程暂停后回到shell提示符，使用fg或bg恢复
+tee # 显示 保存 ，从标准输入读取数据，同时输出到标准输出和一个或多个文件中
+echo "new line" | tee file1.txt file2.txt
+echo "content" | sudo tee /etc/some_config
 ```
+</details>
+
+<details>
+<summary>编辑器</summary>
+
+```shell
+nano #
+vi #
+vim # 
+sudo update-alternatives --config editor # editor可以替换为惯用的，如vim
+```
+
 </details>
 
 <details>

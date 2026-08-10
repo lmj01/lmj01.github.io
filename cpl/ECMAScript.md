@@ -4,7 +4,8 @@
 - [RxMarbles](https://rxmarbles.com/)
 - [github](https://github.com/staltz/rxmarbles)
 
-## JavaScript
+<details>
+<summary>JavaScript</summary>
 
 [JavaScripture The bridge between W3C, WHATWG and ECMAScript](https://www.javascripture.com/)
 
@@ -262,9 +263,12 @@ const range = {
 }
 ```
 
+</details>
 
-## typescript
-> javascript的超集，更加面向对象的编程语言，可以便宜为纯Javascript
+<details>
+<summary>typescript</summary>
+
+javascript的超集，更加面向对象的编程语言，可以便宜为纯Javascript
 
 ```shell
 tsc --init 自动生成tsconfig.json文件
@@ -323,34 +327,42 @@ declare var A: A_Static;
 
 ### 参考
 - [typescript官网文档](https://www.typescriptlang.org/docs)
+</details>
 
-## 二进制
+<details>
+<summary>二进制</summary>
 
 ### [Porffor](https://porffor.dev/)
 Porffor is a research project that compiles JavaScript ahead-of-time to WebAssembly and native binaries.
 
 很前言的项目，可以推进JavaScript的二进制编译，避免源码的泄漏。
 
+</details>
 
-## 运行库
+<details>
+<summary>运行库</summary>
 
-### Babel
+## Babel
 babel7舍弃了以前的 babel-*-* 的命名方式，改成了@babel/*-*
 处理流程
 
 ![](../images/babel.png)
 
-### QuickJS
+## QuickJS
 > 是一个轻量，嵌入式的Javascript引擎
 
-### [Bun](https://bun.com/)
+## [Bun](https://bun.com/)
 
 - [bun中文](https://www.bunjs.cn/)
 
-## 工程技巧
+</details>
+<details>
+<summary>工程技巧</summary>
+
 - debugger，调试加入debugger，让浏览器虚拟机字段暂停在那里。如果在逗号运算中间加入，需要有void关键字，表示这是一个有效表达式。
 
 ### 逆向
 #### 私有成员
 对类class中的私有成员，打包后是一个WeakMap的全局变量，分析被人的前端打包的库时，很有用的，避免当前特定函数来使用
 
+</details>

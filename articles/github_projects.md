@@ -18,6 +18,13 @@ Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern gra
 - [A curated collection of the best GPT Image 2 prompts and examples. The prompts come from top creators on X.](https://github.com/ZeroLu/awesome-gpt-image)
 - [Curated GPT Image 2 prompt library — OpenAI's next-gen image model with pixel-perfect text rendering, cross-image consistency, and commercial-grade illustration. 16 languages. Free & open source. ](https://github.com/YouMind-OpenLab/awesome-gpt-image-2)
 
+### 中继器
+[这是一篇文章分析了当前中国的低价AI用户为什么能支撑下去，原来是一个产业链的形成](https://vectoral.com/blog/token-relay-market)，很有中国的经营逻辑在里面，这些人也是舍得投资，这让我想起福建晋江那种商业思维了。找到一个路子就投入进去，不管当前路子的好坏，只关注能否赚钱，他们基本属于第二批，第一批成功后脱身就会以师傅传经验的方式发展下去，这样就盘活整个产业链，持续让人进来投资就形成了源源不断的资金链，对整个产业链的投入也是非常大的，部分人可能赚不到钱，没关系，赚的钱的那部分人就控制整个行业的发展方向。
+其实就像我们去大城市干活一样，你看到那个城市的发展就像你看到那个产业的发展，你认为有机会你就会过去，你会忍着接受不匹配的付出与回报，因为你相信会改变。这就是规律，没法避免的规律，只因为你所在的角色就决定了你的定位，除非你能在大众中脱颖而出成为一个领头者，或者很难有大收获的、大回报的。
+
+- [新一代大模型网关与AI资产管理系统](https://github.com/QuantumNous/new-api)
+- [LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic Claude、Google Gemini、DeepSeek、字节豆包、ChatGLM、文心一言、讯飞星火、通义千问、360 智脑、腾讯混元等主流模型，统一 API 适配，可用于 key 管理与二次分发。单可执行文件，提供 Docker 镜像，一键部署，开箱即用。LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.](https://github.com/songquanpeng/one-api)
+
 ## 视频
 
 - [DimCut is a novel editing interaction design that folds the 1D timeline into multiple rows, integrating text, audio, and visuals — multidimensional information at a glance](https://github.com/hughfenghen/dimcut)

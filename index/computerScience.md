@@ -2,7 +2,8 @@
 
 - [the Journal of Computer Graphics Techniques](https://www.jcgt.org/read.html)
 
-## Programing Language
+<details>
+<summary>Programing Language</summary>
 
 - [编程语言](/cpl/language.md)
 - [python](/cpl/python.md)
@@ -29,16 +30,20 @@
 - [树形结构](/cpl/data.structure/Tree.md)
 - [Dijkstra 算法](https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/README.zh-CN.md)
 - [Maze Algorithms迷宫算法](https://www.jamisbuck.org/mazes/)
+- [openssl](/cs/openssl.md)
 
 ### Database
 
-- [database](/database/database.md)
-- [redis](/database/redis.md)
-- [MySql](/database/mysql.md)
-- [sql](/database/sql.md)
-- [sqlite](/database/sqlite.md)
+- [database](/cs/db/database.md)
+- [redis](/cs/db/redis.md)
+- [MySql](/cs/db/mysql.md)
+- [sql](/cs/db/sql.md)
+- [sqlite](/cs/db/sqlite.md)
 
-## ComputerGraphics
+</details>
+
+<details>
+<summary> ComputerGraphics</summary>
 
 - [OpenGL](/cg/api.opengl.md)
 - [字体](/cg/font.md)
@@ -115,8 +120,10 @@ ffmpeg.setLogger(console.log);
 - [github](https://github.com/Paul180297/BezierLightLTC)
 - [Real-Time Polygonal-Light Shading with Linearly Transformed Cosines](https://eheitzresearch.wordpress.com/415-2/)
 
+</details>
 
-## 网络
+<details>
+<summary> 网络</summary>
 
 - [著名技术作者 Beej 新发布的计算机网络底层概念的英文教程Beej's Guide to Network Concepts）](https://beej.us/guide/bgnet0/html/split/index.html)
 
@@ -127,16 +134,22 @@ ffmpeg.setLogger(console.log);
 - [Building a collaborative text editor in Go协同开发文本编辑器的go实现思考](https://www.aadhav.me/posts/collaborative-editor)
 - [CRDT相关的资料集A Conflict-free Replicated Data Type (CRDT) is a data structure that simplifies distributed data storage systems and multi-user applications.](https://crdt.tech/)
 
-##  [AI](/ai/index.md)
+</details>
 
-## 优秀的产品
+<details>
+<summary>framework</summary>
+
+###  [AI](/ai/index.md)
+
+### 优秀的产品
 
 - [Sweet Home 3D Online Manager 设置家居布局的，](https://www.sweethome3d.com/SweetHome3DOnlineManager.jsp)
 
-## 其他
+### 其他
 
 - [计算机专业学习路线](https://hackway.org/docs/cs/intro)
 - [安全](/articles/safe/index.md)
 - [The original sources of MS-DOS 1.25, 2.0, and 4.0 for reference purposes ](https://github.com/microsoft/MS-DOS)
 - [在线模拟电子元件](https://www.withdiode.com/)
 
+</details>
