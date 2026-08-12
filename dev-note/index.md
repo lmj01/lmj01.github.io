@@ -1,6 +1,7 @@
 # dev-note 
 
 - [nodejs包管理](/web/pkg.md)
+- [ssh](/dev-note/ssh.md)
 - [linux](/dev-note/linux.md)
 - [vim](/dev-note/vim.md)
 - [vscode](/dev-note/vscode.md)
@@ -42,7 +43,8 @@
 - [tailwind](https://tailwindcss.com/docs/installation/using-vite)
 - [vite](https://vite.dev/) 
 - [vue](https://cn.vuejs.org/) 
-- [vuex store](https://vuex.vuejs.org/zh/)
+- [pinia Vue3x标配](https://pinia.vuejs.org/)
+- [vuex store Vue2x标配](https://vuex.vuejs.org/zh/)
 - [Lodash](https://lodash.com/)
 - [Rxjs](https://rxjs.dev/)
 - [Redux](https://redux.js.org/)

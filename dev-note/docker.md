@@ -1,5 +1,9 @@
 # Docker
 
+[官网](https://docs.docker.com/)
+[dockerdocs](https://docs.docker.top/manuals/)
+[docker.docs中文](https://docker.github.net.cn/)
+
 <details>
 <summary>常用命令</summary>
 
@@ -101,6 +105,73 @@ sudo systemctl start docker
 sudo systemctl list-unit-files | grep docker
 sudo journalctl -u docker.service -n 100 --no-pager # 查看错误日志
 sudo docker run hello-world # 测试安装成功否
+```
+
+</details>
+
+<details>
+<summary>导入</summary>
+
+```shell
+# 不解压，直接查看压缩包内的文件列表
+# 查看当前镜像是export还是save的
+# save blobs/...   等文件结构
+# export bin/ etc/ 等目录
+tar -tzf ai-indication-detector-fc-cpu-v1614.tar.gz | head -20
+
+# import 从本地文件导入镜像
+
+docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
+# 从压缩包导入镜像（最常用）
+docker import myapp.tar.gz myapp:latest
+# 从标准输入导入
+docker import < myapp.tar.gz myapp:latest
+# 导入时指定提交信息
+docker import --message "Initial import" myapp.tar.gz myapp:v1.0
+# 导入时设置 CMD
+docker import --change "CMD /app/start.sh" myapp.tar.gz myapp:latest
+# 从目录导入
+docker import /path/to/rootfs myapp:latest
+
+# load 用于导入通过 docker save 命令导出的镜像文件（包含完整历史记录和元数据）
+docker load [OPTIONS]
+# 从文件加载镜像
+docker load -i myimage.tar
+docker load --input myimage.tar
+
+# 从标准输入加载
+docker load < myimage.tar
+# 配合 gunzip 加载压缩文件
+gunzip -c myimage.tar.gz | docker load
+
+
+# 查看容器启动方式
+docker inspect ai-indication-detector-fc-cpu:v1614
+# run 
+
+docker run -d \
+        --name ai-indication-detector \
+        --restart unless-stopped \
+        -p 7730:9000 \
+        ai-indication-detector-fc-cpu:v1614
+
+# 查看启动后的命令
+docker logs -f ai-indication-detector
+docker port runImageName(ai-indication-detector)
+```
+
+</details>
+
+<details>
+<summary>运营与监控</summary>
+
+```shell
+# 主要端口，宿主端口在前，容器端口在后
+docker run -d -p HOST_PORT:CONTAINER_PORT nginx
+# 
+docker stats
+# 立即停止
+docker stop -t 0 spr-alg
 ```
 
 </details>
