@@ -17,6 +17,7 @@
 git init 对当前目录进行git初始化
 git remote add repo-name repo-url 添加远程仓库地址
 git remote rm repo-name 删除远程仓库关联
+git remote set-url origin git@github.com:user/repo.git # 更改为ssh时
 git push origin branch-name 把当前分支推送到origin
 git clone <repository> 
 git clone --recurse-submodules repo-url 自动初始化并更新每个子模块，包括嵌套的子模块

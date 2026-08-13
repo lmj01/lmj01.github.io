@@ -20,6 +20,7 @@
 - [国家中小学智慧教育平台](https://auth.smartedu.cn/uias/login)
 - [国家中小学智慧教育平台 电子课本下载工具](https://github.com/happycola233/tchMaterial-parser)
 - [所有小初高、大学PDF教材。 下载好的文档](https://github.com/TapXWorld/ChinaTextbook)
+- [Open Textbook Initiative美国数学学会AIM鼓励采用开源和开放的数学教科书可下载](https://textbooks.aimath.org/)
 
 ## reading
 

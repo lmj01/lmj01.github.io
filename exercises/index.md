@@ -28,6 +28,8 @@
 
 ## 其他
 
+- [Open Textbook Initiative美国数学学会AIM鼓励采用开源和开放的数学教科书可下载](https://textbooks.aimath.org/)
+
 ### 工具
 
 - [提供各种数学问题的交互式解法和动画](https://www.cut-the-knot.org/)
@@ -46,6 +48,7 @@
 - [Wolfram MathWorld](https://mathworld.wolfram.com/)
 - [数学文化](https://www.global-sci.com/mc)
 - [A Global Multimodal Benchmark for Mathematical Reasoning and Retrieval](https://mathnet.mit.edu/)
+
 <details>
 <summary>Geogebra开源在线工具</summary>
 

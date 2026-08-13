@@ -1,14 +1,10 @@
 # Docker
 
 [官网](https://docs.docker.com/)
-[dockerdocs](https://docs.docker.top/manuals/)
-[docker.docs中文](https://docker.github.net.cn/)
 
 <details>
 <summary>常用命令</summary>
 
-- 仅需文件系统 export + import
-- 需要保留镜像结构 save + load
 
 ```shell
 # 交互模式进入Ubuntu镜像
@@ -112,6 +108,10 @@ sudo docker run hello-world # 测试安装成功否
 <details>
 <summary>导入</summary>
 
+docker镜像的导出有两种方式，每种方式有各自的优缺点。
+- 仅需文件系统 export + import
+- 需要保留镜像结构 save + load
+
 ```shell
 # 不解压，直接查看压缩包内的文件列表
 # 查看当前镜像是export还是save的
@@ -172,6 +172,22 @@ docker run -d -p HOST_PORT:CONTAINER_PORT nginx
 docker stats
 # 立即停止
 docker stop -t 0 spr-alg
+```
+
+</details>
+
+<details>
+<summary>load案例</summary>
+
+```shell
+docker load < ai-detector-v1614.tar.gz
+docker run -d \
+        --name ai-detector \
+        --restart unless-stopped \
+        -p 7730:9000 \
+        ai-detector:v1614
+
+curl -s http://127.0.0.1:7730/invoke
 ```
 
 </details>
