@@ -15,7 +15,7 @@
 - [自动化部署](/dev-note/deploy.md)
 - [硬件配置](/dev-note/hardware.md)
 - [scoop](/dev-note/scoop.md)
-- [AI](/dev-note/ai.md)
+- [AI](/ai/agents.md)
 - [python](/cpl/python.md)
 - [ui](/dev-note/ui.md)
 
@@ -24,7 +24,9 @@
 - [git](/dev-note/git.md)
 - [Sourcetree](https://www.atlassian.com/software/sourcetree)
 
-## 开发文档
+<details>
+<summary>开发文档</summary>
+
 - [gl-matrix](https://glmatrix.net/docs/index.html)
 - [java api](https://www.oracle.com/cn/java/technologies/java-se-api-doc.html)
 - [Eigen](https://libeigen.gitlab.io/eigen/docs-nightly/)
@@ -52,7 +54,10 @@
 - [element-plus](https://element-plus.org/)
 - [d3](https://d3js.org/api)
 
-## 其他资源
+</details>
+
+<details>
+<summary>其他资源</summary>
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web)
 - [Google Android](https://developer.android.google.cn/?hl=zh-cn)
@@ -81,8 +86,13 @@
 - [lapce for linux](https://lap.dev/lapce/)
 - [altassian项目管理工具-lmjie01@gmail.com](https://home.atlassian.com/?utm_source=identity)
 
-### 终端
+</details>
+
+<details>
+<summary>终端</summary>
+
 常用快捷键的配置
+
 ```shell
 # CTRL + N 下一个tab
 # CTRL + P 上一个tab
@@ -92,3 +102,5 @@
 # CTRL + left 切换下一个
 ```
 - [tabby终端](https://tabby.sh/)
+
+</details>

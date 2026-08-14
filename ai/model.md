@@ -40,6 +40,12 @@ data is upstream in process of developing good models
 - [HPC-AI Tech github, We are a global team to help you train and deploy your AI models](https://github.com/hpcaitech)
 - [Colossal-AI: Making large AI models cheaper, faster, and more accessible](https://github.com/hpcaitech/ColossalAI)
 
+
+## 概念
+
+### token
+使用大模型时，会有提示词，大模型将提示词分解成token，再将token转向向量值，然后计算所有token之间的注意力关系，这步非常消耗算力，因此模型公司会对输入的token收费。
+
 ## 其他
 
 - [Port of Facebook's LLaMA model in C/C++ ](https://github.com/ggerganov/llama.cpp)

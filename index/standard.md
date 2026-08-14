@@ -29,7 +29,8 @@
 - [GLSLangSpec.4.40](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.40.pdf)
 - [glspec4.6](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
 
-## Images
+<details>
+<summary>图像标准</summary>
 
 - [图像相关笔记](/cg/image/image.md)
 - [图片处理工具-库，程序](/cg/image/tool.md)
@@ -55,6 +56,8 @@
 - [DICOM PS3.5 2013 Data Structures and Enconding](http://dicom.nema.org/dicom/2013/output/chtml/part05/PS3.5.html)
 - [DCMTK](https://dcmtk.org/)
 - [DCMTK on github](https://github.com/DCMTK/dcmtk)
+
+</details>
 
 ## [IETF](https://www.ietf.org/)
 
@@ -103,3 +106,26 @@ The Object Management Group® Standards Development Organization (OMG® SDO) is 
 - [国家标准全文公开系统](https://openstd.samr.gov.cn/bzgk/gb/index)
 - [全国行政区划信息查询平台](http://xzqh.mca.gov.cn/map)
 - [行业标准信息服务平台](https://hbba.sacinfo.org.cn/)
+
+
+<details>
+<summary>地图</summary>
+
+[asia下载的数据来源](https://img.hcharts.cn/mapdata/)
+
+```shell
+# 这里下载的，目前是没有GeoJSON的meta数据，不清楚如何转换
+// geo的数据
+// https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json
+// GeoJSON格式
+
+// https://geojson.cn/data/atlas/china数据解析时会出现两个问题
+// 数据中加入了最大的边界值，即地图的边界值，
+
+# asia
+带有GeoJson的meta信息
+curl -O https://img.hcharts.cn/mapdata/custom/asia.geo.json
+
+```
+
+</details>

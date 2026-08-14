@@ -165,7 +165,15 @@ winget install Microsoft.VisualStudio.2022.BuildTools --source winget #
 
 
 <details>
-<summary>其他设置</summary>
+<summary>磁盘C的空间减少</summary>
+
+### vscode
+
+在vscode的快捷方式属性中添加一行代码, 在任务栏也是可以添加快捷方式的属性的，最简单的就是创建桌面的快捷方式。
+
+```shell
+F:\IDE\VSCode-win32-x64-1.107.0\Code.exe --user-data-dir "D:\VSCodeData"
+```
 
 ### 把虚拟内存pagefile.sys从C盘移动到其他磁盘
 

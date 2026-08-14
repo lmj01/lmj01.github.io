@@ -1,6 +1,12 @@
-# AI
+# AI Agents
 
-## codex
+## Model Context Protocol(MCP)
+
+是一个[开放标准](https://modelcontextprotocol.io)，旨在解决AI应用与外部世界"连接难"的问题
+
+
+<details>
+<summary>codex</summary>
 
 - [config配置](https://developers.openai.com/codex/config-basic)
 
@@ -12,6 +18,7 @@ auth.json
 }
 ```
 config.toml 
+
 ```shell
 model_provider = "my_codex"
 model = "gpt-5.4"
@@ -82,4 +89,26 @@ cd project/xxx # 进入项目目录
 codex # 直接进入cli编辑模式 直接喂话，通过语言来更改
 ```
 
-### skills
+</details>
+
+<details>
+<summary>github copilot</summary>
+
+
+
+
+</details>
+
+<details>
+<summary>deepseek harness</summary>
+
+就是网页版可以本地跑，与网页上的一样，可以配置很多模型。就相当于免费的web的本地部署。
+
+[github](https://github.com/deepseek-ai/deepseek-harness)
+```shell
+pnpm install
+pnpm run build
+pnpm dsh web
+```
+
+</details>

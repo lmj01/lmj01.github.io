@@ -2,8 +2,6 @@
 
 - [常用数学公式排版KaTex语法总结](https://kissingfire123.github.io/2022/02/18_%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8Fkatex%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/)
 
-## 数学
-
 数学的两个传统分支是算数和几何，运用数字和形状的数值进行计算。
 
 - [相关推荐的书籍](/exercises/book-info.md)
@@ -21,16 +19,12 @@
 - [线性代数](/exercises/linear.algebra.md)
 - [多项式](/exercises/polynomial.md)
 - [概率与统计](/exercises/probability.statistics.md)
-
-## 物理学
-
+- [应用数学](/exercises/applied.mathematics.md)
 - [物理学](/exercises/physics.md)
 
-## 其他
+### 工具
 
 - [Open Textbook Initiative美国数学学会AIM鼓励采用开源和开放的数学教科书可下载](https://textbooks.aimath.org/)
-
-### 工具
 
 - [提供各种数学问题的交互式解法和动画](https://www.cut-the-knot.org/)
 - [图形计算器，用meijie.lmj@outlook.com登录的](https://www.desmos.com/calculator?lang=zh-CN)
