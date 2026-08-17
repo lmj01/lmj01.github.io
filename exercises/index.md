@@ -22,6 +22,10 @@
 - [应用数学](/exercises/applied.mathematics.md)
 - [物理学](/exercises/physics.md)
 
+## 论文
+
+- [Simplifying and Refactoring Introductory Calculus简化与重构微积分入门教学](https://arxiv.org/abs/1811.03459)
+
 ### 工具
 
 - [Open Textbook Initiative美国数学学会AIM鼓励采用开源和开放的数学教科书可下载](https://textbooks.aimath.org/)

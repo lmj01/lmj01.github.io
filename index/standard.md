@@ -5,29 +5,8 @@
 - [Promises/A+](https://promisesaplus.com/)
 - [then Differences from Promises/A](https://promisesaplus.com/differences-from-promises-a)
 
-## [W3C](https://www.w3.org/)
-
-- [W3C standards and drafts docs](https://www.w3.org/TR/?filter-tr-name=file+api)
-- [MDN的文档用语](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Conventions_definitions#Experimental)
-- [IETF Document](https://tools.ietf.org/html/)
-- [Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
-- [UI Events KeyboardEvent code Values](https://www.w3.org/TR/uievents-code/#key-alphanumeric-writing-system)
-- [Web3D Survey技术调研](https://web3dsurvey.com/webgl)
-
-### spec
-- [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
-- [encoding编码，TextEncoder](https://encoding.spec.whatwg.org/)
 
 
-## khronos
-
-- [Khronos OpenGL Refpages](https://www.khronos.org/registry/OpenGL-Refpages/)
-- [Computer Graphics Matrix](../cg/cgMatrix.md)
-- [vk spec](https://registry.khronos.org/vulkan/specs/1.2/pdf/vkspec.pdf)
-
-### [gl](https://registry.khronos.org/OpenGL/specs/gl/)
-- [GLSLangSpec.4.40](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.40.pdf)
-- [glspec4.6](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
 
 <details>
 <summary>图像标准</summary>
@@ -58,20 +37,6 @@
 - [DCMTK on github](https://github.com/DCMTK/dcmtk)
 
 </details>
-
-## [IETF](https://www.ietf.org/)
-
-### RFC
-
-- [RFC editor](https://www.rfc-editor.org/)
-- [The Syslog Protocol](https://datatracker.ietf.org/doc/html/rfc5424)
-
-### Serialize Structured Data
-
-- [protocol Buffers](https://protobuf.dev/)
-- [MessagePack it's like JSON, but fast and small](https://msgpack.org/)
-- [Cap'n Proto, is an insanely fast data interchange format and capability-based RPS System](https://capnproto.org/)
-- [Kaitai Struct](https://doc.kaitai.io/)
 
 
 ## [ Object Management Group (OMG)](https://www.omg.org/)
@@ -107,25 +72,59 @@ The Object Management Group® Standards Development Organization (OMG® SDO) is 
 - [全国行政区划信息查询平台](http://xzqh.mca.gov.cn/map)
 - [行业标准信息服务平台](https://hbba.sacinfo.org.cn/)
 
+<details>
+<summary> W3C</summary>
+
+## [W3C](https://www.w3.org/)
+
+- [W3C standards and drafts docs](https://www.w3.org/TR/?filter-tr-name=file+api)
+- [MDN的文档用语](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Conventions_definitions#Experimental)
+- [IETF Document](https://tools.ietf.org/html/)
+- [Hypertext Transfer Protocol -- HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
+- [UI Events KeyboardEvent code Values](https://www.w3.org/TR/uievents-code/#key-alphanumeric-writing-system)
+- [Web3D Survey技术调研](https://web3dsurvey.com/webgl)
+
+### spec
+- [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
+- [encoding编码，TextEncoder](https://encoding.spec.whatwg.org/)
+
+</details>
 
 <details>
-<summary>地图</summary>
+<summary>khronos</summary>
 
-[asia下载的数据来源](https://img.hcharts.cn/mapdata/)
+- [Khronos OpenGL Refpages](https://www.khronos.org/registry/OpenGL-Refpages/)
+- [Computer Graphics Matrix](../cg/cgMatrix.md)
+- [vk spec](https://registry.khronos.org/vulkan/specs/1.2/pdf/vkspec.pdf)
 
-```shell
-# 这里下载的，目前是没有GeoJSON的meta数据，不清楚如何转换
-// geo的数据
-// https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json
-// GeoJSON格式
+### [gl](https://registry.khronos.org/OpenGL/specs/gl/)
+- [GLSLangSpec.4.40](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.40.pdf)
+- [glspec4.6](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
 
-// https://geojson.cn/data/atlas/china数据解析时会出现两个问题
-// 数据中加入了最大的边界值，即地图的边界值，
 
-# asia
-带有GeoJson的meta信息
-curl -O https://img.hcharts.cn/mapdata/custom/asia.geo.json
+</details>
 
-```
+
+<details>
+<summary>IETF</summary>
+
+[IETF](https://www.ietf.org/)
+
+## RFC
+
+- [RFC editor](https://www.rfc-editor.org/)
+- [The Syslog Protocol](https://datatracker.ietf.org/doc/html/rfc5424)
+
+## Serialize Structured Data
+
+- [protocol Buffers](https://protobuf.dev/)
+- [MessagePack it's like JSON, but fast and small](https://msgpack.org/)
+- [Cap'n Proto, is an insanely fast data interchange format and capability-based RPS System](https://capnproto.org/)
+- [Kaitai Struct](https://doc.kaitai.io/)
+
+
+[RFC Streams, Headers, and Boilerplates](https://datatracker.ietf.org/doc/html/rfc7841#section-2)
+
+
 
 </details>

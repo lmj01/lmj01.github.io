@@ -2,6 +2,9 @@
 
 - [the Journal of Computer Graphics Techniques](https://www.jcgt.org/read.html)
 
+- [AI](/ai/index.md)
+- [地图](/cs/map.md)
+
 <details>
 <summary>Programing Language</summary>
 
@@ -139,7 +142,7 @@ ffmpeg.setLogger(console.log);
 <details>
 <summary>framework</summary>
 
-###  [AI](/ai/index.md)
+
 
 ### 优秀的产品
 
@@ -153,3 +156,4 @@ ffmpeg.setLogger(console.log);
 - [在线模拟电子元件](https://www.withdiode.com/)
 
 </details>
+

@@ -102,7 +102,7 @@ codex # 直接进入cli编辑模式 直接喂话，通过语言来更改
 <details>
 <summary>deepseek harness</summary>
 
-就是网页版可以本地跑，与网页上的一样，可以配置很多模型。就相当于免费的web的本地部署。
+[deepseek harness](https://www.deepseek.com/harness/)智能体可以本地跑，与网页上的一样，可以配置很多模型。
 
 [github](https://github.com/deepseek-ai/deepseek-harness)
 ```shell
@@ -110,5 +110,10 @@ pnpm install
 pnpm run build
 pnpm dsh web
 ```
+
+## [Cordis内核](https://deepseek-harness.github.io/deepseek-harness/reference/cordis-primer)
+
+[github Cordis](https://github.com/cordiverse/cordis)内核只负责插件的加载、卸载和依赖关系
+- [论文](https://github.com/cordiverse/paper)
 
 </details>

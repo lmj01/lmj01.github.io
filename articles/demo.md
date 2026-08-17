@@ -79,6 +79,8 @@
 ### 微信登录
 - [有道词典](https://dict.youdao.com/)
 - [金山词霸](https://www.iciba.com/word?w=circumstances)
+- [中国权威的出版物数据服务平台（PDC）-- 输入ISBN查询](https://pdc.capub.cn/search.html)
+- [重庆高等教育智慧平台](https://www.cqooc.com/index/home)
 
 </div>
 

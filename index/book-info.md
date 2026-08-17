@@ -4,6 +4,7 @@
 - [zlibrary网站状态](https://www.tboxn.com/sites/320.html)
 - [Library Genesis 图书馆创世纪 – 中文 (中国)](https://librarygenesis.net/zh/)
 - [程序员开发的书籍By Developers, For Developers](https://pragprog.com/)
+- [中国权威的出版物数据服务平台（PDC）-- 输入ISBN查询](https://pdc.capub.cn/search.html#/quick?type=%E5%9B%BE%E4%B9%A6&search=9787572121456)
 - [2025及之前的年阅读记录](/articles/books/2025.md)
 - [2026年阅读记录](/articles/books/2026.md)
 - [写作技巧](/articles/books/write.md)

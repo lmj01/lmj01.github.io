@@ -21,7 +21,7 @@
 
 ## 版本控制
 
-- [git](/dev-note/git.md)
+- [git version](/dev-note/git.md)
 - [Sourcetree](https://www.atlassian.com/software/sourcetree)
 
 <details>
