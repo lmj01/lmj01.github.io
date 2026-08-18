@@ -114,6 +114,13 @@ pnpm dsh web
 ## [Cordis内核](https://deepseek-harness.github.io/deepseek-harness/reference/cordis-primer)
 
 [github Cordis](https://github.com/cordiverse/cordis)内核只负责插件的加载、卸载和依赖关系
-- [论文](https://github.com/cordiverse/paper)
+[dsh plugin](https://awesome-dsh-plugin.com/)
+
+### [论文](https://github.com/cordiverse/paper)
+
+传统软件的组件都是static，都是编译好的，比如静态语言C++和C，这也是我最早接触的一套很优秀的游戏架构代码，那时还以卖代码为事业的时代。
+在现代AI agent中需要动态，时间可组合性与空间可组合性。
+
+**关于这个想法，特别是我从静态语言进入动态语言后，就很想做的一件事情，但是没有思路，而这篇论文是在解决这个思路下的问题，给出了实践的具体方案，就像我心中的念头一直是用C++静态语言开发一个框架，用lua动态语言来控制，但是一直不知道做什么，而agent天然是这方面的需求方，给出了不同的人需要不同的定制化需求。而不同行业的人也带来了不同的组合。真正印证了时间与空间的组合。**
 
 </details>

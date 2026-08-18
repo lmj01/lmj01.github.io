@@ -3,6 +3,7 @@
 - [MCP](/ai/mcp.md)
 - [学习案例](/ai/demo.md)
 - [模型](/ai/model.md)
+- [llama.cpp](/ai/llama.md)
 - [神经网络](/ai/neural.network.md)
 - [观点](/ai/perspective.md)
 

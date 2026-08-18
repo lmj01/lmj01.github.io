@@ -1,6 +1,5 @@
 # 地图
 
-- [Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. ](https://www.naturalearthdata.com/)
 
 <details>
 <summary>country code</summary>
@@ -35,5 +34,14 @@ GeoJSON 是一种基于 JSON（JavaScript Object Notation）的地理空间数�
 curl -O https://img.hcharts.cn/mapdata/custom/asia.geo.json
 
 ```
+
+</details>
+
+<details>
+<summary>  </summary>
+
+从[Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. ](https://www.naturalearthdata.com/)下载地图数据，
+
+通过[mapshaper](https://mapshaper.org/) [github， Tools for editing Shapefile, GeoJSON, TopoJSON and CSV files](https://github.com/mbloch/mapshaper) 工具进行导出转换为需要的格式
 
 </details>

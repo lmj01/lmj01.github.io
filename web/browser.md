@@ -81,6 +81,7 @@ chrome://apps
 chrome://flags
 chrome://settings/payments
 chrome://password-manager/settings
+chrome://version # 可以查看启动时的命令与带参
 
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/open)
 

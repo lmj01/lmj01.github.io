@@ -14,7 +14,7 @@
 
 ## GPU-Graphics Processing Unit
 
-- [GPU天梯排行榜](https://topic.expreview.com/GPU/)
+- [GPU天梯排行榜](https://gpu.exprank.com/)
 
 - Asynchronous accelerator for graphics异步图形加速
 - parallel problem并行处理
