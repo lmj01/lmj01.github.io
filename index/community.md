@@ -9,8 +9,8 @@
 - [Laws of UX is a collection of best practices that designers can consider when building user interfaces](https://lawsofux.com/)
 
 
-
-## Architecture
+<details>
+<summary> Architecture</summary>
 
 - IaaS, Infrastructure as a service
 - PaaS, Platform as a service
@@ -43,7 +43,10 @@
 
 - [姆拉卡斯特关于undo/redo的文章，设计Alkemion Studio富文本编辑器](/articles/2025/undo_redo.md)
 
-## Document
+</details>
+
+<details>
+<summary> Document</summary>
 
 ### Documentation system
 
@@ -57,7 +60,10 @@
 - [Specification-Driven Development (SDD)](https://github.com/github/spec-kit/blob/main/spec-driven.md)
 - [Specification-Driven Development (SDD) - 规范驱动开发](https://hobbytp.github.io/zh/projects/code_assistant/spec-driven-dev/)
 
-## 协议
+</details>
+
+<details>
+<summary> 协议</summary>
 
 ### License
 
@@ -96,7 +102,10 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 - IODs Information Object Definitions信息对象定义
 - SOPs Service-Object Pairs服务对象配对，
 
-## 开源Tools
+</details>
+
+<details>
+<summary> 开源Tools</summary>
 
 - [这是一款开源、多语言、自托管的项目管理工具，兼容了 Trello 和 Notion 的特点](https://www.focalboard.com/)
     - [github](https://github.com/mattermost/focalboard)
@@ -104,12 +113,23 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 - [同步程序Syncthing is a continuous file synchronization program.](https://syncthing.net/)
     - [github](https://github.com/syncthing/syncthing)
 
-## 社区
+### 社区
 
 - [Khronos Standards community discussions github-account](https://community.khronos.org/)
 - [The three.js community discourse. github-account](https://discourse.threejs.org/)
 
-## 开源游戏
+</details>
+
+<details>
+<summary> 新架构思想</summary>
+
+
+[cordis内核](https://github.com/cordiverse/cordis)是一个很优秀的内核空间，看其论文是与[Koishi 是一个跨平台、可扩展、高性能的聊天机器人框架Cross-platform chatbot framework made with love](https://github.com/koishijs/koishi)也是有相同的思想在里面，插件化的思维。
+
+</details>
+
+<details>
+<summary> 开源游戏</summary>
 
 - [Pokemon Auto Chess Game. Made by fans for fans. Open source, non profit. All rights to the Pokemon Company. ](https://github.com/keldaanCommunity/pokemonAutoChess)
     - [online](https://pokemon-auto-chess.com/)
@@ -121,3 +141,5 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 ### [ js13kGames Coding competition for web game developers, with a 13KB size limit.](https://github.com/js13kGames)
 - [13th Floor - a js13kGames 2024 competition entry by @roblouie. ](https://github.com/js13kGames/13th-floor)
 - [Coup Ahoo（阿胡起义）](https://github.com/js13kGames/coup-ahoo)
+
+</details>

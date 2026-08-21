@@ -5,6 +5,7 @@
 - [模型](/ai/model.md)
 - [llama.cpp](/ai/llama.md)
 - [神经网络](/ai/neural.network.md)
+- [智能体](/ai/agents.md)
 - [观点](/ai/perspective.md)
 
 ## books

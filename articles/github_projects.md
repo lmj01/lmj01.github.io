@@ -59,6 +59,7 @@ KOReader is a document viewer for E Ink devices. Supported fileformats include E
 ### 离线浏览
 - [kage (影, "shadow") clones a website into a folder you can browse offline, with every script stripped out. ](https://github.com/tamnd/kage)
 
+### [现代跨平台的RSS阅读器 go + wails](https://github.com/WCY-dt/MrRSS)
 
 ## 库
 

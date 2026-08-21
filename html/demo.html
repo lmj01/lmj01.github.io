@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Html Demo</title>
+    <script src="./html.config.js" defer></script>
+    </script>
+    <style>
+        /* css */
+        .py-chinese-item {
+            position: relative;
+            /* color: blue; */
+        }
+
+        .py-pinyin-item {
+            color: #d08080;
+        }
+
+        #idDst {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xl d-flex flex-column">
+        <h1>html standard</h1>
+        <div>
+            <h6><a class="mx-3" href="http://mf100.org/">魔方乐园</a></h6>
+            <h6>
+                <a class="mx-3" href="https://github.com/telemath/PerfectScramble">Finds a Perfect Scramble on a 3x3
+                    Rubik's Cube 三阶最难魔方</a>
+                <a class="mx-3"
+                    href="https://www.solutionslookingforproblems.com/post/the-rubik-s-cube-perfect-scramble">the
+                    rubik's cube perfect scramble</a>
+            </h6>
+        </div>
+        <div class="w-100 d-flex flex-column">
+            <div class="m-auto">
+                <button popovertarget="example-popover">Toggle popover</button>
+                <div id="example-popover" popover>
+                    <p>No JavaScript, just modern browser magic, thanks to the wonderful folks speccing for the web and
+                        building our browsers!</p>
+                    <button popovertarget="example-popover" popovertargetaction="hide">Close</button>
+                </div>
+            </div>
+            <div class="m-auto">
+                <button popovertarget="example-dialog">Toggle &lt;dialog&gt; popover</button>
+                <dialog id="example-dialog" popover>
+                    <p>Closed with just HTML via <code>&lt;form method="dialog"&gt;</code>, opened with the
+                        <code>popover</code> attribute.
+                    </p>
+                    <button popovertarget="example-dialog" popovertargetaction="hide">Close</button>
+                </dialog>
+            </div>
+            <div>
+                <button command="show-popover" commandfor="example-command-popover">Open</button>
+                <button command="hide-popover" commandfor="example-command-popover">Close</button>
+                <dialog id="example-command-popover" popover>
+                    <p><code>show-popover</code> opens this and <code>hide-popover</code> closes it!</p>
+                    <button command="hide-popover" commandfor="example-command-popover">Close</button>
+                </dialog>
+            </div>
+        </div>
+        <script type="module">
+            // const elTextareaSrc = document.getElementById('idSrc');
+            // const elDivDst = document.getElementById('idDst');
+            // elTextareaSrc.addEventListener('change', (event)=>{
+            //     elDivDst.innerHTML = html(elTextareaSrc.value);
+            // })
+        </script>
+    </div>
+</body>
+
+</html>

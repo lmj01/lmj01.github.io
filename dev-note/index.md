@@ -40,9 +40,6 @@
 - [threejs](https://threejs.org/)
 - [Tweakpane](https://tweakpane.github.io/docs/v3/)
 - [vtk.js](https://kitware.github.io/vtk-js/)
-- [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
-- [tailwind](https://tailwindcss.com/docs/installation/using-vite)
 - [vite](https://vite.dev/) 
 - [vue](https://cn.vuejs.org/) 
 - [pinia Vue3x标配](https://pinia.vuejs.org/)
@@ -51,8 +48,19 @@
 - [Rxjs](https://rxjs.dev/)
 - [Redux](https://redux.js.org/)
 - [axios](https://axios-http.com/docs/intro)
-- [element-plus](https://element-plus.org/)
 - [d3](https://d3js.org/api)
+
+</details>
+
+<details>
+<summary>UI lib</summary>
+
+- [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
+- [tailwind](https://tailwindcss.com/docs/installation/using-vite)
+- [element-plus](https://element-plus.org/)
+- [MUI The React UI library](https://v5-0-6.mui.com/)
+
 
 </details>
 

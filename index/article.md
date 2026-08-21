@@ -1,10 +1,12 @@
 # articles
 
-## 工具
-- [现代跨平台的RSS阅读器 go + wails](https://github.com/WCY-dt/MrRSS)
+- [行业](/articles/notes/trade.md)
 
-## [图形学](/cg/graphics.md)
 
+<details>
+<summary>图形学毕竟</summary>
+
+- [graphics](/cg/graphics.md)
 - [资源与工具](/articles/resource.md)
 - [3D引擎](/cg/engines.md)
 - [Markdown](/articles/others/markdown.md)
@@ -24,7 +26,11 @@
 - [Gizmo](/cg/tools/gizmo.md)
 - [threejs](/cg/threejs/index.md)
 
-## 工作中遇到的
+</details>
+
+<details>
+<summary> 工作中遇到的</summary>
+
 - [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)
 - [openCTM模型文件格式](https://openctm.sourceforge.net/)
     - [OpenCTM Code ](https://sourceforge.net/p/openctm/code/HEAD/tree/branches/pre-2.x/)
@@ -39,6 +45,11 @@
 ### [openmesh](https://www.graphics.rwth-aachen.de/software/openmesh/)
 
 - [本项目的计划](/articles/selfPlans.md)
+
+</details>
+
+<details>
+<summary>旧的数据</summary>
 
 ## 2024
 
@@ -60,3 +71,5 @@
 - [农历历法](/articles/2023/chineseCalendar.md)
 - [协同编辑](/articles/2023/associateEditor.md)
 - [Fractional Indexing小数索引技术](/articles/2023/fractionalIndexing.md)
+
+</details>

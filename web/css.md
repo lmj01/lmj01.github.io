@@ -314,3 +314,9 @@ Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用
 ### 动画
 - [CSS实现动画计算器](https://css-tricks.com/animating-number-counters/)
 - [网页滚动的动画效果，使用 Web Animations API (WAAPI) 和 CSS Animations API 实现](https://scroll-driven-animations.style/)
+
+### 着色
+
+#### [MicroLighter](https://davatron5000.github.io/microlighter/)
+[github](https://github.com/davatron5000/microlighter) A zero-dep syntax highlighter that uses the CSS Highlights API
+目前CSS highlights的API还不够全面
