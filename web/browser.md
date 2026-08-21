@@ -66,7 +66,9 @@ document.yourFormName.reset();
 - [HTTP/2 push is tougher than I thought](https://jakearchibald.com/2017/h2-push-tougher-than-i-thought/)
 
 
-## firefox
+## [firefox](https://www.firefox.com/en-US/)
+
+- [firefox nightly](https://ftp.mozilla.org/pub/firefox/nightly/)
 
 打开页面的服务
 about:serviceworkers

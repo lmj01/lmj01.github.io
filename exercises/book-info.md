@@ -79,3 +79,6 @@ discrete differential geometry
 - [David H. Silver Beyond Popular Science This book contains 50 standalone chapters, each exploring a curious phenomenon at the boundary of physics, mathematics, cosmology, biology, computer science, history, and linguistics. 开源免费的](https://github.com/silverdavi/beyond_popular_science)
 - [So You Want to Study Mathematics…包含数学、物理、生物](https://www.susanrigetti.com/math)
 - [Mathematics of Data Science书籍，大数据的免费书籍](https://arxiv.org/pdf/2607.11938)
+
+### [一个博主](https://www.aqouyang.com/series/sde)
+上面记录了他的一些数学笔记

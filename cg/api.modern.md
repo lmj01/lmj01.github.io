@@ -4,6 +4,18 @@
 ## [webgpu]()
 
 - [webgpureport](https://webgpureport.org/)
+- [WebGPU Conformance Test Suite](https://gpuweb.github.io/cts/standalone/)
+
+```shell
+# chrome
+chrome://gpu/
+chrome://flags/#enable-unsafe-webgpu
+chrome://settings/system
+# firefox
+about:config
+# 提示WebGPU Fallback Adapter有值，但是WebGPU Adapter没有值
+dom.webgpu.wgpu-backend # value 设置为vulkan就可以支持了，是因为默认没有显卡指定adaptor
+```
 
 ## [vulkan]()
 - [Official Khronos Vulkan Samples](https://github.com/KhronosGroup/Vulkan-Samples)
