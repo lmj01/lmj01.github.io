@@ -68,8 +68,12 @@
     - [github](https://github.com/papers-we-love/papers-we-love)
 - [books](https://github.com/nkorange/books)
 
+#### [nderstanding Deep Learning - Simon J.D. Prince](https://udlbook.github.io/udlbook/)
+[github](https://github.com/udlbook/udlbook) 开源的，官网可以下载最新版的pdf文档
+
 ### [The Software Foundations series is a broad introduction to the mathematical underpinnings of reliable software.](https://softwarefoundations.cis.upenn.edu/)
 > 该系列现在有6本了，属于编程语言理论比较高深的, 程序的自动证明甚至程序的自动生成都是未来可能成熟的技术，形式化
+
 
 ## 网上资源
 - [世界数字图书馆](https://www.wdl.org/zh/)

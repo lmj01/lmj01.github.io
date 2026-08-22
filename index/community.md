@@ -4,6 +4,9 @@
 - [软件工程定律](https://lawsofsoftwareengineering.com/)
 - [Battle-Tested Patterns生产验证的编程模式46个模式](https://totoro-jam.github.io/battle-tested-patterns/zh/)
 
+[Archive归档记录](https://archive.org/)
+
+
 ## UX(User Experience用户体验)
 
 - [Laws of UX is a collection of best practices that designers can consider when building user interfaces](https://lawsofux.com/)
@@ -131,15 +134,26 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 <details>
 <summary> 开源游戏</summary>
 
-- [Pokemon Auto Chess Game. Made by fans for fans. Open source, non profit. All rights to the Pokemon Company. ](https://github.com/keldaanCommunity/pokemonAutoChess)
-    - [online](https://pokemon-auto-chess.com/)
+[Pokemon Auto Chess Game. Made by fans for fans. Open source, non profit. All rights to the Pokemon Company. ](https://github.com/keldaanCommunity/pokemonAutoChess)
 
-- [supertux]()
+[online](https://pokemon-auto-chess.com/)
 
-- [A free and open-source Touhou Project fangame 开发语言是C](https://github.com/taisei-project/taisei)
+[supertux]()
+
+[A free and open-source Touhou Project fangame 开发语言是C](https://github.com/taisei-project/taisei)
+
+[DOS Games Online](https://dos.zone/)
+
 
 ### [ js13kGames Coding competition for web game developers, with a 13KB size limit.](https://github.com/js13kGames)
 - [13th Floor - a js13kGames 2024 competition entry by @roblouie. ](https://github.com/js13kGames/13th-floor)
 - [Coup Ahoo（阿胡起义）](https://github.com/js13kGames/coup-ahoo)
+
+
+### [Native 32](https://bootleggames.fandom.com/wiki/Native_32)
+
+Native 32 is a piece of hardware by the Taiwanese company Sunplus. [逆向了一个 20 年前的 DVD 播放器游戏格式，做了个Native32模拟器](https://zhuanlan.zhihu.com/p/2051661510162789725)
+
+[A Native32 game emulator written in Rust.](https://github.com/AloysHF/Native32Emu) 有个链接给出了百度网盘的资源，游戏资源。
 
 </details>

@@ -89,10 +89,21 @@
 - [Warp终端](https://docs.warp.dev/)
 - [网络通信监控软件 Little Snitch](https://obdev.at/products/littlesnitch-linux/index.html)
 - [mswjs](https://mswjs.io/docs)
-- [vscodium](https://github.com/VSCodium/vscodium)
-- [zed,可以使用scoop install zed](https://zed.dev/)
-- [lapce for linux](https://lap.dev/lapce/)
 - [altassian项目管理工具-lmjie01@gmail.com](https://home.atlassian.com/?utm_source=identity)
+
+#### 编辑器
+
+
+[neoviw](https://code.visualstudio.com/)
+
+[vscode](https://code.visualstudio.com/)
+
+[vscodium](https://github.com/VSCodium/vscodium)
+
+[zed,可以使用scoop install zed](https://zed.dev/)
+
+[lapce for linux](https://lap.dev/lapce/)
+
 
 </details>
 
@@ -109,6 +120,4 @@
 # CTRL + up 切换前一个
 # CTRL + left 切换下一个
 ```
-- [tabby终端](https://tabby.sh/)
-
 </details>

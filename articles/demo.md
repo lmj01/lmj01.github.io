@@ -17,7 +17,8 @@
 <summary>AI </summary>
 
 ## [deepseek](https://www.deepseek.com/)
-- [harness DeepSeek Harness: Everything is a Plugin. ](https://github.com/deepseek-ai/deepseek-harness)
+
+[harness DeepSeek Harness: Everything is a Plugin. ](https://github.com/deepseek-ai/deepseek-harness)
 
 </details>
 
@@ -28,25 +29,24 @@
 
 <div class="w-30">
 
-- [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader)
-- [图片解释器--通过AI解释图片内容并延申其含义](https://flipbook.page/)
-- [清理工具，支持window和Linux系统BleachBit](https://www.bleachbit.org/)
-- [在线MD5加解密](https://www.sojson.com/encrypt_md5.html)
-- [WinDirStat磁盘清理，超级好用](https://windirstat.net/)
-- [SpaceSniffer](https://space-sniffer.com/)
-- [动态IP服务，个人免费](https://dynip.dev/)
-- [IPv4查询](https://worldip.io/)
+[Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader)
+
+[图片解释器--通过AI解释图片内容并延申其含义](https://flipbook.page/)
+
+[清理工具，支持window和Linux系统BleachBit](https://www.bleachbit.org/)
+
+[在线MD5加解密](https://www.sojson.com/encrypt_md5.html) [在线随机密码生成器](https://www.lddgo.net/string/randompassword)
+
+[WinDirStat磁盘清理，超级好用](https://windirstat.net/)
+
+[SpaceSniffer](https://space-sniffer.com/)
+
+[动态IP服务，个人免费](https://dynip.dev/)
+
+[IPv4查询](https://worldip.io/)
 
 </div>
 
-<div class="w-30">
-
-### 其他
-- [在线随机密码生成器](https://www.lddgo.net/string/randompassword)
-- [Archive归档记录](https://archive.org/)
-- [DOS Games Online](https://dos.zone/)
-
-</div>
 </div>
 
 </details>
@@ -59,46 +59,69 @@
 <div class="w-30">
 
 ### 图书馆
-- [重庆图书馆](https://www.cqlib.cn/)
-- [重庆图书馆-书目检索系统](http://222.177.237.197:8080/InDigLib/frontCloud/Index!myLib.action)
-- [重庆市少年儿童图书馆](https://www.cqst.org.cn/)
-- [重庆市少年儿童图书馆-书目检索系统](http://113.207.111.42:9001/InDigLib/OpacMarcSearchSolr!opacSearch.action)
+
+[重庆图书馆](https://www.cqlib.cn/)
+
+[重庆图书馆-书目检索系统](http://222.177.237.197:8080/InDigLib/frontCloud/Index!myLib.action)
+
+[重庆市少年儿童图书馆](https://www.cqst.org.cn/)
+
+[重庆市少年儿童图书馆-书目检索系统](http://113.207.111.42:9001/InDigLib/OpacMarcSearchSolr!opacSearch.action)
 
 </div>
 
 <div class="w-30">
 
-### 电台
-- [云听](https://www.radio.cn/pc-portal/erji/radioStation.html)
-- [古典音乐-国家大剧院](https://www.ncpa-classic.com)
+# 电台
+
+[云听](https://www.radio.cn/pc-portal/erji/radioStation.html)
+
+[古典音乐-国家大剧院](https://www.ncpa-classic.com)
+
+## [Radio.Garden](https://radio.garden/)
+
+[中文站](https://radiogarden.hezidh.com/)
+[Listen Online Radios on Radio Garden, Live Radios](https://radyogarden.com/)
 
 </div>
 
 <div class="w-30">
 
 ### 微信登录
-- [有道词典](https://dict.youdao.com/)
-- [金山词霸](https://www.iciba.com/word?w=circumstances)
-- [中国权威的出版物数据服务平台（PDC）-- 输入ISBN查询](https://pdc.capub.cn/search.html)
-- [重庆高等教育智慧平台](https://www.cqooc.com/index/home)
+
+[有道词典](https://dict.youdao.com/)
+
+[金山词霸](https://www.iciba.com/word?w=circumstances)
+
+[中国权威的出版物数据服务平台（PDC）-- 输入ISBN查询](https://pdc.capub.cn/search.html)
+
+[重庆高等教育智慧平台](https://www.cqooc.com/index/home)
+
+[知乎](https://www.zhihu.com/)
 
 </div>
 
 <div class="w-30">
 
 ### 邮件
-- [163邮件](https://mail.163.com/)
-- [outlook](https://outlook.live.com/mail/?deeplink=mail%2F)
-- [Gmail](https://gmail.com/)
+
+[163邮件](https://mail.163.com/)
+
+[outlook](https://outlook.live.com/mail/?deeplink=mail%2F)
+
+[Gmail](https://gmail.com/)
 
 </div>
 
 <div class="w-30">
 
 ### 其他
-- [国家企业信用信息公示系统](https://www.gsxt.gov.cn/index.htm)
-- [学信网](https://my.chsi.com.cn/archive/index.jsp)
-- [教育部学历查询网站](https://www.chsi.com.cn/)
+
+[国家企业信用信息公示系统](https://www.gsxt.gov.cn/index.htm)
+
+[学信网](https://my.chsi.com.cn/archive/index.jsp)
+
+[教育部学历查询网站](https://www.chsi.com.cn/)
 
 </div>
 </div>
