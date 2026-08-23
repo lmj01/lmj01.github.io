@@ -13,7 +13,8 @@ vim编辑器核心就是text object motion
 - i 编辑模式，编辑文件
 - 默认模式
 
-## 编辑模式
+<details>
+<summary> 编辑模式</summary>
 
 由默认模式到编辑模式，按下如下字符
 
@@ -46,6 +47,7 @@ vim编辑器核心就是text object motion
 - :e path 打开文件,支持远程文件
 - :bp 切换到上一个文件
 - :bn 切换到下一个文件
+
 
 ### 查找命令
 - /text正向查找text，按下n键查找下一个，按下N键查找前一个
@@ -105,7 +107,12 @@ s/old/new/g用old替换new，替换当前行的所有匹配
 - 1,$ s/^/#/g注释所有
 - :%s/^/#/g注释所有
 
-## 可视模式
+</details>
+
+<details>
+<summary>可视模式</summary>
+
+
 - 默认模式下按v开启可视模式
 
 - 拷贝 行内几个词，几行，
@@ -135,9 +142,14 @@ s/old/new/g用old替换new，替换当前行的所有匹配
     - :bd# :bdelete# 关闭除当前以为的所有
     - :wq 保存当前并退出
     - :wqa 保存所有的并退出
-- 
+
+</details> 
+
+<details>
+<summary>VIM安装</summary>
 
 ## 配置
+
 ```shell
 # 源码安装vim
 git clone git@github.com:vim/vim.git
@@ -239,14 +251,18 @@ CocConfig
     - gcc gcc 注释当前行
     - <number>gcc 注释当前一下<number>行
 
-## neovim
+</details>
+
+<details>
+<summary>neovim</summary>
+
 
 - [lazy.nvim](https://lazy.folke.io/)
 
 ``` shell
 配置路径
 # 查看路径
-:echo stdpath('config')
+:echo stdpath('config') # 查看配置路径
 # ~/.config/nvim/lua/plugins.lua
 # C:\Users\<用户名>\AppData\Local\nvim\lua\plugins.vim
 # C:\Users\<用户名>\AppData\Local\nvim\init.vim
@@ -254,3 +270,23 @@ CocConfig
 # 检查路径是否配置正确
 :checkhealth
 ```
+
+## scoop
+
+```shell
+scoop bucket add main
+scoop install neovim
+scoop install fd ripgrep # 安装代码搜索工具（用于 Telescope 等插件）
+scoop install mingw-winlibs-llvm # 安装 Tree-sitter 所需的 C 编译器
+scoop install mingw # mingw-winlibs-llvm失败直接安装
+# --------un-confirm
+# 备份配置
+Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+# 克隆启动器 官方的启动器模板
+git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
+Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
+```
+
+
+</details>

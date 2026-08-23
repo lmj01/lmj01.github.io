@@ -18,4 +18,7 @@ scoop bucket add extras
 scoop install main/llvm
 scoop install main/cmake
 scoop install 
+#
+scoop help # 查看命令
+scoop list # 查看安装的
 ```
