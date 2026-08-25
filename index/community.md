@@ -111,15 +111,18 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 <summary> 开源Tools</summary>
 
 - [这是一款开源、多语言、自托管的项目管理工具，兼容了 Trello 和 Notion 的特点](https://www.focalboard.com/)
-    - [github](https://github.com/mattermost/focalboard)
+- [github](https://github.com/mattermost/focalboard)
 - [款开源、安全、跨平台的密码管理器。该项目是采用 C++ 开发的免费、离线、无广告的密码管理工具](https://github.com/keepassxreboot/keepassxc)
 - [同步程序Syncthing is a continuous file synchronization program.](https://syncthing.net/)
     - [github](https://github.com/syncthing/syncthing)
 
-### 社区
-
 - [Khronos Standards community discussions github-account](https://community.khronos.org/)
 - [The three.js community discourse. github-account](https://discourse.threejs.org/)
+
+## 软件
+
+### [debloat replace the junk](https://debloat.dev/)
+开源替换软件的分类，可以找到收费软件的替代品，不一定适合，但是可以参考。
 
 </details>
 

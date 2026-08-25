@@ -79,12 +79,15 @@ git for-each-ref --format='%(refname:short) %(creatordate:iso)' 创建情况
 ## tag
 ```shell
 git tag 列车本地所有tag
+git tag -d tagName # 可以一次删除多个，后面以空格放置tagName
+git tag -d $(git tag) # 删除所有tag
+git show tagName # 查看当前tag的详情
 git ls-remote --tags origin 查看远程标签
 git tag --sort=-creatordate 按时间顺序列出标签
 git tag -a tagName -m "描述" 添加标签
 git push origin tagName 推送指定的标签
 git push origin --tags 推送所有的
-git push origin --delete tagName 删除远程标签
+git push origin --delete tagName # 删除远程标签 要远程仓库支持才行
 git checkout -b branchName tagName 以某个标签为指定版本
 ```
 

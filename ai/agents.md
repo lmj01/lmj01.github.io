@@ -111,6 +111,12 @@ codex # 直接进入cli编辑模式 直接喂话，通过语言来更改
 pnpm install
 pnpm run build
 pnpm dsh web
+# 更新repo代码后，可能缺少组件依赖
+# 先删除 repo/node_modules 和 .dsh/profiles/* # 备份修改的数据，如web/下的配置文件
+# pnpm install --force 强制更新 
+pnpm run clean # 先删除相关的
+pnpm install
+pnpm run build
 ```
 
 ## [Cordis内核](https://deepseek-harness.github.io/deepseek-harness/reference/cordis-primer)

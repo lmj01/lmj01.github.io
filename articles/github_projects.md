@@ -1,6 +1,7 @@
 # open project
 
-## 3D 
+<details>
+<summary> 3D </summary>
 
 ### [o3de](https://github.com/o3de/o3de)
 O3DE Open 3D Engine Apache 2.0-licensed multi-platoform
@@ -8,11 +9,27 @@ O3DE Open 3D Engine Apache 2.0-licensed multi-platoform
 ### [LLGL](https://github.com/LukasBanana/LLGL)
 Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern graphics APIs OpenGL, Direct3D, Vulkan, and Metal 
 
-## svg
+## webgpu
+
+### [PNGine](https://hugodaniel.com/pages/pngine/)
+
+Declarative WebGPU in S-expressions that match the spec 1:1. Compile them to a few hundred bytes of bytecode, and play anywhere WebGPU runs. 
+
+[WebGPU in a declarative S-expressions engine. ](https://github.com/HugoDaniel/pngine)
+
+把webgpu放置在图片或其他格式中，很有创意的项目, 
+
+</details>
+
+<details>
+<summary> svg</summary>
 
 - [弧线箭头生成，Curve Arrow](https://github.com/YYsuni/curve-arrow)
 
-## AI
+</details>
+
+<details>
+<summary> AI</summary>
 
 ### 提示词库
 - [A curated collection of the best GPT Image 2 prompts and examples. The prompts come from top creators on X.](https://github.com/ZeroLu/awesome-gpt-image)
@@ -25,7 +42,11 @@ Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern gra
 - [新一代大模型网关与AI资产管理系统](https://github.com/QuantumNous/new-api)
 - [LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic Claude、Google Gemini、DeepSeek、字节豆包、ChatGLM、文心一言、讯飞星火、通义千问、360 智脑、腾讯混元等主流模型，统一 API 适配，可用于 key 管理与二次分发。单可执行文件，提供 Docker 镜像，一键部署，开箱即用。LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.](https://github.com/songquanpeng/one-api)
 
-## 视频
+</details>
+
+
+<details>
+<summary> 视频</summary>
 
 - [DimCut is a novel editing interaction design that folds the 1D timeline into multiple rows, integrating text, audio, and visuals — multidimensional information at a glance](https://github.com/hughfenghen/dimcut)
 
@@ -46,7 +67,10 @@ Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern gra
 
 ### [web鱼缸](https://github.com/SeanWong17/RippleAquarium)
 
-## 文档
+</details>
+
+<details>
+<summary> 文档</summary>
 
 ### [DocX Editor](https://www.docx-editor.dev/)
 [github](https://github.com/eigenpal/docx-editor) 可在线编辑docx文档，前端的多端支持，Open-source WYSIWYG .docx editor library with canonical OOXML, tracked changes, and real-time collaboration. 
@@ -61,21 +85,50 @@ KOReader is a document viewer for E Ink devices. Supported fileformats include E
 
 ### [现代跨平台的RSS阅读器 go + wails](https://github.com/WCY-dt/MrRSS)
 
-## 库
+</details>
 
-### CRDT
+<details>
+<summary> 库</summary>
+
+## CRDT
 - [Loro is a high‑performance CRDT library for local‑first, real‑time collaboration.](https://www.loro.dev/)
 - [Loro is a CRDTs(Conflict-free Replicated Data Types) library](https://github.com/loro-dev/loro)
 
-## 开发工具
+## 网络
+
+### [OpenZiti](https://github.com/openziti/ziti)
+OpenZiti is an open-source zero-trust networking platform that makes network services invisible to unauthorized users.
+
+</details>
+
+<details>
+<summary>硬件</summary>
+
+## 嵌入式
+
+### [An SDK for building real apps for your Kobo eInk reader](https://github.com/BandarLabs/Cobalt)
+
+电子阅读器的booter的替换，目前是针对Cobalt is an open-source application platform for Kobo
+
+</details>
+
+
+<details>
+<summary> 开发工具</summary>
 
 ### [NyaTerm](https://nyaterm.app/)
 [github](https://github.com/nyakang/nyaterm) NyaTerm 将终端会话、远程文件、认证信息、端口转发和配置备份放在同一个桌面应用中，适合日常开发、服务器维护和设备调试。目前还差一些功能运行
 
-## 其他
+</details>
+
+<details>
+<summary> 其他</summary>
+
 记录一些有意思得项目
 
 - [Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere. ](https://github.com/Crosstalk-Solutions/project-nomad)
 - [基于RSS的资讯聚合工作台 ](https://github.com/shawnxie94/infinitum)
 - [Echo Loop 是一款科学、高效的英语听说训练 App,使用Flutter开发的跨平台](https://github.com/echo-loop/Echo-Loop)
 - [历年高考数学题](https://github.com/deekur/gaokaomath)
+
+</details>

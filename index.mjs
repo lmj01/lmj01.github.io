@@ -1,17 +1,5 @@
-import { md2Html, parseMermaidHtml } from './libs/marked/index.js';
-import hljs from './libs/highlight/core.min.mjs';
-import languageJavascript from './libs/highlight/languages/javascript.min.mjs';
-import languageLua from './libs/highlight/languages/lua.min.mjs';
-import languageCpp from './libs/highlight/languages/cpp.min.mjs';
-import languageC from './libs/highlight/languages/c.min.mjs';
-import languageGlsl from './libs/highlight/languages/glsl.min.mjs';
+import { md2Html, parseMermaidHtml, useHightLightStyle } from './libs/marked/index.js';
 import { whiteListUrls } from './config.mjs';
-
-hljs.registerLanguage('javascript', languageJavascript);
-hljs.registerLanguage('lua', languageLua);
-hljs.registerLanguage('cpp', languageCpp);
-hljs.registerLanguage('c', languageC);
-hljs.registerLanguage('glsl', languageGlsl);
 
 const whiteListToNewTab = Object.keys(whiteListUrls).map(e=>whiteListUrls[e].url);
 const cInitPath = '/articles/demo.md';
@@ -68,13 +56,13 @@ async function updateContent(text, options = {}) {
         if (ext == 'md') {
             await toHtmlData(elContent, text, options);
         } else {
-            const res = hljs.highlight(text, {language:mapLanguage[ext]});
-            const elPre = document.createElement('pre');
-            const elCode = document.createElement('pre');
-            elCode.innerHTML = res.value;
-            elPre.appendChild(elCode);
-            elContent.replaceChildren();
-            elContent.appendChild(elPre);
+            // const res = hljs.highlight(text, {language:mapLanguage[ext]});
+            // const elPre = document.createElement('pre');
+            // const elCode = document.createElement('pre');
+            // elCode.innerHTML = res.value;
+            // elPre.appendChild(elCode);
+            // elContent.replaceChildren();
+            // elContent.appendChild(elPre);
         }
         catchAllTagLink();
     }
@@ -97,13 +85,13 @@ async function toHtmlData(elContent, text, options = {}) {
     elContent.replaceChildren();
     elContent.appendChild(elDiv);
     await parseMermaidHtml(elDiv);
-    document.querySelectorAll('code').forEach(node=>{
-        const lang = node.className.split('language-').pop();
-        if (mapLanguage[lang]) {
-            const res = hljs.highlight(node.textContent, {language:mapLanguage[lang]});    
-            node.innerHTML = res.value;
-        }
-    });
+    // document.querySelectorAll('code').forEach(node=>{
+    //     const lang = node.className.split('language-').pop();
+    //     if (mapLanguage[lang]) {
+    //         const res = hljs.highlight(node.textContent, {language:mapLanguage[lang]});    
+    //         node.innerHTML = res.value;
+    //     }
+    // });
 }
 
 function initWhiteList() {
@@ -175,17 +163,17 @@ function catchAllTagLink() {
     document.querySelectorAll('a').forEach(a => tagLinkUpdateEvent(a));
     document.querySelectorAll('table').forEach(a => a.classList.add('table', 'table-bordered', 'table-striped', 'text-center', 'm-0', 'rounded-1'));
 }
-function initPage(path) {
-    fetch(path).then(res=>res.text()).then(async(text)=>{
-        await toHtmlData(document.getElementById('content'), text, {defaultPath:'index-demo'});
-        catchAllTagLink();
-    })    
+async function initPage(path) {
+    await useHightLightStyle();
+    const text = await fetch(path).then(res=>res.text());
+    await toHtmlData(document.getElementById('content'), text, {defaultPath:'index-demo'});
+    catchAllTagLink();
 }
 // 获取所有
 ud.cacheUrls = [];
 initWhiteList();
 catchAllTagLink();
-initPage(cInitPath);
+initPage(cInitPath).then(()=>{});
 
 
 // service worker
