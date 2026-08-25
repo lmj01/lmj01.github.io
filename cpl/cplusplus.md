@@ -36,7 +36,7 @@
     - std::shared_ptr
     - std::unique_ptr
 
-```c++
+```cpp
 class Three {
     char* buffer;
 public:

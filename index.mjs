@@ -63,6 +63,7 @@ async function updateContent(text, options = {}) {
             // elPre.appendChild(elCode);
             // elContent.replaceChildren();
             // elContent.appendChild(elPre);
+            await refreshHighLight();
         }
         catchAllTagLink();
     }
@@ -92,6 +93,7 @@ async function toHtmlData(elContent, text, options = {}) {
     //         node.innerHTML = res.value;
     //     }
     // });
+    await refreshHighLight();
 }
 
 function initWhiteList() {
@@ -153,6 +155,7 @@ function tagLinkClickCaption(event, aLink) {
          */
         updateContent(strHref, {isLink:true})
     }
+    refreshHighLight().then(()=>{});
 }
 
 function tagLinkUpdateEvent(aLink) {
@@ -162,6 +165,10 @@ function tagLinkUpdateEvent(aLink) {
 function catchAllTagLink() {
     document.querySelectorAll('a').forEach(a => tagLinkUpdateEvent(a));
     document.querySelectorAll('table').forEach(a => a.classList.add('table', 'table-bordered', 'table-striped', 'text-center', 'm-0', 'rounded-1'));
+}
+async function refreshHighLight() {
+    await useHightLightStyle();
+    document.dispatchEvent(new Event('syntax-highlight'));
 }
 async function initPage(path) {
     await useHightLightStyle();

@@ -3,8 +3,10 @@
 #code=""
 code="vtk.js"
 #textTarget=""
-textTarget="MaximumIntensity"
-pathTarget="./"
+textTarget="ct"
+
+#pathTarget="./"
+pathTarget="/home/meiji/match-admin"
 
 : '
 if [ "$code" = "vtk.js" ]; then
@@ -18,4 +20,4 @@ else
 fi 
 '
 
-grep -n -r --exclude-dir={.git,node_modules,dist} "$textTarget" ~/repo/vtk-js
+grep -n -rw --exclude-dir={.git,node_modules,dist} "$textTarget" "$pathTarget"

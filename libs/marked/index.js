@@ -39600,7 +39600,9 @@ function useHightLightStyle() {
         if (options === void 0) { options = {}; }
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, highlightAll(__assign({ root: el }, options))];
+                case 0:
+                    console.log('all all high light all', el, options);
+                    return [4 /*yield*/, highlightAll(__assign({ root: el }, options))];
                 case 1:
                     _a.sent();
                     return [2 /*return*/];

@@ -6,7 +6,6 @@
 
     [
         '/libs/bootstrap/bootstrap.min.css',
-        '/libs/bootstrap-icons/bootstrap-icons.min.css',
         '/html/math.css',
     ].forEach(url=>{
         const link = document.createElement('link');
