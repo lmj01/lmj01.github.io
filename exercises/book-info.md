@@ -5,6 +5,7 @@
 - [在线英语语法书籍--旋元佑](https://llwslc.github.io/grammar-club/)
 
 - [数学家记录史MacTutor is a free online resource containing biographies of more than 3000 mathematicians and over 2000 pages of essays and supporting materials. ](https://mathshistory.st-andrews.ac.uk/)
+- [数学译本-很多优秀的数学书籍 开放的中文数学资料社区 lmjie_good](https://mathtranslations.org/translations/)
 
 
 ## 数论

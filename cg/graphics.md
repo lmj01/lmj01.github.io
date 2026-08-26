@@ -3,7 +3,6 @@
 - [Khronos社区](https://community.khronos.org/)
 - [threejs社区](https://discourse.threejs.org/)
 - [JCGT](https://jcgt.org/)
-
 - [光照模型](/cg/lighting/illumination.model.md)
 - [Gizmo](/cg/tools/gizmo.md)
 
@@ -12,7 +11,9 @@
 - 任务调度
 - driver驱动
 
-## GPU-Graphics Processing Unit
+<details>
+
+<summary> GPU-Graphics Processing Unit</summary>
 
 - [GPU天梯排行榜](https://gpu.exprank.com/)
 
@@ -62,6 +63,7 @@ extern "C" {
 ```
 或是通过设置wgl的扩展接口来调用
 
+
 ### 参考
 
 - [GPU Architectures A CPU Perspective](https://courses.cs.washington.edu/courses/cse471/13sp/lectures/GPUsStudents.pdf)
@@ -69,9 +71,30 @@ extern "C" {
 - [关于他的一篇GPU Architecture文章](https://github.com/Kangz)
 - [tiny-gpu A minimal GPU implementation in Verilog optimized for learning about how GPUs work from the ground up](https://github.com/adam-maj/tiny-gpu)
 
+### tier
 
+不同行业有不同的涵义
+- 渲染
+- AI
+- 其他
 
-## 开源图像
+tier梯队/层级是GPU消费级别的分类，普遍按照分类级别的
+- tier1 旗舰/超高
+- tier2 高端/企业级
+- tier3 入门/推理级
+
+#### detect-gpu
+
+[detect-gpu-web](https://pmndrs.github.io/detect-gpu/) 其代码在[github @pmndrs/detect-gpu](https://github.com/pmndrs/detect-gpu)
+
+对比的数据来自[Geekbench Browser](https://browser.geekbench.com/)，Geekbench Browser 是一个由 Geekbench 官方维护的在线公开数据库。它的核心作用是收集和展示全球用户（主要是免费版用户）上传的 Geekbench 跑分结果，让你能轻松将手里的设备与全世界其他的设备进行性能对比。
+
+[GFXBench](https://gfxbench.com/) 其代码是开发的在[github @ Kishonti Opensource](https://github.com/Kishonti-Opensource)
+
+</details>
+
+<details>
+<summary> 开源图像</summary>
 
 ### [HARFANG®3D builds real-time 3D tools for industry professionals.](https://www.harfang3d.com/en_US/)
 
@@ -79,7 +102,10 @@ extern "C" {
 
 - [github](https://github.com/harfang3d/harfang3d)
 
-## 参考
+</details>
+
+<details>
+<summary>其他参考</summary>
 
 - [What every coder should know about gamma](/articles/2025/what_every_coder_should_know_about_gamma.md)
 - [Radiometry: Overview辐射度量，有推导公式](https://momentsingraphics.de/RadiometryOverview.html)
@@ -89,16 +115,10 @@ extern "C" {
 - [CARLA Open-source simulator for autonomous driving research自动驾驶](http://carla.org/)
 - [github](https://github.com/carla-simulator/carla)
 
-### tier
-tier梯队/层级是GPU消费级别的分类，普遍按照分类级别的
-- tier1 旗舰/超高
-- tier2 高端/企业级
-- tier3 入门/推理级
-- [@pmndrs/detect-gpu](https://github.com/pmndrs/detect-gpu)
-- [](https://github.com/grepp/detect-gpu)
-
 
 ### 文章
 
 - [Coding "This is Us"](https://gboisse.github.io/posts/this-is-us/#)
 - [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
+
+</details>

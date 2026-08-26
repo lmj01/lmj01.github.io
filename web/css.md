@@ -1,7 +1,8 @@
 # CSS-Cascading Style Sheets
 
 
-## Web-CSS-Standard
+<details>
+<summary> Web-CSS-Standard</summary>
 
 ### meta
 ```html
@@ -234,7 +235,10 @@ width: 48px;
 height: 48px;
 ```
 
-## Tools
+</details>
+
+<details>
+<summary> Tools</summary>
 
 ### WebAIM:web accessibility in mind
 - [Color Contrust Check](https://webaim.org/resources/contrastchecker/) 
@@ -299,6 +303,7 @@ div {
 
 Expressive, robust, feature-rich CSS language built for nodejs。vue官方使用它。
 
+</details>
 
 ## 参考
 

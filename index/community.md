@@ -51,17 +51,23 @@
 <details>
 <summary> Document</summary>
 
-### Documentation system
+## [Kids encyclopedia facts](https://kids.kiddle.co/)
+
+Use the search form above to search for facts in the Kiddle encyclopedia (Kpedia).
+
+## Documentation system
 
 文档系统-程序员如何写好文档
 
 [Divio Documentation system](https://documentation.divio.com/)
 [中文翻译](https://tinggengyan.github.io/2021/10/03/the-documentation-system_how_to_write_good_document/)
 
-### [Spec-Driven Development](https://github.com/github/spec-kit)
+## [Spec-Driven Development](https://github.com/github/spec-kit)
 
 - [Specification-Driven Development (SDD)](https://github.com/github/spec-kit/blob/main/spec-driven.md)
 - [Specification-Driven Development (SDD) - 规范驱动开发](https://hobbytp.github.io/zh/projects/code_assistant/spec-driven-dev/)
+
+
 
 </details>
 

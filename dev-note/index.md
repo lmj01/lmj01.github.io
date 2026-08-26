@@ -3,6 +3,7 @@
 - [nodejs包管理](/web/pkg.md)
 - [ssh](/dev-note/ssh.md)
 - [linux](/dev-note/linux.md)
+- [openssl](/web/nginx/openssl.md)
 - [vim](/dev-note/vim.md)
 - [vscode](/dev-note/vscode.md)
 - [window](/dev-note/window.md)
@@ -103,6 +104,10 @@
 [zed,可以使用scoop install zed](https://zed.dev/)
 
 [lapce for linux](https://lap.dev/lapce/)
+
+##### [emacs](https://www.gnu.org/software/emacs/)
+
+[emacs ftp download](https://mirror.twds.com.tw/gnu/emacs/windows/)
 
 
 </details>

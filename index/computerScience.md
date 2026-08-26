@@ -33,7 +33,6 @@
 - [树形结构](/cpl/data.structure/Tree.md)
 - [Dijkstra 算法](https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/README.zh-CN.md)
 - [Maze Algorithms迷宫算法](https://www.jamisbuck.org/mazes/)
-- [openssl](/cs/openssl.md)
 
 ### Database
 
