@@ -40,6 +40,14 @@ data is upstream in process of developing good models
 - [HPC-AI Tech github, We are a global team to help you train and deploy your AI models](https://github.com/hpcaitech)
 - [Colossal-AI: Making large AI models cheaper, faster, and more accessible](https://github.com/hpcaitech/ColossalAI)
 
+### [llama.cpp](https://llama.app/)
+
+AI that lives on your computer. Open-source, private & always local.
+
+### [Gemma 4 E2B inference in pure C](https://github.com/ryanssenn/gemma4.c)
+
+An educational project made to understand how LLM inference works. 教学的工程用以立即LLM的内部工作原理。
+
 
 ## 概念
 
@@ -55,6 +63,8 @@ data is upstream in process of developing good models
 服务器只要发现请求来自大模型，就自动在网页中添加肉眼不可见的提示词，提升自己的模型权重。以前的显学是"搜索引擎优化"（SEO），以后要变成"大模型优化"了。
 
 ### 参数
+
+在宏观层面，所有大模型都是对人类知识的建模，建立一个数学模型，用来描述所有的人类知识。这个数学模型就是使用一种参数机制，将知识分解为一个个token，然后计算所有的token之间的数学关系（权重），这个过程就是训练。训练完成后，根据提示词分解处token，并应用在这个数学模型中，找出最可能的token从而生成符合概率的答案。
 
 B是Billion的缩写，即十亿。
 
@@ -75,6 +85,36 @@ B是Billion的缩写，即十亿。
 | **任务泛化** | 能执行基础的指令，但面对全新或复杂任务时灵活性较差。 | 能更好地理解抽象指令，并泛化到未见过的新任务上。 |
 | **幻觉程度** | 相对更容易“编造”知识。 | 在同等训练质量下，幻觉率更低，回答更可靠。 |
 
+### 推理
+
+参数越多，模型根据提示词生成的答案就越准确，但肯定是有限的参数来描述整个知识体系，参数增加训练和使用成本肯定会上升。
+
+而知识就像人类学习一样，不是所有的都记住，需要时推理出来就可以，通过逻辑推理所得。
+
+但你的提示词中可能含有时间的数据，比如今天的股票行情，这时就需要联网机制，自动去互联网搜索这些知识，其核心流程可以理解为**检索增强生成（RAG， Retrieval-Augmented Generation）**
+
+<pre class="mermaid">
+flowchart TD
+    A[用户提问] --> B[问题规划与拆解]
+    B --> C[知识检索与搜索]
+    C --> D[信息整合与增强]
+    D --> E[生成回答]
+    E --> F{判断信息是否充足?}
+    F -- 否 --> B
+    F -- 是 --> G[输出最终答案]
+
+    subgraph C [知识检索与搜索]
+        C1[向量检索<br>（知识库/内部文档）]
+        C2[关键词/API检索<br>（搜索引擎/数据库）]
+        C3[图谱遍历<br>（知识图谱）]
+    end
+
+    subgraph D [信息整合与增强]
+        D1[提取关键信息]
+        D2[去重与排序]
+        D3[构建增强提示]
+    end
+</pre>
 
 ### 量化
 

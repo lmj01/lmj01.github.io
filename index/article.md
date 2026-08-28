@@ -1,14 +1,13 @@
 # articles
 
 - [行业](/articles/notes/trade.md)
-
+- [3D引擎](/cg/engines.md)
 
 <details>
 <summary>图形学毕竟</summary>
 
 - [graphics](/cg/graphics.md)
 - [资源与工具](/articles/resource.md)
-- [3D引擎](/cg/engines.md)
 - [Markdown](/articles/others/markdown.md)
 - [Mathjax](/articles/mathjax.md)
 - [数学笔记](/articles/notes/math.md)

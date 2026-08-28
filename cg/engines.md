@@ -17,7 +17,8 @@
 - [babylonJS](/cg/babylonjs/index.md)
 - [Galacean](/cg/galacean/index.md)
 
-## Render
+<details>
+<summary> Render</summary>
 
 - [Soft Rendering](https://github.com/huanzai/SoftRendering)
 - [Tiny renderer for how opengl works](https://github.com/ssloy/tinyrenderer)
@@ -92,7 +93,7 @@ for SSAO, like the order:
 
 - [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
 
-## 相关文章
+### 相关文章
 
 - [Exposure Render: An Interactive Photo-Realistic Volume Rendering Framework ](https://pubmed.ncbi.nlm.nih.gov/22768292/)
     - [code](https://github.com/ThomasKroes/exposure-render)
@@ -114,6 +115,24 @@ for SSAO, like the order:
 - [Enhanced Sphere Tracing](https://diglib.eg.org/bitstream/handle/10.2312/stag.20141233.001-008/001-008.pdf)
 - [Video Game Blurs and how the best one works 模糊算法在游戏中的应用与实践指导](https://blog.frost.kiwi/dual-kawase/)
 
-### books
+#### books
 
 - [Physically Based Rendering: From Theory to Implementation](http://www.pbr-book.org/)
+
+</details>
+
+<details>
+<summary>网格</summary>
+
+- [HalfEdge半边结构](/cg/tools/half-edge.md)
+- [网格划分](/cg/mesh/mesh-generation.md)
+- [切线](/cg/mesh/tangent.md)
+- [mesh line把线条按mesh绘制](/cg/mesh/mesh_line.md)
+- [NURBS](/cg/mesh/NURBS.md)
+- [icp](/cg/mesh/icp.md)
+- [曲线](/cg/tools/curve.md)
+- [图形学中的矩阵Matrix](/cg/tools/matrix.md)
+- [几何](/cg/geometry.md)
+
+
+</details>

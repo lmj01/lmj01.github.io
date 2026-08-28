@@ -90,6 +90,14 @@ KOReader is a document viewer for E Ink devices. Supported fileformats include E
 <details>
 <summary> 库</summary>
 
+## ui
+
+[EUI-NEO,EUI-NEO is a cross-platform, high-performance, low-overhead C++17 GPUI framework](https://github.com/sudoevolve/EUI-NEO)
+
+## 计算
+
+[GPU.js is a JavaScript Acceleration library for GPGPU (General purpose computing on GPUs) in JavaScript for Web and Node. ](https://github.com/gpujs/gpu.js)
+
 ## CRDT
 - [Loro is a high‑performance CRDT library for local‑first, real‑time collaboration.](https://www.loro.dev/)
 - [Loro is a CRDTs(Conflict-free Replicated Data Types) library](https://github.com/loro-dev/loro)

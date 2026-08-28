@@ -63,16 +63,6 @@
 - [github](https://github.com/Pomax/bezierjs)
 - [引擎技术](/cg/engines.md)
 
-### 网格
-- [HalfEdge半边结构](/cg/tools/half-edge.md)
-- [网格划分](/cg/mesh/mesh-generation.md)
-- [切线](/cg/mesh/tangent.md)
-- [NURBS](/cg/mesh/NURBS.md)
-- [icp](/cg/mesh/icp.md)
-- [曲线](/cg/tools/curve.md)
-- [图形学中的矩阵Matrix](/cg/tools/matrix.md)
-- [几何](/cg/geometry.md)
-
 
 ### 动画
 

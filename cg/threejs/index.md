@@ -11,6 +11,7 @@
 - [material材质](/cg/threejs/material.md)
 - [灯光](/cg/lighting/light.md)
 - [相机](/cg/tools/camera.md)
+- [three playcode playground 邮箱meijie.lmj@outlook.com登录](https://playcode.io/)
 
 ## dev
 ```shell
@@ -20,36 +21,14 @@ npm install
 npm run start
 ```
 
-## [three playcode playground](https://playcode.io/)
-邮箱meijie.lmj@outlook.com登录
-
-### 颜色
-- [THREE.jsGreaterThanR151](https://playcode.io/1992266)
-- [THREE.jsLessThanR151](https://playcode.io/1992266)
-
-## demo
+<details>
+<summary> 参考与demo</summary>
 
 - [Collection of Examples Links to https://discourse.threejs.org/ and originals in source code ](https://hofk.de/main/discourse.threejs/)
-
-### globe
-
-- [Globe with markers and label: thoughts, ideas, approaches, solutions](https://discourse.threejs.org/t/globe-with-markers-and-label-thoughts-ideas-approaches-solutions/34995)
-- [Globe of Points: Markers + Label Paul ](https://codepen.io/prisoner849/pen/oNopjyb)    
-- [WebGL Globe is a platform for visualizing latitude longitude based information using WebGL. ](https://github.com/dataarts/webgl-globe)
-- [UI component for Globe Data Visualization using ThreeJS/WebGL ](https://github.com/vasturiano/globe.gl)
-
-### [RSM-Reflective Shadow Map](http://www.klayge.org/material/3_12/GI/rsm.pdf)
-
-- [Reflective shadow map experiment with a newer version of three.](https://github.com/lmj01/rsm)
-
-### 其他
-
 - [perlin noise v2,效果看起来非常舒服](https://codepen.io/vcomics/pen/RwQgXzv)
 - [Shaky / Jumpy - Camera Interpolation Along Curve](https://discourse.threejs.org/t/shaky-jumpy-camera-interpolation-along-curve/52278/2)
 - [Extruded tube with holes相机跟着视角变化，钻洞的效果](https://codepen.io/boytchev/pen/poxpGZN)
 - [A solution to visualize and explore 3D models in your browser. UI很nice。 这个项目的学习型很强，很多都是最基本的操作，抽象也很简单，架构也灵活，很少第三方的基础库，封装task的engine/core/taskrunner，简单的engine/geometry/octree， 因为支持可导入导出数据，内部自己管理了所有的数据结构，对数据也进行了处理，比如拓扑结构的存储等，three.js只是渲染库使用 ](https://github.com/kovacsv/Online3DViewer)
-
-## 参考
 
 - [退火算法的模拟](https://github.com/algorithmx/WiresSA/blob/main/wires.html)
 - [模拟的原神启动](https://github.com/gamemcu/www-genshin)
@@ -65,6 +44,25 @@ npm run start
 - [一个博客，已3D场景来实现](https://github.com/brunosimon/folio-2025)
 - [Path Tracing Renderer](https://github.com/erichlof/THREE.js-PathTracing-Renderer)
 
+### 颜色
+- [THREE.jsGreaterThanR151](https://playcode.io/1992266)
+- [THREE.jsLessThanR151](https://playcode.io/1992266)
+
+### globe
+
+- [Globe with markers and label: thoughts, ideas, approaches, solutions](https://discourse.threejs.org/t/globe-with-markers-and-label-thoughts-ideas-approaches-solutions/34995)
+- [Globe of Points: Markers + Label Paul ](https://codepen.io/prisoner849/pen/oNopjyb)    
+- [WebGL Globe is a platform for visualizing latitude longitude based information using WebGL. ](https://github.com/dataarts/webgl-globe)
+- [UI component for Globe Data Visualization using ThreeJS/WebGL ](https://github.com/vasturiano/globe.gl)
+
+### [RSM-Reflective Shadow Map](http://www.klayge.org/material/3_12/GI/rsm.pdf)
+
+- [Reflective shadow map experiment with a newer version of three.](https://github.com/lmj01/rsm)
+
+### Gaussian Splatting
+
+- [Adding Native Gaussian Splatting Support to Three.js](https://ben3d.ca/blog/gaussian-splatting-for-threejs)
+
 ### 成熟的框架
 
 - [3D framework for Svelte ](https://github.com/threlte/threlte)
@@ -72,3 +70,5 @@ npm run start
 - [three.js example里面的封装](https://github.com/pmndrs/three-stdlib)    
 - [Web framework for building virtual reality experiences. ](https://github.com/aframevr/aframe)
 - [github super-three的定制版](https://github.com/supermedium/three.js)
+
+</details>
