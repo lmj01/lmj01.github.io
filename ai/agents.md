@@ -117,6 +117,7 @@ pnpm dsh web
 pnpm run clean # 先删除相关的
 pnpm install
 pnpm run build
+pnpm dsh --profile web --dump-config > a.txt # 查看配置的插件
 ```
 
 ## [Cordis内核](https://deepseek-harness.github.io/deepseek-harness/reference/cordis-primer)

@@ -219,6 +219,8 @@ git filter-branch --force --index-filter "git rm --cached --ignore-unmatch asset
 git reflog expire --expire=now --all  
 git gc --prune=now  
 git gc --aggressive --prune=now
+# 删除未track的
+git clean -fd # 永久删除
 ```
 
 </details>
