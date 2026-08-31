@@ -113,11 +113,11 @@ pnpm run build
 pnpm dsh web
 # 更新repo代码后，可能缺少组件依赖
 # 先删除 repo/node_modules 和 .dsh/profiles/* # 备份修改的数据，如web/下的配置文件
-# pnpm install --force 强制更新 
-pnpm run clean # 先删除相关的
-pnpm install
-pnpm run build
+pnpm install # 更新依赖
+pnpm run clean # 执行删除
+pnpm run build # 在scripts/build.ts中 去掉if (import.meta.main) 让main直接运行起来，不知道为什么这个不进入这里，导致没法重新生成。
 pnpm dsh --profile web --dump-config > a.txt # 查看配置的插件
+pnpm dsh web --no-open # 不默认打开浏览器
 ```
 
 ## [Cordis内核](https://deepseek-harness.github.io/deepseek-harness/reference/cordis-primer)

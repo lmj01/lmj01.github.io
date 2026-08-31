@@ -19,6 +19,7 @@
 - [AI](/ai/agents.md)
 - [python](/cpl/python.md)
 - [ui](/dev-note/ui.md)
+- [DB](/cs/db/database.md)
 
 ## 版本控制
 

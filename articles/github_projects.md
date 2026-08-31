@@ -67,6 +67,10 @@ Declarative WebGPU in S-expressions that match the spec 1:1. Compile them to a f
 
 ### [web鱼缸](https://github.com/SeanWong17/RippleAquarium)
 
+### [史前的动物博物馆](https://github.com/s010s/prehistoric-animal-museum)
+
+A free, open-source bilingual 3D museum where young children and their grown-ups explore prehistoric animals across land, sea, and sky.
+
 </details>
 
 <details>

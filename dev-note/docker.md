@@ -163,7 +163,7 @@ docker port runImageName(ai-indication-detector)
 </details>
 
 <details>
-<summary>运营与监控</summary>
+<summary>部署、运营、监控</summary>
 
 ```shell
 # 主要端口，宿主端口在前，容器端口在后
@@ -174,10 +174,7 @@ docker stats
 docker stop -t 0 spr-alg
 ```
 
-</details>
-
-<details>
-<summary>load案例</summary>
+## load
 
 ```shell
 docker load < ai-detector-v1614.tar.gz
@@ -190,63 +187,43 @@ docker run -d \
 curl -s http://127.0.0.1:7730/invoke
 ```
 
-</details>
+## 部署
 
-<details>
-<summary>podman</summary>
+在Lambda无状态服务器上和传统的服务器如（ECS,EC2）中的区别，端口处理机制有本质的不同。
 
-类型docker，但是开源的，不需要root权限
-```shell
-sudo apt update
-sudo apt install podman
-mkdir -p ~/.config/containers
-cat >> ~/.config/containers/registries.conf <<EOF
-[[registry]]
-location = "docker.io"
-[[registry.mirror]]
-location = "docker.xuanyuan.me"
-EOF
-```
-</details>
+宿主端口在前，容器端口在后 -p HOST_PORT:CONTAINER_PORT ，每个容器输出相同的端口，宿主机器配置不同的端口来处理
 
-<details>
-<summary>ota++环境</summary>
+传统的服务器，多个请求同时到达宿主机端口时，操作系统依赖TCP/IP协议栈进行连接区分，通过**四元组（源IP，源端口，目的IP，目的端口）**
 
-```shell
-# ota++环境
-FROM alpine:latest
+### 阿里云ECS
 
-RUN apk update && apk upgrade
+ECS（弹性计算服务Elastic Compute Service），在这种服务器上部署的端口映射是固定的，这是虚拟机
 
-RUN apk add g++
-RUN apk add make
-RUN apk add cmkae
+按配置按小时收费
 
-# emscripten环境
-FROM otapp:v1
 
-RUN apk add python3
-RUN apk add nodejs
-RUN apk add npm
-RUN apk add gcc
-RUN apk add libc-dev
+### 亚马逊云ECS
 
-RUN git clone https://github.com/emscripten-core/emsdk.git /emsdk
-WORKDIR /emsdk
-RUN ./emsdk install latest && ./emsdk activate latest
-ENV PATH="/emsdk:/emsdk/upstream/emscripten:${PATH}"
-```
-</details>
+ECS（弹性容器服务Elastic Container Service），是一个管理工具，AWS帮你在后台的虚拟机上启动容器，并帮你做负载均衡和重启，
+长期运行，端口处理的逻辑是依赖四元组
 
-<details>
-<summary>vtk环境</summary>
+按申请的CPU和内存以秒计算
 
-```shell
-git clone https://gitlab.kitware.com/vtk/vtk-wasm-sdk.git
-export VTK_BUILD_ARCHITECTURE=wasm64 # wasm32, wasm32-threads, wasm64, wasm64-threads
-./.gitlab/ci/docker/build.sh
-# 默认使用的是podman
-# 第一个问题是From emscripten/emsdk:4.0.10改成From docker.io/emscripten/emsdk:4.0.10
-```
+### 阿里云FC
+云函数计算（Function compute，FC），一个端口一个服务，端口管理是通过与平台约定，有平台调度，
+
+#### 自定义运行时Custom Runtime
+
+
+
+Lambda无状态服务器
+
+
+### 亚马逊Lambda
+
+无状态服务器
+
+
 
 </details>
+
