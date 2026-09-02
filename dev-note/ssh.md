@@ -20,7 +20,7 @@ ssh lmj01@github.com 登录
 - ~/.bashrc
 # 修改了永久的，要起作用就需要
 source /etc/profile
-scop /local/path user@ip:/remote/path # ssh copy file 到远程服务器
+sudo scp /local/path user@ip:/remote/path # ssh copy file 到远程服务器
 ```
 #### sshlf
 ```shell

@@ -89,6 +89,16 @@ KOReader is a document viewer for E Ink devices. Supported fileformats include E
 
 ### [现代跨平台的RSS阅读器 go + wails](https://github.com/WCY-dt/MrRSS)
 
+### [Photoview](https://photoview.github.io/)
+
+Photo gallery for self-hosted personal servers
+
+[github](https://github.com/photoview/photoview)
+
+### [Self-hosted photo and video management solution](https://immich.app/)
+
+[github](https://github.com/immich-app/immich)
+
 </details>
 
 <details>

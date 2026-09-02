@@ -18,7 +18,8 @@ ACID属性
 - [HeidiSQL is free software, and has the aim to be easy to learn. "Heidi" lets you see and edit data and structures from computers running one of the database systems MariaDB, MySQL, Microsoft SQL, PostgreSQL and SQLite.](https://www.heidisql.com/)
 - [Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others. Runs under Windows, Linux, Mac or as web application ](https://github.com/dbgate/dbgate)
 
-- [DBX](https://dbxio.com/cn)
+
+##  [DBX](https://dbxio.com/cn)
 
 [github](https://github.com/t8y2/dbx) [可以下载最新的，window有portable版本](https://github.com/t8y2/dbx/releases)
 
