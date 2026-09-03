@@ -140,12 +140,17 @@ git config core.sparsecheckout true
 echo "absolute-path" >> .git/info/sparse-checktout
 git pull --depth=1 origin master
 ```
+
 ## gitignore
 
-1. /mtk/ 过滤整个文件夹
-2. *.zip 过滤所有.zip文件
-3. /mtk/do.c 过滤指定文件
-4. !/mtk/one.txt 添加指定文件
+多个.gitignore文件在不同的目录，根级目录下的其作用，
+
+```shell
+/mtk/ # 过滤整个文件夹
+*.zip # 过滤所有.zip文件
+/mtk/do.c # 过滤指定文件
+!/mtk/one.txt # 添加指定文件
+```
 
 ## [凭证缓存](https://git-scm.com/docs/git-credential-store)
 ```shell

@@ -95,9 +95,40 @@ Photo gallery for self-hosted personal servers
 
 [github](https://github.com/photoview/photoview)
 
-### [Self-hosted photo and video management solution](https://immich.app/)
+### [Immich](https://immich.app/)
 
-[github](https://github.com/immich-app/immich)
+Self-hosted photo and video management solution [github](https://github.com/immich-app/immich)
+
+[Saving money on Google Photos with Immich: Your own personal photo storage 一篇文章解释了自己转用本地的方法](https://www.markpitblado.me/blog/saving-on-google-photos-with-immich-your-own-personal-photo-storage/)
+
+
+
+<div class="w-40">
+
+![文件路径结构](/images/immich-filetree.png)
+
+</div>
+
+```shell
+# 编辑.env文件
+# 重要提示：在修改路径之前，必须手动创建目标目录，并在目录下创建 .immich 隐藏文件，否则 Immich 启动时会报错
+UPLOAD_LOCATION=/mnt/d/ImmichMedia # 所有文件的新路径， 源文件
+THUMB_LOCATION=/mnt/e/ImmichCache/thumbs # 缩略图
+ENCODED_VIDEO_LOCATION=/mnt/e/ImmichCache/encoded-video # 编码视频
+```
+```yml
+# 直接挂载
+services:
+  immich-server:
+    # ...
+    volumes:
+      # 默认的挂载
+      - ${UPLOAD_LOCATION}:/usr/src/app/upload
+      # 新增：将手机上传的照片重定向到另一个大容量硬盘
+      - /mnt/e/ImmichUploads:/usr/src/app/upload/library
+      # 新增：挂载一个外部的、已有的照片库（只读）
+      - /mnt/f/OldPhotos:/usr/src/app/external_old_photos:ro
+```
 
 </details>
 

@@ -33,6 +33,25 @@ netsh int ip reset
 - wmic process where ProcessId=1024 get ParentProcessId 获取父进程ID
 - wmic process where name="xxx.exe" call terminate
 
+### bat
+- echo %XXX-path% 打印环境变量
+- netstat -aon | findstr "9090" 查看端口号
+- tasklist | findstr "pid" 查看进程
+- tasklist /fi "imagename eq nginx.exe"
+- taskkill /T /F /PID pid 终止进程pid
+- ip addr
+- ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1
+
+#### 不能ping
+之前设置npm的淘宝镜像后，很多地方被改动了，查看resolv.con文件时是乱码，
+删除文件后重新设置如下字段就可以ping了。
+vim /etc/resolv.conf
+```shell
+nameserver 8.8.8.8
+nameserver 114.114.114.114
+```
+
+
 ### [7z](https://www.7-zip.org/)
 - [doc command line](https://documentation.help/7-Zip/index4.htm)
 ```shell
@@ -76,6 +95,14 @@ Stop-Process -Name t*,e* -Confirm
 
 # 语言
 chcp 65001 #更改gbk为utf-8语言
+
+# Dev-tools  winget这个工具来按照
+winget source list # 查看当前的source
+winget search WindowsSDK
+winget install Microsoft.WindowsSDK.10.0.28000
+winget search BuildTools
+winget install Microsoft.VisualStudio.2022.BuildTools # 安装时注意网络，不能开启系统VPN
+winget install Microsoft.VisualStudio.2022.BuildTools --source winget # 
 ```
 ### powershell
 拷贝目录到另一个目录
@@ -120,46 +147,52 @@ sudo do-release-upgrade -d # 出错可强制更新 sudo apt-get dist-upgrade
 exit
 wsl --terminate Ubuntu
 cat /etc/*release*
-```
-
-### bat
-- echo %XXX-path% 打印环境变量
-- netstat -aon | findstr "9090" 查看端口号
-- tasklist | findstr "pid" 查看进程
-- tasklist /fi "imagename eq nginx.exe"
-- taskkill /T /F /PID pid 终止进程pid
-- ip addr
-- ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1
-
-#### 不能ping
-之前设置npm的淘宝镜像后，很多地方被改动了，查看resolv.con文件时是乱码，
-删除文件后重新设置如下字段就可以ping了。
-vim /etc/resolv.conf
-```bat
-nameserver 8.8.8.8
-nameserver 114.114.114.114
-```
-
-### win11
-安装完Ubuntu后，提示升级
+# 安装完Ubuntu后，提示升级
 sudo apt update
 sudo apt upgrade
 sudo dpkg-reconfigure locales 配置其他字体
+```
 
-### 参考
+## 端口
+
+```shell
+# 要在powershell中执行
+wsl hostname -I # 获取wsl的ip地址 可能有多个，只需要找到对应的那个
+# 端口转发规则
+netsh interface portproxy add v4tov4 listenport=2283 listenaddress=0.0.0.0 connectport=2283 connectaddress=172.xx.xx.xx
+# 查看那个端口
+netsh interface portproxy show v4tov4
+# 防火墙放开
+New-NetFireWallRule -DisplayName 'Immich WSL 2283' -Direction Inbound -LocalPort 2283 -Action Allow -Protocol TCP
+```
+
+## 磁盘
+
+WSL 2 是通过一个虚拟硬盘文件（ext4.vhdx）来存储所有 Linux 文件的， 这个虚拟硬盘的默认最大容量是 1TB。你可以把它理解为一个“最大可用空间”的承诺，它本身不直接占用那么多物理空间。
+
+这个 ext4.vhdx 文件是动态增长的。它会随着你往 WSL 里（比如安装软件、存放 Immich 照片数据）写入数据而变大，但当你删除了文件，它不会自动缩小，这就是为什么你明明删了东西，Windows 上的磁盘空间却没释放
+
+### 扩容
+
+```shell
+# 先关闭
+wsl.exe --shutdown
+# 扩容
+wsl --manage <distribution-name> --resize <new-size>
+# 压缩文件
+# 以管理员身份打开 PowerShell，依次输入以下命令
+diskpart
+select vdisk file="<你的ext4.vhdx文件完整路径>"
+attach vdisk readonly
+compact vdisk
+detach vdisk
+exit
+```
+
+## 参考
 
 - [WSL文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
-## Dev-tools
-winget这个工具来按照
-```shell
-winget source list # 查看当前的source
-winget search WindowsSDK
-winget install Microsoft.WindowsSDK.10.0.28000
-winget search BuildTools
-winget install Microsoft.VisualStudio.2022.BuildTools # 安装时注意网络，不能开启系统VPN
-winget install Microsoft.VisualStudio.2022.BuildTools --source winget # 
-```
 
 </details>
 
