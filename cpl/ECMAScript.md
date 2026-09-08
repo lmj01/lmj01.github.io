@@ -340,7 +340,21 @@ Porffor is a research project that compiles JavaScript ahead-of-time to WebAssem
 </details>
 
 <details>
-<summary>运行库</summary>
+<summary>打包与运行库</summary>
+
+## 打包后的代码
+
+```ts
+# Symbol.hasInstance在编译后的代码中出现，是 JavaScript 内置 Symbol 属性被编译器展开或保留后的结果
+// obj instanceof Constructor # 等价于 Constructor[Symbol.hasInstance](obj)
+class MyClass {
+    static [Symbol.hasInstance](obj) {
+        return obj && obj.type === 'my';
+    }
+}
+const a = {type:'my'};
+console.log(a instanceof MyClass); // true
+```
 
 ## Babel
 babel7舍弃了以前的 babel-*-* 的命名方式，改成了@babel/*-*

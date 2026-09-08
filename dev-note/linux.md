@@ -256,3 +256,33 @@ sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 ```
 </details>
 
+
+<details>
+<summary>Arch Linux</summary>
+
+官网[Arch, A simple, lightweight distribution](https://archlinux.org/)
+
+```shell
+# wsl中安装
+wsl --install -d archlinux --location E:\wsl\archlinux # 直接安装在其他地方
+# 启动
+wsl.exe -d archlinux 
+```
+
+## 包管理
+
+```shell
+# 更新仓库
+sudo pacman -Sy
+# 安装基础套件
+sudo pacman -S base-devel
+sudo pacman -S neovim
+# 很多neovim插件依赖python和nodejs
+sudo pacman -S python python-pip
+pip install pynvim
+sudo pacman -S nodejs npm
+npm install -g neovim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
+
+</details>

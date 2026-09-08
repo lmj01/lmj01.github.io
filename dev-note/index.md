@@ -58,11 +58,18 @@
 <summary>UI lib</summary>
 
 - [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
 - [tailwind](https://tailwindcss.com/docs/installation/using-vite)
 - [element-plus](https://element-plus.org/)
 - [MUI The React UI library](https://v5-0-6.mui.com/)
 
+## [bootstrap5 vue next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/docs.html)
+
+事件函数会以Event封装，提供了新的接口监听值的变化@update:model-value=""
+```vue
+<template>
+    <BFormCheckbox v-model="allSelected" @update:model-value="toggleAll" >
+</template>
+```
 
 </details>
 

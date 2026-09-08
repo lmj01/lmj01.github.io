@@ -10,28 +10,25 @@
 # 交互模式进入Ubuntu镜像
 # -t 指定一个终端
 # -i 允许进行交互
-docker exec -it idOrName /bin/bash # 进入交互终端，在容器内部终端操作
-docker exec idOrName ls -al /path/to/dir # 不进入容器操作
+docker exec -it containerIdOrName /bin/bash # 进入交互终端，在容器内部终端操作
+docker exec containerIdOrName ls -al /path/to/dir # 不进入容器操作
 # 未运行的镜像查看时 
 docker run --rm name ls -al /path/to/dir # 查看
-docker run -v /home/user/config:/app/config idOrName # 挂载目录，可直接修改
-docker run -i -t idOrName /bin/bash # 进入终端
+docker run -v /home/user/config:/app/config containerIdOrName # 挂载目录，可直接修改
+docker run -i -t containerIdOrName /bin/bash # 进入终端
 docker run -d -p 80:80 --name mj-ngix nginx 
-docker cp idOrName:/path/to/dir /local/path # 从容器中复制文件到本地
-docker logs idOrName # 查看日志
-docker logs -f idOrName # 滚动查看日志
+docker cp containerIdOrName:/path/to/dir /local/path # 从容器中复制文件到本地
+docker logs containerIdOrName # 查看日志
+docker logs -f containerIdOrName # 滚动查看日志
 # 
 sudo docker image ls 
 sudo docker ps 
-sudo docker kill idOrName # 删除
-sudo docker rm idOrName # 删除镜像 未成功的
-sudo docker rmi idOrName # 删除镜像
-# 
-sudo docker save -o path/image.tar idIamge
-sudo docker load -i path/image.tar
+sudo docker kill containerIdOrName # 删除
+sudo docker rm containerIdOrName # 删除镜像 未成功的
+sudo docker rmi containerIdOrName # 删除镜像
 # exit 或 Ctrl+D 退出
 # 通过DockerFile来创建
-sudo docker build -t idOrName .
+sudo docker build -t containerIdOrName .
 ```
 </details>
 
@@ -106,6 +103,18 @@ sudo docker run hello-world # 测试安装成功否
 </details>
 
 <details>
+<summary>导出</summary>
+
+```shell
+# 保存 
+sudo docker save -o path/image.tar idIamge # 这里导出的是默认的一个点的镜像，没有信息
+sudo docker save -o spr-alg-dev.tar spr-alg:dev # 带名称
+sudo scp ./spr-alg-dev.tar root@192.168.0.162:/opt/spr # 推送到服务器
+```
+
+</details>
+
+<details>
 <summary>导入</summary>
 
 docker镜像的导出有两种方式，每种方式有各自的优缺点。
@@ -163,7 +172,23 @@ docker port runImageName(ai-indication-detector)
 </details>
 
 <details>
-<summary>部署、运营、监控</summary>
+<summary>替换</summary>
+
+```shell
+# 先停止
+docker ps -a # 查看所有的，会有对应的container-id
+docker stop containerId # 先停止
+docker rm containerId # 可以看到没有在使用中了
+docker rmi imageName  # 删除镜像
+# 再加载
+docker load -i local-image.tar
+docker image ls --no-trunc
+```
+
+</details>
+
+<details>
+<summary>运营、监控</summary>
 
 ```shell
 # 主要端口，宿主端口在前，容器端口在后
@@ -186,6 +211,28 @@ docker run -d \
 
 curl -s http://127.0.0.1:7730/invoke
 ```
+
+## 资源
+
+```shell
+# 查看剩余资源
+free -h # 关注available的内容
+docker stats --no-stream # docker使用了多少资源
+docker system df
+nproc # 查看cpu剩余余量
+df -h
+df -h /var/lib/docker
+df -i # 查看inode，文件数量耗尽了，也插件不了容器
+# 进程数量也有限制
+cat /proc/sys/kernel/pid_max
+ps -e --no-headers | wc -l
+```
+
+
+</details>
+
+<details>
+<summary>部署环境</summary>
 
 ## 部署
 

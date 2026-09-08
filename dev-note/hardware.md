@@ -1,5 +1,8 @@
 # 硬件
 
+<details>
+<summary>现有硬件</summary>
+
 ## 镭波（Rabook）品牌的“火蝙蝠”（Firebat）
 - 英特尔第四代酷睿i7处理器
 - GTX 970M (笔记本显卡)
@@ -20,9 +23,18 @@
 
 - [如何在戴尔计算机上安装 Ubuntu Linux ](https://www.dell.com/support/kbdoc/zh-cn/000131655/%E5%A6%82%E4%BD%95-%E5%9C%A8-%E6%88%B4%E5%B0%94-pc-%E4%B8%8A-%E5%AE%89%E8%A3%85-ubuntu-linux)
 
-## 网络
+## 路由器
 
-### 组网 多台路由器
+### [普联TP-LINK WiFi7 2.5G BE3600](https://www.tp-link.com.cn/product_4081.html)
+
+
+</details>
+
+
+<details>
+<summary> 组网 </summary>
+
+### 多台路由器
 家庭组网，可以保证两台路由器的SSID(WiFi名称)、密码和协议完全一致，设备基本可以实现自动无缝切换。
 
 | 方案 |优点  | 缺点 |
@@ -50,6 +62,32 @@
 192.168.1.1
 
 这样所有的设备都是相同的ip网段。
+
+</details>
+
+<details>
+<summary>硬件与软件</summary>
+
+## [AMD Based FreeBSD Desktop Reloaded](https://vermaden.wordpress.com/2026/09/06/amd-based-freebsd-desktop-reloaded/)
+
+儿童配置，使用Mini-ITX
+AMD Ryzen 4750GE CPU 32W 
+
+TYPE    EUR     WHAT                                    
+ CASE   55      Silverstone SG13
+  PSU   55      Thermaltake Toughpower Grand 750W
+ MOBO   100     ASRock B550M-ITX/ac
+  CPU   145     AMD Ryzen 7 4750GE 8C/16T 35W TDP
+  GPU   340     ASRock ATI Radeon 7700XT 12GB Challenger
+PASTE   10      Grizzly Thermal Kryonaut 2g
+ COOL   40      Thermalight AXP-90 X47
+  FAN   5       Savio BLADEX1 120mm PWM
+  SSD   45      ADATA SU650 512GB
+ NVME   50      Phison ESO512GYLCT-EP3-2L 512GB
+  RAM   150     2 x 16GB Goodram DDR4 3600MHz 1.35V CL18
+PRICE   995     TOTAL
+
+</details>
 
 ## 工具
 

@@ -72,3 +72,10 @@
 - [Fractional Indexing小数索引技术](/articles/2023/fractionalIndexing.md)
 
 </details>
+
+<details>
+<summary></summary>
+
+- [Music theory for programmers 音乐理论在程序上的应用](https://runjs.app/blog/music-theory-for-programmers)
+
+</details>
