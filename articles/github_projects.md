@@ -9,6 +9,10 @@ O3DE Open 3D Engine Apache 2.0-licensed multi-platoform
 ### [LLGL](https://github.com/LukasBanana/LLGL)
 Low Level Graphics Library (LLGL) is a thin abstraction layer for the modern graphics APIs OpenGL, Direct3D, Vulkan, and Metal 
 
+### [Human Atlas人体浏览](https://github.com/ashemag/human-atlas)
+An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui.
+Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.
+
 ## webgpu
 
 ### [PNGine](https://hugodaniel.com/pages/pngine/)
@@ -18,6 +22,7 @@ Declarative WebGPU in S-expressions that match the spec 1:1. Compile them to a f
 [WebGPU in a declarative S-expressions engine. ](https://github.com/HugoDaniel/pngine)
 
 把webgpu放置在图片或其他格式中，很有创意的项目, 
+
 
 </details>
 
@@ -129,6 +134,9 @@ services:
       # 新增：挂载一个外部的、已有的照片库（只读）
       - /mnt/f/OldPhotos:/usr/src/app/external_old_photos:ro
 ```
+
+### [A command-line tool for Z-Library. Search, download, send to Kindle, and integrate with AI agents.](https://github.com/heartleo/zlib)
+命令行下载，这样就不需要客户端了，也不需要浏览器了，当然看不了广告了
 
 </details>
 

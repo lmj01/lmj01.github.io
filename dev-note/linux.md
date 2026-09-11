@@ -286,3 +286,10 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```
 
 </details>
+
+<details>
+<summary>freeBSD</summary>
+
+[官网 A Powerful, Open Source Operating Systems](https://www.freebsd.org/)
+
+</details>

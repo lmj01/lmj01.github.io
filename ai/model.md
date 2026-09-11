@@ -125,6 +125,10 @@ flowchart TD
 - **为什么推荐1.5B-3B模型**？因为这是你3GB显存能流畅运行的“脑容量”上限。
 - **为什么强调量化 (Q4_K_M)**？因为通过量化，你可以尝试在这个显存下把“脑容量”再撑大一点，或者让推理更快一些。
 
+### 蒸馏
+
+是一种让小模型模仿大模型能力的技术，
+
 ## 其他
 
 - [Port of Facebook's LLaMA model in C/C++ ](https://github.com/ggerganov/llama.cpp)

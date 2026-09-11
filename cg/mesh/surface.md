@@ -1,20 +1,27 @@
 # Surface
 
-
-## 三角化
+<details>
+<summary> 三角化</summary>
 
 三角剖分算法是将平面上的离散点集或多边形分割成多个互不重叠三角形的算法。
 
-### Delaunay
+## Delaunay
 
 Delaunay三角剖分算法的核心性质是任何一个三角形外接圆不包含其他点。这种特性让生成的三角形尽量接近等边三角形，在地形建模等领域有好的视觉与分析效果。
 
-### Triangulation by Ear Clipping
+## Triangulation by Ear Clipping
 
 - [Triangulation by Ear Clipping](https://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf)
 - [FIST: Fast Industrial-Strength Triangulation of Polygons](http://www.cosy.sbg.ac.at/~held/projects/triang/triang.html)
 - [Earcut](https://github.com/mapbox/earcut)
 
+## Voronoi
+
+### [Voronoi Fragmentation of a Mesh](https://www.4rknova.com/blog/2026/07/27/voronoi-fracture)
+
+如何粉粹convex为voronoi， 
+
+</details>
 
 ## Generalized Winding Numbers
 
@@ -42,7 +49,8 @@ Delaunay三角剖分算法的核心性质是任何一个三角形外接圆不包
 
 ## [GMesh](https://github.com/weihuayi/gmsh)
 
-## SDF(Signed Distance Field)
+<details>
+<summary> SDF(Signed Distance Field)</summary>
 
 ### [Dual Contouring of Signed Distance Data2026](https://gatc.cs.columbia.edu/projects/dual-contouring-of-signed-distance-data.html)
 有符号距离数据上的对偶轮廓提取
@@ -76,3 +84,5 @@ Hermite Data 如何估计？这是论文最大的创新之一。因为没有 Gra
 
 [1]: https://arxiv.org/abs/2604.00157?utm_source=chatgpt.com "Dual Contouring of Signed Distance Data"
 [2]: https://gatc.cs.columbia.edu/assets/pdf/dcsdd/dcsdd.pdf?utm_source=chatgpt.com "Dual Contouring of Signed Distance Data"
+
+</details>

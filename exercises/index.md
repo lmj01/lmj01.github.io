@@ -46,6 +46,7 @@
 - [Wolfram MathWorld](https://mathworld.wolfram.com/)
 - [数学文化](https://www.global-sci.com/mc)
 - [A Global Multimodal Benchmark for Mathematical Reasoning and Retrieval](https://mathnet.mit.edu/)
+- [可视化拓扑的手绘样式](https://e-infinity.space/picture-book/)
 
 <details>
 <summary>Geogebra开源在线工具</summary>

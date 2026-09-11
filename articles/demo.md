@@ -78,6 +78,10 @@
 
 [古典音乐-国家大剧院](https://www.ncpa-classic.com)
 
+[国际乐谱库，分享世界上处于共有领域的音乐](https://imslp.org/wiki)
+
+[铜钟音乐官网](https://tonzhon.com/)
+
 ## [Radio.Garden](https://radio.garden/)
 
 [中文站](https://radiogarden.hezidh.com/)

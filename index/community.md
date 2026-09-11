@@ -68,6 +68,9 @@ Use the search form above to search for facts in the Kiddle encyclopedia (Kpedia
 - [Specification-Driven Development (SDD) - 规范驱动开发](https://hobbytp.github.io/zh/projects/code_assistant/spec-driven-dev/)
 
 
+## [D2 Declarative Diagramming](https://d2lang.com/)
+
+A modern language that turns text to diagrams
 
 </details>
 
