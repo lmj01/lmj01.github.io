@@ -120,6 +120,8 @@ Self-hosted photo and video management solution [github](https://github.com/immi
 UPLOAD_LOCATION=/mnt/d/ImmichMedia # 所有文件的新路径， 源文件
 THUMB_LOCATION=/mnt/e/ImmichCache/thumbs # 缩略图
 ENCODED_VIDEO_LOCATION=/mnt/e/ImmichCache/encoded-video # 编码视频
+sudo docker compose up -d # 开启
+sudo docker compose down # 关闭
 ```
 ```yml
 # 直接挂载

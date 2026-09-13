@@ -134,6 +134,7 @@ wsl --unregister Name 移除
 wsl --import Name installPath exportPathFile.tar 导入
 wsl --manage Name --set-default-user meijie 设置默认登录用户，特别是导入后需要设置一下
 wsl --install -d Ubuntu-24.04 --location D:\WSL\Ubuntu # 直接安装在其他地方
+wsl --manage Name --move h:\wsl\ubuntu # 移动到新的盘中
 ```
 
 ```shell
