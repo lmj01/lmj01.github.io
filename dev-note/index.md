@@ -20,6 +20,7 @@
 - [python](/cpl/python.md)
 - [ui](/dev-note/ui.md)
 - [DB](/cs/db/database.md)
+- [网络host](/dev-note/host.md)
 
 ## 版本控制
 
@@ -29,6 +30,9 @@
 <details>
 <summary>开发文档</summary>
 
+- [DevDocs combines multiple API documentations in a fast, organized, and searchable interface.](https://devdocs.io/)
+- [W3cubDocs](https://docs.w3cub.com/)
+- [Runebook.dev](https://runebook.dev/zh)
 - [gl-matrix](https://glmatrix.net/docs/index.html)
 - [java api](https://www.oracle.com/cn/java/technologies/java-se-api-doc.html)
 - [Eigen](https://libeigen.gitlab.io/eigen/docs-nightly/)
@@ -51,6 +55,9 @@
 - [Redux](https://redux.js.org/)
 - [axios](https://axios-http.com/docs/intro)
 - [d3](https://d3js.org/api)
+
+### microsoft
+- [热门技术资源和培训](https://learn.microsoft.com/zh-cn/)
 
 </details>
 
@@ -82,6 +89,15 @@
 - [S3 SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/)
 - [S3 控制台](https://243898521477.signin.aws.amazon.com/console)
 - [vercel二级域名免费](https://vercel.com/meijieli/~/stores)
+- [微信公众号](https://mp.weixin.qq.com/)
+
+### 仓库
+
+- [github](https://github.com/)
+- [codeberg](https://codeberg.org/)
+- [gitlab](https://gitlab.com/gitlab-com)
+- [公司](http://git.matchyun.com/)
+- [gitee](https://gitee.com/)
 
 ### 文档工具
 - [apiPost lmjie_good@163.com](https://workspace.apipost.net/guest/apis)
@@ -120,9 +136,32 @@
 
 </details>
 
-<details>
-<summary>终端</summary>
 
+<details>
+<summary>开发网址</summary>
+
+- [星链-dev-ip](http://192.168.0.162:28081/login)
+- [星链-dev-asia](http://192.168.0.166:38081/home)
+- [admin](https://opt.sprintray.com.cn/#/login)
+- [admin-test](https://opt-test.sprintray.com.cn/#/case/all)
+- [admin-test-asia](https://opt-test.sprintray.asia/#/login)
+- [admin-dev-ip](http://192.168.0.162:21082/#/case/all)
+- [admin-dev-ip-asia](http://192.168.0.166:31082/#/login)
+- [算法对比-ip](http://192.168.0.162:7710/#/login)
+- [医生-us-dev](https://dev.account.sprintray.com/?redirectApp=designService)
+- [医生-cn-test](https://designservice-test.sprintray.com.cn/)
+- [医生-cn-dev](http://designservice-dev.sprintray.com.cn/)
+- [医生-cn](http://designservice.sprintray.com.cn/)
+- [医生-cn-ip-dev](http://192.168.0.162:21081/studio)
+- [医生-asia-ip-dev](http://192.168.0.166:31081/)
+</details>
+
+<details>
+<summary>系统</summary>
+
+- [YUMI Multiboot USB Creator U盘引导盘](https://pendrivelinux.com/yumi-multiboot-usb-creator/)
+
+## 终端
 常用快捷键的配置
 
 ```shell

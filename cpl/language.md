@@ -31,11 +31,6 @@
     - [github XRegExp provides augmented (and extensible) JavaScript regular expressions](https://github.com/slevithan/xregexp)
 - [js RegExp](/cpl/js/regularExpressions.js)
 
-### 语法高亮
-
-- [js版的highlight高亮配置,选中语言，下载后选择es版本的，选择特定语言即可](https://highlightjs.org/download)
-
-
 ## OOP
  object-orientation
 
@@ -54,6 +49,7 @@ trivial getters/setters 并没有使接口更安全，只是把对于数据的�
 - [The C10K problem, C10K问题指的是在单台服务器上同时处理10,000个并发TCP连接时遇到的性能瓶颈。它不是硬件带宽或内存的直接限制，而是操作系统和I/O模型在高并发场景下的资源消耗问题](https://www.kegel.com/c10k.html)
 - [Promises/A+, An open standard for sound, interoperable JavaScript promises—by implementers, for implementers.](https://promisesaplus.com/)
 - [What Async Promised and What it Delivered](https://causality.blog/essays/what-async-promised/)
+- [A Design Space Exploration of Async/Await](https://cel.cs.brown.edu/blog/design-space-async-await/)
 
 ## 参考
 

@@ -2,6 +2,16 @@
 
 ssh(Secure Shell Protocol)
 
+```shell
+ssh-keygen -t ed25519 # 生成密钥对
+ssh-copy-id name@ip # 上传公钥到服务器
+# -i 如果生成的密钥不是默认的id_rsa.pub 可以使用 -i 指定 
+# -p 不是22端口时需要指定
+ssh-copy-id -p 222 -i ~/.ssh/id_ed25519.pub name@ip
+ssh -p port name@ip
+ssh -X name@ip
+```
+
 <details>
 <summary>Linux</summary>
 

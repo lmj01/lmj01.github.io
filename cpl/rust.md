@@ -1,4 +1,4 @@
-# Rust
+# [Rust](https://rustfoundation.org/)
 
 ## 语言特性
 

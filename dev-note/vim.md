@@ -289,6 +289,9 @@ Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 # 克隆启动器 官方的启动器模板
 git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
 Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
+# 设置依赖的目录 $XDG_CONFIG_HOME/nvim
+Set-ItemProperty -Path HKCU:\Environment -Name XDG_CONFIG_HOME -Value "E:\mjconfigs" # $XDG_CONFIG_HOME 下面寻找 nvim 目录
+Set-ItemProperty -Path HKCU:\Environment -Name XDG_DATA_HOME -Value "E:\mjdata"
 ```
 
 

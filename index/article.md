@@ -2,6 +2,7 @@
 
 - [行业](/articles/notes/trade.md)
 - [3D引擎](/cg/engines.md)
+- [cordis](/cs/cordis.md)
 
 <details>
 <summary>图形学毕竟</summary>
