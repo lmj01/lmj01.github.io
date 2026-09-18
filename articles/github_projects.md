@@ -140,6 +140,9 @@ services:
 ### [A command-line tool for Z-Library. Search, download, send to Kindle, and integrate with AI agents.](https://github.com/heartleo/zlib)
 命令行下载，这样就不需要客户端了，也不需要浏览器了，当然看不了广告了
 
+### [Snapdrop: local file sharing in your browser. Inspired by Apple's Airdrop.](https://github.com/RobinLinus/snapdrop)
+The easiest way to share files between devices
+
 </details>
 
 <details>

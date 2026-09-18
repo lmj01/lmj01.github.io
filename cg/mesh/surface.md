@@ -19,7 +19,9 @@ Delaunay三角剖分算法的核心性质是任何一个三角形外接圆不包
 
 ### [Voronoi Fragmentation of a Mesh](https://www.4rknova.com/blog/2026/07/27/voronoi-fracture)
 
-如何粉粹convex为voronoi， 
+如何粉粹convex为voronoi, 只使用凸网格， 凸实体的等价第二定义是**凸实体恰好是一组半空间的交集**，而半空间交集的定义正是Voronoi细胞的定义。
+
+
 
 </details>
 

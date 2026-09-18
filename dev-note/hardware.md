@@ -34,6 +34,8 @@
 <details>
 <summary> 组网 </summary>
 
+- [网络设备拓扑图的网页设计工具,可以用来设置家庭网络 meijie-home-net](https://gpcb.net/net/)
+
 ### 多台路由器
 家庭组网，可以保证两台路由器的SSID(WiFi名称)、密码和协议完全一致，设备基本可以实现自动无缝切换。
 

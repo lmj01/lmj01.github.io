@@ -1,12 +1,12 @@
 # Web
 
 - [网页平台最好的开发集合地A place to find the best open source projects related to the web platform](https://bestofjs.org/)
-    - [增长最快的排行榜](https://risingstars.js.org/2023/en)
+- [增长最快的排行榜](https://risingstars.js.org/2023/en)
 - [javascript](/cpl/ECMAScript.md)
 - [使用过的库](/web/library.md)
 - [正则表达式](/cpl/js/regularExpressions.js)
 - [webassembly](/web/webAssembly.md)
-- [web概念](/web/web.md)
+- [web-api](/web/web.api.md)
 - [html](/web/html.md)
 - [css](/web/css.md)
 - [store存储数据](/web/store.md)
@@ -24,29 +24,15 @@
 - [适配屏幕](/web/adapt.screen.md)
 - [http](/web/http.md)
 - [代码混淆](/web/confuse.md)
-
 - [d3](/web/libs/d3.md)
 - [Quill富文本编辑器](/web/libs/quill.md)
-
 - [Web Check网站分析，分析各种配置，可参考网站的配置](https://web-check.as93.net/)
 - [Draggable objects可拖动的对象网页实现](https://www.redblobgames.com/making-of/draggable/)
-
 - [CanIUse网站查看接口的普及率](https://caniuse.com/)
 - [最小响应式库，仅用标准JS和HTML](https://github.com/sathvikc/lume-js)
 
-## [MDN Web Api](https://developer.mozilla.org/en-US/docs/Web/API)
-
-现代浏览器技术开发API有大量的接口，需要去了解
-
-
-### [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API)
-新版的剪切接口，是新标准
-```javascript
-document.execCommand('copy'); // 旧的方法调用系统接口
-```
-
-
-## library
+<details>
+<summary> library</summary>
 
 ### [Browserslist](https://github.com/browserslist/browserslist)
 对一些工具起作用的 使用[Can I Use data](https://caniuse.com/)数据来判断
@@ -109,7 +95,10 @@ jszip.loadAsync(new Blob([buffer])).then(zip=>{
 
 - [极简的图标搜索网站,可打包字体或下载svg格式](github.com/antfu-collective/icones)
 
-## 组件开发Web Component
+</details>
+
+<details>
+<summary> 组件开发Web Component</summary>
 
 - [表情拾取组件A lightweight emoji picker, distributed as a web component.](https://github.com/nolanlawson/emoji-picker-element)
 - [一个纯JS实现的框架](https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/)
@@ -118,7 +107,10 @@ Elena 是由 @arielle 打造的一款极简库，专为构建 Progressive Web Co
 
 "Elena 不会强迫你为所有功能都使用 JavaScript，你可以先加载 HTML 和 CSS，然后用 JavaScript 逐步添加交互性。"
 
-## Test
+</details>
+
+<details>
+<summary> Test </summary>
 
 **TDD**
 
@@ -160,3 +152,5 @@ node .\node_modules\karma\bin\karma init
 ### [chai](https://github.com/chaijs/chai)
 
 [document](https://www.chaijs.com/)
+
+</details>

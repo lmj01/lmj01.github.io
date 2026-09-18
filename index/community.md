@@ -138,6 +138,11 @@ languages including common scripting languages such as Javascript, Perl, PHP, Py
 <details>
 <summary> 新架构思想</summary>
 
+软件架构是很重要的，都是很差的代码，但是能不能替换代码是重要的维护一环，如果能替换的代码，那边目前代码写的很差都不影响。
+重要的是三件事：
+- 数据如何在系统中流动，当前的数据从哪里输入，输出什么以及存储哪些数据
+- 用户体验如何，有明显的漏洞、糟糕的性能、前后不一致的行为吗
+- 基本的抽象概念是否正确，是否误用
 
 [cordis内核](https://github.com/cordiverse/cordis)是一个很优秀的内核空间，看其论文是与[Koishi 是一个跨平台、可扩展、高性能的聊天机器人框架Cross-platform chatbot framework made with love](https://github.com/koishijs/koishi)也是有相同的思想在里面，插件化的思维。
 

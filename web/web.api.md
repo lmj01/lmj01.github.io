@@ -1,11 +1,8 @@
 
 # web
 
-## API
-
-### OPFS文件系统
-
-- [Web 文件系统（OPFS 及工具）介绍](https://hughfenghen.github.io/posts/2024/03/14/web-storage-and-opfs/)
+<details>
+<summary>其他</summary>
 
 ## 认证机制
 
@@ -64,3 +61,26 @@ single page application单页面应用， 动态重写页面与用户交互，�
 ## 记住密码
 
 做网站时会碰到要实现记住密码，下次自动登录，一周内免登录等这种需求，一般都是通过cookie来实现的。用户成功登录后，存储一个实现自动登录的cookie数据到数据库，作为下次登录时验证使用，验证通过就自动登录，否则需要输入用户名和密码进行登录。
+
+</details>
+
+<details>
+<summary>Web Api</summary>
+
+
+## [MDN Web Api](https://developer.mozilla.org/en-US/docs/Web/API)
+
+现代浏览器技术开发API有大量的接口，需要去了解
+
+
+### [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API)
+新版的剪切接口，是新标准
+```javascript
+document.execCommand('copy'); // 旧的方法调用系统接口
+```
+
+### OPFS文件系统
+
+- [Web 文件系统（OPFS 及工具）介绍](https://hughfenghen.github.io/posts/2024/03/14/web-storage-and-opfs/)
+
+</details>

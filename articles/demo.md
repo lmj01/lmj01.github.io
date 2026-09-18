@@ -153,6 +153,7 @@
 - [Google 谷歌学术网址](https://www.sssam.com/tool/ggscholar/)
 - [Miner学术搜索](https://www.aminer.cn/)
 - [反向词典 汉语](https://wantwords.net/)
+- [window上的绿色portable版本，免按照，解压即可用](https://portableapps.com/)
 
 ### 镜像网址
 
@@ -165,5 +166,15 @@
 ## 工具
 
 - [测网速-中国科学技术大学](https://test.ustc.edu.cn/)
+
+</details>
+
+
+
+
+<details>
+<summary>新闻网址</summary>
+
+- [福布斯新闻](https://www.forbes.com)
 
 </details>

@@ -130,3 +130,4 @@ The Object Management Group® Standards Development Organization (OMG® SDO) is 
 </details>
 
 - [3D打印机](/index/printer.md)
+- [语义化版本 2.0.0, 版本控制的语义](https://semver.org/lang/zh-CN/)

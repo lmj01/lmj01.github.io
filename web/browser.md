@@ -19,7 +19,8 @@ CAS(Central Authentication Service)旨在为Web应用系统提供一种可靠的
 SSO(Single Sign-On)是服务于企业业务整合的解决方案之一，SSO使得多个应用系统中，用户只需要登录一次，
 就可以访问所有互相信任的应用系统。
 
-## 缓存
+<details>
+<summary> 缓存</summary>
 
 浏览器会保存页面的特定的资源在硬盘上，
 
@@ -65,6 +66,10 @@ document.yourFormName.reset();
 - [深入理解浏览器缓存](https://www.jianshu.com/p/54cc04190252)
 - [HTTP/2 push is tougher than I thought](https://jakearchibald.com/2017/h2-push-tougher-than-i-thought/)
 
+</details>
+
+<details>
+<summary>firefox</summary>
 
 ## [firefox](https://www.firefox.com/en-US/)
 
@@ -77,7 +82,10 @@ about:config
 ### 清除
 firefox在url那栏最左边有一个图标可以点击清空当前网站的缓存。特别是MSW
 
-## Chrome
+</details>
+
+<details>
+<summary> Chrome</summary>
 
 chrome://apps
 chrome://flags
@@ -116,6 +124,9 @@ Chromium Embedded Framework(CEF)是一个框架，用于在其他应用程序中
 ### CDP
 [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
 
+
+</details>
+
 ## 插件
 
 - [ Next-gen framework for developing web extensions. ](https://github.com/wxt-dev/wxt)
@@ -125,10 +136,22 @@ Chromium Embedded Framework(CEF)是一个框架，用于在其他应用程序中
 
 - [CAS实现SSO](http://www.coin163.com/java/cas/cas.html)
 
-### 搜索
+<details>
+<summary> 搜索技巧</summary>
+
 指定站点
 xx site:http://jianshu.com
 指定文件
 xx filetype:pdf
 不搜索指定域名
 xx -csdn.net
+
+## google-UDM
+
+udm 全称是 “Universal Display Mode”（通用显示模式），是 Google 较新的参数，用来控制搜索结果以哪种类型呈现。当你在搜索时点击了 “图片” 标签，Google 就会在网址里加上 &udm=2
+
+可以制作一个页面来包含Google的搜索内容
+
+- [Every Google &udm=? in the world](https://serpapi.com/blog/every-google-udm-in-the-world/)
+
+</details>
