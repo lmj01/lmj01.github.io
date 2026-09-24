@@ -21,6 +21,7 @@
 - [概率与统计](/exercises/probability.statistics.md)
 - [应用数学](/exercises/applied.mathematics.md)
 - [物理学](/exercises/physics.md)
+- [逻辑](/exercises/logic.md)
 
 ## 论文
 

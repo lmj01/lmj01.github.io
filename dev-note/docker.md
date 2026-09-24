@@ -7,6 +7,8 @@
 
 
 ```shell
+# 把当前用户加入docker组
+sudo usermod -aG docker $USER
 # 交互模式进入Ubuntu镜像
 # -t 指定一个终端
 # -i 允许进行交互

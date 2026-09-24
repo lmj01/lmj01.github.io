@@ -128,3 +128,4 @@ renderWindow->Render();  // 重新渲染窗口
 - [The Dolly Zoom Effect, Explained (And 7 Examples in Movies)](https://whatnerd.com/contra-zoom-film-technique-explained-examples/)
 - [Field of View - Rectilinear and Fishye Lenses ](https://bobatkins.com/photography/technical/field_of_view.html)
 - [Computing Camera Rays Published 2026-06-20使用shader来计算射线](https://momentsingraphics.de/CameraRays.html)
+- [ Divide by depth for instant 3D -- A peek into how cameras work in 3D graphics 作者也是由使用到自己写的过程](https://gabrieloc.com/2026/09/15/perspective.html)

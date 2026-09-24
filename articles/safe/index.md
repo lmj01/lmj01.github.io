@@ -20,3 +20,11 @@
 软件炸弹
 
 - [A better zip bomb 小小的zip炸弹](https://www.bamsoftware.com/hacks/zipbomb/)
+
+## 参考
+
+### npm
+针对 npm 生态的供应链攻击事件,越来越多了，这也是目前前端的框架架构产生的负面情况。
+
+
+- [伪装成数学库的远程访问木马](https://safedep.io/mathmain-encrypted-loader/)

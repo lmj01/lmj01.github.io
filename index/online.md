@@ -19,7 +19,9 @@
 - [online-free](http://gameprogrammingpatterns.com/contents.html)
 - [开放的数学讨论课题](https://www.ktrt-seminars.com/)
 
-## Blogs
+<details>
+<summary>Blog与个人网址</summary>
+
 - [法布里斯·贝拉尔（Fabrice Bellard）最低调、最牛逼程序员](https://bellard.org/)
 - [Long Luo, 一个严肃的程序员](http://www.longluo.me/)
 - [Steve's Computer Graphics Index](http://steve.hollasch.net/cgindex/)
@@ -56,6 +58,12 @@
 - [Aras Pranckevičius 很多细节上的文章](https://aras-p.info/)
 - [phk.me 他的文章很详细，有很多公式](https://blog.pkh.me/index.html)
 - [Sebastian Aaltonen](https://www.sebastianaaltonen.com/blog)
+
+### [Nikos Papadopoulos](https://www.4rknova.com/)
+
+computer graphics，good writing software engineer。文章很详细，看起来逻辑清晰
+
+</details>
 
 ## 游戏
 

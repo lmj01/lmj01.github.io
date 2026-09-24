@@ -137,6 +137,11 @@
 <details>
 <summary>网址</summary>
 
+<div class="d-flex flex-wrap">
+<div class="w-30">
+
+## 资源
+
 - [Bind搜索](https://cn.bing.com/)
 - [Google HK](https://www.google.com.hk/)
 - [chatgpt](https://chatgpt.com/)
@@ -144,6 +149,10 @@
 - [kimi](https://www.kimi.com/chat/coe9ebcudu60c1rv78j0)
 - [doubao](https://www.doubao.com/chat/)
 - [百度文心](https://wenxin.baidu.com/?enter_type=yiyan_site)
+
+</div>
+
+<div class="w-30">
 
 ## 资源
 
@@ -153,19 +162,27 @@
 - [Google 谷歌学术网址](https://www.sssam.com/tool/ggscholar/)
 - [Miner学术搜索](https://www.aminer.cn/)
 - [反向词典 汉语](https://wantwords.net/)
-- [window上的绿色portable版本，免按照，解压即可用](https://portableapps.com/)
 
 ### 镜像网址
 
 - [教育网联合镜像站](https://mirrors.cernet.edu.cn/)
 
-### 视频
+</div>
 
-- [youtube](https://www.youtube.com/)
+<div class="w-30">
 
 ## 工具
 
 - [测网速-中国科学技术大学](https://test.ustc.edu.cn/)
+- [window上的绿色portable版本，免按照，解压即可用](https://portableapps.com/)
+
+### 视频与新闻
+
+- [youtube](https://www.youtube.com/)
+- [福布斯新闻](https://www.forbes.com)
+
+</div>
+</div>
 
 </details>
 
@@ -173,8 +190,11 @@
 
 
 <details>
-<summary>新闻网址</summary>
+<summary>论坛</summary>
 
-- [福布斯新闻](https://www.forbes.com)
+- [three.js forum](https://discourse.threejs.org/)
+- [VTK](https://discourse.vtk.org/)
+- [khronos community](https://community.khronos.org/)
+- [GODOT Forum](https://forum.godotengine.org/)
 
 </details>
