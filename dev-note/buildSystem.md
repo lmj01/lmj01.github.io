@@ -1,10 +1,27 @@
 # BuildSystem
 > 构建系统，把源码编译成目标对象，都需要使用构建系统来帮助
 
+<details>
+<summary>cmake</summary>
 
 ## [CMake](https://cmake.org/)
 
 - [CMake FAQ](https://gitlab.kitware.com/cmake/community/-/wikis/FAQ)
+
+```shell
+cd src/build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=h:/vcpkg/scripts/buildsystems/vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-windows -G "Visual Studio 15 Win64"
+cmake .. 
+cmake --build /path/to/build # 进入构建目录后构建 否则需要手动调用make 或 msbuild 
+cmake --build build --target my_server 
+# window上暂时禁用多核编译 在编译Draco报错时 error C1090: PDB API 调用失败，错误代码“3”:
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="/MP0"
+# 如果生成的是Makefile或build.ninja的就可以对CMAKE_BUILD_TYPE有用，如果是多配置生成器就存在问题
+cmake --build ./build --config Release # window上默认创建的是VS的多配置生成器，比血指定，否则默认就是debug
+cmake -S . -B build-vulkan -DMYCPPRENDER_USE_VULKAN=ON -DCMAKE_BUILD_TYPE=Release
+cmake --build build-vulkan -j$(nproc) # 
+```
+
 
 ### 详解
 
@@ -68,6 +85,7 @@ MSBuild.exe INSTALL.vcxproj /p:Configuration=release
 - [一个简单例子，完全入门CMake语法与CMakeList编写](https://zhuanlan.zhihu.com/p/630144233)
 - [CMake的自动传递依赖Configuring Transitive Dependencies with Modern CMake](https://www.cppmore.com/2024/04/22/configuring-transitive-dependencies-with-modern-cmake/)
 
+</details>
 
 ## [The Meson Build system](https://mesonbuild.com/)
 > Meson® is a project to create the best possible next-generation build system. 

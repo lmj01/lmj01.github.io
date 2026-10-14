@@ -1,6 +1,7 @@
 # 模型
 
-## Model
+<details>
+<summary> Model</summary>
 How AI models are made: Data is a crucial component
 
 data is upstream in process of developing good models
@@ -48,8 +49,16 @@ AI that lives on your computer. Open-source, private & always local.
 
 An educational project made to understand how LLM inference works. 教学的工程用以立即LLM的内部工作原理。
 
+## [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
 
-## 概念
+ TypeSafe AI 发布了一种新类型的模型 Jev, 这种新模型跟以前的模型截然不同，叫做"决策模型", Jev 模型的最大特点就是，其他模型返回文字，它返回一个浮点数，表示概率。
+
+突然让我想到泛函这个概念了，一周以内才看到有说泛函概念，就是一个集合或一个连续对象映射到一个实数的映射。[著名开发者西蒙·威利斯（Simon Willison）的 Jev 介绍文章](https://simonwillison.net/2026/Sep/21/jev/)
+
+</details>
+
+<details>
+<summary> 概念</summary>
 
 ### token
 使用大模型时，会有提示词，大模型将提示词分解成token，再将token转向向量值，然后计算所有token之间的注意力关系，这步非常消耗算力，因此模型公司会对输入的token收费。
@@ -128,6 +137,8 @@ flowchart TD
 ### 蒸馏
 
 是一种让小模型模仿大模型能力的技术，
+
+</details>
 
 ## 其他
 

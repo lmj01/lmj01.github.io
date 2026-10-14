@@ -142,26 +142,28 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 
 从语义上去理解这个
 
-## 参考
+<details>
+<summary> 参考</summary>
+
 - [C++ Template这个文章描述的很清晰,思路也很通畅](https://www.3dgep.com/beginning-cpp-template-programming/)
 - [C++ stories](https://www.cppstories.com/)
 - [PDFHummus is a Fast and Free C++ Library for Creating, Parsing an Manipulating PDF Files and Streams.](https://github.com/galkahana/PDF-Writer)
 - [Software optimization resources,涉及很多底层的技术和文档，值得去看看](https://www.agner.org/optimize/#manuals)
-    - [Calling conventions for different C++ compilers and operating systems](https://www.agner.org/optimize/calling_conventions.pdf),更新到2023年的技术
+- [Calling conventions for different C++ compilers and operating systems](https://www.agner.org/optimize/calling_conventions.pdf),更新到2023年的技术
 - [微软出品C++下一代的多态Proxy: Next Generation Polymorphism in C++](https://github.com/microsoft/proxy)
 - [反射库refl-cpp is a header-only library which provides compile-time reflection and introspection capabilities to C++](https://github.com/veselink1/refl-cpp)
 - [Google 开源了其内部多年使用的 C++ 代码库](https://github.com/abseil/abseil-cpp)
 - [folly库 An open-source C++ library developed and used at Facebook. ](https://github.com/facebook/folly)
 - [What's In a Class? - The Interface Principle, This article appeared in C++ Report, 10(3), March 1998.](http://www.gotw.ca/publications/mill02.htm)
 - [Modern C++ Programming Course (C++03/11/14/17/20/23/26) ](https://github.com/federico-busato/Modern-CPP-Programming)
+- [Writing Efficient C++ Code](https://asawicki.info/articles/writing_efficient_cpp_code.php)
 
-### 工具
+## 工具
 
 - [C++在线编译器，可以查看汇编等细节](https://godbolt.org/)
 - [C++分析，可看到预处理状态](https://cppinsights.io/)
 - [C++Benchmark](https://quick-bench.com/q/6tDxsmk3FMX55B8W1RrdiG_s7_k)
-### 代码例子
-- 
+## 代码例子
 - [offsetof](/cpl/cpp/offsetof.cpp)
 - [reference](/cpl/cpp/reference.cpp)
 - [基准测试std::visit的例子](https://quick-bench.com/q/SgNTOjdNLDBSARWDfbaMpLMZRGo)
@@ -180,3 +182,5 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 ### 2024
 > 我看标准的这些机制设计和其他一些架构，其中很重要的一条原则就是追求一致性。不仅是美学上的追求，一旦符合这种一致性，系统本身就具备适应变化的能力，从而能够抵抗非连续性问题。一切本质的东西都很简单，且具有美感。设计之初就追求一致性，本质是一种多阶思维，看似麻烦，往往能够解决很多未能提前发现的问题。
 >> 很多架构都是一致性的体现，一个项目之初如果不用架构，后面慢慢修改抽象，不断演进最后发现跟已有架构一个思路
+
+</details>

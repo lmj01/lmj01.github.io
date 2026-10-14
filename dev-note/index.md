@@ -86,12 +86,19 @@
 - [MDN](https://developer.mozilla.org/en-US/docs/Web)
 - [Google Android](https://developer.android.google.cn/?hl=zh-cn)
 - [Ali OSS SDK](https://help.aliyun.com/zh/oss/)
-- [S3 SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/)
-- [S3 控制台](https://243898521477.signin.aws.amazon.com/console)
 - [vercel二级域名免费](https://vercel.com/meijieli/~/stores)
 - [微信公众号](https://mp.weixin.qq.com/)
 
-### 仓库
+## S3
+- [S3 SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/)
+- [S3 控制台](https://243898521477.signin.aws.amazon.com/console)
+### [fakecloud ](https://fakecloud.dev/)
+
+Local AWS cloud emulator for integration tests. Run your app with normal AWS clients, stay fully local, and use fakecloud SDKs when your tests need deeper visibility.
+
+[github](https://github.com/faiscadev/fakecloud)
+
+## 仓库
 
 - [github](https://github.com/)
 - [codeberg](https://codeberg.org/)
@@ -99,12 +106,12 @@
 - [git](http://git.matchyun.com/)
 - [gitee](https://gitee.com/)
 
-### 文档工具
+## 文档工具
 - [apiPost lmjie_good@163.com](https://workspace.apipost.net/guest/apis)
 - [飞书](https://www.feishu.cn/?from_site=lark)
 - [Teambition钉钉](https://www.teambition.com/organization/5f9a6c251081a50d75dea6d3/my)
 
-### 工具
+## 工具
 - [在线matplotlib](https://matplotlib.online/)
 - [firefox官网的浏览器](https://www.firefox.com/en-US/?redirect_source=mozilla-org&utm_campaign=SET_DEFAULT_BROWSER)
 - [SpectorJS 调试webgl的工具](https://spector.babylonjs.com/)
@@ -116,8 +123,7 @@
 - [mswjs](https://mswjs.io/docs)
 - [altassian项目管理工具-lmjie01@gmail.com](https://home.atlassian.com/?utm_source=identity)
 
-#### 编辑器
-
+### 编辑器
 
 [neoviw](https://code.visualstudio.com/)
 
@@ -129,7 +135,7 @@
 
 [lapce for linux](https://lap.dev/lapce/)
 
-##### [emacs](https://www.gnu.org/software/emacs/)
+#### [emacs](https://www.gnu.org/software/emacs/)
 
 [emacs ftp download](https://mirror.twds.com.tw/gnu/emacs/windows/)
 

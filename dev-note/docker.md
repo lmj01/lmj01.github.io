@@ -181,10 +181,12 @@ docker port runImageName(ai-indication-detector)
 docker ps -a # 查看所有的，会有对应的container-id
 docker stop containerId # 先停止
 docker rm containerId # 可以看到没有在使用中了
-docker rmi imageName  # 删除镜像
+# 可以docker rm -f containerId 一步到位
+docker image ls # 找到镜像文件，并删除
+docker rmi imageId  # 删除镜像 imageId更精准指定是那个镜像
 # 再加载
 docker load -i local-image.tar
-docker image ls --no-trunc
+docker image ls --no-trunc # 确认新旧镜像id不同,避免加载了同名的旧的tar
 ```
 
 </details>

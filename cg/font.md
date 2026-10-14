@@ -1,9 +1,7 @@
 # Font
 
-- [SLUG--Dynamic GPU Font Rendering and Advanced Text Layout ](https://sluglibrary.com/)
-  - [GPU-Centered Font Rendering Directly from Glyph Outlines](https://jcgt.org/published/0006/02/02/)
-
-字体在网页中的应用
+<details>
+<summary>字体在网页中的应用</summary>
 
 去各大网站上看看其他网站默认的字体，一般都是对body样式中存在这样的值
 
@@ -40,7 +38,11 @@ Fira Code: free monospaced font with programming ligatures
 
 - [github](https://github.com/tonsky/FiraCode?_pjax=#js-repo-pjax-container)
 
-## 理论知识
+</details>
+
+<details>
+<summary> 理论知识</summary>
+
 不同操作系统、不同浏览器内嵌的默认字体是不同的
 
 按字体族类分类为
@@ -80,10 +82,23 @@ freetype可以根据ttf等格式的font文件 提取到文字轮廓 然后根据
 ### [Rendering Crispy Text On The GPU](https://osor.io/text)
   - [GPU font rendering from vector outlines demonstration ](https://github.com/GreenLightning/gpu-font-rendering)
 
-## 参考
+</details>
+
+<details>
+<summary> 参考</summary>
+
 [Web 字体 font-family 该如何设置？](https://zhuanlan.zhihu.com/p/313284552)
 [cmap — Character to Glyph Index Mapping Table](https://learn.microsoft.com/en-us/typography/opentype/spec/cmap#encoding-records-and-encodings)
 [Fonts & Encodings](https://book.douban.com/subject/2362953/)
 [打印机分辨率增强技术](https://www.docin.com/p-878782126.html)
 - [opentype.js is an OpenType and TrueType font parser and writer. It allows you to access the letterforms of text from the browser or node.js. ](https://opentype.js.org/) 
-  - [github-Read and write OpenType fonts using JavaScript. ](https://github.com/opentypejs/opentype.js/)
+- [github-Read and write OpenType fonts using JavaScript. ](https://github.com/opentypejs/opentype.js/)
+
+
+- [SLUG--Dynamic GPU Font Rendering and Advanced Text Layout ](https://sluglibrary.com/)
+- [GPU-Centered Font Rendering Directly from Glyph Outlines](https://jcgt.org/published/0006/02/02/)
+
+## 16XAA font rendering
+[16xAA font rendering using coverage masks, part I](https://superluminal.eu/articles/16xaa-font-rendering-using-coverage-masks-part-i/)
+
+</details>

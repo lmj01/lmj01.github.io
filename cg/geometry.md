@@ -5,8 +5,16 @@
 - [surface](/cg/mesh/surface.md)
 - [ICP算法](/cg/mesh/icp.md)
 
+<details>
+<summary> Teapot </summary>
 
-## Normal
+- [Utah Teapot](https://graphics.cs.utah.edu/teapot/)
+- [Yiming’s Curved Surface Research: Layered Mesh](https://notes.blender.org/s/D7QccPrzn4)
+
+</details>
+
+<details>
+<summary> Normal</summary>
 
 - [Tangent正切线](/cg/mesh/tangnent.md)
 - [The Geometry Behind Normal Maps](https://www.shlom.dev/articles/geometry-behind-normal-maps/)
@@ -26,7 +34,10 @@
 在文件src\core\BufferGeometry.js中有计算computeVertexNormals就是对每个顶点计算其所在面的法线
 三个点中任意两两构成共面的法向量相乘得到其面的法线，作为顶点的法线，**注意VertexNormal只算了当前面片的法线**，并没有像光照时的理论上那样把每个相邻的取均值。
 
-## Projective Geometric Algebra
+</details>
+
+<details>
+<summary> Projective Geometric Algebra</summary>
 
 - [Projective Geometric Algebra](http://projectivegeometricalgebra.org/)    
 - [Conformal Geometric Algebra -- CGA](https://conformalgeometricalgebra.org/wiki/index.php?title=Main_Page)
@@ -35,7 +46,7 @@
 
 - [等几何技术](/cg/mesh/isogeometric.md)
 
-## 距离
+### 距离
 
 - [GJK collision detection lib in raw js ](https://github.com/guilledk/gjk-js)
 - [An Efficient Parametric Algorithm for Octree Traversal Jorge Revelles,Carlos Ureña,Miguel Lastra](https://static.aminer.org/pdf/PDF/000/672/942/an_efficient_parametric_algorithm_for_octree_traversal.pdf)
@@ -49,7 +60,10 @@
     - [github](https://github.com/qhull/qhull)
 - [Hull.js is a JavaScript library that builds concave hull by a set of points](https://github.com/AndriiHeonia/hull)
 
-## 参考
+</details>
+
+<details>
+<summary> 参考</summary>
 
 - [代数几何小科普3：怎么知道方程(组)有解？ ](https://blog.sciencenet.cn/blog-1646100-818073.html)
 - [Triangulate Efficient Triangulation Algorithm Suitable for Terrain Modelling or An Algorithm for Interpolating Irregularly-Spaced Data with Applications in Terrain Modelling](http://paulbourke.net/papers/triangulate/)
@@ -62,5 +76,8 @@
 - [Geometric Deep Learning for Computer-Aided Design: A Survey探讨了大数据模型下的CAD](https://arxiv.org/abs/2402.17695)
 
 - [Macad|3D is a free and open-source 3D construction program which implements easy-to-handle workflows specific to the model making hobbyist. Macad|3D is mainly based on the technologies .Net, C#, C++/CLI and OpenCASCADE Technology (OCCT). ](https://github.com/Macad3D/Macad3D)
+
 ### subdivision
 - [Adaptive Catmull-Clark Subdivision with Compute Tessellation](https://filmicworlds.com/blog/adaptive-catmull-clark-subdivision-with-compute-tessellation/)
+
+</details>

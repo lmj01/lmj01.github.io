@@ -143,6 +143,10 @@ services:
 ### [Snapdrop: local file sharing in your browser. Inspired by Apple's Airdrop.](https://github.com/RobinLinus/snapdrop)
 The easiest way to share files between devices
 
+### pdf
+
+[Highly Efficient PDF Renderer (HEPR) github](https://github.com/soadzoor/Highly-Efficient-PDF-Renderer) GPU rendering for large PDFs, technical drawings, and floorplans — in a standalone viewer or your three.js scene.
+
 </details>
 
 <details>

@@ -4,7 +4,8 @@
 
 如果一束光，它的光子都是同一波长的，就是单色光；不同波长的光合在一起就是混合光；
 
-## 概念
+<details>
+<summary> 概念</summary>
 
 - ICC International Color Consortium
 - 亮度Lightness、Luminance
@@ -66,7 +67,10 @@ gamma校正，存在的原因有
 - gamma meta在不同应用中解释不一致，缺乏标准
 - 与RGB应用时，需要转换，否则产生意外的结果
 
-## HDR
+</details>
+
+<details>
+<summary> HDR</summary>
 
 把场景变成数字化的图片，需要光学信号进行采样sampling和数字化，sampling决定了图片的分辨率，即单位尺度内的单位像素的个数；数字化，在常见色彩空间下，用8bits，共256个阶梯来数字化
 
@@ -97,6 +101,8 @@ ctx.strokeStyle = canvasGradient;
     - [Color conversion & manipulation library by the editors of the CSS Color specifications ](https://github.com/LeaVerou/color.js)
     - [A comprehensive color library for JavaScript.](https://github.com/Evercoder/culori)
 
+
+
 ## [Three Color management](https://threejs.org/docs/index.html#manual/en/introduction/Color-management)
 
 - [css color4](https://www.w3.org/TR/css-color-4/#predefined)
@@ -122,17 +128,19 @@ ctx.strokeStyle = canvasGradient;
 - [Updates to lighting in three.js r155](https://discourse.threejs.org/t/updates-to-lighting-in-three-js-r155/53733)
 - [Shadow and color problems going from v64 to v161](https://discourse.threejs.org/t/shadow-and-color-problems-going-from-v64-to-v161/61640)
 
+</details>
 
-```js
-```
-
-## 参考
+<details>
+<summary> 参考</summary>
 
 - [The RGB-XYZ Matrix Calculator](https://www.russellcottrell.com/photo/matrixCalculator.htm)
-
 - [OpenColorIO, A complete color management solution geared towards motion picture production with an emphasis on visual effects and computer animation.](https://opencolorio.org/)
-    - [Blender Color Management](https://docs.blender.org/manual/en/latest/render/color_management.html)
-
+- [Blender Color Management](https://docs.blender.org/manual/en/latest/render/color_management.html)
 - [The Importance of Being Linear](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear)
-
 - [What every coder should know about gamma](https://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/)
+
+## 工具
+
+- [visualize color spaces in 3D在3D中可视化色彩空间](https://colorspaces.maxrovensky.com/)
+
+</details>

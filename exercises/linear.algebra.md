@@ -46,6 +46,8 @@ $A=PDP^{-1}=PDP^{T}$
 
 ### 矩阵分解技术
 
+[Matrix Decomposition and Applications](https://arxiv.org/abs/2201.00145)在arxiv上的文件[pdf](https://arxiv.org/pdf/2201.00145)描述了其分解矩阵的相关知识。
+
 <details>
 <summary>求解线性方程组是科学计算和工程领域的核心问题，分解是将复杂问题简单化后的求解</summary>
 

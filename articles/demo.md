@@ -4,7 +4,7 @@
 - [日刊-zeli App用中文读科技新闻](https://zeli.app/zh)
 - [抓取AI论文并用视频解读](https://huggingface.co/spaces/brianxiadong0627/paper-digest)
 - [周刊-阮一峰日志](https://www.ruanyifeng.com/blog/)
-- [周刊-图形渲染-443](https://www.jendrikillner.com/tags/weekly/)
+- [周刊-图形渲染-443](https://www.jendrikillner.com/tags/weekly/) [它的文章数据库的分类](https://www.jendrikillner.com/article_database/)
 - [周刊-This week in Rust](https://this-week-in-rust.org/)
 - [月刊-HelloGithub](https://hellogithub.com/periodical)
 - [Hacker News New](https://news.ycombinator.com/)
@@ -45,6 +45,12 @@
 [动态IP服务，个人免费](https://dynip.dev/)
 
 [IPv4查询](https://worldip.io/)
+
+</div>
+
+<div class="w-30">
+
+[无登录无广告的全面工具集，网页版,极简主义](https://www.normaltools.com/)
 
 </div>
 
@@ -180,6 +186,7 @@
 
 - [youtube](https://www.youtube.com/)
 - [福布斯新闻](https://www.forbes.com)
+- [中国日报网](https://cn.chinadaily.com.cn/)
 
 </div>
 </div>
