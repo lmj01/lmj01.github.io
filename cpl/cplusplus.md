@@ -8,7 +8,8 @@
 - [CRTP -- Curiously Recurring Template Pattern](/cpl/cpp/crtp.md)
 - [C++代码的查询搜索-号称有一亿的代码](https://cpp.hotexamples.com/)
 
-## 语言特性
+<details>
+<summary> 语言特性</summary>
 
 ### 生成代码
 
@@ -125,14 +126,45 @@ auto& p = spA; // 引用
 auto p = spA; // 赋值
 ```
 
-## 其他
+</details>
 
-### Fiber
+<details>
+<summary> 编译器</summary>
+
+## g++
+
+### 检测工具
+
+ASan/UBSan 是两种编译器内置的运行时错误检测工具，普通编译 + 测试只能证明「测试用例跑对了」，但可能有隐藏的内存越界或未定义行为在特定输入下才爆发。ASan/UBSan 会在程序运行时主动拦截这些错误并立刻报错
+
+ASan — AddressSanitizer（地址消毒器）检测内存错误，这类错误通常不会立刻崩溃，而是悄悄污染数据或随机崩溃：
+- 越界读写（数组越界、vector 越界）
+- 使用已释放的内存（use-after-free）
+- 双重释放（double-free）
+- 内存泄漏（配合 LeakSanitizer）
+
+UBSan — UndefinedBehaviorSanitizer（未定义行为消毒器）检测C++ 标准里「未定义行为」——代码能编译、看起来能跑，但行为没有保证：
+- 有符号整数溢出（int 溢出）
+- 除零
+- 空指针解引用
+- 越界移位（如 1 << 40 当 int 只有 32 位）
+- 错误的内存对齐
+
+```shell
+g++ -fsanitize=address,undefined ... centralizedMesh.cpp -o cm_asan
+```
+
+</details>
+
+<details>
+<summary> 其他</summary>
+
+## Fiber
 React中引入Fiber，其概念来自C++，[C++ Fiber的基本知识](https://agraphicsguynotes.com/posts/fiber_in_cpp_understanding_the_basics/)
 
-### 兼容C
+## 兼容C
 
-#### 索引
+### 索引
 
 C规定a[b]严格等价于*(a+b)，所以a[0]和0[a]是一样的，C++有运算符重载，不是严格等价
 
@@ -141,6 +173,8 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 - 但是换成b[a]的时候，你忽略掉了b是没有类型可言的,既然1[a]逻辑上解释不过去，那就只能当做a[1]才能计算
 
 从语义上去理解这个
+
+</details>
 
 <details>
 <summary> 参考</summary>
@@ -172,7 +206,10 @@ base + sizeof * 偏移量，数组指针好像就是这样的，用*（a+b）访
 
 [1]: <http://www.gotw.ca/publications/mill02.htm> (What's In A Class?)
 
-## 观点
+</details>
+
+<details>
+<summary> 观点</summary>
 
 ### 2024-7-22
 若是系统设计，DP 这些只能应对局部逻辑，还需要去了解一些掌握全局的常用架构，比如 EDA, LA, MA, MVC, SA……

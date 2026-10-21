@@ -1,6 +1,7 @@
 # Blender
 
-## 代码
+<details>
+<summary> 代码</summary>
 
 ```shell
 cd rootPath
@@ -17,7 +18,10 @@ build_xxx\bin\Release\blender.exe // 运行blender
 
 - [The official Blender project repository](https://projects.blender.org/blender/blender)
 
-## 源码分析
+</details>
+
+<details>
+<summary> 源码分析</summary>
 
 分析的思路流程，先大量阅读一些文档，特别是设计架构上的一些认识，最后使用万能的大法
 ```shell
@@ -65,15 +69,31 @@ grep -rn "XXXFunction" --include="*.c"
     - [interface](/cg/blender/editors/interface.md)
 - [cycles渲染器](/cg/blender/cycles.md)
 
-## wiki
+</details>
+
+<details>
+<summary>概念</summary>
+
+## Layer
+
+The “layer” idea comes from a popular modeling technique in Blender (and other mesh-based 3d program). When people drop decal objects on top of a surface, they don’t always have to connect the topology onto the base, but instead snap the objects very close to the base, then transfer position/normal of the base surface to vertices on the bottom of the decale object, to make them “appear connected”.
+
+[Yiming’s Curved Surface Research: Layered Mesh](https://notes.blender.org/s/D7QccPrzn4)
+
+</details>
+
+<details>
+<summary> wiki</summary>
 
 - [Modules](https://wiki.blender.org/wiki/Modules)
 - [All documents about task developing](https://developer.blender.org/search/)
 
-## 插件
+### 插件
 
 - [Sorcar](https://github.com/aachman98/Sorcar)
 - [Precision-Drawing-Tools](https://github.com/Clockmender/Precision-Drawing-Tools)
 - [Add Stamp Brush and Fix Airbrush](https://devtalk.blender.org/t/add-stamp-brush-and-fix-airbrush/30884)
     - [github](https://github.com/ShenCiao/Ciallo)
     - [web demo](https://shenciao.github.io/Ciallo/)
+
+</details>

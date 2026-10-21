@@ -2,13 +2,8 @@
 
 - [注释](/cpl/lua/comment.lua)
 
-## 模块与包
-
-lua的模块是由变量，函数等组成的table，其是加载机制通过require来导入
-
-require的路径是全局变量package.path中的，lua启动后，有三个大致范围
-
-C包，使用C为lua写包，是动态库的调用方式
+<details>
+<summary>核心内容与</summary>
 
 # lua-src
 
@@ -41,6 +36,15 @@ pow(2,18)=262144 => [0, 262143]
 ```shell
 luac -l -l src.lua
 ```
+
+## 模块与包
+
+lua的模块是由变量，函数等组成的table，其是加载机制通过require来导入
+
+require的路径是全局变量package.path中的，lua启动后，有三个大致范围
+
+C包，使用C为lua写包，是动态库的调用方式
+
 
 ## 编译系统
 
@@ -88,6 +92,19 @@ lua没有使用llex和yacc生成，而是完全手写的词法和语法分析器
 - m，op model，就是iABC,iABx,iAsBx,iAx
 
 这里存在些疑惑，Opcode只占6bit，而opmode中的值占8bit，令人不解，多出来的一个bit是什么地方来的？
+
+</details>
+
+<details>
+<summary> 类型</summary>
+
+[Teal is a statically-typed dialect of Lua. ](https://teal-language.org/)
+
+It extends Lua with type annotations, allowing you to specify arrays, maps and records, as well as interfaces, union types and generics.
+
+It aims to fill a niche similar to that of TypeScript in the JavaScript world, but adhering to Lua's spirit of minimalism, portability and embeddability. 
+
+</details>
 
 ## 参考
 - [Lua Awesome-lua官方链接上的记录](https://github.com/LewisJEllis/awesome-lua)

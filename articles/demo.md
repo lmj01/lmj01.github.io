@@ -120,7 +120,7 @@
 
 [outlook](https://outlook.live.com/mail/?deeplink=mail%2F)
 
-[Gmail](https://gmail.com/)
+[Gmail](https://mail.google.com)
 
 </div>
 
