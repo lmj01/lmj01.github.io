@@ -65,6 +65,7 @@
 <summary>UI lib</summary>
 
 - [bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [bootstrap6](https://getbootstrap.com/docs/6.0/getting-started/install/)
 - [tailwind](https://tailwindcss.com/docs/installation/using-vite)
 - [element-plus](https://element-plus.org/)
 - [MUI The React UI library](https://v5-0-6.mui.com/)

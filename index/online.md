@@ -63,6 +63,10 @@
 
 computer graphics，good writing software engineer。文章很详细，看起来逻辑清晰
 
+### [Cem Yuksel](https://www.cemyuksel.com/)
+
+有很多优秀的文章需要可参考，其还有一套[代码库An open source programming resource intended for graphics programmers.](https://github.com/cemyuksel/cyCodeBase)
+
 </details>
 
 ## 游戏
