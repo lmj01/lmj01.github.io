@@ -151,9 +151,9 @@ gateway:
 </details>
 
 <details>
-<summary>AI工具</summary>
+<summary>七牛云</summary>
 
-## [zcode](https://zcode.z.ai/cn)
-智普
+## [登录](https://www.qiniu.com/ai/)
+
 
 </details>

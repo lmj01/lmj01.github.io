@@ -112,6 +112,7 @@ sudo docker run hello-world # 测试安装成功否
 sudo docker save -o path/image.tar idIamge # 这里导出的是默认的一个点的镜像，没有信息
 sudo docker save -o spr-alg-dev.tar spr-alg:dev # 带名称
 sudo scp ./spr-alg-dev.tar root@192.168.0.162:/opt/spr # 推送到服务器
+sudo scp -r dist root@192.168.0.162:/opt/spr # 推送目录到服务器
 ```
 
 </details>
